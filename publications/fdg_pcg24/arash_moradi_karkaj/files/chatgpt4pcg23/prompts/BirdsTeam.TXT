@@ -1,0 +1,321 @@
+The game was made by javaSwing with four classes Block,Grid,Main,StringToXml
+To generate an image and Xml of the character which must be added to file in science birds in unity 
+but we find some bugs with the modified version of the game
+It does not works completely despite there is some examples of level 1 to 12 
+we still work on it despite the deadline is ended on 29 july but as a experience to scale our skills and learn more about the gaming part 
+and at the same time learn more about chatgpt and prompt enginnering to move the complete java program to a prompt using chatgpt 
+
+ 
+
+
+###Block.java
+
+public enum Block {
+    b13("RectSmall",90),
+    b11("SquareTiny",0),
+    b31("RectSmall",0);
+    
+    public final String name;
+    public final int rotation;
+    private Block(String name,int rotation){
+        this.name = name;
+        this.rotation = rotation;
+    }
+}
+
+
+
+######Grid.java file 
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.GridLayout;
+import java.util.ArrayList;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.border.BevelBorder;
+
+public class Grid extends JFrame{
+    static final int LAYERS=15;
+    static final int SLOTS=20;
+    static final int WIDTH=600;
+    static final int LENGTH=480;
+    BorderLayout layout1 = new BorderLayout();
+    GridLayout layout = new GridLayout(LAYERS, SLOTS);
+    GridLayout bottom = new GridLayout(1, 3);
+    JPanel bottomPanel= new JPanel(bottom);
+    ArrayList<JPanel> panels = new ArrayList(LAYERS*SLOTS);
+    ArrayList<JLabel> labels = new ArrayList(LAYERS*SLOTS);
+    ArrayList<Boolean> values = new ArrayList(LAYERS*SLOTS);
+    JButton play = new JButton("Play");
+    JButton image = new JButton("Take Image");
+    JButton xml = new JButton("Generate XML");
+    int layer=0;
+
+    public Grid(){
+        setSize(WIDTH, LENGTH);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        setResizable(false);
+        setTitle("My Grid");
+        setLayout(layout1);
+        showGrid();
+        setVisible(true);
+    }
+    
+    private void showGrid(){
+        JPanel p = new JPanel();
+        p.setLayout(layout);
+        for(int i=0;i<LAYERS*SLOTS;i++){
+            JPanel panel = new JPanel();
+            JLabel label = new JLabel();
+            panels.add(panel);
+            labels.add(label);
+            values.add(true);
+            panel.setBackground(Color.WHITE);
+            panel.setBorder(new BevelBorder(BevelBorder.LOWERED));
+            panel.setLayout(new GridLayout(1, 1));
+            panel.add(label);
+            p.add(panel);
+            add(p);
+        }
+        bottomPanel.add(play);
+        bottomPanel.add(image);
+        bottomPanel.add(xml);
+        add(bottomPanel,BorderLayout.SOUTH);
+    }
+    
+    public void ab_drop(Block b,int position){
+        int p;
+        boolean emptySlots;
+        if((position<1 || position>SLOTS-2) && b==Block.b31)
+        {
+            JOptionPane.showMessageDialog(null, "Position not allowed");
+            return;
+        }
+        if((position<0 || position>SLOTS-1) && b!=Block.b31)
+        {
+            JOptionPane.showMessageDialog(null, "Position not allowed");
+            return;
+        }
+        switch (b) {
+            case b31:
+                layer=0;
+                p=(LAYERS*SLOTS-1)-((layer+1)*SLOTS-1)+position;
+                do{
+                   if(values.get(p-1)==false||values.get(p)==false||values.get(p+1)==false){
+                       layer++;
+                       emptySlots=false;
+                       p=(LAYERS*SLOTS-1)-((layer+1)*SLOTS-1)+position;
+                    } 
+                   else{
+                       emptySlots=true;
+                    }
+                }while(!emptySlots);
+                
+                labels.get(p-1).setIcon(new ImageIcon("src/b11.png"));
+                labels.get(p).setIcon(new ImageIcon("src/b11.png"));
+                labels.get(p+1).setIcon(new ImageIcon("src/b11.png"));
+//              panels.get(p-1).setBackground(Color.BLACK);
+//              panels.get(p).setBackground(Color.BLACK);
+//              panels.get(p+1).setBackground(Color.BLACK);
+                values.set(p-1, false);
+                values.set(p, false);
+                values.set(p+1, false);
+                break;
+            case b11:
+                layer=0;
+                p=(LAYERS*SLOTS-1)-((layer+1)*SLOTS-1)+position;
+                do{
+                   if(values.get(p)==false){
+                       layer++;
+                       emptySlots=false;
+                       p=(LAYERS*SLOTS-1)-((layer+1)*SLOTS-1)+position;
+                   } 
+                   else{
+                       emptySlots=true;
+                   }
+                }while(!emptySlots);
+                labels.get(p).setIcon(new ImageIcon("src/b11.png"));
+                //panels.get(p).setBackground(Color.BLACK);
+                values.set(p, false);
+                break;
+            case b13:
+                layer=0;
+                p=(LAYERS*SLOTS-1)-((layer+1)*SLOTS-1)+position;
+                do{
+                   if(values.get(p-SLOTS)==false||values.get(p)==false||values.get(p-SLOTS*2)==false){
+                       layer++;
+                       emptySlots=false;
+                       p=(LAYERS*SLOTS-1)-((layer+1)*SLOTS-1)+position;
+                   } 
+                   else{
+                       emptySlots=true;
+                   }
+                }while(!emptySlots);
+                labels.get(p).setIcon(new ImageIcon("src/b11.png"));
+                labels.get(p-SLOTS).setIcon(new ImageIcon("src/b11.png"));
+                labels.get(p-SLOTS*2).setIcon(new ImageIcon("src/b11.png"));
+//              panels.get(p).setBackground(Color.BLACK);
+//              panels.get(p-SLOTS).setBackground(Color.BLACK);
+//              panels.get(p-SLOTS*2).setBackground(Color.BLACK);
+                values.set(p, false);
+                values.set(p-SLOTS, false);
+                values.set(p-SLOTS*2, false);
+                break;
+        }
+    }
+}
+
+####Main.java 
+import java.awt.Graphics2D;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.util.ArrayList;
+import javax.imageio.ImageIO;
+import javax.swing.JOptionPane;
+import org.w3c.dom.Document;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Block> playedBlocks = new ArrayList();
+        //ArrayList<Integer> playedPositions = new ArrayList();
+        Grid myGrid = new Grid();
+        myGrid.play.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String block = JOptionPane.showInputDialog(null, "Choose a block b13,b11,b31");
+                String positionString = JOptionPane.showInputDialog(null, "Choose a position");
+                int position=-1;
+                if(positionString!=null&&!positionString.isBlank())
+                    position = Integer.parseInt(positionString);
+                Block b;
+                if(block!=null&&!block.isBlank()&&positionString!=null&&!positionString.isBlank()){
+                    switch (block) {
+                    case "b11":
+                        b = Block.b11;
+                        break;
+                    case "b13":
+                        b = Block.b13;
+                        break;
+                    case "b31":
+                        b = Block.b31;
+                        break;
+                    default:
+                        JOptionPane.showMessageDialog(null, "Block incorrect");
+                        return;
+                }
+                    myGrid.ab_drop(b, position);
+                    playedBlocks.add(b);
+                    //playedPositions.add(position);
+                }
+        }
+        });
+        
+        myGrid.image.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try{
+                    BufferedImage image = new BufferedImage(myGrid.getWidth(),myGrid.getHeight()-35,BufferedImage.TYPE_INT_RGB);
+                    Graphics2D g2d = image.createGraphics();
+                    myGrid.paint(g2d);
+                    ImageIO.write(image, "jpeg", new File("image.jpeg"));
+                }catch(Exception exp){
+                    exp.printStackTrace();
+                }
+            }
+        });
+        
+        myGrid.xml.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String blocks = "";
+                for(Block b:playedBlocks){
+                    if(b==Block.b11)
+                        blocks=blocks+"    <Block type=\"SquareTiny\" material=\"wood\" x=\"2.12005\" y=\"-3.37995\" rotation=\"0\" />\n";
+                    else if(b==Block.b31)
+                        blocks=blocks+"    <Block type=\"RectSmall\" material=\"wood\" x=\"2.12005\" y=\"-3.37995\" rotation=\"0\" />\n";
+                    else
+                        blocks=blocks+"    <Block type=\"RectSmall\" material=\"wood\" x=\"2.12005\" y=\"-3.37995\" rotation=\"90\" />\n";
+                }
+                
+                final String xmlStr = "<?xml version=\"1.0\" encoding=\"utf-16\"?>\n" +
+                                        "<Level width=\"3\">\n" +
+                                        "  <Camera x=\"2\" y=\"0\" minWidth=\"17\" maxWidth=\"22\" />\n" +
+                                        "  <Birds>\n" +
+                                        "    <Bird type=\"BirdRed\" />\n" +
+                                        "  </Birds>\n" +
+                                        "  <Slingshot x=\"-9\" y=\"-2.5\" />\n" +
+                                        "  <GameObjects>\n" +
+                                        blocks+
+                                        "  </GameObjects>\n" +
+                                        "</Level>";
+                Document doc = StringToXml.convertStringToDocument(xmlStr);
+                String str = StringToXml.convertDocumentToString(doc);
+                try{
+                    java.io.FileWriter fw = new java.io.FileWriter("file.xml");
+                    fw.write(str);
+                    fw.close();
+                }catch(Exception ex){
+                    ex.printStackTrace();
+                }
+                
+            }
+        });
+    }
+}
+
+
+### StringToXml.java 
+import java.io.StringReader;
+import java.io.StringWriter;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import org.w3c.dom.Document;
+import org.xml.sax.InputSource;
+
+public class StringToXml {
+    public static String convertDocumentToString(Document doc) {
+        TransformerFactory tf = TransformerFactory.newInstance();
+        Transformer transformer;
+        try {
+            transformer = tf.newTransformer();
+            StringWriter writer = new StringWriter();
+            transformer.transform(new DOMSource(doc), new StreamResult(writer));
+            String output = writer.getBuffer().toString();
+            return output;
+        } catch (TransformerException e) {
+            e.printStackTrace();
+        }
+        
+        return null;
+    }
+    
+    public static Document convertStringToDocument(String xmlStr) {
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();  
+        DocumentBuilder builder;  
+        try  
+        {  
+            builder = factory.newDocumentBuilder();  
+            Document doc = builder.parse( new InputSource( new StringReader( xmlStr ) ) ); 
+            return doc;
+        } catch (Exception e) {  
+            e.printStackTrace();  
+        } 
+        return null;
+    }
+}
+
+
+

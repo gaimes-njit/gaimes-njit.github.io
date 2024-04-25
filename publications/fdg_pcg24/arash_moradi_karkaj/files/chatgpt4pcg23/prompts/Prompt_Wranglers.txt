@@ -1,0 +1,140 @@
+Instructions
+Your role is to work with 3 block types and create capital case English letters (i.e., A, B, C, ..., Z) in a Tetris-like environment with 2D gravity rules similar to the Angry Birds game. The focus is on "Stacking and Stability" while ensuring the letters are accurately represented and fit within the allowed space boundaries.
+
+Environment
+The allowed space is a grid of 20W (indexed 1-19) and 16H (indexed 1-15). Maintain the structural stability by considering the number of blocks stacked on top of each other. Avoid intruding the height boundary, as exceeding it will result in an invalid shape. You should start constructing the shapes from the X position 1. The dimensions of each letter may vary based on  the complexity of achieving the letter shape while maintaining its stability and balance.
+
+Command
+Use the ab_drop(x, y) command to place each block one by one, where x represents the block type and y indicates the position along the width. You should include the stream of commands consecutively included between three backticks (```). For example:
+```
+Stream of commands
+```
+
+Task
+The ultimate objective is to generate uppercase English letter <OBJECT> using the mentioned command and Block Types in the defined environment. The response to this prompt should be a stream of ab_drop() commands that resemble the target letter mentioned in the Task section, while ensuring structural stability with regard to the gravity rules defined herein.
+
+Block Types
+b11: A 1x1 square block with no orientation.
+b31: A horizontal straight block with a width of 3 units and a height of 1 unit.
+b13: A vertical straight block with a width of 1 unit and a height of 3 units.
+
+Examples
+Here are some examples of how to generate English letters:
+letters ‘A’ or ‘R’:
+Always start from the bottom to build a symmetrical and balanced foundation:
+ab_drop(‘b13’, 1)
+ab_drop(‘b13’, 3)
+These two commands place two vertical straight blocks that are stable on their own. Then, move to the upper layer, which is the middle horizontal section:
+ab_drop(‘b31’, 2)
+This command will place a horizontal block on top of the two previous blocks. As you can deduce the start and end point of the ‘b31’ block will be at X positions 1 and 3 respectively. The 2 in ab_drop(‘b31’, 2) commands specify the midpoint of the block, not the actual placement in the grid.
+Next, we move to the next structural layer that can be portrayed using two vertical blocks:
+ab_drop(‘b13’, 1)
+ab_drop(‘b13’, 3)
+Finally, we can place the last horizontal block on top of the previous vertical block. As explained, the x position of 2 is important to preserve the stability and symmetry.
+ab_drop(‘b31’, 2)
+
+Generating ‘B’:
+The foundation for this letter is a ‘b31’ block, and the rest is similar as generating an ‘A’ letter exactly on top of that block, so:
+ab_drop(‘b31’, 2)
+ab_drop(‘b13’, 1)
+ab_drop(‘b13’, 3)
+ab_drop(‘b31’, 2)
+ab_drop(‘b13’, 1)
+ab_drop(‘b13’, 3)
+ab_drop(‘b31’, 2)
+
+Generating ‘C’:
+The foundation for this letter is ab_drop(‘b31’, 2) then followed by a double vertical blocks on the left of the foundation:
+ab_drop(‘b13’, 1)
+ab_drop(‘b13’, 2)
+For the top part:
+ab_drop(‘b31’, 2)
+
+Generating ‘L’:
+ab_drop(‘b31’, 2)
+ab_drop(‘b13’, 1)
+
+Generating ‘J’:
+ab_drop(‘b31’, 2)
+ab_drop(‘b13’, 3)
+
+Generating ‘I’:
+ab_drop(‘b13’, 2)
+
+‘T’
+ab_drop(‘b13’, 2)
+ab_drop(‘b31’, 2)
+
+‘U’
+ab_drop(‘b31’, 2)
+ab_drop(‘b13’, 3)
+ab_drop(‘b13’, 1)
+
+‘O’
+ab_drop(‘b31’, 2)
+ab_drop(‘b13’, 1)
+ab_drop(‘b13’, 3)
+ab_drop(‘b31’, 2)
+
+‘P’
+ab_drop(‘b13’, 1)
+ab_drop(‘b13’, 2)
+ab_drop(‘b31’, 2)
+ab_drop(‘b11’, 1)
+ab_drop(‘b11’, 4)
+ab_drop(‘b31’, 2)
+ab_drop(‘b31’, 2)
+
+‘G’
+ab_drop(‘b31’, 2)
+ab_drop(‘b11’, 4)
+ab_drop(‘b11’, 4)
+ab_drop(‘b13’, 1)
+ab_drop(‘b13’, 2)
+ab_drop(‘b31’, 2)
+
+‘H’
+ab_drop(‘b13’, 1)
+ab_drop(‘b13’, 3)
+ab_drop(‘b31’, 2)
+ab_drop(‘b13’, 1)
+ab_drop(‘b13’, 3)
+
+
+‘Q’
+ab_drop(‘b31’, 2)
+ab_drop(‘b13’, 1)
+ab_drop(‘b13’, 3)
+ab_drop(‘b31’, 2)
+Finally a ‘b11’ block just next to the right side:
+ab_drop(‘b11’, 4)
+
+‘E’
+ab_drop(‘b31’, 2)
+ab_drop(‘b13’, 1)
+ab_drop(‘b13’, 2)
+ab_drop(‘b31’, 2)
+ab_drop(‘b13’, 1)
+ab_drop(‘b13’, 2)
+ab_drop(‘b31’, 2)
+
+‘F’
+ab_drop(‘b13’, 1)
+ab_drop(‘b13’, 2)
+ab_drop(‘b31’, 2)
+ab_drop(‘b13’, 1)
+ab_drop(‘b13’, 2)
+ab_drop(‘b31’, 2)
+
+‘M’
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b13', 4)
+ab_drop('b13', 6)
+ab_drop('b31', 5)
+
+‘N’
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop(‘b11’, 2)

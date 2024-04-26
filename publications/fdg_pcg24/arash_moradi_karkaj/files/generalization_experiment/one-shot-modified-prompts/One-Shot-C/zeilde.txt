@@ -1,0 +1,14 @@
+Steps:
+1. You are tasked with drawing rectangular letters with asterisks. Draw the letter "<OBJECT>" with asterisks.
+2. Line-by-line, verbally list the asterisks and spaces generated in each row of the drawing.
+3. Asterisks are now x and spaces are each y. Repeat step #2 with the new rules.
+4. For each row, write out each x and y. Each must be listed side-by-side, e.g. "2x, 1y, 2x" becomes "xxyxx".
+5. For each row, indicate the position of each variable. E.g. "xxyxx" becomes "x-1; x-2; y-3; x-4; x-5".
+6. For each row, line-by-line, return a sequence of `ab_drop` function calls where the first variable is "b11" and the second is the number. Include all rows, but do not separate rows. E.g. "x-1; x-2; y-3; x-4; x-5" becomes 
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

@@ -1,6 +1,9 @@
 import json
 import matplotlib.pyplot as plt
 
+plt.rcParams['pdf.fonttype'] = 42
+plt.rcParams['ps.fonttype'] = 42
+
 def get_team_colors_arash_setting():
     team_order = ["For500","Hope","albatross","JUSTIN","Team Staciiaz","zeilde","Saltyfish1884","Back to the future","Harry Single Group","AdrienTeam","Soda","hachi","PW","dereventsolve","ORG",]
     color_map_name = "tab20c"
@@ -177,8 +180,8 @@ def save_and_show_plot(plot_data, save_name, team_colors, team_order, plot_heigh
     ]
 
     ax.legend(handles=handles, bbox_to_anchor=(1, 1), loc="upper left", fontsize=9)
-    ax.set_ylabel("Normalized Prompt Score", fontsize=9)
-    ax.tick_params(axis="both", which="major", labelsize=9)
+    ax.set_ylabel("Normalized Prompt Score", fontsize=14)
+    ax.tick_params(axis="both", which="major", labelsize=14)
     ax.grid(True, alpha=0.3)
     plt.tight_layout()
     plt.savefig(save_name)
@@ -188,7 +191,7 @@ if __name__ == "__main__":
    
     # Command Line Arguments
     plot_height = 4
-    plot_width = 6
+    plot_width = 8
     json_file_path = 'generalization_results_one_shot.json'
     save_name = 'one-shot-generalization.pdf'
 

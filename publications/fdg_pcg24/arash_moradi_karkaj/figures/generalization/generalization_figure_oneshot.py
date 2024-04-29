@@ -4,6 +4,20 @@ import matplotlib.pyplot as plt
 plt.rcParams['pdf.fonttype'] = 42
 plt.rcParams['ps.fonttype'] = 42
 
+def compute_raw_score(results):
+    # 'results' parameter should be the dict under 'characters' in the JSON for
+    # a given run, containing {"A" : { ... }, "B" : { ... }}, etc.
+
+    # Raw score differs from the official competition score by
+    # being 1) not dynamically weighted (levels are equally weighted),
+    # and 2) not normalized to percentage-of-total-score at the end.
+    # This makes raw scores from different runs comparable.
+    raw_score = 0.0
+    for level_results in results.values():
+        raw_score += level_results["total_char_sum"] / level_results["number_of_trials"]
+    raw_score /= 26.0
+    return raw_score
+
 def get_team_colors_arash_setting():
     team_order = ["For500","Hope","albatross","JUSTIN","Team Staciiaz","zeilde","Saltyfish1884","Back to the future","Harry Single Group","AdrienTeam","Soda","hachi","PW","dereventsolve","ORG",]
     color_map_name = "tab20c"
@@ -17,6 +31,7 @@ def get_team_colors_arash_setting():
             team_colors[team_name] = available_colors.pop(0) 
 
     return team_colors, team_order
+
 def get_team_colors_filtered_for_one_shot():
     teams_with_examples = ['ORG', 'dereventsolve', 'PW', 'hachi', 'Soda', 'AdrienTeam', 'Saltyfish1884', 'For500']
     team_order = teams_with_examples
@@ -155,10 +170,13 @@ def get_json_data(json_file, team_colors):
         plot_data[one_shot_key] = {"teams": [], "scores": [], "colors": []}
         for prompt_name, prompt_results in one_shot_data.items():
             if (one_shot_key, prompt_name) in prompts_with_shots: 
+                raw_score = compute_raw_score(prompt_results["characters"])
+
                 plot_data[one_shot_key]["teams"].append(prompt_name)
-                plot_data[one_shot_key]["scores"].append(prompt_results["normalized_team_score"])
+                plot_data[one_shot_key]["scores"].append(raw_score)
                 plot_data[one_shot_key]["colors"].append(team_colors[prompt_name])
     return plot_data
+
 def save_and_show_plot(plot_data, save_name, team_colors, team_order, plot_height=4, plot_width=4):
 
     fig, ax = plt.subplots(figsize=(plot_width, plot_height))
@@ -180,7 +198,7 @@ def save_and_show_plot(plot_data, save_name, team_colors, team_order, plot_heigh
     ]
 
     ax.legend(handles=handles, bbox_to_anchor=(1, 1), loc="upper left", fontsize=9)
-    ax.set_ylabel("Normalized Prompt Score", fontsize=14)
+    ax.set_ylabel("Raw Score", fontsize=14)
     ax.tick_params(axis="both", which="major", labelsize=14)
     ax.grid(True, alpha=0.3)
     plt.tight_layout()

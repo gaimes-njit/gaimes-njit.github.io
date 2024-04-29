@@ -178,7 +178,7 @@ def get_json_data(json_file, team_colors):
                 plot_data[one_shot_key]["colors"].append(team_colors[prompt_name])
     return plot_data
 
-def save_and_show_plot(plot_data, save_name, team_colors, team_order, plot_height=4, plot_width=4):
+def save_and_show_plot(plot_data, save_name, team_colors, team_order, plot_height=4, plot_width=4, y_label_font_size=9, x_label_font_size=9, legend_font_size=8, tick_font_size=8, marker_size=9, legend_marker_size=9):
 
     fig, ax = plt.subplots(figsize=(plot_width, plot_height))
 
@@ -186,21 +186,27 @@ def save_and_show_plot(plot_data, save_name, team_colors, team_order, plot_heigh
         for team_name, color in zip(single_shot_data["teams"], single_shot_data["colors"]):
             ax.scatter([shot_letter],[single_shot_data["scores"][single_shot_data["teams"].index(team_name)]],
                 c=color,
-                s=70,
+                s=marker_size,
                 zorder=2,
+                marker='o',
             ) 
     
     handles = [plt.Line2D([0],[0],marker="o",color="w",
                           label=("The Organizer" if team_name == "ORG" else "Prompt_Wranglers" if team_name == "PW" else team_name),
                           markerfacecolor=team_colors[team_name],
-                          markersize=10,
+                          markersize=legend_marker_size,
         )
         for team_name in team_order
     ]
 
-    ax.legend(handles=handles, bbox_to_anchor=(1, 1), loc="upper left", fontsize=9)
-    ax.set_ylabel("Raw Score", fontsize=14)
-    ax.tick_params(axis="both", which="major", labelsize=14)
+    #bbox_to_anchor=(0.5, 1.05), loc='center', ncol=2
+    #ax.legend(handles=handles, bbox_to_anchor=(0.98, 0.98), loc="upper left", fontsize=legend_font_size)
+    ax.legend(handles=handles, handlelength=.3, bbox_to_anchor=(0.5, 1.2), loc="center", ncol=3, title="Team Names", fontsize=legend_font_size, title_fontsize=9)
+
+    
+    ax.set_ylabel("Raw Score", fontsize=y_label_font_size)
+    ax.set_xlabel('One-Shot Letter in Prompt', color='black', fontsize=x_label_font_size)
+    ax.tick_params(axis="both", which="major", labelsize=tick_font_size)
     ax.grid(True, alpha=0.3)
     plt.tight_layout()
     plt.savefig(save_name)
@@ -208,16 +214,34 @@ def save_and_show_plot(plot_data, save_name, team_colors, team_order, plot_heigh
 
 if __name__ == "__main__":
    
-    # Command Line Arguments
-    plot_height = 4
-    plot_width = 8
+    # # Command Line Arguments
+    # plot_height = 4
+    # plot_width = 8
+    # json_file_path = 'generalization_results_one_shot.json'
+    # save_name = 'one-shot-generalization.pdf'
+
+    # Plot Parameters
+    plot_height = 5
+    plot_width = 5
+    y_label_font_size= 10
+    x_label_font_size=10
+    legend_font_size=10
+    tick_font_size=10
+    marker_size=50
+    legend_marker_size=9
+
+    # For Type2 Fonts (ACM)
+    plt.rcParams['pdf.fonttype'] = 42
+    plt.rcParams['ps.fonttype'] = 42
+    plt.rcParams['font.family'] = 'Arial'
+
     json_file_path = 'generalization_results_one_shot.json'
     save_name = 'one-shot-generalization.pdf'
 
     # Show Plot Data
     team_colors, team_order = get_team_colors_filtered_for_one_shot()
     plot_data = get_json_data(json_file_path, team_colors)
-    save_and_show_plot(plot_data, save_name, team_colors, team_order, plot_height, plot_width)
+    save_and_show_plot(plot_data, save_name, team_colors, team_order, plot_height, plot_width, y_label_font_size, x_label_font_size, legend_font_size, tick_font_size,marker_size, legend_marker_size)
 
 
 

@@ -1,6 +1,7 @@
 import json
 import matplotlib.pyplot as plt
 
+# For Type2 Fonts (ACM)
 plt.rcParams['pdf.fonttype'] = 42
 plt.rcParams['ps.fonttype'] = 42
 

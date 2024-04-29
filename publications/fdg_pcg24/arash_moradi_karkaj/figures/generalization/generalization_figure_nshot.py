@@ -1,6 +1,10 @@
 import json
 import matplotlib.pyplot as plt
 
+# For Type2 Fonts (ACM)
+plt.rcParams['pdf.fonttype'] = 42
+plt.rcParams['ps.fonttype'] = 42
+
 def compute_raw_score(results):
     # 'results' parameter should be the dict under 'characters' in the JSON for
     # a given run, containing {"A" : { ... }, "B" : { ... }}, etc.

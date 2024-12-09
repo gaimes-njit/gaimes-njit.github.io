@@ -49,15 +49,37 @@ def save_table_as_csv(table_data, team_order, save_name):
         csv_writer.writerow(headers)
         csv_writer.writerows(rows)
 
-    print(f"Table saved to {save_name}")
+    print(f"CSV table saved to {save_name}")
+
+# Save table as LaTeX format
+def save_table_as_latex(table_data, team_order, save_name):
+    latex_str = "\\begin{table}[h!]\n\\centering\n\\begin{tabular}{" + ("l" + "r" * len(team_order)) + "}\n"
+    latex_str += "Shot Letter & " + " & ".join(team_order) + " \\\\\n"
+    latex_str += "\\hline\n"
+
+    # Add rows
+    for shot_letter, team_scores in sorted(table_data.items()):
+        row = [f"{shot_letter}"] + [f"{team_scores.get(team, '-')}" for team in team_order]
+        latex_str += " & ".join(row) + " \\\\\n"
+
+    latex_str += "\\end{tabular}\n\\caption{One-shot Generalization Results}\n\\label{tab:one_shot_generalization}\n\\end{table}"
+
+    with open(save_name, 'w') as latex_file:
+        latex_file.write(latex_str)
+
+    print(f"LaTeX table saved to {save_name}")
 
 if __name__ == "__main__":
     json_file_path = 'generalization_results_one_shot.json'
-    save_name = 'one-shot-generalization-table.csv'
+    csv_save_name = 'one-shot-generalization-table.csv'
+    latex_save_name = 'one-shot-generalization-table.tex'
 
     # Get data
     team_order = get_team_colors_filtered_for_one_shot()
     table_data = get_json_data(json_file_path, team_order)
 
-    # Save table
-    save_table_as_csv(table_data, team_order, save_name)
+    # Save table as CSV
+    save_table_as_csv(table_data, team_order, csv_save_name)
+
+    # Save table as LaTeX
+    save_table_as_latex(table_data, team_order, latex_save_name)

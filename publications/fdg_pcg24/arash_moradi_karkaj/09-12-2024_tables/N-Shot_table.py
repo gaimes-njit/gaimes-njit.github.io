@@ -27,7 +27,7 @@ def get_json_data(json_file):
 
     return shots, org_scores, pw_scores
 
-def generate_table(shots, org_scores, pw_scores, output_file="results_table.csv"):
+def generate_table_csv(shots, org_scores, pw_scores, output_file="results_table.csv"):
     """
     Generate a table from the computed data and save it as a CSV file.
     """
@@ -41,14 +41,36 @@ def generate_table(shots, org_scores, pw_scores, output_file="results_table.csv"
 
     # Save to a CSV file
     df.to_csv(output_file, index=False)
-    print(f"Table saved to {output_file}")
+    print(f"CSV table saved to {output_file}")
+
+def generate_table_latex(shots, org_scores, pw_scores, output_file="results_table.tex"):
+    """
+    Generate a table from the computed data and save it as a LaTeX file.
+    """
+    latex_str = "\\begin{table}[h!]\n\\centering\n\\begin{tabular}{lrr}\n"
+    latex_str += "Num. Shots & The Organizer RAW Score & Prompt Wranglers RAW Score \\\\\n"
+    latex_str += "\\hline\n"
+
+    for shot, org_score, pw_score in zip(shots, org_scores, pw_scores):
+        latex_str += f"{shot} & {org_score:.2f} & {pw_score:.2f} \\\\\n"
+
+    latex_str += "\\end{tabular}\n\\caption{N-Shot Generalization Results}\n\\label{tab:n_shot_generalization}\n\\end{table}"
+
+    with open(output_file, 'w') as latex_file:
+        latex_file.write(latex_str)
+
+    print(f"LaTeX table saved to {output_file}")
 
 if __name__ == "__main__":
     json_file_path = 'generalization_results_nshot.json'
-    output_file_path = 'N-Shot_table.csv'
+    csv_output_file_path = 'N-Shot_table.csv'
+    latex_output_file_path = 'N-Shot_table.tex'
 
     # Extract data from JSON
     shots, org_scores, pw_scores = get_json_data(json_file_path)
 
-    # Generate and save the table
-    generate_table(shots, org_scores, pw_scores, output_file_path)
+    # Generate and save the table as CSV
+    generate_table_csv(shots, org_scores, pw_scores, csv_output_file_path)
+
+    # Generate and save the table as LaTeX
+    generate_table_latex(shots, org_scores, pw_scores, latex_output_file_path)

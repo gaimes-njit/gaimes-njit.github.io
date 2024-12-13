@@ -1,0 +1,4 @@
+ab_drop('b31', 9) # Drop a horizontal block to create the top line of the A shape
+ab_drop('b11', 9) # Drop a square block to create the middle line of the A shape
+ab_drop('b13', 10) # Drop a vertical block to create the vertical line of the A shape
+ab_drop('b31', 10) # Drop a horizontal block to create the bottom line of the A shape

@@ -1,0 +1,12 @@
+To generate the uppercase letter "A", you can follow the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b11', 2)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 3)
+```
+
+These commands will create a letter "A" using the given block types and within the defined boundaries of the grid. Each command places one block at a time, gradually constructing the desired shape.

@@ -1,0 +1,36 @@
+To create the structure of a "K" using the ab_drop('blocktype', x position) command, you can use the following sequence:
+
+1. Drop a b31 block at position (0, 0).
+ab_drop('b31', 0)
+
+2. Drop a b13 block at position (2, 0).
+ab_drop('b13', 2)
+
+3. Drop a b13 block at position (2, 2).
+ab_drop('b13', 2)
+
+4. Drop a b11 block at position (0, 4).
+ab_drop('b11', 0)
+
+5. Drop a b11 block at position (1, 4).
+ab_drop('b11', 1)
+
+6. Drop a b31 block at position (0, 6).
+ab_drop('b31', 0)
+
+7. Drop a b31 block at position (4, 6).
+ab_drop('b31', 4)
+
+8. Drop a b11 block at position (0, 10).
+ab_drop('b11', 0)
+
+9. Drop a b11 block at position (1, 10).
+ab_drop('b11', 1)
+
+10. Drop a b13 block at position (2, 10).
+ab_drop('b13', 2)
+
+11. Drop a b13 block at position (2, 12).
+ab_drop('b13', 2)
+
+You have now created the structure of a "K" inside the 20*16 box block.

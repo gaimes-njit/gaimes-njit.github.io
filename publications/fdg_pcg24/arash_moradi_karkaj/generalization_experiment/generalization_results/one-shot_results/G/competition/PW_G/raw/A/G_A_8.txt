@@ -1,0 +1,16 @@
+To create the uppercase English letter "A" using the given block types, we can follow these steps:
+
+1. Start by placing a horizontal straight block (b31) at position 2.
+2. Place a vertical straight block (b13) at position 1, just below the previous block.
+3. Place another vertical straight block (b13) at position 2, next to the previous block.
+4. Place two square blocks (b11) at position 4, one above the other.
+5. Place another horizontal straight block (b31) at position 2, above the first block.
+
+```plaintext
+ab_drop('b31',2)
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b11',4)
+ab_drop('b11',4)
+ab_drop('b31',2)
+```

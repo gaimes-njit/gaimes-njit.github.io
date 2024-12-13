@@ -1,0 +1,12 @@
+To create the uppercase letter "E", we can break it down into three parts: the vertical line on the left, the horizontal line in the middle, and the vertical line on the right. We will use the block types b13 and b31 to create these shapes.
+
+Here is the sequence of ab_drop commands to create the letter "E":
+
+```
+ab_drop('b13', 1)  # Place the first vertical block on the left
+ab_drop('b31', 2)  # Place the horizontal block connecting the two vertical blocks
+ab_drop('b13', 4)  # Place the second vertical block on the right
+ab_drop('b13', 7)  # Place the third vertical block on the right
+```
+
+This sequence of commands will create the letter "E" in the designated grid.

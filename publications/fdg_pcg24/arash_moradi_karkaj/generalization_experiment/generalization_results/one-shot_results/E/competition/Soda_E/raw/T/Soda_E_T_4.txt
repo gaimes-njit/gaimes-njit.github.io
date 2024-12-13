@@ -1,0 +1,27 @@
+To create the letter "T" in a bottom-to-top fashion, we can follow the following steps:
+
+1. Create the base of the "T":
+
+```
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+ab_drop("b31", 11)
+```
+2. Create the vertical line of the "T":
+
+```
+ab_drop("b13", 10)
+ab_drop("b11", 11)
+ab_drop("b13", 12)
+```
+
+Putting it all together, the complete implementation is:
+
+```
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+ab_drop("b31", 11)
+ab_drop("b13", 10)
+ab_drop("b11", 11)
+ab_drop("b13", 12)
+```

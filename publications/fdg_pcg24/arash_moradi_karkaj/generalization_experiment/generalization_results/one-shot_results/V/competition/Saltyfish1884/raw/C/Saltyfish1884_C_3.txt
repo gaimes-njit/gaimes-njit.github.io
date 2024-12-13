@@ -1,0 +1,35 @@
+To generate a structure that resembles the character "C" while meeting all the constraints, follow these steps:
+
+1. Initialize the structure as an empty grid:
+   ```
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. Drop the base block (b11) at the center slot to form a stable foundation:
+   ```
+   ab_drop('b11', W // 2)
+   ```
+
+3. Drop the top horizontal block (b31) right above the base block:
+   ```
+   ab_drop('b31', W // 2)
+   ```
+
+4. Drop the vertical block (b13) at the left slot adjacent to the top horizontal block:
+   ```
+   ab_drop('b13', W // 2 - 1)
+   ```
+
+5. Drop the bottom horizontal block (b31) right below the top horizontal block:
+   ```
+   ab_drop('b31', W // 2)
+   ```
+
+6. Drop the vertical block (b13) at the right slot adjacent to the top horizontal block:
+   ```
+   ab_drop('b13', W // 2 + 1)
+   ```
+
+7. The resulting structure will resemble the character "C" and satisfy all the stability and boundary constraints.
+
+Note: The drop positions and order in steps 3 to 6 are crucial to ensure stability and meet the given constraints. Adjust them if necessary to achieve the desired result.

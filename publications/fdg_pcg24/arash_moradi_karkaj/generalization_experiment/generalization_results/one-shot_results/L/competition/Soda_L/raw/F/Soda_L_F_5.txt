@@ -1,0 +1,30 @@
+To build the letter "F" in the level, we can use the following steps:
+
+1. Place the top bar of the "F":
+   - Drop a horizontal row block ("b31") at the center of the grid (x_position = 10).
+
+```python
+ab_drop("b31", 10)
+```
+
+2. Place the vertical pipe of the "F":
+   - Drop a column block ("b13") below the top bar, at the center-left of the grid (x_position = 9).
+
+```python
+ab_drop("b13", 9)
+```
+
+3. Place the bottom bar of the "F":
+   - Drop a horizontal row block ("b31") below the vertical pipe, at the center of the grid (x_position = 10).
+
+```python
+ab_drop("b31", 10)
+```
+
+The complete implementation to build the letter "F" in the level would be:
+
+```python
+ab_drop("b31", 10)
+ab_drop("b13", 9)
+ab_drop("b31", 10)
+```

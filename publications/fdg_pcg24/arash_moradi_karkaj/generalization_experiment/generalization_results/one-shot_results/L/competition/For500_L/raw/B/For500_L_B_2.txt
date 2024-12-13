@@ -1,0 +1,9 @@
+ab_drop('b31', 9)  # Drop a horizontal block at position 9 for stability
+ab_drop('b13', 11)  # Drop a vertical block at position 11 to resemble the stem of letter B
+ab_drop('b11', 10)  # Drop a square block at position 10 to resemble the middle part of letter B
+ab_drop('b11', 10)  # Drop a square block at position 10 for stability
+ab_drop('b11', 10)  # Drop a square block at position 10 for stability
+ab_drop('b11', 10)  # Drop a square block at position 10 for stability
+ab_drop('b13', 3)  # Drop a vertical block at position 3 to resemble the top curve of letter B
+ab_drop('b13', 0)  # Drop a vertical block at position 0 to resemble the top left part of letter B
+ab_drop('b13', 17)  # Drop a vertical block at position 17 to resemble the top right part of letter B

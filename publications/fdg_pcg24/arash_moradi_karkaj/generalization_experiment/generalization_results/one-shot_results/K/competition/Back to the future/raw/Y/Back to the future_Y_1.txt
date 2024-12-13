@@ -1,0 +1,28 @@
+To generate a stable structure that looks like the uppercase character "Y" using the `ab_drop()` function, we can follow the following steps:
+
+1. Initialize the structure grid as an empty WxH grid using the provided code:
+   ```python
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. Start building the structure from the base (layer 0) upwards. First, drop a b13 block at the center slot (slot 9):
+   ```python
+   ab_drop('b13', 9)
+   ```
+
+3. Next, drop a b31 block above the base, aligned with the bottom right corner of the previous b13 block. This block will provide stability to the structure:
+   ```python
+   ab_drop('b31', 12)
+   ```
+
+4. Now, drop another b31 block above the previous one, aligned with the bottom left corner of the previous b13 block:
+   ```python
+   ab_drop('b31', 6)
+   ```
+
+5. Finally, drop a b11 block above the center slot, aligned with the bottom center of the previous b13 block:
+   ```python
+   ab_drop('b11', 9)
+   ```
+
+This sequence of block drops will result in a stable structure that looks like the uppercase character "Y" when viewed from above. By following the constraints and using the `ab_drop()` function appropriately, we ensure that the structure is stable and satisfies the goal of resembling the letter "Y".

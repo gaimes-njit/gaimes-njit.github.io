@@ -1,0 +1,32 @@
+To form a shape resembling the letter "T" using the given bricks and the ab_drop() function, we can follow these steps:
+
+1. Initialize the field, which is a 20x16 grid, as an array of zeros. (0 represents an empty cell).
+
+2. Start by placing a b31 brick horizontally on the ground. We can use the ab_drop('b31', x) function to do this. Let's choose x = 8, so the brick will occupy cells (7, 0), (8, 0), and (9, 0).
+
+3. Next, place a b11 square brick above the previous b31 brick. Again, we can use the ab_drop('b11', x) function. Choose x = 8, so the brick will occupy cell (8, 1).
+
+4. Now, place the b13 vertical rectangular brick adjacent to the b11 brick. We can use the ab_drop('b13', x) function. Choose x = 9, so the brick will occupy cells (9, 0), (9, 1), and (9, 2).
+
+5. Finally, place another b11 square brick above the b13 brick. Use the ab_drop('b11', x) function. Choose x = 9, so the brick will occupy cell (9, 3).
+
+Here is the code that generates the required structure:
+
+```python
+# Step 1: Initialize t field
+field = [[0] * 20 for _ in range(16)]
+
+# Step 2: Place b31 brick horizontally on the ground
+ab_drop('b31', 8)  # Occupies (7, 0), (8, 0), (9, 0)
+
+# Step 3: Place b11 square brick above the b31 brick
+ab_drop('b11', 8)  # Occupies (8, 1)
+
+# Step 4: Place b13 brick vertically adjacent to the b11 brick
+ab_drop('b13', 9)  # Occupies (9, 0), (9, 1), (9, 2)
+
+# Step 5: Place b11 square brick above the b13 brick
+ab_drop('b11', 9)  # Occupies (9, 3)
+```
+
+The code ensures stability by placing the bricks in a stacked manner, with the common pivot point being the contact point between the b11 and b13 bricks. It also avoids boundary collisions by making sure the occupied cells of the bricks do not exceed the field boundaries.

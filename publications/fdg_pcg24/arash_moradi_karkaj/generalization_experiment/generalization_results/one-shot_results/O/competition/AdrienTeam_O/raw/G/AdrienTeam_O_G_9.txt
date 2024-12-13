@@ -1,0 +1,14 @@
+Here is the `ab_drop()` function calls that will generate a structure resembling the letter "G":
+
+```
+ab_drop('b31', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+ab_drop('b31', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b13', 2)
+```
+
+Make sure to input the commands in the specified order and position to satisfy the constraints and create a stable structure.

@@ -1,0 +1,19 @@
+To create the letter "W" using the given block types, we need to carefully stack and position the blocks in the correct order. Here is a step-by-step guide on how to do it:
+
+1. Start by dropping a horizontal straight block ('b31') at position 1. This will be the middle section of the "W". Use the command: `ab_drop('b31',1)`.
+
+2. Next, drop a vertical straight block ('b13') at position 4. This will be the left side of the "W". Use the command: `ab_drop('b13',4)`.
+
+3. Now, drop another vertical straight block ('b13') at position 7. This will be the right side of the "W". Use the command: `ab_drop('b13',7)`.
+
+4. Finally, drop a horizontal straight block ('b31') at position 10. This will be the bottom section of the "W". Use the command: `ab_drop('b31',10)`.
+
+After executing these commands in sequence, you should have successfully created the letter "W" using the given block types in the defined environment.
+
+Here is the stream of commands:
+```
+ab_drop('b31',1)
+ab_drop('b13',4)
+ab_drop('b13',7)
+ab_drop('b31',10)
+```

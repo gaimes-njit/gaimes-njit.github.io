@@ -1,0 +1,11 @@
+To generate the uppercase English letter "I", we need to use a combination of the block types 'b31' and 'b13'. Here is the stream of ab_drop() commands to construct the letter:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+```

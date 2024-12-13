@@ -1,0 +1,25 @@
+First, we need to build the two outer vertical bars of the letter M. Since the blocks need to be dropped in a bottom-to-top fashion, we start by dropping the bottom blocks first. The letter M has a height of 3 cells, so we drop two "b31" blocks at the bottom:
+
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+
+Next, we need to create the middle diagonal bar of the letter M. We can achieve this by dropping a "b13" block at a higher height, with its center aligned with the center of the letter M. The x_position for the "b13" block can be calculated as (W-1)/2, where W is the width of the grid. In this case, W = 20, so the x_position is 9.
+
+ab_drop("b13", 9)
+
+Finally, we add the two small diagonal bars of the letter M. These bars consist of two "b11" blocks each, dropped at a higher height and at an offset from the center of the letter M. We can calculate the x_position for the blocks using the x_position of the middle diagonal bar.
+
+ab_drop("b11", 7)
+ab_drop("b11", 11)
+ab_drop("b11", 8)
+ab_drop("b11", 10)
+
+Here's the complete implementation:
+
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b13", 9)
+ab_drop("b11", 7)
+ab_drop("b11", 11)
+ab_drop("b11", 8)
+ab_drop("b11", 10)

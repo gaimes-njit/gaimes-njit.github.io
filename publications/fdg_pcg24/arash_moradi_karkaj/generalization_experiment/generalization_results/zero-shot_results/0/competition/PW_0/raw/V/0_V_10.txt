@@ -1,0 +1,116 @@
+To generate the uppercase English letter "V" using the defined block types and environment, you can follow these steps:
+
+1. Place the horizontal straight block (b31) at position (1, 1).
+```
+ab_drop("b31", 1)
+```
+
+2. Place the vertical straight block (b13) at position (2, 1).
+```
+ab_drop("b13", 2)
+```
+
+3. Place the 1x1 square block (b11) at position (2, 2).
+```
+ab_drop("b11", 2)
+```
+
+4. Place the vertical straight block (b13) at position (2, 3).
+```
+ab_drop("b13", 2)
+```
+
+5. Place the horizontal straight block (b31) at position (3, 2).
+```
+ab_drop("b31", 3)
+```
+
+6. Place the 1x1 square block (b11) at position (4, 2).
+```
+ab_drop("b11", 4)
+```
+
+7. Place the vertical straight block (b13) at position (5, 1).
+```
+ab_drop("b13", 5)
+```
+
+8. Place the horizontal straight block (b31) at position (6, 2).
+```
+ab_drop("b31", 6)
+```
+
+9. Place the 1x1 square block (b11) at position (6, 3).
+```
+ab_drop("b11", 6)
+```
+
+10. Place the vertical straight block (b13) at position (7, 1).
+```
+ab_drop("b13", 7)
+```
+
+11. Place the horizontal straight block (b31) at position (8, 2).
+```
+ab_drop("b31", 8)
+```
+
+12. Place the 1x1 square block (b11) at position (9, 2).
+```
+ab_drop("b11", 9)
+```
+
+13. Place the vertical straight block (b13) at position (9, 3).
+```
+ab_drop("b13", 9)
+```
+
+14. Place the horizontal straight block (b31) at position (10, 1).
+```
+ab_drop("b31", 10)
+```
+
+15. Place the vertical straight block (b13) at position (11, 1).
+```
+ab_drop("b13", 11)
+```
+
+16. Place the 1x1 square block (b11) at position (10, 3).
+```
+ab_drop("b11", 10)
+```
+
+17. Place the horizontal straight block (b31) at position (11, 2).
+```
+ab_drop("b31", 11)
+```
+
+18. Place the vertical straight block (b13) at position (12, 1).
+```
+ab_drop("b13", 12)
+```
+
+19. Place the 1x1 square block (b11) at position (12, 2).
+```
+ab_drop("b11", 12)
+```
+
+20. Place the vertical straight block (b13) at position (13, 1).
+```
+ab_drop("b13", 13)
+```
+
+21. Place the horizontal straight block (b31) at position (14, 2).
+```
+ab_drop("b31", 14)
+```
+
+22. Place the 1x1 square block (b11) at position (15, 2).
+```
+ab_drop("b11", 15)
+```
+
+23. Place the vertical straight block (b13) at position (15, 3).
+```
+ab_drop("b13", 15)
+```

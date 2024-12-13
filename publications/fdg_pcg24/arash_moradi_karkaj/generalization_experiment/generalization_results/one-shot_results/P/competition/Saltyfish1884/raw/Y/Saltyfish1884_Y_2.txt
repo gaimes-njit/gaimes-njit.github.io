@@ -1,0 +1,40 @@
+To generate a structure that resembles the character "Y" while meeting all the given constraints, we can follow these steps:
+
+1. First, we need to satisfy the stability constraint. We can start by dropping the b11 block at the bottom layer (layer 0) and at slot 9, which will serve as the base for the structure.
+
+2. Next, we can drop a b31 block on top of the base b11 block. The b31 block should be placed at slot 8 to prevent any overhangs. This will create the vertical stem of the "Y" shape.
+
+3. Now, we can drop two b13 blocks on either side of the stem to form the arms of the "Y" shape. The b13 blocks should be dropped at slots 4 and 14 to maintain stability.
+
+4. Finally, we can drop a b11 block at the top layer (layer 15) and at slot 9 to complete the structure.
+
+The resulting structure will resemble the character "Y" and meet all the given constraints.
+
+Now, let's use the ab_drop() function to implement these steps:
+
+```python
+W = 20  # Width of the map
+H = 16  # Height of the map
+
+# Initialize the structure as an empty WxH grid
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the b11 block at the bottom layer and slot 9
+ab_drop('b11', 9)
+
+# Drop the b31 block on top of the base
+ab_drop('b31', 8)
+
+# Drop the b13 blocks on either side of the stem
+ab_drop('b13', 4)
+ab_drop('b13', 14)
+
+# Drop the b11 block at the top layer and slot 9
+ab_drop('b11', 9)
+
+# Print the resulting structure
+for row in structure:
+    print(''.join(row))
+```
+
+The resulting structure will resemble the character "Y" and meet all the given constraints.

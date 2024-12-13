@@ -1,0 +1,12 @@
+```python
+from ablibrary import ab
+
+def generate_structure():
+    ab.drop("b13", y=9, H=15)
+    ab.drop("b31", y=8, H=12)
+    ab.drop("b31", y=8, H=9)
+    ab.drop("b13", y=9, H=6)
+    ab.drop("b13", y=9, H=3)
+
+generate_structure()
+```

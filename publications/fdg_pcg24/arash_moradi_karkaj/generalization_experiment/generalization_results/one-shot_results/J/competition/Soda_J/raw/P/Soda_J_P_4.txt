@@ -1,0 +1,8 @@
+# Step 1: Create the vertical bar of the letter P
+ab_drop("b31", 5)
+# Step 2: Create the top bar of the letter P
+ab_drop("b13", 4)
+# Step 3: Create the bottom horizontal bar of the letter P
+ab_drop("b31", 4)
+ab_drop("b13", 5)
+ab_drop("b31", 6)

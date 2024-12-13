@@ -1,0 +1,28 @@
+To generate the uppercase English letter "F" using the given block types, we can follow these steps:
+
+1. Start by building the vertical stroke of the letter "F". Place a vertical block (b13) at position 1:
+```
+ab_drop('b13', 1)
+```
+
+2. Place another vertical block (b13) at position 2, one unit to the right of the previous block:
+```
+ab_drop('b13', 2)
+```
+
+3. Place a horizontal block (b31) at position 1, covering the bottom two units of the vertical blocks:
+```
+ab_drop('b31', 1)
+```
+
+4. Place a vertical block (b13) at position 3, one unit to the right of the previous block:
+```
+ab_drop('b13', 3)
+```
+
+5. Place a horizontal block (b31) at position 1, covering the top two units of the vertical blocks:
+```
+ab_drop('b31', 1)
+```
+
+Your final solution should resemble the letter "F" when viewed in the Tetris-like environment.

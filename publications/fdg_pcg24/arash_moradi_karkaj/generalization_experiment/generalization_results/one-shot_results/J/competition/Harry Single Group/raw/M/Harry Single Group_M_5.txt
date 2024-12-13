@@ -1,0 +1,77 @@
+To generate the required structure resembling the letter "M" using the ab_drop(x, y) function, we can follow these steps:
+
+1. Initialize an empty field with a width of 20 and a height of 16.
+
+```
+field = [[0] * 20 for _ in range(16)]
+```
+
+2. Place the first brick 'b13' at the bottom left of the field. This will be the left leg of the 'M'.
+
+```
+ab_drop('b13', 0)
+```
+
+3. Place the second brick 'b31' just to the right of the first brick. This will be the middle part of the 'M'.
+
+```
+ab_drop('b31', 5)
+```
+
+4. Place the third brick 'b13' just to the right of the second brick. This will be the right leg of the 'M'.
+
+```
+ab_drop('b13', 11)
+```
+
+5. Place the fourth brick 'b11' above the middle part of the 'M'. This will be the top part of the 'M'.
+
+```
+ab_drop('b11', 8)
+```
+
+6. Now, we need to ensure stability and avoid boundary collisions.
+
+To ensure stability, we can check if the number of occupied cells on the left and right sides of the pivot differs for the upper brick. In this case, we need to make sure that there is one occupied cell on each side of the pivot. To do this, we can modify the ab_drop() function to check and adjust the x_position if necessary.
+
+To avoid boundary collisions, we can add a check inside the ab_drop() function to ensure that the occupied cells of the brick do not exceed the boundaries of the field.
+
+Below is an example implementation of the modified ab_drop() function:
+
+```python
+def ab_drop(x, y):
+    brick = []
+    if x == 'b31':
+        brick = [[y-1, 0], [y, 0], [y+1, 0]]
+    elif x == 'b13':
+        brick = [[y, 0], [y, 1], [y, 2]]
+    elif x == 'b11':
+        brick = [[y, 0]]
+    
+    # Check for boundary collisions
+    for cell in brick:
+        if cell[0] < 0 or cell[0] >= 20 or cell[1] < 0 or cell[1] >= 16:
+            return
+    
+    # Check if any cells in brick are already occupied
+    for cell in brick:
+        if field[cell[1]][cell[0]] == 1:
+            return
+    
+    # Drop the brick by setting cells to 1
+    for cell in brick:
+        field[cell[1]][cell[0]] = 1
+```
+
+To generate the required structure, we can now execute the following code:
+
+```python
+field = [[0] * 20 for _ in range(16)]
+
+ab_drop('b13', 0)
+ab_drop('b31', 5)
+ab_drop('b13', 11)
+ab_drop('b11', 8)
+```
+
+After executing this code, the field will contain the required structure resembling the letter "M".

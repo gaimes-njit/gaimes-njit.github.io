@@ -1,0 +1,13 @@
+In order to generate a structure in the level that looks like a capital "T", we can break it down into two blocks: a vertical column block and a horizontal row block. Then, we can stack them in the appropriate order and positions to form the desired shape. 
+
+Here's the implementation to achieve this:
+
+```
+# Drop the vertical column block
+ab_drop("b13", 9)
+
+# Drop the horizontal row block
+ab_drop("b31", 9)
+```
+
+By dropping the vertical column block first and then the horizontal row block centered at the same position, we create a structure that resembles the capital letter "T". This implementation ensures stability and similarity to the target shape.

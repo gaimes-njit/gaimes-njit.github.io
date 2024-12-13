@@ -1,0 +1,3 @@
+ab_drop('b13', 5) # Construct the left vertical part of the letter 'Z'
+ab_drop('b31', 6) # Add the horizontal part connecting the left and right vertical parts
+ab_drop('b13', 8) # Construct the right vertical part of the letter 'Z'

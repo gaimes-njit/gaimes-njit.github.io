@@ -1,0 +1,18 @@
+Here is a possible solution to create the structure resembling "Q":
+
+```
+ab_drop('b11', 6)
+ab_drop('b11', 7)
+ab_drop('b11', 8)
+ab_drop('b31', 7)
+ab_drop('b13', 6)
+```
+
+Explanation:
+1. Drop a b11 block at slot 6, which represents the leftmost part of the "Q".
+2. Drop a b11 block at slot 7, aligning its center with the previous block to create the upper left corner of the "Q".
+3. Drop a b11 block at slot 8, aligning its center with the previous block to create the upper middle part of the "Q".
+4. Drop a b31 block at slot 7, aligning its center with the previous block to create the upper diagonal part of the "Q".
+5. Drop a b13 block at slot 6, which represents the bottom part of the "Q".
+
+Note that the order and position of the blocks being dropped are crucial to meet the constraints and create a stable structure resembling a "Q".

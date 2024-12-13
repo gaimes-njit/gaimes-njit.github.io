@@ -1,0 +1,36 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the first block (horizontal block) for the base
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the second block (vertical block) for the left side of the "B"
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+
+# Drop the third block (horizontal block) for the middle section of the "B"
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b11', 12)
+
+# Drop the fourth block (vertical block) for the right side of the "B"
+ab_drop('b11', 12)
+ab_drop('b11', 12)
+
+# Drop the fifth block (horizontal block) for the top section of the "B"
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Drop the sixth block (vertical block) for the connection between the top and bottom sections of the "B"
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+
+# Drop the seventh block (horizontal block) for the bottom section of the "B"
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+```

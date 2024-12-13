@@ -1,0 +1,95 @@
+Here is a possible solution to create an "S" shape using the `ab_drop()` function:
+
+```
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Step 1: Drop the vertical block 'b13' in the leftmost slot (slot 0) at the bottom layer (layer 0)
+ab_drop('b13', 0)
+
+# Step 2: Drop the horizontal block 'b31' in slot 2 at the bottom layer (layer 0)
+ab_drop('b31', 2)
+
+# Step 3: Drop the horizontal block 'b11' in slot 4 at the bottom layer (layer 0)
+ab_drop('b11', 4)
+
+# Step 4: Drop the vertical block 'b13' in the rightmost slot (slot 19) at the bottom layer (layer 0)
+ab_drop('b13', 19)
+
+# Step 5: Drop the horizontal block 'b31' in slot 16 at the first layer (layer 1)
+ab_drop('b31', 16)
+
+# Step 6: Drop the horizontal block 'b31' in slot 13 at the second layer (layer 2)
+ab_drop('b31', 13)
+
+# Step 7: Drop the horizontal block 'b11' in slot 11 at the third layer (layer 3)
+ab_drop('b11', 11)
+
+# Step 8: Drop the horizontal block 'b11' in slot 18 at the fourth layer (layer 4)
+ab_drop('b11', 18)
+
+# Step 9: Drop the vertical block 'b13' in the leftmost slot (slot 0) at the fifth layer (layer 5)
+ab_drop('b13', 0)
+
+# Step 10: Drop the horizontal block 'b11' in slot 2 at the fifth layer (layer 5)
+ab_drop('b11', 2)
+
+# Step 11: Drop the vertical block 'b13' in the rightmost slot (slot 19) at the fifth layer (layer 5)
+ab_drop('b13', 19)
+
+# Step 12: Drop the horizontal block 'b11' in slot 17 at the sixth layer (layer 6)
+ab_drop('b11', 17)
+
+# Step 13: Drop the horizontal block 'b11' in slot 8 at the seventh layer (layer 7)
+ab_drop('b11', 8)
+
+# Step 14: Drop the vertical block 'b13' in the leftmost slot (slot 3) at the eighth layer (layer 8)
+ab_drop('b13', 3)
+
+# Step 15: Drop the horizontal block 'b11' in slot 5 at the eighth layer (layer 8)
+ab_drop('b11', 5)
+
+# Step 16: Drop the vertical block 'b13' in the rightmost slot (slot 16) at the eighth layer (layer 8)
+ab_drop('b13', 16)
+
+# Step 17: Drop the horizontal block 'b31' in slot 9 at the ninth layer (layer 9)
+ab_drop('b31', 9)
+
+# Step 18: Drop the horizontal block 'b31' in slot 13 at the tenth layer (layer 10)
+ab_drop('b31', 13)
+
+# Step 19: Drop the horizontal block 'b11' in slot 2 at the eleventh layer (layer 11)
+ab_drop('b11', 2)
+
+# Step 20: Drop the horizontal block 'b11' in slot 19 at the twelfth layer (layer 12)
+ab_drop('b11', 19)
+
+# Step 21: Drop the vertical block 'b13' in the leftmost slot (slot 0) at the thirteenth layer (layer 13)
+ab_drop('b13', 0)
+
+# Step 22: Drop the horizontal block 'b11' in slot 3 at the thirteenth layer (layer 13)
+ab_drop('b11', 3)
+
+# Step 23: Drop the vertical block 'b13' in the rightmost slot (slot 19) at the thirteenth layer (layer 13)
+ab_drop('b13', 19)
+
+# Step 24: Drop the horizontal block 'b11' in slot 16 at the fourteenth layer (layer 14)
+ab_drop('b11', 16)
+
+# Step 25: Drop the horizontal block 'b31' in slot 10 at the fifteenth layer (layer 15)
+ab_drop('b31', 10)
+
+# Step 26: Drop the horizontal block 'b11' in slot 7 at the fifteenth layer (layer 15)
+ab_drop('b11', 7)
+
+# Step 27: Drop the vertical block 'b13' in the leftmost slot (slot 4) at the fifteenth layer (layer 15)
+ab_drop('b13', 4)
+
+# Step 28: Drop the horizontal block 'b11' in slot 6 at the fifteenth layer (layer 15)
+ab_drop('b11', 6)
+
+# Step 29: Drop the vertical block 'b13' in the rightmost slot (slot 14) at the fifteenth layer (layer 15)
+ab_drop('b13', 14)
+```
+
+This will create a stable structure resembling the letter "S" that satisfies all the specified constraints.

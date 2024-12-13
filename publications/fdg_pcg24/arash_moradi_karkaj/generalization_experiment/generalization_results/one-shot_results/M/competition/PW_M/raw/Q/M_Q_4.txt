@@ -1,0 +1,13 @@
+To generate the uppercase letter "Q", we need to construct the vertical and horizontal components of the letter. First, we will create the vertical component by stacking the vertical blocks on top of each other. Then, we will add the horizontal component by placing the horizontal block on top.
+
+Here is the sequence of ab_drop() commands to generate the letter "Q":
+```
+ab_drop('b13', 1)  // Place the first vertical block at position 1
+ab_drop('b13', 3)  // Place the second vertical block at position 3
+ab_drop('b13', 4)  // Place the third vertical block at position 4
+ab_drop('b13', 6)  // Place the fourth vertical block at position 6
+ab_drop('b31', 2)  // Place the horizontal block on top at position 2
+ab_drop('b31', 5)  // Place the horizontal block on top at position 5
+```
+
+By following these commands, you will construct the uppercase letter "Q" with the given block types and gravity rules.

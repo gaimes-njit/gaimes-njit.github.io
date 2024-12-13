@@ -1,0 +1,60 @@
+```
+def ab_drop():
+    return 'ab_drop'
+
+# Define the database
+database = {
+    'A': [
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop
+    ],
+    'B': [
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop
+    ],
+    'C': [
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop
+    ],
+    'D': [
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop
+    ],
+    'E': [
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop
+    ],
+    'F': [
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop
+    ],
+    'G': [
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop
+    ],
+    'H': [
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop
+    ],
+    'I': [
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop
+    ],
+    'J': [
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop
+    ],
+    'K': [
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab_drop,
+        ab_drop, ab_drop, ab_drop, ab_drop, ab

@@ -1,0 +1,23 @@
+The letter Q can be constructed using the following blocks and positions:
+
+```
+# Horizontal line at the bottom
+ab_drop("b31", 4)
+ab_drop("b31", 5)
+ab_drop("b31", 6)
+ab_drop("b31", 7)
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+
+# Vertical line on the right side
+ab_drop("b13", 14)
+ab_drop("b13", 15)
+ab_drop("b13", 16)
+
+# Top dot of Q
+ab_drop("b11", 15)
+```
+
+This arrangement of blocks will form a Q shape on the grid and ensure stability.

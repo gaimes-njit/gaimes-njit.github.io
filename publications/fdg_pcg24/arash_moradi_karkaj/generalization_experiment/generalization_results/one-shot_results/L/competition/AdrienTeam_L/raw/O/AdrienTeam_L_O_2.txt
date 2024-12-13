@@ -1,0 +1,10 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the blocks to construct "O"
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+```

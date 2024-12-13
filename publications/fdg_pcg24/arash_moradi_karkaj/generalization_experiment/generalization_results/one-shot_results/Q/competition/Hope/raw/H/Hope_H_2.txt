@@ -1,0 +1,39 @@
+To create the letter "H" using ab_drop('blocktype', x position), you can follow the steps below:
+
+Step 1: Draw the left vertical line of the "H".
+- Drop a b31 block at position (8, 4).
+
+ab_drop('b31', 8)
+
+Step 2: Draw the horizontal line of the "H".
+- Drop a b13 block at positions (5, 8), (6, 8), and (7, 8).
+
+ab_drop('b13', 5)
+ab_drop('b13', 6)
+ab_drop('b13', 7)
+
+Step 3: Draw the right vertical line of the "H".
+- Drop a b31 block at position (12, 4).
+
+ab_drop('b31', 12)
+
+The final structure of the letter "H" should be:
+
+```
+00000000000000000000
+00000000000000000000
+00000000000000000000
+0000000000bbbbbb0000
+0000000000bbbbbb0000
+0000000000bbbbbb0000
+0000000000bbbbbb0000
+0000000000bbbbbb0000
+0000000000bbbbbb0000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+```

@@ -1,0 +1,15 @@
+```python
+from ab import *
+
+def generate_B_structure():
+    # Start by dropping the vertical block b13 at layer H-1 to create the stem of the B
+    drop(b13, y=9, from_layer=15)
+    
+    # Next, drop the horizontal block b31 to create the top part of the B
+    drop(b31, y=8, from_layer=12)
+    
+    # Finally, drop the square block b11 to complete the bottom part of the B
+    drop(b11, y=9, from_layer=8)
+    
+generate_B_structure()
+```

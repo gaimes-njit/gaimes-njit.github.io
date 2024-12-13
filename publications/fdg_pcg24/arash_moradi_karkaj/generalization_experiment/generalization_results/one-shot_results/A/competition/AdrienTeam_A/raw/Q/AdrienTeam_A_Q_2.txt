@@ -1,0 +1,15 @@
+In order to create a stable structure resembling "Q" while satisfying all the given constraints, we need to carefully plan the placement of each block using the `ab_drop()` function. Here is one possible configuration:
+
+```
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 5)
+ab_drop('b11', 5)
+ab_drop('b31', 4)
+ab_drop('b11', 7)
+ab_drop('b11', 9)
+ab_drop('b31', 6)
+ab_drop('b11', 6)
+```
+
+This configuration starts from the bottom layer (layer 0) and builds the structure upwards. It ensures that there is no boundary intrusion, the y-coordinate corresponds to the block's center, and gravity is taken into account. The blocks are placed in a way that forms a proportional shape resembling the letter "Q".

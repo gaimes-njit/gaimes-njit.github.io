@@ -1,0 +1,25 @@
+To generate a structure in the shape of a capital "Z", we can break it down into three blocks:
+1. The horizontal top bar of the "Z"
+2. The vertical middle part of the "Z"
+3. The horizontal bottom bar of the "Z"
+
+Using the hints provided, we can create the "Z" structure as follows:
+
+```
+# Step 1: Create the horizontal top bar of the "Z"
+ab_drop("b31", 7)
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+
+# Step 2: Create the vertical middle part of the "Z"
+ab_drop("b13", 7)
+ab_drop("b13", 8)
+ab_drop("b13", 9)
+
+# Step 3: Create the horizontal bottom bar of the "Z"
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+```
+
+This series of `ab_drop()` calls will generate a structure that looks like the capital letter "Z" in the level. The blocks are placed in a bottom-to-top fashion to ensure stability.

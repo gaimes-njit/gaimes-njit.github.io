@@ -1,0 +1,20 @@
+First, let's start building the base structure of the letter P. We will use a column block "b13" and a row block "b31" to create the shape. Here's the code to drop the blocks and create the base:
+
+ab_drop("b31", 8)
+ab_drop("b13", 7)
+ab_drop("b13", 8)
+ab_drop("b13", 9)
+
+This will create the base structure of the letter P. Now, let's add the top part of the letter. We will use a row block "b31" and a square block "b11" to create the top part. Here's the code to add the top:
+
+ab_drop("b31", 8)
+ab_drop("b11", 7)
+
+And that's it! The complete implementation to create the letter P in the level is as follows:
+
+ab_drop("b31", 8)
+ab_drop("b13", 7)
+ab_drop("b13", 8)
+ab_drop("b13", 9)
+ab_drop("b31", 8)
+ab_drop("b11", 7)

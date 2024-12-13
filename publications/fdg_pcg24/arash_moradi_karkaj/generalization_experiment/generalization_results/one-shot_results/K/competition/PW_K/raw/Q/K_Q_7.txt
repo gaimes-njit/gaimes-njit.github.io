@@ -1,0 +1,44 @@
+To create the letter "Q" using the given block types, we can follow these steps:
+
+1. Start by placing a vertical straight block at position (1, 1) using the `ab_drop('b13', 1)` command.
+2. Place a horizontal straight block at position (1, 2) using the `ab_drop('b31', 1)` command.
+3. Place a horizontal straight block at position (2, 2) using the `ab_drop('b31', 2)` command.
+4. Place a vertical straight block at position (4, 2) using the `ab_drop('b13', 2)` command.
+5. Place a vertical straight block at position (1, 3) using the `ab_drop('b13', 1)` command.
+6. Place a vertical straight block at position (4, 3) using the `ab_drop('b13', 4)` command.
+7. Place a horizontal straight block at position (1, 4) using the `ab_drop('b31', 1)` command.
+8. Place a horizontal straight block at position (3, 4) using the `ab_drop('b31', 3)` command.
+9. Place a vertical straight block at position (2, 5) using the `ab_drop('b13', 2)` command.
+10. Place a vertical straight block at position (4, 5) using the `ab_drop('b13', 4)` command.
+11. Place a horizontal straight block at position (1, 6) using the `ab_drop('b31', 1)` command.
+12. Place a horizontal straight block at position (4, 6) using the `ab_drop('b31', 4)` command.
+13. Place a vertical straight block at position (1, 7) using the `ab_drop('b13', 1)` command.
+14. Place a vertical straight block at position (4, 7) using the `ab_drop('b13', 4)` command.
+15. Place a horizontal straight block at position (1, 8) using the `ab_drop('b31', 1)` command.
+16. Place a horizontal straight block at position (2, 8) using the `ab_drop('b31', 2)` command.
+17. Place a horizontal straight block at position (3, 8) using the `ab_drop('b31', 3)` command.
+18. Place a vertical straight block at position (4, 8) using the `ab_drop('b13', 4)` command.
+19. Place a vertical straight block at position (4, 9) using the `ab_drop('b13', 4)` command.
+
+Here is the complete stream of commands to generate the letter "Q":
+```
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b13', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 4)
+ab_drop('b31', 1)
+ab_drop('b31', 3)
+ab_drop('b13', 2)
+ab_drop('b13', 4)
+ab_drop('b31', 1)
+ab_drop('b31', 4)
+ab_drop('b13', 1)
+ab_drop('b13', 4)
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+ab_drop('b13', 4)
+ab_drop('b13', 4)
+```

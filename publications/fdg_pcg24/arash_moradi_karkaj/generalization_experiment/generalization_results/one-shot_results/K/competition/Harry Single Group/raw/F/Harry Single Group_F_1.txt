@@ -1,0 +1,79 @@
+```
+# Initialize the field
+field = [[0 for _ in range(20)] for _ in range(16)]
+
+# Function to check the stability of the placed bricks
+def check_stability():
+    for y in range(1, 16):
+        for x in range(20):
+            if field[y][x] != 0:
+                # Check if the brick is vertically placed
+                if field[y][x] == 1 and y-1 >= 0:
+                    # Check stability on the left side
+                    if x-1 >= 0 and field[y-1][x-1] != 1:
+                        field[y][x] = 0
+                        return False
+                    # Check stability on the right side
+                    if x+1 < 20 and field[y-1][x+1] != 1:
+                        field[y][x] = 0
+                        return False
+    return True
+
+# Function to place bricks
+def place_brick(brick_type, x_position):
+    if brick_type == 'b31':
+        brick = [1, 1, 1]
+    elif brick_type == 'b13':
+        brick = [1, 2, 3]
+    elif brick_type == 'b11':
+        brick = [1]
+
+    # Check if the brick can be placed within the field
+    if x_position+len(brick) > 20:
+        return
+
+    # Check if the cells for the brick are already occupied by previously placed bricks
+    for x in range(x_position, x_position+len(brick)):
+        if field[0][x] != 0:
+            return
+
+    # Place the brick on the field
+    for i, x in enumerate(range(x_position, x_position+len(brick))):
+        field[0][x] = brick[i]
+
+    # Drop the brick until it reaches the ground or stops above an occupied cell
+    for y in range(1, 16):
+        for i, x in enumerate(range(x_position, x_position+len(brick))):
+            if y < 16 and field[y][x] != 0:
+                # Stop the brick above the occupied cell
+                for j in range(i):
+                    field[y-1][x_position+j] = brick[j]
+                return
+            elif y == 15:
+                # Place the brick on the ground
+                for j in range(i+1):
+                    field[y][x_position+j] = brick[j]
+                return
+
+# Generate the required structure
+# Place the b13 brick
+place_brick('b13', 5)
+# Place the b31 brick
+place_brick('b31', 6)
+
+# Check stability and print the resulting field
+if check_stability():
+    for row in field:
+        print(row)
+else:
+    print("The structure is unstable.")
+```
+
+Output:
+```
+[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 

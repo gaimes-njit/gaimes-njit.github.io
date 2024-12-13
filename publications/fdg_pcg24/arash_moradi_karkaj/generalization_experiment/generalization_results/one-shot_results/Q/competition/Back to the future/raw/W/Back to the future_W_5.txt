@@ -1,0 +1,19 @@
+To generate a stable structure that looks like the uppercase character "W" using the `ab_drop()` function, we can follow these steps:
+
+1. Start by initializing the structure as an empty grid using the `structure` variable: `structure = [[' ']*W for _ in range(H)]`.
+
+2. Drop the first b31 block at the center slot of the bottom layer using `ab_drop('b31', W/2)`. This will provide a stable base for the rest of the structure.
+
+3. Drop two b13 blocks on top of the base to form the center peaks of the "W" shape. Place these blocks at slots W/4 and 3W/4 on the second layer using `ab_drop('b13', W/4)` and `ab_drop('b13', 3W/4)`.
+
+4. Drop two b31 blocks on top of the center peaks to form the outer peaks of the "W" shape. Place these blocks at slots W/4 and 3W/4 on the third layer using `ab_drop('b31', W/4)` and `ab_drop('b31', 3W/4)`.
+
+5. Drop three b11 blocks on top of the outer peaks to complete the "W" shape. Place these blocks at slots W/4, W/2, and 3W/4 on the fourth layer using `ab_drop('b11', W/4)`, `ab_drop('b11', W/2)`, and `ab_drop('b11', 3W/4)`.
+
+6. Repeat steps 3-5 for the rest of the layers, alternating between the center peaks and the outer peaks.
+
+7. After generating the entire structure, check its stability to ensure that each block has a stable support below it. If any blocks are unstable, adjust the placement of the blocks to improve stability.
+
+8. Finally, check if the generated structure resembles the uppercase letter "W" and make any necessary adjustments to the block placement to achieve the desired shape.
+
+Remember to always list the coordinates of the `ab_drop` function calls to keep track of the block placement. Additionally, ensure that the `y` parameter in `ab_drop` is an accurate coordinate instead of a formula with `W` to maintain consistency and avoid errors.

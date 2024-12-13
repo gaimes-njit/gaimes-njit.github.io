@@ -1,0 +1,25 @@
+The first step is to create the top bar of the letter "J". We can achieve this by dropping a row block ("b31") at x_position=8.
+
+```python
+ab_drop("b31", 8)
+```
+
+Next, we need to create the vertical part of the letter "J". We can do this by dropping a column block ("b13") at x_position=9.
+
+```python
+ab_drop("b13", 9)
+```
+
+Finally, we need to create the bottom tick of the letter "J" by dropping another row block ("b31") at x_position=9.
+
+```python
+ab_drop("b31", 9)
+```
+
+Here is the complete implementation:
+
+```python
+ab_drop("b31", 8)
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+```

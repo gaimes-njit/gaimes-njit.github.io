@@ -1,0 +1,8 @@
+ab_drop('b13', 7)  # Place a vertical block at index 7
+ab_drop('b31', 11)  # Place a horizontal block at index 11
+ab_drop('b31', 10)  # Place a horizontal block at index 10
+ab_drop('b31', 9)   # Place a horizontal block at index 9
+ab_drop('b31', 8)   # Place a horizontal block at index 8
+ab_drop('b31', 9)   # Place a horizontal block at index 9
+ab_drop('b31', 10)  # Place a horizontal block at index 10
+ab_drop('b13', 7)  # Place a vertical block at index 7

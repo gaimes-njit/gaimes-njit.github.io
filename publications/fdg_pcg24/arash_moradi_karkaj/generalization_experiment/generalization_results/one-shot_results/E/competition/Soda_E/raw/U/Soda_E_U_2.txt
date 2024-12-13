@@ -1,0 +1,29 @@
+First, let's build the base of the U shape by placing two row blocks horizontally. We will center them at x_position=9 and x_position=10:
+
+```
+ab_drop("b31", 8)
+ab_drop("b31", 11)
+```
+
+Now, let's build the two vertical pillars of the U shape. We will place two column blocks starting from the bottom of each pillar. For the left pillar, we will center it at x_position=7 and for the right pillar, we will center it at x_position=12:
+
+```
+ab_drop("b13", 6)
+ab_drop("b13", 13)
+```
+
+Finally, let's build the top horizontal bar of the U shape. We will place a row block and center it at x_position=10:
+
+```
+ab_drop("b31", 9)
+```
+
+The complete implementation for generating a U shape in the level is as follows:
+
+```
+ab_drop("b31", 8)
+ab_drop("b31", 11)
+ab_drop("b13", 6)
+ab_drop("b13", 13)
+ab_drop("b31", 9)
+```

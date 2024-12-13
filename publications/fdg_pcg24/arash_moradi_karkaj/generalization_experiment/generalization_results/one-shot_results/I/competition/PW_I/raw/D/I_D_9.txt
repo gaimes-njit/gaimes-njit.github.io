@@ -1,0 +1,15 @@
+To generate the uppercase letter "D", we can use a combination of block types b31 and b13. Here is the stream of ab_drop() commands to create the letter "D":
+
+```
+ab_drop('b31',1)
+ab_drop('b31',1)
+ab_drop('b31',1)
+ab_drop('b31',1)
+ab_drop('b13',4)
+ab_drop('b13',4)
+ab_drop('b13',4)
+ab_drop('b11',6)
+ab_drop('b11',2)
+```
+
+This stream of commands will create the shape of the letter "D" within the allowed space boundaries.

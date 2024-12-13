@@ -1,0 +1,5 @@
+# Solution
+
+ab_drop('b13', 0)  # Place the left vertical segment of the 'Z' shape
+ab_drop('b31', 1)  # Place the horizontal segment of the 'Z' shape
+ab_drop('b13', 3)  # Place the right vertical segment of the 'Z' shape

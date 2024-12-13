@@ -1,0 +1,4 @@
+ab_drop('b31', 10)  # left part of 'X'
+ab_drop('b11', 9)   # bottom left part of 'X'
+ab_drop('b11', 11)  # bottom right part of 'X'
+ab_drop('b31', 10)  # right part of 'X'

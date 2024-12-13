@@ -1,0 +1,4 @@
+ab_drop('b13', 9)  # drop the bottom part of 'O'
+ab_drop('b13', 8)  # drop the left part of 'O'
+ab_drop('b31', 9)  # drop the middle part of 'O'
+ab_drop('b13', 10)  # drop the right part of 'O'

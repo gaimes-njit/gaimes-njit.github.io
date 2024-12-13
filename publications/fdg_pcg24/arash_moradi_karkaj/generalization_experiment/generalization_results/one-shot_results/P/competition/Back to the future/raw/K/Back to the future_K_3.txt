@@ -1,0 +1,9 @@
+To generate a stable structure that looks like the letter "K" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the structure as an empty grid using the `structure` variable.
+2. Start by dropping the vertical block, b13, in the center of the bottom layer (layer 0) using the `ab_drop()` function. The center slot (y) can be calculated as W/2 - 1, where W is the width of the map.
+3. After dropping the vertical block, drop two horizontal blocks, b31, above it. The center slot (y) for the first horizontal block can be calculated as W/2 - 2, and for the second horizontal block as W/2.
+4. Next, drop another vertical block, b13, above the left side of the previous vertical block. Calculate the center slot (y) as W/2 - 1.
+5. Finally, drop a horizontal block, b31, above the second vertical block. Calculate the center slot (y) as W/2 - 1.
+
+After following these steps, the `structure` should resemble the uppercase character "K" and meet all the hard constraints. The exact coordinates of `ab_drop()` calls will depend on the values of W and H.

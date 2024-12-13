@@ -1,0 +1,16 @@
+To generate a stable structure that resembles the character "E", we can follow these steps:
+
+1. Start by dropping two b13 blocks aligned with the leftmost and rightmost slots (0 and 19).
+   - Call the `ab_drop('b13', 0)` function to drop the left block.
+   - Call the `ab_drop('b13', 19)` function to drop the right block.
+
+2. Drop a b31 block aligned with the second slot from the left (slot 1) to connect the two vertical blocks.
+   - Call the `ab_drop('b31', 1)` function to drop the block.
+
+3. Drop a b11 block aligned with the second slot from the left (slot 1) in the third layer (layer 2) to form the horizontal upper part of the "E".
+   - Call the `ab_drop('b11', 1)` function to drop the block.
+
+4. Drop another b11 block aligned with the second slot from the left (slot 1) in the second layer (layer 1) to complete the vertical part of the "E".
+   - Call the `ab_drop('b11', 1)` function to drop the block.
+
+The final structure will resemble the character "E" and will meet all the hard constraints of stability and no boundary intrusion.

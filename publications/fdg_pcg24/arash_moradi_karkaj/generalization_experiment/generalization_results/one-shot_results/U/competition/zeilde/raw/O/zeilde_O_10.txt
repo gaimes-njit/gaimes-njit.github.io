@@ -1,0 +1,45 @@
+1. Drawing of letter "O" with asterisks:
+```
+*****
+*   *
+*   *
+*   *
+*****
+```
+
+2. Asterisks and spaces generated in each row:
+Row 1: 5 asterisks
+Row 2: 1 asterisk, 3 spaces, 1 asterisk
+Row 3: 1 asterisk, 3 spaces, 1 asterisk
+Row 4: 1 asterisk, 3 spaces, 1 asterisk
+Row 5: 5 asterisks
+
+3. Asterisks as "x" and spaces as "y":
+Row 1: 5x
+Row 2: 1x, 3y, 1x
+Row 3: 1x, 3y, 1x
+Row 4: 1x, 3y, 1x
+Row 5: 5x
+
+4. Side-by-side representation of x and y:
+Row 1: xxxxx
+Row 2: xyxyx
+Row 3: xyxyx
+Row 4: xyxyx
+Row 5: xxxxx
+
+5. Position of each variable:
+Row 1: x-1; x-2; x-3; x-4; x-5
+Row 2: x-1; y-2; x-3; y-4; x-5
+Row 3: x-1; y-2; x-3; y-4; x-5
+Row 4: x-1; y-2; x-3; y-4; x-5
+Row 5: x-1; x-2; x-3; x-4; x-5
+
+6. Sequence of `ab_drop` function calls:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

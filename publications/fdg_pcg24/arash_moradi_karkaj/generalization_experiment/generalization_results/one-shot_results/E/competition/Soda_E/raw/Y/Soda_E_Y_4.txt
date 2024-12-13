@@ -1,0 +1,8 @@
+First, let's start by building the base of the letter Y.
+
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+ab_drop("b31", 10)
+ab_drop("b11", 9)
+ab_drop("b31", 11)
+ab_drop("b11", 10)

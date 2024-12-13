@@ -1,0 +1,19 @@
+To generate the uppercase letter "M", we can break it down into three parts: the left leg, the middle, and the right leg.
+
+First, let's start with the left leg. We'll use two vertical straight blocks (b13) to create it:
+
+ab_drop('b13',1)
+ab_drop('b13',2)
+
+Next, let's move on to the middle part of the letter. We'll use a horizontal straight block (b31) followed by two square blocks (b11) to create it:
+
+ab_drop('b31',2)
+ab_drop('b11',1)
+ab_drop('b11',3)
+
+Finally, let's create the right leg of the letter. We'll use two vertical straight blocks (b13) again to complete it:
+
+ab_drop('b13',2)
+ab_drop('b13',3)
+
+By executing these commands in order, we will generate the uppercase letter "M" in the Tetris-like environment.

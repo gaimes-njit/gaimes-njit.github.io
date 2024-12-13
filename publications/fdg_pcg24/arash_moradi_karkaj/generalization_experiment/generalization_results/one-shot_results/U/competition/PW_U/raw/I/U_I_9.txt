@@ -1,0 +1,23 @@
+To generate the uppercase English letter "I", we will need to use one horizontal straight block (b31) and two vertical straight blocks (b13). Here are the steps to construct the letter "I":
+
+1. Place the horizontal straight block (b31) at position 2:
+```
+ab_drop('b31',2)
+```
+
+2. Place the first vertical straight block (b13) at position 1:
+```
+ab_drop('b13',1)
+```
+
+3. Place the second vertical straight block (b13) at position 3:
+```
+ab_drop('b13',3)
+```
+
+The final stream of commands to generate the letter "I" looks like this:
+```
+ab_drop('b31',2)
+ab_drop('b13',1)
+ab_drop('b13',3)
+```

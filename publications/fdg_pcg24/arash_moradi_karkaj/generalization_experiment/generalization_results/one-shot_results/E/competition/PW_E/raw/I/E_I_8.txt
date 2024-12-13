@@ -1,0 +1,13 @@
+To generate the uppercase English letter "I", you can use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+```

@@ -1,0 +1,21 @@
+To create the structure "G" inside a 20*16 box, we can use the following ab_drop commands:
+
+1. Start by placing the top horizontal line of the "G":
+
+ab_drop('b31', 1)
+
+This will place a 3*1 block starting at position (1,0).
+
+2. Next, place the vertical line of the "G":
+
+ab_drop('b13', 4)
+
+This will place a 1*3 block starting at position (4,0).
+
+3. Finally, place the bottom horizontal line of the "G":
+
+ab_drop('b31', 1)
+
+This will place another 3*1 block starting at position (1,2).
+
+The structure will now look like the letter "G" inside the 20*16 box.

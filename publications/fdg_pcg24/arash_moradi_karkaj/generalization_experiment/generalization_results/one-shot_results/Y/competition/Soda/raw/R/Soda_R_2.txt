@@ -1,0 +1,80 @@
+To create the letter "R" in the Tetris game, we can use a combination of square blocks (b11) and row blocks (b31).
+
+Here is the step-by-step implementation:
+
+Step 1: Add the base of the letter "R" using a row block (b31).
+```
+ab_drop("b31", 1)
+```
+
+Step 2: Add the vertical line of the letter "R" using a square block (b11).
+```
+ab_drop("b11", 3)
+```
+
+Step 3: Add the diagonal line of the letter "R" using a square block (b11).
+```
+ab_drop("b11", 5)
+```
+
+Step 4: Add the horizontal line of the letter "R" using a square block (b11).
+```
+ab_drop("b11", 8)
+```
+
+Step 5: Add the top part of the letter "R" using a square block (b11).
+```
+ab_drop("b11", 9)
+```
+
+Step 6: Add the diagonal line of the letter "R" using a square block (b11).
+```
+ab_drop("b11", 10)
+```
+
+Step 7: Add the vertical line of the letter "R" using a square block (b11).
+```
+ab_drop("b11", 11)
+```
+
+Step 8: Add the diagonal line of the letter "R" using a square block (b11).
+```
+ab_drop("b11", 12)
+```
+
+Step 9: Add the horizontal line of the letter "R" using a square block (b11).
+```
+ab_drop("b11", 15)
+```
+
+Step 10: Add the top part of the letter "R" using a square block (b11).
+```
+ab_drop("b11", 16)
+```
+
+Step 11: Add the diagonal line of the letter "R" using a square block (b11).
+```
+ab_drop("b11", 17)
+```
+
+Step 12: Add the vertical line of the letter "R" using a square block (b11).
+```
+ab_drop("b11", 18)
+```
+
+The complete implementation for creating the letter "R" in the Tetris game is as follows:
+
+```
+ab_drop("b31", 1)
+ab_drop("b11", 3)
+ab_drop("b11", 5)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 11)
+ab_drop("b11", 12)
+ab_drop("b11", 15)
+ab_drop("b11", 16)
+ab_drop("b11", 17)
+ab_drop("b11", 18)
+```

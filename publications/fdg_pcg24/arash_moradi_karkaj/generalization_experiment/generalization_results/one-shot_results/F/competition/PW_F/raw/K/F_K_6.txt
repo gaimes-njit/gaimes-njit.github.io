@@ -1,0 +1,18 @@
+To generate the uppercase English letter "K" using the given block types, you can follow these steps:
+
+1. Begin by dropping a vertical straight block (b13) at position 1.
+2. Drop another vertical straight block (b13) at position 2.
+3. Next, drop a horizontal straight block (b31) at position 2.
+4. Repeat steps 1 and 2.
+5. Finally, drop another horizontal straight block (b31) at position 2.
+
+The stream of commands would look like this:
+
+```
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b31',2)
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b31',2)
+```

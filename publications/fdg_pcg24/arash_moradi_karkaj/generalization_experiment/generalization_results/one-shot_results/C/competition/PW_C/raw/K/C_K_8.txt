@@ -1,0 +1,27 @@
+To generate the uppercase English letter "K," we can follow these steps:
+
+1. Create the left vertical stroke of the letter "K" using two vertical blocks (b13), starting from position 1.
+```
+ab_drop('b13',1)
+ab_drop('b13',1)
+```
+
+2. Create the horizontal stroke of the letter "K" using a horizontal block (b31), starting from position 2.
+```
+ab_drop('b31',2)
+```
+
+3. Create the right vertical stroke of the letter "K" using two vertical blocks (b13), starting from position 3.
+```
+ab_drop('b13',3)
+ab_drop('b13',3)
+```
+
+Combined, the stream of commands to generate the uppercase English letter "K" would be:
+```
+ab_drop('b13',1)
+ab_drop('b13',1)
+ab_drop('b31',2)
+ab_drop('b13',3)
+ab_drop('b13',3)
+```

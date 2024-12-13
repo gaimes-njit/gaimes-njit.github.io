@@ -1,0 +1,102 @@
+To generate a stable structure that resembles the character "Z" while meeting all hard constraints, we can follow these steps:
+
+Step 1: Initialize the structure as an empty WxH grid.
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Place the b13 block on the base to act as the foundation.
+```python
+ab_drop('b13', 9)
+```
+
+Step 3: Place the b31 block on top of the b13 block, ensuring stability.
+```python
+ab_drop('b31', 9)
+```
+
+Step 4: Place the b13 block on top of the b31 block, ensuring stability.
+```python
+ab_drop('b13', 8)
+```
+
+Step 5: Place the b31 block on top of the b13 block, ensuring stability.
+```python
+ab_drop('b31', 8)
+```
+
+Step 6: Place the b13 block adjacent to the previous b13 block.
+```python
+ab_drop('b13', 7)
+```
+
+Step 7: Place the b11 block on top of the previous b13 block, ensuring stability.
+```python
+ab_drop('b11', 7)
+```
+
+Step 8: Place the b13 block adjacent to the previous b13 block.
+```python
+ab_drop('b13', 6)
+```
+
+Step 9: Place the b11 block on top of the previous b13 block, ensuring stability.
+```python
+ab_drop('b11', 6)
+```
+
+Step 10: Place the b13 block adjacent to the previous b13 block.
+```python
+ab_drop('b13', 5)
+```
+
+Step 11: Place the b11 block on top of the previous b13 block, ensuring stability.
+```python
+ab_drop('b11', 5)
+```
+
+Step 12: Place the b13 block adjacent to the previous b13 block.
+```python
+ab_drop('b13', 4)
+```
+
+Step 13: Place the b11 block on top of the previous b13 block, ensuring stability.
+```python
+ab_drop('b11', 4)
+```
+
+Step 14: Place the b13 block adjacent to the previous b13 block.
+```python
+ab_drop('b13', 3)
+```
+
+Step 15: Place the b11 block on top of the previous b13 block, ensuring stability.
+```python
+ab_drop('b11', 3)
+```
+
+Step 16: Place the b13 block adjacent to the previous b13 block.
+```python
+ab_drop('b13', 2)
+```
+
+Step 17: Place the b11 block on top of the previous b13 block, ensuring stability.
+```python
+ab_drop('b11', 2)
+```
+
+Step 18: Place the b13 block adjacent to the previous b13 block.
+```python
+ab_drop('b13', 1)
+```
+
+Step 19: Place the b11 block on top of the previous b13 block, ensuring stability.
+```python
+ab_drop('b11', 1)
+```
+
+Step 20: Place the b13 block adjacent to the previous b13 block.
+```python
+ab_drop('b13', 0)
+```
+By following these steps, we can generate a stable structure that resembles the character "Z" while satisfying all hard constraints.

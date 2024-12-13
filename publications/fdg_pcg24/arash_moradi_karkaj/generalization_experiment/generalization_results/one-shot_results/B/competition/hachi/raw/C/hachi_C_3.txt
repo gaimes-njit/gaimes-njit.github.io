@@ -1,0 +1,19 @@
+def ab_drop(block_type, x_position):
+    # Drop the block vertically and center it at the specified x_position
+    if block_type == 'b11':
+        # Place the square block
+        return f"ab_drop('b11', {x_position})"
+    elif block_type == 'b31':
+        # Place the horizontal block
+        return f"ab_drop('b31', {x_position})"
+    elif block_type == 'b13':
+        # Place the vertical block
+        return f"ab_drop('b13', {x_position})"
+
+# Create the letter "C" structure using the ab_drop() function
+ab_drop("b31", 9)
+ab_drop("b13", 8)
+ab_drop("b13", 10)
+ab_drop("b31", 9)
+ab_drop("b13", 8)
+ab_drop("b13", 10)

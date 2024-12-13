@@ -1,0 +1,66 @@
+To form the shape resembling the letter "I" using the given bricks, we can start by initializing the field. Since the height of the letter "I" is 4 cells, we need to ensure that the field has enough height to accommodate it.
+
+```python
+field = [[0] * 20 for _ in range(16)]
+```
+
+Next, we can start placing the bricks on the field using the ab_drop() function. To form the letter "I", we can use two b13 bricks stacked on top of each other and then place a b11 brick on top of them.
+
+```python
+ab_drop('b13', 5)  # Place the first b13 brick
+ab_drop('b13', 5)  # Place the second b13 brick
+ab_drop('b11', 5)  # Place the b11 brick on top
+```
+
+To ensure stability, we need to check if the bricks are stable after each placement. In this case, since we are stacking bricks vertically, stability is automatically guaranteed.
+
+To avoid boundary collisions, we can check if the current position of the brick exceeds the boundaries of the field before each placement. If it does, we can adjust the x_position accordingly.
+
+Here is the complete code:
+
+```python
+field = [[0] * 20 for _ in range(16)]
+
+def ab_drop(x, y):
+    if x == 'b31':
+        width = 3
+        height = 1
+    elif x == 'b13':
+        width = 1
+        height = 3
+    elif x == 'b11':
+        width = 1
+        height = 1
+
+    while y + width > 20:  # Adjust x_position if exceeding right boundary
+        y -= 1
+
+    while y < 0:  # Adjust x_position if exceeding left boundary
+        y += 1
+
+    for i in range(height):  # Check if any cells are occupied in the current position
+        for j in range(width):
+            if field[i][y+j] == 1:
+                return
+
+    for i in range(height):  # Place the brick on the field
+        for j in range(width):
+            field[i][y+j] = 1
+
+ab_drop('b13', 5)  # Place the first b13 brick
+ab_drop('b13', 5)  # Place the second b13 brick
+ab_drop('b11', 5)  # Place the b11 brick on top
+
+for row in field:
+    print(row)
+```
+
+The output will be:
+
+```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
+[1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 

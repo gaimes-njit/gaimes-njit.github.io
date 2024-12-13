@@ -1,0 +1,17 @@
+To create the capital letter "D" using the given block types and following the gravity rules, you can use the following ab_drop() commands:
+
+```
+ab_drop('b31', 1)   # Create the vertical left side of the "D"
+ab_drop('b13', 3)   # Extend the left side downwards
+ab_drop('b13', 4)   # Extend the left side downwards
+ab_drop('b13', 5)   # Extend the left side downwards
+ab_drop('b13', 6)   # Extend the left side downwards
+ab_drop('b31', 2)   # Create the top horizontal bar of the "D"
+ab_drop('b31', 5)   # Create the bottom horizontal bar of the "D"
+ab_drop('b31', 8)   # Create the vertical right side of the "D"
+ab_drop('b13', 9)   # Extend the right side downwards
+ab_drop('b13', 10)  # Extend the right side downwards
+ab_drop('b13', 11)  # Extend the right side downwards
+```
+
+These commands will construct the capital letter "D" in the defined environment while following the gravity rules.

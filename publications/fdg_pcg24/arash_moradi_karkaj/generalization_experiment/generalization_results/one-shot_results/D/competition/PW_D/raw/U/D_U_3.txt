@@ -1,0 +1,8 @@
+To generate the letter 'U', we can use the following ab_drop() commands:
+
+``` 
+ab_drop('b31', 1)   # Drop the horizontal straight block in the middle of the grid
+ab_drop('b13', 0)   # Drop the vertical straight block on the left side of the grid
+ab_drop('b13', 2)   # Drop the vertical straight block on the right side of the grid
+ab_drop('b31', 1)   # Drop another horizontal straight block below the previous one
+```

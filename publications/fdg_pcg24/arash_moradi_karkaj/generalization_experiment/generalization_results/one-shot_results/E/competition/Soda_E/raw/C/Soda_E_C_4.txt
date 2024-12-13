@@ -1,0 +1,43 @@
+First, we need to create the top horizontal bar of the letter C. We can use the "b31" block for this. 
+
+```
+ab_drop("b31", 8)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+```
+
+Next, we create the vertical bar of the letter C. We can use the "b13" block for this.
+
+```
+ab_drop("b13", 8)
+ab_drop("b11", 7)
+ab_drop("b11", 9)
+```
+
+Finally, we create the bottom horizontal bar of the letter C.
+
+```
+ab_drop("b31", 8)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+```
+
+The complete implementation is as follows:
+
+```
+ab_drop("b31", 8)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+
+ab_drop("b13", 8)
+ab_drop("b11", 7)
+ab_drop("b11", 9)
+
+ab_drop("b31", 8)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+```

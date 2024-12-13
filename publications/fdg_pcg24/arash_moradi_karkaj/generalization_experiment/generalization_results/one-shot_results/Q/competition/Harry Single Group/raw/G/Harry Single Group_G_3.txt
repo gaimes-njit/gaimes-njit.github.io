@@ -1,0 +1,68 @@
+To form a shape resembling the letter "G" using the available bricks and the ab_drop() function, we can follow these steps:
+
+1. Initialize the field with all cells as empty.
+
+2. Generate and drop the b13 brick at x_position = 5, using the ab_drop('b13', 5) function. This will occupy cells (5, 0), (5, 1), and (5, 2).
+
+3. Generate and drop the b31 brick at x_position = 6, using the ab_drop('b31', 6) function. This will occupy cells (5, 3), (6, 3), and (7, 3).
+
+By following these steps, we will have formed a shape resembling the letter "G" on the field while satisfying the stability and boundary collision requirements.
+
+Here is the code to generate the required structure:
+
+```python
+# Initialize the field
+field = [[0] * 20 for _ in range(16)]
+
+# Function to check stability of the bricks
+def is_stable(field):
+    for y in range(1, 16):
+        for x in range(1, 19):
+            if field[y][x] != 0:
+                if (field[y][x-1] != 0 and field[y][x] != field[y][x-1]) or (field[y][x+1] != 0 and field[y][x] != field[y][x+1]):
+                    return False
+    return True
+
+# Function to check boundary collision
+def is_colliding(field, brick, x_position):
+    for x in range(x_position, x_position + brick['width']):
+        if x < 0 or x >= 20 or field[0][x] != 0:
+            return True
+    return False
+
+# Function to drop brick on the field
+def ab_drop(x, y):
+    brick = {}
+    if x == 'b31':
+        brick = {'width': 3, 'height': 1}
+    elif x == 'b13':
+        brick = {'width': 1, 'height': 3}
+    elif x == 'b11':
+        brick = {'width': 1, 'height': 1}
+    
+    if not is_colliding(field, brick, y):
+        for i in range(brick['width']):
+            field[0][y + i] = 1             # Occupying the cells on the ground
+            for j in range(1, 16):
+                if field[j][y + i] != 0:    # Stopping the brick when an occupied cell is detected
+                    return
+                if i == 0:
+                    field[j][y + i] = 1     # Occupying the cells during the descent
+
+# Generate the required structure
+ab_drop('b13', 5)
+ab_drop('b31', 6)
+
+# Print the final field
+for row in field[::-1]:
+    print(row)
+```
+
+The output will be:
+```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0

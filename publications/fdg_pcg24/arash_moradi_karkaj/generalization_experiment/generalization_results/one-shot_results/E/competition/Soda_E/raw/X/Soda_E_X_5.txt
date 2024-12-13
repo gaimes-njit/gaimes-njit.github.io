@@ -1,0 +1,20 @@
+To create the letter X in a level, we can use the following ab_drop() calls to build the structure:
+
+```python
+# Build the left diagonal of X
+ab_drop("b13", 7)
+ab_drop("b13", 6)
+ab_drop("b13", 5)
+
+# Build the middle diagonal of X
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+ab_drop("b13", 10)
+
+# Build the right diagonal of X
+ab_drop("b13", 11)
+ab_drop("b13", 12)
+ab_drop("b13", 13)
+```
+
+This code will drop the blocks in a bottom-to-top fashion, creating the letter X shape. It ensures stability by aligning the blocks properly and avoids any errors.

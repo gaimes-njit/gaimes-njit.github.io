@@ -1,0 +1,8 @@
+The solution for the capital letter "K" can be achieved by using the following series of ab_drop() function calls:
+
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+ab_drop('b31', 8)
+ab_drop('b11', 7)
+ab_drop('b11', 9)
+ab_drop('b31', 10)

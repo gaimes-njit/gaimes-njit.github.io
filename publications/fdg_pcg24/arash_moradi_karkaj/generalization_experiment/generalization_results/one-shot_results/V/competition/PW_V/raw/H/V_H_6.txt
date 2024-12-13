@@ -1,0 +1,9 @@
+To construct the capital letter "H", we can use the block types b31 and b11. Here is the solution:
+
+```
+ab_drop(31, 1)
+ab_drop(11, 4)
+ab_drop(31, 7)
+ab_drop(11, 10)
+ab_drop(31, 13)
+```

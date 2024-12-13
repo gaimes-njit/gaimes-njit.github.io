@@ -1,0 +1,18 @@
+```python
+from ab import drop
+
+# Define the structure of the "Z" shape using b13 and b31 blocks
+structure = [
+    {"block": "b13", "drop_slot": 1, "drop_layer": 0},
+    {"block": "b31", "drop_slot": 1, "drop_layer": 1},
+    {"block": "b13", "drop_slot": 4, "drop_layer": 1},
+    {"block": "b13", "drop_slot": 0, "drop_layer": 2},
+    {"block": "b31", "drop_slot": 0, "drop_layer": 3},
+    {"block": "b13", "drop_slot": 4, "drop_layer": 3},
+    {"block": "b13", "drop_slot": 1, "drop_layer": 4},
+]
+
+# Drop the blocks to create the "Z" shape
+for block_info in structure:
+    drop(block=block_info["block"], slot=block_info["drop_slot"], layer=block_info["drop_layer"])
+```

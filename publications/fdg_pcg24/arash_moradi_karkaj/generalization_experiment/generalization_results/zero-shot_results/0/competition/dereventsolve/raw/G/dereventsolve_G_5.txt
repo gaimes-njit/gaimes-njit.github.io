@@ -1,0 +1,15 @@
+"""
+To generate a structure that looks like the letter "G", we can use the following series of `ab_drop` function calls:
+
+ab_drop("top") - This will drop the initial horizontal line at the top of the letter "G".
+
+ab_drop("vert") - This will drop the vertical line on the left side of the letter "G".
+
+ab_drop("mid") - This will drop the horizontal line in the middle of the letter "G".
+
+ab_drop("half") - This will drop the bottom-right diagonal line of the letter "G".
+
+ab_drop("straight") - This will drop the straight vertical line on the right side of the letter "G".
+
+By implementing the above `ab_drop` function calls in the specified order, we can generate a structure that looks like the letter "G" on the database.
+"""

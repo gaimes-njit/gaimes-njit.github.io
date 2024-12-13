@@ -1,0 +1,27 @@
+The first step is to create the base of the "G" letter. This can be done by dropping a block of type "b13" at the center of the grid. We can start at x_position=9 and drop the block as follows:
+
+```
+ab_drop("b13", 9)
+```
+
+Next, we need to create the vertical bar of the "G" letter. We can do this by dropping a block of type "b31" at the center of the grid, below the base. We can start at x_position=9 and drop the block as follows:
+
+```
+ab_drop("b31", 9)
+```
+
+Finally, we need to create the horizontal bar of the "G" letter. We can do this by dropping a block of type "b31" at the center of the grid, to the right of the vertical bar. We can start at x_position=11 and drop the block as follow:
+
+```
+ab_drop("b31", 11)
+```
+
+Putting it all together, the complete implementation for creating a "G" letter in the level would be:
+
+```
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+ab_drop("b31", 11)
+```
+
+This implementation creates a stable structure that resembles the letter "G" in shape.

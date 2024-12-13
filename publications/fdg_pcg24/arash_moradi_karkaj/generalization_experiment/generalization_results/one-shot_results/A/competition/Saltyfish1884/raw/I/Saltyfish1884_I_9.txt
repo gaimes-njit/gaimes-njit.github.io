@@ -1,0 +1,42 @@
+To generate a stable structure that resembles the character "I" while meeting all hard constraints, we will need to carefully consider the stability and boundary intrusion rules. Here is a step-by-step guide to achieving the desired structure:
+
+1. Initialize the structure as an empty grid:
+
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Place the b31 block on the base layer (layer 0) to form the initial stable base:
+
+```python
+ab_drop('b31', 9)
+```
+
+3. Place b13 blocks on each side of the b31 block to prevent overhangs:
+
+```python
+ab_drop('b13', 6) # Left side
+ab_drop('b13', 12) # Right side
+```
+
+4. Drop b31 blocks at the bottom of the structure to form the vertical parts of the "I" character:
+
+```python
+ab_drop('b31', 9) # Bottom part
+ab_drop('b31', 9) # Top part
+```
+
+5. Drop b11 blocks at the center of the structure to complete the "I" character:
+
+```python
+ab_drop('b11', 9) # Center part
+```
+
+6. The resulting structure should resemble the character "I":
+
+```python
+for row in structure:
+    print(''.join(row))
+```
+
+This step-by-step guide will ensure that the generated structure meets all the stability and boundary intrusion constraints while forming the desired character. However, the exact sequence and positions of the block drops may vary depending on the implementation of the ab_drop() function.

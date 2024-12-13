@@ -1,0 +1,10 @@
+To create the target letter "L" using the ab_drop() function, we need to drop two blocks: a vertical pipe and a bottom bar. Here is the complete implementation:
+
+```
+# The vertical pipe
+ab_drop("b31", 10)
+# The bottom bar
+ab_drop("b13", 9)
+```
+
+This implementation will create a structure in the level that looks like the capital letter "L". Make sure to execute these commands in the order given to achieve the desired result.

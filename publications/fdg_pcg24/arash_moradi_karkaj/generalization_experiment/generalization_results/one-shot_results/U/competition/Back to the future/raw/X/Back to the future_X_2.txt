@@ -1,0 +1,53 @@
+To meet the hard constraints and generate a stable structure that looks like the uppercase character "X", the ab_drop() function can be used as follows:
+
+1. Initialize the structure as an empty WxH grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the first block b31 by calling the ab_drop() function:
+```
+# Drop the b31 block at slot 9
+ab_drop('b31', 9)
+```
+The structure grid will be updated as follows:
+```
+structure[15][7] = 'b31'
+structure[14][7] = 'b31'
+structure[13][7] = 'b31'
+```
+This represents the vertical part of the character "X".
+
+3. Drop the second block b13:
+```
+# Drop the b13 block at slot 10
+ab_drop('b13', 10)
+```
+The structure grid will be updated as follows:
+```
+structure[12][10] = 'b13'
+structure[12][11] = 'b13'
+structure[12][12] = 'b13'
+```
+This represents the diagonal part of the character "X".
+
+4. Drop the third block b11:
+```
+# Drop the b11 block at slot 9
+ab_drop('b11', 9)
+```
+The structure grid will be updated as follows:
+```
+structure[11][9] = 'b11'
+```
+This completes the structure representing the character "X".
+
+The final structure grid will look like this:
+```
+[
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',

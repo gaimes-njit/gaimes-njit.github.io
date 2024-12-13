@@ -1,0 +1,41 @@
+To generate a structure that looks like a capital "X" in the Tetris game, we can use the following steps:
+
+1. Place the two diagonal bars of the X:
+```
+ab_drop("b31", 7)
+ab_drop("b11", 8)
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+```
+
+2. Place the middle horizontal bar of the X:
+```
+ab_drop("b13", 6)
+ab_drop("b11", 7)
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+ab_drop("b13", 10)
+```
+
+3. Place the top and bottom horizontal bars of the X:
+```
+ab_drop("b31", 6)
+ab_drop("b11", 8)
+ab_drop("b31", 6)
+```
+
+Here is the complete implementation:
+```
+ab_drop("b31", 7)
+ab_drop("b11", 8)
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+ab_drop("b13", 6)
+ab_drop("b11", 7)
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+ab_drop("b13", 10)
+ab_drop("b31", 6)
+ab_drop("b11", 8)
+ab_drop("b31", 6)
+```

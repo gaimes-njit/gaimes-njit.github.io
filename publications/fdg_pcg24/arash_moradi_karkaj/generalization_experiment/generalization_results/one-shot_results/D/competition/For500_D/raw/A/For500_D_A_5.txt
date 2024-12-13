@@ -1,0 +1,5 @@
+ab_drop('b31', 9)  # drop 'b31' at position 9 (center)
+ab_drop('b13', 8)  # drop 'b13' at position 8 (center left)
+ab_drop('b13', 10)  # drop 'b13' at position 10 (center right)
+ab_drop('b31', 9)  # drop 'b31' at position 9 (center)
+ab_drop('b11', 7)  # drop 'b11' at position 7 (center left)

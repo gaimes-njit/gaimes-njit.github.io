@@ -1,0 +1,12 @@
+To create a level for Science Birds that resembles the English letter "P," we can use the following code sequence:
+
+1. Drop the lower part of the vertical section of the "P":
+ab_drop('b13', 3)
+
+2. Drop the upper part of the vertical section of the "P":
+ab_drop('b13', 3)
+
+3. Drop the middle part of the horizontal section of the "P":
+ab_drop('b31', 2)
+
+This sequence of calls to the ab_drop() function will construct a structure that resembles the letter "P" while satisfying all the constraints of the Science Birds game, including stability under gravity and no boundary intrusion.

@@ -1,0 +1,8 @@
+Given the shape of the "L" we are aiming to create, we will first drop a block b31 at layer 15 with its center at slot 10. This block will represent the vertical part of the "L". Next, we will drop a block b13 at layer 14 with its center at slot 10. This block will form the horizontal part of the "L".
+
+The code snippet using the ‘ab drop()’ function to achieve this structure is as follows:
+
+ab drop(b31, 15, 10)
+ab drop(b13, 14, 10)
+
+By dropping the blocks in this order and position, we will successfully create a stable structure that looks like the letter "L".

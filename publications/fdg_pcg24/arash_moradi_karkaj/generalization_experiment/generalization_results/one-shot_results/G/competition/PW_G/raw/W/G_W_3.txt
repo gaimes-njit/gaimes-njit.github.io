@@ -1,0 +1,13 @@
+To create the uppercase letter "W" using the given block types and gravity rules, you can follow the following sequence of ab_drop() commands:
+
+```
+ab_drop('b31', 1)  # Place a horizontal straight block at position 1
+ab_drop('b13', 1)  # Place a vertical straight block at position 1
+ab_drop('b13', 2)  # Place another vertical straight block at position 2
+ab_drop('b31', 4)  # Place a horizontal straight block at position 4
+ab_drop('b11', 4)  # Place a square block at position 4
+ab_drop('b11', 6)  # Place another square block at position 6
+ab_drop('b31', 5)  # Place a horizontal straight block at position 5
+```
+
+This sequence of commands will create the uppercase letter "W" in the given Tetris-like environment. Remember to start constructing the shapes from position 1 along the width.

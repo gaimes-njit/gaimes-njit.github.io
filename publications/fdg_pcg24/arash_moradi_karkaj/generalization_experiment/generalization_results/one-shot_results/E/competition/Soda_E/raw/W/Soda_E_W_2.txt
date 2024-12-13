@@ -1,0 +1,29 @@
+To create the letter "W" in the level, we can start by placing the bottom zigzag part of the "W" first. Then we can build the top two sides of the "W" in a symmetrical manner.
+
+1. Place the bottom horizontal bar of the "W":
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+ab_drop("b13", 11)
+
+2. Place the top-left side of the "W":
+ab_drop("b31", 6)
+ab_drop("b11", 7)
+ab_drop("b13", 8)
+
+3. Place the top-right side of the "W":
+ab_drop("b31", 12)
+ab_drop("b11", 13)
+ab_drop("b13", 14)
+
+Complete implementation:
+```
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+ab_drop("b13", 11)
+ab_drop("b31", 6)
+ab_drop("b11", 7)
+ab_drop("b13", 8)
+ab_drop("b31", 12)
+ab_drop("b11", 13)
+ab_drop("b13", 14)
+```

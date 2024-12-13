@@ -1,0 +1,12 @@
+# To generate the letter "T", we need a vertical pipe and a horizontal bar.
+
+# Step 1: Drop the vertical pipe
+ab_drop("b31", 9)
+
+# Step 2: Drop the horizontal bar
+ab_drop("b13", 4)
+
+# Step 3: Stabilize the structure
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)

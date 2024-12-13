@@ -1,0 +1,24 @@
+Here is how you can generate a structure that looks like the letter "O" using the `ab_drop` function:
+
+```python
+calls = []
+
+# To create the top part of "O"
+calls += ab_drop(0.5)  # Halfway down
+
+# To create the left vertical part of "O"
+for _ in range(4):
+    calls += ab_drop(0.5)  # Halfway across
+
+# To create the bottom part of "O"
+calls += ab_drop(0.5)  # Halfway up
+
+# To create the right vertical part of "O"
+for _ in range(4):
+    calls += ab_drop(0.5)  # Halfway across
+
+# Return the sequence of `ab_drop` function calls
+calls
+```
+
+This sequence of `ab_drop` function calls will create a structure that resembles the letter "O".

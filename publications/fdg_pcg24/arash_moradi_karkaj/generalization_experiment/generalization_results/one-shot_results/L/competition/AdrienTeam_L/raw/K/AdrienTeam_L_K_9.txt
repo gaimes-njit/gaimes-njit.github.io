@@ -1,0 +1,13 @@
+```
+#Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+#Drop b13 block for the left part of K
+ab_drop('b13',0)
+
+#Drop b31 block for the right part of K
+ab_drop('b31',1)
+
+#Drop b13 block for the middle part of K
+ab_drop('b13',0)
+```

@@ -1,0 +1,7 @@
+To create the uppercase letter "F", you can use the following stream of commands:
+
+```
+ab_drop('b31', 1) ab_drop('b11', 1) ab_drop('b11', 1) ab_drop('b11', 2) ab_drop('b31', 2) ab_drop('b13', 2) ab_drop('b11', 3)
+```
+
+These commands will place the block types in the specified positions to form the letter "F" within the allowed space boundaries.

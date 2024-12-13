@@ -1,0 +1,12 @@
+To generate the uppercase English letter "Z" using the given block types and environment, you can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```
+
+These commands will first place a horizontal straight block (`b31`) at position 1. Then, a vertical straight block (`b13`) will be placed at positions 0 and 2. Finally, another horizontal straight block (`b31`) will be placed at position 1.
+
+This sequence of commands will create a Tetris-like stack that resembles the uppercase letter "Z" in the given environment.

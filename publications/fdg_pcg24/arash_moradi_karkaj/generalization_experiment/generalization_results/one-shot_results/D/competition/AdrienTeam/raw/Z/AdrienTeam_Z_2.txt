@@ -1,0 +1,51 @@
+```
+import random
+
+# Map dimensions
+W = 20
+H = 16
+
+# Initialize the structure
+structure = [[' ']*W for _ in range(H)]
+
+# Helper function to check if a block can be dropped at a given position
+def can_drop(x, y):
+    if y < 0 or y >= W or structure[0][y] != ' ':
+        return False
+    if x >= H-1 or (structure[x+1][y] != ' ' and structure[x+1][y] != x):
+        return False
+    return True
+
+# Helper function to drop a block at a given position
+def drop_block(x, y, block):
+    structure[x][y] = block
+    if block == 'b11':
+        structure[x+1][y] = x
+    else:
+        structure[x+1][y] = block
+
+# Rotate the 'Z' shape before dropping the blocks
+rotation = random.choice([0, 1, 2, 3])
+if rotation == 0:
+    drop_block(H-2, W//2, 'b11')
+    drop_block(H-1, W//2, 'b13')
+    drop_block(H-1, W//2-1, 'b31')
+elif rotation == 1:
+    drop_block(H-2, W//2, 'b13')
+    drop_block(H-1, W//2, 'b11')
+    drop_block(H-1, W//2-1, 'b11')
+elif rotation == 2:
+    drop_block(H-2, W//2, 'b31')
+    drop_block(H-1, W//2-1, 'b11')
+    drop_block(H-1, W//2, 'b11')
+else:
+    drop_block(H-2, W//2, 'b11')
+    drop_block(H-1, W//2-1, 'b31')
+    drop_block(H-1, W//2, 'b13')
+
+# Print the structure
+for row in structure:
+    print(row)
+```
+
+The output will be a structure resembling the letter "Z" with the specified constraints. The `ab_drop()` calls are included in the code block starting with `drop_block(H-2, W//2, 'b11')` and ending with `drop_block(H-1, W//2, 'b13')`. The specific position and order of the blocks may vary due to the random rotation of the shape.

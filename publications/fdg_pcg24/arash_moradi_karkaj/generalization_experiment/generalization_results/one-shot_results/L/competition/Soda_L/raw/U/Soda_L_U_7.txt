@@ -1,0 +1,14 @@
+To build the letter "U" in a bottom-to-top fashion, we can start by placing the two side blocks first, and then add the top block to complete the U shape. Here is the code to achieve this:
+
+```
+# Place the left side block
+ab_drop("b31", 6)
+
+# Place the right side block
+ab_drop("b31", 14)
+
+# Place the top block
+ab_drop("b13", 10)
+```
+
+This code places the left side block at x_position 6, the right side block at x_position 14, and the top block at x_position 10. This configuration will create a stable U shape that resembles the TARGET character.

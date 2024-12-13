@@ -1,0 +1,18 @@
+R: The foundation for the letter R can be made by placing a horizontal straight block (b31) at position 2 along the width. This can be done using the ab_drop('b31', 2) command. 
+
+Next, we need to add the vertical straight blocks (b13) to form the diagonal segment of the letter R. Place a vertical straight block at position 1 and another one at position 2 using ab_drop('b13', 1) and ab_drop('b13', 2) commands respectively. 
+
+To complete the letter R, add two 1x1 square blocks (b11) at position 4 using ab_drop('b11', 4) and ab_drop('b11', 4) commands. 
+
+Finally, add another horizontal straight block (b31) at position 2 to close the letter R using ab_drop('b31', 2) command.
+
+Overall, the sequence of commands to generate the letter R would be:
+
+``` 
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b31', 2)
+```

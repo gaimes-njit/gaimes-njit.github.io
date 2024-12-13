@@ -1,0 +1,15 @@
+To create the structure exactly like "B" inside a 20*16 box, we need to place the blocks strategically using the ab_drop function. Here's the solution:
+
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 5)
+ab_drop('b13', 10)
+ab_drop('b31', 10)
+ab_drop('b13', 10)
+ab_drop('b31', 14)
+ab_drop('b13', 19)
+ab_drop('b31', 19)
+ab_drop('b13', 19)
+
+Note: The numbers in the ab_drop function represent the x position of each block.

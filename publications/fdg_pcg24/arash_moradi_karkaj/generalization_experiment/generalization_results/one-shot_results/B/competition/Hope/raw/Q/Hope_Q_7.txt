@@ -1,0 +1,35 @@
+To create a "Q" shape inside a 20*16 box using the `ab_drop` function, we can break down the structure into smaller blocks and drop them in the desired positions. 
+
+Here is the sequence of `ab_drop` commands to create the "Q" shape:
+
+1. Drop a b13 block at (0, 0)
+    - `ab_drop('b13', 0)`
+
+2. Drop a b11 block at (3, 0)
+    - `ab_drop('b11', 3)`
+
+3. Drop a b11 block at (5, 0)
+    - `ab_drop('b11', 5)`
+
+4. Drop a b13 block at (8, 2)
+    - `ab_drop('b13', 8)`
+
+5. Drop a b11 block at (8, 5)
+    - `ab_drop('b11', 8)`
+
+6. Drop a b11 block at (8, 7)
+    - `ab_drop('b11', 8)`
+
+7. Drop a b13 block at (8, 10)
+    - `ab_drop('b13', 8)`
+
+8. Drop a b11 block at (5, 10)
+    - `ab_drop('b11', 5)`
+
+9. Drop a b11 block at (3, 10)
+    - `ab_drop('b11', 3)`
+
+10. Drop a b13 block at (0, 8)
+    - `ab_drop('b13', 0)`
+
+Make sure to execute these commands in order to create the "Q" shape.

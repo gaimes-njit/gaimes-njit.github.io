@@ -1,0 +1,7 @@
+```python
+ab_drop('b31', 1)  # Place the horizontal straight block at position 1 (first block of the V shape)
+ab_drop('b13', 4)  # Place the vertical straight block at position 4 (second block of the V shape)
+ab_drop('b31', 8)  # Place the horizontal straight block at position 8 (third block of the V shape)
+```
+
+Explanation: We start by placing the horizontal straight block (b31) at position 1 to form the left slant of the V shape. Then, we place the vertical straight block (b13) at position 4 to form the middle part of the V shape. Finally, we place another horizontal straight block (b31) at position 8 to complete the right slant of the V shape.

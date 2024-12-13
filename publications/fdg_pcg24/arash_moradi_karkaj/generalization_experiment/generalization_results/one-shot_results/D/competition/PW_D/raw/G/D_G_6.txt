@@ -1,0 +1,24 @@
+Here's how you can generate the uppercase English letter "G" using the ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```
+
+Explanation:
+- Place a horizontal straight block of width 3 at position 1.
+- Place another horizontal straight block of width 3 at position 1.
+- Place a third horizontal straight block of width 3 at position 1.
+- Place a vertical straight block of height 3 at position 2.
+- Place a fourth horizontal straight block of width 3 at position 1.
+- Place a vertical straight block of height 3 at position 0.
+- Place a vertical straight block of height 3 at position 2.
+- Place a fifth horizontal straight block of width 3 at position 1.
+
+This sequence of commands will create the letter "G" in the Tetris-like environment while following the gravity rules and staying within the allowed space boundaries.

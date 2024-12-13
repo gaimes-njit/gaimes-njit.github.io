@@ -1,0 +1,13 @@
+To create a structure that looks like the letter "Q" in the level, we can break it down into three blocks: a square block for the bottom part of the Q, a column block for the stem, and a row block for the top part of the Q. 
+
+To ensure stability, we need to place the blocks in a bottom-to-top fashion, starting from the bottom square block, then the column block, and finally the row block. 
+
+Here is the complete implementation to create a stable "Q" structure:
+
+```
+ab_drop("b11", 9)    # Place the bottom square block at position 9
+ab_drop("b13", 9)    # Place the column block at position 9
+ab_drop("b31", 9)    # Place the row block at position 9
+```
+
+By following these steps, we can create a structure in the level that resembles the letter "Q" and ensures stability.

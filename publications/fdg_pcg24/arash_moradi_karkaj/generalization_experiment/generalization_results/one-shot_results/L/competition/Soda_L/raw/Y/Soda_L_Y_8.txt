@@ -1,0 +1,14 @@
+To build the letter "Y", we can start by placing two row blocks ("b31") at the bottom to form the base. Then, we can place a column block ("b13") on top of the base to form the stem of the "Y". Finally, we can place another row block ("b31") on top of the stem to form the top part of the "Y". 
+
+Here is the complete implementation:
+
+```
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+
+ab_drop("b13", 9)
+
+ab_drop("b31", 9)
+```
+
+This implementation ensures the best stability and similarity to the letter "Y".

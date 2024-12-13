@@ -1,0 +1,24 @@
+```
+structure = [[' ']*W for _ in range(H)]  # Map Initialization
+
+# Drop the base horizontal block
+ab_drop('b31', 9)
+
+# Drop the first vertical block of the 'K'
+ab_drop('b13', 8)
+
+# Drop the second vertical block of the 'K'
+ab_drop('b13', 7)
+
+# Drop the top horizontal block of the 'K'
+ab_drop('b31', 8)
+
+# Drop the diagonal block of the 'K'
+ab_drop('b11', 7)
+
+# Drop the middle diagonal block of the 'K'
+ab_drop('b11', 8)
+
+# Drop the bottom diagonal block of the 'K'
+ab_drop('b11', 9)
+```

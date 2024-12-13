@@ -1,0 +1,12 @@
+To create the letter "F" using the given block types and gravity rules, you can use the following sequence of `ab_drop()` commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+```
+
+This sequence will result in the creation of the uppercase English letter "F" within the allowed space boundaries.

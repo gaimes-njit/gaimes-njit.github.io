@@ -1,0 +1,25 @@
+To generate a stable structure that looks like the uppercase character "W", we can follow these steps:
+
+1. Initialize the structure as an empty grid: `structure = [[' ']*W for _ in range(H)]`.
+
+2. Determine the drop positions for the blocks to form the character "W".
+   - Drop a b13 block at position (3, 2) using `ab_drop('b13', 2)`.
+   - Drop a b13 block at position (3, 7) using `ab_drop('b13', 7)`.
+   - Drop a b31 block at position (7, 4) using `ab_drop('b31', 4)`.
+   - Drop a b31 block at position (12, 4) using `ab_drop('b31', 4)`.
+
+3. Perform stability checks after each drop to ensure the entire structure remains stable.
+
+4. Repeat steps 2 and 3 until the structure resembles the character "W".
+   - Drop a b31 block at position (6, 3) using `ab_drop('b31', 3)`.
+   - Perform stability checks.
+   - Drop a b31 block at position (11, 3) using `ab_drop('b31', 3)`.
+   - Perform stability checks.
+   - Drop a b13 block at position (1, 1) using `ab_drop('b13', 1)`.
+   - Perform stability checks.
+   - Drop a b13 block at position (14, 1) using `ab_drop('b13', 1)`.
+   - Perform stability checks.
+
+5. Continue to generate the remaining parts of the structure while ensuring stability.
+
+Note: The exact coordinates and number of block drops may vary depending on the specific implementation and constraints. Additional stability checks and adjustments may be necessary to ensure the overall structure is stable and resembles the character "W".

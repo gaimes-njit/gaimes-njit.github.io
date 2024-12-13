@@ -1,0 +1,4 @@
+ab_drop('b31', 9) # Place the top horizontal part of 'P' at slot 9
+ab_drop('b11', 8) # Place the top of the vertical stroke of 'P' at slot 8
+ab_drop('b13', 10) # Place the middle part of the vertical stroke of 'P' at slot 10
+ab_drop('b31', 10) # Place the bottom horizontal part of 'P' at slot 10

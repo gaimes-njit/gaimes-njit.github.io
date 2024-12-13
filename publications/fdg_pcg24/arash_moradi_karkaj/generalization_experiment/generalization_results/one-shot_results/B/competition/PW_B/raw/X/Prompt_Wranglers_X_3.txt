@@ -1,0 +1,29 @@
+To generate the uppercase English letter "X", we can follow these steps:
+
+1. Start by placing a vertical block (b13) at position 4 to form the left side of the letter:
+```
+ab_drop('b13', 4)
+```
+
+2. Next, place a vertical block (b13) at position 16 to form the right side of the letter:
+```
+ab_drop('b13', 16)
+```
+
+3. To complete the letter, we need to add diagonal blocks. Place a horizontal block (b31) at position 9 to form the top-left diagonal:
+```
+ab_drop('b31', 9)
+```
+
+4. Lastly, add another horizontal block (b31) at position 11 to form the top-right diagonal:
+```
+ab_drop('b31', 11)
+```
+
+The final stream of commands to generate the letter "X" would look like this:
+```
+ab_drop('b13', 4)
+ab_drop('b13', 16)
+ab_drop('b31', 9)
+ab_drop('b31', 11)
+```

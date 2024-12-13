@@ -1,0 +1,11 @@
+To generate the uppercase letter "U" using the given block types and rules, here are the stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 4)
+ab_drop('b11', 1)
+ab_drop('b11', 4)
+```
+
+This sequence of commands will create a stable and accurate representation of the letter "U" within the allowed space boundaries.

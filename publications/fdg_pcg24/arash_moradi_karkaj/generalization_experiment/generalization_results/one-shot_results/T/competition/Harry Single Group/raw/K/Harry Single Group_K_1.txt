@@ -1,0 +1,58 @@
+```python
+# Map initialization
+map = [[0] * 20 for _ in range(16)]
+
+def check_collision(x, y, brick):
+    """
+    Check if there is a collision with the current brick
+    """
+    for i in range(len(brick)):
+        for j in range(len(brick[i])):
+            if brick[i][j] != 0:
+                if x + i >= 16 or y + j >= 20 or map[x + i][y + j] != 0:
+                    return True
+    return False
+
+def ab_drop(x, y):
+    """
+    Function to drop bricks using ab_drop() function
+    """
+    if x == 'b31':
+        brick = [[1, 1, 1]]
+    elif x == 'b13':
+        brick = [[1], [1], [1]]
+    elif x == 'b11':
+        brick = [[1]]
+        
+    # Find the position to drop the brick
+    for i in range(16):
+        if check_collision(i, y, brick):
+            break
+    else:
+        # If no collision, drop the brick on the ground
+        i = 0
+    
+    # Place the brick on the field
+    for a in range(len(brick)):
+        for b in range(len(brick[a])):
+            if brick[a][b] != 0:
+                map[i+a][y+b] = 1
+
+# Generate the letter "K" structure
+ab_drop('b31', 8)
+ab_drop('b13', 8)
+ab_drop('b31', 12)
+ab_drop('b13', 12)
+
+# Display the map
+for row in map:
+    print(row)
+```
+
+The code above generates a structure resembling the letter "K" using the `ab_drop()` function. The letter "K" is formed by stacking a 3x1 brick on top of a 1x3 brick, and then stacking another 3x1 brick on top of the second brick.
+
+The code initializes a 2D map with the size of the field (16 rows x 20 columns). The `check_collision()` function is used to check if there is a collision with the current brick being dropped. The `ab_drop()` function takes the type of brick and the x-position as parameters, and drops the brick on the field while avoiding collisions and boundary collisions.
+
+In this case, the `ab_drop()` function is called four times to generate the letter "K" structure. The x-position for dropping the bricks is chosen to be 8 and 12 respectively, to ensure the bricks are centered. The resulting map is then displayed.
+
+The output of the code will be a visualization of the generated structure resembling the letter "K".

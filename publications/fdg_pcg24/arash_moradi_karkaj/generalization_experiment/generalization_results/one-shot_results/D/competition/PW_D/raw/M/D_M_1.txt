@@ -1,0 +1,12 @@
+To generate the letter "M" using the block types mentioned, we can follow the following sequence of ab_drop() commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```
+
+This sequence will place the blocks in a way that resembles the uppercase letter "M", while adhering to the gravity rules and the allowed space boundaries.

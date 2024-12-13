@@ -1,0 +1,26 @@
+Here is the code snippet to generate a stable structure like the letter "K" using the 'ab drop()' function:
+
+```python
+from ansystulu import ab
+
+# Function to drop blocks
+def drop_block(block_type, layer, slot):
+    ab.drop(block_type, layer, slot)
+
+# Define the structure of the letter "K"
+structure = [
+    (0, 'b13'), (1, 'b31'), (1, 'b31'), (2, 'b13'),
+    (4, 'b13'), (5, 'b13'), (6, 'b11'), (7, 'b13'),
+    (9, 'b13'), (10, 'b13'), (11, 'b13'), (13, 'b13'),
+    (14, 'b13')
+]
+
+# Drop blocks to build the letter "K" structure
+for layer, block_type in structure:
+    drop_block(block_type, 15, layer)
+
+# Display the generated structure
+ab.display()
+```
+
+This code will drop blocks of different types in the specified slots and layers to create a stable structure that looks like the letter "K". Adjust the structure list as needed to change the shape of the generated structure.

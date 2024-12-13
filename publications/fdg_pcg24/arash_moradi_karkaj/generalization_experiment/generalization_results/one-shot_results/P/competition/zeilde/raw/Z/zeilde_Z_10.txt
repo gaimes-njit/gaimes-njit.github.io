@@ -1,0 +1,63 @@
+1. Drawing the letter "Z" with asterisks:
+
+```
+*******
+     *
+    *
+   *
+  *
+ *
+*******
+```
+2. Asterisks and spaces generated in each row:
+- 7 asterisks
+- 5 spaces, 1 asterisk, 1 space
+- 4 spaces, 1 asterisk, 2 spaces
+- 3 spaces, 1 asterisk, 3 spaces
+- 2 spaces, 1 asterisk, 4 spaces
+- 1 space, 1 asterisk, 5 spaces
+- 7 asterisks
+
+3. List of x and y for each row:
+- 7x
+- 5y, 1x, 1y
+- 4y, 1x, 2y
+- 3y, 1x, 3y
+- 2y, 1x, 4y
+- 1y, 1x, 5y
+- 7x
+
+4. List of x and y side-by-side for each row:
+- x7
+- y5x1y1
+- y4x1y2
+- y3x1y3
+- y2x1y4
+- y1x1y5
+- x7
+
+5. Positions of x and y for each row:
+- x-1; x-2; x-3; x-4; x-5; x-6; x-7
+- y-1; y-2; x-3; y-4; y-5
+- y-1; y-2; x-3; y-4; y-5; y-6
+- y-1; y-2; x-3; y-4; y-5; y-6; y-7
+- y-1; y-2; x-3; y-4; y-5; y-6; y-7; y-8
+- y-1; x-2; y-3; y-4; y-5; y-6; y-7; y-8; y-9
+- x-1; x-2; x-3; x-4; x-5; x-6; x-7
+
+6. Sequence of ab_drop function calls:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 11)
+ab_drop("b11", 12)
+```
+Note: The number of ab_drop function calls is equal to the total number of x and y values in all rows combined.

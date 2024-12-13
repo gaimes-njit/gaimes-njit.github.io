@@ -1,0 +1,21 @@
+In order to create the structure of letter "A" inside a 20*16 box, you can use the following sequence of ab_drop('blocktype', x position) commands:
+
+1. Place the top horizontal line:
+   - ab_drop('b11', 9)
+
+2. Place the middle horizontal line:
+   - ab_drop('b11', 8)
+
+3. Place the bottom horizontal line:
+   - ab_drop('b11', 7)
+
+4. Place the left vertical line:
+   - ab_drop('b13', 6)
+
+5. Place the right vertical line:
+   - ab_drop('b13', 10)
+
+6. Fill the center space:
+   - ab_drop('b31', 8)
+
+This sequence of commands will create a structure that looks like the letter "A" inside the 20*16 box. Please note that the y position (vertical position) is not selectable, so the blocks will be dropped from top to bottom automatically.

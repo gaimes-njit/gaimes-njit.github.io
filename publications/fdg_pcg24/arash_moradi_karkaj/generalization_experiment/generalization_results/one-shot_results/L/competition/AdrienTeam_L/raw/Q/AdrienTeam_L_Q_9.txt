@@ -1,0 +1,36 @@
+```
+# Map initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Initial block rotation
+ab_drop('b13', 2)
+ab_drop('b31', 4)
+ab_drop('b11', 0)
+
+# Bottom-left part of the 'Q'
+ab_drop('b11', 2)
+ab_drop('b11', 4)
+ab_drop('b11', 6)
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+
+# Bottom-right part of the 'Q'
+ab_drop('b11', 16)
+ab_drop('b11', 14)
+ab_drop('b11', 12)
+ab_drop('b11', 10)
+ab_drop('b11', 8)
+
+# Top part of the 'Q'
+ab_drop('b11', 6)
+ab_drop('b11', 10)
+ab_drop('b11', 14)
+
+# Top-right part of the 'Q'
+ab_drop('b11', 10)
+ab_drop('b11', 8)
+
+# Top-left part of the 'Q'
+ab_drop('b11', 10)
+ab_drop('b11', 12)
+```

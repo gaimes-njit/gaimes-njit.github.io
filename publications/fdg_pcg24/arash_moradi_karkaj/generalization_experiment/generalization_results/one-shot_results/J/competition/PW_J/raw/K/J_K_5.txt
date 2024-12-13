@@ -1,0 +1,28 @@
+To generate the letter "K" using the specified block types, you can follow these steps:
+
+1. Place the first block, a horizontal straight block (b31), at position 1:
+   ```
+   ab_drop('b31', 1)
+   ```
+
+2. Place the second block, a vertical straight block (b13), at position 2:
+   ```
+   ab_drop('b13', 2)
+   ```
+
+3. Place the third block, a horizontal straight block (b31), at position 3:
+   ```
+   ab_drop('b31', 3)
+   ```
+
+4. Place the fourth block, a vertical straight block (b13), at position 3:
+   ```
+   ab_drop('b13', 3)
+   ```
+
+5. Place the fifth block, a square block (b11), at position 2:
+   ```
+   ab_drop('b11', 2)
+   ```
+
+These commands will create the letter "K" within the allowed space boundaries and following the specified gravity rules.

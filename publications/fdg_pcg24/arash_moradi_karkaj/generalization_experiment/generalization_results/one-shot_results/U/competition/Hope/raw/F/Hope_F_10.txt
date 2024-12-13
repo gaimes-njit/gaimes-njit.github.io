@@ -1,0 +1,21 @@
+To create the structure of the letter "F" using the given block types and `ab_drop()` function, we need to drop the blocks in a specific sequence. Here is the sequence of commands to create the "F" structure:
+
+1. Drop a b31 block at position (0,0):
+   ab_drop('b31', 0)
+
+2. Drop a b11 block at position (2,0):
+   ab_drop('b11', 2)
+
+3. Drop a b11 block at position (2,1):
+   ab_drop('b11', 2)
+
+4. Drop a b11 block at position (2,2):
+   ab_drop('b11', 2)
+
+5. Drop a b13 block at position (0,1):
+   ab_drop('b13', 0)
+
+6. Drop a b13 block at position (0,4):
+   ab_drop('b13', 0)
+
+By following this sequence of commands, you will be able to create the structure of the letter "F" within the 20*16 box block, as specified.

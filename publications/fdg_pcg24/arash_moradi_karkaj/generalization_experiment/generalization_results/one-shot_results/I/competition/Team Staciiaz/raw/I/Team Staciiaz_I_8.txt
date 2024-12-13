@@ -1,0 +1,64 @@
+To generate a stable structure that looks like the character "I" and meets all the constraints, we can follow the following steps:
+
+1. Initialize the structure as an empty grid:
+```python
+W = 20
+H = 16
+structure = [[' '] * W for _ in range(H)]
+```
+
+2. Define the block types and their shapes:
+```python
+block_shapes = {
+    'b11': [(0, 0)],
+    'b31': [(0, 0), (0, 1), (0, 2)],
+    'b13': [(0, 0), (-1, 0), (-2, 0)]
+}
+```
+
+3. Define the function to check the highest empty position in a slot:
+```python
+def get_highest_empty_y_position(x):
+    for y in range(H - 1, -1, -1):
+        if structure[y][x] == ' ':
+            return y
+    return -1
+```
+
+4. Define the function to drop a block vertically at a given slot and block type:
+```python
+def ab_drop(block_type, x_position):
+    highest_empty_height = get_highest_empty_y_position(x_position)
+
+    if x_position < 0 or x_position >= W:
+        print("Invalid x_position")
+        return
+
+    if block_type not in block_shapes:
+        print("Invalid block type")
+        return
+
+    for dx, dy in block_shapes[block_type]:
+        y = highest_empty_height + dy
+        if y < 0 or y >= H:
+            print(f"Invalid x_position for block type '{block_type}'")
+            return
+        structure[y][x_position + dx] = 'x'
+```
+
+5. Based on the given constraints, we need to drop the blocks in a specific order to maintain stability and avoid boundary intrusion. Here is one possible order of dropping the blocks:
+```python
+ab_drop('b31', 7)   # Drop the first horizontal block at slot 7
+ab_drop('b31', 6)   # Drop the second horizontal block at slot 6
+ab_drop('b31', 8)   # Drop the third horizontal block at slot 8
+ab_drop('b11', 7)   # Drop the vertical block at slot 7
+ab_drop('b11', 7)   # Drop the vertical block at slot 7
+ab_drop('b11', 7)   # Drop the vertical block at slot 7
+ab_drop('b13', 7)   # Drop the top vertical block at slot 7
+ab_drop('b13', 7)   # Drop the middle vertical block at slot 7
+ab_drop('b13', 7)   # Drop the bottom vertical block at slot 7
+```
+
+6. The resulting structure would resemble the character "I" and meet all the constraints.
+
+Note: The specific dropping order and slot positions might vary depending on the initial structure and other factors. The example given above is one possible solution.

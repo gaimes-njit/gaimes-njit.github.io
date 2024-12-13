@@ -1,0 +1,5 @@
+```python
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+```
+Note: The function `ab_drop` is called twice with different parameter values. The first parameter represents the string to be modified, and the second parameter represents the number of characters to be dropped from the string. The output is the formatted version of the input.

@@ -1,0 +1,9 @@
+ab_drop('b31', 13)  # Add horizontal support for stability
+ab_drop('b13', 13)  # Add vertical block for stability and resemblance
+ab_drop('b31', 7)   # Add horizontal support for stability
+ab_drop('b13', 7)   # Add vertical block for stability and resemblance
+ab_drop('b31', 11)  # Add horizontal support for stability
+ab_drop('b13', 11)  # Add vertical block for stability and resemblance
+ab_drop('b11', 11)  # Add small block for resemblance. Same position as previous drop of 'b13'
+ab_drop('b31', 9)   # Add horizontal support for stability
+ab_drop('b11', 9)   # Add small block for resemblance. Same position as previous drop of 'b31'

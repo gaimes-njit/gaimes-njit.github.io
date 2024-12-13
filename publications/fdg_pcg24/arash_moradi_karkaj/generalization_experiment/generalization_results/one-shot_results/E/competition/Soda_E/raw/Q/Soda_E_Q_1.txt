@@ -1,0 +1,25 @@
+To form the letter "Q" in the Tetris game, we need to carefully stack blocks in a bottom-to-top fashion to ensure stability and resemblance to the target character.
+
+Here is the complete implementation to form the letter "Q":
+
+```
+# Step 1: Create the vertical pipe of Q
+ab_drop("b31", 9)
+
+ab_drop("b11", 10)
+
+ab_drop("b31", 11)
+
+# Step 2: Create the bottom left and right bars of Q
+ab_drop("b13", 8)
+
+ab_drop("b11", 9)
+
+ab_drop("b11", 11)
+
+ab_drop("b13", 12)
+```
+
+This implementation starts by creating the vertical pipe of the letter "Q" using a row block ("b31") and two square blocks ("b11") to ensure stability. Then, it creates the bottom left and right bars using column blocks ("b13") and square blocks ("b11"). The placement of blocks ensures stability and resembles the target character "Q".
+
+Note: The x positions used in the ab_drop function are based on the assumption that the leftmost column of the grid is indexed as 0 and the rightmost column as W-1 (19 in this case, as the width is 20).

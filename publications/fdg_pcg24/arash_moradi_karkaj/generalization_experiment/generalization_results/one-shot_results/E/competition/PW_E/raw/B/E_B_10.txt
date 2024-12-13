@@ -1,0 +1,15 @@
+To generate the uppercase English letter "B", we can use the following commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b11', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```
+
+These commands will create a "B" shape using the specified block types in the defined environment.

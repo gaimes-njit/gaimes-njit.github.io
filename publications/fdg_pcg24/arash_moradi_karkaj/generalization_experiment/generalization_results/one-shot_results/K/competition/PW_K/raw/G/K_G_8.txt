@@ -1,0 +1,21 @@
+To generate the uppercase English letter "G" using the given block types and commands, you can follow the following steps:
+
+1. Start by placing a 1x1 square block ('b11') at position (1, 4).
+2. Place another 1x1 square block ('b11') at position (1, 6).
+3. Place a horizontal straight block ('b31') starting from position (1, 5).
+4. Place a 1x1 square block ('b11') at position (1, 4).
+5. Place another 1x1 square block ('b11') at position (1, 5).
+6. Place the horizontal straight block ('b31') again starting from position (1, 5).
+7. Finally, place a 1x1 square block ('b11') at position (1, 4).
+8. End the stream of commands.
+
+The stream of ab_drop() commands would look like this:
+```
+ab_drop('b11',4)
+ab_drop('b11',6)
+ab_drop('b31',5)
+ab_drop('b11',4)
+ab_drop('b11',5)
+ab_drop('b31',5)
+ab_drop('b11',4)
+```

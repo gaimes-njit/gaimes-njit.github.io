@@ -1,0 +1,21 @@
+To generate a structure that resembles the character "T" while meeting all the hard constraints, we can follow these steps:
+
+Step 1: Initialize the structure as an empty grid.
+
+structure = [[' ']*20 for _ in range(16)]
+
+Step 2: Drop the b31 block at slot 1.
+
+ab_drop('b31', 1)
+
+Step 3: Drop the b13 block at slot 10.
+
+ab_drop('b13', 10)
+
+Step 4: Drop the b31 block at slot 5.
+
+ab_drop('b31', 5)
+
+The resulting structure will resemble the character "T". You can print the structure to see the final result.
+
+print(structure)

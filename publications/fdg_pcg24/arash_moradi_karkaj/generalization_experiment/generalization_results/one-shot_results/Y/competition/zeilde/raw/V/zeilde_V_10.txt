@@ -1,0 +1,41 @@
+Steps:
+1. Draw the letter "V" with asterisks:
+```
+*       *
+ *     *
+  *   *
+   * *
+    *
+```
+2. List the asterisks and spaces in each row:
+Row 1: 1 asterisk, 7 spaces
+Row 2: 2 asterisks, 5 spaces
+Row 3: 3 asterisks, 3 spaces
+Row 4: 4 asterisks, 1 space
+Row 5: 5 asterisks, 0 spaces
+3. Replace asterisks with x and spaces with y:
+Row 1: 1x, 7y
+Row 2: 2x, 5y
+Row 3: 3x, 3y
+Row 4: 4x, 1y
+Row 5: 5x, 0y
+4. Combine x and y in each row:
+Row 1: xxxyyyyy
+Row 2: xxxxyy
+Row 3: xxxyy
+Row 4: xxxx
+Row 5: xxxxx
+5. Indicate the position of each variable:
+Row 1: x-1; x-2; x-3; y-4; y-5; y-6; y-7; y-8
+Row 2: x-1; x-2; x-3; x-4; y-5; y-6
+Row 3: x-1; x-2; x-3; y-4; y-5
+Row 4: x-1; x-2; x-3; x-4
+Row 5: x-1; x-2; x-3; x-4; x-5
+6. Write the sequence of `ab_drop` function calls for each row:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

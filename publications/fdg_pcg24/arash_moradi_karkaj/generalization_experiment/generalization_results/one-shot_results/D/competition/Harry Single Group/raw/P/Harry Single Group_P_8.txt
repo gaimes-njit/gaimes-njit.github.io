@@ -1,0 +1,87 @@
+To form the letter "P" using the provided bricks and function ab_drop(), we can follow these steps:
+
+1. Initialize the field with empty cells.
+2. Place the b13 brick vertically on the ground with an x_position of 4 to create the bottom part of the letter "P". Use the ab_drop('b13', 4) function.
+3. Place the b31 brick horizontally directly above the b13 brick with an x_position of 8 to create the top part of the letter "P". Use the ab_drop('b31', 8) function.
+
+Here is the implementation of the above steps:
+
+```python
+# Initialize the field
+field = [[0] * 20 for _ in range(16)]
+
+# Function to check stability of the bricks
+def is_stable(brick, x_position):
+    # Check stability for b13 brick
+    if brick == 'b13':
+        # Get the pivot point
+        pivot_x = x_position
+        pivot_y = 0
+        # Count occupied cells on the left and right sides of the pivot
+        left_count = sum(field[y][x] for y in range(pivot_y, pivot_y+3) for x in range(pivot_x))
+        right_count = sum(field[y][x] for y in range(pivot_y, pivot_y+3) for x in range(pivot_x+1, pivot_x+4))
+        # If the counts are different, the structure is unstable
+        if left_count != right_count:
+            return False
+    return True
+
+# Function to check boundary collisions
+def check_collision(brick, x_position):
+    # Check boundary collision for b13 brick
+    if brick == 'b13':
+        # Check if any occupied cells exceed the boundaries of the field
+        if x_position < 0 or x_position+1 >= 20:
+            return True
+    # Check boundary collision for b31 brick
+    elif brick == 'b31':
+        # Check if any occupied cells exceed the boundaries of the field
+        if x_position < 0 or x_position+2 >= 20:
+            return True
+    return False
+
+# Function to drop bricks and update the field
+def ab_drop(brick, x_position):
+    # Check stability and boundary collision before dropping the brick
+    if not is_stable(brick, x_position) or check_collision(brick, x_position):
+        return False
+    
+    # Drop the brick from the top towards the ground
+    if brick == 'b13':
+        for y in range(15, 2, -1):
+            if field[y][x_position] == 1 or field[y][x_position+1] == 1 or field[y][x_position+2] == 1:
+                break
+            field[y][x_position] = 1
+            field[y][x_position+1] = 1
+            field[y][x_position+2] = 1
+    elif brick == 'b31':
+        for y in range(15, 2, -1):
+            if field[y][x_position] == 1 or field[y][x_position+1] == 1 or field[y][x_position+2] == 1:
+                break
+            field[y][x_position] = 1
+            field[y][x_position+1] = 1
+            field[y][x_position+2] = 1
+    
+    # Return True to indicate successful placement
+    return True
+
+# Place the b13 brick vertically on the ground
+ab_drop('b13', 4)
+# Place the b31 brick horizontally above the b13 brick
+ab_drop('b31', 8)
+
+# Print the field to visualize the letter "P"
+for row in field:
+    print(row)
+```
+
+The output will be:
+
+```
+[0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+...
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0

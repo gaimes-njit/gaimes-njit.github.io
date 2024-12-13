@@ -1,0 +1,9 @@
+The code block below shows the`ab_drop()` calls needed to create the structure resembling "L":
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+```

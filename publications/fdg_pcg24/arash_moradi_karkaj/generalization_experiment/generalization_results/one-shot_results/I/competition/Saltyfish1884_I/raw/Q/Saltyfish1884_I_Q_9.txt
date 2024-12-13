@@ -1,0 +1,25 @@
+To generate a structure that resembles the character "Q" while meeting all the hard constraints, follow these steps:
+
+Step 1: Initialize the structure as an empty WxH grid.
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Drop a b13 block at slot 1 to form the vertical line of the "Q".
+```
+ab_drop('b13', 1)
+```
+
+Step 3: Drop a b31 block at slot 0 to form the horizontal line of the "Q".
+```
+ab_drop('b31', 0)
+```
+
+Step 4: Drop a b11 block at slot 2 to complete the loop of the "Q".
+```
+ab_drop('b11', 2)
+```
+
+The final structure should resemble the character "Q" and meet all the hard constraints.
+
+Note: This solution assumes that the "Q" character should be aligned at the bottom of the structure. If a different alignment is required, the slot numbers in the ab_drop() function calls need to be adjusted accordingly.

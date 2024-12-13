@@ -1,0 +1,8 @@
+To create the structure "W" inside a 20*16 box, you can use the following sequence of ab_drop commands:
+
+ab_drop('b31', 3)
+ab_drop('b13', 6)
+ab_drop('b31', 9)
+ab_drop('b31', 13)
+ab_drop('b13', 16)
+ab_drop('b31', 19)

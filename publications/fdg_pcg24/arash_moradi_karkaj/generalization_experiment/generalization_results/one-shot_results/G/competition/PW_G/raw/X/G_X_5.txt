@@ -1,0 +1,18 @@
+To generate the uppercase letter "X", we can use a combination of the provided block types in the specified environment. Here is a stream of ab_drop() commands to construct the letter "X":
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 3)
+ab_drop('b13', 4)
+ab_drop('b31', 5)
+```
+
+Explanation:
+1. Start by placing a horizontal straight block (b31) at position 1 to create the top-left part of the "X".
+2. Place a vertical straight block (b13) at position 2 to extend the top-left part vertically downwards.
+3. Place another horizontal straight block (b31) at position 3 to create the middle part of the "X".
+4. Place another vertical straight block (b13) at position 4 to extend the middle part vertically downwards.
+5. Finally, place the last horizontal straight block (b31) at position 5 to complete the bottom-right part of the "X".
+
+By following these commands, the blocks will stack on each other to form the letter "X" within the specified boundaries of the grid.

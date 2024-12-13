@@ -1,0 +1,7 @@
+ab_drop('b31', 0) # Place the first b31 block at the leftmost slot
+ab_drop('b31', 19) # Place the second b31 block at the rightmost slot
+ab_drop('b13', 9) # Place the first b13 block at the center slot
+ab_drop('b11', 8) # Place the first b11 block next to the left b13 block
+ab_drop('b11', 10) # Place the second b11 block next to the right b13 block
+ab_drop('b11', 7) # Place the third b11 block next to the left b11 block
+ab_drop('b11', 11) # Place the fourth b11 block next to the right b11 block

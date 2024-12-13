@@ -1,0 +1,53 @@
+To create the uppercase letter "G", we can follow these steps:
+
+1. Place a vertical straight block (b13) at position (1, 8).
+```
+ab_drop('b13', 1)
+```
+
+2. Place a horizontal straight block (b31) at position (2, 3).
+```
+ab_drop('b31', 2)
+```
+
+3. Place a vertical straight block (b13) at position (7, 6).
+```
+ab_drop('b13', 7)
+```
+
+4. Place a horizontal straight block (b31) at position (8, 10).
+```
+ab_drop('b31', 8)
+```
+
+5. Place a horizontal straight block (b31) at position (9, 10).
+```
+ab_drop('b31', 9)
+```
+
+6. Place a vertical straight block (b13) at position (10, 6).
+```
+ab_drop('b13', 10)
+```
+
+7. Place a vertical straight block (b13) at position (14, 1).
+```
+ab_drop('b13', 14)
+```
+
+8. Place a horizontal straight block (b31) at position (15, 3).
+```
+ab_drop('b31', 15)
+```
+
+9. Place a horizontal straight block (b31) at position (16, 3).
+```
+ab_drop('b31', 16)
+```
+
+10. Place a vertical straight block (b13) at position (17, 1).
+```
+ab_drop('b13', 17)
+```
+
+This should create the uppercase letter "G" within the allowed space boundaries.

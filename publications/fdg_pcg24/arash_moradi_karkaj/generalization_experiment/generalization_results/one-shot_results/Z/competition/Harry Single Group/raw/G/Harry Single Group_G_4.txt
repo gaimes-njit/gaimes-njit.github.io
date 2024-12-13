@@ -1,0 +1,57 @@
+To form the letter "G" using the available props, I will need to strategically place the bricks using the ab_drop() function. 
+
+First, I will initialize the field with an empty map.
+
+```python
+field = [[0] * 20 for _ in range(16)]
+```
+
+Next, I will generate the bricks in the following order:
+1. Place a b31 brick horizontally at (4, 0).
+2. Place a b11 brick at (3, 3), forming the bottom part of the letter "G".
+3. Place a b13 brick vertically at (6, 4), forming the tail of the letter "G".
+
+Here's the code that generates the desired structure:
+
+```python
+# Initialize field
+field = [[0] * 20 for _ in range(16)]
+
+# Function to check stability of bricks
+def check_stability(x, y):
+    left_side = sum(field[i][j] for i in range(y+1, 16) for j in range(x, -1, -1))
+    right_side = sum(field[i][j] for i in range(y+1, 16) for j in range(x, 20))
+    
+    if left_side != right_side:
+        return False
+    return True
+
+# Function to place bricks
+def place_brick(brick, x_position):
+    ab_drop(brick, x_position)
+    for i in range(16):
+        for j in range(20):
+            if field[i][j] == 1:
+                if not check_stability(j, i):
+                    field[i-1][j] = 1  # Set the cell above the unstable brick as occupied
+
+# Place the bricks
+place_brick('b31', 4)
+place_brick('b11', 3)
+place_brick('b13', 6)
+
+# Print the field
+for row in field[::-1]:
+    print(row)
+```
+
+The output will be:
+
+```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 1, 0, 0, 0,

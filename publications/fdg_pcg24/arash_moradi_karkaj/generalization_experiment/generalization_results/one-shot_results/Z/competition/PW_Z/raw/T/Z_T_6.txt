@@ -1,0 +1,11 @@
+To create the uppercase letter "T" using the given block types, you can use the following sequence of commands:
+
+```
+ab_drop('b31', 9)
+ab_drop('b13', 10)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+```
+
+This sequence will create a horizontal straight block (`b31`) followed by a vertical straight block (`b13`) placed next to it to form the letter "T". Finally, three 1x1 square blocks (`b11`) are placed horizontally below the vertical straight block to complete the letter.

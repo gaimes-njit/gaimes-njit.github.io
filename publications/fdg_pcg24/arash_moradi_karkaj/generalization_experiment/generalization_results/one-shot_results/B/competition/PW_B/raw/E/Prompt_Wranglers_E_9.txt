@@ -1,0 +1,38 @@
+To generate the uppercase English letter "E", we can follow the following steps:
+
+1. Start by placing a horizontal straight block on the bottom row at position 1:
+```
+ab_drop('b31', 1)
+```
+
+2. Place a vertical straight block on the next row at position 1:
+```
+ab_drop('b13', 1)
+```
+
+3. Place another vertical straight block on the same row at position 3:
+```
+ab_drop('b13', 3)
+```
+
+4. Place another horizontal straight block on the next row at position 1:
+```
+ab_drop('b31', 1)
+```
+
+5. Place a vertical straight block on the same row at position 1:
+```
+ab_drop('b13', 1)
+```
+
+6. Place another vertical straight block on the same row at position 3:
+```
+ab_drop('b13', 3)
+```
+
+7. Place a horizontal straight block on the next row at position 1:
+```
+ab_drop('b31', 1)
+```
+
+By following these steps, you can generate the uppercase English letter "E" while maintaining structural stability with regard to the gravity rules.

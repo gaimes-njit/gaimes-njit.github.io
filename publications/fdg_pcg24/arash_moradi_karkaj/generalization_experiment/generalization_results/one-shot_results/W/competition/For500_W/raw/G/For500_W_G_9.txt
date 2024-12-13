@@ -1,0 +1,9 @@
+ab_drop('b13', 6)  # drop the left vertical part of the 'G' shape
+ab_drop('b13', 13)  # drop the right vertical part of the 'G' shape
+ab_drop('b31', 8)  # drop the middle horizontal part of the 'G' shape
+ab_drop('b31', 6)  # support the left vertical part of the 'G' shape
+ab_drop('b31', 14)  # support the right vertical part of the 'G' shape
+ab_drop('b31', 10)  # support the middle horizontal part of the 'G' shape
+ab_drop('b11', 7)  # support the top part of the left vertical of the 'G' shape
+ab_drop('b11', 9)  # support the top part of the middle horizontal of the 'G' shape
+ab_drop('b11', 12)  # support the top part of the right vertical of the 'G' shape

@@ -1,0 +1,22 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# First layer (bottom)
+ab_drop('b31',6) # Horizontal block
+ab_drop('b31',8) # Horizontal block
+
+# Second layer
+ab_drop('b13',6) # Vertical block
+ab_drop('b13',8) # Vertical block
+
+# Third layer
+ab_drop('b31',6) # Horizontal block
+ab_drop('b31',8) # Horizontal block
+
+# Fourth layer (top)
+ab_drop('b11',6) # Single block
+ab_drop('b11',7) # Single block
+ab_drop('b11',8) # Single block
+
+```

@@ -1,0 +1,10 @@
+To create the structure of "L" inside a 20*16 block, you can use the following commands:
+
+ab_drop('b13', 0)  # Place a vertical block of type b13 at position (0, 0)
+ab_drop('b11', 0)  # Place a single block of type b11 at position (0, 3)
+ab_drop('b11', 0)  # Place a single block of type b11 at position (0, 4)
+ab_drop('b11', 0)  # Place a single block of type b11 at position (0, 5)
+ab_drop('b31', 0)  # Place a horizontal block of type b31 at position (1, 5)
+ab_drop('b11', 2)  # Place a single block of type b11 at position (4, 5)
+
+This will create an "L" shaped structure inside the 20*16 block.

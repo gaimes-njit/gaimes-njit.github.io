@@ -1,0 +1,6 @@
+ab_drop('b31', 3)  # Place a support block under the center of the top part of the 'W'
+ab_drop('b13', 2)  # Place the left vertical part of the 'W'
+ab_drop('b13', 4)  # Place the right vertical part of the 'W'
+ab_drop('b13', 9)  # Place the middle vertical part of the 'W'
+ab_drop('b31', 9)  # Place a support block under the center of the middle part of the 'W'
+ab_drop('b11', 8)  # Place the center diagonal part of the 'W'

@@ -1,0 +1,4 @@
+ab_drop('b13', 7)  # drop the first vertical block to create the letter 'C'
+ab_drop('b31', 9)  # drop a horizontal block on top of the vertical block
+ab_drop('b31', 10)  # drop another horizontal block on top of the previous one
+ab_drop('b13', 7)  # drop another vertical block to complete the top part of the 'C'

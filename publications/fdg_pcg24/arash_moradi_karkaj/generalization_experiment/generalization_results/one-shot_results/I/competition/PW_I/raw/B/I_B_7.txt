@@ -1,0 +1,9 @@
+To generate the uppercase letter "B", we can use the following sequence of `ab_drop()` commands:
+
+``` 
+ab_drop('b31',1) ab_drop('b13',1) ab_drop('b31',1) ab_drop('b13',1) ab_drop('b31',1) ab_drop('b13',1) ab_drop('b31',1)
+ab_drop('b11',3) ab_drop('b11',3) ab_drop('b11',3) ab_drop('b11',3) ab_drop('b11',3)
+ab_drop('b31',1) ab_drop('b13',1) ab_drop('b31',1) ab_drop('b13',1) ab_drop('b31',1) ab_drop('b13',1) ab_drop('b31',1)
+```
+
+This sequence of commands constructs the letter "B" in the Tetris-like environment by stacking and arranging the block types `b31`, `b13`, and `b11` in the required formation. The gravity rules ensure that the blocks stack and align properly to form the letter "B".

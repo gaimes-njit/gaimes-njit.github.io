@@ -1,0 +1,13 @@
+Here is the code to generate the "I" structure:
+
+```
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+ab_drop('b11', 9)
+ab_drop('b31', 9)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+```

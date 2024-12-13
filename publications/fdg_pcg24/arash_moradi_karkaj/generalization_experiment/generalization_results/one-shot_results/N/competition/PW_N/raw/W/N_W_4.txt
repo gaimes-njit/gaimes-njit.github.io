@@ -1,0 +1,18 @@
+To generate the capital English letter "W" using the ab_drop() commands, you need to stack and position the blocks in a specific manner. Here is a step-by-step guide on how to achieve this:
+
+1. Start by placing a vertical straight block (b13) at position 2: ```ab_drop('b13',2)```.
+2. Add another vertical straight block (b13) right next to it at position 3: ```ab_drop('b13',3)```.
+3. Now, place a horizontal straight block (b31) on top of the two vertical blocks at position 3: ```ab_drop('b31',3)```.
+4. Next, add a vertical straight block (b13) at position 5 to the right side of the horizontal block: ```ab_drop('b13',5)```.
+5. Finally, place a 1x1 square block (b11) above the vertical block at position 5: ```ab_drop('b11',5)```.
+
+By following these instructions, you will be able to create the uppercase English letter "W" in the Tetris-like environment.
+
+Complete stream of commands:
+```python
+ab_drop('b13',2)
+ab_drop('b13',3)
+ab_drop('b31',3)
+ab_drop('b13',5)
+ab_drop('b11',5)
+```

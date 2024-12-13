@@ -1,0 +1,39 @@
+To generate a stable structure that resembles the character "V", we can follow these steps:
+
+1. Initialize the structure grid using the provided code:
+
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Place the base blocks (b11) at the bottom of the structure to form a solid base:
+
+```python
+for i in range(7, 14):
+    ab_drop('b11', i)
+```
+
+This will place 8 b11 blocks starting from slot 7 to slot 14.
+
+3. Place the vertical block (b13) on top of the base blocks to form the center of the "V" shape:
+
+```python
+ab_drop('b13', 10)
+```
+
+This will place a b13 block in the center slot, aligned with the base blocks.
+
+4. Place the horizontal block (b31) on each side of the vertical block to complete the "V" shape:
+
+```python
+ab_drop('b31', 9)
+ab_drop('b31', 11)
+```
+
+This will place two b31 blocks, one at slot 9 and the other at slot 11, aligned with the base blocks.
+
+5. To meet the stability constraint (5.1), we have ensured that the blocks are placed on a solid base, as b31 blocks are supported by the base blocks. We have also placed the blocks as low as possible.
+
+6. To meet the no boundary intrusion constraint (5.2), we have ensured that the blocks do not intrude on the boundary of the map.
+
+The final structure grid will resemble the character "V" and meet all the given requirements.

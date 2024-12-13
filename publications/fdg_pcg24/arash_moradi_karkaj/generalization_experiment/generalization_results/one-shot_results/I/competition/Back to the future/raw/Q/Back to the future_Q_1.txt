@@ -1,0 +1,17 @@
+To generate a stable structure that looks like the uppercase character "Q" using the `ab_drop()` function and meeting all the hard constraints, the following steps can be followed:
+
+1. Initialize the structure as an empty grid using the provided code: `structure = [[' ']*W for _ in range(H)]`.
+
+2. Start building the structure from the bottom layer (layer 0) up to the top layer (layer 15).
+
+3. Place a vertical block (b13) at the center slot (W//2) on the bottom layer (layer 0) using `ab_drop('b13', W//2)`. This block will act as the base for the rest of the structure.
+
+4. Place a horizontal block (b31) on top of the previously placed vertical block at the center slot on the second layer (layer 1) using `ab_drop('b31', W//2)`.
+
+5. Continue building the structure upwards by alternating between placing vertical blocks (b13) and horizontal blocks (b31), with the horizontal blocks being shifted left or right by 1 slot for each layer.
+
+6. After reaching the second-to-last layer (layer 14), place a horizontal block (b31) at the center slot (W//2) to complete the upper half of the "Q" shape using `ab_drop('b31', W//2)`.
+
+7. The structure should now resemble the uppercase character "Q" and satisfy the stability constraint.
+
+It's important to note that the above steps provide a general guideline for building the structure and may need to be adjusted or optimized based on the specific requirements of the problem and the functionality of the `ab_drop()` function.

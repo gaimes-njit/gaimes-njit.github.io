@@ -1,0 +1,22 @@
+To generate the uppercase letter "W" using the given block types and commands, we can follow these steps:
+
+Step 1: Place the left slant of the "W"
+- ab_drop('b31', 1) to place the horizontal straight block at position 1
+- ab_drop('b13', 0) to place the vertical straight block at position 0
+- ab_drop('b13', 2) to place another vertical straight block at position 2
+
+Step 2: Place the right slant of the "W"
+- ab_drop('b13', 4) to place the vertical straight block at position 4
+- ab_drop('b13', 6) to place another vertical straight block at position 6
+- ab_drop('b31', 5) to place the horizontal straight block at position 5
+
+Here is the complete stream of commands to generate the uppercase letter "W":
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b13', 4)
+ab_drop('b13', 6)
+ab_drop('b31', 5)
+```

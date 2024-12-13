@@ -1,0 +1,20 @@
+Here is a stream of commands to generate the uppercase English letter "Z":
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 4)
+ab_drop('b11', 4)
+ab_drop('b13', 6)
+ab_drop('b31', 7)
+ab_drop('b11', 7)
+ab_drop('b13', 9)
+ab_drop('b31', 10)
+ab_drop('b11', 10)
+ab_drop('b31', 13)
+ab_drop('b13', 13)
+ab_drop('b31', 16)
+ab_drop('b11', 16)
+```
+
+This sequence of commands will create the letter "Z" in the Tetris-like environment while adhering to the gravity rules and space boundaries.

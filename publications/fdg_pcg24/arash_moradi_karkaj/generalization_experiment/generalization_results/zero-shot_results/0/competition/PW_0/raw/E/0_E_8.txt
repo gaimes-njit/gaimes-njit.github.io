@@ -1,0 +1,15 @@
+To create the uppercase letter "E" using the given block types, we can use the following stream of commands:
+
+```
+ab_drop("b31", 1)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b13", 2)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b31", 1)
+```
+
+This stream of commands will place the blocks in the Tetris-like environment to form the letter "E", while adhering to the gravity rules and space boundaries.

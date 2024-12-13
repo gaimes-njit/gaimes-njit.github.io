@@ -1,0 +1,16 @@
+To generate a structure that looks like the letter "V", we can use a combination of `ab_drop` function calls. Here is the sequence of `ab_drop` function calls to achieve this:
+
+```
+ab_drop(4)
+ab_drop(3)
+ab_drop(3)
+ab_drop(2)
+ab_drop(1)
+ab_drop(1)
+ab_drop(2)
+ab_drop(3)
+ab_drop(3)
+ab_drop(4)
+```
+
+This sequence will construct a structure resembling the letter "V" when executed. Each `ab_drop(k)` call creates a horizontal segment of length `k`. By combining these segments in the right order, we can build the desired letter "V".

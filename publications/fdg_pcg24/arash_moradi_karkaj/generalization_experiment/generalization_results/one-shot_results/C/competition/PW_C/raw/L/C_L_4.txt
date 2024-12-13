@@ -1,0 +1,10 @@
+To generate the uppercase letter "L", the following ab_drop() commands should be used:
+
+```
+ab_drop('b13', 1)  # place the vertical straight block at position 1
+ab_drop('b13', 1)  # place the vertical straight block at position 1
+ab_drop('b13', 1)  # place the vertical straight block at position 1
+ab_drop('b31', 1)  # place the horizontal straight block at position 1
+```
+
+This will create the shape of the letter "L" within the allowed boundaries of the grid.

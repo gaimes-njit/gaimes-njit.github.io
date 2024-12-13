@@ -1,0 +1,102 @@
+```
+# map initialization
+field = [[0]*20 for _ in range(16)]
+
+# function to check if a given position is valid
+def is_valid(x, y):
+    if x < 0 or x >= 20 or y < 0 or y >= 16:
+        return False
+    return True
+
+# function to check stability
+def is_stable(x, y):
+    # check for stability on the left
+    if is_valid(x-1, y) and field[y][x-1] != 0:
+        left_count = 0
+        while is_valid(x-1, y) and field[y][x-1] != 0:
+            left_count += 1
+            x -= 1
+        # check for stability on the right
+        if is_valid(x+1, y) and field[y][x+1] != 0:
+            right_count = 0
+            while is_valid(x+1, y) and field[y][x+1] != 0:
+                right_count += 1
+                x += 1
+            # if the counts are not equal, the structure is unstable
+            if left_count != right_count:
+                return False
+    return True
+
+# function to place bricks on the field
+def ab_drop(x, y):
+    if x == 'b31':
+        # check if the cells are occupied
+        for i in range(y-1, y+2):
+            if is_valid(i, 0) and field[0][i] != 0:
+                # cannot place the brick, return
+                return
+        # place the brick
+        for i in range(y-1, y+2):
+            if is_valid(i, 0):
+                field[0][i] = 1
+                field[1][i] = 1
+                field[2][i] = 1
+        # check stability
+        if not is_stable(y, 0):
+            # remove the brick as it is unstable
+            for i in range(y-1, y+2):
+                if is_valid(i, 0):
+                    field[0][i] = 0
+                    field[1][i] = 0
+                    field[2][i] = 0
+    elif x == 'b13':
+        # check if the cells are occupied
+        if is_valid(y, 0) and field[0][y] != 0:
+            # cannot place the brick, return
+            return
+        # place the brick
+        for i in range(3):
+            if is_valid(y, i):
+                field[i][y] = 1
+        # check stability
+        if not is_stable(y, 0):
+            # remove the brick as it is unstable
+            for i in range(3):
+                if is_valid(y, i):
+                    field[i][y] = 0
+    elif x == 'b11':
+        # check if the cell is occupied
+        if is_valid(y, 0) and field[0][y] != 0:
+            # cannot place the brick, return
+            return
+        # place the brick
+        field[0][y] = 1
+        # check stability
+        if not is_stable(y, 0):
+            # remove the brick as it is unstable
+            field[0][y] = 0
+
+# generate the required structure
+ab_drop('b13', 5)
+ab_drop('b31', 6)
+ab_drop('b31', 10)
+ab_drop('b31', 14)
+ab_drop('b31', 18)
+ab_drop('b11', 19)
+
+# print the field
+for i in range(16):
+    for j in range(20):
+        print(field[i][j], end=' ')
+    print()
+```
+
+The output will be:
+
+```
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0

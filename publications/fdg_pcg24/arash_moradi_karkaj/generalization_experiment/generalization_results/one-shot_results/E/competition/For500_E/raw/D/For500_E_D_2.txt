@@ -1,0 +1,21 @@
+# Initialize the structure as an empty grid
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the base block
+ab_drop('b31', 9)
+
+# Drop the left vertical part of 'D'
+ab_drop('b13', 8)
+ab_drop('b13', 7)
+
+# Drop the right part of 'D'
+ab_drop('b13', 10)
+ab_drop('b13', 11)
+ab_drop('b31', 11)
+
+# Drop the top part of 'D'
+ab_drop('b31', 8)
+ab_drop('b31', 10)
+ab_drop('b31', 9)
+
+# Resulting code: series of ab_drop()

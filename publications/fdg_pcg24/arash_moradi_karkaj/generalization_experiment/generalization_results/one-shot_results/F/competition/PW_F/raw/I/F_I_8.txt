@@ -1,0 +1,16 @@
+To generate the uppercase letter "I" using the provided block types and environment, you can use the following stream of commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+```
+
+This sequence of commands will place ten vertical straight blocks (b13) next to each other, forming the letter "I" within the boundaries of the allowed space.

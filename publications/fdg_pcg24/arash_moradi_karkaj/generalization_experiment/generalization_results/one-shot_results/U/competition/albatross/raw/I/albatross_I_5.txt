@@ -1,0 +1,4 @@
+# Code Sequence to construct the letter "I"
+
+# Drop the vertical block at slot 9
+ab_drop('b13', 9)

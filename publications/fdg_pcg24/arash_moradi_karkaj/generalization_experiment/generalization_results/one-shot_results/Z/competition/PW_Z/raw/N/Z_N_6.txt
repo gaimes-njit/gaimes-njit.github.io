@@ -1,0 +1,35 @@
+To generate the uppercase English letter "N" using the block types, we can follow these steps:
+
+1. Place a horizontal block (b31) at position 1 to form the left vertical line of the letter:
+```plaintext
+ab_drop('b31', 1)
+```
+
+2. Place a vertical block (b13) at position 4 to form the diagonal line of the letter:
+```plaintext
+ab_drop('b13', 4)
+```
+
+3. Place a horizontal block (b31) at position 7 to complete the right vertical line of the letter:
+```plaintext
+ab_drop('b31', 7)
+```
+
+4. Place a horizontal block (b31) at position 10 to form the bottom line of the letter:
+```plaintext
+ab_drop('b31', 10)
+```
+
+5. Place a vertical block (b13) at position 13 to finish the diagonal line of the letter:
+```plaintext
+ab_drop('b13', 13)
+```
+
+The final stream of commands to generate the letter "N" would be:
+```plaintext
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+ab_drop('b31', 7)
+ab_drop('b31', 10)
+ab_drop('b13', 13)
+```

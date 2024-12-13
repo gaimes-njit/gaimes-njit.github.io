@@ -1,0 +1,27 @@
+To create the capital letter "C" in the level, we can break it down into three blocks: the top bar, the vertical pipe, and the bottom bar. We will start by creating the top bar and the vertical pipe, and then we will add the bottom bar.
+
+```python
+# The top bar of C
+ab_drop("b31", 6)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+
+# The vertical pipe of C
+ab_drop("b13", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 7)
+
+# TODO: Add the bottom bar of C
+```
+
+Now we need to add the bottom bar of the letter "C". However, if we drop the block "b13" directly below the vertical pipe, it will not be balanced and will collapse. To make it stable, we will need to add additional support to the bottom bar.
+
+```python
+# The bottom bar of C
+ab_drop("b13", 6)
+ab_drop("b11", 5)
+ab_drop("b11", 7)
+```
+
+With these steps, we have created the capital letter "C" in the level. You can adjust the positions of the blocks if needed to achieve better stability and similarity.

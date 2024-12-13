@@ -1,0 +1,45 @@
+Step #1: 
+```
+*****
+*     
+*****
+     *
+*****
+```
+
+Step #2:
+- Row 1: 5 asterisks
+- Row 2: 1 asterisk, 4 spaces
+- Row 3: 5 asterisks
+- Row 4: 5 spaces, 1 asterisk
+- Row 5: 5 asterisks
+
+Step #3:
+- Row 1: 5x
+- Row 2: 1x, 4y
+- Row 3: 5x
+- Row 4: 5y, 1x
+- Row 5: 5x
+
+Step #4:
+- Row 1: "x-1; x-2; x-3; x-4; x-5"
+- Row 2: "x-1; y-2; y-3; y-4; x-5"
+- Row 3: "x-1; x-2; x-3; x-4; x-5"
+- Row 4: "y-1; y-2; y-3; y-4; x-5"
+- Row 5: "x-1; x-2; x-3; x-4; x-5"
+
+Step #5:
+- Row 1: "x-1; x-2; x-3; x-4; x-5"
+- Row 2: "x-1; y-2; y-3; y-4; x-5"
+- Row 3: "x-1; x-2; x-3; x-4; x-5"
+- Row 4: "y-1; y-2; y-3; y-4; x-5"
+- Row 5: "x-1; x-2; x-3; x-4; x-5"
+
+Step #6:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

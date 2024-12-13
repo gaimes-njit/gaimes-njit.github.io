@@ -1,0 +1,22 @@
+To create the structure resembling the letter "B" inside a 20*16 box using the ab_drop('blocktype', x position) command, we can use the following steps:
+
+1. Drop a b13 block at position (0, 0) using ab_drop('b13', 0).
+2. Drop a b13 block at position (0, 4) using ab_drop('b13', 4).
+3. Drop a b13 block at position (0, 8) using ab_drop('b13', 8).
+4. Drop a b13 block at position (0, 12) using ab_drop('b13', 12).
+5. Drop a b13 block at position (0, 16) using ab_drop('b13', 16).
+6. Drop a b11 block at position (2, 4) using ab_drop('b11', 4).
+7. Drop a b11 block at position (2, 8) using ab_drop('b11', 8).
+8. Drop a b11 block at position (2, 12) using ab_drop('b11', 12).
+9. Drop a b31 block at position (6, 2) using ab_drop('b31', 2).
+10. Drop a b31 block at position (6, 10) using ab_drop('b31', 10).
+11. Drop a b11 block at position (10, 4) using ab_drop('b11', 4).
+12. Drop a b11 block at position (10, 8) using ab_drop('b11', 8).
+13. Drop a b11 block at position (10, 12) using ab_drop('b11', 12).
+14. Drop a b13 block at position (14, 0) using ab_drop('b13', 0).
+15. Drop a b13 block at position (14, 4) using ab_drop('b13', 4).
+16. Drop a b13 block at position (14, 8) using ab_drop('b13', 8).
+17. Drop a b13 block at position (14, 12) using ab_drop('b13', 12).
+18. Drop a b13 block at position (14, 16) using ab_drop('b13', 16).
+
+The resulting structure will resemble the letter "B" inside a 20*16 box.

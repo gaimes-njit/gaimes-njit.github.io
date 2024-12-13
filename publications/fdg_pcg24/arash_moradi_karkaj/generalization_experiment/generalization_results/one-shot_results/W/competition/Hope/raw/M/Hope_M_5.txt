@@ -1,0 +1,22 @@
+To create the structure of an "M" inside a 20x16 box using the given block types and the ab_drop function, we can follow these steps:
+
+1. Place the first vertical segment of the "M":
+   - Drop a b31 block at position x=0.
+   - Drop a b31 block at position x=4.
+   - Drop a b31 block at position x=8.
+   - Drop a b31 block at position x=12.
+   - Drop a b31 block at position x=16.
+
+2. Place the slanted middle segment of the "M":
+   - Drop a b11 block at position x=2.
+   - Drop a b11 block at position x=6.
+   - Drop a b11 block at position x=10.
+   - Drop a b11 block at position x=14.
+
+3. Place the second vertical segment of the "M":
+   - Drop a b13 block at position x=3.
+   - Drop a b13 block at position x=7.
+   - Drop a b13 block at position x=11.
+   - Drop a b13 block at position x=15.
+
+Note: The above steps assume that the box has its top-left corner at position (0, 0) and that the positions are given in terms of the column number (x position) within the box.

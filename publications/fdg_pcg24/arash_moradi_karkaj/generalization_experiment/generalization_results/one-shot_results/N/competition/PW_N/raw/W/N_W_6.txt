@@ -1,0 +1,13 @@
+To create the uppercase letter "W" in the given environment, we can use the following stream of commands:
+
+```
+ab_drop('b13',1)  // Place vertical block at position 1
+ab_drop('b31',2)  // Place horizontal block at position 2
+ab_drop('b13',4)  // Place vertical block at position 4
+ab_drop('b31',5)  // Place horizontal block at position 5
+ab_drop('b13',7)  // Place vertical block at position 7
+```
+
+By following these commands, we can construct the uppercase letter "W" within the allowed space and in accordance with the gravity rules.
+
+Please note that the blocks are placed one by one, and the X position can be adjusted based on the width of the block type.

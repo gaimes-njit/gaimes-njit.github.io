@@ -1,0 +1,16 @@
+```python
+ab_drop("b31", 0)
+ab_drop("b13", 1)
+ab_drop("b31", 2)
+ab_drop("b13", 2)
+```
+Explanation:
+
+This solution uses a combination of `b31` and `b13` blocks to construct the letter "Z". The blocks are dropped sequentially to create a stable structure.
+
+- The first `b31` block is dropped in the leftmost slot (x_position = 0).
+- The first `b13` block is dropped in the second slot (x_position = 1), overlapping with the rightmost unit of the `b31` block.
+- The second `b31` block is dropped in the third slot (x_position = 2), overlapping with the rightmost unit of the first `b13` block.
+- The second `b13` block is dropped in the third slot (x_position = 2), overlapping with the rightmost unit of the second `b31` block.
+
+This arrangement forms a stable and aesthetically pleasing representation of the letter "Z" while adhering to the specified constraints.

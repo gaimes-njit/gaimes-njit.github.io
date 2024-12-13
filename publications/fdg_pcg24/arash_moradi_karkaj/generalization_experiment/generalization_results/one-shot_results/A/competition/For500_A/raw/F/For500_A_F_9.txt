@@ -1,0 +1,4 @@
+ab_drop('b11', 9)  # Drop the middle vertical line of the letter "F"
+ab_drop('b11', 7)  # Drop the left vertical line of the letter "F"
+ab_drop('b31', 9)  # Drop the horizontal line of the letter "F"
+ab_drop('b11', 9)  # Drop the top horizontal line of the letter "F"

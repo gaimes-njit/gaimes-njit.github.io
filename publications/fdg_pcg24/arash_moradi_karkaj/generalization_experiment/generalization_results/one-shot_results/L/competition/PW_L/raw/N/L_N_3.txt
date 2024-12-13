@@ -1,0 +1,9 @@
+To generate the uppercase English letter "N", you need to use the following ab_drop() commands:
+
+```python
+ab_drop('b13', 1)
+ab_drop('b31', 2)
+ab_drop('b13', 4)
+```
+
+These commands will place the blocks in the Tetris-like environment to form the letter "N", following the gravity rules and fitting within the allowed space boundaries.

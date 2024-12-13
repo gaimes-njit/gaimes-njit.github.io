@@ -1,0 +1,45 @@
+To generate a stable structure that resembles the character "S" while meeting all hard constraints, we need to carefully consider the placement and order of the blocks to ensure stability and avoid boundary intrusion. Here are the step-by-step instructions:
+
+1. Initialize the structure as an empty WxH grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start by dropping a b31 block to form the base:
+```
+ab_drop('b31', 9)
+```
+This will create a stable base for the structure.
+
+3. Drop a b13 block on top of the base, slightly offset from the center:
+```
+ab_drop('b13', 8)
+```
+This will create the first curve of the "S" shape.
+
+4. Drop another b31 block on top of the previous block, aligned with the base:
+```
+ab_drop('b31', 9)
+```
+This will create the straight vertical part of the "S" shape.
+
+5. Drop a b13 block on top of the previous block, slightly offset from the center:
+```
+ab_drop('b13', 8)
+```
+This will create the second curve of the "S" shape.
+
+6. To ensure stability, drop two b31 blocks on top of the previous block, aligned with the base:
+```
+ab_drop('b31', 9)
+ab_drop('b31', 9)
+```
+These blocks will provide additional support and prevent the structure from collapsing.
+
+7. Finally, drop a b13 block on top of the previous blocks, slightly offset from the center:
+```
+ab_drop('b13', 8)
+```
+This will complete the "S" shape.
+
+The final result should resemble the character "S" and meet all hard constraints of stability and no boundary intrusion.

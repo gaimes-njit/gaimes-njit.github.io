@@ -1,0 +1,17 @@
+To generate the uppercase English letter "H", we can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+```
+
+Explanation:
+- First, we create the foundation of the letter by placing three horizontal straight blocks (`b31`) in a row starting from position 1.
+- Then, we place three vertical straight blocks (`b13`) on top of the middle block in the foundation to create the vertical lines of the letter.
+- Finally, we repeat the vertical block placement two more times in the same position to complete the vertical lines of the letter.
+
+This stream of commands will generate the uppercase English letter "H" within the allowed space boundaries and following the gravity rules.

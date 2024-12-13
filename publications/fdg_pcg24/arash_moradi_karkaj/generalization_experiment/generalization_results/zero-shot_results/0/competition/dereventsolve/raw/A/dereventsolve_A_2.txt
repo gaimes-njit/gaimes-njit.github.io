@@ -1,0 +1,20 @@
+To generate a structure that looks like the letter "A", we can use the following sequence of `ab_drop` function calls:
+
+```
+database["top_left"] = "a"
+database["top_right"] = "o"
+database["bottom_left"] = "o"
+database["bottom_right"] = "a"
+database["middle"] = "i"
+
+sequence = []
+sequence.append(ab_drop(database["top_left"]))
+sequence.append(ab_drop(database["top_right"]))
+sequence.append(ab_drop(database["bottom_left"]))
+sequence.append(ab_drop(database["bottom_right"]))
+sequence.append(ab_drop(database["middle"]))
+
+return sequence
+```
+
+This sequence of `ab_drop` function calls will generate the structure that looks like the letter "A" by dropping the specified letters from the database.

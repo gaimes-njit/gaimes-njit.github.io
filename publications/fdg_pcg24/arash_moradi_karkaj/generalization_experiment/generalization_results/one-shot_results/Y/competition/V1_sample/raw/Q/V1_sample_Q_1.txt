@@ -1,0 +1,31 @@
+```python
+from ab import drop
+
+# Create the base layer
+base_layer = [["O"]*20]
+
+# Layers to represent the "Q" shape
+layers = [
+    ["O"]*6 + ["X"]*5 + ["O"]*9,
+    ["O"]*6 + ["X"]*5 + ["O"]*9,
+    ["O"]*6 + ["X"]*5 + ["O"]*9,
+    ["O"]*6 + ["X"]*5 + ["O"]*9,
+    ["O"]*6 + ["X"]*5 + ["O"]*9,
+    ["O"]*6 + ["X"]*5 + ["O"]*9,
+    ["O"]*6 + ["O"]*5 + ["O"]*9,
+    ["O"]*6 + ["O"]*5 + ["O"]*9,
+    ["O"]*6 + ["O"]*5 + ["O"]*9,
+    ["O"]*6 + ["O"]*5 + ["O"]*9,
+    ["O"]*6 + ["O"]*5 + ["O"]*9,
+    ["O"]*6 + ["O"]*5 + ["O"]*9,
+    ["O"]*6 + ["O"]*5 + ["O"]*9,
+    ["O"]*6 + ["O"]*5 + ["O"]*9,
+    ["O"]*6 + ["O"]*5 + ["O"]*9,
+    ["O"]*20
+]
+
+# Drop the layers representing the "Q" shape from the top with the center at slot 15
+for layer in layers:
+    drop(b31, layer, 15)
+
+```

@@ -1,0 +1,9 @@
+To generate the uppercase English letter "N", we can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 2)
+```
+
+This sequence of commands will stack the blocks in such a way that they form the letter "N" within the allowed space boundaries. The gravity rules will ensure that the blocks stack and maintain stability.

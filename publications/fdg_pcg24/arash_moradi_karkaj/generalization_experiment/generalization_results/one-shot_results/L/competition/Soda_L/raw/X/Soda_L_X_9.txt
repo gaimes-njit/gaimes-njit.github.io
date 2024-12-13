@@ -1,0 +1,18 @@
+The first step is to create the vertical bar for the letter "L" by dropping a block of type "b31" centered at x_position 10:
+
+```
+ab_drop("b31", 10)
+```
+
+The second step is to create the bottom bar for the letter "L" by dropping a block of type "b13" centered at x_position 9:
+
+```
+ab_drop("b13", 9)
+```
+
+The complete implementation for creating the letter "L" in the natural orientation is as follows:
+
+```
+ab_drop("b31", 10)
+ab_drop("b13", 9)
+```

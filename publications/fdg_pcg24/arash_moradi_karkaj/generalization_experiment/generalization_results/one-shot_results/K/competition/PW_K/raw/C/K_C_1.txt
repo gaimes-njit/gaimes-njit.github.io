@@ -1,0 +1,15 @@
+To create the uppercase English letter "C" using the given block types and gravity rules, you can use the following set of ab_drop() commands:
+
+```python
+ab_drop('b11',1)  # Place a square block at position 1
+ab_drop('b31',2)  # Place a horizontal straight block at position 2
+ab_drop('b13',2)  # Place a vertical straight block at position 2
+ab_drop('b13',2)  # Place a vertical straight block at position 2
+ab_drop('b31',1)  # Place a horizontal straight block at position 1
+ab_drop('b31',1)  # Place a horizontal straight block at position 1
+ab_drop('b13',2)  # Place a vertical straight block at position 2
+ab_drop('b13',2)  # Place a vertical straight block at position 2
+ab_drop('b13',2)  # Place a vertical straight block at position 2
+```
+
+These commands will create the uppercase letter "C" within the boundaries of the grid and maintain stability according to the gravity rules.

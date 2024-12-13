@@ -1,0 +1,37 @@
+To build the letter "K" in the level, we need to place a total of 7 blocks in a specific order.
+
+Step 1: Place the base blocks
+The base of the "K" consists of a row block ("b31") and a column block ("b13").
+```
+ab_drop("b31", 8)
+ab_drop("b13", 9)
+```
+
+Step 2: Place the vertical bar
+Next, we need to place a column block ("b13") vertically on top of the base.
+```
+ab_drop("b13", 10)
+```
+
+Step 3: Place the diagonal extensions
+To form the diagonal extensions of the "K", we need to place two row blocks ("b31") diagonally. One on the top-left and the other on the top-right of the vertical bar.
+```
+ab_drop("b31", 7)
+ab_drop("b31", 11)
+```
+
+Step 4: Place the horizontal bar
+Finally, we need to place a row block ("b31") horizontally at the top to complete the letter "K".
+```
+ab_drop("b31", 10)
+```
+
+Complete implementation:
+```
+ab_drop("b31", 8)
+ab_drop("b13", 9)
+ab_drop("b13", 10)
+ab_drop("b31", 7)
+ab_drop("b31", 11)
+ab_drop("b31", 10)
+```

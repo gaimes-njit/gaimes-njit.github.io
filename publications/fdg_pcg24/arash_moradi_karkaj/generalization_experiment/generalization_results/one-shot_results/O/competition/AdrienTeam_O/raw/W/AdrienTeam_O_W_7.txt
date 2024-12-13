@@ -1,0 +1,69 @@
+Here is the solution to construct a structure resembling "W" while satisfying all the given constraints:
+
+```
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Bottom layer (Layer 0)
+ab_drop('b31', 6)
+ab_drop('b13', 5)
+ab_drop('b13', 7)
+ab_drop('b31', 6)
+
+# Second layer (Layer 1)
+ab_drop('b11', 6)
+ab_drop('b11', 5)
+ab_drop('b11', 7)
+
+# Third layer (Layer 2)
+ab_drop('b13', 6)
+
+# Fourth layer (Layer 3)
+ab_drop('b11', 6)
+
+# Fifth layer (Layer 4)
+ab_drop('b13', 6)
+
+# Sixth layer (Layer 5)
+ab_drop('b11', 6)
+ab_drop('b11', 5)
+ab_drop('b11', 4)
+
+# Seventh layer (Layer 6)
+ab_drop('b11', 6)
+
+# Eighth layer (Layer 7)
+ab_drop('b13', 6)
+
+# Ninth layer (Layer 8)
+ab_drop('b11', 6)
+
+# Tenth layer (Layer 9)
+ab_drop('b13', 6)
+
+# Eleventh layer (Layer 10)
+ab_drop('b31', 5)
+ab_drop('b13', 6)
+ab_drop('b31', 7)
+
+# Twelfth layer (Layer 11)
+ab_drop('b13', 5)
+ab_drop('b31', 6)
+ab_drop('b13', 7)
+
+# Thirteenth layer (Layer 12)
+ab_drop('b31', 6)
+ab_drop('b13', 5)
+ab_drop('b31', 7)
+
+# Fourteenth layer (Layer 13)
+ab_drop('b11', 6)
+
+# Fifteenth layer (Layer 14)
+ab_drop('b13', 6)
+
+# Top layer (Layer 15)
+ab_drop('b31', 6)
+```
+
+Please note that the code above assumes that the `ab_drop()` function is already defined and the `structure` variable is accessible within the function.

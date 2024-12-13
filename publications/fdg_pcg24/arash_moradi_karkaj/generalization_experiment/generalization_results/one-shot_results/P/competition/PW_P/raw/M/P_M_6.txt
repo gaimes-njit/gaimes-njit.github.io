@@ -1,0 +1,21 @@
+To create the uppercase letter "M", we can break it down into three parts: the left upright, the middle, and the right upright. Here is the stream of commands to generate the letter "M" using the given block types:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b11', 1)
+ab_drop('b11', 3)
+ab_drop('b31', 2)
+ab_drop('b31', 4)
+ab_drop('b11', 5)
+ab_drop('b11', 7)
+ab_drop('b31', 6)
+ab_drop('b31', 8)
+ab_drop('b13', 9)
+ab_drop('b13', 10)
+ab_drop('b13', 11)
+```
+
+This sequence of commands will create the shape of the letter "M" within the defined boundaries of the grid.

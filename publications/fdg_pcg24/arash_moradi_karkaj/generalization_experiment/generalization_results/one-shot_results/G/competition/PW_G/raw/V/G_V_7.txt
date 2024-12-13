@@ -1,0 +1,16 @@
+To generate the uppercase letter "V" using the given block types and gravity rules, the sequence of ab_drop commands would be as follows:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b31', 4)
+```
+
+Explanation:
+- The first command, `ab_drop('b31', 1)`, places a horizontal straight block of width 3 at position 1. This forms the left slant of the letter "V".
+- The second and third commands, `ab_drop('b13', 2)` and `ab_drop('b13', 2)`, place two vertical straight blocks of height 3 at position 2. These blocks form the middle part of the letter "V".
+- The fourth and fifth commands, `ab_drop('b11', 3)` and `ab_drop('b11', 3)`, place two 1x1 square blocks at position 3. These blocks are placed on top of each other and form the right slant of the letter "V".
+- Finally, the sixth command, `ab_drop('b31', 4)`, places another horizontal straight block of width 3 at position 4. This completes the formation of the uppercase letter "V".

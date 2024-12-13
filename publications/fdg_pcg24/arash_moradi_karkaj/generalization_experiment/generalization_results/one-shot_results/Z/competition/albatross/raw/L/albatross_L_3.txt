@@ -1,0 +1,12 @@
+One possible code sequence to construct a level resembling the letter "L" in the Science Birds game while following all the constraints is as follows:
+
+ab_drop('b31', 2)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+ab_drop('b11', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 0)
+
+This sequence of calls to the ab_drop() function will drop the blocks in the required order and positions to form the letter "L", starting from the base layer 0. The stability constraint is maintained by ensuring that each block is dropped in a proper slot, and the falling blocks constraint is satisfied as all blocks either fall on another block or on the base layer 0. The boundary intrusion constraint is also satisfied as the blocks do not intrude on the boundary of the map.

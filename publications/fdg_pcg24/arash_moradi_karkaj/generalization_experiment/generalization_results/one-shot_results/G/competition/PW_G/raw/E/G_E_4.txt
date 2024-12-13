@@ -1,0 +1,12 @@
+To generate the uppercase letter "E", we will use the following ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b31', 1)
+```
+
+Each command places a specific block type at a specified position along the width of the grid. By following these commands in sequence, the resulting shape will resemble the letter "E" within the allowed space boundaries.

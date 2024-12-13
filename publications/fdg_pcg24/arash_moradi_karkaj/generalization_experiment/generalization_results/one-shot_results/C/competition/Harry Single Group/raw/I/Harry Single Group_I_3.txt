@@ -1,0 +1,55 @@
+```python
+# Map initialization
+field = [[0 for _ in range(20)] for _ in range(16)]
+
+# Helper functions
+def is_cell_empty(x, y):
+    # Check if a cell is empty or not
+    if field[y][x] == 0:
+        return True
+    else:
+        return False
+
+def is_brick_stable(x, y, width, height):
+    # Check if a brick is stable or not by comparing the number of occupied cells on the left and right sides of the pivot
+    pivot_x = x + width // 2
+    
+    left_side_occupied = 0
+    for i in range(x, pivot_x):
+        for j in range(y, y + height):
+            if not is_cell_empty(i, j):
+                left_side_occupied += 1
+    
+    right_side_occupied = 0
+    for i in range(pivot_x + 1, x + width):
+        for j in range(y, y + height):
+            if not is_cell_empty(i, j):
+                right_side_occupied += 1
+    
+    if left_side_occupied == right_side_occupied:
+        return True
+    else:
+        return False
+
+# Generate structure resembling the letter "I"
+ab_drop('b11', 9) # Place the initial b11 brick at position (9, 15)
+
+# Place the vertical bricks (b13) to form the body of the "I"
+for i in range(9, 12):
+    ab_drop('b13', i) # Place b13 bricks at positions (9, 12), (10, 12), and (11, 12)
+
+# Place the horizontal brick (b31) to form the top of the "I"
+ab_drop('b31', 9) # Place b31 brick at position (9, 13)
+
+# Check stability and avoid boundary collisions
+if is_brick_stable(9, 12, 1, 3) and is_brick_stable(9, 13, 3, 1):
+    print("Structure resembling the letter 'I' generated successfully!")
+else:
+    print("Failed to generate structure resembling the letter 'I'. Please check stability and boundary collisions.")
+
+# Print the field for visualization
+for row in field:
+    print(row)
+```
+
+The above code initializes the field, defines helper functions to check cell occupancy and brick stability, and then generates the structure resembling the letter "I" using the `ab_drop()` function. It checks stability and boundary collisions to ensure the structure is valid. Finally, it prints the field for visualization.

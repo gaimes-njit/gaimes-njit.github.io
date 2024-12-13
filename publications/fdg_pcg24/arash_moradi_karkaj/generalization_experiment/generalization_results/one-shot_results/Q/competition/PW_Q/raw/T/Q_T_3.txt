@@ -1,0 +1,9 @@
+To create the letter T, you can use the following stream of commands:
+
+```
+ab_drop('b31', 9)
+ab_drop('b13', 10)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+```

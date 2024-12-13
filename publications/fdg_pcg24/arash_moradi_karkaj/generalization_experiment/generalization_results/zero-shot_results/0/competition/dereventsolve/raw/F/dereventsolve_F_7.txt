@@ -1,0 +1,11 @@
+To generate a structure that looks like the letter "F", we can use the following sequence of `ab_drop` function calls:
+
+```python
+ab_drop('F', 1, 2)
+ab_drop('F', 2, 2)
+ab_drop('F', 3, 1)
+ab_drop('F', 2, 2)
+ab_drop('F', 1, 3)
+```
+
+This sequence will result in the structure resembling the letter "F" when rendered.

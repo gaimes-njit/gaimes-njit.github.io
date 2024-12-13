@@ -1,0 +1,7 @@
+To generate the uppercase English letter "X", we can start by placing two vertical straight blocks (b13) in the shape of an "X", and then adding two horizontal straight blocks (b31) to complete the letter. Here is the stream of ab_drop() commands to generate the letter "X":
+```
+ab_drop('b13',4)
+ab_drop('b13',6)
+ab_drop('b31',5)
+ab_drop('b31',3)
+```

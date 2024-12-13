@@ -1,0 +1,21 @@
+To generate an "M" structure using the 'ab drop()' function, the following steps can be taken:
+
+1. Start by dropping a b13 block at slot 6 on layer 15 (H), making sure its center is aligned with slot 6.
+
+ab drop(b13, 6, 15)
+
+2. Next, drop a b31 block at slot 6 on layer 14, aligning its center with slot 6.
+
+ab drop(b31, 6, 14)
+
+3. Now, drop another b13 block at slot 6 on layer 13.
+
+ab drop(b13, 6, 13)
+
+4. Repeat steps 1-3 on the right side of the structure to create the second leg of the "M".
+
+5. Finally, drop a b31 block at slot 7 on layer 12, aligning its center with slot 7 to connect the two legs of the "M".
+
+ab drop(b31, 7, 12)
+
+By following these steps and carefully selecting the slots and layers for each block, you can successfully generate a stable structure that resembles the letter "M" using the 'ab drop()' function.

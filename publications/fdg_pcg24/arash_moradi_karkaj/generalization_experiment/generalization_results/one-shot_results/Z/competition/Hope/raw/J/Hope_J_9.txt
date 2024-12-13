@@ -1,0 +1,17 @@
+To create a structure exactly like the letter "J" inside a 20*16 box, you can use the following commands:
+
+1. ab_drop('b31', 0) - This will drop a 3*1 block starting from position (0,0) to (2,0).
+2. ab_drop('b13', 0) - This will drop a 1*3 block starting from position (0,1) to (0,3).
+3. ab_drop('b11', 1) - This will drop a 1*1 block starting from position (1,2) to (1,2).
+
+The final structure will look like this:
+
+```
+    ###########           
+        #
+        #
+        #
+        #
+```
+
+Note: In the given representation, '#' represents the block and empty spaces represent the empty box.

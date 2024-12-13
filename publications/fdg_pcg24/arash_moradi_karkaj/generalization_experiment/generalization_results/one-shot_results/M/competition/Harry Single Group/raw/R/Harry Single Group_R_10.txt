@@ -1,0 +1,53 @@
+To form the shape resembling the letter "R" using the given props and function, we can break down the structure into smaller parts.
+
+First, we need to create the vertical stem of the "R" using the b13 brick. Since the stem goes from y = 0 to y = 10, we can use a loop to drop the bricks at each y position from 0 to 10. The x position can be set to any appropriate value, as long as it is within the field boundaries.
+
+```python
+# Vertical Stem
+for y in range(0, 11):
+  ab_drop('b13', 5)
+```
+
+Next, we need to create the horizontal leg of the "R" using the b31 brick. The leg starts from the bottom of the stem at y = 10 and extends horizontally towards the right. We can use another loop to drop the bricks at each x position from 5 to 13.
+
+```python
+# Horizontal Leg
+for x in range(5, 14):
+  ab_drop('b31', x)
+```
+
+Finally, we need to create the diagonal part of the "R" using the b11 brick. The diagonal part starts from the end of the horizontal leg at (13, 10) and extends diagonally towards the top-right. We can drop the bricks starting from (13, 10) and increment the x position while decrementing the y position until we reach (19, 15) or until the brick collides with another brick.
+
+```python
+# Diagonal Part
+x = 13
+y = 10
+while x < 20 and y < 16:
+  if ab_drop('b11', x) == False:
+    break
+  x += 1
+  y += 1
+```
+
+Putting it all together:
+
+```python
+# Vertical Stem
+for y in range(0, 11):
+  ab_drop('b13', 5)
+
+# Horizontal Leg
+for x in range(5, 14):
+  ab_drop('b31', x)
+  
+# Diagonal Part
+x = 13
+y = 10
+while x < 20 and y < 16:
+  if ab_drop('b11', x) == False:
+    break
+  x += 1
+  y += 1
+```
+
+This code will generate the structure resembling the letter "R" while following the important notes for stability and avoiding boundary collisions.

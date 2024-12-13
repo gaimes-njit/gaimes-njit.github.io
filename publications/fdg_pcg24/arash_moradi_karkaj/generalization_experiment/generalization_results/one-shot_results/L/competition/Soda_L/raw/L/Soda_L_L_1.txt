@@ -1,0 +1,23 @@
+To generate the letter "L" in the level, we can use the following sequence of ab_drop() calls:
+
+```
+# The vertical pipe
+ab_drop("b31", 10)
+# The bottom bar
+ab_drop("b13", 9)
+```
+
+This sequence first drops the vertical pipe block centered at x_position 10, and then drops the bottom bar block centered at x_position 9.
+
+To ensure stability, the vertical pipe block should be placed before the bottom bar block because the bottom bar block will provide support for the vertical pipe block.
+
+The complete implementation is as follows:
+
+```
+# The vertical pipe
+ab_drop("b31", 10)
+# The bottom bar
+ab_drop("b13", 9)
+```
+
+This implementation will generate a structure in the level that looks like the capital letter "L" and is stable.

@@ -1,0 +1,4 @@
+ab_drop('b11', 9)  # place the first vertical stroke of the 'T' at column 9
+ab_drop('b11', 8)  # place the horizontal stroke of the 'T' at column 8
+ab_drop('b31', 8)  # place the vertical stroke of the 'T' at column 8
+ab_drop('b11', 9)  # place the second vertical stroke of the 'T' at column 9

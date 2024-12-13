@@ -1,0 +1,15 @@
+```
+structure = [[' ']*W for _ in range(H)] # Map Initialization
+
+# Drop the horizontal blocks to form the base of the "U"
+ab_drop('b11', 9) # b11 block at slot 9
+ab_drop('b11', 10) # b11 block at slot 10
+
+# Drop the vertical blocks to form the left and right sides of the "U"
+ab_drop('b11', 1) # b11 block at slot 1
+ab_drop('b11', 17) # b11 block at slot 17
+
+# Drop the horizontal block to connect the left and right sides of the "U"
+ab_drop('b31', 9) # b31 block at slot 9
+
+```

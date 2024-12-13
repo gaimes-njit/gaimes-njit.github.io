@@ -1,0 +1,15 @@
+To generate a structure in the level that looks like a capital "Y", we can follow these steps:
+
+Step 1: Place the top horizontal bar of the "Y"
+ab_drop("b31", 10)
+
+Step 2: Place the bottom horizontal bar of the "Y"
+ab_drop("b31", 10)
+
+Step 3: Place the vertical bar of the "Y"
+ab_drop("b13", 10)
+
+Complete Implementation:
+ab_drop("b31", 10)
+ab_drop("b31", 10)
+ab_drop("b13", 10)

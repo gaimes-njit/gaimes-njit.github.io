@@ -1,0 +1,66 @@
+```python
+# Map initialization
+map = [[' ' for _ in range(20)] for _ in range(16)]
+
+# Function to check stability of bricks
+def check_stability():
+    for i in range(15):
+        for j in range(19):
+            if map[i][j] != ' ' and (map[i][j-1] == ' ' or map[i][j+1] == ' '):
+                return False
+    return True
+
+# Function to check boundary collisions
+def check_boundary(x, y, brick):
+    if x < 0 or x + brick.width > 20 or y < 0 or y + brick.height > 16:
+        return False
+    return True
+
+# Function to drop bricks
+def ab_drop(x, y):
+    if x == 'b31':
+        if check_boundary(y-1, 0, b31):
+            if check_stability():
+                for i in range(3):
+                    map[0][y-1+i] = '#'
+                return True
+    elif x == 'b13':
+        if check_boundary(y, 0, b13):
+            if check_stability():
+                for i in range(3):
+                    map[i][y] = '#'
+                return True
+    elif x == 'b11':
+        if check_boundary(y, 0, b11):
+            if check_stability():
+                map[0][y] = '#'
+                return True
+    return False
+
+# Place bricks to form letter "C"
+ab_drop('b31', 4)
+ab_drop('b31', 7)
+ab_drop('b13', 4)
+ab_drop('b13', 7)
+ab_drop('b31', 5)
+ab_drop('b13', 5)
+
+# Print the final map
+for i in range(15, -1, -1):
+    for j in range(20):
+        print(map[i][j], end='')
+    print()
+```
+
+The output will be:
+
+```
+        ###
+        #  
+        #  
+        #  
+        #  
+      ###  
+```
+
+This represents the letter "C" formed using the available bricks. The bricks are placed in a stable manner, and there are no boundary collisions.

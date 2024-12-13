@@ -1,0 +1,18 @@
+To generate the uppercase letter "T" using the given block types and gravity rules, you can use the following stream of commands:
+
+```
+ab_drop('b13',1)
+ab_drop('b31',2)
+ab_drop('b13',2)
+ab_drop('b13',3)
+ab_drop('b13',4)
+ab_drop('b13',5)
+ab_drop('b13',6)
+ab_drop('b13',7)
+ab_drop('b13',8)
+ab_drop('b13',9)
+ab_drop('b13',10)
+ab_drop('b31',11)
+```
+
+This set of commands will stack the blocks in the shape of the letter "T" starting from the leftmost position, ensuring structural stability with respect to the gravity rules.

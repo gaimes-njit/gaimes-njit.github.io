@@ -1,0 +1,19 @@
+First, let's create the base of the letter C by dropping a row block horizontally at the bottom of the grid:
+
+```python
+ab_drop("b31", 1)
+```
+
+Next, we will drop a column block on top of the base to form the left side of the letter C:
+
+```python
+ab_drop("b13", 0)
+```
+
+Finally, we will drop another column block on top of the base, but slightly to the right to form the right side of the letter C:
+
+```python
+ab_drop("b13", 2)
+```
+
+Using these three ab_drop() calls in sequence, we will be able to create a structure in the level that resembles the letter C.

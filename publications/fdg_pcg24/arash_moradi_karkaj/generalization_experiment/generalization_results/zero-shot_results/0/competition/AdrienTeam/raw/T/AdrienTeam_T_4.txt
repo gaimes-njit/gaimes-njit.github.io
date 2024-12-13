@@ -1,0 +1,35 @@
+```
+import random
+
+# Initialize the structure
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the first block
+ab_drop('b31', 9)
+
+# Generate the structure
+
+# Drop the blocks for the horizontal part of the "T"
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b11', 10)
+
+# Drop the blocks for the vertical part of the "T"
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+
+# Drop the blocks for the base of the "T"
+ab_drop('b13', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+
+# Drop the blocks for the top of the "T"
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+
+# Output the structure
+for row in structure:
+    print(row)
+```

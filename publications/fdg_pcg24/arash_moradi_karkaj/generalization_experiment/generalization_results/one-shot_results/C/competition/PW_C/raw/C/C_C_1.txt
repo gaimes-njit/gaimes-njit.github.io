@@ -1,0 +1,15 @@
+To generate the uppercase English letter "C", we can use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b31',2)
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b31',2)
+```
+
+Explanation:
+1. The foundation for the letter "C" is created by placing a horizontal straight block of width 3 (b31) at position 2 along the width.
+2. Next, two vertical straight blocks of height 3 (b13) are placed to the left of the foundation. The first vertical block is placed at position 1 and the second vertical block is placed at position 2.
+3. Finally, another horizontal straight block of width 3 (b31) is placed at position 2 along the width to complete the top part of the letter "C".
+
+These ab_drop() commands will generate the uppercase English letter "C" in the Tetris-like environment with 2D gravity rules.

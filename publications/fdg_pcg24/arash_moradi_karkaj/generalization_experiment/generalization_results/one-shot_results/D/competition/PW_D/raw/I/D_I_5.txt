@@ -1,0 +1,16 @@
+To generate the uppercase letter "I", we can use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b11', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+```
+
+Explanation:
+1. The first command places a vertical straight block (b13) at position 1 along the width.
+2. The second command places a 1x1 square block (b11) directly on top of the previous block.
+3. The third to fifth commands place three more vertical straight blocks (b13) on top, one above the other.
+
+By following these commands, the letter "I" will be formed in the Tetris-like environment.

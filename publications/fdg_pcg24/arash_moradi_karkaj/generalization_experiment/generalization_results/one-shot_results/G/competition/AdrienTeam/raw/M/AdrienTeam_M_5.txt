@@ -1,0 +1,106 @@
+```
+# Map initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Dropping the first block (center aligned at slot 9)
+ab_drop('b11', 9)
+
+# Dropping the second block (center aligned at slot 9)
+ab_drop('b11', 9)
+
+# Dropping the third block (center aligned at slot 9)
+ab_drop('b11', 9)
+
+# Dropping the fourth block (center aligned at slot 8)
+ab_drop('b31', 8)
+
+# Dropping the fifth block (center aligned at slot 7)
+ab_drop('b31', 7)
+
+# Dropping the sixth block (center aligned at slot 10)
+ab_drop('b31', 10)
+
+# Dropping the seventh block (center aligned at slot 6)
+ab_drop('b13', 6)
+
+# Dropping the eighth block (center aligned at slot 11)
+ab_drop('b13', 11)
+
+# Dropping the ninth block (center aligned at slot 9)
+ab_drop('b13', 9)
+
+# Dropping the tenth block (center aligned at slot 7)
+ab_drop('b13', 7)
+
+# Dropping the eleventh block (center aligned at slot 11)
+ab_drop('b13', 11)
+
+# Dropping the twelfth block (center aligned at slot 7)
+ab_drop('b13', 7)
+
+# Dropping the thirteenth block (center aligned at slot 9)
+ab_drop('b13', 9)
+
+# Dropping the fourteenth block (center aligned at slot 6)
+ab_drop('b13', 6)
+
+# Dropping the fifteenth block (center aligned at slot 11)
+ab_drop('b13', 11)
+
+# Dropping the sixteenth block (center aligned at slot 6)
+ab_drop('b13', 6)
+
+# Dropping the seventeenth block (center aligned at slot 10)
+ab_drop('b31', 10)
+
+# Dropping the eighteenth block (center aligned at slot 7)
+ab_drop('b31', 7)
+
+# Dropping the nineteenth block (center aligned at slot 8)
+ab_drop('b31', 8)
+
+# Dropping the twentieth block (center aligned at slot 9)
+ab_drop('b31', 9)
+
+# Dropping the twenty-first block (center aligned at slot 8)
+ab_drop('b31', 8)
+
+# Dropping the twenty-second block (center aligned at slot 9)
+ab_drop('b31', 9)
+
+# Dropping the twenty-third block (center aligned at slot 6)
+ab_drop('b13', 6)
+
+# Dropping the twenty-fourth block (center aligned at slot 7)
+ab_drop('b13', 7)
+
+# Dropping the twenty-fifth block (center aligned at slot 8)
+ab_drop('b13', 8)
+
+# Dropping the twenty-sixth block (center aligned at slot 9)
+ab_drop('b13', 9)
+
+# Dropping the twenty-seventh block (center aligned at slot 10)
+ab_drop('b13', 10)
+
+# Dropping the twenty-eighth block (center aligned at slot 11)
+ab_drop('b13', 11)
+
+# Dropping the twenty-ninth block (center aligned at slot 6)
+ab_drop('b13', 6)
+
+# Dropping the thirtieth block (center aligned at slot 7)
+ab_drop('b13', 7)
+
+# Dropping the thirty-first block (center aligned at slot 8)
+ab_drop('b13', 8)
+
+# Dropping the thirty-second block (center aligned at slot 9)
+ab_drop('b13', 9)
+
+# Dropping the thirty-third block (center aligned at slot 10)
+ab_drop('b13', 10)
+
+# Dropping the thirty-fourth block (center aligned at slot 11)
+ab_drop('b13', 11)
+```

@@ -1,0 +1,63 @@
+To form a shape resembling the letter "V" using the available props and the ab_drop function, I will provide a step-by-step solution:
+
+Step 1: Initialize the field and place the first brick (b13) at the bottom center of the field.
+```python
+# Field initialization
+field = [[' ' for _ in range(20)] for _ in range(16)]
+
+# Place first brick
+ab_drop('b13', 9)  # Placing b13 brick at x_position = 9
+```
+The field now looks like this:
+```
+          ┌─────┐
+          │     │
+          │     │
+          │     │
+          │     │
+          │     │
+          │     │
+          │     │
+          │     │
+          └─────┘
+```
+
+Step 2: Place the second brick (b31) above the first brick.
+```python
+# Place second brick
+ab_drop('b31', 9)  # Placing b31 brick at x_position = 9
+```
+The field now looks like this:
+```
+          ┌─────┐
+          │█████│
+          │█████│
+          │█████│
+          │     │
+          │     │
+          │     │
+          │     │
+          │     │
+          └─────┘
+```
+
+Step 3: Place the third brick (b11) at the top center of the field.
+```python
+# Place third brick
+ab_drop('b11', 9)  # Placing b11 brick at x_position = 9
+```
+The field now looks like this:
+```
+          ┌─────┐
+          │█████│
+          │█████│
+          │█████│
+          │     │
+          │     │
+          │     │
+          │     │
+          │  █  │
+          └─────┘
+```
+
+The final field structure resembles the letter "V" using the given props and satisfying the important notes.

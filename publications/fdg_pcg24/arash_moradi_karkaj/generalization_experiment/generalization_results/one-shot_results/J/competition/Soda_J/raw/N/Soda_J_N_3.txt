@@ -1,0 +1,34 @@
+To create the capital letter "N" in the level, we can break it down into three parts:
+
+1. The left vertical bar
+2. The diagonal bar going from the top left to the bottom right
+3. The right vertical bar
+
+Here is the implementation step by step:
+
+1. Place the left vertical bar:
+```
+ab_drop("b31", 6)
+```
+
+2. Place the diagonal bar:
+```
+ab_drop("b13", 10)
+ab_drop("b13", 9)
+ab_drop("b13", 8)
+```
+
+3. Place the right vertical bar:
+```
+ab_drop("b31", 14)
+```
+
+The complete implementation is as follows:
+
+```
+ab_drop("b31", 6)
+ab_drop("b13", 10)
+ab_drop("b13", 9)
+ab_drop("b13", 8)
+ab_drop("b31", 14)
+```

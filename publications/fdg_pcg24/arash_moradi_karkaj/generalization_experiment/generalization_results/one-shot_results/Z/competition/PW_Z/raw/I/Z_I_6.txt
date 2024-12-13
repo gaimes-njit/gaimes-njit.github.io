@@ -1,0 +1,11 @@
+To generate the uppercase English letter "I", you can use the following commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b31', 1)
+```
+
+This sequence of commands will place the blocks in the correct position to form the letter "I" within the allowed space boundaries.

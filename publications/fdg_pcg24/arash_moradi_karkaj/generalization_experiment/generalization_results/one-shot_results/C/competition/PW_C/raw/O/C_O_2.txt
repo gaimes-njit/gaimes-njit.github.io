@@ -1,0 +1,10 @@
+To generate the uppercase letter "O" using the provided block types and environment, the following stream of commands can be used:
+
+```
+ab_drop('b31', 3)   # Create foundation at position 1
+ab_drop('b13', 2)   # Place vertical block to the left of the foundation
+ab_drop('b13', 1)   # Place another vertical block to the left of the first one
+ab_drop('b31', 2)   # Place horizontal block at the top
+```
+
+These commands will stack the blocks in the required order and position to form the letter "O" within the defined environment.

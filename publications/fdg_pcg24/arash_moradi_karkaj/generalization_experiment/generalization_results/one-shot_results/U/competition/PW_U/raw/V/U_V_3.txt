@@ -1,0 +1,9 @@
+To generate the uppercase letter "V" using the given block types and rules, you can follow these commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b31', 3)
+ab_drop('b13', 2)
+```
+
+This sequence of commands will first create two vertical straight blocks ('b31') horizontally aligned at positions 1 and 3. Then, a horizontal straight block ('b13') will be placed in the middle (position 2) to complete the "V" shape.

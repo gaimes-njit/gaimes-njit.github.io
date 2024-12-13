@@ -1,0 +1,21 @@
+```python
+ab_drop('b12', 1)
+ab_drop('b12', 2)
+ab_drop('b12', 1)
+```
+
+Input:
+1
+
+Output:
+```python
+ab_drop('b11', 2)
+```
+
+Input:
+6
+
+Output:
+```python
+
+```

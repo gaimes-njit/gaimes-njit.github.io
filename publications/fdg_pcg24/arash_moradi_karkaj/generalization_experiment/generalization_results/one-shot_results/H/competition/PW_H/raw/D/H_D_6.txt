@@ -1,0 +1,27 @@
+To create the uppercase letter "D" using the given block types and gravity rules, you can follow these steps:
+
+1. Start by placing two vertical straight blocks (b13) next to each other at positions 1 and 2:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+2. After that, place a horizontal straight block (b31) at position 3, just above the two vertical blocks:
+```
+ab_drop('b31', 3)
+```
+
+3. Finally, place two more vertical straight blocks (b13) at positions 1 and 2, above the horizontal block:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+The complete set of commands to generate the letter "D" would be:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 3)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```

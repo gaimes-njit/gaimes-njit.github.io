@@ -1,0 +1,14 @@
+Here is the `ab_drop()` function call sequence to create a stable structure resembling "U":
+
+```
+ab_drop('b31', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b31', 4)
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+```

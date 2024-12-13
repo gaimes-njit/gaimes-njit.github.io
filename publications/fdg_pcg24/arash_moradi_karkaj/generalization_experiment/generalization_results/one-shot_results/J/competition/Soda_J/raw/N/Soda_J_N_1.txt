@@ -1,0 +1,36 @@
+First, let's start by creating the vertical bar of the N:
+
+```
+ab_drop("b31", 7)
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+```
+
+Next, let's create the diagonal bar of the N:
+
+```
+ab_drop("b13", 10)
+ab_drop("b13", 11)
+ab_drop("b13", 12)
+```
+
+Now, let's create the horizontal bar of the N:
+
+```
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+```
+
+Finally, let's reinforce the stability of the N by adding additional blocks:
+
+```
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 11)
+ab_drop("b11", 12)
+```
+
+This completes the implementation for creating an N in the level, ensuring stability and similarity.

@@ -1,0 +1,21 @@
+To create a structure that looks like the capital letter "P", we can follow these steps:
+
+1. Place a column block "b13" at x_position=2.
+2. Place a row block "b31" at x_position=1.
+3. Place a row block "b31" at x_position=2.
+4. Place a row block "b31" at x_position=3.
+5. Place a column block "b13" at x_position=4.
+6. Place a column block "b13" at x_position=6.
+7. Place a column block "b13" at x_position=8.
+
+Here's the complete implementation:
+
+```
+ab_drop("b13", 2)
+ab_drop("b31", 1)
+ab_drop("b31", 2)
+ab_drop("b31", 3)
+ab_drop("b13", 4)
+ab_drop("b13", 6)
+ab_drop("b13", 8)
+```

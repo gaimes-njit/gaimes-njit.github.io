@@ -1,0 +1,28 @@
+To generate a stable structure that resembles the character "L", we need to carefully consider the constraints and plan our steps accordingly. Here's a step-by-step approach to generating the structure:
+
+1. Start by initializing the structure grid using the provided code:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Begin by dropping a b31 block at slot 0 (leftmost slot) to form the vertical part of the "L" shape:
+```python
+ab_drop('b31', 0)
+```
+
+3. Drop a b13 block at slot 0 to complete the base of the "L" shape:
+```python
+ab_drop('b13', 0)
+```
+
+4. Next, drop another b31 block at slot 1 to create the horizontal part of the "L" shape:
+```python
+ab_drop('b31', 1)
+```
+
+5. Finally, drop a b11 block at slot 2 to complete the structure:
+```python
+ab_drop('b11', 2)
+```
+
+The above steps should result in a stable structure that resembles the character "L". Make sure to adjust the slot numbers and block types according to the given requirements to generate different structures.

@@ -1,0 +1,15 @@
+To generate the letter "G" using the given block types and environment, we can break it down into four steps:
+1. Place a horizontal straight block (b31) at position (1,2) to form the top part of the "G".
+2. Place a vertical straight block (b13) at position (4,3) to form the vertical line of the "G".
+3. Place a horizontal straight block (b31) at position (1,6) to form the bottom part of the "G".
+4. Place a vertical straight block (b13) at position (1,1) to close the loop of the "G".
+
+Here is the stream of commands to generate the letter "G":
+
+```
+ab_drop(b31,1)
+ab_drop(b31,2)
+ab_drop(b13,4)
+ab_drop(b31,6)
+ab_drop(b13,1)
+```

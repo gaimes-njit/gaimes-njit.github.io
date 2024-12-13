@@ -1,0 +1,16 @@
+ab_drop('b31', 9)  # Place a 'b31' block at slot 9
+ab_drop('b31', 10)  # Place a 'b31' block at slot 10
+ab_drop('b13', 9)  # Place a 'b13' block at slot 9
+ab_drop('b13', 10)  # Place a 'b13' block at slot 10
+ab_drop('b13', 11)  # Place a 'b13' block at slot 11
+ab_drop('b13', 8)  # Place a 'b13' block at slot 8
+ab_drop('b13', 12)  # Place a 'b13' block at slot 12
+ab_drop('b31', 10)  # Place a 'b31' block at slot 10
+ab_drop('b31', 9)  # Place a 'b31' block at slot 9
+ab_drop('b31', 8)  # Place a 'b31' block at slot 8
+ab_drop('b31', 11)  # Place a 'b31' block at slot 11
+ab_drop('b31', 7)  # Place a 'b31' block at slot 7
+ab_drop('b11', 11)  # Place a 'b11' block at slot 11
+ab_drop('b11', 10)  # Place a 'b11' block at slot 10
+ab_drop('b11', 9)  # Place a 'b11' block at slot 9
+ab_drop('b11', 9)  # Place a 'b11' block at slot 9

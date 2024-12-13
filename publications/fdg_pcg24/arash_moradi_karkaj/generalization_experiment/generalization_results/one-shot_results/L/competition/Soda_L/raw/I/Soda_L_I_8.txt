@@ -1,0 +1,12 @@
+To generate the capital letter "I" in the level, we can use the following code:
+
+```
+# Bottom block
+ab_drop("b31", 9)
+# Middle block
+ab_drop("b31", 10)
+# Top block
+ab_drop("b31", 11)
+```
+
+This code will place three row blocks vertically on top of each other at the center of the grid. This will create a structure that looks like the capital letter "I".

@@ -1,0 +1,18 @@
+To create the uppercase letter "E" using the given command and block types, here is the sequence of ab_drop() commands:
+
+```
+ab_drop('b31', 1)        # Place horizontal block on the first row
+ab_drop('b13', 1)        # Place vertical block on the first column
+ab_drop('b13', 2)        # Place second vertical block on the second column
+ab_drop('b11', 2)        # Place first square block on the second row, second column
+ab_drop('b11', 3)        # Place second square block on the second row, third column
+ab_drop('b11', 4)        # Place third square block on the second row, fourth column
+ab_drop('b31', 2)        # Place second horizontal block on the second row
+ab_drop('b13', 1)        # Place third vertical block on the first column
+ab_drop('b13', 2)        # Place fourth vertical block on the second column
+ab_drop('b11', 2)        # Place fourth square block on the second row, second column
+ab_drop('b11', 3)        # Place fifth square block on the second row, third column
+ab_drop('b11', 4)        # Place sixth square block on the second row, fourth column
+```
+
+Executing these commands one by one will result in a capital letter "E" formation.

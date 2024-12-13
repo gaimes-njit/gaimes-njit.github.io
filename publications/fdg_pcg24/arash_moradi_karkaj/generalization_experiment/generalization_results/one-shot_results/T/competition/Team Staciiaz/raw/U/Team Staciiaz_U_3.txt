@@ -1,0 +1,30 @@
+To generate a stable structure that looks like the character "U" and meets all the constraints, we can follow the following steps:
+
+1. Initialize the structure as an empty grid using the provided code:
+   ```python
+   W = 20
+   H = 16
+   structure = [[' '] * W for _ in range(H)]
+   ```
+
+2. Define and drop the blocks in the required positions to form the "U" shape:
+   ```python
+   # Drop the first vertical block (1x3) at slot 3
+   ab_drop('b13', 3)
+
+   # Drop the second vertical block (1x3) at slot 16
+   ab_drop('b13', 16)
+
+   # Drop the horizontal block (3x1) at slot 4
+   ab_drop('b31', 4)
+
+   # Drop the horizontal block (3x1) at slot 15
+   ab_drop('b31', 15)
+
+   # Drop the final vertical block (1x3) at slot 6
+   ab_drop('b13', 6)
+   ```
+
+3. After executing the above code, the `structure` grid will represent the stable structure that looks like the character "U" and meets all the constraints.
+
+Note: The `ab_drop()` function will automatically handle the dropping positions and order based on the provided block types and their respective shapes.

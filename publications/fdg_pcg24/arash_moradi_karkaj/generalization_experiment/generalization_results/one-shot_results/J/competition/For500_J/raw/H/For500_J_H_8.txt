@@ -1,0 +1,4 @@
+ab_drop('b11', 9)  # Drop a single unit block at slot 9 (center position)
+ab_drop('b31', 8)  # Drop a horizontal block at slot 8 (center position)
+ab_drop('b13', 10)  # Drop a vertical block at slot 10 (center position)
+ab_drop('b31', 10)  # Drop a horizontal block at slot 10 (center position)

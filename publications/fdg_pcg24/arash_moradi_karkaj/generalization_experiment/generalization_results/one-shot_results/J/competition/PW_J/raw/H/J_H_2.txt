@@ -1,0 +1,11 @@
+To generate the letter "H" using the given block types and rules, we can use the following stream of ab_drop() commands:
+
+```
+ab_drop('b31', 1)  // Place the first horizontal block at X position 1
+ab_drop('b13', 1)  // Place the first vertical block at X position 1
+ab_drop('b11', 2)  // Place the first square block at X position 2
+ab_drop('b31', 4)  // Place the second horizontal block at X position 4
+ab_drop('b13', 4)  // Place the second vertical block at X position 4
+```
+
+By following these commands in sequence, we can construct the letter "H" within the allowed space boundaries and ensure structural stability with regard to the gravity rules.

@@ -1,0 +1,18 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the bottom row of the "O"
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Drop the middle row of the "O"
+ab_drop('b11', 9)
+ab_drop('b11', 11)
+
+# Drop the top row of the "O"
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+```

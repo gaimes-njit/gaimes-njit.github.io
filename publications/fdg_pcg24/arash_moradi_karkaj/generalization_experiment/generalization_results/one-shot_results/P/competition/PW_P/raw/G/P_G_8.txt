@@ -1,0 +1,35 @@
+To generate the uppercase letter "G", we will follow the instructions provided:
+
+1. Start by creating the vertical segment of the letter:
+```
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b13',3)
+```
+
+2. Move to the top to create the upper part of the letter:
+```
+top
+```
+
+3. Create the horizontal segment of the letter:
+```
+ab_drop('b31',2)
+ab_drop('b11',1)
+ab_drop('b11',3)
+ab_drop('b31',2)
+ab_drop('b31',2)
+```
+
+Overall, the stream of commands to generate the uppercase letter "G" would be:
+```
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b13',3)
+top
+ab_drop('b31',2)
+ab_drop('b11',1)
+ab_drop('b11',3)
+ab_drop('b31',2)
+ab_drop('b31',2)
+```

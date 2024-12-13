@@ -1,0 +1,14 @@
+Example `ab_drop()` function usage to create the letter "O" structure:
+
+```python
+ab_drop('b31', 8)
+ab_drop('b13', 7)
+ab_drop('b13', 11)
+ab_drop('b31', 8)
+ab_drop('b31', 8)
+ab_drop('b11', 8)
+ab_drop('b11', 8)
+ab_drop('b11', 8)
+```
+
+This sequence of `ab_drop()` function calls creates a stable and boundary-compliant structure of the letter "O" on the grid. The blocks are strategically placed to ensure stability and prevent boundary intrusion.

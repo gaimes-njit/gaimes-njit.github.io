@@ -1,0 +1,36 @@
+To create a structure that looks like the capital letter "U," we can start by creating the base of the U shape. We can use a row block (b31) for this. 
+
+ab_drop("b31", 6)
+ab_drop("b31", 7)
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+ab_drop("b31", 12)
+ab_drop("b31", 13)
+ab_drop("b31", 14)
+ab_drop("b31", 15)
+ab_drop("b31", 16)
+ab_drop("b31", 17)
+
+To complete the U shape, we can add two column blocks (b13) on each side of the base.
+
+ab_drop("b13", 5)
+ab_drop("b13", 18)
+
+Finally, we can add a row block (b31) at the top of the U shape to complete it.
+
+ab_drop("b31", 6)
+ab_drop("b31", 7)
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+ab_drop("b31", 12)
+ab_drop("b31", 13)
+ab_drop("b31", 14)
+ab_drop("b31", 15)
+ab_drop("b31", 16)
+ab_drop("b31", 17)
+
+This will create a stable structure that looks like the capital letter "U" when viewed from the top-down orientation.

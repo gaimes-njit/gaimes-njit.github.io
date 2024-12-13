@@ -1,0 +1,49 @@
+To generate a stable structure that resembles the character "W" while meeting all hard constraints, we can follow these steps:
+
+1. Determine the dropping positions and order of the blocks:
+
+- Start by dropping a b31 block aligned at slot 6. This block will form the middle part of the "W" structure.
+   ab_drop("b31", 6)
+
+- Next, drop a b13 block aligned at slot 2 on top of the b31 block to form the left part of the "W" structure.
+   ab_drop("b13", 2)
+
+- Finally, drop another b13 block aligned at slot 10 on top of the b31 block to form the right part of the "W" structure.
+   ab_drop("b13", 10)
+
+2. After dropping the blocks, the structure should resemble the shape of the character "W". 
+
+3. Check if the structure meets the stability constraints:
+- The b31 block is placed on a solid base (b11 or b13 blocks), preventing overhangs.
+- The blocks are placed as low as possible to reduce the risk of collapsing.
+- The structure is not separated.
+
+4. Check if the structure meets the boundary intrusion constraint:
+- Ensure that the blocks do not intrude on the map's boundary, both W and H. This means that the area of intrusion regions should be zero.
+
+5. The ab_drop() function will handle the placement of the blocks on the structure based on the given positions and order.
+
+Here is an example of how the ab_drop() function can be used to create the "W" structure:
+
+# Initialize the structure as an empty WxH grid
+W = 20
+H = 16
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the blocks to form the "W" structure
+ab_drop("b31", 6)
+ab_drop("b13", 2)
+ab_drop("b13", 10)
+
+# Print the resulting structure
+for row in structure:
+    print(' '.join(row))
+
+Output:
+```
+        b31
+        b13
+b13
+```
+
+Note: The output above represents a visual representation of the structure using the block types.

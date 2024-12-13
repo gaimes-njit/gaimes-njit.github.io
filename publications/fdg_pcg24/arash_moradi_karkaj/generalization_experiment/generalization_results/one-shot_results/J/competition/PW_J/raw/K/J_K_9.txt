@@ -1,0 +1,13 @@
+To create the letter "K", we need to place the blocks in the following order:
+
+1. Place a horizontal straight block (b31) at position 1.
+2. Place a vertical straight block (b13) at position 2.
+3. Place a vertical straight block (b13) at position 3.
+
+Here are the command steps to achieve this:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',2)
+ab_drop('b13',3)
+```

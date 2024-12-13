@@ -1,0 +1,17 @@
+To build the capital letter "P" in a bottom-to-top fashion, we can start by placing two row blocks (b31) horizontally at the bottom of the grid. This will form the base of the letter "P". Then, we can place a column block (b13) vertically on the right side of the bottom row blocks. This will form the stem of the letter "P". Finally, we can place another row block (b31) horizontally on top of the stem to complete the letter "P".
+
+Here's the code to generate the capital letter "P" using the ab_drop() function:
+
+```python
+# Place the base row blocks
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+
+# Place the stem column block
+ab_drop("b13", 11)
+
+# Place the top row block
+ab_drop("b31", 11)
+```
+
+This code will create a stable structure that resembles the capital letter "P".

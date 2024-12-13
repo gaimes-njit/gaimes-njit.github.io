@@ -1,0 +1,51 @@
+1. M
+
+****
+**  *
+**  *
+****
+**  *
+**  *
+**  *
+**  *
+**  *
+
+2. Row 1: 4x, 0y
+   Row 2: 2x, 2y, 2x, 0y
+   Row 3: 2x, 2y, 2x, 0y
+   Row 4: 4x, 0y
+   Row 5: 2x, 2y, 2x, 0y
+   Row 6: 2x, 2y, 2x, 0y
+   Row 7: 2x, 2y, 2x, 0y
+   Row 8: 2x, 2y, 2x, 0y
+   Row 9: 2x, 2y, 2x, 0y
+
+3. Row 1: xxxxy
+   Row 2: xx  xx
+   Row 3: xx  xx
+   Row 4: xxxxy
+   Row 5: xx  xx
+   Row 6: xx  xx
+   Row 7: xx  xx
+   Row 8: xx  xx
+   Row 9: xx  xx
+
+4. Row 1: x-1; x-2; x-3; x-4; y-5
+   Row 2: x-1; x-2; y-3; y-4; x-5; x-6
+   Row 3: x-1; x-2; y-3; y-4; x-5; x-6
+   Row 4: x-1; x-2; x-3; x-4; y-5
+   Row 5: x-1; x-2; y-3; y-4; x-5; x-6
+   Row 6: x-1; x-2; y-3; y-4; x-5; x-6
+   Row 7: x-1; x-2; y-3; y-4; x-5; x-6
+   Row 8: x-1; x-2; y-3; y-4; x-5; x-6
+   Row 9: x-1; x-2; y-3; y-4; x-5; x-6
+
+5. ab_drop("b11", 1), ab_drop("b11", 2), ab_drop("b11", 3), ab_drop("b11", 4), ab_drop("b11", 5)
+   ab_drop("b11", 1), ab_drop("b11", 2), ab_drop("b11", 3), ab_drop("b11", 4), ab_drop("b11", 5), ab_drop("b11", 6)
+   ab_drop("b11", 1), ab_drop("b11", 2), ab_drop("b11", 3), ab_drop("b11", 4), ab_drop("b11", 5), ab_drop("b11", 6)
+   ab_drop("b11", 1), ab_drop("b11", 2), ab_drop("b11", 3), ab_drop("b11", 4), ab_drop("b11", 5)
+   ab_drop("b11", 1), ab_drop("b11", 2), ab_drop("b11", 3), ab_drop("b11", 4), ab_drop("b11", 5), ab_drop("b11", 6)
+   ab_drop("b11", 1), ab_drop("b11", 2), ab_drop("b11", 3), ab_drop("b11", 4), ab_drop("b11", 5), ab_drop("b11", 6)
+   ab_drop("b11", 1), ab_drop("b11", 2), ab_drop("b11", 3), ab_drop("b11", 4), ab_drop("b11", 5), ab_drop("b11", 6)
+   ab_drop("b11", 1), ab_drop("b11", 2), ab_drop("b11", 3), ab_drop("b11", 4), ab_drop("b11", 5), ab_drop("b11", 6)
+   ab_drop("b11", 1), ab_drop("b11", 2), ab_drop("b11", 3), ab_drop("b11", 4), ab_drop("b11", 5), ab_drop("b11", 6)

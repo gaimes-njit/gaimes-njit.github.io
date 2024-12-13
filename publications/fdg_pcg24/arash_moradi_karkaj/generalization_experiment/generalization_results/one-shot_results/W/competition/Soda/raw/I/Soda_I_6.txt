@@ -1,0 +1,103 @@
+To generate a structure in the level that looks like the capital character "I", we can follow these steps:
+
+1. Place the base block (b31) at the bottom-center of the grid. We can use x_position=9 to achieve this:
+```
+ab_drop("b31", 9)
+```
+
+2. Place the second block (b31) directly above the base block, centered horizontally. We can use x_position=9 again:
+```
+ab_drop("b31", 9)
+```
+
+3. Place the third block (b31) directly above the second block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+4. Place the fourth block (b31) directly above the third block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+5. Place the fifth block (b31) directly above the fourth block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+6. Place the sixth block (b31) directly above the fifth block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+7. Place the seventh block (b31) directly above the sixth block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+8. Place the eighth block (b31) directly above the seventh block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+9. Place the ninth block (b31) directly above the eighth block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+10. Place the tenth block (b31) directly above the ninth block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+11. Place the eleventh block (b31) directly above the tenth block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+12. Place the twelfth block (b31) directly above the eleventh block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+13. Place the thirteenth block (b31) directly above the twelfth block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+14. Place the fourteenth block (b31) directly above the thirteenth block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+15. Place the fifteenth block (b31) directly above the fourteenth block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+16. Place the sixteenth block (b31) directly above the fifteenth block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+17. Place the seventeenth block (b31) directly above the sixteenth block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+18. Place the eighteenth block (b31) directly above the seventeenth block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+19. Place the nineteenth block (b31) directly above the eighteenth block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+20. Place the twentieth block (b31) directly above the nineteenth block, centered horizontally:
+```
+ab_drop("b31", 9)
+```
+
+This complete implementation will generate a structure in the level that looks like the capital character "I" while ensuring stability.

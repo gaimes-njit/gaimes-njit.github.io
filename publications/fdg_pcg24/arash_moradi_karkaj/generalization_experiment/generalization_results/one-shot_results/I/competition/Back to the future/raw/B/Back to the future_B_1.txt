@@ -1,0 +1,100 @@
+To generate a stable structure that looks like the uppercase character "B" using the `ab_drop()` function and meet all the hard constraints, we can follow the following steps:
+
+1. Initialize the structure as an empty WxH grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the vertical block b13 at slot 3 to form the left side of the "B":
+```
+ab_drop('b13', 3)
+```
+This will result in the block being dropped at coordinates (15, 3).
+
+3. Drop the horizontal block b31 at slot 4, aligning it with the top of the previously dropped vertical block:
+```
+ab_drop('b31', 4)
+```
+This will result in the block being dropped at coordinates (14, 4).
+
+4. Drop the vertical block b13 at slot 5, aligning it with the bottom of the previously dropped horizontal block:
+```
+ab_drop('b13', 5)
+```
+This will result in the block being dropped at coordinates (13, 5).
+
+5. Drop another vertical block b13 at slot 5, aligning it with the top of the previously dropped vertical block:
+```
+ab_drop('b13', 5)
+```
+This will result in the block being dropped at coordinates (12, 5).
+
+6. Drop the horizontal block b31 at slot 4, aligning it with the bottom of the previously dropped vertical block:
+```
+ab_drop('b31', 4)
+```
+This will result in the block being dropped at coordinates (11, 4).
+
+7. Drop the vertical block b13 at slot 3, aligning it with the top of the previously dropped horizontal block:
+```
+ab_drop('b13', 3)
+```
+This will result in the block being dropped at coordinates (10, 3).
+
+8. Drop another vertical block b13 at slot 3, aligning it with the bottom of the previously dropped vertical block:
+```
+ab_drop('b13', 3)
+```
+This will result in the block being dropped at coordinates (9, 3).
+
+9. Drop the horizontal block b31 at slot 4, aligning it with the top of the previously dropped vertical block:
+```
+ab_drop('b31', 4)
+```
+This will result in the block being dropped at coordinates (8, 4).
+
+10. Drop the vertical block b13 at slot 5, aligning it with the bottom of the previously dropped horizontal block:
+```
+ab_drop('b13', 5)
+```
+This will result in the block being dropped at coordinates (7, 5).
+
+11. Drop the horizontal block b31 at slot 4, aligning it with the top of the previously dropped vertical block:
+```
+ab_drop('b31', 4)
+```
+This will result in the block being dropped at coordinates (6, 4).
+
+12. Drop the vertical block b13 at slot 3, aligning it with the bottom of the previously dropped horizontal block:
+```
+ab_drop('b13', 3)
+```
+This will result in the block being dropped at coordinates (5, 3).
+
+13. Drop another vertical block b13 at slot 3, aligning it with the top of the previously dropped vertical block:
+```
+ab_drop('b13', 3)
+```
+This will result in the block being dropped at coordinates (4, 3).
+
+14. Drop the horizontal block b31 at slot 4, aligning it with the bottom of the previously dropped vertical block:
+```
+ab_drop('b31', 4)
+```
+This will result in the block being dropped at coordinates (3, 4).
+
+15. Drop the square block b11 at slot 5, aligning it with the top of the previously dropped horizontal block:
+```
+ab_drop('b11', 5)
+```
+This will result in the block being dropped at coordinates (2, 5).
+
+16. Drop the square block b11 at slot 3, aligning it with the top of the previously dropped vertical block:
+```
+ab_drop('b11', 3)
+```
+This will result in the block being dropped at coordinates (2, 3).
+
+17. The final structure will look like the uppercase character "B".
+
+You can adjust the slots and coordinates as needed, but make sure to follow the stable structure guidelines and constraints mentioned.

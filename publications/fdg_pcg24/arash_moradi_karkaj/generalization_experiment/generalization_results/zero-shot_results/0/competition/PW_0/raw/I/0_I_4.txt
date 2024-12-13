@@ -1,0 +1,15 @@
+To create the uppercase letter "I" using the provided block types and environment, we can follow these steps:
+
+1. Start by placing a horizontal straight block (b31) at position 1 along the width to form the top part of the letter. Use the command `ab_drop(31, 1)`.
+
+2. Next, place a vertical straight block (b13) at position 2 along the width to form the middle part of the letter. Use the command `ab_drop(13, 2)`.
+
+3. Finally, place another horizontal straight block (b31) at position 1 along the width to complete the letter. Use the command `ab_drop(31, 1)`.
+
+Here is the complete stream of commands to create the letter "I":
+
+```
+ab_drop(31, 1)
+ab_drop(13, 2)
+ab_drop(31, 1)
+```

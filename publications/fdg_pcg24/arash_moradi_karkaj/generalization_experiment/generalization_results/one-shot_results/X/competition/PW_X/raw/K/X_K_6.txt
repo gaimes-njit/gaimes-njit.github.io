@@ -1,0 +1,15 @@
+To generate the uppercase letter "K" using the given block types, you can use the following stream of commands:
+
+```
+ab_drop('b11', 1)  # Top-left corner of the vertical stroke
+ab_drop('b11', 1)  # Bottom-left corner of the vertical stroke
+ab_drop('b11', 1)  # Top-right corner of the vertical stroke
+ab_drop('b11', 1)  # Bottom-right corner of the vertical stroke
+ab_drop('b31', 2)  # Top horizontal stroke
+ab_drop('b11', 2)  # Middle vertical stroke
+ab_drop('b31', 3)  # Bottom horizontal stroke
+ab_drop('b11', 4)  # Right point of the diagonal stroke
+ab_drop('b11', 5)  # Left point of the diagonal stroke
+```
+
+Make sure to place each block one by one and follow the order mentioned above to accurately represent the letter "K" within the defined environment.

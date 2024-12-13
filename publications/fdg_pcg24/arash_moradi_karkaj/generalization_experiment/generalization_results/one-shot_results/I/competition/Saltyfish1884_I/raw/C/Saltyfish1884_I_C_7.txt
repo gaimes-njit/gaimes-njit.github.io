@@ -1,0 +1,25 @@
+To generate a stable structure that resembles the character "C" while meeting all hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty WxH grid:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Determine the dropping position and order for each block type based on the stability rules and constraints.
+
+3. Start by placing a b31 block at the leftmost slot, aligned with the bottom layer to form the base:
+```python
+ab_drop('b31', 0)
+```
+
+4. Place a b13 block on top of the b31 block, centered in the same slot to create the vertical part of the "C":
+```python
+ab_drop('b13', 0)
+```
+
+5. Place another b31 block on top of the b13 block at the same slot to complete the top part of the "C":
+```python
+ab_drop('b31', 0)
+```
+
+6. The final structure will resemble the character "C".

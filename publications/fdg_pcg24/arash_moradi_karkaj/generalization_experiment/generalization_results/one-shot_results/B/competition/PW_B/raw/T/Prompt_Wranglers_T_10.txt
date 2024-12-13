@@ -1,0 +1,22 @@
+To generate the uppercase English letter "T", we can follow the following steps:
+
+Step 1: Start by placing a horizontal straight block (b31) at the bottom of the grid, centered at position 10. This will serve as the base of the letter "T".
+ab_drop(b31, 10)
+
+Step 2: Place a vertical straight block (b13) at the left of the base, centered at position 8. This will form the left vertical part of the letter "T".
+ab_drop(b13, 8)
+
+Step 3: Place another vertical straight block (b13) at the right of the base, centered at position 12. This will form the right vertical part of the letter "T".
+ab_drop(b13, 12)
+
+Step 4: Finally, place another horizontal straight block (b31) on top of the base, centered at position 10. This will complete the letter "T".
+ab_drop(b31, 10)
+
+The complete stream of commands to generate the letter "T" is as follows:
+
+```
+ab_drop(b31, 10)
+ab_drop(b13, 8)
+ab_drop(b13, 12)
+ab_drop(b31, 10)
+```

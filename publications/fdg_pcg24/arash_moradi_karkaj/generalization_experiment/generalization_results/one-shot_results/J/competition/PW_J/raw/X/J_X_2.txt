@@ -1,0 +1,10 @@
+To generate the uppercase English letter "X", we can use the following ab_drop() commands:
+
+```
+ab_drop('b31', 1)  # Place the horizontal block at position 1
+ab_drop('b13', 4)  # Place the vertical block at position 4
+ab_drop('b31', 7)  # Place the horizontal block at position 7
+ab_drop('b13', 10)  # Place the vertical block at position 10
+```
+
+These commands will construct the letter "X" in the Tetris-like environment, following the defined gravity rules.

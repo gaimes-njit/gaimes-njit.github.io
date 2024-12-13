@@ -1,0 +1,32 @@
+To generate the uppercase English letter "O" in the Tetris-like environment, you can use the following sequence of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 4)
+ab_drop('b13', 2)
+ab_drop('b31', 7)
+ab_drop('b13', 3)
+ab_drop('b31', 10)
+ab_drop('b13', 4)
+ab_drop('b31', 13)
+ab_drop('b13', 3)
+ab_drop('b31', 16)
+ab_drop('b13', 2)
+ab_drop('b31', 19)
+ab_drop('b13', 1)
+ab_drop('b31', 16)
+ab_drop('b13', 2)
+ab_drop('b31', 13)
+ab_drop('b13', 3)
+ab_drop('b31', 10)
+ab_drop('b13', 4)
+ab_drop('b31', 7)
+ab_drop('b13', 3)
+ab_drop('b31', 4)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+```
+
+Please note that the above commands assume that the index 1 of the width and height grid is the leftmost and bottommost position, respectively. Adjust the indices accordingly if your grid starts from a different index.

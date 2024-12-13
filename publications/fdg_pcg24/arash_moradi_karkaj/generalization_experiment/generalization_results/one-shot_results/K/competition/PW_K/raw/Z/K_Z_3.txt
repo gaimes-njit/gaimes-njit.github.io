@@ -1,0 +1,25 @@
+To create the uppercase letter Z using the given block types and environment constraints, you can follow these steps:
+
+1. Start by placing a 1x1 square block ('b11') at position (1, 1) using the command ab_drop('b11', 1).
+
+2. Next, place another 1x1 square block ('b11') at position (3, 1) using the command ab_drop('b11', 3).
+
+3. To create the horizontal stroke of the letter Z, place a horizontal straight block ('b31') at position (2, 1) using the command ab_drop('b31', 2).
+
+4. Now, place another 1x1 square block ('b11') at position (3, 2) using the command ab_drop('b11', 3).
+
+5. For the diagonal stroke of the letter Z, repeat steps 2 and 3. Place a 1x1 square block ('b11') at position (3, 4) using the command ab_drop('b11', 3), and then place a horizontal straight block ('b31') at position (2, 4) using the command ab_drop('b31', 2).
+
+6. Finally, place the last 1x1 square block ('b11') at position (1, 5) using the command ab_drop('b11', 1).
+
+The complete stream of commands to generate the letter Z is as follows:
+
+```
+ab_drop('b11', 1)  # Place a 1x1 square block at (1, 1)
+ab_drop('b11', 3)  # Place a 1x1 square block at (3, 1)
+ab_drop('b31', 2)  # Place a horizontal straight block at (2, 1)
+ab_drop('b11', 3)  # Place a 1x1 square block at (3, 2)
+ab_drop('b11', 3)  # Place a 1x1 square block at (3, 4)
+ab_drop('b31', 2)  # Place a horizontal straight block at (2, 4)
+ab_drop('b11', 1)  # Place a 1x1 square block at (1, 5)
+```

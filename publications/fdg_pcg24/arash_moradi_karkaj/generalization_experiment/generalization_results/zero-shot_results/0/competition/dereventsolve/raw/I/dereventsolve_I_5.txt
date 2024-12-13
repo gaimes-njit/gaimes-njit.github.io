@@ -1,0 +1,25 @@
+```
+def ab_drop():
+    return "Here goes the code for dropping a key-value pair"
+
+# Database
+database = {
+    "A": "Value A",
+    "B": "Value B",
+    "C": "Value C",
+    "D": "Value D",
+    "E": "Value E",
+    "F": "Value F",
+    "G": "Value G",
+    "H": "Value H",
+    "I": "Value I",
+    "J": "Value J",
+}
+
+# Structure for letter "I"
+I_structure = lambda: ab_drop() \
+              if database.get("I") is None \
+              else ""
+
+I_structure()
+```

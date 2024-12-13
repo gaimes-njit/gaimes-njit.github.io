@@ -1,0 +1,30 @@
+To generate a stable structure that looks like the uppercase character "X" using the `ab_drop()` function, we can follow these steps:
+
+1. Start by initializing the structure as an empty WxH grid using the `structure` variable.
+
+2. Determine the drop positions for each block type to form the shape of the "X" character. We can start by dropping the b31 block at the center of the structure (slot 9) using the `ab_drop('b31', 9)` function. This block will rest on the base layer (layer 0).
+
+3. Next, drop two b13 blocks on top of the b31 block to form the two diagonal lines of the "X". The drop positions for these blocks can be at slots 6 and 12 using the `ab_drop('b13', 6)` and `ab_drop('b13', 12)` functions, respectively. These blocks will land on the previously dropped blocks, ensuring stability.
+
+4. Finally, drop a b11 block in the center of the structure to complete the middle part of the "X". The drop position for this block can be at slot 9 using the `ab_drop('b11', 9)` function. This block will also rest on the previously dropped blocks for stability.
+
+After following these steps, the `structure` variable will contain a stable structure that resembles the uppercase character "X" when viewed from the top.
+
+Here's an example implementation:
+
+```python
+# Initialize the structure as an empty WxH grid
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop b31 block at the center (slot 9)
+ab_drop('b31', 9)
+
+# Drop b13 blocks for the diagonal lines
+ab_drop('b13', 6)
+ab_drop('b13', 12)
+
+# Drop b11 block for the middle part
+ab_drop('b11', 9)
+```
+
+This implementation ensures stability by dropping each block on a stable base and follows the hard constraints given in the problem statement. By using the `ab_drop()` function and determining the drop positions accurately, we can generate a stable structure that looks like the uppercase character "X".

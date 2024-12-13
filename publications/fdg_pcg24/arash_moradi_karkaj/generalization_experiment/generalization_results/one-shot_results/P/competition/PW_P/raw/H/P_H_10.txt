@@ -1,0 +1,15 @@
+To create the uppercase letter "H", we can use the following stream of commands:
+
+```
+ab_drop('b13', 1)  # Place the vertical straight block at position 1 along the width
+ab_drop('b13', 2)  # Place the vertical straight block at position 2 along the width
+top                 # Move the cursor to the top of the current stack
+ab_drop('b31', 2)  # Place the horizontal straight block at position 2 along the width
+ab_drop('b11', 1)  # Place the square block at position 1 along the width
+ab_drop('b11', 3)  # Place the square block at position 3 along the width
+top                 # Move the cursor to the top of the current stack
+ab_drop('b31', 2)  # Place the horizontal straight block at position 2 along the width
+ab_drop('b31', 2)  # Place the horizontal straight block at position 2 along the width
+```
+
+This sequence of commands will result in the formation of the uppercase letter "H" in the Tetris-like environment.

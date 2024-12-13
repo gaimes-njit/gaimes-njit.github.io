@@ -1,0 +1,14 @@
+The stream of commands to generate the uppercase English letter "Z" using the block types in the defined environment is as follows:
+
+```
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b13', 2)
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b13', 4)
+ab_drop('b31', 5)
+ab_drop('b31', 6)
+```
+
+Please note that the commands are separated by new lines for better readability, but in the actual implementation, they should be executed consecutively without any breaks.

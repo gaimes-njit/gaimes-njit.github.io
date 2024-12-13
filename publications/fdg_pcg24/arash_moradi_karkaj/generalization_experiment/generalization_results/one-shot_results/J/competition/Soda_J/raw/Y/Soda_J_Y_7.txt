@@ -1,0 +1,20 @@
+To create a level that resembles the letter "Y", we can break it down into three blocks - the top part, the middle part, and the bottom part. Here is the code to create the "Y" structure:
+
+1. Place the top part:
+ab_drop("b13", 9)
+
+2. Place the middle part:
+ab_drop("b31", 9)
+
+3. Place the bottom part:
+ab_drop("b31", 9)
+
+The complete code implementation would look like this:
+
+```
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+ab_drop("b31", 9)
+```
+
+This implementation will create a stable "Y" structure that resembles the target character.

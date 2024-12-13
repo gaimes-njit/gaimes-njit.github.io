@@ -1,0 +1,28 @@
+To form the shape resembling the letter "J" using the available props and the ab_drop(x, y) function, the following steps can be followed:
+
+1. Initialize the field array with zeros to represent empty cells. Each element of the array represents a cell in the field.
+
+2. Begin by placing the b31 brick on the ground. To do this, execute ab_drop('b31', x) with x being the x_position on the ground. The occupied cells of the b31 brick will be (x-1, 0), (x, 0), and (x+1, 0). 
+
+3. Next, place the b13 brick vertically on top of the b31 brick. To do this, execute ab_drop('b13', x) with x being the x_position aligned with the b31 brick. The occupied cells of the b13 brick will be (x, 1), (x, 2), and (x, 3).
+
+4. Finally, place the b11 brick on top of the b13 brick. To do this, execute ab_drop('b11', x) with x being the x_position aligned with the b13 brick. The occupied cell of the b11 brick will be (x, 4).
+
+The resulting structure will resemble the letter "J" and satisfy the stability and boundary collision requirements.
+
+Here is the code to generate the structure:
+
+```python
+field = [[0 for _ in range(20)] for _ in range(16)]
+
+# Place b31 brick on the ground
+ab_drop('b31', 9)  # Adjust x position as desired
+
+# Place b13 brick vertically on top of b31 brick
+ab_drop('b13', 9)  # Adjust x position as desired
+
+# Place b11 brick on top of b13 brick
+ab_drop('b11', 9)  # Adjust x position as desired
+```
+
+Note: The x positions used above are just examples. You can adjust them according to your desired placement of the bricks.

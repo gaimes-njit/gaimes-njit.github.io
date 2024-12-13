@@ -1,0 +1,9 @@
+To generate the uppercase letter "Z" using the given block types and environment, the following commands can be used:
+
+```
+ab_drop('b13', 1)  # Place vertical straight block at position 1
+ab_drop('b31', 1)  # Place horizontal straight block at position 1
+ab_drop('b13', 4)  # Place vertical straight block at position 4
+```
+
+This sequence of commands will create the uppercase letter "Z" within the allowed space boundaries and following the gravity rules.

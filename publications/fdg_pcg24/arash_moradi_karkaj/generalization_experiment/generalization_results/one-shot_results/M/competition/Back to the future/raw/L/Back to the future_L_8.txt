@@ -1,0 +1,54 @@
+To generate a stable structure that looks like the uppercase character "L" and meets all the hard constraints, we can use the `ab_drop()` function to strategically drop the blocks. Here is an approach to achieve this:
+
+1. Initialize the structure as an empty grid using the `structure` variable provided.
+2. Start by dropping a b13 block at slot 0 using `ab_drop('b13', 0)`. This will be the vertical part of the "L" shape.
+3. Next, drop a b31 block at slot 1 using `ab_drop('b31', 1)`. This will be the horizontal part of the "L" shape.
+4. Drop another b13 block at slot 4 using `ab_drop('b13', 4)`. This will be the bottom part of the "L" shape.
+5. Repeat steps 3 and 4 until the desired height of the "L" shape is reached. You can choose any suitable height for the structure.
+6. Finally, drop b11 blocks on top of the "L" shape to fill in the remaining empty spaces and complete the structure.
+
+The specific slots and heights can be adjusted based on the desired shape and stability of the structure. The `ab_drop()` function will ensure that the blocks are dropped in a stable manner and meet the hard constraints of stability.
+
+Remember to always perform stability checks before each call to `ab_drop()` to ensure that the entire structure remains stable throughout the generation process.
+
+Here is an example implementation of the approach described above:
+
+```
+W = 20  # Width of the map
+H = 16  # Height of the map
+structure = [[' ']*W for _ in range(H)]  # Initialize the structure as an empty grid
+
+def ab_drop(x, y):
+    # x is the block type, y is the slot number from 0 to W-1 where the block center is aligned
+    
+    # initialize the drop position at the top of the map
+    drop_pos = (H-1, y)
+    
+    # drop the block from the top and move it down until it lands on the base or another block
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    
+    # place the block on the structure
+    structure[drop_pos[0]][drop_pos[1]] = x
+
+# Drop the blocks to create the "L" shape
+ab_drop('b13', 0)
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+ab_drop('b31', 5)
+ab_drop('b31', 6)
+# Drop additional blocks to complete the structure
+ab_drop('b11', 6)
+ab_drop('b11', 7)
+ab_drop('b11', 8)
+# Repeat the above steps to adjust the height and shape of the "L" structure
+
+# Print the final structure
+for row in structure:
+    print(' '.join(row))
+
+```
+
+This approach will generate a stable structure resembling the uppercase character "L" and meet the hard constraints. However, keep in mind that due to the soft constraint of not intruding on the boundary of the map, the specific shape and design of the generated structure may vary.

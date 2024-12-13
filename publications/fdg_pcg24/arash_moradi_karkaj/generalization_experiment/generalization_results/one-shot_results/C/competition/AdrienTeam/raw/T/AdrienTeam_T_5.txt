@@ -1,0 +1,22 @@
+```
+# Initialize the structure
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the first block (vertical block) in the center slot
+ab_drop('b13', 9)
+
+# Drop the second block (horizontal block) above the vertical block
+ab_drop('b11', 9)
+
+# Drop the third block (horizontal block) above the vertical block and offset to the right
+ab_drop('b11', 10)
+
+# Drop the fourth block (horizontal block) above the vertical block and offset to the left
+ab_drop('b11', 8)
+
+# Drop the fifth block (vertical block) above the horizontal blocks
+ab_drop('b13', 9)
+
+# Drop the sixth block (vertical block) above the vertical block
+ab_drop('b13', 9)
+```

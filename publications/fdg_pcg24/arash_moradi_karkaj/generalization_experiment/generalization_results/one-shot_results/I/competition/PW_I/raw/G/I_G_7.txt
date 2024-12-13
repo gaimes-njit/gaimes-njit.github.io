@@ -1,0 +1,15 @@
+To generate the uppercase letter "G" using the provided block types and environment, the following ab_drop() commands can be used:
+
+```
+ab_drop('b31', 1)  // Place the first horizontal block at position 1
+ab_drop('b13', 1)  // Place the vertical block right below the horizontal block
+ab_drop('b31', 1)  // Place the second horizontal block next to the vertical block
+ab_drop('b11', 2)  // Place the small square block above the vertical block
+ab_drop('b11', 2)  // Place another small square block above the previous one
+ab_drop('b31', 2)  // Place the third horizontal block above the small square blocks
+ab_drop('b31', 3)  // Place the fourth horizontal block next to the third horizontal block
+ab_drop('b31', 4)  // Place the fifth horizontal block next to the fourth horizontal block
+ab_drop('b11', 5)  // Place the final small square block above the fifth horizontal block
+```
+
+This sequence of commands will form the uppercase letter "G" within the allowed space boundaries while adhering to the gravity rules.

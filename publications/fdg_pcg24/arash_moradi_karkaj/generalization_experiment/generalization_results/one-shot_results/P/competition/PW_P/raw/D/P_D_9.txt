@@ -1,0 +1,16 @@
+To generate the uppercase letter "D", we can use a combination of the block types mentioned in the instructions. Here is the sequence of ab_drop() commands that will create the letter "D":
+
+```
+ab_drop('b31', 1)  // Place a horizontal straight block at position 1
+ab_drop('b13', 4)  // Place a vertical straight block at position 4
+ab_drop('b13', 5)  // Place a vertical straight block at position 5
+ab_drop('b31', 8)  // Place a horizontal straight block at position 8
+ab_drop('b11', 9)  // Place a 1x1 square block at position 9
+ab_drop('b11', 10) // Place a 1x1 square block at position 10
+ab_drop('b11', 11) // Place a 1x1 square block at position 11
+ab_drop('b11', 12) // Place a 1x1 square block at position 12
+ab_drop('b11', 13) // Place a 1x1 square block at position 13
+ab_drop('b13', 8)  // Place a vertical straight block at position 8
+```
+
+This sequence of commands will create the letter "D" in the Tetris-like environment while adhering to the specified gravity rules.

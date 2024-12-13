@@ -1,0 +1,64 @@
+To create a structure resembling the letter "N" using the `ab_drop()` function, we need to carefully position and rotate the blocks. Here is the solution:
+
+```python
+# Step 1: Initialize the structure
+structure = [[' ']*20 for _ in range(16)]
+
+# Step 2: Place the first block (b31) horizontally on layer 0
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+
+# Step 3: Place the second block (b31) vertically on layer 1
+ab_drop('b13', 5)
+
+# Step 4: Place the third block (b31) horizontally on layer 2
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+
+# Step 5: Place the fourth block (b31) vertically on layer 3
+ab_drop('b13', 5)
+
+# Step 6: Place the fifth block (b31) horizontally on layer 4
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+
+# Step 7: Place the sixth block (b11) vertically on layer 5
+ab_drop('b11', 4)
+
+# Step 8: Place the seventh block (b31) horizontally on layer 6
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+
+# Step 9: Place the eighth block (b11) vertically on layer 7
+ab_drop('b11', 3)
+
+# Step 10: Place the ninth block (b31) horizontally on layer 8
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+
+# Step 11: Place the tenth block (b11) vertically on layer 9
+ab_drop('b11', 3)
+
+# Step 12: Place the eleventh block (b31) horizontally on layer 10
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+
+# Step 13: Place the twelfth block (b11) vertically on layer 11
+ab_drop('b11', 5)
+
+# Step 14: Place the thirteenth block (b31) horizontally on layer 12
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+
+# Step 15: Place the fourteenth block (b31) vertically on layer 13
+ab_drop('b13', 5)
+```
+
+The above `ab_drop()` calls will create a structure resembling the letter "N" while satisfying all the specified constraints.

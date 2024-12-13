@@ -1,0 +1,13 @@
+To create the structure of the letter "Y" inside a 20x16 box using ab_drop('blocktype', x position), you can follow these steps:
+
+1. Drop a 3x1 block (b31) at position (9, 0) to create the vertical stem of the "Y":
+   ab_drop('b31', 9)
+
+2. Drop two 1x3 blocks (b13) at positions (8, 1) and (10, 1) to create the diagonal lines of the "Y":
+   ab_drop('b13', 8)
+   ab_drop('b13', 10)
+
+3. Drop a 1x1 block (b11) at position (9, 4) to create the bottom part of the "Y":
+   ab_drop('b11', 9)
+
+This structure represents the letter "Y" inside a 20x16 box.

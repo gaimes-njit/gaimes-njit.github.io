@@ -1,0 +1,7 @@
+```
+ab_drop("b31", 1)    # Place the top part of the N
+ab_drop("b13", 4)    # Place the left vertical line of the N
+ab_drop("b31", 6)    # Place the middle part of the N
+ab_drop("b13", 10)   # Place the right vertical line of the N
+ab_drop("b31", 12)   # Place the bottom part of the N
+```

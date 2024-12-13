@@ -1,0 +1,26 @@
+In order to generate the uppercase English letter "R" using the given block types, we can break down the letter into different parts:
+
+1. The vertical line on the left side of the letter:
+   - Drop a block of type b13 at position 1.
+   - Drop another block of type b13 at position 1.
+   - Drop a block of type b13 at position 1.
+
+2. The diagonal line on the top-right side of the letter:
+   - Drop a block of type b11 at position 4.
+   - Drop a block of type b11 at position 6.
+
+3. The horizontal line on the bottom-right side of the letter:
+   - Drop a block of type b31 at position 5.
+   - Drop another block of type b31 at position 5.
+
+Putting all these steps together, the stream of commands to generate the uppercase letter "R" is as follows:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b11', 4)
+ab_drop('b11', 6)
+ab_drop('b31', 5)
+ab_drop('b31', 5)
+```

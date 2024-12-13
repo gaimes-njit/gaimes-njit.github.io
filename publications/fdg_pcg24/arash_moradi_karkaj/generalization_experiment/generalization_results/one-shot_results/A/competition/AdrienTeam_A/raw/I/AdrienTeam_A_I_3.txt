@@ -1,0 +1,49 @@
+Here is an example of code using the `ab_drop()` function to create a structure resembling "I" while satisfying the specified constraints:
+
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the first block horizontally to create the base
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the second block vertically to create the vertical part of "I"
+ab_drop('b13', 9)
+
+# Drop the third block horizontally to create the top part of "I"
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the fourth block vertically to create the middle part of "I"
+ab_drop('b13', 9)
+
+# Drop the fifth block horizontally to create the bottom part of "I"
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the sixth block vertically to create the upper part of "I"
+ab_drop('b13', 9)
+
+# Drop the seventh block horizontally to create the middle part of "I"
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the eighth block vertically to create the lower part of "I"
+ab_drop('b13', 9)
+
+# Drop the ninth block horizontally to create the top part of "I"
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the tenth block vertically to create the central part of "I"
+ab_drop('b13', 9)
+
+# Drop the eleventh block horizontally to create the bottom part of "I"
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the twelfth block vertically to complete the structure of "I"
+ab_drop('b13', 9)
+```
+
+Please note that the exact positions may vary depending on the specific requirements or aesthetics desired for the "I" structure.

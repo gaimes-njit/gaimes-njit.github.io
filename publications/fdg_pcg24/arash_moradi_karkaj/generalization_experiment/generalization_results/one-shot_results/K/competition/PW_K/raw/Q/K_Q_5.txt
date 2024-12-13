@@ -1,0 +1,22 @@
+To generate the uppercase letter "Q" using the given block types and environment, follow the instructions below:
+
+1. Start by placing a b13 block at position 1: ab_drop('b13',1)
+2. Place a b31 block at position 2: ab_drop('b31',2)
+3. Place a b13 block at position 4: ab_drop('b13',4)
+4. Place a b31 block at position 5: ab_drop('b31',5)
+5. Place a b11 block at position 4: ab_drop('b11',4)
+6. Place a b11 block at position 6: ab_drop('b11',6)
+7. Place a b13 block at position 4: ab_drop('b13',4)
+8. Place a b11 block at position 6: ab_drop('b11',6)
+
+The stream of commands to generate the letter "Q" would be:
+```
+ab_drop('b13',1)
+ab_drop('b31',2)
+ab_drop('b13',4)
+ab_drop('b31',5)
+ab_drop('b11',4)
+ab_drop('b11',6)
+ab_drop('b13',4)
+ab_drop('b11',6)
+```

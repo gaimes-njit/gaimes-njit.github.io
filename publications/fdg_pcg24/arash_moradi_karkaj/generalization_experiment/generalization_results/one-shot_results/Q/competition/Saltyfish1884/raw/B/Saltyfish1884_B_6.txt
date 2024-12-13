@@ -1,0 +1,44 @@
+To generate a stable structure that resembles the character "B" while meeting all the given hard constraints, we can follow these steps:
+
+Step 1: Initialize the structure as an empty WxH grid using the provided code.
+
+Step 2: Determine the dropping position and order for placing the blocks. We need to consider the stability rules and the constraint of not intruding on the map's boundary.
+
+Step 3: Start by placing a b31 block on the solid base (b11 or b13 blocks) to prevent overhangs. We can use the ab_drop() function to drop a b31 block on the bottom layer (layer 0) aligned with slots 4, 5, 6. This will be the base of the "B" structure.
+
+Step 4: Next, we can drop a b13 block on the same layer aligned with slots 8, 9, 10. This will form the stem of the "B" structure.
+
+Step 5: To create the top part of the "B" structure, we can drop a b11 block on the layer above (layer 1) aligned with slot 11. This will form the top left part of the "B" structure.
+
+Step 6: Finally, we can drop another b11 block on the same layer aligned with slot 12. This will form the top right part of the "B" structure.
+
+Step 7: The resulting structure should resemble the character "B" and meet all the hard constraints.
+
+Here's the code to generate the structure:
+
+```python
+# Step 1: Initialize the structure
+W = 20  # Width of the map
+H = 16  # Height of the map
+structure = [[' ']*W for _ in range(H)]
+
+# Step 2: Determine the dropping position and order for placing the blocks
+
+# Step 3: Drop a b31 block on layer 0 aligned with slots 4, 5, 6
+ab_drop("b31", 5)
+
+# Step 4: Drop a b13 block on layer 0 aligned with slots 8, 9, 10
+ab_drop("b13", 9)
+
+# Step 5: Drop a b11 block on layer 1 aligned with slot 11
+ab_drop("b11", 11)
+
+# Step 6: Drop a b11 block on layer 1 aligned with slot 12
+ab_drop("b11", 12)
+
+# Step 7: Print the resulting structure
+for row in structure:
+    print(' '.join(row))
+```
+
+The resulting structure should resemble the character "B" and meet all the given requirements. Adjust the dropping positions and order as needed to match the desired shape.

@@ -1,0 +1,98 @@
+To generate a shape resembling the letter "V" using the available props and the ab_drop() function, we can follow these steps:
+
+1. Initialize the field as a 2D list with dimensions 16 x 20:
+```
+field = [[0] * 20 for _ in range(16)]
+```
+
+2. Generate the shape by calling the ab_drop() function:
+
+- Place a b31 brick at the bottom middle of the field:
+```
+ab_drop('b31', 9)
+```
+This will occupy cells (8, 0), (9, 0), and (10, 0).
+
+- Place a b13 brick above the b31 brick, touching the top central cell:
+```
+ab_drop('b13', 9)
+```
+This will occupy cells (9, 1), (9, 2), and (9, 3).
+
+- Place a b13 brick above the previous b13 brick, touching the top central cell:
+```
+ab_drop('b13', 9)
+```
+This will occupy cells (9, 4), (9, 5), and (9, 6).
+
+- Place a b13 brick above the previous b13 brick, touching the top central cell:
+```
+ab_drop('b13', 9)
+```
+This will occupy cells (9, 7), (9, 8), and (9, 9).
+
+- Place a b31 brick above the top b13 brick, shifted to the left:
+```
+ab_drop('b31', 7)
+```
+This will occupy cells (7, 10), (8, 10), and (9, 10).
+
+- Place a b31 brick above the top b13 brick, shifted to the right:
+```
+ab_drop('b31', 11)
+```
+This will occupy cells (9, 10), (10, 10), and (11, 10).
+
+3. Ensure stability by checking the pivot points of the bricks.
+   - The pivot point of the b31 bricks is at their central cell.
+   - The pivot point of the b13 bricks is at their top central cell.
+
+The final code will look like this:
+
+```python
+# Function to place bricks on the field
+def ab_drop(x, y):
+    if x == 'b31':
+        # Check for stability before placing the brick
+        if field[0][y] == 1 or field[0][y+1] == 1 or field[0][y+2] == 1:
+            return
+        # Place the brick
+        field[0][y] = 1
+        field[0][y+1] = 1
+        field[0][y+2] = 1
+        # Drop the brick until it reaches the ground or hits an occupied cell
+        for i in range(1, 16):
+            if field[i][y] == 1 or field[i][y+1] == 1 or field[i][y+2] == 1:
+                break
+            field[i][y] = 1
+            field[i][y+1] = 1
+            field[i][y+2] = 1
+
+    elif x == 'b13':
+        # Check for stability before placing the brick
+        if field[0][y] == 1:
+            return
+        # Place the brick
+        field[0][y] = 1
+        # Drop the brick until it reaches the ground or hits an occupied cell
+        for i in range(1, 16):
+            if field[i][y] == 1:
+                break
+            field[i][y] = 1
+            field[i-1][y] = 0
+
+# Initialize the field
+field = [[0] * 20 for _ in range(16)]
+
+# Generate the shape resembling the letter "V"
+ab_drop('b31', 9)
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+ab_drop('b31', 7)
+ab_drop('b31', 11)
+
+# Print the final field
+for row in field:
+    print(''.join(str(cell) for cell in row))
+```

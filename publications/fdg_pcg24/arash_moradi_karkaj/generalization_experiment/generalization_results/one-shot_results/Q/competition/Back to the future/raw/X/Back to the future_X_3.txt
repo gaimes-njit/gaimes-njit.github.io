@@ -1,0 +1,34 @@
+To generate a stable structure that looks like the uppercase character "X" using the `ab_drop()` function and meet all the hard constraints, we can follow the following steps:
+
+1. Start by initializing the structure as an empty grid using the provided code:
+
+   ```python
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. Drop the b13 block at slot 9 to create the center vertical line for the "X" shape. This block will serve as the support for the other blocks.
+
+   ```python
+   ab_drop("b13", 9)
+   ```
+
+3. Drop the b31 blocks to create the top and bottom horizontal lines of the "X" shape. Place them on slots 4 and 14 to have equal distance from the center vertical line.
+
+   ```python
+   ab_drop("b31", 4)
+   ab_drop("b31", 14)
+   ```
+
+4. Drop the b11 block at the top center slot (9) to connect the two b31 blocks.
+
+   ```python
+   ab_drop("b11", 9)
+   ```
+
+5. The final structure should resemble the uppercase character "X" and meet the stability constraint.
+
+   ```python
+   [[' ']*W for _ in range(10)] + [['b13']+[' ']*(W-2)+['b13'] for _ in range(3)] + [['b31']+[' ']*(W-8)+['b11']+[' ']*(W-8)+['b31'] for _ in range(3)] + [['b31']+[' ']*(W-6)+['b31'] for _ in range(H-10-6)]
+   ```
+
+Note: The specific coordinates for each ab_drop() call may vary depending on the desired positioning and shape of the "X" structure.

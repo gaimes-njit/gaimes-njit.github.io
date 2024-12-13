@@ -1,0 +1,22 @@
+To generate a structure in the shape of the letter "D" (TARGET), we can break it down into two blocks: a vertical pipe and a semicircle. 
+
+First, we will create the vertical pipe by dropping a "b31" block at the center of the grid. This will create a vertical pipe starting from the bottom row to the 2nd row.
+
+```
+ab_drop("b31", 9)
+```
+
+Next, we will create the semicircle by dropping a "b13" block at the center-right position of the grid. This will create a semicircle shape with the radius extending to the left.
+
+```
+ab_drop("b13", 10)
+```
+
+Finally, we will adjust the order and position of the blocks to ensure stability and improve the similarity to the letter "D". 
+
+The complete implementation is as follows:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 10)
+```

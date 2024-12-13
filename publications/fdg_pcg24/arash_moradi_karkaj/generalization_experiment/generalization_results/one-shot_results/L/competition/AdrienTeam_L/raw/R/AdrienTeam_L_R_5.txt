@@ -1,0 +1,67 @@
+```
+# Initialize the structure
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the first block, a horizontal block with a width of 3 units and a height of 1 unit
+ab_drop('b31', 1)
+
+# Drop the second block, a vertical block with a width of 1 unit and a height of 3 units
+ab_drop('b13', 0)
+
+# Drop the third block, a vertical block with a width of 1 unit and a height of 3 units
+ab_drop('b13', 0)
+
+# Drop the fourth block, a horizontal block with a width of 3 units and a height of 1 unit
+ab_drop('b31', 1)
+
+# Drop the fifth block, a horizontal block with a width of 2 units and a height of 1 unit
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+
+# Drop the sixth block, a horizontal block with a width of 2 units and a height of 1 unit
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+
+# Drop the seventh block, a horizontal block with a width of 2 units and a height of 1 unit
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+
+# Drop the eighth block, a horizontal block with a width of 2 units and a height of 1 unit
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+
+# Drop the ninth block, a horizontal block with a width of 3 units and a height of 1 unit
+ab_drop('b31', 1)
+
+# Drop the tenth block, a vertical block with a width of 1 unit and a height of 3 units
+ab_drop('b13', 0)
+
+# Drop the eleventh block, a vertical block with a width of 1 unit and a height of 3 units
+ab_drop('b13', 0)
+
+# Drop the twelfth block, a horizontal block with a width of 3 units and a height of 1 unit
+ab_drop('b31', 1)
+
+# Drop the thirteenth block, a horizontal block with a width of 2 units and a height of 1 unit
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+
+# Drop the fourteenth block, a horizontal block with a width of 2 units and a height of 1 unit
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+
+# Drop the fifteenth block, a horizontal block with a width of 2 units and a height of 1 unit
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+
+# Drop the sixteenth block, a horizontal block with a width of 2 units and a height of 1 unit
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+
+# Drop the seventeenth block, a horizontal block with a width of 2 units and a height of 1 unit
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+
+# Drop the eighteenth block, a horizontal block with a width of 3 units and a height of 1 unit
+ab_drop('b31', 1)
+```

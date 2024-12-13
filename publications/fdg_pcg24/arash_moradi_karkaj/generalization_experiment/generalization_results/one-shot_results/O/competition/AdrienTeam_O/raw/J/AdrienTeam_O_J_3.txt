@@ -1,0 +1,13 @@
+```
+# Step 1: Rotate the 'J' shape
+ab_drop('b31', 8)
+
+# Step 2: Drop the first block of the 'J' shape
+ab_drop('b13', 7)
+
+# Step 3: Drop the second block of the 'J' shape
+ab_drop('b13', 9)
+
+# Step 4: Drop the third block of the 'J' shape
+ab_drop('b31', 8)
+```

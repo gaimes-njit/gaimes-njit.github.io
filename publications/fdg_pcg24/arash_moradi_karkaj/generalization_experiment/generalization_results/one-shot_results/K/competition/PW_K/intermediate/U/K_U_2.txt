@@ -1,0 +1,13 @@
+To generate uppercase letter "U", you would need to use the following sequence of ab_drop() commands:
+
+ab_drop('b31', 1)  # Place horizontal straight block at position 1
+ab_drop('b13', 1)  # Place vertical straight block at position 1
+ab_drop('b31', 5)  # Place horizontal straight block at position 5
+ab_drop('b13', 5)  # Place vertical straight block at position 5
+ab_drop('b31', 9)  # Place horizontal straight block at position 9
+ab_drop('b31', 11)  # Place horizontal straight block at position 11
+ab_drop('b13', 9)  # Place vertical straight block at position 9
+ab_drop('b11', 13)  # Place 1x1 square block at position 13
+ab_drop('b11', 15)  # Place 1x1 square block at position 15
+
+This sequence of commands will generate the uppercase letter "U" in the Tetris-like environment with the specified gravity rules and boundaries.

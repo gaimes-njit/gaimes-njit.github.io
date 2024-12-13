@@ -1,0 +1,6 @@
+ab_drop('b11', 9)  #Create the top point of the capital letter A
+ab_drop('b13', 8)  #Create the diagonal line of A on the left side
+ab_drop('b13', 10)  #Create the diagonal line of A on the right side
+ab_drop('b11', 8)  #Create the horizontal line of A in the middle
+ab_drop('b11', 10)  #Create the horizontal line of A in the middle
+ab_drop('b31', 9)  #Create the bottom line of A

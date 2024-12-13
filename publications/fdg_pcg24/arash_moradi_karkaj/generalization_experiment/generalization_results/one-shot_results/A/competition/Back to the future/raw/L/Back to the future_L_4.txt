@@ -1,0 +1,75 @@
+To generate a stable structure that looks like the uppercase character "L" and meets all the hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty grid using the provided code:
+   structure = [[' ']*W for _ in range(H)]
+
+2. Define a function to check the stability of the structure after dropping a block:
+   
+   def check_stability(drop_pos):
+       # Check if the block is supported by any previously dropped blocks or the base
+       if drop_pos[0] == H-1 or structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+           return True
+       return False
+
+3. Define a function to drop a block at a given position:
+   
+   def ab_drop(x, y):
+       drop_pos = (H-1, y)  # Initialize the drop position at the top of the map
+       
+       while drop_pos[0] > 0:
+           drop_pos = (drop_pos[0]-1, y)  # Move the block down
+           if check_stability(drop_pos):
+               break
+       
+       structure[drop_pos[0]][drop_pos[1]] = x  # Place the block on the structure
+
+4. Use the ab_drop() function to generate the structure in the shape of the uppercase character "L" by dropping the blocks one by one according to the block-stacking problem:
+
+   # Drop the b31 block on the first layer
+   ab_drop('b31', 10)
+
+   # Drop the b13 block on the second layer
+   ab_drop('b13', 10)
+
+   # Drop the b11 block on the third layer
+   ab_drop('b11', 10)
+
+   # Drop the b11 block on the fourth layer
+   ab_drop('b11', 10)
+
+   # Drop the b11 block on the fifth layer
+   ab_drop('b11', 9)
+
+   # Drop the b11 block on the sixth layer
+   ab_drop('b11', 8)
+
+   # Drop the b11 block on the seventh layer
+   ab_drop('b11', 7)
+
+   # Drop the b11 block on the eighth layer
+   ab_drop('b11', 6)
+
+   # Drop the b11 block on the ninth layer
+   ab_drop('b11', 5)
+
+   # Drop the b11 block on the tenth layer
+   ab_drop('b11', 4)
+
+   # Drop the b11 block on the eleventh layer
+   ab_drop('b11', 3)
+
+   # Drop the b11 block on the twelfth layer
+   ab_drop('b11', 2)
+
+   # Drop the b11 block on the thirteenth layer
+   ab_drop('b11', 1)
+
+   # Drop the b11 block on the fourteenth layer
+   ab_drop('b11', 1)
+
+   # Drop the b31 block on the fifteenth layer
+   ab_drop('b31', 1)
+
+Each call to ab_drop() function drops a specific block at the desired position on the structure, and the stability check is performed before each drop to ensure the structure remains stable.
+
+After executing these steps, the structure will resemble the uppercase character "L" and meet all the hard constraints.

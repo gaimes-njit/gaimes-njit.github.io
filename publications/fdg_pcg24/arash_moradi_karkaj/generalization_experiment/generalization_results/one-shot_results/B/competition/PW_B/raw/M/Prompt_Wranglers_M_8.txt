@@ -1,0 +1,12 @@
+To generate the uppercase English letter "M" using the block types and the mentioned command in the defined environment, the following series of ab_drop() commands should be used:
+
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b13', 0)
+ab_drop('b13', 4)
+ab_drop('b13', 1)
+ab_drop('b31', 2)
+ab_drop('b13', 3)
+ab_drop('b13', 0)
+ab_drop('b13', 4)
+ab_drop('b13', 1)

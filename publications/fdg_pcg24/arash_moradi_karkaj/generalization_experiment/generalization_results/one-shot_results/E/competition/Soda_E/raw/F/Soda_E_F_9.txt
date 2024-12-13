@@ -1,0 +1,28 @@
+To build the letter "F" using the ab_drop() function, we can follow these steps:
+
+1. Start by creating the top horizontal bar of the letter "F" using two blocks of type "b13" dropped at positions 7 and 9:
+```
+ab_drop("b13", 7)
+ab_drop("b13", 9)
+```
+
+2. Next, create the vertical bar of the letter "F" using a block of type "b31" dropped at position 8:
+```
+ab_drop("b31", 8)
+```
+
+3. Finally, create the bottom horizontal bar of the letter "F" using two blocks of type "b13" dropped at positions 7 and 9:
+```
+ab_drop("b13", 7)
+ab_drop("b13", 9)
+```
+
+The complete implementation to build the letter "F" is as follows:
+
+```
+ab_drop("b13", 7)
+ab_drop("b13", 9)
+ab_drop("b31", 8)
+ab_drop("b13", 7)
+ab_drop("b13", 9)
+```

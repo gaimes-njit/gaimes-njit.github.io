@@ -1,0 +1,56 @@
+To generate a stable structure that resembles the character "B" using the ab_drop() python function, we can follow these steps:
+
+1. Initialize the structure as an empty grid with dimensions WxH.
+2. Place a b31 block on the solid base (b11 or b13 blocks) at the bottom layer (layer 0) and choose a suitable slot number for its center alignment.
+   - Use the ab_drop() function with x=b31 and y=10 (or any suitable slot number) to vertically drop the block.
+   - Update the structure grid with the dropped block.
+3. Place two b13 blocks vertically above the b31 block to form the two vertical lines of the "B" character.
+   - Use the ab_drop() function with x=b13 and y=9 and x=b13 and y=11 (or any suitable slot numbers) to vertically drop the blocks.
+   - Update the structure grid with the dropped blocks.
+4. Place a b31 block horizontally above the two vertical lines to connect them and complete the top part of the "B" character.
+   - Use the ab_drop() function with x=b31 and y=10 (or any suitable slot number) to vertically drop the block.
+   - Update the structure grid with the dropped block.
+
+The resulting structure will resemble the character "B" and meet the stability and boundary intrusion constraints.
+
+Here is an example of the code:
+
+```python
+W = 20  # Width of the map
+H = 16  # Height of the map
+
+def ab_drop(x, y):
+    # x is the block type
+    # y is the slot number from 0 to W-1 where the block center is aligned
+    
+    # initialize the drop position at the top of the map
+    drop_pos = (H-1, y)
+    
+    # drop the block from the top and move it down until it lands on the base or another block
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    
+    # place the block on the structure
+    structure[drop_pos[0]][drop_pos[1]] = x
+
+# Initialize the structure as an empty WxH grid
+structure = [[' ']*W for _ in range(H)]
+
+# Place a b31 block on the solid base
+ab_drop('b31', 10)
+
+# Place two b13 blocks vertically above the b31 block
+ab_drop('b13', 9)
+ab_drop('b13', 11)
+
+# Place a b31 block horizontally above the two vertical lines
+ab_drop('b31', 10)
+
+# Print the resulting structure
+for row in structure:
+    print(''.join(row))
+```
+
+This code will generate a stable structure that resembles the character "B" while meeting all the hard constraints.

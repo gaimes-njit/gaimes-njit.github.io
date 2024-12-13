@@ -1,0 +1,11 @@
+To create the letter "I" in the level, we can use two column blocks placed next to each other. Here is the complete implementation:
+
+```
+# Place the first column block
+ab_drop("b13", 9)
+
+# Place the second column block next to the first one
+ab_drop("b13", 10)
+```
+
+In this implementation, we first place a column block at x_position = 9, centered in the 10th column of the grid. Then we place another column block at x_position = 10, centered in the 11th column of the grid. This creates the shape of the letter "I" in the level.

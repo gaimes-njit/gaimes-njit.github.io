@@ -1,0 +1,4 @@
+The first step is to create the two vertical pipes of the letter B. We can achieve this by dropping two "b31" blocks centered at x = 5 and x = 15.
+
+ab_drop("b31", 5)
+ab_drop("b31", 15)

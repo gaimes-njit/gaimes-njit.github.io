@@ -1,0 +1,22 @@
+To generate the letter "I", we can use the following commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+```
+
+Explanation: We are using the vertical straight block (b13) to create a stack of 16 blocks, which will resemble the letter "I" in the given Tetris-like environment. Each command places one block in the same position along the width (1) but with increasing height.

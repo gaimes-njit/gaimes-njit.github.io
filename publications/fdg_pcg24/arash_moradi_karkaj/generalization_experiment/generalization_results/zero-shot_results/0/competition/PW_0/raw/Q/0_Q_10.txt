@@ -1,0 +1,41 @@
+To generate uppercase English letter "Q" using the ab_drop() commands and block types in the defined environment, follow these steps:
+
+1. Place a horizontal straight block (b31) at position (1, 1).
+2. Place a vertical straight block (b13) at position (4, 2).
+3. Place a vertical straight block (b13) at position (4, 4).
+4. Place a vertical straight block (b13) at position (4, 6).
+5. Place a horizontal straight block (b31) at position (1, 8).
+6. Place a square block (b11) at position (4, 2).
+7. Place a square block (b11) at position (4, 4).
+8. Place a square block (b11) at position (4, 6).
+9. Place a square block (b11) at position (4, 8).
+10. Place a vertical straight block (b13) at position (14, 2).
+11. Place a vertical straight block (b13) at position (14, 4).
+12. Place a vertical straight block (b13) at position (14, 6).
+13. Place a horizontal straight block (b31) at position (11, 8).
+14. Place a square block (b11) at position (14, 2).
+15. Place a square block (b11) at position (14, 4).
+16. Place a square block (b11) at position (14, 6).
+17. Place a square block (b11) at position (14, 8).
+
+The stream of ab_drop() commands to generate uppercase letter "Q" would be:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+ab_drop('b13', 4)
+ab_drop('b13', 4)
+ab_drop('b31', 1)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b13', 14)
+ab_drop('b13', 14)
+ab_drop('b13', 14)
+ab_drop('b31', 11)
+ab_drop('b11', 14)
+ab_drop('b11', 14)
+ab_drop('b11', 14)
+ab_drop('b11', 14)
+```

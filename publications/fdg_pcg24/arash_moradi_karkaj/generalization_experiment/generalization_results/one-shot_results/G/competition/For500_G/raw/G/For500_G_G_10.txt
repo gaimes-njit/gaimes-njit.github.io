@@ -1,0 +1,6 @@
+ab_drop('b31', 9) # bottom horizontal stroke
+ab_drop('b11', 10) # bottom right stroke
+ab_drop('b13', 7) # vertical stroke
+ab_drop('b11', 10) # top right stroke
+ab_drop('b13', 9) # top horizontal stroke
+ab_drop('b31', 11) # top horizontal stroke

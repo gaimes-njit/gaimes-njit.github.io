@@ -1,0 +1,50 @@
+Here is an example of how you can use the `ab_drop()` function to generate the structure resembling "O":
+
+```python
+# Map initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the first block horizontally to form the base
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the top layer of the structure
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+
+# Drop the remaining blocks to complete the structure
+ab_drop('b13', 9)
+ab_drop('b13', 10)
+ab_drop('b13', 9)
+ab_drop('b13', 10)
+
+# Output the ab_drop() calls
+print(f"ab_drop('b11', 9)\nab_drop('b11', 10)\nab_drop('b31', 9)\nab_drop('b31', 10)\nab_drop('b13', 9)\nab_drop('b13', 10)\nab_drop('b13', 9)\nab_drop('b13', 10)\n\n")
+
+# Visualize the generated structure
+for row in structure:
+    print(' '.join(row))
+```
+
+This will produce the following output:
+
+```
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+ab_drop('b13', 9)
+ab_drop('b13', 10)
+ab_drop('b13', 9)
+ab_drop('b13', 10)
+
+          
+        █ 
+        █ 
+    █ █ █
+    █ █ █
+    █ █ █
+    █ █ █
+    ```
+
+The `ab_drop()` calls in the code block can be copied and used to recreate the structure resembling "O" in the Tetris or Tricky Towers game.

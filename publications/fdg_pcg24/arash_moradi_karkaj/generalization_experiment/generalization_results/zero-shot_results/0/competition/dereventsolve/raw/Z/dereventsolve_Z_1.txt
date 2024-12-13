@@ -1,0 +1,13 @@
+To generate a structure that looks like the letter "Z" using the given key-value pairs, we can use the `ab_drop` function to manipulate the structure.
+
+Here's the sequence of `ab_drop` function calls to create the letter "Z" structure:
+
+```
+ab_drop(Z, Z)       -> 'TYPE_Z'
+ab_drop(TYPE_Z,YPE_) -> 'YPE_Z'
+ab_drop(YPE_Z,PE__) -> 'PE_Z'
+ab_drop(PE_Z,E___)  -> 'E_Z'
+ab_drop(E_Z,_)      -> 'Z'
+```
+
+So, the sequence of `ab_drop` function calls is: `ab_drop(Z, Z)`, `ab_drop(TYPE_Z, YPE_)`, `ab_drop(YPE_Z, PE__)`, `ab_drop(PE_Z, E___)`, and `ab_drop(E_Z, _)`.

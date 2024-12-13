@@ -1,0 +1,45 @@
+To create a stable structure resembling "B", we can follow these steps:
+
+1. Initialize the structure using the provided code:
+   ```
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. Start building the structure from the bottom layer (layer 0) to the top layer (layer 15) using the `ab_drop()` function. The order and position of the blocks being dropped are crucial.
+
+3. Use the provided definitions and constraints to determine the appropriate `ab_drop()` inputs.
+
+Based on the given constraints and examples, the solution to generate "B"'s structure would be:
+```
+ab_drop('b31',2)
+ab_drop('b13',0)
+ab_drop('b11',0)
+ab_drop('b11',1)
+ab_drop('b11',2)
+ab_drop('b11',3)
+ab_drop('b11',5)
+ab_drop('b11',9)
+ab_drop('b11',10)
+ab_drop('b11',11)
+ab_drop('b11',12)
+ab_drop('b11',14)
+ab_drop('b11',17)
+ab_drop('b31',2)
+ab_drop('b11',3)
+ab_drop('b31',0)
+ab_drop('b11',5)
+ab_drop('b11',9)
+ab_drop('b11',10)
+ab_drop('b11',11)
+ab_drop('b11',12)
+ab_drop('b11',14)
+ab_drop('b11',17)
+ab_drop('b11',0)
+ab_drop('b11',1)
+ab_drop('b11',2)
+ab_drop('b11',3)
+ab_drop('b31',2)
+ab_drop('b13',0)
+```
+
+The above `ab_drop()` inputs will create a stable structure resembling the letter "B" and satisfy all the given constraints.

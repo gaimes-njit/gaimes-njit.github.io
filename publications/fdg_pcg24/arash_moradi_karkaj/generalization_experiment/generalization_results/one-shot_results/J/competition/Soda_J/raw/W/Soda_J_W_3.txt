@@ -1,0 +1,154 @@
+The first step is to create the four vertical bars of the letter 'W'. We can start from the bottom and work our way up. Each vertical bar will be represented by the "b31" block type.
+
+```
+# First vertical bar
+ab_drop("b31", 7)
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+
+# Second vertical bar
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+ab_drop("b31", 12)
+
+# Third vertical bar
+ab_drop("b31", 13)
+ab_drop("b31", 14)
+ab_drop("b31", 15)
+
+# Fourth vertical bar
+ab_drop("b31", 16)
+ab_drop("b31", 17)
+ab_drop("b31", 18)
+
+# Fifth vertical bar
+ab_drop("b31", 19)
+ab_drop("b31", 20)
+ab_drop("b31", 21)
+```
+
+Next, we need to create the diagonal lines of the letter 'W'. Each diagonal line will be represented by the "b13" block type.
+
+```
+# First diagonal line
+ab_drop("b13", 9)
+ab_drop("b13", 10)
+ab_drop("b13", 11)
+
+# Second diagonal line
+ab_drop("b13", 10)
+ab_drop("b13", 11)
+ab_drop("b13", 12)
+
+# Third diagonal line
+ab_drop("b13", 11)
+ab_drop("b13", 12)
+ab_drop("b13", 13)
+
+# Fourth diagonal line
+ab_drop("b13", 12)
+ab_drop("b13", 13)
+ab_drop("b13", 14)
+
+# Fifth diagonal line
+ab_drop("b13", 13)
+ab_drop("b13", 14)
+ab_drop("b13", 15)
+
+# Sixth diagonal line
+ab_drop("b13", 14)
+ab_drop("b13", 15)
+ab_drop("b13", 16)
+```
+
+Finally, we can create the horizontal line of the letter 'W'. This will be represented by the "b31" block type.
+
+```
+ab_drop("b31", 7)
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+ab_drop("b31", 12)
+ab_drop("b31", 13)
+ab_drop("b31", 14)
+ab_drop("b31", 15)
+ab_drop("b31", 16)
+ab_drop("b31", 17)
+ab_drop("b31", 18)
+ab_drop("b31", 19)
+```
+
+The complete implementation for creating the letter 'W' structure:
+
+```
+# First vertical bar
+ab_drop("b31", 7)
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+
+# Second vertical bar
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+ab_drop("b31", 12)
+
+# Third vertical bar
+ab_drop("b31", 13)
+ab_drop("b31", 14)
+ab_drop("b31", 15)
+
+# Fourth vertical bar
+ab_drop("b31", 16)
+ab_drop("b31", 17)
+ab_drop("b31", 18)
+
+# Fifth vertical bar
+ab_drop("b31", 19)
+ab_drop("b31", 20)
+ab_drop("b31", 21)
+
+# First diagonal line
+ab_drop("b13", 9)
+ab_drop("b13", 10)
+ab_drop("b13", 11)
+
+# Second diagonal line
+ab_drop("b13", 10)
+ab_drop("b13", 11)
+ab_drop("b13", 12)
+
+# Third diagonal line
+ab_drop("b13", 11)
+ab_drop("b13", 12)
+ab_drop("b13", 13)
+
+# Fourth diagonal line
+ab_drop("b13", 12)
+ab_drop("b13", 13)
+ab_drop("b13", 14)
+
+# Fifth diagonal line
+ab_drop("b13", 13)
+ab_drop("b13", 14)
+ab_drop("b13", 15)
+
+# Sixth diagonal line
+ab_drop("b13", 14)
+ab_drop("b13", 15)
+ab_drop("b13", 16)
+
+# Horizontal line
+ab_drop("b31", 7)
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+ab_drop("b31", 12)
+ab_drop("b31", 13)
+ab_drop("b31", 14)
+ab_drop("b31", 15)
+ab_drop("b31", 16)
+ab_drop("b31", 17)
+ab_drop("b31", 18)
+ab_drop("b31", 19)
+```

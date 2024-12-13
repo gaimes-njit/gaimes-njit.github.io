@@ -1,0 +1,14 @@
+Here is an implementation of the steps needed to create a structure that looks like a capital "X":
+
+Step 1: Place the base
+ab_drop("b13", 9)
+
+Step 2: Place the upper diagonal
+ab_drop("b11", 7)
+ab_drop("b11", 11)
+
+Step 3: Place the lower diagonal
+ab_drop("b11", 5)
+ab_drop("b11", 13)
+
+This implementation ensures that the structure is stable and resembles the capital letter "X".

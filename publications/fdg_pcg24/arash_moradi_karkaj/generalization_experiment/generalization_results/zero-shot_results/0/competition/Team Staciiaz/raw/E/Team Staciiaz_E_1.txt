@@ -1,0 +1,18 @@
+To generate a stable structure that looks like the character "E" using the `ab_drop()` function and meet all the constraints, follow these steps:
+
+1. Initialize the structure as an empty WxH grid using the provided code snippet:
+```python
+W = 20
+H = 16
+structure = [[' '] * W for _ in range(H)]
+```
+
+2. Start building the structure by dropping blocks using the `ab_drop()` function. Place the blocks in the desired order and positions to form the structure. Use the block types 'b11', 'b31', and 'b13' to create the "E" shape.
+
+3. Consider the stability constraint. Ensure that the blocks are dropped at proper positions to maintain stability. Avoid poor weight distribution that can lead to structural collapse. Test the stability by simulating the dropped block's weight. If the structure becomes unstable, adjust the position or order of the blocks.
+
+4. Consider the no boundary intrusion constraint. Try to avoid blocks intruding on the boundaries of the map. Minimize the area of intrusion regions. Adjust the position or order of the blocks if necessary to meet this constraint.
+
+5. Repeat steps 3 and 4 as needed until the desired structure is achieved, meeting all the constraints.
+
+Note: The specific order and positions for dropping the blocks will depend on the desired design of the "E" shape and the constraints to be satisfied. Experiment with different combinations and positions of the blocks to achieve the desired stability and no boundary intrusion.

@@ -1,0 +1,27 @@
+To create a structure that looks like the capital letter "Y", we can follow these steps:
+
+1. Create the vertical bar of the letter "Y":
+   - Drop a column block "b13" at the center position of the grid (x_position = 10).
+   - Drop a square block "b11" on top of the column block at x_position-1.
+   - Drop another square block "b11" on top of the column block at x_position+1.
+
+2. Create the upper diagonal bar of the letter "Y":
+   - Drop a row block "b31" at the position (x_position-2, 4).
+
+3. Create the lower diagonal bar of the letter "Y":
+   - Drop a row block "b31" at the position (x_position+2, 8).
+
+Here is the complete implementation:
+
+```
+# Create the vertical bar of the letter "Y"
+ab_drop("b13", 10)
+ab_drop("b11", 9)
+ab_drop("b11", 11)
+
+# Create the upper diagonal bar of the letter "Y"
+ab_drop("b31", 8)
+
+# Create the lower diagonal bar of the letter "Y"
+ab_drop("b31", 12)
+```

@@ -1,0 +1,66 @@
+Steps:
+1. Draw the letter ""W"" with asterisks.
+```
+*     *  
+*     *  
+*  *  *  
+* * * * 
+**   ** 
+```
+2. Line-by-line, verbally list the asterisks and spaces generated in each row of the drawing.
+- Row 1: 1 asterisk, 5 spaces, 1 asterisk
+- Row 2: 1 asterisk, 5 spaces, 1 asterisk
+- Row 3: 1 asterisk, 1 space, 1 asterisk, 1 space, 1 asterisk
+- Row 4: 1 asterisk, 1 space, 1 asterisk, 1 space, 1 asterisk, 1 space, 1 asterisk
+- Row 5: 2 asterisks, 3 spaces, 2 asterisks
+3. Replace asterisks with "x" and spaces with "y". Repeat step #2 with the new rules.
+- Row 1: 1x, 5y, 1x
+- Row 2: 1x, 5y, 1x
+- Row 3: 1x, 1y, 1x, 1y, 1x
+- Row 4: 1x, 1y, 1x, 1y, 1x, 1y, 1x
+- Row 5: 2x, 3y, 2x
+4. For each row, write out each x and y. Each must be listed side-by-side.
+- Row 1: xxyx
+- Row 2: xxyx
+- Row 3: xxyxyx
+- Row 4: xxyxyxyx
+- Row 5: xxxyyxx
+5. For each row, indicate the position of each variable.
+- Row 1: x-1, x-2, y-3, x-4
+- Row 2: x-1, x-2, y-3, x-4
+- Row 3: x-1, x-2, y-3, x-4, y-5, x-6
+- Row 4: x-1, x-2, y-3, x-4, y-5, x-6, y-7, x-8
+- Row 5: x-1, x-2, x-3, y-4, y-5, x-6, x-7
+6. For each row, line-by-line, return a sequence of `ab_drop` function calls where the first variable is "b11" and the second is the number.
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+```

@@ -1,0 +1,12 @@
+To create the letter "V", we need to stack the blocks in a specific pattern. Here is the sequence of ab_drop() commands to generate the letter "V":
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 4)
+ab_drop('b13', 5)
+ab_drop('b31', 7)
+ab_drop('b13', 8)
+```
+
+This sequence will create the shape of the letter "V" within the allowed space and maintain structural stability with the gravity rules.

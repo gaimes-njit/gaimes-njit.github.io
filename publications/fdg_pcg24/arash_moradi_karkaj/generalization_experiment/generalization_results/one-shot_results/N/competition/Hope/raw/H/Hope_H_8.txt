@@ -1,0 +1,10 @@
+To create the structure exactly like "H" inside a 20*16 box block, you can use the `ab_drop` function with the appropriate block types and positions. Here is the code to achieve that:
+
+```
+ab_drop('b31', 3)   # Top horizontal bar of H
+ab_drop('b31', 3)   # Bottom horizontal bar of H
+ab_drop('b13', 6)   # Left vertical bar of H
+ab_drop('b13', 12)  # Right vertical bar of H
+```
+
+This code will drop the blocks one by one from top to bottom, creating the structure of the letter "H" inside the given box.

@@ -1,0 +1,26 @@
+To generate the uppercase English letter "B", you can follow these steps:
+
+1. Create the vertical straight block (b13) twice in the first two positions of the width:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+2. Create the horizontal straight block (b31) in the second position of the width:
+```
+ab_drop('b31', 2)
+```
+
+3. Create the square block (b11) in the first and third position of the width:
+```
+ab_drop('b11', 1)
+ab_drop('b11', 3)
+```
+
+4. Finally, create the horizontal straight block (b31) twice in the second position of the width:
+```
+ab_drop('b31', 2)
+ab_drop('b31', 2)
+```
+
+By following these steps, you should be able to generate the uppercase English letter "B" using the given block types and within the defined environment.

@@ -1,0 +1,37 @@
+To build a stable structure resembling the letter "I" while adhering to the given constraints, we can follow these steps:
+
+1. Initialize the structure using the provided code:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the three horizontal blocks (`b11`) to form the base of the structure:
+```
+ab_drop('b11', 5)
+ab_drop('b11', 4)
+ab_drop('b11', 3)
+```
+
+3. Drop the vertical block (`b13`) on top of the base to form the vertical part of the "I":
+```
+ab_drop('b13', 4)
+```
+
+4. Drop the three horizontal blocks (`b11`) on top of the vertical block to complete the "I" shape:
+```
+ab_drop('b11', 5)
+ab_drop('b11', 4)
+ab_drop('b11', 3)
+```
+
+The complete code block for generating the "I" structure would be:
+```
+structure = [[' ']*W for _ in range(H)]
+ab_drop('b11', 5)
+ab_drop('b11', 4)
+ab_drop('b11', 3)
+ab_drop('b13', 4)
+ab_drop('b11', 5)
+ab_drop('b11', 4)
+ab_drop('b11', 3)
+```

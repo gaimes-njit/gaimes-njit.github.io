@@ -1,0 +1,13 @@
+```
+structure = [[' ']*20 for _ in range(16)]
+
+# Build the vertical part of the "N"
+ab_drop('b13', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+
+# Build the horizontal part of the "N"
+ab_drop('b31', 1)
+ab_drop('b11', 0)
+
+structure

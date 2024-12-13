@@ -1,0 +1,31 @@
+To generate uppercase English letter "Y", we can follow these steps:
+
+1. Start by building the base of the letter by stacking two vertical blocks next to each other:
+```python
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+```
+
+2. Place a horizontal block on top of the two vertical blocks to create the upper part of the letter:
+```python
+ab_drop('b31', 1)
+```
+
+3. Stack a vertical block below the horizontal block to maintain stability:
+```python
+ab_drop('b13', 1)
+```
+
+4. Finally, add a vertical block on top of the horizontal block to complete the letter:
+```python
+ab_drop('b13', 1)
+```
+
+The complete stream of commands to generate the letter "Y" would be:
+```python
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+```

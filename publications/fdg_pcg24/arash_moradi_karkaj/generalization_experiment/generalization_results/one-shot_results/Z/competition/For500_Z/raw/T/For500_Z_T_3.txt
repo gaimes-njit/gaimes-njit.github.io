@@ -1,0 +1,4 @@
+ab_drop('b31', 17)  # Create the main vertical stem of the "T" at the rightmost slot
+ab_drop('b13', 17)  # Add the crossbar of the "T" on top of the stem
+ab_drop('b11', 16)  # Add a support block to stabilize the crossbar
+ab_drop('b11', 18)  # Add another support block to stabilize the crossbar

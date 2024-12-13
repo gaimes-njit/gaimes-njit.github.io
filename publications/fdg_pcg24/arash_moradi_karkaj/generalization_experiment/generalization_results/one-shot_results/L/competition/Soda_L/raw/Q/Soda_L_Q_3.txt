@@ -1,0 +1,39 @@
+First, let's start by building the base of the "Q" character:
+
+```
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+```
+
+Next, let's create the top right corner of the "Q" character:
+
+```
+ab_drop("b31", 14)
+ab_drop("b31", 15)
+ab_drop("b31", 16)
+```
+
+Now, let's add the middle left and right blocks of the "Q" character:
+
+```
+ab_drop("b13", 12)
+ab_drop("b13", 13)
+ab_drop("b13", 14)
+ab_drop("b13", 15)
+ab_drop("b13", 16)
+ab_drop("b13", 17)
+```
+
+Finally, let's add the bottom left and right blocks of the "Q" character:
+
+```
+ab_drop("b13", 12)
+ab_drop("b13", 13)
+ab_drop("b13", 14)
+ab_drop("b13", 15)
+ab_drop("b13", 16)
+ab_drop("b13", 17)
+```
+
+This should create a structure in the level that looks like the capital letter "Q".

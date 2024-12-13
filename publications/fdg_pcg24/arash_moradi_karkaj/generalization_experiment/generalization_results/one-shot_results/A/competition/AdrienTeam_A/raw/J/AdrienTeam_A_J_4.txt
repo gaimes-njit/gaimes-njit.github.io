@@ -1,0 +1,10 @@
+Here is the sequence of `ab_drop()` inputs to create the structure resembling "J":
+
+```
+ab_drop('b11',10)
+ab_drop('b11',10)
+ab_drop('b11',10)
+ab_drop('b11',9)
+ab_drop('b13',11)
+ab_drop('b31',8)
+```

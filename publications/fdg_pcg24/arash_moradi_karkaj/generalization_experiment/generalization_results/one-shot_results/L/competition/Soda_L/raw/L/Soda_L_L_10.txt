@@ -1,0 +1,10 @@
+To create the letter L in the top-down orientation, we need to drop two blocks: a vertical pipe and a bottom bar. We can achieve this by calling the `ab_drop()` function twice.
+
+```python
+ab_drop("b31", 10)
+ab_drop("b13", 9)
+```
+
+The first `ab_drop()` call will drop a block of type "b31" at x_position=10, resulting in the vertical pipe of the L shape. The second `ab_drop()` call will drop a block of type "b13" at x_position=9, resulting in the bottom bar of the L shape.
+
+To enforce stability, we need to ensure that the blocks are well-supported. In this case, the vertical pipe should be placed on top of the bottom bar. By following the order of the `ab_drop()` calls, we are building the structure from bottom to top, which ensures stability.

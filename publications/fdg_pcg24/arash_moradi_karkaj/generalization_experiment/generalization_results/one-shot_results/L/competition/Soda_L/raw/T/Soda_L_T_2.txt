@@ -1,0 +1,26 @@
+To create a structure that looks like the capital letter "T" in the level, we can break it down into three blocks: the vertical pipe, the top bar, and the bottom bar. 
+
+First, we will create the vertical pipe at the center of the level. 
+
+```python
+ab_drop("b31", 9)
+```
+
+Next, we will create the top bar above the vertical pipe.
+
+```python
+ab_drop("b13", 8)
+```
+
+Finally, we will create the bottom bar below the vertical pipe.
+
+```python
+ab_drop("b13", 10)
+```
+
+The complete implementation to generate the "T" structure in the level:
+```python
+ab_drop("b31", 9)
+ab_drop("b13", 8)
+ab_drop("b13", 10)
+```

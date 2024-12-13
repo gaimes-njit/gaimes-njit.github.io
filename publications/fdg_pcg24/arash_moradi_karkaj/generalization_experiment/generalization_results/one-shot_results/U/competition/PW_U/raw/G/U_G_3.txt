@@ -1,0 +1,23 @@
+To create the uppercase letter "G", we can follow these steps:
+
+1. Place a horizontal straight block (`b31`) at position (1, 2).
+2. Place a vertical straight block (`b13`) at position (3, 1).
+3. Place a vertical straight block (`b13`) at position (3, 3).
+4. Place a horizontal straight block (`b31`) at position (7, 2).
+5. Place a vertical straight block (`b13`) at position (10, 1).
+6. Place a vertical straight block (`b13`) at position (10, 3).
+7. Place a horizontal straight block (`b31`) at position (14, 2).
+8. Place a horizontal straight block (`b31`) at position (18, 2).
+
+The stream of commands can be written as follows:
+
+```
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 7)
+ab_drop('b13', 10)
+ab_drop('b13', 10)
+ab_drop('b31', 14)
+ab_drop('b31', 18)
+```

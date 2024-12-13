@@ -1,0 +1,72 @@
+To create the capital letter "A" in a bottom-to-top fashion using the block-stacking technique, here's the step-by-step implementation:
+
+1. Drop two b31 blocks vertically from the top, each centered at columns 8 and 12:
+```
+ab_drop("b31", 8)
+ab_drop("b31", 12)
+```
+
+2. Drop a b13 block vertically from the top, centered at column 10, on top of the two b31 blocks:
+```
+ab_drop("b13", 10)
+```
+
+3. Drop a b11 block vertically from the top, centered at column 10, on top of the b13 block:
+```
+ab_drop("b11", 10)
+```
+
+4. Drop a b11 block vertically from the top, centered at column 8, on top of the left b31 block:
+```
+ab_drop("b11", 8)
+```
+
+5. Drop a b11 block vertically from the top, centered at column 12, on top of the right b31 block:
+```
+ab_drop("b11", 12)
+```
+
+6. Drop a b11 block vertically from the top, centered at column 8, on top of the previously placed b11 block:
+```
+ab_drop("b11", 8)
+```
+
+7. Drop a b11 block vertically from the top, centered at column 12, on top of the previously placed b11 block:
+```
+ab_drop("b11", 12)
+```
+
+8. Drop a b11 block vertically from the top, centered at column 8, on top of the previously placed b11 block:
+```
+ab_drop("b11", 8)
+```
+
+9. Drop a b11 block vertically from the top, centered at column 12, on top of the previously placed b11 block:
+```
+ab_drop("b11", 12)
+```
+
+10. Drop a b11 block vertically from the top, centered at column 8, on top of the previously placed b11 block:
+```
+ab_drop("b11", 8)
+```
+
+11. Drop a b11 block vertically from the top, centered at column 12, on top of the previously placed b11 block:
+```
+ab_drop("b11", 12)
+```
+
+The complete implementation is as follows:
+
+```
+ab_drop("b31", 8)
+ab_drop("b31", 12)
+ab_drop("b13", 10)
+ab_drop("b11", 10)
+ab_drop("b11", 8)
+ab_drop("b11", 12)
+ab_drop("b11", 8)
+ab_drop("b11", 12)
+ab_drop("b11", 8)
+ab_drop("b11", 12)
+```

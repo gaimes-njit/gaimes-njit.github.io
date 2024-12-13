@@ -1,0 +1,9 @@
+To create the uppercase letter "T" using only the mentioned block types, you can use the following stream of commands:
+
+```Python
+ab_drop('b13',1)   # Place a vertical straight block at position 1
+ab_drop('b31',1)   # Place a horizontal straight block at position 1
+ab_drop('b13',2)   # Place a vertical straight block at position 2
+```
+
+These commands will construct the uppercase letter "T" within the given boundaries and gravity rules.

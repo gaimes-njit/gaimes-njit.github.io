@@ -1,0 +1,30 @@
+To generate a stable structure that looks like the uppercase character "T" and meets all the hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty grid using the provided code:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the b31 block in the middle of the bottom layer to form the base of the "T" shape. This ensures stability as the block will have support on both sides. Use the `ab_drop()` function to drop the block at slot 9:
+```python
+ab_drop('b31', 9)
+```
+This will place the b31 block at coordinates (15, 9) in the structure.
+
+3. Drop the b11 block on top of the b31 block, slightly offset to the right, to form the vertical line of the "T" shape. Use the `ab_drop()` function to drop the block at slot 10:
+```python
+ab_drop('b11', 10)
+```
+This will place the b11 block at coordinates (14, 10) in the structure.
+
+4. Drop the b11 block on top of the b31 block, slightly offset to the left, to complete the horizontal line of the "T" shape. Use the `ab_drop()` function to drop the block at slot 8:
+```python
+ab_drop('b11', 8)
+```
+This will place the b11 block at coordinates (14, 8) in the structure.
+
+5. The structure should now resemble the uppercase letter "T", with blocks aligned properly and meeting the stability constraints.
+
+6. You can continue using the `ab_drop()` function and dropping blocks to add more complexity to the structure and make it resemble other uppercase letters if desired. Just make sure to check for stability before each drop and adjust the slot number and block type accordingly.
+
+By following these steps and adjusting the blocks and positions as needed, you can generate a stable structure that resembles the uppercase character "T" and meets all the hard constraints.

@@ -1,0 +1,10 @@
+To create the uppercase letter "K", we can use the following stream of commands:
+
+```
+ab_drop('b31', 1)  // Place the horizontal straight block at position 1
+ab_drop('b13', 1)  // Place the vertical straight block at position 1
+ab_drop('b13', 3)  // Place the vertical straight block at position 3
+ab_drop('b31', 1)  // Place the horizontal straight block at position 1
+```
+
+By following these commands, you will be able to construct the letter "K" using the given block types within the defined environment.

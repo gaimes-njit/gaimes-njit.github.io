@@ -1,0 +1,32 @@
+To generate a stable structure that looks like the character "Z" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the structure as an empty grid:
+   ```
+   W = 20
+   H = 16
+   structure = [[' '] * W for _ in range(H)]
+   ```
+
+2. Determine the drop positions for each block type:
+   - For the first "b31" block, we can drop it at slot 2 on layer 0.
+   - For the second "b11" block, we can drop it at slot 2 on layer 1.
+   - For the third "b13" block, we can drop it at slot 1 on layer 2.
+
+3. Use the `ab_drop()` function to drop the blocks in the determined positions:
+   ```
+   ab_drop("b31", 2)
+   ab_drop("b11", 2)
+   ab_drop("b13", 1)
+   ```
+
+4. Repeat steps 2 and 3 for the remaining block types to create the complete structure:
+   - For the fourth "b31" block, drop it at slot 4 on layer 5.
+   - For the fifth "b11" block, drop it at slot 6 on layer 6.
+   - For the sixth "b11" block, drop it at slot 8 on layer 7.
+   - For the seventh "b13" block, drop it at slot 6 on layer 8.
+   - For the eighth "b31" block, drop it at slot 4 on layer 11.
+   - For the ninth "b13" block, drop it at slot 1 on layer 12.
+   - For the tenth "b11" block, drop it at slot 3 on layer 13.
+   - For the eleventh "b31" block, drop it at slot 1 on layer 15.
+
+5. The resulting structure will be a stable structure that looks like the character "Z" and meets all the constraints.

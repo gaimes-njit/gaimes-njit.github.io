@@ -1,0 +1,65 @@
+To create a stable structure resembling the letter "I" while adhering to the given constraints, we can follow these steps:
+
+1. Initialize the structure:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the first block at the bottom layer (layer 0) to form the base of the structure:
+```python
+ab_drop('b31', 9)
+```
+
+3. Drop two vertical blocks above the base:
+```python
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+```
+
+4. Drop a horizontal block on top of the two vertical blocks to complete the first layer:
+```python
+ab_drop('b31', 9)
+```
+
+5. Repeat steps 3 and 4 three more times to form the remaining layers:
+```python
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+ab_drop('b31', 9)
+
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+ab_drop('b31', 9)
+
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+ab_drop('b31', 9)
+```
+
+The final structure with the corresponding `ab_drop()` inputs is as follows:
+```
+```python
+structure = [[' ']*W for _ in range(H)]
+
+ab_drop('b31', 9)
+
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+
+ab_drop('b31', 9)
+
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+
+ab_drop('b31', 9)
+
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+
+ab_drop('b31', 9)
+
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+
+ab_drop('b31', 9)
+```

@@ -1,0 +1,10 @@
+To generate the uppercase English letter "N", the following sequence of `ab_drop()` commands should be used:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```
+
+This sequence will create a letter "N" with the correct structural stability and adherence to the gravity rules.

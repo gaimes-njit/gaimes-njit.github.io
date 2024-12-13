@@ -1,0 +1,31 @@
+To generate a shape resembling the letter "P" using the given props and function, we can divide the process into three parts: creating the vertical stroke, creating the horizontal stroke, and creating the curved part of the letter "P".
+
+First, let's create the vertical stroke:
+
+```python
+# Creating the vertical stroke
+ab_drop('b13', 3)
+```
+
+This will create a vertical stroke starting from the x-position 3 on the ground. The cells (3, 0), (3, 1), and (3, 2) will be occupied.
+
+Next, let's create the horizontal stroke:
+
+```python
+# Creating the horizontal stroke
+ab_drop('b31', 2)
+```
+
+This will create a horizontal stroke starting from the x-position 2, just above the vertical stroke. The cells (2, 3), (3, 3), and (4, 3) will be occupied.
+
+Finally, let's create the curved part of the letter "P":
+
+```python
+# Creating the curved part
+ab_drop('b31', 1)
+ab_drop('b11', 0)
+```
+
+This will create two bricks to form the curved part of the letter "P". The first brick, b31, starts from x-position 1 and occupies the cells (1, 4), (2, 4), and (3, 4). The second brick, b11, starts from x-position 0 and occupies the cell (0, 5).
+
+As a result, the function calls will generate a shape resembling the letter "P".

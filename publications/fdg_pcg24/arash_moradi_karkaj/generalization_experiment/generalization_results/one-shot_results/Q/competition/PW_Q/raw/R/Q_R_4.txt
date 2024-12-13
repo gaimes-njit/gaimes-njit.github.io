@@ -1,0 +1,22 @@
+To create the uppercase letter "R", we can use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',4)
+ab_drop('b31',4)
+ab_drop('b11',3)
+ab_drop('b11',4)
+ab_drop('b11',5)
+ab_drop('b11',6)
+ab_drop('b11',7)
+ab_drop('b11',8)
+ab_drop('b11',9)
+ab_drop('b11',10)
+ab_drop('b11',11)
+ab_drop('b11',12)
+ab_drop('b11',13)
+ab_drop('b11',14)
+ab_drop('b11',15)
+```
+
+This sequence of commands will create the uppercase letter "R" with the given block types (b11, b13, b31) in the defined environment.

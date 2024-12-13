@@ -1,0 +1,35 @@
+To generate the capital letter "P" using the given block types and the defined environment, we can follow these steps:
+
+1. Start by creating the vertical straight block on the left side of the grid:
+   ab_drop('b13', 1)
+
+2. Move one unit to the right and create the horizontal straight block:
+   ab_drop('b31', 2)
+
+3. Move one unit to the right and create the vertical straight block on the right side of the grid:
+   ab_drop('b13', 3)
+
+4. Move one unit to the left and create the horizontal straight block connected to the previous one:
+   ab_drop('b31', 2)
+
+5. Move one unit to the right and create the vertical straight block on the right side of the previous block:
+   ab_drop('b13', 3)
+
+6. Repeat steps 4 and 5 two more times to create the middle section of the letter "P".
+
+7. Finally, create the horizontal straight block on the top of the middle section:
+   ab_drop('b31', 2)
+
+The complete stream of commands to generate the capital letter "P" would be:
+
+```
+ab_drop('b13', 1)
+ab_drop('b31', 2)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b31', 2)
+```

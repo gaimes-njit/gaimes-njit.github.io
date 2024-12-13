@@ -1,0 +1,6 @@
+ab_drop('b31',1) ab_drop('b11',1)  // First line of the letter E
+ab_drop('b11',1) ab_drop('b31',1)  // Second line of the letter E
+ab_drop('b11',1) ab_drop('b11',2)  // Third line of the letter E
+ab_drop('b11',1) ab_drop('b31',2)  // Fourth line of the letter E
+ab_drop('b11',1) ab_drop('b11',3)  // Fifth line of the letter E
+ab_drop('b31',1) ab_drop('b31',2)  // Sixth line of the letter E

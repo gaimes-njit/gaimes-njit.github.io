@@ -1,0 +1,35 @@
+To generate a stable structure that looks like the character "K" using the `ab_drop()` function, we need to follow these steps:
+
+1. Initialize the structure as an empty WxH grid:
+```python
+W = 20
+H = 16
+structure = [[' '] * W for _ in range(H)]
+```
+
+2. Starting from the bottom layer (layer 0), drop a b31 block at slot 9, which will be the vertical base of the "K" shape:
+```python
+ab_drop('b31', 9)
+```
+
+3. Drop a b31 block at slot 8, just above the previously dropped block, to create the right vertical segment of the "K" shape:
+```python
+ab_drop('b31', 8)
+```
+
+4. Drop a b11 block at slot 9, just above the previously dropped block, to create the horizontal segment of the "K" shape:
+```python
+ab_drop('b11', 9)
+```
+
+5. Drop a b31 block at slot 10, just above the previously dropped block, to create the left vertical segment of the "K" shape:
+```python
+ab_drop('b31', 10)
+```
+
+6. Drop a b11 block at slot 8, one layer above the base, to create the top horizontal segment of the "K" shape:
+```python
+ab_drop('b11', 8)
+```
+
+By following these steps, we can generate a stable structure that looks like the character "K" and meets all the constraints.

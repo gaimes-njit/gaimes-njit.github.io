@@ -1,0 +1,35 @@
+To create a structure that looks like the letter "O", we can start by placing the outer square block followed by the inner square block. Here is the implementation:
+
+```
+# Place the outer square block
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 9)
+
+# Place the inner square block
+ab_drop("b11", 10)
+```
+
+This will create a structure with two square blocks, forming the letter "O". However, this structure is not stable as the inner square block is not supported by any other block. To make it stable, we need to add more blocks to support it. Here is the modified implementation:
+
+```
+# Place the outer square block
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 9)
+
+# Place the inner square block
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 10)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+ab_drop("b13", 9)
+ab_drop("b13", 12)
+ab_drop("b31", 10)
+ab_drop("b13", 10)
+ab_drop("b13", 11)
+ab_drop("b31", 10)
+```
+
+This implementation adds row blocks and column blocks around the inner square block to provide stability. The final structure will resemble the letter "O" and have a stable configuration.

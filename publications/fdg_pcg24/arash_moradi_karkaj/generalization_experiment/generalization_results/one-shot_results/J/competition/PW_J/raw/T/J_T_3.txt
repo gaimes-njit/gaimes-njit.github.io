@@ -1,0 +1,9 @@
+To generate the uppercase letter "T", we can use the following ab_drop() commands:
+
+```
+ab_drop('b11', 1)  # Top dot of the "T"
+ab_drop('b31', 2)  # Horizontal bar of the "T"
+ab_drop('b13', 2)  # Vertical bar of the "T"
+```
+
+These commands will place the blocks in the grid in the proper positions to form the letter "T", starting from position 1 and following the gravity rules.

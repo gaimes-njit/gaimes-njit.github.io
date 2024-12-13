@@ -1,0 +1,8 @@
+ab_drop('b31', 9)  # Top left horizontal bar
+ab_drop('b31', 8)  # Bottom left horizontal bar
+ab_drop('b31', 10)  # Top right horizontal bar
+ab_drop('b31', 11)  # Bottom right horizontal bar
+ab_drop('b31', 7)  # Middle horizontal bar
+ab_drop('b13', 9)  # Left vertical stem
+ab_drop('b13', 11)  # Right vertical stem
+ab_drop('b11', 10)  # Top dot

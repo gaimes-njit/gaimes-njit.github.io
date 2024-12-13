@@ -1,0 +1,15 @@
+'''
+# Step 1: Create the vertical bar of the letter P
+ab_drop("b31", 2)
+
+# Step 2: Create the horizontal bar of the letter P
+ab_drop("b13", 1)
+
+# Step 3: Create the bottom tick of the letter P
+ab_drop("b31", 2)
+'''
+
+# Final implementation
+ab_drop("b31", 2)
+ab_drop("b13", 1)
+ab_drop("b31", 2)

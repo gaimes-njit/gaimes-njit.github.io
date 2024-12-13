@@ -1,0 +1,10 @@
+To construct a level for Science Birds that resembles the English letter "S," the following code sequence using the ab_drop() function can be used:
+
+1. Drop a b13 block at slot 9: ab_drop('b13', 9)
+2. Drop a b13 block at slot 10: ab_drop('b13', 10)
+3. Drop a b13 block at slot 11: ab_drop('b13', 11)
+4. Drop a b31 block at slot 7: ab_drop('b31', 7)
+5. Drop a b31 block at slot 12: ab_drop('b31', 12)
+6. Drop a b31 block at slot 6: ab_drop('b31', 6)
+
+This code sequence will create a structure that resembles the English letter "S" and follows all the constraints of the Science Birds game. The blocks are dropped in a specific order to maintain stability under gravity and ensure that the structure represents the letter "S" accurately.

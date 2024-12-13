@@ -1,0 +1,16 @@
+ab_drop('b11',1)  # Place the first block at position 1
+ab_drop('b11',2)  # Place the second block at position 2
+ab_drop('b11',3)  # Place the third block at position 3
+ab_drop('b31',3)  # Place the fourth block at position 3
+ab_drop('b13',4)  # Place the fifth block at position 4
+ab_drop('b13',2)  # Place the sixth block at position 2
+ab_drop('b31',2)  # Place the seventh block at position 2
+ab_drop('b11',1)  # Place the eighth block at position 1
+ab_drop('b11',2)  # Place the ninth block at position 2
+ab_drop('b11',3)  # Place the tenth block at position 3
+ab_drop('b11',4)  # Place the eleventh block at position 4
+ab_drop('b31',4)  # Place the twelfth block at position 4
+ab_drop('b11',1)  # Place the thirteenth block at position 1
+ab_drop('b11',2)  # Place the fourteenth block at position 2
+ab_drop('b11',3)  # Place the fifteenth block at position 3
+ab_drop('b11',4)  # Place the sixteenth block at position 4

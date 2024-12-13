@@ -1,0 +1,10 @@
+# Initial setup
+structure = [[' ']*20 for _ in range(16)]
+
+# Generate the letter 'A'
+ab_drop('b31', 9)
+ab_drop('b13', 9)
+ab_drop('b13', 7)
+ab_drop('b13', 11)
+
+# Final structure resembles the letter 'A'

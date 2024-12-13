@@ -1,0 +1,40 @@
+To meet the stability constraint, we need to ensure that the blocks are dropped in a way that maintains balance and prevents the structure from collapsing. We can achieve this by following these steps:
+
+1. Define the goal structure shape: The target structure is a "Q" shape, which consists of a square block at the center (b11) and two horizontal blocks (b31) above and below the square block.
+
+2. Determine the drop positions: To achieve stability, we need to find suitable drop positions for each block in the goal structure. We can start by dropping the horizontal blocks (b31) first, followed by the square block (b11). The drop positions for the horizontal blocks should be aligned with the center of the intended slot, while the drop position for the square block should be aligned with the center slot.
+
+3. Use ab_drop() function to drop the blocks: Based on the determined drop positions, we can use the ab_drop() function to drop the blocks in the structure grid.
+
+Here's a code example that demonstrates the above steps:
+
+```python
+W = 20
+H = 16
+structure = [[' '] * W for _ in range(H)]
+
+def ab_drop(block_type, x_position):
+    # Implementation of ab_drop() function
+    pass
+
+# Determine drop positions for each block
+center_slot = W // 2  # Center slot
+
+horizontal_drop_positions = [center_slot - 1, center_slot, center_slot + 1]
+vertical_drop_position = center_slot
+
+# Drop the horizontal blocks (b31)
+for position in horizontal_drop_positions:
+    ab_drop('b31', position)
+
+# Drop the square block (b11)
+ab_drop('b11', vertical_drop_position)
+
+# Print the resulting structure
+for row in structure:
+    print(' '.join(row))
+```
+
+The code above determines the drop positions for the blocks based on the goal structure and then uses the ab_drop() function to drop the blocks accordingly. Finally, it prints the resulting structure.
+
+By following this approach, we can generate a stable structure that looks like the character "Q", satisfying the given constraints.

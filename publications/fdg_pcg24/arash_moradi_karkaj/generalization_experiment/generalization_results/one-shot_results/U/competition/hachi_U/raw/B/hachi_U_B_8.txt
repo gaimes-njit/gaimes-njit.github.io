@@ -1,0 +1,17 @@
+To create the letter "B" using the `ab_drop()` function, the following code can be used:
+
+```
+ab_drop('b11', 5)
+ab_drop('b11', 5)
+ab_drop('b13', 5)
+ab_drop('b31', 5)
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+ab_drop('b13', 9)
+ab_drop('b31', 9)
+ab_drop('b11', 13)
+ab_drop('b11', 13)
+ab_drop('b13', 13)
+```
+
+This code will drop the blocks in a strategic manner to create the stable structure of the letter "B". It satisfies the hard constraint of stability and minimizes boundary intrusion.

@@ -1,0 +1,17 @@
+To generate a stable structure that looks like the uppercase character "V", we can follow these steps using the `ab_drop()` function:
+
+1. Initialize the structure as an empty grid: `structure = [[' ']*W for _ in range(H)]`
+
+2. Drop the b13 block in the center slot: `ab_drop('b13', W//2)`
+
+3. Drop the b31 block to the left of the b13 block: `ab_drop('b31', W//2 - 2)`
+
+4. Drop the b31 block to the right of the b13 block: `ab_drop('b31', W//2 + 2)`
+
+5. Drop the b11 block on top of the b13 block: `ab_drop('b11', W//2)`
+
+6. Drop the b11 block on top of the left b31 block: `ab_drop('b11', W//2 - 2)`
+
+7. Drop the b11 block on top of the right b31 block: `ab_drop('b11', W//2 + 2)`
+
+By following these steps, we will have a stable structure that resembles the uppercase letter "V".

@@ -1,0 +1,23 @@
+To create the letter "T" in the level, we can break it down into three blocks - two vertical columns and a horizontal bar. Here is the step-by-step implementation:
+
+Step 1: Drop the first vertical column (b13) at x_position = 9. 
+```
+ab_drop("b13", 9)
+```
+
+Step 2: Drop the second vertical column (b13) at x_position = 10.
+```
+ab_drop("b13", 10)
+```
+
+Step 3: Drop the horizontal bar (b31) at x_position = 9.
+```
+ab_drop("b31", 9)
+```
+
+The complete implementation:
+```
+ab_drop("b13", 9)
+ab_drop("b13", 10)
+ab_drop("b31", 9)
+```

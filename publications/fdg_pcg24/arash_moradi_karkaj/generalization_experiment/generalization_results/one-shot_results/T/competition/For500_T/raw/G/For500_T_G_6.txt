@@ -1,0 +1,6 @@
+ab_drop('b13', 9)  # Place a vertical block in the center of the structure
+ab_drop('b13', 9)  # Place another vertical block above the first one
+ab_drop('b13', 9)  # Place a third vertical block above the second one
+ab_drop('b13', 9)  # Place a fourth vertical block above the third one
+ab_drop('b31', 8)  # Place a horizontal block to the left of the vertical blocks
+ab_drop('b31', 10)  # Place a horizontal block to the right of the vertical blocks

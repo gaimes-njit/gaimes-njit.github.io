@@ -1,0 +1,45 @@
+Here is the code to generate the structure resembling "K":
+
+```
+structure = [[' ']*W for _ in range(H)]
+
+# drop the blocks to create the base of the "K"
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+
+# drop the blocks to create the vertical part of the "K"
+ab_drop('b11', 8)
+ab_drop('b11', 7)
+ab_drop('b11', 8)
+ab_drop('b11', 6)
+
+# drop the blocks to connect the horizontal and vertical parts of the "K"
+ab_drop('b11', 9)
+ab_drop('b11', 11)
+
+# drop the blocks to create the horizontal part of the "K"
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b11', 12)
+
+# drop the blocks to create the upper diagonal part of the "K"
+ab_drop('b11', 9)
+ab_drop('b11', 8)
+
+# drop the blocks to create the lower diagonal part of the "K"
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# drop the blocks to complete the structure of the "K"
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+ab_drop('b31', 8)
+ab_drop('b13', 10)
+ab_drop('b13', 10)
+
+# print the generated structure
+for row in structure:
+    print(''.join(row))
+```
+
+This code will generate a stable structure resembling the letter "K" while satisfying all the specified constraints.

@@ -1,0 +1,12 @@
+To generate a stable structure that looks like the character "Q", we can follow the following steps using the `ab_drop()` function:
+
+1. Start by dropping a b31 block at slot 5. This block will represent the short horizontal line at the bottom of the "Q".
+   `ab_drop('b31', 5)`
+
+2. Drop a b13 block at slot 2, aligned with the top-right corner of the b31 block. This block will represent the vertical line of the "Q".
+   `ab_drop('b13', 2)`
+
+3. Drop a b31 block at slot 8, aligned with the bottom-right corner of the b31 block and the bottom of the b13 block. This block will represent the longer horizontal line of the "Q".
+   `ab_drop('b31', 8)`
+
+By following these steps, we will generate a stable structure that looks like the character "Q" and meets the given constraints.

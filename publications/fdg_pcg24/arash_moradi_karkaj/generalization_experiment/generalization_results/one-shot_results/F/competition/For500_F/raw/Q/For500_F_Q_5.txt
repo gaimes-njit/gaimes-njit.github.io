@@ -1,0 +1,4 @@
+ab_drop('b31', 9)  # to add the left side of the Q
+ab_drop('b31', 11)  # to add the right side of the Q
+ab_drop('b13', 10)  # to add the tail of the Q
+ab_drop('b11', 10)  # to add the center of the Q

@@ -1,0 +1,24 @@
+To create a stable structure resembling "O" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the map using the provided code:
+    ```
+    structure = [[' ']*W for _ in range(H)]
+    ```
+
+2. Drop the blocks in the following order to form the "O" shape:
+    - Drop a horizontal block 'b11' on slot 1: `ab_drop('b11', 1)`
+    - Drop a horizontal block 'b11' on slot 2: `ab_drop('b11', 2)`
+    - Drop a vertical block 'b11' on slot 1: `ab_drop('b11', 1)`
+    - Drop a vertical block 'b11' on slot 20: `ab_drop('b11', 20)`
+    - Drop a horizontal block 'b11' on slot 19: `ab_drop('b11', 19)`
+    - Drop a horizontal block 'b11' on slot 18: `ab_drop('b11', 18)`
+    
+3. The resulting code block for creating the "O" shape would be:
+   ```
+   ab_drop('b11', 1)
+   ab_drop('b11', 2)
+   ab_drop('b11', 1)
+   ab_drop('b11', 20)
+   ab_drop('b11', 19)
+   ab_drop('b11', 18)
+   ```

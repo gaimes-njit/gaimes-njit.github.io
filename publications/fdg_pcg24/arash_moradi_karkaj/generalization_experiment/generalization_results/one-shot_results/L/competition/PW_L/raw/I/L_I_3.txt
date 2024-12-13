@@ -1,0 +1,11 @@
+To generate the uppercase letter "I", we need to create a vertical straight line using the block type b13. We can do this by placing three b13 blocks in a row at the same x-position.
+
+Here is the stream of commands to construct the letter I:
+
+``` 
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+```
+
+By executing these three commands consecutively, we will have successfully generated the letter "I" in the defined environment.

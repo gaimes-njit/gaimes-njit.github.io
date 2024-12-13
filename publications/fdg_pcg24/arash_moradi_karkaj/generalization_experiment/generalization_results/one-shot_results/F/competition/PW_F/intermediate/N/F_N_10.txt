@@ -1,0 +1,39 @@
+To generate the uppercase English letter "N", we can use the following stream of ab_drop() commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```
+
+This will create the letter "N" by stacking the blocks as follows:
+
+```
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
++------------------------------------------------+
+|                                                |
+|                                                |
+|                    █                           |
+|                    █                           |
+|                    █                           |
+|                                                |
+|                                                |
+|                                                |
+|                                                |
+|                                                |
+|                                                |
+|                           █                    |
+|                           █                    |
+|                           █                    |
+|                                                |
+|                                                |
+|                                                |
+|                                                |
+|                                                |
++------------------------------------------------+
+```
+
+Please note that I have represented the blocks with '█' for better visibility, but you can use any other character or symbol to represent the blocks in your grid.

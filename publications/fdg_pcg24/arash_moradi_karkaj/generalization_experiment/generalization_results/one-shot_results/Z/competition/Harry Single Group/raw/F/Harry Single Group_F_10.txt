@@ -1,0 +1,27 @@
+To generate the shape resembling the letter "F" using the given props and function, we can follow these steps:
+
+1. Initialize the field by creating a 2D array of size 16x20 to represent the cells of the field. Set all cells to be empty.
+
+2. The first part of the "F" shape is a vertical rectangle (b13) with an x_position of 5. We can drop this brick by calling the function ab_drop('b13', 5).
+
+3. Next, we need to drop a horizontal rectangle (b31) to form the top part of the letter "F". We can start from x_position 3 to leave space for the vertical part. Call ab_drop('b31', 3).
+
+4. Finally, we need to drop another horizontal rectangle (b31) to form the bottom part of the letter "F". We can start from x_position 3 as well, just below the top part. Call ab_drop('b31', 3).
+
+Here is the code that generates the required structure:
+
+```python
+# Initialize the field
+field = [['' for _ in range(20)] for _ in range(16)]
+
+# Drop the first brick (vertical rectangle)
+ab_drop('b13', 5)
+
+# Drop the second brick (horizontal rectangle - top part)
+ab_drop('b31', 3)
+
+# Drop the third brick (horizontal rectangle - bottom part)
+ab_drop('b31', 3)
+```
+
+Please note that the above code assumes that the ab_drop() function and the necessary definitions for the available props are implemented elsewhere in the program. Make sure to replace the function and definitions with the appropriate implementation when running the code.

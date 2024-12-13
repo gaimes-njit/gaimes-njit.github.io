@@ -1,0 +1,30 @@
+To generate a stable structure that resembles the character "U", we can follow these steps:
+
+1. Start by initializing the structure as an empty grid:
+   ```python
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. To form the left vertical side of the "U" shape, drop a b13 block:
+   ```python
+   ab_drop('b13', 2)
+   ```
+
+3. To form the bottom horizontal side of the "U" shape, drop a b31 block:
+   ```python
+   ab_drop('b31', 1)
+   ```
+
+4. To form the right vertical side of the "U" shape, drop another b13 block:
+   ```python
+   ab_drop('b13', 17)
+   ```
+
+5. To complete the top horizontal side of the "U" shape, drop another b31 block:
+   ```python
+   ab_drop('b31', 1)
+   ```
+
+After executing these steps, the structure should resemble the character "U" while meeting the stability and boundary intrusion constraints.
+
+Please note that the exact slot numbers and order of block drops may vary based on the specific requirements and conditions of the problem. Adjustments may need to be made to ensure the stability and desired shape of the structure.

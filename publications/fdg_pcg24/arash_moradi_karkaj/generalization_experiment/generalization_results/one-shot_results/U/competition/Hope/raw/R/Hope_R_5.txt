@@ -1,0 +1,44 @@
+To create the structure "R" inside a 20*16 box, we can use the ab_drop('blocktype', x position) command as follows:
+
+1. Drop three b11 blocks horizontally at position (0, 0), (0, 1), and (0, 2).
+   ab_drop('b11', 0)
+   ab_drop('b11', 1)
+   ab_drop('b11', 2)
+
+2. Drop a b31 block vertically at position (1, 1).
+   ab_drop('b31', 1)
+
+3. Drop a b13 block horizontally at position (1, 2).
+   ab_drop('b13', 2)
+
+4. Drop two b11 blocks horizontally at position (1, 3) and (1, 4).
+   ab_drop('b11', 3)
+   ab_drop('b11', 4)
+
+5. Drop a b13 block horizontally at position (1, 5).
+   ab_drop('b13', 5)
+
+6. Drop three b11 blocks horizontally at position (1, 6), (1, 7), and (1, 8).
+   ab_drop('b11', 6)
+   ab_drop('b11', 7)
+   ab_drop('b11', 8)
+
+7. Drop a b31 block vertically at position (2, 1).
+   ab_drop('b31', 1)
+
+8. Drop a b13 block horizontally at position (2, 2).
+   ab_drop('b13', 2)
+
+9. Drop two b11 blocks horizontally at position (2, 3) and (2, 4).
+   ab_drop('b11', 3)
+   ab_drop('b11', 4)
+
+10. Drop a b13 block horizontally at position (2, 5).
+    ab_drop('b13', 5)
+
+11. Drop three b11 blocks horizontally at position (2, 6), (2, 7), and (2, 8).
+    ab_drop('b11', 6)
+    ab_drop('b11', 7)
+    ab_drop('b11', 8)
+
+The above commands will create the structure "R" inside a 20*16 box.

@@ -1,0 +1,16 @@
+To generate the letter "B" using the given block types and rules, you can follow the following stream of commands:
+
+```
+# Place the horizontal straight block at position 2
+ab_drop('b31',2)
+# Place the vertical straight block at position 1
+ab_drop('b13',1)
+# Place the horizontal straight block at position 2
+ab_drop('b31',2)
+# Place the vertical straight block at position 1
+ab_drop('b13',1)
+# Place the horizontal straight block at position 2
+ab_drop('b31',2)
+```
+
+This sequence of commands will create a letter "B" in the Tetris-like environment, ensuring stability and fitting within the allowed space boundaries.

@@ -1,0 +1,25 @@
+First, we need to build the base of the "C". We can use a row block to create the bottom part of the letter. We will center it at the 4th column.
+
+```python
+ab_drop("b31", 3)
+```
+
+Next, we need to add the vertical part of the "C". We can use a column block for this. We will place it at the 6th column, aligned with the bottom part.
+
+```python
+ab_drop("b13", 5)
+```
+
+Finally, we need to add the top part of the "C". We can use another row block and place it on top of the vertical part, centered at the 4th column.
+
+```python
+ab_drop("b31", 3)
+```
+
+The complete implementation would be:
+
+```python
+ab_drop("b31", 3)
+ab_drop("b13", 5)
+ab_drop("b31", 3)
+```

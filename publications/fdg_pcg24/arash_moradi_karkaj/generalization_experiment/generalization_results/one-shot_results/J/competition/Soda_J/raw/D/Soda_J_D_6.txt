@@ -1,0 +1,30 @@
+The first step is to create the base of the "D" shape. We can achieve this by using a row block "b31" and placing it at the bottom of the grid. 
+
+```
+ab_drop("b31", 9)
+```
+
+Next, we need to create the vertical part of the "D" shape. We can achieve this by using a column block "b13" and placing it at the same x-position as the previous block. 
+
+```
+ab_drop("b13", 9)
+```
+
+Finally, we need to create the top part of the "D" shape. We can again use a row block "b31" and place it just above the previously placed block. 
+
+```
+ab_drop("b31", 9)
+```
+
+Putting it all together, the complete implementation to create a "D" shape is as follows:
+
+```python
+# The base of the "D" shape
+ab_drop("b31", 9)
+
+# The vertical part of the "D" shape
+ab_drop("b13", 9)
+
+# The top part of the "D" shape
+ab_drop("b31", 9)
+```

@@ -1,0 +1,23 @@
+Based on the given goal of creating a structure that resembles the character "K" and the constraints provided, we can follow these steps to build the structure:
+
+1. Start by initializing the structure as an empty WxH grid using the provided code:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop a b31 block at slot 1, aligning its center:
+```
+ab_drop('b31', 1)
+```
+
+3. Drop a b13 block at slot 1, aligning its center. This block will be placed on top of the previous b31 block:
+```
+ab_drop('b13', 1)
+```
+
+4. Drop another b31 block at slot 1, aligning its center. This block will be placed on top of the previous b13 block:
+```
+ab_drop('b31', 1)
+```
+
+The resulting structure will resemble the character "K" and meet the stability constraints.

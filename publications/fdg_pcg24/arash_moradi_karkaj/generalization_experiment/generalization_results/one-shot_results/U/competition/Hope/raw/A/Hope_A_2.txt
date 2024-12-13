@@ -1,0 +1,13 @@
+To create the structure exactly like "A" inside a 20x16 box, we can use the ab_drop() command with the following blocktypes and positions:
+1. Drop a b31 block at position (2, 1) to create the left vertical line of the "A".
+2. Drop a b31 block at position (7, 1) to create the right vertical line of the "A".
+3. Drop a b13 block at position (3, 4) to create the top horizontal line of the "A".
+4. Drop a b13 block at position (3, 9) to create the bottom horizontal line of the "A".
+5. Drop a b11 block at position (3, 7) to create the middle part of the "A".
+
+Using the ab_drop('blocktype', x position) command, the complete sequence would be:
+ab_drop('b31', 2)
+ab_drop('b31', 7)
+ab_drop('b13', 3)
+ab_drop('b13', 3)
+ab_drop('b11', 3)

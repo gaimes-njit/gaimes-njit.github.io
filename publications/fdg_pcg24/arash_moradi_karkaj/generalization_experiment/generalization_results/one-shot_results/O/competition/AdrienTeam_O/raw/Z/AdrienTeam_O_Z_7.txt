@@ -1,0 +1,17 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Start building "Z" from the bottom layer to the top layer
+# Drop the horizontal block first to form the bottom of the "Z"
+ab_drop('b31', 10)
+
+# Drop the vertical block to form the left side of the "Z"
+ab_drop('b13', 9)
+
+# Drop another vertical block to form the right side of the "Z"
+ab_drop('b13', 11)
+
+# Finally, drop the horizontal block again to complete the top of the "Z"
+ab_drop('b31', 10)
+```

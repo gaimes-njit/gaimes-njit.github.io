@@ -1,0 +1,30 @@
+To generate the letter "Y", the following ab_drop() commands can be used:
+
+ab_drop('b13', 1) // Place the first vertical straight block at position 1
+ab_drop('b13', 2) // Place the second vertical straight block at position 2
+ab_drop('b13', 3) // Place the third vertical straight block at position 3
+ab_drop('b31', 2) // Place the horizontal straight block at position 2
+
+Visualization:
+
+```
+0000000000000000000
+0                  0
+0                  0
+0    ___           0
+0   |   |          0
+0   |   |          0
+0   |___|          0
+0                  0
+0                  0
+0                  0
+0                  0
+0                  0
+0                  0
+0                  0
+0                  0
+0                  0
+0000000000000000000
+```
+
+Note: The grid representation above is for visualization purposes only and does not need to be included in the response.

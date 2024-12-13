@@ -1,0 +1,46 @@
+To generate a stable structure that looks like the uppercase character "T" using `ab_drop()` function, we can follow the steps below:
+
+1. Initialize the structure as an empty grid using the provided `structure` variable.
+2. Drop a b13 block at slot 9 to form the vertical line of the "T" shape. Call `ab_drop('b13', 9)` and add the dropped position to the coordinate list.
+3. Drop a b31 block at slot 7 to form the horizontal line of the "T" shape. Call `ab_drop('b31', 7)` and add the dropped position to the coordinate list.
+4. Drop another b31 block at slot 11 to provide support for the horizontal line. Call `ab_drop('b31', 11)` and add the dropped position to the coordinate list.
+
+Here is the code implementation:
+
+```python
+W = 20
+H = 16
+structure = [[' ']*W for _ in range(H)]
+coordinates = [] # List to store the dropped positions
+
+def ab_drop(x, y):
+    drop_pos = (H-1, y)
+    
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    
+    structure[drop_pos[0]][drop_pos[1]] = x
+    coordinates.append(drop_pos)
+
+# Drop the b13 block at slot 9
+ab_drop('b13', 9)
+
+# Drop the b31 block at slot 7
+ab_drop('b31', 7)
+
+# Drop the b31 block at slot 11 to provide support for the horizontal line
+ab_drop('b31', 11)
+
+# Print the resulting structure and dropped positions
+print("Structure:")
+for row in structure:
+    print(' '.join(row))
+
+print("Dropped Positions:")
+for coord in coordinates:
+    print(coord)
+```
+
+The resulting structure will look like the uppercase letter "T" and will satisfy the stability constraint.

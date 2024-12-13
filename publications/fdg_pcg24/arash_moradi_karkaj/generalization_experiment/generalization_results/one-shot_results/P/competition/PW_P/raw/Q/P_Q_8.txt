@@ -1,0 +1,23 @@
+To generate the uppercase English letter "Q" using the ab_drop() command and the given block types in the defined environment, the following stream of commands can be used:
+
+```plaintext
+ab_drop('b31', 1)   # Place the horizontal straight block at position 1
+ab_drop('b31', 2)   # Place the horizontal straight block at position 2
+ab_drop('b11', 3)   # Place the square block at position 3
+ab_drop('b11', 1)   # Place the square block at position 1
+ab_drop('b11', 2)   # Place the square block at position 2
+ab_drop('b13', 4)   # Place the vertical straight block at position 4
+ab_drop('b13', 4)   # Place the vertical straight block at position 4
+ab_drop('b13', 4)   # Place the vertical straight block at position 4
+ab_drop('b13', 4)   # Place the vertical straight block at position 4
+ab_drop('b13', 4)   # Place the vertical straight block at position 4
+ab_drop('b31', 3)   # Place the horizontal straight block at position 3
+ab_drop('b11', 3)   # Place the square block at position 3
+ab_drop('b11', 3)   # Place the square block at position 3
+ab_drop('b13', 3)   # Place the vertical straight block at position 3
+ab_drop('b13', 3)   # Place the vertical straight block at position 3
+ab_drop('b13', 3)   # Place the vertical straight block at position 3
+ab_drop('b13', 3)   # Place the vertical straight block at position 3
+```
+
+This sequence of commands will stack the blocks in the shape of the letter "Q" within the allowed space boundaries and following the 2D gravity rules.

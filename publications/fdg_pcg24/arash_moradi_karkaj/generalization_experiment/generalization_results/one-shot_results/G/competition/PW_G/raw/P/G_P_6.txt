@@ -1,0 +1,23 @@
+To construct the uppercase letter "P" using the given block types, we can follow these steps:
+
+1. Start by dropping a horizontal straight block (b31) at position 2. This will form the foundation of the letter.
+```python
+ab_drop('b31', 2)
+```
+
+2. Next, drop a vertical straight block (b13) at position 1 and position 2. This will create the vertical portion of the letter.
+```python
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+3. Now, we need to add the two horizontal bars at the top and bottom of the vertical portion. Drop a square block (b11) at position 4 for both bars.
+```python
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+```
+
+4. Finally, to complete the letter "P", add another horizontal straight block (b31) at position 2, connecting the two vertical bars.
+```python
+ab_drop('b31', 2)
+```

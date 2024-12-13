@@ -1,0 +1,22 @@
+To generate the uppercase English letter "O" using the given block types, the stream of `ab_drop()` commands would be as follows:
+
+```
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+```
+
+Explanation:
+- The first command `ab_drop('b31', 2)` places a horizontal straight block of width 3 units and height 1 unit at position 2 along the width.
+- The second command `ab_drop('b13', 1)` places a vertical straight block of width 1 unit and height 3 units at position 1 along the width.
+- The third command `ab_drop('b13', 3)` places another vertical straight block of width 1 unit and height 3 units at position 3 along the width.
+- The fourth command `ab_drop('b31', 2)` places another horizontal straight block of width 3 units and height 1 unit at position 2 along the width.
+- The fifth command `ab_drop('b13', 1)` places another vertical straight block of width 1 unit and height 3 units at position 1 along the width.
+- The sixth command `ab_drop('b13', 3)` places another vertical straight block of width 1 unit and height 3 units at position 3 along the width.
+- The seventh command `ab_drop('b31', 2)` places another horizontal straight block of width 3 units and height 1 unit at position 2 along the width.
+
+By following these commands, the uppercase letter "O" can be generated using the given block types in the defined environment.

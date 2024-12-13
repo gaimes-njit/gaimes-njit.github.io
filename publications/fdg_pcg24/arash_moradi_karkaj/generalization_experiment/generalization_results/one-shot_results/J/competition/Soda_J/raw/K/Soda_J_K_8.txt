@@ -1,0 +1,27 @@
+To create the letter "K" using the given block types, we can follow these steps:
+
+1. Create the top horizontal bar of the letter "K" using a row block (b31) centered at position 7:
+
+```
+ab_drop("b31", 7)
+```
+
+2. Create the middle vertical bar of the letter "K" using a column block (b13) centered at position 7:
+
+```
+ab_drop("b13", 7)
+```
+
+3. Create the bottom horizontal bar of the letter "K" using a row block (b31) centered at position 7:
+
+```
+ab_drop("b31", 7)
+```
+
+The complete implementation is:
+
+```
+ab_drop("b31", 7)
+ab_drop("b13", 7)
+ab_drop("b31", 7)
+```

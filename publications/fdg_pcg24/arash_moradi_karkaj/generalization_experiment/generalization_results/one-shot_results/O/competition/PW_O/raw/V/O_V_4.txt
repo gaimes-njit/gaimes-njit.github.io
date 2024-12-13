@@ -1,0 +1,13 @@
+```
+# Start with a 1x1 block to form the top point of the 'V'
+ab_drop("b11", 1)
+
+# Add a vertical straight block below to form the left side of the 'V'
+ab_drop("b13", 2)
+
+# Add a horizontal straight block to the right of the previous block to form the bottom of the 'V'
+ab_drop("b31", 3)
+
+# Add a vertical straight block on the right side of the bottom block to complete the right side of the 'V'
+ab_drop("b13", 5)
+```

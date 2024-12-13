@@ -1,0 +1,28 @@
+To generate a stable structure that resembles the character "N" while meeting all hard constraints, we can follow these steps:
+
+Step 1: Initialize the structure as an empty grid.
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Use the ab_drop() function to drop the blocks in the desired order and position to form the structure.
+
+```
+ab_drop('b13', 4)   # Drop the first vertical block in the center
+ab_drop('b13', 5)   # Drop the second vertical block in the center
+ab_drop('b31', 4)   # Drop the horizontal block on top of the first vertical block
+ab_drop('b31', 7)   # Drop the horizontal block on top of the second vertical block
+ab_drop('b11', 7)   # Drop the small square block on top of the horizontal blocks
+```
+
+Step 3: After dropping all the blocks, the structure will resemble the character "N" while meeting the stability constraint.
+
+The final structure will look like this:
+```
+structure = [
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '

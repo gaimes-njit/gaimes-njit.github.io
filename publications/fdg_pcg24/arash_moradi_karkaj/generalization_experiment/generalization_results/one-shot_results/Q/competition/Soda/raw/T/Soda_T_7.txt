@@ -1,0 +1,21 @@
+To create a structure that looks like the capital letter "T" using the ab_drop() function, we can break down the letter into three blocks - a vertical pipe, a horizontal bar, and a smaller horizontal bar to connect them.
+
+To start, we can drop the vertical pipe block (b31) at the center of the grid. This block will occupy cells (9, 15), (10, 15), and (11, 15).
+
+```
+ab_drop("b31", 9)
+```
+
+Next, we can drop the horizontal bar (b31) at the center of the grid, just above the vertical pipe. This block will occupy cells (9, 14), (10, 14), and (11, 14).
+
+```
+ab_drop("b31", 9)
+```
+
+Finally, we can drop the smaller horizontal bar (b13) at the center of the grid, just above the intersection of the vertical pipe and horizontal bar. This block will occupy cells (8, 14), (9, 14), and (10, 14).
+
+```
+ab_drop("b13", 8)
+```
+
+This sequence of ab_drop() calls will create a structure that looks like the capital letter "T" when the level reaches structural stability.

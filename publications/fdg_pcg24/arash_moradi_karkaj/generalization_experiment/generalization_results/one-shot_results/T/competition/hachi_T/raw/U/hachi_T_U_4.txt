@@ -1,0 +1,33 @@
+```python
+ab_drop('b11', 8)
+ab_drop('b31', 7)
+ab_drop('b31', 9)
+ab_drop('b13', 6)
+ab_drop('b13', 10)
+ab_drop('b11', 7)
+ab_drop('b11', 9)
+ab_drop('b11', 6)
+ab_drop('b11', 10)
+ab_drop('b13', 5)
+ab_drop('b13', 11)
+ab_drop('b11', 4)
+ab_drop('b11', 12)
+ab_drop('b11', 3)
+ab_drop('b11', 13)
+ab_drop('b11', 2)
+ab_drop('b11', 14)
+ab_drop('b11', 1)
+ab_drop('b11', 15)
+ab_drop('b11', 0)
+ab_drop('b11', 16)
+ab_drop('b11', 0)
+ab_drop('b11', 16)
+ab_drop('b11', 0)
+ab_drop('b11', 16)
+```
+
+Explanation:
+
+To construct the capital letter "U", we need to create two vertical lines on either side and connect them at the top with a horizontal block. Using a combination of `b11`, `b31`, and `b13` blocks, we can achieve the desired structure.
+
+In the given code block, we start by dropping `b11` blocks on the 8th slot (center) to form the vertical lines. Then, we drop `b31` blocks on the 7th and 9th slots to extend the vertical lines downward. To connect the vertical lines at the top, we drop `b13` blocks on the 6th and 10th slots. Finally, we drop additional `b11` blocks on the sides to ensure stability and minimize boundary intrusion.

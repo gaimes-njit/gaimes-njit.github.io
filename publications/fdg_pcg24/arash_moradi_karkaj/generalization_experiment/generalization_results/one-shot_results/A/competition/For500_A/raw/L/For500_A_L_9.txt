@@ -1,0 +1,6 @@
+ab_drop('b11', 8)  # drops the first bottom left stick of the 'L'
+ab_drop('b11', 10)  # drops the second bottom right stick of the 'L'
+ab_drop('b31', 9)  # drops the base stick of the 'L' connecting the two vertical sticks
+ab_drop('b11', 8)  # drops the first vertical stick of the 'L'
+ab_drop('b11', 10)  # drops the second vertical stick of the 'L'
+ab_drop('b31', 9)  # drops the middle stick of the 'L' connecting the two vertical sticks

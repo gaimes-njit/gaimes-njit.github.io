@@ -1,0 +1,14 @@
+To generate the uppercase English letter "E", you can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+```
+
+This will construct the letter "E" in the given environment, following the stacking and stability rules.

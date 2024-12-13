@@ -1,0 +1,13 @@
+To generate the uppercase English letter "P", we can use the following command:
+
+```
+ab_drop('b13',2)  // Place a vertical straight block at position 1
+ab_drop('b13',3)  // Place a vertical straight block at position 2
+top               // Move to the top of the two blocks
+ab_drop('b31',3)  // Place a horizontal straight block above the two vertical blocks
+side              // Move to the side of the horizontal block
+ab_drop('b13',5)  // Place a vertical straight block at position 4
+ab_drop('b11',5)  // Place a square block at position 4
+```
+
+This sequence of commands will create the uppercase English letter "P" in the Tetris-like environment.

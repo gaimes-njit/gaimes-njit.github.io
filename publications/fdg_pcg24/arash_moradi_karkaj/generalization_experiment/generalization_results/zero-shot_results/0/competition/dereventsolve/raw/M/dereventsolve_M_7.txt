@@ -1,0 +1,11 @@
+To generate a structure that looks like the letter "M", you can use the `ab_drop` function to move the cursor in the required sequence. Here is an example of how you can achieve this:
+
+```
+ab_drop('down', 3)
+ab_drop('right', 2)
+ab_drop('up', 3)
+ab_drop('right', 1)
+ab_drop('down', 3)
+```
+
+This sequence of `ab_drop` function calls will move the cursor in such a way that it forms a letter "M" structure.

@@ -1,0 +1,13 @@
+To construct the uppercase English letter "D" in the given environment, you can use the following stream of ab_drop() commands:
+
+```
+ab_drop('b31',1)           // Place horizontal block at position 1 (bottom-left of D)
+ab_drop('b31',2)           // Place horizontal block at position 2
+ab_drop('b13',2)           // Place vertical block at position 2 (middle of D)
+ab_drop('b13',3)           // Place vertical block at position 3 (top-right of D)
+ab_drop('b31',3)           // Place horizontal block at position 3 (top of D)
+ab_drop('b31',4)           // Place horizontal block at position 4 (top-right of D)
+ab_drop('b11',5)           // Place square block at position 5 (top-right of D)
+```
+
+These commands will place the blocks in the required order to construct the letter "D", while considering the stacking and stability rules.

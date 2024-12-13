@@ -1,0 +1,11 @@
+To construct a level for Science Birds that resembles the English letter "A," we can use the ab_drop() function with the following sequence of calls:
+
+ab_drop('b13', 8)
+ab_drop('b13', 9)
+ab_drop('b13', 10)
+ab_drop('b31', 9)
+ab_drop('b13', 11)
+ab_drop('b13', 12)
+ab_drop('b13', 13)
+
+This sequence of calls will drop the blocks in a way that forms the letter "A" with a stable structure.

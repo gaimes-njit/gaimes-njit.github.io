@@ -1,0 +1,14 @@
+To create the uppercase letter "I", we can use the block types b11 and b13. The letter "I" has a height of 3 units and a width of 1 unit. Here is the stream of commands to generate the letter "I":
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b11', 1)
+```
+
+Explanation of commands:
+- The first three commands place three vertical straight blocks (b13) at position 1 along the width, creating the vertical part of the letter "I".
+- The fourth command places a 1x1 square block (b11) at position 1, completing the horizontal part of the letter "I".
+
+By following these commands, the letter "I" will be accurately represented and fit within the allowed space boundaries.

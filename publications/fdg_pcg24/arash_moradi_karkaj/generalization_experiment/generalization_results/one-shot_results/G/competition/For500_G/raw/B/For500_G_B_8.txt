@@ -1,0 +1,14 @@
+ab_drop('b13', 10)  # Drop 'b13' at slot 10
+ab_drop('b13', 9)   # Drop 'b13' at slot 9
+ab_drop('b31', 10)  # Drop 'b31' at slot 10
+ab_drop('b11', 10)  # Drop 'b11' at slot 10
+ab_drop('b13', 10)  # Drop 'b13' at slot 10
+ab_drop('b11', 10)  # Drop 'b11' at slot 10
+ab_drop('b31', 10)  # Drop 'b31' at slot 10
+ab_drop('b13', 9)   # Drop 'b13' at slot 9
+ab_drop('b31', 10)  # Drop 'b31' at slot 10
+ab_drop('b11', 10)  # Drop 'b11' at slot 10
+ab_drop('b13', 10)  # Drop 'b13' at slot 10
+ab_drop('b11', 10)  # Drop 'b11' at slot 10
+ab_drop('b31', 10)  # Drop 'b31' at slot 10
+ab_drop('b31', 8)   # Drop 'b31' at slot 8

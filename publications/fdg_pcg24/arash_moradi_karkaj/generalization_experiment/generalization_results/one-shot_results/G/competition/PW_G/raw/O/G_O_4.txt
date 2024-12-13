@@ -1,0 +1,18 @@
+To generate the capital letter "O," we can use a combination of block types b31 and b13. Here is the sequence of ab_drop() commands to create the letter "O":
+
+```plaintext
+ab_drop('b31',1)
+ab_drop('b31',2)
+ab_drop('b31',3)
+ab_drop('b13',1)
+ab_drop('b13',3)
+ab_drop('b31',1)
+ab_drop('b31',3)
+```
+
+Explanation:
+- The first three ab_drop('b31', x) commands create the top part of the letter "O," forming a horizontal line.
+- The next two ab_drop('b13', x) commands create the vertical lines on the left and right sides of the letter "O."
+- The last two ab_drop('b31', x) commands create the bottom part of the letter "O," again forming a horizontal line.
+
+Note: The block placement may vary slightly depending on the starting position (X = 1), but the overall structure and shape of the letter "O" should remain the same.

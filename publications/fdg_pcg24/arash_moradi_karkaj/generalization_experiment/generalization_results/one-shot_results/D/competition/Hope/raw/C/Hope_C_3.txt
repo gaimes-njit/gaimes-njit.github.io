@@ -1,0 +1,10 @@
+Using the ab_drop('blocktype',x position) command, we can create the structure "C" inside a 20*16 box block with the following sequence of commands:
+
+1. Drop 1*3 block at x position 2: ab_drop('b13', 2)
+2. Drop 1*1 block at x position 2: ab_drop('b11', 2)
+3. Drop 1*1 block at x position 2: ab_drop('b11', 2)
+4. Drop 1*1 block at x position 2: ab_drop('b11', 2)
+5. Drop 3*1 block at x position 0: ab_drop('b31', 0)
+6. Drop 3*1 block at x position 0: ab_drop('b31', 0)
+
+The resulting structure will resemble the letter "C" inside the 20*16 box block.

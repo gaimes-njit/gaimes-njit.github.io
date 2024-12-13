@@ -1,0 +1,29 @@
+```
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the first block
+ab_drop('b13', 9)
+
+# Drop the second block
+ab_drop('b13', 9)
+
+# Drop the third and fourth blocks to create the top of the structure
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+
+# Drop the fifth and sixth blocks to create the middle section of the structure
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+
+# Drop the seventh and eighth blocks to create the bottom section of the structure
+ab_drop('b11', 8)
+ab_drop('b11', 8)
+
+# Drop the ninth and tenth blocks to create the bottom section of the structure
+ab_drop('b11', 7)
+ab_drop('b11', 7)
+
+# Drop the eleventh and twelfth blocks to create the bottom section of the structure
+ab_drop('b11', 6)
+ab_drop('b11', 6)
+```

@@ -1,0 +1,11 @@
+Here is an example of how to generate the letter 'T':
+
+```
+ab_drop('b13', 8)
+ab_drop('b31', 8)
+ab_drop('b11', 10)
+ab_drop('b11', 9)
+ab_drop('b11', 11)
+```
+
+This sequence of commands will place the blocks in the shape of the letter 'T' in the given environment while adhering to the gravity rules.

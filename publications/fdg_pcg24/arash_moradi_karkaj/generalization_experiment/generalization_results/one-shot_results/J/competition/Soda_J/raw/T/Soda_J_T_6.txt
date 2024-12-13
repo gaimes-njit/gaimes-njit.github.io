@@ -1,0 +1,25 @@
+The first step is to create the top horizontal bar of the "T" shape. We can do this by dropping a row block ("b31") at the center of the grid.
+
+```
+ab_drop("b31", 9)
+```
+
+Next, we need to create the vertical bar of the "T" shape. We can do this by dropping a column block ("b13") at the center of the grid.
+
+```
+ab_drop("b13", 9)
+```
+
+Finally, we need to create the base horizontal bar of the "T" shape. We can do this by dropping a row block ("b31") at the center of the grid, just below the vertical bar.
+
+```
+ab_drop("b31", 9)
+```
+
+The complete implementation to generate a "T" shape in the level would be:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+```

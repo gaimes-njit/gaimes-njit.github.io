@@ -1,0 +1,25 @@
+Examples:
+
+Structure 1:
+```
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 3)
+ab_drop('b13', 4)
+ab_drop('b11', 5)
+```
+
+Structure 2:
+```
+ab_drop('b13', 0)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b11', 2)
+```
+
+Note:
+- The provided structures are just examples, and there may be multiple valid solutions.
+- The solutions above only demonstrate the usage of the `ab_drop()` function and do not represent the most optimal or visually appealing structures.

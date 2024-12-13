@@ -1,0 +1,19 @@
+To create the letter "M" inside a 20*16 box using only the ab_drop('blocktype', x position) command, you can follow these steps:
+
+1. Drop the first vertical line of the "M":
+   - ab_drop('b31', 2)
+
+2. Drop the left diagonal line of the "M":
+   - ab_drop('b13', 5)
+   - ab_drop('b13', 9)
+   - ab_drop('b13', 13)
+
+3. Drop the right diagonal line of the "M":
+   - ab_drop('b13', 17)
+   - ab_drop('b13', 21)
+   - ab_drop('b13', 25)
+
+4. Drop the second vertical line of the "M":
+   - ab_drop('b31', 29)
+
+Your final structure should resemble the letter "M" inside the 20*16 box.

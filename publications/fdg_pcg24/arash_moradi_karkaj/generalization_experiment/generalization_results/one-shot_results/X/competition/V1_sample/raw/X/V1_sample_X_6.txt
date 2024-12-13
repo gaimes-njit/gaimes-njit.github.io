@@ -1,0 +1,19 @@
+```python
+from ab import drop
+
+def generate_X_structure():
+    drop("b31", slot=9, layer=15)  # Top horizontal block
+    
+    drop("b13", slot=10, layer=14)  # Vertical block 1
+    drop("b13", slot=8, layer=14)   # Vertical block 2
+    
+    drop("b31", slot=11, layer=13)  # Middle horizontal block
+    
+    drop("b13", slot=12, layer=12)  # Vertical block 3
+    drop("b13", slot=6, layer=12)   # Vertical block 4
+    
+    drop("b31", slot=13, layer=11)  # Bottom horizontal block
+    drop("b31", slot=5, layer=11)   # Bottom horizontal block
+
+generate_X_structure()
+```

@@ -1,0 +1,23 @@
+To create a "J" shape using the `ab_drop()` function, we need to use the following commands:
+
+1. To create the vertical stroke of the "J":
+   - `ab_drop('b31', 9)`: Drops a 3x1 box starting at position (9,0).
+
+2. To create the horizontal stroke of the "J":
+   - `ab_drop('b13', 9)`: Drops a 1x3 box starting at position (9,1).
+   - `ab_drop('b11', 10)`: Drops a 1x1 box starting at position (10,2).
+
+Here's the complete structure of the "J" shape:
+
+```
+####################
+####################
+####################
+####################
+####################
+####################
+####################
+####################
+####################
+##################
+###########

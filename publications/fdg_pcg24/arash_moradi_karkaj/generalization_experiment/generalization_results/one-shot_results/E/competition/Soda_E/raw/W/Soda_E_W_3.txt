@@ -1,0 +1,45 @@
+# Implementation
+The implementation will be done step by step, starting from the bottom of the W structure and gradually building it upwards. We will use the ab_drop() function to drop blocks and create the desired W shape. To ensure stability, we will consider the weight distribution of the blocks and their support on lower blocks.
+
+1. Base of the W structure:
+   - Drop a row block vertically at the center of the grid.
+   - Drop a column block vertically just left of the center.
+   - Drop another column block vertically just right of the center.
+
+ab_drop("b31", 9)
+ab_drop("b13", 8)
+ab_drop("b13", 10)
+
+2. Top-left part of the W structure:
+   - Drop a row block vertically above the left column block.
+   - Drop a column block vertically just left of the center, but one row above the previous column block.
+
+ab_drop("b31", 8)
+ab_drop("b13", 8)
+
+3. Top-right part of the W structure:
+   - Drop a row block vertically above the right column block.
+   - Drop a column block vertically just right of the center, but one row above the previous column block.
+
+ab_drop("b31", 10)
+ab_drop("b13", 10)
+
+4. Middle part of the W structure:
+   - Drop a row block vertically above the center.
+   - Drop a column block vertically above the row block, on the left side.
+   - Drop a column block vertically above the row block, on the right side.
+
+ab_drop("b31", 9)
+ab_drop("b13", 8)
+ab_drop("b13", 10)
+
+5. Top row of the W structure:
+   - Drop a square block above the row block.
+   - Drop a square block above the left column block.
+   - Drop a square block above the right column block.
+
+ab_drop("b11", 9)
+ab_drop("b11", 8)
+ab_drop("b11", 10)
+
+This series of ab_drop() calls will create a stable W structure in the level, which closely resembles the capital letter "W".

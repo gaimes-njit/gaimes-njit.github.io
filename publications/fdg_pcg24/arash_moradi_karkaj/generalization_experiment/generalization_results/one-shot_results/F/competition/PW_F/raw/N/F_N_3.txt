@@ -1,0 +1,35 @@
+To generate the uppercase letter "N", we can break it down into three parts: the left vertical line, the diagonal line, and the right vertical line.
+
+The left vertical line consists of two vertical straight blocks (b13) stacked on top of each other. We can place them using the following commands:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+Next, we need to create the diagonal line. We can use a horizontal straight block (b31) and place it diagonally. We can achieve this by first sliding it to the right, then dropping it down. Finally, we can repeat this process to extend the diagonal line. We can use the following commands for the diagonal line:
+```
+ab_drop('b31', 2)                  // slide right
+ab_drop('b13', 1) ab_drop('b13', 2) // drop down
+ab_drop('b31', 2)                  // slide right
+ab_drop('b13', 1) ab_drop('b13', 2) // drop down
+```
+
+Finally, we need to create the right vertical line, which is similar to the left vertical line. We can use the same commands as before:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+Putting it all together, the stream of commands to generate the letter "N" would be:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+Please note that these commands assume that the blocks are dropped consecutively without any delay.

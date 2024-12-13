@@ -1,0 +1,17 @@
+To generate a stable structure that looks like the uppercase letter "R" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the structure as an empty WxH grid using the `structure` variable: `structure = [[' ']*W for _ in range(H)]`
+
+2. Start by dropping a b13 block at slot 9 (centered in the middle): `ab_drop('b13', 9)`. This will be the main vertical part of the letter "R".
+
+3. Drop a b31 block above the b13 block at slot 9: `ab_drop('b31', 9)`. This will be the upper horizontal part of the letter "R".
+
+4. Drop a b11 block above the b31 block at slot 9: `ab_drop('b11', 9)`. This will be the topmost part of the letter "R".
+
+5. Drop another b11 block above the b13 block at slot 9: `ab_drop('b11', 9)`. This will be the small vertical line connecting the upper and lower horizontal parts of the letter "R".
+
+6. Drop a b31 block below the b13 block at slot 9: `ab_drop('b31', 9)`. This will be the lower horizontal part of the letter "R".
+
+7. Drop a b11 block below the b31 block at slot 9: `ab_drop('b11', 9)`. This will be the bottommost part of the letter "R".
+
+The resulting structure will resemble the uppercase letter "R" and will meet all the hard constraints. The stability and weight distribution of the blocks have been taken into account to ensure that the structure remains stable.

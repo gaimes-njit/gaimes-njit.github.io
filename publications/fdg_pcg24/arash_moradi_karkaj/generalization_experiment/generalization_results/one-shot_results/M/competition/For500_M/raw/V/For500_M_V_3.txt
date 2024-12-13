@@ -1,0 +1,20 @@
+# First, let's create the base for stability
+ab_drop("b31", 9)
+ab_drop("b13", 8)
+ab_drop("b11", 8)
+ab_drop("b13", 10)
+ab_drop("b11", 10)
+
+# Let's build the upper part
+ab_drop("b13", 6)
+ab_drop("b13", 7)
+ab_drop("b11", 7)
+ab_drop("b13", 9)
+ab_drop("b11", 9)
+ab_drop("b13", 11)
+ab_drop("b31", 11)
+ab_drop("b13", 13)
+ab_drop("b13", 14)
+
+# Finally, let's add a small finishing touch
+ab_drop("b11", 12)

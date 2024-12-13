@@ -1,0 +1,37 @@
+# Solution
+
+# Initialize the structure as an empty WxH grid
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the initial 'b13' block at the bottom center of the structure
+ab_drop('b13', 10)
+
+# Place the diagonal line of 'b11' blocks in the structure to resemble the 'Z' shape
+ab_drop('b11', 9)
+ab_drop('b11', 8)
+ab_drop('b11', 7)
+
+# Add supporting blocks for the 'b31' block if necessary
+ab_drop('b11', 6)
+ab_drop('b11', 5)
+
+# Place the 'b31' block on top of the supporting blocks
+ab_drop('b31', 5)
+
+# Add supporting blocks for the 'b31' block if necessary
+ab_drop('b11', 4)
+ab_drop('b11', 3)
+
+# Place the 'b31' block on top of the supporting blocks
+ab_drop('b31', 3)
+
+# Add supporting blocks for the 'b31' block if necessary
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+
+# Place the 'b31' block on top of the supporting blocks
+ab_drop('b31', 1)
+
+# Print the final structure
+for row in structure:
+    print(''.join(row))

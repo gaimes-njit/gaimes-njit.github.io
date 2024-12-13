@@ -1,0 +1,17 @@
+To generate a structure in the shape of the capital letter "Y", we can start by creating the base of the letter. Then we can build the two arms of the letter on top of the base. 
+
+Here is the complete implementation:
+
+```
+# Step 1: Create the base of the letter "Y"
+ab_drop("b13", 9)
+
+# Step 2: Build the arms of the letter "Y"
+ab_drop("b31", 8)
+ab_drop("b31", 10)
+
+# Step 3: Create the top diagonal of the letter "Y"
+ab_drop("b13", 9)
+```
+
+By following these steps, we will generate a structure in the level that resembles the letter "Y". The blocks are dropped bottom to top, ensuring stability, and the order of the blocks is crucial to achieve the desired shape.

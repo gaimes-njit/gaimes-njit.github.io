@@ -1,0 +1,15 @@
+To generate the uppercase English letter "J", we can use the following stream of commands:
+
+```
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b13', 4)
+```
+
+Explanation:
+- First, we place a horizontal straight block (`b31`) at position 2 to form the base of the letter.
+- Then, we place four vertical straight blocks (`b13`) starting from position 1 to position 4 to form the vertical line of the letter.
+
+These commands will generate the uppercase letter "J" within the allowed space and following the gravity rules.

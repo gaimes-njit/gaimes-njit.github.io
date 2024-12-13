@@ -1,0 +1,28 @@
+To create the letter "K", we can break it down into three parts: the vertical stem, the diagonal, and the horizontal arm.
+
+First, let's create the vertical stem using the b13 block type:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+```
+
+Next, let's create the diagonal using the b31 block type:
+
+```
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+ab_drop('b31', 6)
+```
+
+Finally, let's create the horizontal arm using the b31 block type:
+
+```
+ab_drop('b31', 7)
+ab_drop('b31', 8)
+ab_drop('b31', 9)
+```
+
+When executed in the Tetris-like environment, these commands will generate the uppercase English letter "K".

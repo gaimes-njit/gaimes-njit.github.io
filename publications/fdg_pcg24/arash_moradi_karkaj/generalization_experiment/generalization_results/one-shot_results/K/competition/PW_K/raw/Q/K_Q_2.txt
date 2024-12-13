@@ -1,0 +1,15 @@
+To generate the uppercase letter "Q", the following sequence of ab_drop() commands can be used:
+
+```python
+ab_drop('b31',2) # bottom horizontal line
+ab_drop('b31',3) # bottom horizontal line
+ab_drop('b31',4) # bottom horizontal line
+ab_drop('b11',2) # left vertical line
+ab_drop('b11',4) # right vertical line
+ab_drop('b31',2) # top horizontal line
+ab_drop('b31',4) # top horizontal line
+ab_drop('b13',4) # diagonal line
+ab_drop('b13',1) # diagonal line
+```
+
+This sequence of commands will construct a capital letter "Q" within the defined boundaries and following the gravity rules.

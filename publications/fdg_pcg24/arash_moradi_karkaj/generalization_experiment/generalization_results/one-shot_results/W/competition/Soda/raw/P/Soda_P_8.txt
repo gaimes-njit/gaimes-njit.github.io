@@ -1,0 +1,26 @@
+To create the letter "P" in the 2D grid, we can break it down into two blocks: a vertical pipe and a bottom bar. 
+
+Here is the step-by-step implementation to create the letter "P":
+
+1. Place the vertical pipe:
+   - Use the "b31" block type to create a vertical pipe.
+   - Drop the block at x_position=9 to center it.
+   - The vertical pipe will occupy cells (8, 0), (9, 0), and (10, 0).
+   ```
+   ab_drop("b31", 9)
+   ```
+
+2. Place the bottom bar:
+   - Use the "b13" block type to create a bottom bar.
+   - Drop the block at x_position=9 to center it.
+   - The bottom bar will occupy cells (8, 1), (9, 1), and (10, 1).
+   ```
+   ab_drop("b13", 9)
+   ```
+
+Complete implementation:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+```

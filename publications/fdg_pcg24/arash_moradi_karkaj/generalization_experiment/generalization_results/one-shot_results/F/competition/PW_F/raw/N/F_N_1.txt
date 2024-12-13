@@ -1,0 +1,21 @@
+To create the uppercase letter "N" using the given block types and gravity rules, you can follow these steps:
+
+1. Start by placing two vertical straight blocks (b13) one above the other, starting from position 1:
+   ```
+   ab_drop('b13',1)
+   ab_drop('b13',2)
+   ```
+
+2. Next, place a horizontal straight block (b31) starting from position 2:
+   ```
+   ab_drop('b31',2)
+   ```
+
+3. Repeat steps 1 and 2 to create the second half of the letter "N":
+   ```
+   ab_drop('b13',1)
+   ab_drop('b13',2)
+   ab_drop('b31',2)
+   ```
+
+Make sure to enter the commands consecutively within three backticks (```) as mentioned above.

@@ -1,0 +1,6 @@
+ab_drop("b31", 4)  # Bottom horizontal bar
+ab_drop("b13", 4)  # Vertical bar on the right side
+ab_drop("b31", 1)  # Horizontal bar on top
+ab_drop("b11", 1)  # Upper-left corner
+ab_drop("b11", 1)  # Upper-left corner
+ab_drop("b13", 7)  # Vertical bar on the left side

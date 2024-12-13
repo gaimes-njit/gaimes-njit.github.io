@@ -1,0 +1,10 @@
+```
+def find_letter_A(database):
+    if "A" not in database:
+        return "Letter A not found in the database"
+
+    def ab_drop():
+        return "ab_drop"
+
+    return ab_drop() + ab_drop() + ab_drop() + ab_drop() + ab_drop() + ab_drop() + ab_drop() + ab_drop() + ab_drop()
+```

@@ -1,0 +1,14 @@
+To generate the uppercase letter "B" using the given command and block types, you can use the following stream of commands:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',1)
+ab_drop('b31',1)
+ab_drop('b13',1)
+ab_drop('b31',1)
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b31',1)
+```
+
+This sequence of commands places the necessary blocks in the correct positions to form the letter "B" while following the gravity rules.

@@ -1,0 +1,100 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the first block
+ab_drop('b13', 9)
+
+# Drop the second block
+ab_drop('b11', 9)
+
+# Drop the third block
+ab_drop('b31', 7)
+
+# Drop the fourth block
+ab_drop('b11', 12)
+
+# Drop the fifth block
+ab_drop('b11', 7)
+
+# Drop the sixth block
+ab_drop('b11', 10)
+
+# Drop the seventh block
+ab_drop('b11', 13)
+
+# Drop the eighth block
+ab_drop('b31', 10)
+
+# Drop the ninth block
+ab_drop('b11', 4)
+
+# Drop the tenth block
+ab_drop('b11', 13)
+
+# Drop the eleventh block
+ab_drop('b31', 4)
+
+# Drop the twelfth block
+ab_drop('b31', 13)
+
+# Drop the thirteenth block
+ab_drop('b11', 1)
+
+# Drop the fourteenth block
+ab_drop('b11', 4)
+
+# Drop the fifteenth block
+ab_drop('b11', 16)
+
+# Drop the sixteenth block
+ab_drop('b11', 19)
+
+# Drop the seventeenth block
+ab_drop('b31', 16)
+
+# Drop the eighteenth block
+ab_drop('b11', 1)
+
+# Drop the nineteenth block
+ab_drop('b31', 1)
+
+# Drop the twentieth block
+ab_drop('b31', 19)
+
+# Drop the twenty-first block
+ab_drop('b11', 7)
+
+# Drop the twenty-second block
+ab_drop('b11', 12)
+
+# Drop the twenty-third block
+ab_drop('b11', 16)
+
+# Drop the twenty-fourth block
+ab_drop('b11', 19)
+
+# Drop the twenty-fifth block
+ab_drop('b13', 9)
+
+# Drop the twenty-sixth block
+ab_drop('b31', 7)
+
+# Drop the twenty-seventh block
+ab_drop('b31', 13)
+
+# Drop the twenty-eighth block
+ab_drop('b11', 1)
+
+# Drop the twenty-ninth block
+ab_drop('b31', 1)
+
+# Drop the thirtieth block
+ab_drop('b31', 19)
+
+# Drop the thirty-first block
+ab_drop('b31', 10)
+
+# Drop the thirty-second block
+ab_drop('b31', 16)
+```

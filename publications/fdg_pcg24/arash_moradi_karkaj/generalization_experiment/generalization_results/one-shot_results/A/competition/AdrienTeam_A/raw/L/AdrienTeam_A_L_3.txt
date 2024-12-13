@@ -1,0 +1,19 @@
+To create a structure resembling "L" using the `ab_drop()` function, we need to carefully plan the order and position of the blocks being dropped. Here is the code to generate the structure:
+
+```python
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop first vertical block 'b13' at the bottom-left corner
+ab_drop('b13', 0)
+
+# Drop horizontal block 'b31' one unit above the bottom layer
+ab_drop('b31', 0)
+
+# Drop two vertical blocks 'b13' on top of the horizontal block
+ab_drop('b13', 0)
+ab_drop('b13', 0)
+
+```
+
+The above code follows the given constraints and ensures the blocks do not extend beyond the map boundaries. It creates a stable structure resembling the letter "L".
+

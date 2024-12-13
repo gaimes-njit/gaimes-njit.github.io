@@ -1,0 +1,16 @@
+To create the uppercase English letter "C" using the given command and block types, the following stream of commands can be used:
+
+```
+ab_drop('b31', 1) 
+ab_drop('b13', 4) 
+ab_drop('b13', 4) 
+ab_drop('b13', 4) 
+ab_drop('b13', 4) 
+ab_drop('b13', 4) 
+ab_drop('b31', 7) 
+ab_drop('b13', 1) 
+ab_drop('b11', 8) 
+ab_drop('b11', 8)
+```
+
+These commands will place the blocks in the Tetris-like environment, creating the shape of the letter "C" while maintaining stability and fitting within the boundaries.

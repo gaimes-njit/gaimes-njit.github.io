@@ -1,0 +1,37 @@
+Step 2:
+In the first row, there are 3 asterisks and 1 space.
+In the second row, there are 2 asterisks, 1 space, and 2 asterisks.
+In the third row, there is 1 asterisk, 1 space, and 2 asterisks.
+In the fourth row, there is 1 asterisk, 1 space, and 2 asterisks.
+In the fifth row, there are 3 asterisks and 1 space.
+
+Step 3:
+Asterisks are now x and spaces are y.
+In the first row, there are 3x and 1y.
+In the second row, there are 2x, 1y, and 2x.
+In the third row, there is 1x, 1y, and 2x.
+In the fourth row, there is 1x, 1y, and 2x.
+In the fifth row, there are 3x and 1y.
+
+Step 4:
+For each row:
+First row: xxxy
+Second row: xxxyyx
+Third row: xxyyx
+Fourth row: xxyyx
+Fifth row: xxxy
+
+Step 5:
+For each row:
+First row: x-1; x-2; x-3; y-4
+Second row: x-1; x-2; x-3; y-4; x-5; x-6
+Third row: x-1; x-2; y-3; x-4; x-5
+Fourth row: x-1; x-2; y-3; x-4; x-5
+Fifth row: x-1; x-2; x-3; y-4
+
+Step 6:
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)

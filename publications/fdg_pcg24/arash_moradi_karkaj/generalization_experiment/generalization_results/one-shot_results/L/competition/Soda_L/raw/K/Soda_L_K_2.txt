@@ -1,0 +1,12 @@
+To create the letter "K" in the level, we can break it down into three blocks: two vertical bars and a diagonal bar. Here is the step-by-step implementation:
+
+1. Place the base block:
+ab_drop("b13", 9)
+
+2. Place the left vertical bar:
+ab_drop("b31", 7)
+
+3. Place the right vertical bar:
+ab_drop("b31", 11)
+
+With these three blocks, we have successfully created the letter "K" in the level.

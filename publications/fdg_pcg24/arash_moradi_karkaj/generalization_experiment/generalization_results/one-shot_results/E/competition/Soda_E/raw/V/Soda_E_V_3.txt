@@ -1,0 +1,23 @@
+First, we need to create the bottom part of the "V" shape. We can do this by dropping a row block (b31) at the center of the grid.
+
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+ab_drop("b31", 11)
+
+Next, we move up and create the top part of the "V" shape. We can do this by dropping two column blocks (b13) at the left and right sides of the grid.
+
+ab_drop("b13", 9)
+ab_drop("b13", 11)
+
+Finally, we add the middle part of the "V" shape. We can do this by dropping a square block (b11) at the center of the grid.
+
+ab_drop("b11", 10)
+
+Complete implementation:
+
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+ab_drop("b31", 11)
+ab_drop("b13", 9)
+ab_drop("b13", 11)
+ab_drop("b11", 10)

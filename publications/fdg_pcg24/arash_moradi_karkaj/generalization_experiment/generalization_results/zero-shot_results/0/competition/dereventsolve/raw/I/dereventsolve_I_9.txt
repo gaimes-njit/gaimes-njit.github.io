@@ -1,0 +1,6 @@
+To generate a structure that looks like the letter "I" using the given database, the following sequence of `ab_drop` function calls can be used:
+
+```
+ab_drop("I")
+```
+The above function call will query the database and return the required letter "I".

@@ -1,0 +1,12 @@
+To generate the uppercase letter "N", you will need to use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',4)
+ab_drop('b31',7)
+ab_drop('b31',11)
+ab_drop('b13',14)
+ab_drop('b31',17)
+```
+
+This sequence will create the letter "N" in the Tetris-like environment.

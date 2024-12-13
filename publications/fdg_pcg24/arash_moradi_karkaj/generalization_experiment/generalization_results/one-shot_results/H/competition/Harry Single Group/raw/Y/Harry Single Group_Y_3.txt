@@ -1,0 +1,61 @@
+To form a shape resembling the letter "Y", we need to place bricks in a specific pattern. Here's the code to generate the required structure:
+
+```
+# Map initialization
+field = [[0] * 20 for _ in range(16)]
+
+# Function to check if a position is occupied
+def is_occupied(x, y):
+    return field[y][x] == 1
+
+# Function to place bricks
+def ab_drop(x, y):
+    brick = None
+    
+    if x == 'b31':
+        brick = [
+            [(y-1, 0), (y-1, 1), (y-1, 2)],
+            [(y, 0), (y, 1), (y, 2)],
+            [(y+1, 0), (y+1, 1), (y+1, 2)]
+        ]
+    elif x == 'b13':
+        brick = [
+            [(y, 0), (y+1, 0), (y+2, 0)],
+            [(y, 1), (y+1, 1), (y+2, 1)],
+            [(y, 2), (y+1, 2), (y+2, 2)]
+        ]
+    elif x == 'b11':
+        brick = [
+            [(y, 0)],
+            [(y, 1)],
+            [(y, 2)]
+        ]
+    
+    for i in range(3):
+        for j in range(3):
+            x_pos, y_pos = brick[i][j]
+            if field[y_pos][x_pos] == 1:
+                return
+            
+    for i in range(3):
+        for j in range(3):
+            x_pos, y_pos = brick[i][j]
+            field[y_pos][x_pos] = 1
+
+# Place bricks to form the letter "Y"
+ab_drop('b13', 5)
+ab_drop('b31', 6)
+
+# Check the final structure
+for row in field:
+    print(row)
+```
+
+Output:
+```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0

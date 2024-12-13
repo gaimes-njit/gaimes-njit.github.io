@@ -1,0 +1,15 @@
+Since the letter "K" looks like a combination of two vertical lines connecting to a diagonal line, we can start by dropping the vertical lines first and then connect them with the diagonal line.
+
+Here is the sequence of `ab_drop` function calls based on the database:
+```
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b31", 5)
+ab_drop("b31", 5)
+ab_drop("b31", 5)
+ab_drop("b31", 1)
+ab_drop("b31", 2)
+ab_drop("b31", 4)
+ab_drop("b31", 3)
+ab_drop("b31", 6)
+```

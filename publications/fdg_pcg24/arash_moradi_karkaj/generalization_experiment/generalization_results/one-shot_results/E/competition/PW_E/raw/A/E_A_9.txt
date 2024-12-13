@@ -1,0 +1,16 @@
+To generate the uppercase English letter "A", you can use the following stream of commands:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',1)
+ab_drop('b11',1)
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b31',1)
+ab_drop('b13',2)
+ab_drop('b13',3)
+ab_drop('b31',1)
+ab_drop('b11',2)
+```
+
+This sequence of commands will construct the letter "A" in the Tetris-like environment, following the stacking and stability rules.

@@ -1,0 +1,37 @@
+To generate a stable structure resembling "J" while adhering to the given constraints, we can follow these steps:
+
+1. Initialize the structure grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. To start building the "J" shape from the bottom layer, we need to determine the order and position of the blocks being dropped.
+
+3. Drop the first block (`b31`) at slot 1 to create the horizontal part of the "J" shape:
+```
+ab_drop('b31', 1)
+```
+
+4. Drop the second block (`b13`) at slot 0 to create the vertical part of the "J" shape:
+```
+ab_drop('b13', 0)
+```
+
+5. Drop the third block (`b13`) at slot 2 to complete the vertical part of the "J" shape:
+```
+ab_drop('b13', 2)
+```
+
+6. Drop the fourth block (`b31`) at slot 1 to connect the vertical and horizontal parts of the "J" shape:
+```
+ab_drop('b31', 1)
+```
+
+The final structure resembling "J" can be generated using the following code block:
+
+```python
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```

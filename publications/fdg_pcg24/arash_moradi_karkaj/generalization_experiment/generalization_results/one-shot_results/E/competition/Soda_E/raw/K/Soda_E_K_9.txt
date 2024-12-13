@@ -1,0 +1,46 @@
+To create the letter "K" in the level, we can break it down into three parts: the two diagonal bars and the horizontal bar in the middle. We will start by building the diagonal bars from bottom to top, followed by the horizontal bar.
+
+Here is the complete implementation:
+
+```
+# Create the left diagonal bar of "K"
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+
+ab_drop("b13", 12)
+ab_drop("b11", 11)
+
+ab_drop("b13", 16)
+ab_drop("b11", 15)
+
+# Create the right diagonal bar of "K"
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+
+ab_drop("b13", 12)
+ab_drop("b11", 13)
+
+ab_drop("b13", 16)
+ab_drop("b11", 17)
+
+# Create the horizontal bar of "K"
+ab_drop("b13", 8)
+ab_drop("b13", 12)
+ab_drop("b13", 16)
+```
+
+This implementation first builds the left diagonal bar of "K" in the following pattern:
+- Drop a column block (b13) at position 8
+- Drop a square block (b11) at position 9
+- Repeat the above two steps for the second row
+- Repeat the above two steps for the third row
+
+Then, it builds the right diagonal bar of "K" in a similar pattern:
+- Drop a column block (b13) at position 8
+- Drop a square block (b11) at position 9
+- Repeat the above two steps for the second row
+- Repeat the above two steps for the third row
+
+Finally, it creates the horizontal bar of "K" by dropping three column blocks (b13) at positions 8, 12, and 16.
+
+This implementation ensures that the blocks are placed in a bottom-to-top fashion, and the structure is stable and resembles the letter "K".

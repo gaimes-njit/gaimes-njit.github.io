@@ -1,0 +1,38 @@
+Task: Generate uppercase English letter "H"
+
+To generate the letter "H" using the given block types and gravity rules, follow the stream of commands below:
+
+```
+ab_drop('b31', 1)  # Place an horizontal straight block at position 1
+ab_drop('b13', 1)  # Place a vertical straight block at position 1
+ab_drop('b31', 4)  # Place an horizontal straight block at position 4
+ab_drop('b13', 7)  # Place a vertical straight block at position 7
+ab_drop('b31', 10)  # Place an horizontal straight block at position 10
+```
+
+This sequence of commands will create the letter "H" on the grid:
+
+```
+ ┌────────────────┐
+1│▢▢▢▢ ▢▢▢▢   ▢▢▢▢│
+2│                  │
+3│                  │
+4│▢▢▢▢ ▢▢▢▢   ▢▢▢▢│
+5│                  │
+6│                  │
+7│▢▢▢▢ ▢▢▢▢   ▢▢▢▢│
+8│                  │
+9│                  │
+10│▢▢▢▢ ▢▢▢▢   ▢▢▢▢│
+11│                  │
+12│                  │
+13│▢▢▢▢ ▢▢▢▢   ▢▢▢▢│
+14│                  │
+15│                  │
+16│                  │
+17│                  │
+18│                  │
+19│                  │
+20│                  │
+ └────────────────┘
+```

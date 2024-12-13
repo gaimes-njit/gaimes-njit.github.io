@@ -1,0 +1,22 @@
+```
+# Initialize the structure grid
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the bottom blocks
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the middle blocks
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the top blocks
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+```

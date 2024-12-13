@@ -1,0 +1,29 @@
+First, let's build the base of the "I" shape. We will use the row block "b31" to create the horizontal line at the bottom of the structure. We will center it at position 9, which is the middle column of the grid. This will create a stable base.
+
+```python
+ab_drop("b31", 9)
+```
+
+Next, we will build the vertical line of the "I" shape. We will use the column block "b13" to create a vertical line starting from the second row up to the 13th row. We will center it at position 9 as well.
+
+```python
+for i in range(1, 14):
+    ab_drop("b13", 9)
+```
+
+Finally, we will add the horizontal line on top of the vertical line to complete the "I" shape. Again, we will use the row block "b31" and center it at position 9.
+
+```python
+ab_drop("b31", 9)
+```
+
+Here's the complete implementation:
+
+```python
+ab_drop("b31", 9)
+
+for i in range(1, 14):
+    ab_drop("b13", 9)
+
+ab_drop("b31", 9)
+```

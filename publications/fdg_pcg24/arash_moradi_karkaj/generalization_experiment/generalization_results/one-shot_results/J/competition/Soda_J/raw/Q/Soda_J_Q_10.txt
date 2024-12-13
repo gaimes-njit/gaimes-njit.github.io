@@ -1,0 +1,15 @@
+To generate a structure that looks like the letter "Q" (TARGET), we can break it down into two blocks: 
+1. A square block for the bottom part of the letter.
+2. A row block placed above the square block to form the loop of the letter.
+
+Here is the code to generate the letter "Q" using the ab_drop() function:
+
+```
+# Place the square block at the bottom of the grid
+ab_drop("b11", 9)
+
+# Place the row block above the square block to form the loop of the letter
+ab_drop("b31", 9)
+```
+
+By dropping the blocks in this order and position, we can achieve stability and similarity to the letter "Q".

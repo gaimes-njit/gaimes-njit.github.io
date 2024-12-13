@@ -1,0 +1,14 @@
+To generate the uppercase letter "T", you can use the following stream of commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+```
+
+Explanation:
+- Start by placing three vertical blocks (b13) next to each other in positions 1, 2, and 3 along the width.
+- Then, place a horizontal block (b31) on top of the middle block (position 2).
+
+This arrangement will form the shape of the uppercase letter "T" within the allowed space boundaries.

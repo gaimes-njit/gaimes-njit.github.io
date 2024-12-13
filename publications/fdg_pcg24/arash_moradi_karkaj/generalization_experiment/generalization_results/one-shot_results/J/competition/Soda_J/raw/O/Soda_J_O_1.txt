@@ -1,0 +1,23 @@
+To create a structure in the shape of the capital letter "O", we need to build a square using four block types "b11". We can start by placing the bottom row of blocks, then add two rows above it, and finally place the top row. Here is the complete implementation:
+
+```python
+# Bottom row
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+
+# Middle row
+ab_drop("b11", 6)
+ab_drop("b11", 10)
+
+# Top row
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+```
+
+This implementation builds the structure from bottom to top and creates a square shape similar to the letter "O".

@@ -1,0 +1,26 @@
+```
+# Initialize the structure
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the base
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+
+# Drop the main body of the 'I'
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+
+# Drop the top part of the 'I'
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+ab_drop('b13', 9)

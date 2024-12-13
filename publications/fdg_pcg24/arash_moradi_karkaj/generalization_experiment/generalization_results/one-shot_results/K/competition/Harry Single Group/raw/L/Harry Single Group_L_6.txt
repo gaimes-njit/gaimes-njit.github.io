@@ -1,0 +1,84 @@
+```python
+# Initialize the field
+field = [[0] * 20 for _ in range(16)]
+
+# Function to check if a position is within the boundaries of the field
+def is_within_boundaries(x, y):
+    return 0 <= x < 20 and 0 <= y < 16
+
+# Function to check if a position is already occupied by a brick
+def is_position_occupied(x, y):
+    return field[y][x] != 0
+
+# Function to check if a brick is stable
+def is_brick_stable(x, y):
+    pivot = (x, y)
+    left_cells = 0
+    right_cells = 0
+
+    # Check the number of occupied cells on the left and right sides of the pivot
+    for i in range(pivot[0]-1, -1, -1):
+        if is_position_occupied(i, y):
+            left_cells += 1
+        else:
+            break
+
+    for i in range(pivot[0]+1, 20):
+        if is_position_occupied(i, y):
+            right_cells += 1
+        else:
+            break
+
+    return left_cells == right_cells
+
+# Function to drop a brick on the field
+def ab_drop(x, y):
+    if x == 'b31':
+        # Determine the start and end positions of the brick based on the x_position
+        start_pos = y - 1
+        end_pos = y + 1
+
+        # Drop the brick vertically
+        for i in range(end_pos, -1, -1):
+            # Check if position is within boundaries and not occupied
+            if not is_within_boundaries(y, i) or is_position_occupied(y, i):
+                break
+            else:
+                field[i][y] = 1
+
+    elif x == 'b13':
+        # Determine the start and end positions of the brick based on the x_position
+        start_pos = y - 1
+        end_pos = y + 1
+
+        # Drop the brick horizontally
+        for i in range(start_pos, end_pos+1):
+            # Check if position is within boundaries and not occupied
+            if not is_within_boundaries(i, 0) or is_position_occupied(i, 0):
+                break
+            else:
+                field[0][i] = 1
+
+    elif x == 'b11':
+        # Drop the brick as a single cell
+        if is_within_boundaries(y, 0) and not is_position_occupied(y, 0):
+            field[0][y] = 1
+
+# Start generating the required structure
+ab_drop('b13', 5) # Place the vertical brick
+ab_drop('b31', 6) # Place the horizontal brick
+
+# Display the field
+for row in field:
+    print(row)
+```
+
+Output:
+
+```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,

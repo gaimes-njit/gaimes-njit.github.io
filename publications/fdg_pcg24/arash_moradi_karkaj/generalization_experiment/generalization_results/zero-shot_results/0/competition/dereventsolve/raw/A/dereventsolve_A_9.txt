@@ -1,0 +1,12 @@
+To generate a structure that looks like the letter "A", we can use the following sequence of `ab_drop` function calls:
+
+```python
+ab_drop('top')
+ab_drop('left')
+ab_drop('bottom_left')
+ab_drop('right')
+ab_drop('bottom')
+ab_drop('top_right')
+```
+
+This sequence of `ab_drop` function calls will create a structure that resembles the letter "A" in the database.

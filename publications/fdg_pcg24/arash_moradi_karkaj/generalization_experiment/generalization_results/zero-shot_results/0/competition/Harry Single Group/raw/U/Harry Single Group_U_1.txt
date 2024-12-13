@@ -1,0 +1,55 @@
+```
+# Initialize the map
+map = [[' ' for _ in range(20)] for _ in range(16)]
+
+# Drop the b31 brick on the ground at x_position 8
+ab_drop('b31', 8)
+
+# Drop the b31 brick above the first brick, at x_position 8
+ab_drop('b31', 8)
+
+# Drop the b13 brick on the ground at x_position 9
+ab_drop('b13', 9)
+
+# Drop the b11 brick above the b13 brick, at x_position 9
+ab_drop('b11', 9)
+
+# Drop the b11 brick above the b13 brick, at x_position 9
+ab_drop('b11', 9)
+
+# Drop the b13 brick above the b11 brick, at x_position 9
+ab_drop('b13', 9)
+
+# Drop the b31 brick above the second b31 brick, at x_position 8
+ab_drop('b31', 8)
+
+# Drop the b31 brick above the second b31 brick, at x_position 8
+ab_drop('b31', 8)
+
+# Drop the b13 brick above the b31 brick, at x_position 7
+ab_drop('b13', 7)
+
+# Drop the b13 brick above the b31 brick, at x_position 7
+ab_drop('b13', 7)
+
+# Drop the b11 brick above the b13 brick, at x_position 8
+ab_drop('b11', 8)
+
+# Drop the b11 brick above the b13 brick, at x_position 8
+ab_drop('b11', 8)
+
+# Drop the b11 brick above the b13 brick, at x_position 8
+ab_drop('b11', 8)
+
+# Drop the b13 brick above the b11 brick, at x_position 9
+ab_drop('b13', 9)
+
+# Drop the b11 brick above the b13 brick, at x_position 9
+ab_drop('b11', 9)
+
+# Drop the b11 brick above the b13 brick, at x_position 9
+ab_drop('b11', 9)
+
+# Drop the b11 brick above the b13 brick, at x_position 9
+ab_drop('b11', 9)
+```

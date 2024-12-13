@@ -1,0 +1,30 @@
+The letter X can be formed using a combination of column blocks and row blocks. Here is the step by step implementation to build the letter X:
+
+1. Drop the first column block at position 7:
+```
+ab_drop("b13", 7)
+```
+
+2. Drop the second column block at position 12:
+```
+ab_drop("b13", 12)
+```
+
+3. Drop the row block at position 9:
+```
+ab_drop("b31", 9)
+```
+
+4. Drop the row block at position 14:
+```
+ab_drop("b31", 14)
+```
+
+The complete implementation:
+
+```
+ab_drop("b13", 7)
+ab_drop("b13", 12)
+ab_drop("b31", 9)
+ab_drop("b31", 14)
+```

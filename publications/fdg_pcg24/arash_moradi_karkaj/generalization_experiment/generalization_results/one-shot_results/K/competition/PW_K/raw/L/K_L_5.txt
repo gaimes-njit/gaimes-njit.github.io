@@ -1,0 +1,10 @@
+To generate the uppercase English letter "L", we will use the following commands:
+
+```
+ab_drop('b13',1)
+ab_drop('b13',1)
+ab_drop('b13',1)
+ab_drop('b31',1)
+```
+
+These commands will create the shape of the letter "L" within the allowed space and adhere to the gravity rules.

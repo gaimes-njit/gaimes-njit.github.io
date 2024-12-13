@@ -1,0 +1,19 @@
+To generate the letter "N" in the level, we can follow these steps:
+
+1. Place the left vertical line of the "N":
+   ab_drop("b31", 8)  # Left vertical line
+   ab_drop("b31", 9)  # Left vertical line
+   ab_drop("b31", 10) # Left vertical line
+
+2. Place the diagonal line of the "N":
+   ab_drop("b13", 11) # Diagonal line
+   ab_drop("b13", 10) # Diagonal line
+   ab_drop("b13", 9)  # Diagonal line
+   ab_drop("b13", 8)  # Diagonal line
+
+3. Place the right vertical line of the "N":
+   ab_drop("b31", 7)  # Right vertical line
+   ab_drop("b31", 6)  # Right vertical line
+   ab_drop("b31", 5)  # Right vertical line
+
+By following these steps, we will create a stable structure that looks like the letter "N" when the level reaches structural stability.

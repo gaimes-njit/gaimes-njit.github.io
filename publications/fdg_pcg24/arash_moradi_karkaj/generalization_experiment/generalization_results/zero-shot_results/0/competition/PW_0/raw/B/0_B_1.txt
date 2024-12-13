@@ -1,0 +1,15 @@
+```
+ab_drop("b31",1) // Place the first horizontal block at x=1
+ab_drop("b13",4) // Place the vertical block at x=4
+ab_drop("b11",4) // Place the second square block at x=4
+ab_drop("b13",7) // Place the vertical block at x=7
+ab_drop("b11",7) // Place the third square block at x=7
+ab_drop("b13",10) // Place the vertical block at x=10
+ab_drop("b11",10) // Place the fourth square block at x=10
+ab_drop("b13",13) // Place the vertical block at x=13
+ab_drop("b31",16) // Place the second horizontal block at x=16
+ab_drop("b13",19) // Place the vertical block at x=19
+ab_drop("b11",19) // Place the fifth square block at x=19
+```
+
+This series of commands will generate the uppercase English letter "B" in the Tetris-like environment.

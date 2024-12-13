@@ -1,0 +1,8 @@
+ab_drop('b11', 9)  # Place the first block in the center of the bottom layer
+ab_drop('b31', 9)  # Place the horizontal block on top of the first block
+ab_drop('b11', 8)  # Place the left vertical block on top of the horizontal block
+ab_drop('b11', 10)  # Place the right vertical block on top of the horizontal block
+ab_drop('b31', 10)  # Place another horizontal block on top
+ab_drop('b31', 9)  # Place the last horizontal block on top to complete the letter Q structure
+
+# Note that the blocks are dropped in a way that ensures stability

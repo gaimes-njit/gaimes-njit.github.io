@@ -1,0 +1,24 @@
+```
+# Initialize the structure
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the base block
+ab_drop('b11', 9)
+
+# Drop the first vertical block
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+
+# Drop the horizontal block
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+
+# Drop the top vertical block
+ab_drop('b11', 8)
+ab_drop('b11', 8)
+
+# Drop the final horizontal block to complete the "L" shape
+ab_drop('b11', 7)
+ab_drop('b11', 9)
+ab_drop('b11', 11)
+```

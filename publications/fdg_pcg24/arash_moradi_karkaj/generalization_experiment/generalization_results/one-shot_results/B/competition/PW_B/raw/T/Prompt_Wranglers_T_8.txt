@@ -1,0 +1,8 @@
+Here are the ab_drop() commands to generate the uppercase letter "T":
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```

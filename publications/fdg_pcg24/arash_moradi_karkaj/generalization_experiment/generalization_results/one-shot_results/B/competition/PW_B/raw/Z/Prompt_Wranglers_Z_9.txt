@@ -1,0 +1,19 @@
+To generate the uppercase English letter 'Z', we can follow these steps:
+
+1. Start by creating the bottom horizontal line of the letter:
+   ab_drop('b31', 1)
+
+2. Move up to the next structural layer and place a vertical block on the left side:
+   ab_drop('b13', 0)
+
+3. Move to the right side and place another vertical block on the right side:
+   ab_drop('b13', 2)
+
+4. Move up to the next structural layer and place a horizontal block:
+   ab_drop('b31', 1)
+
+5. Move up to the next structural layer and place a vertical block on the left side:
+   ab_drop('b13', 0)
+
+6. Move to the right side and place another vertical block on the right side:
+   ab_drop('b13', 2)

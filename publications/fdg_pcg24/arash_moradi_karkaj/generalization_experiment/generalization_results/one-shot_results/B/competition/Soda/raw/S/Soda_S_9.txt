@@ -1,0 +1,25 @@
+First, we need to create the bottom bar of the letter "S". We will use the "b31" block for this. The block will be centered at x_position equal to 5, which will place it from columns 4 to 6:
+
+```
+ab_drop("b31", 5)
+```
+
+Next, we will create the vertical pipe of the letter "S". We will also use the "b31" block for this, centered at x_position equal to 4, which will place it from columns 3 to 5:
+
+```
+ab_drop("b31", 4)
+```
+
+Finally, we will create the top bar of the letter "S". We will use the "b13" block for this, centered at x_position equal to 5, which will place it from columns 4 to 6:
+
+```
+ab_drop("b13", 5)
+```
+
+Putting it all together, the complete implementation would be:
+
+```
+ab_drop("b31", 5)
+ab_drop("b31", 4)
+ab_drop("b13", 5)
+```

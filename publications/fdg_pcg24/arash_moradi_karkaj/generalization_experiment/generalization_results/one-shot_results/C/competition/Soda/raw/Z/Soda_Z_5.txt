@@ -1,0 +1,17 @@
+To generate a structure in the shape of the letter "Z" (TARGET), we can follow these steps:
+
+1. Create the base blocks of the "Z". These blocks will form the horizontal line at the bottom and the vertical line on the right side of the "Z". Since these blocks are stable on their own, we can drop them in any order.
+
+2. Create the diagonal line of the "Z". This line consists of two blocks: a column block and a row block. To ensure stability, we need to drop the column block first and then the row block on top of it.
+
+3. Adjust the height of the diagonal line. The diagonal line needs to be raised above the base blocks to form the shape of the "Z". To do this, we can drop a row block on top of the diagonal line.
+
+Here is the complete implementation:
+
+ab_drop("b31", 5)              # Drop the base blocks (row block) in the center of the grid
+ab_drop("b13", 1)              # Drop the base blocks (column block) on the right side of the grid
+ab_drop("b31", 2)              # Drop the diagonal line (column block) on top of the base blocks
+ab_drop("b13", 2)              # Drop the diagonal line (row block) on top of the column block
+ab_drop("b31", 3)              # Adjust the height of the diagonal line (row block) on top of the diagonal line
+
+The resulting structure will resemble the letter "Z" (TARGET) and will be stable under gravity.

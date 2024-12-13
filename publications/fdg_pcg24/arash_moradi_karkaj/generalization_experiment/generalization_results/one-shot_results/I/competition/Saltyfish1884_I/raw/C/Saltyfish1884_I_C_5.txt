@@ -1,0 +1,30 @@
+To generate a stable structure that resembles the character "C" while meeting all hard constraints, we need to carefully plan the dropping position and order of the blocks. Here's a step-by-step approach:
+
+1. Initialize the structure as an empty 20x16 grid:
+```
+structure = [[' ']*20 for _ in range(16)]
+```
+
+2. Place the first block, a b31 block, at the bottom-left corner of the structure to form the base:
+```
+ab_drop('b31', 1)
+```
+
+3. Place the second block, a b13 block, on top of the b31 block to complete the left side of the "C":
+```
+ab_drop('b13', 1)
+```
+
+4. Place the third block, another b31 block, on top of the b13 block to complete the top part of the "C":
+```
+ab_drop('b31', 1)
+```
+
+5. The final structure will resemble the character "C":
+```
+[[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',

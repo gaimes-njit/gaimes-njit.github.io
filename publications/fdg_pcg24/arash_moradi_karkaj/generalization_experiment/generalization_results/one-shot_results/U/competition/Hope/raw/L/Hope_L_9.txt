@@ -1,0 +1,12 @@
+To create the L-shaped structure inside a 20*16 box, you can use the following ab_drop commands:
+
+1. Place a single block (b11) at position (0, 0):
+ab_drop('b11', 0)
+
+2. Place a horizontal block (b31) at position (0, 1):
+ab_drop('b31', 0)
+
+3. Place a vertical block (b13) at position (2, 0):
+ab_drop('b13', 2)
+
+You should now have an L-shaped structure inside the 20*16 box.

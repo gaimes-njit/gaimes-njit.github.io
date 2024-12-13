@@ -1,0 +1,13 @@
+```python
+ab_drop('s1', 2)
+ab_drop('s1', 4)
+ab_drop('s1', 2)
+ab_drop('s1', 4)
+ab_drop('s1', 1)
+ab_drop('s31', 3)
+ab_drop('s1', 2)
+ab_drop('s1', 4)
+ab_drop('s31', 3)
+ab_drop('s31', 3)
+ab_drop('s1', 3)
+```

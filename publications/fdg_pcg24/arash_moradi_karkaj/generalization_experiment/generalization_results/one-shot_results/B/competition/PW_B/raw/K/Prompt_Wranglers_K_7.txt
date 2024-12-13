@@ -1,0 +1,24 @@
+To generate the uppercase letter "K" using the given block types, we can follow the following steps:
+
+1. Start by building the left vertical line of the letter:
+   - Place a b13 block at position 1 (ab_drop('b13', 1)).
+   - Place another b13 block at position 1 (ab_drop('b13', 1)) to create a line with a height of 2.
+
+2. Move to the next structural layer:
+   - Place a b31 block at position 2 (ab_drop('b31', 2)) to create the horizontal line of the letter.
+
+3. Build the right vertical line of the letter:
+   - Place a b13 block at position 4 (ab_drop('b13', 4)).
+   - Place another b13 block at position 4 (ab_drop('b13', 4)) to create a line with a height of 2.
+
+4. Optional: Add stability to the structure by placing additional blocks on top of the previous layer. This can be done by repeating steps 2 and 3.
+
+Final stream of commands to generate the letter "K":
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 2)
+ab_drop('b13', 4)
+ab_drop('b13', 4)
+```

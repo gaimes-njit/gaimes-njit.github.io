@@ -1,0 +1,7 @@
+```
+ab_drop('b31', 1)  # Place the first b31 block at position 1
+ab_drop('b31', 5)  # Place the second b31 block at position 5
+ab_drop('b31', 9)  # Place the third b31 block at position 9
+ab_drop('b13', 5)  # Place the b13 block at position 5
+ab_drop('b13', 1)  # Place the b13 block at position 1
+```

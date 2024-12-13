@@ -1,0 +1,8 @@
+P: The letter P can be constructed by placing a horizontal straight block (b31) at position 1, followed by a vertical straight block (b13) at position 2, and another vertical straight block (b13) at position 3. The final step is to place a horizontal straight block (b31) at position 4.
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b31', 4)
+```

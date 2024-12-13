@@ -1,0 +1,23 @@
+To create the structure exactly like the letter "B" inside a 20*16 box, you can use the given block types and positions as follows:
+
+1. Place a b11 block at position (0, 0): `ab_drop('b11', 0)`
+2. Place a b13 block at position (0, 1): `ab_drop('b13', 0)`
+3. Place a b13 block at position (0, 4): `ab_drop('b13', 0)`
+4. Place a b13 block at position (0, 7): `ab_drop('b13', 0)`
+5. Place a b13 block at position (0, 10): `ab_drop('b13', 0)`
+6. Place a b13 block at position (0, 13): `ab_drop('b13', 0)`
+7. Place a b31 block at position (2, 5): `ab_drop('b31', 2)`
+8. Place a b31 block at position (5, 5): `ab_drop('b31', 5)`
+9. Place a b13 block at position (8, 4): `ab_drop('b13', 8)`
+10. Place a b13 block at position (8, 7): `ab_drop('b13', 8)`
+11. Place a b13 block at position (8, 10): `ab_drop('b13', 8)`
+12. Place a b13 block at position (8, 13): `ab_drop('b13', 8)`
+13. Place a b31 block at position (11, 5): `ab_drop('b31', 11)`
+14. Place a b31 block at position (14, 5): `ab_drop('b31', 14)`
+15. Place a b13 block at position (17, 1): `ab_drop('b13', 17)`
+16. Place a b13 block at position (17, 4): `ab_drop('b13', 17)`
+17. Place a b13 block at position (17, 7): `ab_drop('b13', 17)`
+18. Place a b13 block at position (17, 10): `ab_drop('b13', 17)`
+19. Place a b13 block at position (17, 13): `ab_drop('b13', 17)`
+
+This sequence of commands will create a structure that exactly resembles the letter "B" within a 20*16 box.

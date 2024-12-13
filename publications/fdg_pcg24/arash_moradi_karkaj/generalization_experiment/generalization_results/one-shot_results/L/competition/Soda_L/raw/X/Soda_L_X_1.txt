@@ -1,0 +1,13 @@
+# Step 1: Create the vertical part of the letter "X"
+ab_drop("b31", 8)  # Creates the left vertical part
+ab_drop("b31", 11)  # Creates the right vertical part
+
+# Step 2: Create the horizontal part of the letter "X"
+ab_drop("b13", 6)  # Creates the top horizontal part
+ab_drop("b13", 9)  # Creates the bottom horizontal part
+
+# Step 3: Fine-tuning for stability
+ab_drop("b31", 7)  # Adds support for the left vertical part
+ab_drop("b13", 8)  # Adds support for the top horizontal part
+ab_drop("b13", 10)  # Adds support for the bottom horizontal part
+ab_drop("b31", 13)  # Adds support for the right vertical part

@@ -1,0 +1,15 @@
+To create a "K" structure inside a 20*16 box block using the ab_drop('blocktype', x position) command, we can break it down into the following steps:
+
+Step 1: Drop the first vertical line of the "K" using the b13 block type:
+
+ab_drop('b13', 0)
+
+Step 2: Drop the horizontal line of the "K" using the b31 block type:
+
+ab_drop('b31', 1)
+
+Step 3: Drop the second vertical line of the "K" using the b13 block type:
+
+ab_drop('b13', 4)
+
+This arrangement will create the structure exactly like the letter "K" inside the 20*16 box block.

@@ -1,0 +1,29 @@
+To create the uppercase English letter "V" using the given block types and environment, you can follow these steps:
+
+1. Place two vertical straight blocks (b13) next to each other at positions 1 and 2 along the width:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+2. Place a horizontal straight block (b31) starting from position 2 along the width:
+```
+ab_drop('b31', 2)
+```
+
+3. Repeat steps 1 and 2 to create the second half of the letter "V":
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```
+
+The complete stream of commands to generate the letter "V" would be:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```

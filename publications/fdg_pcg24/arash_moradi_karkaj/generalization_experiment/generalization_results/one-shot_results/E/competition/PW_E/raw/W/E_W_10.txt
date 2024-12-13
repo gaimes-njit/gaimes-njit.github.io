@@ -1,0 +1,11 @@
+To generate the uppercase letter "W", we can use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b31', 1)      # Place the first horizontal block
+ab_drop('b13', 4)      # Place the first vertical block
+ab_drop('b13', 6)      # Place the second vertical block
+ab_drop('b31', 9)      # Place the second horizontal block
+ab_drop('b13', 12)     # Place the third vertical block
+ab_drop('b13', 14)     # Place the fourth vertical block
+ab_drop('b31', 17)     # Place the third horizontal block
+```

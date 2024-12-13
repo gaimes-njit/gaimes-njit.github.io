@@ -1,0 +1,70 @@
+Step 2: The drawing of the letter "P" with asterisks:
+
+```
+*****
+*    *
+*    *
+*****
+*    
+*
+*
+*
+```
+
+List of asterisks and spaces in each row:
+1. Asterisks: *****
+2. Asterisks: *    *
+3. Asterisks: *    *
+4. Asterisks: *****
+5. Asterisks: *
+6. Asterisks: *
+7. Asterisks: *
+8. Asterisks: *
+
+Step 3: Replacing asterisks with "x" and spaces with "y":
+
+```
+xxxxx
+xyyyyx
+xyyyyx
+xxxxx
+x
+y
+y
+y
+```
+
+Step 4: Writing out each "x" and "y" for each row:
+
+1x, 5x
+1x, 4y, 1x
+1x, 4y, 1x
+5x
+1x
+1y
+1y
+1y
+
+Step 5: Indicating the position of each variable:
+
+1x-1, 5x-2
+1x-1, 4y-2, 1x-3
+1x-1, 4y-2, 1x-3
+5x-1
+1x-1
+1y-2
+1y-2
+1y-2
+
+Step 6: Returning the sequence of "ab_drop" function calls for each row:
+
+```
+ab_drop("b11", 1)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 4)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+```

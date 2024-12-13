@@ -1,0 +1,10 @@
+To generate a structure that looks like the letter "H" in the Tetris game, we can follow these steps:
+
+1. Place the base of the "H", which is a row block (b31), at the desired position.
+2. Place two column blocks (b13), one on each side of the base, to complete the vertical bars of the "H".
+
+Here is the complete implementation:
+
+ab_drop("b31", 9)  # Place the base of the "H" at position 9
+ab_drop("b13", 8)  # Place the left vertical bar at position 8
+ab_drop("b13", 10) # Place the right vertical bar at position 10

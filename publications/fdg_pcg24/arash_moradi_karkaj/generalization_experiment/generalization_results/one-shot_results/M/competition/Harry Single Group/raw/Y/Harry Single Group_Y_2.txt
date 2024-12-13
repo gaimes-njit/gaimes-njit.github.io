@@ -1,0 +1,32 @@
+To form a shape resembling the letter "Y" using the given props and function, we can break down the structure into three parts: the stem, the horizontal arm, and the diagonal arm.
+
+1. Stem:
+To create the vertical stem of the "Y", we can use the b13 prop. We need to ensure that the stem is stable, so we'll place it at the center of the field. Since the b13 brick has a height of 3, we'll need to place it at row 2 to avoid boundary collisions.
+
+```python
+ab_drop('b13', 9)
+```
+
+2. Horizontal Arm:
+To create the horizontal arm of the "Y", we can use the b31 prop. We'll place it directly below the stem, starting from the left side of the stem. Since the b31 brick has a width of 3, we'll need to place it at columns 7, 8, and 9 to avoid boundary collisions.
+
+```python
+ab_drop('b31', 7)
+```
+
+3. Diagonal Arm:
+To create the diagonal arm of the "Y", we can use the b31 prop. We'll place it diagonally from the middle of the horizontal arm towards the bottom-right corner. To ensure stability, we'll place the left cell of the b31 brick one row below the right cell.
+
+```python
+ab_drop('b31', 8)
+```
+
+The final code:
+
+```python
+ab_drop('b13', 9)
+ab_drop('b31', 7)
+ab_drop('b31', 8)
+```
+
+This will generate a shape resembling the letter "Y" on the field.

@@ -1,0 +1,18 @@
+To generate the uppercase letter "W", we can use a combination of the available block types (b11, b31, and b13) in the defined environment. 
+
+Here is the stream of ab_drop() commands to generate the letter "W":
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 5)
+ab_drop('b31', 5)
+ab_drop('b13', 9)
+ab_drop('b31', 9)
+ab_drop('b13', 13)
+ab_drop('b31', 13)
+ab_drop('b13', 17)
+ab_drop('b31', 17)
+```
+
+This sequence of commands will create a stable arrangement of blocks that resemble the uppercase letter "W" within the allowed space and gravity rules.

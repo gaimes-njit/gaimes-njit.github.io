@@ -1,0 +1,21 @@
+The solution to construct a stable structure resembling "V" while meeting all the given constraints is as follows:
+
+```python
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop b13 block to create the right side of "V"
+ab_drop('b13', 7)
+ab_drop('b13', 8)
+ab_drop('b13', 9)
+
+# Drop b31 block to create the middle of "V"
+ab_drop('b31', 8)
+
+# Drop b13 block to create the left side of "V"
+ab_drop('b13', 11)
+ab_drop('b13', 12)
+ab_drop('b13', 13)
+```
+
+This solution starts by dropping three b13 blocks on the right side of the structure at slots 7, 8, and 9. Then, a b31 block is dropped in the middle of the structure at slot 8. Finally, three b13 blocks are dropped on the left side of the structure at slots 11, 12, and 13. The resulting structure forms a stable "V" shape while satisfying all the given constraints.

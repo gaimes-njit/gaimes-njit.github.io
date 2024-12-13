@@ -1,0 +1,35 @@
+The code block below demonstrates how to use the `ab_drop()` function to create a stable structure resembling the letter "W" with all the specified constraints:
+
+```
+structure = [[' ']*20 for _ in range(16)]
+
+# Bottom left 'L' shape
+ab_drop('b31',1)
+ab_drop('b13',0)
+
+# Bottom right 'L' shape
+ab_drop('b31',18)
+ab_drop('b13',19)
+
+# Middle block
+ab_drop('b31',9)
+
+# Top 'L' shape
+ab_drop('b31',4)
+ab_drop('b13',5)
+
+# Top left vertical block
+ab_drop('b11',6)
+ab_drop('b11',6)
+
+# Top right vertical block
+ab_drop('b11',13)
+ab_drop('b11',13)
+
+# Top horizontal block
+ab_drop('b11',8)
+ab_drop('b11',9)
+ab_drop('b11',10)
+```
+
+This set of `ab_drop()` inputs should generate a stable structure that resembles the letter "W" with all the given constraints satisfied.

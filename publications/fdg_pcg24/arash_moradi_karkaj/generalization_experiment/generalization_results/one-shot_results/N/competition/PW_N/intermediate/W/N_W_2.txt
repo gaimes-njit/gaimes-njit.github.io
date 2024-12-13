@@ -1,0 +1,13 @@
+To generate the uppercase English letter "W", you can use the following sequence of ab_drop() commands:
+
+ab_drop('b31', 1)  # Drop a horizontal straight block at position 1
+ab_drop('b13', 4)  # Drop a vertical straight block at position 4
+ab_drop('b13', 5)  # Drop a vertical straight block at position 5
+ab_drop('b13', 8)  # Drop a vertical straight block at position 8
+ab_drop('b31', 9)  # Drop a horizontal straight block at position 9
+ab_drop('b13', 12)  # Drop a vertical straight block at position 12
+ab_drop('b13', 13)  # Drop a vertical straight block at position 13
+ab_drop('b13', 16)  # Drop a vertical straight block at position 16
+ab_drop('b31', 17)  # Drop a horizontal straight block at position 17
+
+Please note that the blocks should be dropped one by one in the specified order.

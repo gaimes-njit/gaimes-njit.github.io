@@ -1,0 +1,7 @@
+ab drop("b13", y, H)
+ab drop("b11", y-1, H-1)
+ab drop("b31", y-1, H-4)
+ab drop("b11", y-1, H-7)
+ab drop("b31", y-1, H-10)
+ab drop("b11", y-1, H-13)
+ab drop("b13", y, 0)

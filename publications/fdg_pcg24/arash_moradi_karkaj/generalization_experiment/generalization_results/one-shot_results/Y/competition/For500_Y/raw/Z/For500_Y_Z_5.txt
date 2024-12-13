@@ -1,0 +1,3 @@
+ab_drop('b13', 12)  # Drop b13 at index 12, forming the vertical leg of the Z
+ab_drop('b31', 11)  # Drop b31 at index 11, forming the horizontal bar of the Z
+ab_drop('b11', 11)  # Drop b11 at index 11, forming the diagonal bar of the Z

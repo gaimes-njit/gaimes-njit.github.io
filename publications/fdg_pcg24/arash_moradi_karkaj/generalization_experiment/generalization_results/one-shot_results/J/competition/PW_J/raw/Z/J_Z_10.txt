@@ -1,0 +1,17 @@
+To generate the uppercase letter "Z", the following sequence of commands can be used:
+
+```
+ab_drop('b31',1)
+ab_drop('b11',4)
+ab_drop('b11',7)
+ab_drop('b31',10)
+```
+
+Explanation of each command:
+
+1. `ab_drop('b31',1)`: This command places a horizontal straight block at position 1, representing the top of the "Z" letter.
+2. `ab_drop('b11',4)`: This command places a square block at position 4, one unit below the top block.
+3. `ab_drop('b11',7)`: This command places another square block at position 7, three units below the top block.
+4. `ab_drop('b31',10)`: This command places another horizontal straight block at position 10, five units below the top block, completing the letter "Z".
+
+The resulting letter "Z" will be stable and fit within the allowed space boundaries.

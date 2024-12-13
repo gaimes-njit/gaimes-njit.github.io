@@ -1,0 +1,36 @@
+In order to form the shape resembling the letter "Y", we need to place three bricks: one b13 brick and two b11 bricks.
+
+First, let's initialize the field with an empty map:
+```python
+field = [[0 for _ in range(20)] for _ in range(16)]
+```
+
+Next, we can start placing the bricks using the ab_drop() function. We'll ensure stability and avoid boundary collisions by checking the conditions before placing each brick.
+
+1. Place the b13 brick:
+```python
+ab_drop('b13', 9)
+```
+This will occupy the cells (9, 0), (9, 1), and (9, 2). This is the stem of the "Y" shape.
+
+2. Place the two b11 bricks:
+```python
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+```
+The first b11 brick occupies the cell (8, 3), and the second b11 brick occupies the cell (10, 3). These are the branches of the "Y" shape.
+
+Finally, let's print the final state of the field to visualize the generated structure:
+```python
+for row in field:
+    print(row)
+```
+
+The output will be:
+```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 

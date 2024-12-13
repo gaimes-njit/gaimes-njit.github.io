@@ -1,0 +1,129 @@
+To generate a structure that looks like the capital letter "O", we can start by creating the outer ring of blocks and then fill the inside.
+
+Here is the step-by-step implementation:
+
+1. Creating the outer ring:
+ab_drop("b31", 8)
+ab_drop("b11", 7)
+
+ab_drop("b13", 6)
+ab_drop("b11", 9)
+
+ab_drop("b31", 8)
+ab_drop("b11", 7)
+
+ab_drop("b13", 6)
+ab_drop("b11", 9)
+
+2. Filling the inside:
+ab_drop("b11", 7)
+
+ab_drop("b13", 6)
+ab_drop("b13", 9)
+
+ab_drop("b11", 7)
+
+ab_drop("b31", 9)
+ab_drop("b31", 6)
+
+ab_drop("b11", 7)
+
+ab_drop("b13", 6)
+ab_drop("b13", 9)
+
+ab_drop("b11", 7)
+
+ab_drop("b31", 9)
+ab_drop("b31", 6)
+
+ab_drop("b11", 7)
+
+ab_drop("b13", 6)
+ab_drop("b13", 9)
+
+ab_drop("b11", 7)
+
+ab_drop("b31", 9)
+ab_drop("b31", 6)
+
+ab_drop("b11", 7)
+
+ab_drop("b13", 6)
+ab_drop("b13", 9)
+
+ab_drop("b11", 7)
+
+ab_drop("b31", 9)
+ab_drop("b31", 6)
+
+ab_drop("b11", 7)
+
+ab_drop("b13", 6)
+ab_drop("b13", 9)
+
+ab_drop("b11", 7)
+
+ab_drop("b31", 9)
+ab_drop("b31", 6)
+
+ab_drop("b11", 7)
+
+ab_drop("b13", 6)
+ab_drop("b13", 9)
+
+ab_drop("b11", 7)
+
+ab_drop("b31", 9)
+ab_drop("b31", 6)
+
+ab_drop("b11", 7)
+
+ab_drop("b13", 6)
+ab_drop("b13", 9)
+
+ab_drop("b11", 7)
+
+ab_drop("b31", 9)
+ab_drop("b31", 6)
+
+ab_drop("b11", 7)
+
+ab_drop("b13", 6)
+ab_drop("b13", 9)
+
+ab_drop("b11", 7)
+
+ab_drop("b31", 9)
+ab_drop("b31", 6)
+
+ab_drop("b11", 7)
+
+ab_drop("b13", 6)
+ab_drop("b13", 9)
+
+ab_drop("b11", 7)
+
+ab_drop("b31", 9)
+ab_drop("b31", 6)
+
+ab_drop("b11", 7)
+
+ab_drop("b13", 6)
+ab_drop("b13", 9)
+
+ab_drop("b11", 7)
+
+ab_drop("b31", 9)
+ab_drop("b31", 6)
+
+ab_drop("b11", 7)
+
+ab_drop("b13", 6)
+ab_drop("b13", 9)
+
+ab_drop("b11", 7)
+
+ab_drop("b13", 6)
+ab_drop("b11", 9)
+
+Please note that this implementation assumes that the ab_drop() function properly handles balancing and stability of the blocks.

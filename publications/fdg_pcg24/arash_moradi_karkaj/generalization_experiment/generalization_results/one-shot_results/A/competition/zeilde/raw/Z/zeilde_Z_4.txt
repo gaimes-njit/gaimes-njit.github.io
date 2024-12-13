@@ -1,0 +1,77 @@
+1. Drawing the letter "Z" with asterisks: 
+
+```
+*******
+     *
+    *
+   *
+  *
+ *
+*******
+```
+
+2. Verbal listing of asterisks and spaces in each row:
+- Row 1: 7 asterisks
+- Row 2: 5 spaces, 1 asterisk
+- Row 3: 4 spaces, 1 asterisk
+- Row 4: 3 spaces, 1 asterisk
+- Row 5: 2 spaces, 1 asterisk
+- Row 6: 1 space, 1 asterisk
+- Row 7: 7 asterisks
+
+3. Using x for asterisks and y for spaces:
+- Row 1: 7x
+- Row 2: 5y, 1x
+- Row 3: 4y, 1x
+- Row 4: 3y, 1x
+- Row 5: 2y, 1x
+- Row 6: 1y, 1x
+- Row 7: 7x
+
+4. Writing out each x and y for each row:
+- Row 1: xxxxxxx
+- Row 2: yyyyyx
+- Row 3: yyyyx
+- Row 4: yyyx
+- Row 5: yyx
+- Row 6: yx
+- Row 7: xxxxxxx
+
+5. Indicating the position of each variable:
+- Row 1: x-1, x-2, x-3, x-4, x-5, x-6, x-7
+- Row 2: y-1, y-2, y-3, y-4, y-5, x-6
+- Row 3: y-1, y-2, y-3, y-4, x-5
+- Row 4: y-1, y-2, y-3, x-4
+- Row 5: y-1, y-2, x-3
+- Row 6: y-1, x-2
+- Row 7: x-1, x-2, x-3, x-4, x-5, x-6, x-7
+
+6. Sequence of `ab_drop` function calls for each row:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 11)
+ab_drop("b11", 12)
+ab_drop("b11", 13)
+ab_drop("b11", 14)
+ab_drop("b11", 15)
+ab_drop("b11", 16)
+ab_drop("b11", 17)
+ab_drop("b11", 18)
+ab_drop("b11", 19)
+ab_drop("b11", 20)
+ab_drop("b11", 21)
+ab_drop("b11", 22)
+ab_drop("b11", 23)
+ab_drop("b11", 24)
+ab_drop("b11", 25)
+ab_drop("b11", 26)
+```

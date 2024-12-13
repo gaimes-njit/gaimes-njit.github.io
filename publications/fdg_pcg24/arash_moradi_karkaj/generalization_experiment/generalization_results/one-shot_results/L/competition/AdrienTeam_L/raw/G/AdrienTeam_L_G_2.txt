@@ -1,0 +1,12 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Dropping blocks to form the 'G' shape
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b11', 12)
+ab_drop('b31', 10)
+ab_drop('b13', 9)
+```

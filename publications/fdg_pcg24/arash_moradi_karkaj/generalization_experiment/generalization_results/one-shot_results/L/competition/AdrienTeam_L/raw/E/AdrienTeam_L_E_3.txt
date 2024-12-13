@@ -1,0 +1,39 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# First drop
+ab_drop('b31', 0)
+
+# Second drop
+ab_drop('b13', 1)
+
+# Third drop
+ab_drop('b11', 2)
+
+# Fourth drop
+ab_drop('b11', 0)
+
+# Fifth drop
+ab_drop('b11', 1)
+
+# Sixth drop
+ab_drop('b11', 2)
+
+# Seventh drop
+ab_drop('b11', 0)
+
+# Eighth drop
+ab_drop('b11', 1)
+
+# Ninth drop
+ab_drop('b11', 2)
+
+# Tenth drop
+ab_drop('b11', 0)
+
+# Eleventh drop
+ab_drop('b11', 1)
+
+# Twelfth drop
+ab_drop('b11', 2)
+```

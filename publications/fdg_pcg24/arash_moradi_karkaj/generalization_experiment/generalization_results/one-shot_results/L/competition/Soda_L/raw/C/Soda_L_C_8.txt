@@ -1,0 +1,34 @@
+The first step is to create the bottom part of the "C" shape. We can achieve this by dropping a "b13" block at the bottom-left corner of the grid.
+
+```
+ab_drop("b13", 0)
+```
+
+The next step is to create the vertical part of the "C" shape. We can achieve this by dropping a "b31" block centered at the second column of the grid.
+
+```
+ab_drop("b31", 1)
+```
+
+To complete the "C" shape, we need to drop another "b13" block centered at the third column of the grid, just above the vertical part.
+
+```
+ab_drop("b13", 2)
+```
+
+Finally, we can add some stability to the structure by adding two more "b13" blocks on top of the vertical part, centered at the second and third column.
+
+```
+ab_drop("b13", 1)
+ab_drop("b13", 2)
+```
+
+Here is the complete implementation:
+
+```
+ab_drop("b13", 0)
+ab_drop("b31", 1)
+ab_drop("b13", 2)
+ab_drop("b13", 1)
+ab_drop("b13", 2)
+```

@@ -1,0 +1,8 @@
+To create the structure of the letter M, we can break it down into three blocks - two diagonal blocks and a horizontal block in the middle. 
+
+Here is the step-by-step implementation:
+```
+ab_drop("b13", 6)  # Place the first diagonal block on the left side
+ab_drop("b13", 7)  # Place the second diagonal block on the right side
+ab_drop("b31", 8)  # Place the horizontal block in the middle
+```

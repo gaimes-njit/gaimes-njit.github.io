@@ -1,0 +1,18 @@
+To create the structure of the letter "N" using ab_drop('blocktype', x position), you can follow these steps:
+
+1. Place the first block (b11) at position (0, 0).
+   - ab_drop('b11', 0)
+
+2. Place the second block (b31) at position (2, 0).
+   - ab_drop('b31', 2)
+
+3. Place the third block (b13) at position (5, 0).
+   - ab_drop('b13', 5)
+
+4. Place the fourth block (b31) at position (8, 0).
+   - ab_drop('b31', 8)
+
+5. Place the fifth block (b11) at position (11, 0).
+   - ab_drop('b11', 11)
+
+This arrangement should result in a structure of the letter "N" inside a 20*16 box block.

@@ -1,0 +1,13 @@
+Since the block types given are not sufficient to create the letter "O", we will need to find a combination of different blocks to form the desired letter. Here is one possible sequence of ab_drop() commands to generate the letter "O":
+
+```
+ab_drop('b31', 4)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b13', 4)
+ab_drop('b13', 5)
+ab_drop('b31', 2)
+ab_drop('b31', 5)
+```
+
+This sequence of commands will first create the top and bottom parts of the letter "O" using the 'b31' block type. Then, it will create the vertical sides of the letter using the 'b13' block type. The resulting shape will resemble the uppercase English letter "O".

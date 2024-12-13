@@ -1,0 +1,48 @@
+To generate a stable structure that resembles the uppercase character "Z" using the `ab_drop()` function, we can follow the steps below:
+
+1. Initialize the structure as an empty WxH grid:
+
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Place the b31 block at the bottom of the structure in the center (slot 9):
+
+```
+ab_drop('b31', 9)
+```
+
+3. Place the b13 block on top of the b31 block, slightly to the left (slot 7):
+
+```
+ab_drop('b13', 7)
+```
+
+4. Place the b31 block on top of the b13 block, slightly to the right (slot 11):
+
+```
+ab_drop('b31', 11)
+```
+
+5. Place the b11 block on top of the right side of the b13 block (slot 8):
+
+```
+ab_drop('b11', 8)
+```
+
+6. Place the b11 block on top of the right side of the b31 block (slot 10):
+
+```
+ab_drop('b11', 10)
+```
+
+The structure will now resemble the uppercase letter "Z":
+
+```
+structure = [
+  [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+  [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+  [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+  [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+  [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+  [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',

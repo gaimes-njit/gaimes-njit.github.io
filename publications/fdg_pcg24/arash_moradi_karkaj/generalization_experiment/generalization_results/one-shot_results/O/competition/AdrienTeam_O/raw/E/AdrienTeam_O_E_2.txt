@@ -1,0 +1,65 @@
+To construct a stable structure resembling "E" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the structure:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the first row of the "E", which is a horizontal block:
+```python
+ab_drop('b31', 1)
+```
+
+3. Drop the second row of the "E", which is a vertical block:
+```python
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+```
+
+4. Drop the third row of the "E", which is another horizontal block:
+```python
+ab_drop('b31', 1)
+```
+
+5. Drop the fourth row of the "E", which is a vertical block:
+```python
+ab_drop('b13', 0)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+```
+
+6. Drop the fifth row of the "E", which is a horizontal block:
+```python
+ab_drop('b31', 1)
+```
+
+7. Drop the sixth row of the "E", which is a vertical block:
+```python
+ab_drop('b13', 0)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+```
+
+8. The "E" structure is complete!
+
+The final code block would be:
+
+```python
+structure = [[' ']*W for _ in range(H)]
+
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+
+structure
+```

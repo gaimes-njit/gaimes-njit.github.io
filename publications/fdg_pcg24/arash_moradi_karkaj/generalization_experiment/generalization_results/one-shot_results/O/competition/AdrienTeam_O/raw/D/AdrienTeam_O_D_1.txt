@@ -1,0 +1,21 @@
+```
+# Initialize the structure
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the base of the "D"
+ab_drop('b31',2)
+ab_drop('b13',1)
+ab_drop('b31',1)
+ab_drop('b11',3)
+ab_drop('b11',4)
+
+# Drop the middle part of the "D"
+ab_drop('b31',3)
+ab_drop('b13',2)
+ab_drop('b13',4)
+ab_drop('b31',2)
+ab_drop('b31',4)
+
+# Drop the top part of the "D"
+ab_drop('b11',3)
+```

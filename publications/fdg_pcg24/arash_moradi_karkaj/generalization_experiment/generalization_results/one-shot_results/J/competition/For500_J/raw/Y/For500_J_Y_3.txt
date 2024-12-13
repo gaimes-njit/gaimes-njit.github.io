@@ -1,0 +1,5 @@
+ab_drop('b13', 0)  # Drop the first 'b13' block at the leftmost column
+ab_drop('b13', 19)  # Drop the second 'b13' block at the rightmost column
+ab_drop('b31', 9)  # Drop the 'b31' block at the center
+ab_drop('b11', 8)  # Drop the 'b11' block to the left of the 'b31' block
+ab_drop('b11', 10)  # Drop the 'b11' block to the right of the 'b31' block

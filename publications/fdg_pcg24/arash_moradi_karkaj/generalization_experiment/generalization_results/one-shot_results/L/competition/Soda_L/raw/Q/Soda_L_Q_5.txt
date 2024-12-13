@@ -1,0 +1,19 @@
+To create the letter Q, we can divide it into four blocks: a square block for the dot, a row block for the top bar, a column block for the middle bar, and another row block for the bottom bar.
+
+Here is the complete implementation to generate the letter Q in the level:
+
+```
+# Place the dot
+ab_drop("b11", 13)
+
+# Place the top bar
+ab_drop("b31", 12)
+
+# Place the middle bar
+ab_drop("b13", 13)
+
+# Place the bottom bar
+ab_drop("b31", 12)
+```
+
+By following these steps, you will generate a structure in the level that looks like the capital letter "Q".

@@ -1,0 +1,24 @@
+To generate a stable structure that resembles the character "Z" while meeting all the hard constraints, we can follow the steps below:
+
+1. Initialize the structure grid using the provided code:
+```python
+structure = [[' ']*20 for _ in range(16)]
+```
+
+2. Define the dropping positions and order of the blocks according to the constraints. We need to ensure stability, prevent boundary intrusion, and maintain the shape of the character "Z". Based on these considerations, we can determine the following dropping positions and order:
+- Drop a b13 block at slot 0 to form the vertical part of the "Z".
+- Drop a b31 block at slot 1, aligned with the b13 block, to form the top horizontal part of the "Z".
+- Drop a b31 block at slot 2, aligned with the previous b31 block, to form the bottom horizontal part of the "Z".
+- Drop a b11 block at slot 3, aligned with the bottom horizontal part of the "Z", to fill the gap and stabilize the structure.
+
+3. Use the `ab_drop()` function to drop the blocks at the determined positions and in the specified order:
+```python
+ab_drop('b13', 0)
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b11', 3)
+```
+
+4. The final structure will resemble the character "Z" and meet all the hard constraints.
+
+Remember to update the `structure` variable after each block drop to represent the current state of the structure.

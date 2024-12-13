@@ -1,0 +1,25 @@
+To generate a structure that looks like the letter "I", we can use the following key-value pairs in the database:
+
+```python
+database = {
+    'top': 'ab',
+    'middle': 'drop',
+    'bottom': 'drop'
+}
+```
+
+To retrieve the required letter "I" from the database, we need to call the `ab_drop` function in the following sequence:
+
+```python
+ab_drop(database['top'])
+ab_drop(database['middle'])
+ab_drop(database['bottom'])
+```
+
+Resulting sequence of `ab_drop` function calls:
+
+```python
+ab_drop('ab')
+ab_drop('drop')
+ab_drop('drop')
+```

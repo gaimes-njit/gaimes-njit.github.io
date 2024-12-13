@@ -1,0 +1,28 @@
+Here is the code that uses the `ab_drop()` function to generate the structure of the "X" shape:
+
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Build the bottom-left part of the "X"
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+
+# Build the bottom-right part of the "X"
+ab_drop('b31', 18)
+ab_drop('b13', 19)
+
+# Build the top part of the "X"
+ab_drop('b31', 9)
+ab_drop('b13', 10)
+
+# Build the center part of the "X"
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Display the resulting structure
+for row in structure:
+    print(' '.join(row))
+```
+
+The above code will create a stable structure resembling the "X" shape, satisfying all the specified constraints.

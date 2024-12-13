@@ -1,0 +1,16 @@
+To generate the uppercase letter "T" using the given block types and environment, you can follow these steps:
+
+1. Start by placing the vertical foundations of the letter. Use the command `ab_drop('b13',1)` to place the first vertical block at position 1. Then use `ab_drop('b13',3)` to place the second vertical block at position 3. Next, use `ab_drop('b13',4)` to place the third vertical block at position 4. Finally, use `ab_drop('b13',6)` to place the fourth vertical block at position 6.
+
+2. Place the horizontal top of the letter on top of the vertical foundations. Use the command `ab_drop('b31',2)` to place the first horizontal block at position 2. Then use `ab_drop('b31',5)` to place the second horizontal block at position 5.
+
+The complete stream of commands to generate the uppercase letter "T" would be:
+
+```
+ab_drop('b13',1)
+ab_drop('b13',3)
+ab_drop('b13',4)
+ab_drop('b13',6)
+ab_drop('b31',2)
+ab_drop('b31',5)
+```

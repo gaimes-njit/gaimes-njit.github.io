@@ -1,0 +1,45 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the first row of blocks
+ab_drop('b31', 6)
+ab_drop('b13', 5)
+ab_drop('b13', 7)
+ab_drop('b31', 6)
+
+# Drop the second row of blocks
+ab_drop('b13', 4)
+ab_drop('b11', 5) # Start of middle part
+ab_drop('b11', 6)
+ab_drop('b11', 7)
+ab_drop('b13', 8)
+
+# Drop the third row of blocks
+ab_drop('b11', 4)
+ab_drop('b31', 5) # Start of bottom part
+ab_drop('b31', 6)
+ab_drop('b31', 7)
+ab_drop('b11', 8)
+
+# Drop the fourth row of blocks
+ab_drop('b31', 3)
+ab_drop('b13', 4)
+ab_drop('b13', 6)
+ab_drop('b31', 7)
+
+# Drop the fifth row of blocks
+ab_drop('b11', 3)
+ab_drop('b11', 7)
+
+# Drop the sixth row of blocks
+ab_drop('b11', 3)
+ab_drop('b11', 5)
+ab_drop('b11', 7)
+
+# Drop the seventh row of blocks (top row)
+ab_drop('b11', 4)
+ab_drop('b13', 5)
+ab_drop('b13', 7)
+ab_drop('b11', 8)
+
+```

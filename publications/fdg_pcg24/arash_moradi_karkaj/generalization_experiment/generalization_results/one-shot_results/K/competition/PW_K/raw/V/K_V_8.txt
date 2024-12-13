@@ -1,0 +1,12 @@
+To create the uppercase letter "V", we can use the following stream of ab_drop() commands:
+
+```
+ab_drop('b31', 1)   # Place a horizontal straight block at position 1
+ab_drop('b31', 2)   # Place another horizontal straight block at position 2
+ab_drop('b13', 3)   # Place a vertical straight block at position 3
+ab_drop('b13', 4)   # Place another vertical straight block at position 4
+ab_drop('b31', 5)   # Place another horizontal straight block at position 5
+ab_drop('b31', 6)   # Place another horizontal straight block at position 6
+```
+
+By executing these commands consecutively, the uppercase letter "V" will be formed within the defined grid space.

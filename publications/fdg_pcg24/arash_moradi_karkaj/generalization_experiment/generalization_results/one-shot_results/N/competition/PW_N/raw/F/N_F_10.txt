@@ -1,0 +1,31 @@
+To generate the uppercase letter F, you can follow these steps:
+
+1. Place two vertical straight blocks (b13) at positions 2 and 3.
+``` 
+ab_drop('b13',2) 
+ab_drop('b13',3)
+```
+
+2. Place a horizontal straight block (b31) at position 3 on top of the previous two blocks.
+```
+ab_drop('b31',3)
+```
+
+3. Place a vertical straight block (b13) at position 5, slightly to the right of the previous blocks.
+```
+ab_drop('b13',5)
+```
+
+4. Place a square block (b11) at position 5 on top of the previous block.
+```
+ab_drop('b11',5)
+```
+
+The complete stream of commands to generate the letter F would be:
+```
+ab_drop('b13',2)
+ab_drop('b13',3)
+ab_drop('b31',3)
+ab_drop('b13',5)
+ab_drop('b11',5)
+```

@@ -1,0 +1,18 @@
+To generate a level that looks like the capital letter "H," we can break it down into three parts: the top horizontal bar, the middle vertical bar, and the bottom horizontal bar. We will use the "b31" block for the horizontal bars and the "b13" block for the vertical bar. Here is the complete implementation:
+
+```
+# The top horizontal bar of H
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+ab_drop("b31", 11)
+
+# The middle vertical bar of H
+ab_drop("b13", 9)
+ab_drop("b13", 10)
+ab_drop("b13", 11)
+
+# The bottom horizontal bar of H
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+ab_drop("b31", 11)
+```

@@ -1,0 +1,19 @@
+To generate the uppercase English letter "L", we can use the following stream of ab_drop() commands:
+
+```
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b31', 4)
+ab_drop('b13', 4)
+ab_drop('b13', 4)
+ab_drop('b13', 4)
+ab_drop('b31', 4)
+```
+
+These commands will generate the uppercase English letter "L" using the specified block types (b11, b31, b13) in the defined environment.

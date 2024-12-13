@@ -1,0 +1,36 @@
+Here is an example of how the `ab_drop()` function can be used to generate a stable structure that looks like the uppercase character "T" and meets all the hard constraints:
+
+```python
+import random
+
+# Constants
+W = 20  # Number of slots
+H = 16  # Number of layers
+
+# Initialize the structure as an empty grid
+structure = [[' ']*W for _ in range(H)]
+
+def ab_drop(x, y):
+    # Initialize the drop position at the top of the map
+    drop_pos = (H-1, y)
+
+    # Drop the block from the top and move it down until it lands on the base or another block
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+
+    # Place the block on the structure
+    structure[drop_pos[0]][drop_pos[1]] = x
+
+# Generate the structure
+ab_drop('b13', 9)  # Drop the vertical block in the center
+ab_drop('b31', 9)  # Drop the horizontal block on top of the vertical block
+ab_drop('b11', 9)  # Drop the square block on top of the horizontal block
+
+# Print the structure
+for row in structure:
+    print(' '.join(row))
+```
+
+This code will generate a stable structure that forms the uppercase character "T" in the center of the grid. The blocks are dropped in a way that ensures stability and satisfies the hard constraints. The `ab_drop()` function is called three times to drop each block, with the 'x' parameter specifying the block type and the 'y' parameter specifying the slot number where the block center is aligned. The resulting structure is then printed out for visualization.

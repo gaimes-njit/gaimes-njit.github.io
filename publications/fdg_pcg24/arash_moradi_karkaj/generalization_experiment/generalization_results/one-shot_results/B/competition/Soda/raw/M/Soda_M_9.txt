@@ -1,0 +1,18 @@
+To generate a structure in the level that looks like a capital "M", we can break it down into three blocks: two diagonal blocks and one middle block. We can start by dropping the two diagonal blocks first, and then the middle block.
+
+Here is the complete implementation:
+
+```python
+ab_drop("b31", 7)  # Drop the first diagonal block at x_position = 7
+ab_drop("b13", 8)  # Drop the second diagonal block at x_position = 8
+ab_drop("b31", 9)  # Drop the middle block at x_position = 9
+```
+
+This implementation will create a stable structure that resembles the letter "M".
+
+Explanation:
+- The first diagonal block (b31) is dropped at x_position = 7, which occupies cells (6, 0), (7, 0), and (8, 0).
+- The second diagonal block (b13) is dropped at x_position = 8, which occupies cells (7, 1), (7, 0), and (7, -1).
+- The middle block (b31) is dropped at x_position = 9, which occupies cells (8, 0), (9, 0), and (10, 0).
+
+The resulting structure will resemble the letter "M".

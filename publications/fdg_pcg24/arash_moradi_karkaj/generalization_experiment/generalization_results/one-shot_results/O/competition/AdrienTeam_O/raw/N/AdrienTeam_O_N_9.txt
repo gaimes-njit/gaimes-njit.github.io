@@ -1,0 +1,36 @@
+```
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the horizontal block at the bottom-left corner
+ab_drop('b31', 0)
+
+# Drop the vertical block next to the horizontal block
+ab_drop('b13', 1)
+
+# Drop the horizontal block on top of the vertical block
+ab_drop('b31', 1)
+
+# Drop the vertical block next to the horizontal block
+ab_drop('b13', 2)
+
+# Drop the horizontal block on top of the vertical block
+ab_drop('b31', 1)
+
+# Drop the vertical block next to the horizontal block
+ab_drop('b13', 0)
+
+# Drop the horizontal block on top of the vertical block
+ab_drop('b31', 1)
+
+# Drop the vertical block next to the horizontal block
+ab_drop('b13', 2)
+
+# Drop the horizontal block on top of the vertical block
+ab_drop('b31', 1)
+
+# Drop the horizontal block on top of the vertical block
+ab_drop('b31', 1)
+
+# Drop the horizontal block on top of the vertical block
+ab_drop('b31', 1)
+```

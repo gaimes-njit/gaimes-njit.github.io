@@ -1,0 +1,4 @@
+ab_drop('b13', 10)   # Drop the first vertical block to create the right bar of the letter 'A'
+ab_drop('b31', 10)   # Drop the horizontal block on top of the vertical block to create the top bar of the letter 'A'
+ab_drop('b11', 10)   # Drop the square block on top of the horizontal block to create the middle part of the letter 'A'
+ab_drop('b31', 10)   # Drop another horizontal block on top of the middle part to create the bottom bar of the letter 'A'

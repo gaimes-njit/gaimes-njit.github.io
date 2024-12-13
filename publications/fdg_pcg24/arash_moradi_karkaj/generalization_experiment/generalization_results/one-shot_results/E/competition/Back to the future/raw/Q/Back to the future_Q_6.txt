@@ -1,0 +1,23 @@
+To generate a stable structure that looks like the uppercase character "Q" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the structure as an empty grid:
+   ```python
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. Drop the first block (b13) to form the vertical part of the "Q":
+   ```python
+   ab_drop('b13', 8)
+   ```
+
+3. Drop the second block (b31) to form the horizontal part of the "Q":
+   ```python
+   ab_drop('b31', 5)
+   ```
+
+4. Drop the third block (b11) to form the dot part of the "Q":
+   ```python
+   ab_drop('b11', 7)
+   ```
+
+The final structure will resemble the uppercase letter "Q". Please note that the exact values for the slot numbers may vary depending on the specific requirements and desired design of the "Q".

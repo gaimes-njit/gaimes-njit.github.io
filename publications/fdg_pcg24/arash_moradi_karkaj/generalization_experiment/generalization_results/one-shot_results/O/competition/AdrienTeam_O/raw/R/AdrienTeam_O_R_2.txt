@@ -1,0 +1,14 @@
+Here is the solution for creating a stable structure resembling "R":
+
+```python
+# Initialize the map
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the first blocks to start building "R"
+ab_drop('b31', 1)   # Top horizontal block
+ab_drop('b13', 0)   # Left vertical block
+ab_drop('b13', 2)   # Right vertical block
+ab_drop('b31', 1)   # Bottom horizontal block
+```
+
+This solution follows the provided constraints and creates a stable structure resembling the letter "R".

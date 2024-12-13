@@ -1,0 +1,16 @@
+To generate the uppercase English letter "U", we can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```
+
+Explanation:
+- The first `ab_drop('b31', 1)` command places a horizontal straight block of width 3 (b31) at position 1 along the width of the grid.
+- The second `ab_drop('b13', 0)` command places a vertical straight block of height 3 (b13) at position 0 along the width of the grid.
+- The third `ab_drop('b13', 2)` command places another vertical straight block of height 3 (b13) at position 2 along the width of the grid.
+- The fourth `ab_drop('b31', 1)` command places another horizontal straight block of width 3 (b31) at position 1 along the width of the grid.
+
+When executed in this order, these commands will result in the uppercase letter "U" in the defined Tetris-like environment.

@@ -1,0 +1,90 @@
+To create the letter "D" on the grid, we can use a combination of a column block and a row block. Here's the step-by-step implementation:
+
+1. Drop a column block "b13" at the center of the grid.
+```python
+ab_drop("b13", 9)
+```
+
+2. Drop a row block "b31" above the column block, aligned with its center.
+```python
+ab_drop("b31", 9)
+```
+
+3. Drop a row block "b31" above the previous row block, aligned with its center.
+```python
+ab_drop("b31", 9)
+```
+
+4. Drop a row block "b31" above the previous row block, aligned with its center.
+```python
+ab_drop("b31", 9)
+```
+
+5. Drop a column block "b13" above the row blocks, aligned with their center.
+```python
+ab_drop("b13", 9)
+```
+
+6. Drop a row block "b31" above the column block, aligned with its center.
+```python
+ab_drop("b31", 9)
+```
+
+7. Drop a row block "b31" above the previous row block, aligned with its center.
+```python
+ab_drop("b31", 9)
+```
+
+8. Drop a row block "b31" above the previous row block, aligned with its center.
+```python
+ab_drop("b31", 9)
+```
+
+9. Drop a column block "b13" above the row blocks, aligned with their center.
+```python
+ab_drop("b13", 9)
+```
+
+10. Drop a column block "b13" above the row blocks, aligned with their center.
+```python
+ab_drop("b13", 9)
+```
+
+11. Drop a column block "b13" above the row blocks, aligned with their center.
+```python
+ab_drop("b13", 9)
+```
+
+12. Drop a column block "b13" above the row blocks, aligned with their center.
+```python
+ab_drop("b13", 9)
+```
+
+13. Drop a column block "b13" above the row blocks, aligned with their center.
+```python
+ab_drop("b13", 9)
+```
+
+14. Drop a column block "b13" above the row blocks, aligned with their center.
+```python
+ab_drop("b13", 9)
+```
+
+The complete implementation is as follows:
+
+```python
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+ab_drop("b31", 9)
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+ab_drop("b31", 9)
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+```

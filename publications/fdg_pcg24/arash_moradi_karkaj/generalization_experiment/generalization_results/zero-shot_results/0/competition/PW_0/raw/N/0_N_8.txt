@@ -1,0 +1,21 @@
+To create the uppercase letter "N" using the block types and gravity rules, follow these steps:
+
+1. Place a b31 block at position (1, 1) using the `ab_drop(31, 1)` command.
+2. Place a b13 block at position (4, 1) using the `ab_drop(13, 4)` command.
+3. Place a b31 block at position (7, 1) using the `ab_drop(31, 7)` command.
+4. Place a b11 block at position (10, 1) using the `ab_drop(11, 10)` command.
+5. Place a b31 block at position (11, 1) using the `ab_drop(31, 11)` command.
+6. Place a b13 block at position (14, 1) using the `ab_drop(13, 14)` command.
+7. Place a b31 block at position (17, 1) using the `ab_drop(31, 17)` command.
+
+The stream of commands would look like this:
+
+```
+ab_drop(31, 1)
+ab_drop(13, 4)
+ab_drop(31, 7)
+ab_drop(11, 10)
+ab_drop(31, 11)
+ab_drop(13, 14)
+ab_drop(31, 17)
+```

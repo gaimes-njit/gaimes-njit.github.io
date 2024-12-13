@@ -1,0 +1,9 @@
+To generate the uppercase letter "V", we will need to use the block types b13 and b31. Here is the sequence of ab_drop() commands to construct the letter:
+
+```
+ab_drop('b13', 1)  # Place the vertical block on the left side
+ab_drop('b13', 3)  # Place another vertical block on the right side
+ab_drop('b31', 2)  # Place the horizontal block in the middle
+```
+
+These commands will construct the letter "V" in the Tetris-like environment, following the gravity rules and staying within the allowed space boundaries.

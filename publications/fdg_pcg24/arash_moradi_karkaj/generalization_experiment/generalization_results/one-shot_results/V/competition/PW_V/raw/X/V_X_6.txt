@@ -1,0 +1,8 @@
+```
+ab_drop('b31', 6)  # Place the first horizontal straight block 3 units wide at position 6
+ab_drop('b31', 7)  # Place the second horizontal straight block 3 units wide at position 7
+ab_drop('b13', 8)  # Place the vertical straight block 3 units high at position 8
+ab_drop('b31', 9)  # Place the third horizontal straight block 3 units wide at position 9
+ab_drop('b31', 10)  # Place the fourth horizontal straight block 3 units wide at position 10
+ab_drop('b13', 11)  # Place the vertical straight block 3 units high at position 11
+```

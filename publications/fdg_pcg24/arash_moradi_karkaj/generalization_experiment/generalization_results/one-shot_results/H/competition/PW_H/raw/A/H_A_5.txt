@@ -1,0 +1,28 @@
+To generate the uppercase English letter "A", we can follow the following steps:
+
+1. Start by placing two vertical straight blocks (b13) one after another at positions 1 and 3:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```
+
+2. Move to the middle of the letter and place a horizontal straight block (b31) at position 2:
+```
+ab_drop('b31', 2)
+```
+
+3. Finally, place two more vertical straight blocks (b13) one after another at positions 1 and 3 on top of the previous blocks:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```
+
+Putting it all together, the stream of commands to generate the letter "A" would be:
+
+```python
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```

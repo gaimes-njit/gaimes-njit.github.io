@@ -1,0 +1,19 @@
+Here is one possible solution to create a stable structure resembling "I":
+
+```python
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop initial block to build the bottom layer
+ab_drop('b13', 1)
+
+# Drop two continuous blocks to create the middle layer
+ab_drop('b31', 1)
+ab_drop('b31', 0)
+
+# Drop a vertical block to create the upper layer
+ab_drop('b13', 1)
+
+```
+
+This solution starts by dropping a vertical block ('b13') in the middle slot of the bottom layer. Then, it creates the middle layer by dropping two continuous horizontal blocks ('b31') in the first and second slots. Finally, it drops another vertical block ('b13') to create the upper layer.

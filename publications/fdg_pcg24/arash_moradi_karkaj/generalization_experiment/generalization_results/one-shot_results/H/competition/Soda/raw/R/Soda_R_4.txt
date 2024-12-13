@@ -1,0 +1,14 @@
+To generate a capital "R" shape using the ab_drop() function, we need to carefully position the blocks in a bottom-to-top manner.
+
+Here is the step-by-step implementation:
+
+Step 1: Place the base block (b31) at the bottom, centered at x_position=9.
+ab_drop("b31", 9)
+
+Step 2: Place the middle block (b13) above the base block, centered at x_position=9.
+ab_drop("b13", 9)
+
+Step 3: Place the top block (b31) above the middle block, centered at x_position=9.
+ab_drop("b31", 9)
+
+This implementation ensures that the blocks are stacked from bottom to top, creating a structure that resembles the letter "R".

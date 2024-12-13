@@ -1,0 +1,21 @@
+First, let's create the left vertical part of the letter "M" by dropping a "b31" block centered at the 5th column:
+```
+ab_drop("b31", 5)
+```
+
+Next, let's create the middle diagonal part of the letter "M" by dropping a "b13" block centered at the 9th column:
+```
+ab_drop("b13", 9)
+```
+
+Finally, let's create the right vertical part of the letter "M" by dropping another "b31" block centered at the 13th column:
+```
+ab_drop("b31", 13)
+```
+
+Complete implementation:
+```
+ab_drop("b31", 5)
+ab_drop("b13", 9)
+ab_drop("b31", 13)
+```

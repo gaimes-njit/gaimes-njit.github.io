@@ -1,0 +1,11 @@
+First, let's start building the base of the "N" by dropping a row block:
+
+ab_drop("b31", 4)
+
+Next, we'll stack a column block on top of the row block to form the vertical part of the "N":
+
+ab_drop("b13", 4)
+
+Finally, we'll place another row block on top of the column block to complete the "N":
+
+ab_drop("b31", 4)

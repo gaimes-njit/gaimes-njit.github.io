@@ -1,0 +1,69 @@
+To create a stable structure resembling "M" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the map by creating an empty grid `structure` with dimensions WxH:
+
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start building the "M" structure from the bottom layer (layer 0) to the top layer (layer 15) using the `ab_drop()` function.
+
+3. Drop the first block ('b31') in the center slot (slot 10) at layer 0:
+
+```python
+ab_drop('b31', 10)
+```
+
+4. Drop the second block ('b13') in slot 9 at layer 1:
+
+```python
+ab_drop('b13', 9)
+```
+
+5. Drop the third block ('b13') in slot 11 at layer 1:
+
+```python
+ab_drop('b13', 11)
+```
+
+6. Drop the fourth block ('b31') in the center slot (slot 10) at layer 2:
+
+```python
+ab_drop('b31', 10)
+```
+
+7. Repeat steps 3-6 to create the top part of the "M" structure:
+
+```python
+ab_drop('b13', 8)
+ab_drop('b13', 12)
+ab_drop('b31', 10)
+ab_drop('b13', 7)
+ab_drop('b13', 13)
+ab_drop('b31', 10)
+```
+
+The complete code to generate the "M" structure would be:
+
+```python
+W = 20  # Width of the map
+H = 16  # Height of the map
+
+structure = [[' ']*W for _ in range(H)]  # Initialize the map
+
+# Build the bottom part of the "M" structure
+ab_drop('b31', 10)
+ab_drop('b13', 9)
+ab_drop('b13', 11)
+ab_drop('b31', 10)
+
+# Build the top part of the "M" structure
+ab_drop('b13', 8)
+ab_drop('b13', 12)
+ab_drop('b31', 10)
+ab_drop('b13', 7)
+ab_drop('b13', 13)
+ab_drop('b31', 10)
+```
+
+Note: The above code assumes that you already have access to the `ab_drop()` function and have defined the necessary variables `W` and `H` as mentioned in the problem statement.

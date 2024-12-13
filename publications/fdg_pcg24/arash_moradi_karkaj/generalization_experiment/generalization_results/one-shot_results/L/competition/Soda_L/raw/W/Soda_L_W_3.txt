@@ -1,0 +1,14 @@
+To create the structure in the shape of the letter "W", we can break it down into three blocks - two diagonal columns on the sides and a row block connecting them.
+
+Here is a step-by-step implementation:
+
+1. Drop the first diagonal column on the left side:
+   `ab_drop("b13", 1)`
+
+2. Drop the second diagonal column on the right side:
+   `ab_drop("b13", 18)`
+
+3. Drop the horizontal row block to connect the two diagonal columns:
+   `ab_drop("b31", 10)`
+
+The above sequence of ab_drop() calls will create a structure that resembles the letter "W".

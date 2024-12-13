@@ -1,0 +1,42 @@
+To generate a stable structure that resembles the character "T" while meeting all the hard constraints, we can follow the steps below:
+
+1. Initialize the structure as an empty grid:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the base of the "T" structure using b11 blocks. Since the base needs to be stable, we should drop the blocks at the bottom of the structure:
+```python
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+```
+
+3. Drop the vertical b13 block to form the middle part of the "T" structure. We want to place it as low as possible while still maintaining stability:
+```python
+ab_drop('b13', 10)
+```
+
+4. Finally, drop the top horizontal b31 block to complete the "T" shape:
+```python
+ab_drop('b31', 10)
+```
+
+The complete code to generate the "T" structure would be:
+```python
+# initialize the structure as an empty WxH grid
+structure = [[' ']*W for _ in range(H)]
+
+# drop the base b11 blocks
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# drop the vertical b13 block
+ab_drop('b13', 10)
+
+# drop the top horizontal b31 block
+ab_drop('b31', 10)
+```
+
+This code will generate a stable structure that resembles the character "T" while satisfying all the given constraints.

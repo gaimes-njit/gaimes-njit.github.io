@@ -1,0 +1,17 @@
+To create a structure that looks like the capital letter "Q", we can follow these steps:
+
+1. Start by dropping a column block (b13) at the center of the grid.
+2. Drop a row block (b31) above the column block, centering it on top of the column block. This will create the circular part of the "Q".
+3. Drop another column block (b13) to the right of the row block, centering it horizontally with the previous block. This will create the tail of the "Q".
+
+Here is the complete implementation:
+
+```python
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+ab_drop("b13", 11)
+```
+
+The first drop places the column block at position 9, centered vertically on the grid. The second drop places the row block above it, also centered horizontally. Finally, the third drop places the second column block to the right of the row block, again centered horizontally.
+
+This implementation creates a structure that resembles the capital letter "Q" and ensures stability by following the bottom-to-top order and balancing the blocks.

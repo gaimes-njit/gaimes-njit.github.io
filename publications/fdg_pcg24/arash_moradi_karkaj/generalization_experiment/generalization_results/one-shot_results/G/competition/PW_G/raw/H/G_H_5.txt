@@ -1,0 +1,17 @@
+To create the uppercase letter "H", the following commands can be used:
+
+```plaintext
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b31', 2)
+```
+
+Explanation:
+- First, we place a horizontal straight block (b31) at position 1, creating the left vertical stroke of the letter "H".
+- Then, we place a vertical straight block (b13) at position 1, extending the left vertical stroke downwards.
+- Next, we place two 1x1 square blocks (b11) at position 4, creating the horizontal stroke of the letter "H".
+- Finally, we place another horizontal straight block (b31) at position 2, creating the right vertical stroke of the letter "H".
+
+Note: Please ensure that each command is executed consecutively and in the correct order to build the letter "H" accurately within the given constraints.

@@ -1,0 +1,9 @@
+In order to generate the uppercase letter "I", we can use the b31 block type and stack it vertically three times. Here is the stream of commands to achieve this:
+
+```
+ab_drop("b31", 1)
+ab_drop("b31", 1)
+ab_drop("b31", 1)
+```
+
+The first command places the first horizontal block at position 1. The second command places the second horizontal block on top of the first one. The third command places the third horizontal block on top of the second one. This results in a vertical stack of three horizontal blocks, forming the letter "I".

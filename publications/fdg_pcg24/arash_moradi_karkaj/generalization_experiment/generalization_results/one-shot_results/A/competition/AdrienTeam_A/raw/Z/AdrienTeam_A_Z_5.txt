@@ -1,0 +1,24 @@
+To create a stable structure resembling "Z" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the structure: Create an empty grid with dimensions WxH using the following code:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start building the "Z" shape from the bottom layer (layer 0) to the top layer (layer 15).
+
+3. Drop the first block ('b13') to form the vertical part of the "Z" shape. Place it at the center slot (slot 9) using the `ab_drop('b13', 9)` command.
+
+4. Drop the second block ('b31') to form the horizontal part of the "Z" shape. Place it one slot to the left (slot 8) using the `ab_drop('b31', 8)` command.
+
+5. Drop the third block ('b13') to complete the vertical part of the "Z" shape. Place it one slot to the left (slot 7) using the `ab_drop('b13', 7)` command.
+
+6. Finally, output the `ab_drop()` calls for all the blocks dropped as a list in a code block. The resulting code would look like this:
+
+```python
+ab_drop('b13', 9)
+ab_drop('b31', 8)
+ab_drop('b13', 7)
+```
+
+This sequence of `ab_drop()` calls will create a stable structure resembling the shape "Z" while satisfying all the specified constraints.

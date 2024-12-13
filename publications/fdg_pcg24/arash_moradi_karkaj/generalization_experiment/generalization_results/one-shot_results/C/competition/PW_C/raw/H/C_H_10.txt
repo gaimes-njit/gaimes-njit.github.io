@@ -1,0 +1,13 @@
+To create the letter 'H', we can break it down into three parts: the vertical part on the left, the horizontal part in the middle, and the vertical part on the right.
+
+Here is the sequence of ab_drop() commands to create the letter 'H':
+
+```
+ab_drop('b13', 1)   # Place a vertical block on the left
+ab_drop('b13', 2)   # Place another vertical block on the left
+ab_drop('b31', 2)   # Place a horizontal block in the middle
+ab_drop('b13', 14)  # Place a vertical block on the right
+ab_drop('b13', 15)  # Place another vertical block on the right
+```
+
+By following these commands, the letter 'H' will be formed in the Tetris-like environment.

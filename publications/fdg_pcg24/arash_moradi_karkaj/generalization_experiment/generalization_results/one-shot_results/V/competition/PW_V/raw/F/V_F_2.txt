@@ -1,0 +1,8 @@
+```
+ab_drop('b31',1)  // Place a horizontal block at position 1
+ab_drop('b13',1)  // Place a vertical block at position 1
+ab_drop('b13',3)  // Place a vertical block at position 3
+ab_drop('b11',3)  // Place a square block at position 3
+ab_drop('b11',2)  // Place a square block at position 2
+ab_drop('b11',1)  // Place a square block at position 1
+```

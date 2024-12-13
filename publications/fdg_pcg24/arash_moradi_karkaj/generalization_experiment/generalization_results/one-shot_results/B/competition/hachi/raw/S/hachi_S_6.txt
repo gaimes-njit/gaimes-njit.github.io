@@ -1,0 +1,18 @@
+def ab_drop(block_type, x_position):
+    if block_type == 'b11':
+        if x_position == 8:
+            return 'b11 b11 b11'
+        else:
+            return 'Invalid block placement'
+    elif block_type == 'b31':
+        if x_position == 7:
+            return 'b31 b11 b11'
+        else:
+            return 'Invalid block placement'
+    elif block_type == 'b13':
+        if x_position == 6:
+            return 'b13 b11 b11'
+        else:
+            return 'Invalid block placement'
+    else:
+        return 'Invalid block type'

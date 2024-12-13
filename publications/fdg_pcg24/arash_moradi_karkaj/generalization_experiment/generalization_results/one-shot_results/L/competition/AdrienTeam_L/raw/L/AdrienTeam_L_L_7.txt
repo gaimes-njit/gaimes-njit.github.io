@@ -1,0 +1,8 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Dropping the blocks to create "L"
+ab_drop('b31',1)
+ab_drop('b13',0)
+```

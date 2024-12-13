@@ -1,0 +1,35 @@
+To create the uppercase letter "X", we can break it down into different segments. 
+
+Here is a step-by-step guide on how to generate the English letter "X" using the given block types:
+
+1. Start by creating the two diagonal lines of the "X" shape. Place two b31 blocks diagonally from the top left corner to the bottom right corner. Use the ab_drop() command to place them at positions (2,1) and (3,2).
+```
+ab_drop('b31',2)
+ab_drop('b31',3)
+```
+
+2. Create the center vertical line of the "X" shape. Place a b13 block vertically between the two diagonal lines. Use the ab_drop() command to place it at position (2,2).
+```
+ab_drop('b13',2)
+```
+
+3. Add stability to the structure. Place two b11 blocks on top of each other at the bottom of the "X" shape. Use the ab_drop() command to place them at positions (4,1) and (4,2).
+```
+ab_drop('b11',4)
+ab_drop('b11',4)
+```
+
+4. Complete the letter "X" by adding the foundation. Place a b31 block horizontally at the bottom of the structure. Use the ab_drop() command to place it at position (2,1).
+```
+ab_drop('b31',2)
+```
+
+Your final stream of commands to generate the English letter "X" would be:
+```
+ab_drop('b31',2)
+ab_drop('b31',3)
+ab_drop('b13',2)
+ab_drop('b11',4)
+ab_drop('b11',4)
+ab_drop('b31',2)
+```

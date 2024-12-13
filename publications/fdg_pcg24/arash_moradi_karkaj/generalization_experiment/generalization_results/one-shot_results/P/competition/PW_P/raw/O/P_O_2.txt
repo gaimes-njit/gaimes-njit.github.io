@@ -1,0 +1,10 @@
+To generate the uppercase letter "O", we can use a combination of block types b31, b13, and b11. Here is the stream of commands to construct the letter:
+
+```plaintext
+ab_drop('b31', 1)
+ab_drop('b31', 3)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```
+
+This will create a stable representation of the letter "O" within the allowed space boundaries.

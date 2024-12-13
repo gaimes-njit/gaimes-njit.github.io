@@ -1,0 +1,8 @@
+To generate the uppercase English letter "L", you need to use the following sequence of ab_drop() commands:
+
+```python
+ab_drop('b31',1)
+ab_drop('b13',2)
+```
+
+This will create an "L" shape using the block types specified in the environment. The first command places a horizontal straight block with a width of 3 units at position 1 along the width. The second command places a vertical straight block with a width of 1 unit at position 2 along the width. The resulting shape will resemble the uppercase letter "L".

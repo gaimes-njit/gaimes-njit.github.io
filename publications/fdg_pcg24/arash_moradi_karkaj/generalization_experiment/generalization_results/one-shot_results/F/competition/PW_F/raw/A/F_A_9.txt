@@ -1,0 +1,18 @@
+To generate the uppercase English letter "A" using the given block types and environment, the following stream of commands can be used:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```
+
+Explanation:
+1. The first two commands `ab_drop('b13', 1)` and `ab_drop('b13', 2)` are used to create the vertical sides of the letter "A".
+2. The third command `ab_drop('b31', 2)` is used to create the horizontal crossbar of the letter "A".
+3. The next two commands `ab_drop('b13', 1)` and `ab_drop('b13', 2)` are used to reinforce the vertical sides of the letter "A".
+4. The final command `ab_drop('b31', 2)` is used to reinforce the horizontal crossbar of the letter "A".
+
+By executing these commands consecutively, the letter "A" will be generated in the Tetris-like environment.

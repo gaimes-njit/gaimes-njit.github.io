@@ -1,0 +1,27 @@
+```
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the base block
+ab_drop('b31', 9)
+
+# Build the bottom layer of the "U"
+ab_drop('b11', 8)
+
+# Build the second layer of the "U"
+ab_drop('b13', 9)
+
+# Build the third layer of the "U" and complete the left side
+ab_drop('b11', 7)
+ab_drop('b11', 9)
+
+# Build the third layer of the "U" and complete the right side
+ab_drop('b11', 11)
+ab_drop('b11', 13)
+
+# Build the top layer of the "U"
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+```

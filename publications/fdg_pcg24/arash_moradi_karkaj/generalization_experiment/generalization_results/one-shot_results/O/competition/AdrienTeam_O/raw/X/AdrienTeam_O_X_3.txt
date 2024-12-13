@@ -1,0 +1,70 @@
+The structure of the "X" can be created by following these steps:
+
+1. Initialize the map:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Create the bottom-left part of the "X":
+```python
+ab_drop('b11', 1)
+ab_drop('b11', 0)
+ab_drop('b31', 1)
+ab_drop('b31', 0)
+```
+
+3. Create the bottom-right part of the "X":
+```python
+ab_drop('b11', 18)
+ab_drop('b11', 19)
+ab_drop('b31', 17)
+ab_drop('b31', 18)
+```
+
+4. Create the top part of the "X":
+```python
+ab_drop('b11', 9)
+ab_drop('b11', 8)
+ab_drop('b11', 7)
+ab_drop('b11', 6)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b13', 9)
+```
+
+5. Create the middle part of the "X":
+```python
+ab_drop('b11', 5)
+ab_drop('b11', 15)
+ab_drop('b13', 5)
+```
+
+6. Print the final structure:
+```python
+for row in structure:
+    print(row)
+```
+
+
+The code block representing the `ab_drop()` function calls would be:
+
+```python
+ab_drop('b11', 1)
+ab_drop('b11', 0)
+ab_drop('b31', 1)
+ab_drop('b31', 0)
+ab_drop('b11', 18)
+ab_drop('b11', 19)
+ab_drop('b31', 17)
+ab_drop('b31', 18)
+ab_drop('b11', 9)
+ab_drop('b11', 8)
+ab_drop('b11', 7)
+ab_drop('b11', 6)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b13', 9)
+ab_drop('b11', 5)
+ab_drop('b11', 15)
+ab_drop('b13', 5)
+```

@@ -1,0 +1,37 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the bottom horizontal block
+ab_drop('b31', 9)
+
+# Drop the top vertical block of the left leg
+ab_drop('b11', 10)
+ab_drop('b11', 9)
+ab_drop('b11', 11)
+
+# Drop the bottom vertical block of the left leg
+ab_drop('b13', 10)
+
+# Drop the horizontal block connecting the legs
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Drop the top vertical block of the right leg
+ab_drop('b11', 14)
+ab_drop('b11', 13)
+ab_drop('b11', 15)
+
+# Drop the bottom vertical block of the right leg
+ab_drop('b13', 14)
+
+# Drop the horizontal block connecting the legs
+ab_drop('b11', 13)
+ab_drop('b11', 15)
+
+# Drop the top horizontal block of the middle part
+ab_drop('b31', 12)
+
+# Drop the bottom horizontal block of the middle part
+ab_drop('b31', 5)   
+```

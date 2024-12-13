@@ -1,0 +1,5 @@
+ab_drop('b31', 9) # drop b31 at slot 9
+ab_drop('b13', 8) # drop b13 at slot 8
+ab_drop('b13', 10) # drop b13 at slot 10
+ab_drop('b31', 9) # drop b31 at slot 9
+ab_drop('b11', 7) # drop b11 at slot 7

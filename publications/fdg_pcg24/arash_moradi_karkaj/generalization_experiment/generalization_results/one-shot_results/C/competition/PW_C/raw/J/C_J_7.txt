@@ -1,0 +1,20 @@
+To generate the uppercase English letter "J", we will use the following ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+```
+
+Explanation:
+1. The first command `ab_drop('b31',1)` places a horizontal straight block of width 3 units and height 1 unit at position 1. This forms the base of the "J".
+2. The second command `ab_drop('b13',2)` places a vertical straight block of width 1 unit and height 3 units at position 2. This forms the vertical line of the "J".
+3. The third command `ab_drop('b31',2)` places another horizontal straight block of width 3 units and height 1 unit at position 2. This completes the top part of the "J".
+4. The fourth command `ab_drop('b11',2)` places a square block of dimensions 1x1 at position 2. This forms the top-right corner of the "J".
+5. The fifth command `ab_drop('b11',3)` places another square block of dimensions 1x1 at position 3. This forms the middle-right part of the "J".
+6. The last command `ab_drop('b11',4)` places a third square block of dimensions 1x1 at position 4. This forms the bottom-right part of the "J".
+
+By executing these commands consecutively, the "J" letter will be generated in the Tetris-like environment with 2D gravity rules.

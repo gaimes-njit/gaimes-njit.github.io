@@ -1,0 +1,45 @@
+Step 1: Draw the letter "T" with asterisks:
+```
+*****
+  *
+  *
+  *
+  *
+```
+
+Step 2: List the asterisks and spaces in each row:
+- Row 1: 5 asterisks, 0 spaces
+- Row 2: 2 spaces, 1 asterisk, 2 spaces
+- Row 3: 2 spaces, 1 asterisk, 2 spaces
+- Row 4: 2 spaces, 1 asterisk, 2 spaces
+- Row 5: 2 spaces, 1 asterisk, 2 spaces
+
+Step 3: Replace asterisks with x and spaces with y:
+- Row 1: 5x, 0y
+- Row 2: 2y, 1x, 2y
+- Row 3: 2y, 1x, 2y
+- Row 4: 2y, 1x, 2y
+- Row 5: 2y, 1x, 2y
+
+Step 4: Write out each x and y for each row:
+- Row 1: x-1, x-2, x-3, x-4, x-5
+- Row 2: y-1, x-2, y-3, y-4, y-5
+- Row 3: y-1, x-2, y-3, y-4, y-5
+- Row 4: y-1, x-2, y-3, y-4, y-5
+- Row 5: y-1, x-2, y-3, y-4, y-5
+
+Step 5: Indicate the position of each variable:
+- Row 1: x-1; x-2; x-3; x-4; x-5
+- Row 2: y-1; x-2; y-3; y-4; y-5
+- Row 3: y-1; x-2; y-3; y-4; y-5
+- Row 4: y-1; x-2; y-3; y-4; y-5
+- Row 5: y-1; x-2; y-3; y-4; y-5
+
+Step 6: Return `ab_drop` function calls:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

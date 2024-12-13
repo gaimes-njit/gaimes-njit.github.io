@@ -1,0 +1,28 @@
+To create the structure of an "H" inside a 20*16 box, you can use the following sequence of ab_drop commands:
+
+1. Drop a b31 block at position (8, 6):
+ab_drop('b31', 8)
+
+2. Drop a b31 block at position (8, 12):
+ab_drop('b31', 8)
+
+3. Drop a b13 block at position (6, 9):
+ab_drop('b13', 6)
+
+4. Drop a b13 block at position (12, 9):
+ab_drop('b13', 12)
+
+5. Drop a b11 block at position (10, 9):
+ab_drop('b11', 10)
+
+Here is the resulting structure of an "H" inside the 20*16 box:
+
+******
+*      *
+*      *
+*   ***
+*   ***
+*   ***
+*      *
+*      *
+******

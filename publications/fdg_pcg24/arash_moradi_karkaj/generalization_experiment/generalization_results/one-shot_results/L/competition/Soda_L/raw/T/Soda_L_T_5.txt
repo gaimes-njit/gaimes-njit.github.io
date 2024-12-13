@@ -1,0 +1,10 @@
+```
+# Step 1: Create the top bar of the T
+ab_drop("b13", 9)
+
+# Step 2: Create the vertical pipe of the T
+ab_drop("b31", 9)
+
+# Step 3: Create the bottom bar of the T
+ab_drop("b13", 9)
+```

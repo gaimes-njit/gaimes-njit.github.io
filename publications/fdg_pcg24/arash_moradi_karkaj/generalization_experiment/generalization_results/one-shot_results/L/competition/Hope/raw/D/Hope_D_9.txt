@@ -1,0 +1,39 @@
+Here is the solution to create the structure resembling the letter "D" inside a 20*16 box using the ab_drop() function:
+
+1. Drop the first block (b11) at position (0, 0):
+    ab_drop('b11', 0)
+
+2. Drop the second block (b13) at position (0, 1):
+    ab_drop('b13', 0)
+
+3. Drop the third block (b13) at position (3, 1):
+    ab_drop('b13', 3)
+
+4. Drop the fourth block (b13) at position (6, 1):
+    ab_drop('b13', 6)
+
+5. Drop the fifth block (b13) at position (9, 1):
+    ab_drop('b13', 9)
+
+6. Drop the sixth block (b13) at position (12, 1):
+    ab_drop('b13', 12)
+
+7. Drop the seventh block (b13) at position (15, 1):
+    ab_drop('b13', 15)
+
+8. Drop the eighth block (b13) at position (0, 4):
+    ab_drop('b13', 0)
+
+9. Drop the ninth block (b13) at position (0, 7):
+    ab_drop('b13', 0)
+
+10. Drop the tenth block (b31) at position (0, 10):
+    ab_drop('b31', 0)
+
+11. Drop the eleventh block (b31) at position (0, 13):
+    ab_drop('b31', 0)
+
+12. Drop the twelfth block (b31) at position (0, 16):
+    ab_drop('b31', 0)
+
+The resulting structure will resemble the letter "D" inside the 20*16 box.

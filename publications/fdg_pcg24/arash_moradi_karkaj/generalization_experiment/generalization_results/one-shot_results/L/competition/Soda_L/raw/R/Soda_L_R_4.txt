@@ -1,0 +1,16 @@
+```python
+# Step 1: Create the vertical left part of the letter R
+ab_drop("b31", 5)
+ab_drop("b31", 4)
+ab_drop("b31", 3)
+
+# Step 2: Create the top bar of the letter R
+ab_drop("b13", 3)
+
+# Step 3: Create the bottom bar of the letter R
+ab_drop("b13", 2)
+ab_drop("b13", 1)
+ab_drop("b13", 0)
+```
+
+This sequence of ab_drop() calls will generate a structure that looks like the capital letter "R". Each block is dropped in a bottom-to-top fashion to ensure stability.

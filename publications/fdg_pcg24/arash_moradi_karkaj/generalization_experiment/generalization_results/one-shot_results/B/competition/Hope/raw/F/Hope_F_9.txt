@@ -1,0 +1,27 @@
+To create the letter "F" inside a 20x16 box, you can use the ab_drop() function with different block types and positions. Here's the sequence of commands to achieve that:
+
+1. Drop a b31 block at position 0:
+   ab_drop('b31', 0)
+
+2. Drop a b11 block at position 0:
+   ab_drop('b11', 0)
+
+3. Drop a b11 block at position 0:
+   ab_drop('b11', 0)
+
+4. Drop a b11 block at position 0:
+   ab_drop('b11', 0)
+
+5. Drop a b31 block at position 7:
+   ab_drop('b31', 7)
+
+6. Drop a b13 block at position 0:
+   ab_drop('b13', 0)
+
+7. Drop a b13 block at position 0:
+   ab_drop('b13', 0)
+
+8. Drop a b13 block at position 0:
+   ab_drop('b13', 0)
+
+Note: The order of the commands may vary depending on the specific requirements or constraints of the ab_drop() function. This sequence assumes that the blocks are dropped from left to right.

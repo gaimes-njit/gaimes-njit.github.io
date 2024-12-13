@@ -1,0 +1,5 @@
+ab_drop('b31', 9)  # create the top horizontal line
+ab_drop('b13', 8)  # create the left vertical line
+ab_drop('b13', 10)  # create the right vertical line
+ab_drop('b31', 9)  # create the middle horizontal line
+ab_drop('b11', 7)  # create the top point of the 'A' letter

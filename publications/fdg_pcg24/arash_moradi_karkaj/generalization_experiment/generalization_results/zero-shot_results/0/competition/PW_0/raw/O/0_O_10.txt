@@ -1,0 +1,23 @@
+To create the uppercase English letter "O" using the block types and gravity rules, we can follow these steps:
+
+1. Place a b31 block at (5, 1) to create the top horizontal line of the "O".
+2. Place a b13 block at (1, 4) to create the left vertical line of the "O".
+3. Place a b11 block at (1, 5) to create the bottom left corner of the "O".
+4. Place a b11 block at (4, 1) to create the top right corner of the "O".
+5. Place a b11 block at (4, 5) to create the bottom right corner of the "O".
+6. Place a b11 block at (5, 5) to create the bottom horizontal line of the "O".
+7. Place a b13 block at (1, 8) to create the right vertical line of the "O".
+8. Place a b13 block at (5, 8) to create the right vertical line of the "O".
+
+The stream of commands would be:
+
+```
+ab_drop(31, 5)
+ab_drop(13, 1)
+ab_drop(11, 1)
+ab_drop(11, 4)
+ab_drop(11, 4)
+ab_drop(11, 5)
+ab_drop(13, 1)
+ab_drop(13, 5)
+```

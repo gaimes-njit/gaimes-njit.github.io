@@ -1,0 +1,30 @@
+To generate the uppercase English letter "D", we can follow the same approach as the letter "B" but with slight modifications. Here is a step-by-step guide to constructing the letter "D":
+
+1. Start by building the foundation of the letter "D" by placing a horizontal straight block (b31) at the bottom:
+   ```
+   ab_drop('b31', 1)
+   ```
+
+2. Move to the next structural layer and place two vertical straight blocks (b13) on both sides of the horizontal block:
+   ```
+   ab_drop('b13', 0)
+   ab_drop('b13', 2)
+   ```
+
+3. Continue by adding another horizontal straight block (b31) on top of the previous layer:
+   ```
+   ab_drop('b31', 1)
+   ```
+
+4. Place two vertical straight blocks (b13) on both sides of the new horizontal block:
+   ```
+   ab_drop('b13', 0)
+   ab_drop('b13', 2)
+   ```
+
+5. Finally, complete the letter "D" by adding a small horizontal straight block (b11) on top of the structure:
+   ```
+   ab_drop('b11', 1)
+   ```
+
+After following these steps, you should have successfully generated the uppercase English letter "D" in the Tetris-like environment.

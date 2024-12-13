@@ -1,0 +1,7 @@
+ab_drop('b13', 9) # Drop 'b13' in the center
+ab_drop('b11', 8) # Drop 'b11' to the left of the center
+ab_drop('b11', 10) # Drop 'b11' to the right of the center
+ab_drop('b31', 9) # Drop 'b31' on top, aligning the center with the center of the 'b13'
+ab_drop('b11', 8) # Drop 'b11' to the left of the center
+ab_drop('b11', 10) # Drop 'b11' to the right of the center
+ab_drop('b31', 9) # Drop 'b31' on top, aligning the center with the center of the 'b13'

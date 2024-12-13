@@ -1,0 +1,25 @@
+To generate a stable structure that looks like the uppercase character "A" and meets all the hard constraints, you can use the `ab_drop()` function as follows:
+
+1. First, initialize the structure as an empty grid using the `structure` variable:
+   ```
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. To create the bottom b31 block of the "A", use the `ab_drop()` function to drop a b31 block with its center aligned at slot 9. This will ensure stability and meet the hard constraint.
+   ```
+   ab_drop('b31', 9)
+   ```
+
+3. Next, to create the top b31 block of the "A", use the `ab_drop()` function to drop another b31 block with its center aligned at slot 9, but this time on layer 1. This will ensure stability and meet the hard constraint. 
+   ```
+   ab_drop('b31', 9)
+   ```
+
+4. To create the diagonal b13 block of the "A", use the `ab_drop()` function to drop a b13 block with its center aligned at slot 9, but this time on layer 2. This will ensure stability and meet the hard constraint.
+   ```
+   ab_drop('b13', 9)
+   ```
+
+5. Repeat steps 2-4 to create additional layers of the diagonal b13 block until the desired height of the "A" is reached. Make sure to adjust the layer number accordingly.
+
+By following these steps and carefully selecting the drop positions and orders, you can generate a stable structure that looks like the uppercase letter "A" and meets all the hard constraints.

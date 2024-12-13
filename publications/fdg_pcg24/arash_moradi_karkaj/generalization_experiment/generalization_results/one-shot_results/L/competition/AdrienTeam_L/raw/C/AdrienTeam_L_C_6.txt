@@ -1,0 +1,20 @@
+Here is the `ab_drop()` function calls to generate the structure resembling "C":
+
+```
+# Initialize the structure
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the base horizontal block
+ab_drop('b31', 9)
+
+# Drop the vertical block on the left side
+ab_drop('b13', 2)
+
+# Drop the vertical block on the right side
+ab_drop('b13', 16)
+
+# Drop the top horizontal block
+ab_drop('b31', 9)
+```
+
+This code will create a structure in the shape of the letter "C" with the given constraints.

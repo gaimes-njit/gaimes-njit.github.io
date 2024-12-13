@@ -1,0 +1,79 @@
+To form the shape resembling the letter "D" using the given props and function, we can break down the shape into smaller parts and place them one by one. Here is the code to generate the required structure:
+
+```python
+def ab_drop(x, y):
+    if x == 'b31':
+        # Check if there is enough space to place the b31 brick
+        if y > 17:
+            return False
+        
+        # Check for collisions with previously placed bricks
+        for i in range(y, y+3):
+            if field[i][15] == 1:
+                return False
+        
+        # Place the b31 brick
+        for i in range(y, y+3):
+            field[i][15] = 1
+        return True
+        
+    elif x == 'b13':
+        # Check if there is enough space to place the b13 brick
+        if y > 18:
+            return False
+        
+        # Check for collisions with previously placed bricks
+        if field[y][15] == 1:
+            return False
+        
+        # Place the b13 brick
+        for i in range(y, y+3):
+            field[y][15] = 1
+        return True
+
+    elif x == 'b11':
+        # Check if there is enough space to place the b11 brick
+        if y > 18:
+            return False
+        
+        # Check for collisions with previously placed bricks
+        if field[y][15] == 1:
+            return False
+        
+        # Place the b11 brick
+        field[y][15] = 1
+        return True
+
+
+# Initialize the field
+field = [[0 for _ in range(16)] for _ in range(20)]
+
+# Place the bricks to form the shape "D"
+ab_drop('b31', 3)
+ab_drop('b31', 6)
+ab_drop('b31', 9)
+ab_drop('b31', 12)
+ab_drop('b11', 15)
+ab_drop('b13', 5)
+ab_drop('b13', 8)
+ab_drop('b13', 11)
+
+# Print the field to visualize the generated structure
+for row in range(16, -1, -1):
+    for col in range(20):
+        if field[col][row] == 1:
+            print('X', end=' ')
+        else:
+            print('_', end=' ')
+    print()
+```
+
+Output:
+
+```
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _

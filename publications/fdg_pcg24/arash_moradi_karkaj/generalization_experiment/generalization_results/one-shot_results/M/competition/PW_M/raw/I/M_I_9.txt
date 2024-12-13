@@ -1,0 +1,21 @@
+To generate the uppercase letter "I" using the provided command and block types, you can follow these steps:
+
+1. Start with the vertical foundation for the letter "I":
+   - Type `ab_drop('b13',1)` to place a vertical straight block at position 1.
+   - Type `ab_drop('b13',3)` to place another vertical straight block at position 3.
+   - Type `ab_drop('b13',4)` to place another vertical straight block at position 4.
+   - Type `ab_drop('b13',6)` to place another vertical straight block at position 6.
+
+2. Add the horizontal top for the letter "I":
+   - Type `ab_drop('b31',2)` to place a horizontal straight block at position 2.
+   - Type `ab_drop('b31',5)` to place another horizontal straight block at position 5.
+
+Here is the stream of commands to generate the uppercase letter "I":
+```
+ab_drop('b13',1)
+ab_drop('b13',3)
+ab_drop('b13',4)
+ab_drop('b13',6)
+ab_drop('b31',2)
+ab_drop('b31',5)
+```

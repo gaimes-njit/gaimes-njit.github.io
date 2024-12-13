@@ -1,0 +1,40 @@
+To generate a stable structure that resembles the character "Y" while meeting all hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty grid:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Place the base blocks at the bottom of the structure to form a stable foundation:
+```python
+for i in range(W):
+    ab_drop("b11", i)
+```
+
+3. Position the blocks to form the two diagonal arms of the "Y" character:
+```python
+# Place the left arm
+ab_drop("b31", 6)
+ab_drop("b31", 7)
+
+# Place the right arm
+ab_drop("b31", 12)
+ab_drop("b31", 13)
+```
+
+4. Position the block to form the vertical stem of the "Y" character:
+```python
+ab_drop("b13", 10)
+ab_drop("b13", 11)
+ab_drop("b13", 12)
+```
+
+5. To meet constraint 5.2 (no boundary intrusion), we can adjust the position of the blocks so that they do not intrude on the map's boundary. For example, we can slightly shift the blocks to the left or right.
+
+6. The final structure should resemble the character "Y":
+```python
+for row in structure:
+    print(' '.join(row))
+```
+
+Please note that the specific positions mentioned in the steps above might need adjustment based on the desired placement and stability of the structure.

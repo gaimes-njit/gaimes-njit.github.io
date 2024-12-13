@@ -1,0 +1,13 @@
+```
+ab_drop("b11", 1)     #place the first block at position (1,1)
+ab_drop("b13", 2)     #place the second block at position (2,1)
+ab_drop("b31", 2)     #place the third block at position (2,2)
+ab_drop("b13", 4)     #place the fourth block at position (4,1)
+ab_drop("b11", 4)     #place the fifth block at position (4,2)
+ab_drop("b13", 6)     #place the sixth block at position (6,1)
+ab_drop("b31", 6)     #place the seventh block at position (6,2)
+ab_drop("b11", 6)     #place the eighth block at position (6,3)
+ab_drop("b13", 8)     #place the ninth block at position (8,1)
+ab_drop("b13", 8)     #place the tenth block at position (8,2)
+ab_drop("b11", 8)     #place the eleventh block at position (8,3)
+```

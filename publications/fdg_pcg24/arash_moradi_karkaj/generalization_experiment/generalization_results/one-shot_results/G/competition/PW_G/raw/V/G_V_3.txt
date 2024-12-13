@@ -1,0 +1,12 @@
+To create the uppercase letter "V" using the given block types and environment, you can follow these commands:
+
+```
+ab_drop('b31',1)  # Place a horizontal straight block at position 1
+ab_drop('b13',1)  # Place a vertical straight block at position 1
+ab_drop('b13',2)  # Place a vertical straight block at position 2
+ab_drop('b31',3)  # Place a horizontal straight block at position 3
+ab_drop('b31',4)  # Place a horizontal straight block at position 4
+ab_drop('b13',4)  # Place a vertical straight block at position 4
+```
+
+These commands will generate the letter "V" in the Tetris-like environment, following the stacking and stability rules.

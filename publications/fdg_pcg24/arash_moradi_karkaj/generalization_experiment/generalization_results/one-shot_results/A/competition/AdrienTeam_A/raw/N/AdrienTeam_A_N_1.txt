@@ -1,0 +1,13 @@
+The following `ab_drop()` function calls can be used to create a stable structure resembling "N" while satisfying all the specified constraints:
+
+```
+ab_drop('b11',0)
+ab_drop('b11',0)
+ab_drop('b11',1)
+ab_drop('b11',1)
+ab_drop('b31',1)
+ab_drop('b11',0)
+ab_drop('b11',1)
+```
+
+Please note that the orientation of the blocks can be adjusted according to the desired shape of "N".

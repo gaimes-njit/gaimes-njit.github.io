@@ -1,0 +1,11 @@
+To create the uppercase English letter "W", we need to stack and arrange the block types (b13, b31, and b11) in a specific manner. Here is the stream of commands to achieve this:
+
+```
+ab_drop('b31',1)    # Place a horizontal straight block at position 1
+ab_drop('b31',4)    # Place another horizontal straight block at position 4
+ab_drop('b13',2)    # Place a vertical straight block at position 2
+ab_drop('b13',4)    # Place another vertical straight block at position 4
+ab_drop('b11',3)    # Place a square block at position 3
+```
+
+With these commands, the blocks will be placed and stacked to form the uppercase letter "W" within the allowed boundaries of the grid.

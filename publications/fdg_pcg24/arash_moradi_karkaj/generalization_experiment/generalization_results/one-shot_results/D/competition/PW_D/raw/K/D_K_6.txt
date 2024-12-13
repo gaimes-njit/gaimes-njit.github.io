@@ -1,0 +1,10 @@
+To generate the uppercase letter "K" using the given block types and environment, you can use the following stream of commands:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',0)
+ab_drop('b13',2)
+ab_drop('b31',1)
+```
+
+These commands will place the block types in the correct positions to form the letter "K" within the allowed space and respecting the gravity rules.

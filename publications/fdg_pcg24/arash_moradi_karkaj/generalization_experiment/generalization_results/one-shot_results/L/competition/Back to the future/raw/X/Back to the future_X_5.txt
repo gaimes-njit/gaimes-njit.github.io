@@ -1,0 +1,22 @@
+To generate a stable structure that looks like the uppercase character "X" and meets all the hard constraints, we can follow the following steps:
+
+1. Start by initializing the structure as an empty grid using the provided code snippet:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Begin building the structure from the bottom layer (layer 0) upwards. Use the `ab_drop()` function to drop the blocks in a stable manner.
+
+3. Start by dropping a b31 block in the middle of the bottom layer to provide a stable base for the structure. Use the `ab_drop('b31', W//2)` function to drop the block.
+
+4. Now, drop a b13 block on top of the base block, slightly offset to the right or left. This will form the diagonal lines of the "X" shape. Use the `ab_drop('b13', W//2 + 1)` or `ab_drop('b13', W//2 - 1)` function to drop the block.
+
+5. Repeat step 4 on top of the previously dropped b13 block, but offset in the opposite direction. This will complete the diagonal lines of the "X" shape. Use the `ab_drop('b13', W//2 - 1)` or `ab_drop('b13', W//2 + 1)` function to drop the block.
+
+6. Finally, drop a b11 block on top of the diagonal lines to complete the middle part of the "X" shape. Use the `ab_drop('b11', W//2)` function to drop the block.
+
+7. Continue building the upper part of the "X" shape by repeating steps 4 to 6, but at a higher layer each time. Adjust the offset of the b13 blocks accordingly to maintain the shape.
+
+8. Repeat steps 4 to 6 until reaching the top layer (layer 15) to complete the entire structure.
+
+Remember to perform stability checks before each call to the `ab_drop()` function to ensure that the structure remains stable and does not collapse during each drop.

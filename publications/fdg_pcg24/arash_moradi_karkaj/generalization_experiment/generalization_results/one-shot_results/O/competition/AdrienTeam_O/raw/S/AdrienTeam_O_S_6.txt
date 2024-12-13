@@ -1,0 +1,15 @@
+To construct the "S" shape using the `ab_drop()` function, the following sequence of `ab_drop()` inputs can be used:
+
+```
+ab_drop('b13', 0) # Drop a vertical block at slot 0 (leftmost position)
+ab_drop('b31', 1) # Drop a horizontal block at slot 1
+ab_drop('b11', 2) # Drop a single block at slot 2
+ab_drop('b11', 1) # Drop a single block at slot 1
+ab_drop('b11', 0) # Drop a single block at slot 0
+ab_drop('b31', 2) # Drop a horizontal block at slot 2 (rightmost position)
+ab_drop('b13', 1) # Drop a vertical block at slot 1
+ab_drop('b13', 2) # Drop a vertical block at slot 2
+ab_drop('b31', 0) # Drop a horizontal block at slot 0 (leftmost position)
+```
+
+This sequence of `ab_drop()` inputs will create a stable and continuous structure resembling the letter "S".

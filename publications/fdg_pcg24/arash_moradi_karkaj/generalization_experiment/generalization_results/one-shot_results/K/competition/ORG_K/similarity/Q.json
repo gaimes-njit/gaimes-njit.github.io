@@ -1,0 +1,988 @@
+{
+  "count": 7,
+  "similarityRate": 0.0025384721479245593,
+  "trials": [
+    {
+      "id": "TheOrganizersK_Q_1.png",
+      "label": "Q",
+      "similarity": 0.0025036190636456013
+    },
+    {
+      "id": "TheOrganizersK_Q_10.png",
+      "label": "Q",
+      "similarity": 0.0025902704801410437
+    },
+    {
+      "id": "TheOrganizersK_Q_2.png",
+      "label": "Q",
+      "similarity": 0.002499435329809785
+    },
+    {
+      "id": "TheOrganizersK_Q_3.png",
+      "label": "Q",
+      "similarity": 0.002507893368601799
+    },
+    {
+      "id": "TheOrganizersK_Q_4.png",
+      "label": "Q",
+      "similarity": 0.0025887014344334602
+    },
+    {
+      "id": "TheOrganizersK_Q_6.png",
+      "label": "Q",
+      "similarity": 0.0025425460189580917
+    },
+    {
+      "id": "TheOrganizersK_Q_8.png",
+      "label": "Q",
+      "similarity": 0.0025368393398821354
+    }
+  ],
+  "similarities": [
+    {
+      "id": "TheOrganizersK_Q_1.png",
+      "raws": [
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "A",
+          "softmax_prob": 0.0018956095445901155
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "B",
+          "softmax_prob": 0.001303766155615449
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "C",
+          "softmax_prob": 0.0024867882020771503
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "D",
+          "softmax_prob": 0.0008167179184965789
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "E",
+          "softmax_prob": 0.10537433624267578
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "F",
+          "softmax_prob": 0.002424500649794936
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "G",
+          "softmax_prob": 0.021312469616532326
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "H",
+          "softmax_prob": 0.02789926715195179
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "I",
+          "softmax_prob": 0.003084358060732484
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "J",
+          "softmax_prob": 0.003456183709204197
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "K",
+          "softmax_prob": 0.7718580365180969
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "L",
+          "softmax_prob": 0.023685790598392487
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "M",
+          "softmax_prob": 0.001164381392300129
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "N",
+          "softmax_prob": 0.0013983515091240406
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "O",
+          "softmax_prob": 0.0006360160186886787
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "P",
+          "softmax_prob": 0.001065133954398334
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "Q",
+          "softmax_prob": 0.0025036190636456013
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "R",
+          "softmax_prob": 0.009870867244899273
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "S",
+          "softmax_prob": 0.0019510489655658603
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "T",
+          "softmax_prob": 0.001167972106486559
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "U",
+          "softmax_prob": 0.0009610266424715519
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "V",
+          "softmax_prob": 0.0004927238915115595
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "W",
+          "softmax_prob": 0.005787113681435585
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "X",
+          "softmax_prob": 0.004532642662525177
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "Y",
+          "softmax_prob": 0.0004523582465481013
+        },
+        {
+          "id": "TheOrganizersK_Q_1.png",
+          "label": "Z",
+          "softmax_prob": 0.0024188922252506018
+        }
+      ]
+    },
+    {
+      "id": "TheOrganizersK_Q_10.png",
+      "raws": [
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "A",
+          "softmax_prob": 0.09826616197824478
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "B",
+          "softmax_prob": 0.007173545192927122
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "C",
+          "softmax_prob": 0.006571691017597914
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "D",
+          "softmax_prob": 0.01201799139380455
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "E",
+          "softmax_prob": 0.06283887475728989
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "F",
+          "softmax_prob": 0.039750922471284866
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "G",
+          "softmax_prob": 0.019824307411909103
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "H",
+          "softmax_prob": 0.07740657776594162
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "I",
+          "softmax_prob": 0.01465438399463892
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "J",
+          "softmax_prob": 0.009714080020785332
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "K",
+          "softmax_prob": 0.4495203495025635
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "L",
+          "softmax_prob": 0.013383477926254272
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "M",
+          "softmax_prob": 0.008790446445345879
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "N",
+          "softmax_prob": 0.0481032058596611
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "O",
+          "softmax_prob": 0.004723722580820322
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "P",
+          "softmax_prob": 0.0034149957355111837
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "Q",
+          "softmax_prob": 0.0025902704801410437
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "R",
+          "softmax_prob": 0.06409615278244019
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "S",
+          "softmax_prob": 0.006304264068603516
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "T",
+          "softmax_prob": 0.007733012083917856
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "U",
+          "softmax_prob": 0.001807446009479463
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "V",
+          "softmax_prob": 0.0021033259108662605
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "W",
+          "softmax_prob": 0.011209707707166672
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "X",
+          "softmax_prob": 0.011989257298409939
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "Y",
+          "softmax_prob": 0.0006894393009133637
+        },
+        {
+          "id": "TheOrganizersK_Q_10.png",
+          "label": "Z",
+          "softmax_prob": 0.015322367660701275
+        }
+      ]
+    },
+    {
+      "id": "TheOrganizersK_Q_2.png",
+      "raws": [
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "A",
+          "softmax_prob": 0.0018903828458860517
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "B",
+          "softmax_prob": 0.0013025481021031737
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "C",
+          "softmax_prob": 0.0024820761755108833
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "D",
+          "softmax_prob": 0.0008123169536702335
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "E",
+          "softmax_prob": 0.10604807734489441
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "F",
+          "softmax_prob": 0.0024226049426943064
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "G",
+          "softmax_prob": 0.021237604320049286
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "H",
+          "softmax_prob": 0.027774233371019363
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "I",
+          "softmax_prob": 0.003071065526455641
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "J",
+          "softmax_prob": 0.0034468218218535185
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "K",
+          "softmax_prob": 0.771702229976654
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "L",
+          "softmax_prob": 0.023476535454392433
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "M",
+          "softmax_prob": 0.0011649938533082604
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "N",
+          "softmax_prob": 0.001394297811202705
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "O",
+          "softmax_prob": 0.0006351996562443674
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "P",
+          "softmax_prob": 0.0010626150760799646
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "Q",
+          "softmax_prob": 0.002499435329809785
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "R",
+          "softmax_prob": 0.009853813797235489
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "S",
+          "softmax_prob": 0.0019466010853648186
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "T",
+          "softmax_prob": 0.0011654149275273085
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "U",
+          "softmax_prob": 0.0009604913648217916
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "V",
+          "softmax_prob": 0.0004926244728267193
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "W",
+          "softmax_prob": 0.005778360180556774
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "X",
+          "softmax_prob": 0.004519222769886255
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "Y",
+          "softmax_prob": 0.0004520336806308478
+        },
+        {
+          "id": "TheOrganizersK_Q_2.png",
+          "label": "Z",
+          "softmax_prob": 0.002408416010439396
+        }
+      ]
+    },
+    {
+      "id": "TheOrganizersK_Q_3.png",
+      "raws": [
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "A",
+          "softmax_prob": 0.001889358158223331
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "B",
+          "softmax_prob": 0.0013031542766839266
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "C",
+          "softmax_prob": 0.0024897537659853697
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "D",
+          "softmax_prob": 0.0008133660885505378
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "E",
+          "softmax_prob": 0.107278011739254
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "F",
+          "softmax_prob": 0.0024276110343635082
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "G",
+          "softmax_prob": 0.021185042336583138
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "H",
+          "softmax_prob": 0.02786283940076828
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "I",
+          "softmax_prob": 0.0030775638297200203
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "J",
+          "softmax_prob": 0.0034524390939623117
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "K",
+          "softmax_prob": 0.7702992558479309
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "L",
+          "softmax_prob": 0.023488301783800125
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "M",
+          "softmax_prob": 0.0011644228361546993
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "N",
+          "softmax_prob": 0.0013948815176263452
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "O",
+          "softmax_prob": 0.0006375477532856166
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "P",
+          "softmax_prob": 0.0010648559546098113
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "Q",
+          "softmax_prob": 0.002507893368601799
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "R",
+          "softmax_prob": 0.0098953852429986
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "S",
+          "softmax_prob": 0.0019518663175404072
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "T",
+          "softmax_prob": 0.0011687149526551366
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "U",
+          "softmax_prob": 0.0009623796795494854
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "V",
+          "softmax_prob": 0.0004943159874528646
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "W",
+          "softmax_prob": 0.005792821291834116
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "X",
+          "softmax_prob": 0.004529258236289024
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "Y",
+          "softmax_prob": 0.0004547572461888194
+        },
+        {
+          "id": "TheOrganizersK_Q_3.png",
+          "label": "Z",
+          "softmax_prob": 0.002414270769804716
+        }
+      ]
+    },
+    {
+      "id": "TheOrganizersK_Q_4.png",
+      "raws": [
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "A",
+          "softmax_prob": 0.002066924935206771
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "B",
+          "softmax_prob": 0.001374186365865171
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "C",
+          "softmax_prob": 0.002661718986928463
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "D",
+          "softmax_prob": 0.0008310435223393142
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "E",
+          "softmax_prob": 0.09719639271497726
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "F",
+          "softmax_prob": 0.0024908073246479034
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "G",
+          "softmax_prob": 0.023459065705537796
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "H",
+          "softmax_prob": 0.030856885015964508
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "I",
+          "softmax_prob": 0.0032108572777360678
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "J",
+          "softmax_prob": 0.0035844920203089714
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "K",
+          "softmax_prob": 0.7707285284996033
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "L",
+          "softmax_prob": 0.02528221905231476
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "M",
+          "softmax_prob": 0.001260115415789187
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "N",
+          "softmax_prob": 0.001511675538495183
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "O",
+          "softmax_prob": 0.000646715983748436
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "P",
+          "softmax_prob": 0.0010876375017687678
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "Q",
+          "softmax_prob": 0.0025887014344334602
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "R",
+          "softmax_prob": 0.01080358773469925
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "S",
+          "softmax_prob": 0.002009142190217972
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "T",
+          "softmax_prob": 0.0012364834547042847
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "U",
+          "softmax_prob": 0.0010038260370492935
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "V",
+          "softmax_prob": 0.0004994499031454325
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "W",
+          "softmax_prob": 0.006184926722198725
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "X",
+          "softmax_prob": 0.004569813143461943
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "Y",
+          "softmax_prob": 0.0004478094633668661
+        },
+        {
+          "id": "TheOrganizersK_Q_4.png",
+          "label": "Z",
+          "softmax_prob": 0.0024069109931588173
+        }
+      ]
+    },
+    {
+      "id": "TheOrganizersK_Q_6.png",
+      "raws": [
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "A",
+          "softmax_prob": 0.0019147666171193123
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "B",
+          "softmax_prob": 0.0013187078293412924
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "C",
+          "softmax_prob": 0.002537401160225272
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "D",
+          "softmax_prob": 0.0008266752120107412
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "E",
+          "softmax_prob": 0.11781392246484756
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "F",
+          "softmax_prob": 0.0024791874457150698
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "G",
+          "softmax_prob": 0.02156461961567402
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "H",
+          "softmax_prob": 0.02778477966785431
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "I",
+          "softmax_prob": 0.0031533041037619114
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "J",
+          "softmax_prob": 0.003519808640703559
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "K",
+          "softmax_prob": 0.7576773166656494
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "L",
+          "softmax_prob": 0.024348484352231026
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "M",
+          "softmax_prob": 0.0011889793677255511
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "N",
+          "softmax_prob": 0.001403682166710496
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "O",
+          "softmax_prob": 0.0006529098027385771
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "P",
+          "softmax_prob": 0.0010872152633965015
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "Q",
+          "softmax_prob": 0.0025425460189580917
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "R",
+          "softmax_prob": 0.010004134848713875
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "S",
+          "softmax_prob": 0.002013607183471322
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "T",
+          "softmax_prob": 0.0011829740833491087
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "U",
+          "softmax_prob": 0.0009900883305817842
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "V",
+          "softmax_prob": 0.0005015791393816471
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "W",
+          "softmax_prob": 0.005848514381796122
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "X",
+          "softmax_prob": 0.004652607720345259
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "Y",
+          "softmax_prob": 0.00046720803948119283
+        },
+        {
+          "id": "TheOrganizersK_Q_6.png",
+          "label": "Z",
+          "softmax_prob": 0.0025248215533792973
+        }
+      ]
+    },
+    {
+      "id": "TheOrganizersK_Q_8.png",
+      "raws": [
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "A",
+          "softmax_prob": 0.0019161882810294628
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "B",
+          "softmax_prob": 0.001315823756158352
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "C",
+          "softmax_prob": 0.0025248643942177296
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "D",
+          "softmax_prob": 0.0008272756240330637
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "E",
+          "softmax_prob": 0.11805544793605804
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "F",
+          "softmax_prob": 0.0024748591240495443
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "G",
+          "softmax_prob": 0.02156541682779789
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "H",
+          "softmax_prob": 0.02757706493139267
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "I",
+          "softmax_prob": 0.003150076838210225
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "J",
+          "softmax_prob": 0.0035138933453708887
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "K",
+          "softmax_prob": 0.7577039003372192
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "L",
+          "softmax_prob": 0.02436903864145279
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "M",
+          "softmax_prob": 0.0011881504906341434
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "N",
+          "softmax_prob": 0.0014034241903573275
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "O",
+          "softmax_prob": 0.0006524269701912999
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "P",
+          "softmax_prob": 0.0010854309657588601
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "Q",
+          "softmax_prob": 0.0025368393398821354
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "R",
+          "softmax_prob": 0.009965909644961357
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "S",
+          "softmax_prob": 0.002011849544942379
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "T",
+          "softmax_prob": 0.0011798478662967682
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "U",
+          "softmax_prob": 0.0009905911283567548
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "V",
+          "softmax_prob": 0.000500595779158175
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "W",
+          "softmax_prob": 0.005833275616168976
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "X",
+          "softmax_prob": 0.004663090221583843
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "Y",
+          "softmax_prob": 0.0004660044505726546
+        },
+        {
+          "id": "TheOrganizersK_Q_8.png",
+          "label": "Z",
+          "softmax_prob": 0.0025288246106356382
+        }
+      ]
+    }
+  ]
+}

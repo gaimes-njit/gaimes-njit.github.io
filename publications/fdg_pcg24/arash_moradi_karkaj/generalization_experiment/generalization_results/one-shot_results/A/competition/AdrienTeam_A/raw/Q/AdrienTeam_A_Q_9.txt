@@ -1,0 +1,15 @@
+The structure resembling "Q" can be created using the following `ab_drop()` inputs:
+
+```
+ab_drop('b11',9)
+ab_drop('b11',9)
+ab_drop('b11',10)
+ab_drop('b11',11)
+ab_drop('b11',9)
+ab_drop('b11',11)
+ab_drop('b11',9)
+ab_drop('b11',11)
+ab_drop('b31',10)
+```
+
+Please note that the above `ab_drop()` calls should be executed sequentially, one after the other, in the given order, to generate the desired structure.

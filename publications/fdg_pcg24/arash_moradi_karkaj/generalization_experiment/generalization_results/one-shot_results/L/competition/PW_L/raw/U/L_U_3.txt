@@ -1,0 +1,10 @@
+To generate the uppercase letter "U", you should use the following commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 3)
+ab_drop('b13', 6)
+ab_drop('b31', 8)
+ab_drop('b13', 8)
+```

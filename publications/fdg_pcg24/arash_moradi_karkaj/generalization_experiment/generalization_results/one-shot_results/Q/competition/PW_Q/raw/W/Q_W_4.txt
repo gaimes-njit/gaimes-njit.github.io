@@ -1,0 +1,21 @@
+To create the capital letter "W" using the given block types and commands, we can follow these steps:
+
+1. Place a horizontal straight block (b31) at position 1.
+2. Place a vertical straight block (b13) at position 4.
+3. Place a horizontal straight block (b31) at position 6.
+4. Place a vertical straight block (b13) at position 9.
+5. Place a horizontal straight block (b31) at position 11.
+6. Place a vertical straight block (b13) at position 14.
+7. Place a horizontal straight block (b31) at position 16.
+
+The stream of commands to generate the letter "W" would be:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',4)
+ab_drop('b31',6)
+ab_drop('b13',9)
+ab_drop('b31',11)
+ab_drop('b13',14)
+ab_drop('b31',16)
+```

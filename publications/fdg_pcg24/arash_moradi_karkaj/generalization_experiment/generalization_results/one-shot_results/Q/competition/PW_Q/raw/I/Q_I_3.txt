@@ -1,0 +1,26 @@
+To generate the uppercase letter "I" using the given block types and gravity rules, the following stream of commands can be used:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+```
+
+This series of commands places 20 vertical straight blocks (b13) with a width of 1 unit and a height of 3 units, starting from position 1 in the grid. The resulting shape resembles the uppercase letter "I" within the boundaries of the allowed space.

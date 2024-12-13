@@ -1,0 +1,32 @@
+To generate the uppercase letter "P", we can use the following commands:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',1)
+ab_drop('b31',4)
+ab_drop('b31',7)
+ab_drop('b13',7)
+ab_drop('b31',10)
+ab_drop('b31',13)
+ab_drop('b13',13)
+ab_drop('b31',16)
+ab_drop('b31',19)
+ab_drop('b31',16)
+ab_drop('b31',13)
+ab_drop('b13',13)
+ab_drop('b31',10)
+ab_drop('b31',7)
+ab_drop('b13',7)
+ab_drop('b31',4)
+ab_drop('b31',1)
+ab_drop('b31',4)
+ab_drop('b31',7)
+ab_drop('b13',7)
+ab_drop('b31',10)
+ab_drop('b31',13)
+ab_drop('b13',13)
+ab_drop('b31',16)
+ab_drop('b31',19)
+```
+
+These commands will drop the blocks in the correct positions to form the letter "P" within the allowed space.

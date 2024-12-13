@@ -1,0 +1,17 @@
+To generate the uppercase letter "I" using the ab_drop() command and the block types provided, we can follow these steps:
+
+1. Place a b13 block at position (1, 9).
+2. Place a b13 block at position (1, 10).
+3. Place a b13 block at position (1, 11).
+4. Place a b13 block at position (1, 12).
+5. Place a b13 block at position (1, 13).
+
+The stream of commands would look like this:
+
+```
+ab_drop('b13', 9)
+ab_drop('b13', 10)
+ab_drop('b13', 11)
+ab_drop('b13', 12)
+ab_drop('b13', 13)
+```

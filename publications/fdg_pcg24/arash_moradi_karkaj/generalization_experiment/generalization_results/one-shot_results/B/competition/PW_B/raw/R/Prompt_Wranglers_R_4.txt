@@ -1,0 +1,33 @@
+To generate the uppercase English letter "R", we can follow these steps:
+
+Step 1: Create the vertical line on the left side of the letter.
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+
+Step 2: Create the diagonal line from the top left corner to the bottom right corner.
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b11', 5)
+
+Step 3: Place the horizontal bar at the bottom of the letter.
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+
+Step 4: Place the horizontal bar above the diagonal line.
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+
+And that's it! By following these steps, we have constructed the uppercase English letter "R".

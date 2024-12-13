@@ -1,0 +1,13 @@
+To generate the uppercase English letter "R" using the given block types, we can follow the following commands:
+
+```
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+```

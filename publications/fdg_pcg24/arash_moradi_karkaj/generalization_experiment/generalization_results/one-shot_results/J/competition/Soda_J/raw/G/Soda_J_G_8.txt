@@ -1,0 +1,27 @@
+First, we need to create the horizontal bar of the letter "G". Using the "b31" block, we can achieve this by placing it at the center of the grid. 
+
+```python
+ab_drop("b31", 9)
+```
+
+Next, we need to create the vertical line of the letter "G". We can achieve this by placing two "b13" blocks on top of each other, near the center of the grid.
+
+```python
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+```
+
+Finally, we need to create the bottom horizontal bar of the letter "G". We can achieve this by placing a "b31" block directly beneath the vertical line, at the center of the grid.
+
+```python
+ab_drop("b31", 9)
+```
+
+The complete implementation is as follows:
+
+```python
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+```

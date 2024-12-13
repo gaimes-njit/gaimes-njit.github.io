@@ -1,0 +1,13 @@
+To generate the uppercase letter "H", we can use the following ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b11', 3)
+ab_drop('b31', 4)
+ab_drop('b13', 5)
+ab_drop('b31', 7)
+ab_drop('b13', 7)
+```
+
+These commands will create the shape of the letter "H" in the given environment, following the stacking and stability rules.

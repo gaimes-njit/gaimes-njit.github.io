@@ -1,0 +1,33 @@
+```python
+# Database with key-value pairs representing the letter "H"
+database = {
+  "a": "    *    ",
+  "b": "   * *   ",
+  "c": "  *   *  ",
+  "d": " ******* ",
+  "e": " *       *",
+  "f": " *       *",
+  "g": " *       *",
+  "h": " *       *",
+}
+
+# Function to drop the values in the database
+def ab_drop(character):
+    return database[character]
+
+# Sequence of ab_drop calls to generate the letter "H"
+sequence = [
+   ab_drop("a"),
+   ab_drop("b"),
+   ab_drop("c"),
+   ab_drop("d"),
+   ab_drop("e"),
+   ab_drop("f"),
+   ab_drop("g"),
+   ab_drop("h"),
+]
+
+sequence  # Return the sequence as the answer
+```
+
+The above code generates a sequence of `ab_drop` function calls to create a structure that looks like the letter "H". Each `ab_drop` call retrieves the corresponding value from the database, representing a line of the letter. The resulting sequence of function calls will generate the letter "H".

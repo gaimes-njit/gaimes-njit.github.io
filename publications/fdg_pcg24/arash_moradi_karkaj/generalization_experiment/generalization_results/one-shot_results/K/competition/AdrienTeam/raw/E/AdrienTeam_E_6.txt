@@ -1,0 +1,30 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the first block
+ab_drop('b13', 9)
+
+# Build the horizontal part of 'E'
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+
+# Build the vertical part of 'E'
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+
+# Build the horizontal part of 'E'
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+
+# Build the base of 'E'
+ab_drop('b11', 7)
+ab_drop('b11', 11)
+
+# Build the top part of 'E'
+ab_drop('b11', 7)
+ab_drop('b11', 11)
+
+# Build the middle horizontal part of 'E'
+ab_drop('b31', 9)
+
+```

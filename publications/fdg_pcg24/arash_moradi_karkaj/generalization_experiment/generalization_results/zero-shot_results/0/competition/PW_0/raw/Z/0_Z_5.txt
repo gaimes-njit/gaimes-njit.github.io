@@ -1,0 +1,21 @@
+To create the letter "Z" using the given block types, we can follow these steps:
+
+1. Place a b13 block at position (1,1) using the command `ab_drop('b13', 1)`. This will create the top-left part of the letter "Z".
+
+2. Place a b31 block at position (4,1) using the command `ab_drop('b31', 4)`. This will create the top horizontal line of the letter "Z".
+
+3. Place another b13 block at position (7,3) using the command `ab_drop('b13', 7)`. This will create the middle vertical line of the letter "Z".
+
+4. Place another b31 block at position (10,1) using the command `ab_drop('b31', 10)`. This will create the bottom horizontal line of the letter "Z".
+
+5. Place a b13 block at position (13,3) using the command `ab_drop('b13', 13)`. This will create the bottom-right part of the letter "Z".
+
+Here is the complete stream of commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b31', 4)
+ab_drop('b13', 7)
+ab_drop('b31', 10)
+ab_drop('b13', 13)
+```

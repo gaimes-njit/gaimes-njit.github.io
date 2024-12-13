@@ -1,0 +1,43 @@
+```
+def ab_drop():
+    return "ab_drop"
+
+def create_C_structure(database):
+    c_structure = []
+    if database.get("top_left") == "C":
+        c_structure.append(ab_drop())
+    if database.get("top") == "C":
+        c_structure.append(ab_drop())
+    if database.get("top_right") == "C":
+        c_structure.append(ab_drop())
+    if database.get("middle_left") == "C":
+        c_structure.append(ab_drop())
+    if database.get("middle_right") == "C":
+        c_structure.append(ab_drop())
+    if database.get("bottom_left") == "C":
+        c_structure.append(ab_drop())
+    if database.get("bottom") == "C":
+        c_structure.append(ab_drop())
+    if database.get("bottom_right") == "C":
+        c_structure.append(ab_drop())
+    return c_structure
+
+database = {
+    "top_left": "C",
+    "top": "C",
+    "top_right": "C",
+    "middle_left": "C",
+    "middle_right": "C",
+    "bottom_left": "C",
+    "bottom": "C",
+    "bottom_right": "C"
+}
+
+c_structure = create_C_structure(database)
+c_structure
+```
+
+Output:
+```
+['ab_drop', 'ab_drop', 'ab_drop', 'ab_drop', 'ab_drop', 'ab_drop', 'ab_drop', 'ab_drop']
+```

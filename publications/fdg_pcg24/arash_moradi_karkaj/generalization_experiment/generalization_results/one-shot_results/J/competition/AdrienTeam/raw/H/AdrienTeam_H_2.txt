@@ -1,0 +1,28 @@
+Here is an example solution that adheres to the given constraints:
+
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Base of the "H"
+ab_drop('b31', 8)
+
+# Left vertical part of the "H"
+ab_drop('b11', 7)
+ab_drop('b11', 7)
+
+# Middle horizontal part of the "H"
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Right vertical part of the "H"
+ab_drop('b11', 11)
+ab_drop('b11', 11)
+
+# Top horizontal part of the "H"
+ab_drop('b11', 7)
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+```

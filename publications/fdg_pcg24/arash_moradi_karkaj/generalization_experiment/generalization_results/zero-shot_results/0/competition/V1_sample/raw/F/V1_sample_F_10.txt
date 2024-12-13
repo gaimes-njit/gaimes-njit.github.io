@@ -1,0 +1,10 @@
+Using the ‘ab drop()’ function, we can create a stable structure that looks like the letter "F" by dropping blocks in the following order:
+
+1. Drop a b13 block at layer H with its center at slot 8.
+2. Drop a b11 block at layer H-1 with its center at slot 7.
+3. Drop a b11 block at layer H-2 with its center at slot 7.
+4. Drop a b11 block at layer H-3 with its center at slot 7.
+5. Drop a b11 block at layer H-4 with its center at slot 9.
+6. Drop a b11 block at layer H-5 with its center at slot 9.
+
+By following these steps and dropping the blocks in the specified order and position, we can create a stable structure that resembles the letter "F" using the ‘ab drop()’ function.

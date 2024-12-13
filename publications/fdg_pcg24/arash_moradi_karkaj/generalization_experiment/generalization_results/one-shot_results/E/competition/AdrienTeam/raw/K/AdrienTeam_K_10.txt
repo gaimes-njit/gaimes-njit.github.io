@@ -1,0 +1,16 @@
+```
+# Start with an empty structure
+structure = [[' ']*W for _ in range(H)]
+
+# Place the base
+ab_drop('b31', 5)
+
+# Place the vertical line in the K
+ab_drop('b13', 5)
+
+# Place the horizontal line in the K
+ab_drop('b31', 3)
+ab_drop('b11', 4)
+ab_drop('b31', 5)
+
+```

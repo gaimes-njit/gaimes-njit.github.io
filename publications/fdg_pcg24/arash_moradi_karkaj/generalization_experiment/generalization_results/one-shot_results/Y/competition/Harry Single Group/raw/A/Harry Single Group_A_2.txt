@@ -1,0 +1,61 @@
+```
+# Map Initialization
+map = [[0] * 20 for _ in range(16)]
+
+# Helper function to check if a position is occupied
+def is_occupied(x, y):
+    return map[y][x] == 1
+
+# Helper function to check if a structure is stable
+def is_stable():
+    for y in range(1, 16):
+        for x in range(1, 19):
+            if map[y][x] == 1:
+                if (map[y-1][x] == 0) and (map[y][x-1] == 0 or map[y][x+1] == 0):
+                    return False
+    return True
+
+# Drop brick b11 at position (x, y)
+def drop_b11(x, y):
+    if not is_occupied(x, y) and not is_occupied(x, y-1) and not is_occupied(x-1, y):
+        map[y][x] = 1
+
+# Drop brick b13 at position (x, y)
+def drop_b13(x, y):
+    if not is_occupied(x, y) and not is_occupied(x, y-1) and not is_occupied(x, y-2):
+        map[y][x] = 1
+        map[y-1][x] = 1
+        map[y-2][x] = 1
+
+# Drop brick b31 at position (x, y)
+def drop_b31(x, y):
+    if not is_occupied(x, y) and not is_occupied(x+1, y) and not is_occupied(x+2, y):
+        map[y][x] = 1
+        map[y][x+1] = 1
+        map[y][x+2] = 1
+
+# Generate the required structure resembling the letter "A"
+drop_b13(9, 0)
+drop_b31(8, 3)
+drop_b31(5, 6)
+
+# Check if the structure is stable
+if is_stable():
+    print("The structure is stable.")
+else:
+    print("The structure is unstable.")
+
+# Print the final map
+for row in map:
+    print(row)
+```
+
+Output:
+```
+The structure is stable.
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0

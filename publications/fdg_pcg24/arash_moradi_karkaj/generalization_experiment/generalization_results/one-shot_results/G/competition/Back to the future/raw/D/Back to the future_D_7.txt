@@ -1,0 +1,37 @@
+To generate a stable structure that looks like the uppercase character "D" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the structure as an empty WxH grid using the provided code: `structure = [[' ']*W for _ in range(H)]`.
+
+2. Start by dropping a b13 block on layer 15 at slot 3 (centered at slot 3). This will be the top part of the "D". Call `ab_drop('b13', 3)`.
+
+3. Next, drop two b11 blocks on layer 14 at slots 3 and 4 (centered at slots 3 and 4). These will be the two upper corners of the upright part of the "D". Call `ab_drop('b11', 3)` and `ab_drop('b11', 4)`.
+
+4. Drop a b13 block on layer 13 at slot 4 (centered at slot 4). This will be the middle part of the upright part of the "D". Call `ab_drop('b13', 4)`.
+
+5. Drop a b31 block on layer 12 at slots 2-4 (centered at slots 2-4). This will be the bottom part of the upright part of the "D". Call `ab_drop('b31', 3)`.
+
+6. Drop a b11 block on layer 11 at slot 1 (centered at slot 1). This will be the bottom left corner of the upright part of the "D". Call `ab_drop('b11', 1)`.
+
+7. Drop a b11 block on layer 10 at slot 1 (centered at slot 1). This will be the bottom part of the upright part of the "D". Call `ab_drop('b11', 1)`.
+
+8. Drop a b31 block on layer 9 at slots 1-3 (centered at slots 1-3). This will be the left part of the "D". Call `ab_drop('b31', 2)`.
+
+9. Drop a b31 block on layer 8 at slots 1-3 (centered at slots 1-3). This will be the bottom part of the left part of the "D". Call `ab_drop('b31', 2)`.
+
+10. Drop a b31 block on layer 7 at slots 1-3 (centered at slots 1-3). This will be the middle part of the left part of the "D". Call `ab_drop('b31', 2)`.
+
+11. Drop a b31 block on layer 6 at slots 1-3 (centered at slots 1-3). This will be the top part of the left part of the "D". Call `ab_drop('b31', 2)`.
+
+12. Drop a b11 block on layer 5 at slot 1 (centered at slot 1). This will be the top left corner of the left part of the "D". Call `ab_drop('b11', 1)`.
+
+13. Drop a b11 block on layer 4 at slots 1 (centered at slot 1). This will be the top part of the left part of the "D". Call `ab_drop('b11', 1)`.
+
+14. Drop a b31 block on layer 3 at slots 2-4 (centered at slots 2-4). This will be the top part of the "D". Call `ab_drop('b31', 3)`.
+
+15. Drop a b11 block on layer 2 at slot 4 (centered at slot 4). This will be the top right corner of the "D". Call `ab_drop('b11', 4)`.
+
+16. Drop a b11 block on layer 1 at slot 4 (centered at slot 4). This will be the right part of the "D". Call `ab_drop('b11', 4)`.
+
+17. The structure should now resemble the uppercase character "D".
+
+By following the above steps and making sure to check for stability before each drop, a stable structure that looks like the uppercase character "D" can be generated using the `ab_drop()` function.

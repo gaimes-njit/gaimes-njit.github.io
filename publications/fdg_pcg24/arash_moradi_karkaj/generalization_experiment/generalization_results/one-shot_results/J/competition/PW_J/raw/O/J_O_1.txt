@@ -1,0 +1,17 @@
+To generate the uppercase letter "O" using the given block types, you can use the following stream of ab_drop() commands:
+
+```python
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 4)
+ab_drop('b31', 4)
+ab_drop('b31', 7)
+ab_drop('b13', 7)
+ab_drop('b13', 10)
+ab_drop('b31', 10)
+ab_drop('b31', 13)
+ab_drop('b13', 13)
+ab_drop('b13', 16)
+```
+
+This sequence of commands will construct the letter "O" in the Tetris-like environment, ensuring that the blocks are stacked properly and follow the gravity rules.

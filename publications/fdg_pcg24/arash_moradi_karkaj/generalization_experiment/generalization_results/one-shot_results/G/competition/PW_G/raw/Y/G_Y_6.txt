@@ -1,0 +1,12 @@
+To generate the uppercase letter "Y" in the defined environment, you would need to use the following stream of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b31', 3)
+```
+
+These commands will place the block types in the specified positions to create the letter "Y" while ensuring the stability with the gravity rules.

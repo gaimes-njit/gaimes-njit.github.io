@@ -1,0 +1,6 @@
+To create the letter "L" using the given blocks, we can start by placing a vertical block at the bottom-left corner and then place a horizontal block on top of it. Here's the code:
+
+ab_drop("b31", 0)  # Place a vertical block at the leftmost column
+ab_drop("b13", 1)  # Place a horizontal block on top
+
+This will create the letter "L" in the top-down orientation.

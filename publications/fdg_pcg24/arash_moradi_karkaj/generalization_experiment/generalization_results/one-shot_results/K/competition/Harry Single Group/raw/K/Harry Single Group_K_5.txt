@@ -1,0 +1,29 @@
+To generate the shape resembling the letter "K" using the given props and functions, we can follow the steps below:
+
+1. Initialize the field as a 20x16 grid with all cells set to empty.
+
+2. Generate the first brick 'b13' and drop it at position (9, 2) using the ab_drop('b13', 9) function. This brick will occupy the cells (9, 0), (9, 1), and (9, 2).
+
+```python
+ab_drop('b13', 9)
+```
+
+3. Generate the second brick 'b11' and drop it at position (10, 2) using the ab_drop('b11', 10) function. This brick will occupy the cell (10, 2).
+
+```python
+ab_drop('b11', 10)
+```
+
+4. Generate the third brick 'b13' and drop it at position (10, 0) using the ab_drop('b13', 10) function. This brick will occupy the cells (10, 0), (10, 1), and (10, 2).
+
+```python
+ab_drop('b13', 10)
+```
+
+5. Generate the fourth brick 'b31' and drop it at position (6, 3) using the ab_drop('b31', 6) function. This brick will occupy the cells (5, 3), (6, 3), and (7, 3).
+
+```python
+ab_drop('b31', 6)
+```
+
+By following these steps, we can create a shape resembling the letter "K" on the field, satisfying the important notes of stability and avoiding boundary collisions.

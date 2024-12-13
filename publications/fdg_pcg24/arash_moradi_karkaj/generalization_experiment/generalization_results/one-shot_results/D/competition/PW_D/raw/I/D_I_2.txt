@@ -1,0 +1,16 @@
+To generate the uppercase letter "I", we can use the block types "b31" and "b13" in the following sequence of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+```
+
+Explanation:
+1. Start by dropping a horizontal straight block (b31) at position 1 to create the top part of the letter.
+2. Drop a vertical straight block (b13) at position 1 to create the vertical line of the letter.
+3. Drop another vertical straight block (b13) at position 1 to extend the vertical line.
+4. Finally, drop another horizontal straight block (b31) at position 1 to complete the bottom part of the letter.
+
+This sequence of commands will generate the uppercase letter "I" in the Tetris-like environment.

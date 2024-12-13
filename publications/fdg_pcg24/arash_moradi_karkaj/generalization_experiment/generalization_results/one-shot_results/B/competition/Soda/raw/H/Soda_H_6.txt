@@ -1,0 +1,18 @@
+To create a structure in the level that looks like the capital letter "H", we can start by placing the base blocks, which are two column blocks, at the bottom of the grid. Then, we can place a row block above the center column block to complete the structure.
+
+Here's the code to achieve this:
+
+```
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+```
+
+Explanation:
+1. The `ab_drop("b13", 9)` function is called to drop a column block ("b13") at the x position 9. This block occupies cells (8, 0), (9, 0), and (10, 0).
+2. The `ab_drop("b31", 9)` function is called to drop a row block ("b31") above the center column block at the x position 9. This block occupies cells (8, 1), (9, 1), and (10, 1).
+3. The `ab_drop("b13", 9)` function is called again to drop another column block ("b13") above the row block at the x position 9. This block occupies cells (8, 2), (9, 2), and (10, 2).
+
+This sequence of ab_drop() calls creates a stable structure that resembles the capital letter "H" in the level.
+
+Note: The solution assumes that the initial state of the level is empty, and there are no blocks or obstacles already present.

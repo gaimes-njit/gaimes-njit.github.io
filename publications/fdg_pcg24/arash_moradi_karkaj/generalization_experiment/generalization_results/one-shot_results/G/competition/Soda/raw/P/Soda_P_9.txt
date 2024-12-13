@@ -1,0 +1,17 @@
+1. First, we need to create the vertical pipe of the letter P. We can do this by using the "b13" block and placing it at the center of the grid.
+
+ab_drop("b13", 9)
+
+2. Next, we need to create the top bar of the letter P. We can use the "b31" block and place it at the center of the grid, one row above the vertical pipe.
+
+ab_drop("b31", 9)
+
+3. Finally, we need to create the bottom bar of the letter P. Again, we can use the "b31" block and place it at the center of the grid, one row below the vertical pipe.
+
+ab_drop("b31", 9)
+
+Complete Implementation:
+
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+ab_drop("b31", 9)

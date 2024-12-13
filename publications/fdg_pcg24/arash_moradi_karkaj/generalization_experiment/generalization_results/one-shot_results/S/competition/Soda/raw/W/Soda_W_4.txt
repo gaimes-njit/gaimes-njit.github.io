@@ -1,0 +1,23 @@
+To create a structure that looks like a capital "W", we can break it down into three blocks. Here's the step-by-step implementation:
+
+1. Place the bottom-left "b31" block at position 5 to form the bottom left of the "W".
+```py
+ab_drop("b31", 5)
+```
+
+2. Place the bottom-right "b31" block at position 9 to form the bottom right of the "W".
+```py
+ab_drop("b31", 9)
+```
+
+3. Place the top "b13" block at position 7 to form the top part of the "W".
+```py
+ab_drop("b13", 7)
+```
+
+The complete implementation looks like this:
+```py
+ab_drop("b31", 5)
+ab_drop("b31", 9)
+ab_drop("b13", 7)
+```

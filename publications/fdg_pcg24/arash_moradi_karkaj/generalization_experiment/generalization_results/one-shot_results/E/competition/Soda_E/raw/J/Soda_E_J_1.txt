@@ -1,0 +1,35 @@
+First, let's start by creating the top bar of the letter "J":
+
+```
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+```
+
+Next, we'll create the middle pipe of the letter "J":
+
+```
+ab_drop("b13", 7)
+ab_drop("b11", 7)
+ab_drop("b11", 6)
+```
+
+Finally, we'll create the bottom tick of the letter "J":
+
+```
+ab_drop("b11", 5)
+ab_drop("b11", 4)
+``` 
+
+Putting it all together, the complete implementation for generating a structure in the level that looks like the letter "J" is:
+
+```
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+
+ab_drop("b13", 7)
+ab_drop("b11", 7)
+ab_drop("b11", 6)
+
+ab_drop("b11", 5)
+ab_drop("b11", 4)
+```

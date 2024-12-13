@@ -1,0 +1,20 @@
+To create a structure that looks like the letter "Q", we can break it down into three blocks: a square block for the top, a column block for the vertical line, and a row block for the bottom line. We can drop these blocks in the following order:
+
+1. Drop the square block on top:
+   ab_drop("b11", 9)
+   
+2. Drop the column block for the vertical line:
+   ab_drop("b13", 9)
+   
+3. Drop the row block for the bottom line:
+   ab_drop("b31", 10)
+   
+The complete implementation code is as follows:
+
+```
+ab_drop("b11", 9)
+ab_drop("b13", 9)
+ab_drop("b31", 10)
+```
+
+This implementation will create a stable structure that resembles the letter "Q" in the level.

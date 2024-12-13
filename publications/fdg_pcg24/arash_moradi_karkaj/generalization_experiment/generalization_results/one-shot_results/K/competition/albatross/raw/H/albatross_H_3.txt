@@ -1,0 +1,18 @@
+# Code sequence to construct the letter 'H' level in Science Birds
+
+# Drop the b31 block at slot 9
+ab_drop('b31', 9)
+# Drop the b13 block at slot 8
+ab_drop('b13', 8)
+# Drop the b11 block at slot 7
+ab_drop('b11', 7)
+# Drop the b11 block at slot 10
+ab_drop('b11', 10)
+# Drop the b31 block at slot 11
+ab_drop('b31', 11)
+# Drop the b13 block at slot 12
+ab_drop('b13', 12)
+# Drop the b11 block at slot 7
+ab_drop('b11', 7)
+# Drop the b11 block at slot 10
+ab_drop('b11', 10)

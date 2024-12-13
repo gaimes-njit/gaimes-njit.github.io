@@ -1,0 +1,24 @@
+```python
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b31', 1)
+ab_drop('b11', 1)
+ab_drop('b31', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b31', 2)
+```
+Input:
+"Q"
+
+Output:
+```python
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b31', 1)
+ab_drop('b11', 1)
+ab_drop('b31', 1)
+ab_drop('b11', 1)
+ab_drop('b31', 1)
+```

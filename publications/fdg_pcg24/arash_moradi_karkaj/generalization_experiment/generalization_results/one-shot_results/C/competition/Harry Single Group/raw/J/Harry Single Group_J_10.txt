@@ -1,0 +1,51 @@
+```python
+# Map initialization
+field = [[0 for _ in range(20)] for _ in range(16)]
+
+def is_occupied(x, y):
+    """
+    Check if the cell at position (x, y) is occupied by a brick.
+    """
+    if x < 0 or x >= 20 or y < 0:
+        return True
+    return field[y][x] == 1
+
+def place_brick(x, y):
+    """
+    Place a brick at position (x, y) on the field.
+    """
+    field[y][x] = 1
+
+def ab_drop(x, y):
+    """
+    Generate and drop a brick of type x starting from position y.
+    """
+    if x == 'b31':
+        for i in range(3):
+            if is_occupied(y-1+i, 0):
+                break
+        else:
+            for i in range(3):
+                place_brick(y-1+i, 0)
+    elif x == 'b13':
+        for i in range(3):
+            if is_occupied(y, i):
+                break
+        else:
+            for i in range(3):
+                place_brick(y, i)
+    elif x == 'b11':
+        if not is_occupied(y, 0):
+            place_brick(y, 0)
+
+# Generate the required structure
+
+# Place the b31 brick
+ab_drop('b31', 9)
+
+# Place the b13 brick
+ab_drop('b13', 12)
+
+# Place the b11 brick
+ab_drop('b11', 8)
+```

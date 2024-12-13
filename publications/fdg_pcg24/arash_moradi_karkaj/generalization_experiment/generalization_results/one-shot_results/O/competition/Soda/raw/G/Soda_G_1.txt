@@ -1,0 +1,8 @@
+To create the letter "G" in the level, we can start by adding the base of the letter, which consists of a row block ("b31") placed horizontally at the bottom of the grid. We can then add the top part of the letter, which consists of a column block ("b13") placed vertically on top of the base block.
+
+Here is the code to achieve this:
+
+ab_drop("b31", 9)  # Add the base block
+ab_drop("b13", 9)  # Add the top block
+
+This code will drop the blocks on the grid and create a stable structure that resembles the letter "G".

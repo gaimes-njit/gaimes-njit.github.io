@@ -1,0 +1,11 @@
+To generate a structure that looks like the letter "Y" using the given database, you can use the following sequence of `ab_drop` function calls:
+
+```
+ab_drop(database['top_left'])
+ab_drop(database['top_middle'])
+ab_drop(database['top_right'])
+ab_drop(database['middle'])
+ab_drop(database['bottom'])
+```
+
+This sequence will drop the required key-value pairs from the database to generate the letter "Y".

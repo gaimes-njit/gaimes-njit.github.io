@@ -1,0 +1,20 @@
+To generate the uppercase letter "G" using the ab_drop() command and the given block types, we can follow these steps:
+
+1. Place a b31 block at position (1,1) to create the top horizontal stroke of the "G".
+2. Place a b31 block at position (1,5) to create the middle horizontal stroke of the "G".
+3. Place a b31 block at position (1,9) to create the bottom horizontal stroke of the "G".
+4. Place a b13 block at position (4,1) to create the left vertical stroke of the "G".
+5. Place a b13 block at position (4,10) to create the right vertical stroke of the "G".
+6. Place a b31 block at position (4,13) and a b11 block at position (6,13) to create the bottom right corner of the "G".
+
+The stream of commands to generate the letter "G" would be:
+
+````
+ab_drop(b31,1)
+ab_drop(b31,5)
+ab_drop(b31,9)
+ab_drop(b13,4)
+ab_drop(b13,10)
+ab_drop(b31,4)
+ab_drop(b11,6)
+````

@@ -1,0 +1,25 @@
+To construct the uppercase letter "S", we can break down its formation into different steps:
+
+Step 1: Create the vertical straight line on the left side
+- Place a b13 block at position 1 along the width: `ab_drop('b13',1)`
+- Place another b13 block below the previous block at position 2 along the width: `ab_drop('b13',2)`
+
+Step 2: Create the top horizontal line
+- Place a b31 block starting at position 2 along the width: `ab_drop('b31',2)`
+- Place a b11 block at position 1 along the width to complete the top line: `ab_drop('b11',1)`
+- Place another b11 block at position 3 along the width to extend the top line: `ab_drop('b11',3)`
+
+Step 3: Create the bottom horizontal line
+- Place a b31 block starting at position 2 along the width to start the bottom line: `ab_drop('b31',2)`
+- Place another b31 block at position 2 along the width to extend the bottom line: `ab_drop('b31',2)`
+
+Combining all the steps together, here is the stream of commands to generate the uppercase letter "S":
+```
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b31',2)
+ab_drop('b11',1)
+ab_drop('b11',3)
+ab_drop('b31',2)
+ab_drop('b31',2)
+```

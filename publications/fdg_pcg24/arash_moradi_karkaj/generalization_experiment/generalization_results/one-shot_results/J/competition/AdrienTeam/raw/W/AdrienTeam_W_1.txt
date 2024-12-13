@@ -1,0 +1,88 @@
+Here is one possible solution to create a structure resembling "W" while satisfying all the constraints:
+
+```
+# Map initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Bottom layer
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Second layer
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Third layer
+ab_drop('b13', 9)
+ab_drop('b11', 10)
+ab_drop('b31', 11)
+
+# Fourth layer
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Fifth layer
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Sixth layer
+ab_drop('b31', 9)
+ab_drop('b11', 10)
+ab_drop('b13', 11)
+
+# Seventh layer
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Eighth layer
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Ninth layer
+ab_drop('b31', 9)
+ab_drop('b11', 10)
+ab_drop('b13', 11)
+
+# Tenth layer
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Eleventh layer
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Twelfth layer
+ab_drop('b13', 9)
+ab_drop('b11', 10)
+ab_drop('b31', 11)
+
+# Thirteenth layer
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Fourteenth layer
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Fifteenth layer
+ab_drop('b13', 9)
+ab_drop('b11', 10)
+ab_drop('b31', 11)
+
+# Top layer
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+```
+
+Note: This is just one possible solution. There may be other valid solutions that meet the given constraints.

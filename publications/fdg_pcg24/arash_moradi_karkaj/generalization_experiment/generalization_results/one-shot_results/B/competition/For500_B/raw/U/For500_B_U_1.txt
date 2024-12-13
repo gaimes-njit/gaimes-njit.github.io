@@ -1,0 +1,8 @@
+ab_drop('b11', 9)  # Add a single block at center
+ab_drop('b31', 9)  # Add a horizontal block centered at the bottom
+ab_drop('b13', 9)  # Add a vertical block centered at the bottom
+ab_drop('b31', 9)  # Add another horizontal block centered at the bottom
+ab_drop('b11', 8)  # Add a single block to the left of the vertical block
+ab_drop('b31', 9)  # Add another horizontal block centered at the bottom
+ab_drop('b11', 10)  # Add a single block to the right of the vertical block
+ab_drop('b31', 9)  # Add another horizontal block centered at the bottom

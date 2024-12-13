@@ -1,0 +1,70 @@
+To form a shape resembling the letter "Z" using the available bricks, we can follow these steps:
+
+1. Initialize the field map as a 2D array with dimensions 20x16, representing the 320 cells of the field. Set all cells to be initially empty.
+
+2. Place the b31 brick on the ground at an appropriate x_position such that the leftmost cell of the brick does not exceed the boundaries. This ensures we avoid boundary collisions.
+
+3. Place the b13 brick on top of the b31 brick, ensuring stability. To do this, check the number of occupied cells on the left and right sides of the pivot, which is the middle cell of the b13 brick. If the number of occupied cells differs, adjust the x_position accordingly to achieve stability.
+
+4. Repeat steps 2 and 3 to form the upper part of the "Z" shape. Place the b13 brick adjacent to the previous b13 brick, and on top of the previous b31 brick. Make sure to check stability and avoid boundary collisions.
+
+5. Finally, place the b11 brick on top of the upper b13 brick to complete the "Z" shape. Again, ensure stability and avoid boundary collisions.
+
+Here is the code to generate the required structure:
+
+```python
+def ab_drop(x, y):
+    # check if the current position of the brick will cause a collision
+    if check_collision(x, y):
+        return
+
+    # determine the width and height of the brick based on its type
+    if x == 'b31':
+        width = 3
+        height = 1
+    elif x == 'b13':
+        width = 1
+        height = 3
+    else:
+        width = 1
+        height = 1
+
+    # place the current brick on the field
+    for i in range(width):
+        for j in range(height):
+            field[y+j][x_position+i] = 1
+
+    # update the y position of the brick for the next drop
+    x_position = y
+
+# function to check if the current position of the brick will cause a collision
+def check_collision(x, y):
+    if x == 'b31':
+        width = 3
+        height = 1
+    elif x == 'b13':
+        width = 1
+        height = 3
+    else:
+        width = 1
+        height = 1
+
+    for i in range(width):
+        for j in range(height):
+            if field[y+j][x_position+i] == 1:
+                return True
+    
+    return False
+
+# initialize the field map
+field = [[0 for _ in range(20)] for _ in range(16)]
+
+# place the bricks to form the "Z" shape
+ab_drop('b31', 5)
+ab_drop('b13', 5)
+ab_drop('b13', 6)
+ab_drop('b31', 7)
+ab_drop('b11', 7)
+```
+
+After executing this code, the cells containing a 1 will represent the occupied cells by the bricks forming a shape resembling the letter "Z".

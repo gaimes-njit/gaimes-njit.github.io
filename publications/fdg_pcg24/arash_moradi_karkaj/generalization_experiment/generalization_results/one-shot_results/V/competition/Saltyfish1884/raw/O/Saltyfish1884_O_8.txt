@@ -1,0 +1,70 @@
+To generate a stable structure that resembles the character "O" while meeting all hard constraints, we can follow the following steps:
+
+Step 1: Initialize the structure as an empty grid.
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Place the base blocks (b11) at the bottom of the structure to form a solid base.
+```
+for i in range(4, 16):
+    structure[i][9] = 'b11'
+    structure[i][10] = 'b11'
+```
+
+Step 3: Place the vertical blocks (b13) on top of the base blocks to form the sides of the structure.
+```
+for i in range(2, 4):
+    structure[i][9] = 'b13'
+    structure[i][10] = 'b13'
+for i in range(16, 18):
+    structure[i][9] = 'b13'
+    structure[i][10] = 'b13'
+```
+
+Step 4: Place the horizontal blocks (b31) on top of the vertical blocks to form the top part of the structure.
+```
+for i in range(0, 2):
+    structure[i][7] = 'b31'
+    structure[i][8] = 'b31'
+    structure[i][9] = 'b31'
+    structure[i][10] = 'b31'
+    structure[i][11] = 'b31'
+    structure[i][12] = 'b31'
+for i in range(18, 20):
+    structure[i][7] = 'b31'
+    structure[i][8] = 'b31'
+    structure[i][9] = 'b31'
+    structure[i][10] = 'b31'
+    structure[i][11] = 'b31'
+    structure[i][12] = 'b31'
+```
+
+Step 5: Use the ab_drop() function to put suitable blocks to form the structure that resembles the character "O".
+```
+for i in range(2, 4):
+    ab_drop('b13', 7)
+    ab_drop('b13', 8)
+for i in range(4, 16):
+    ab_drop('b11', 9)
+    ab_drop('b11', 10)
+for i in range(16, 18):
+    ab_drop('b13', 7)
+    ab_drop('b13', 8)
+for i in range(0, 2):
+    ab_drop('b31', 7)
+    ab_drop('b31', 8)
+    ab_drop('b31', 9)
+    ab_drop('b31', 10)
+    ab_drop('b31', 11)
+    ab_drop('b31', 12)
+for i in range(18, 20):
+    ab_drop('b31', 7)
+    ab_drop('b31', 8)
+    ab_drop('b31', 9)
+    ab_drop('b31', 10)
+    ab_drop('b31', 11)
+    ab_drop('b31', 12)
+```
+
+This will generate a structure that resembles the character "O" while meeting all hard constraints.

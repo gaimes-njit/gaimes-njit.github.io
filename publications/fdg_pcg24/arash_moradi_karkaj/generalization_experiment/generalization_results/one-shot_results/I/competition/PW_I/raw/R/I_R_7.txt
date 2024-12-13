@@ -1,0 +1,15 @@
+To generate letter "R", you can use the following sequence of `ab_drop` commands:
+
+```
+ab_drop('b11',1)
+ab_drop('b31',1)
+ab_drop('b11',4)
+ab_drop('b31',1)
+ab_drop('b11',7)
+ab_drop('b31',1)
+ab_drop('b13',2)
+ab_drop('b11',8)
+ab_drop('b13',3)
+```
+
+This sequence will construct the letter "R" within the allowed space boundaries while ensuring structural stability according to the gravity rules.

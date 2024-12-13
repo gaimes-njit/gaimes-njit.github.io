@@ -1,0 +1,22 @@
+```
+# Initialize the structure
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the first block to form the vertical part of the "J"
+ab_drop('b13', 9)
+
+# Drop the second block to form the horizontal part of the "J"
+ab_drop('b31', 7)
+
+# Drop the third block to complete the horizontal part of the "J"
+ab_drop('b31', 10)
+
+# Drop the fourth block to stabilize the structure
+ab_drop('b11', 9)
+
+# Output the ab_drop() calls
+print("ab_drop('b13', 9)")
+print("ab_drop('b31', 7)")
+print("ab_drop('b31', 10)")
+print("ab_drop('b11', 9)")
+```

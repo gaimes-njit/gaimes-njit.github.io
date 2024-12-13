@@ -1,0 +1,18 @@
+To generate the uppercase letter "B", follow the steps below:
+
+1. Place a vertical straight block ('b13') at position 1 along the width.
+```ab_drop('b13', 1)```
+
+2. Place another vertical straight block ('b13') at position 2 along the width.
+```ab_drop('b13', 2)```
+
+3. Place a horizontal straight block ('b31') at position 2 along the width.
+```ab_drop('b31', 2)```
+
+4. Place a vertical straight block ('b13') at position 4 along the width.
+```ab_drop('b13', 4)```
+
+5. Place a square block ('b11') at position 4 along the width.
+```ab_drop('b11', 4)```
+
+After executing these commands consecutively, the resulting shape should resemble the uppercase letter "B".

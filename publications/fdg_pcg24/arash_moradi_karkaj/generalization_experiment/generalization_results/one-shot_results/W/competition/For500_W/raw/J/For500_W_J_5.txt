@@ -1,0 +1,16 @@
+ab_drop('b13', 1)  # Drop the vertical block to start building the base
+ab_drop('b13', 14)  # Drop the vertical block to create the vertical stem
+ab_drop('b11', 13)  # Drop a small block to support the horizontal part of the letter
+ab_drop('b13', 12)  # Drop a vertical block to extend the vertical stem 
+ab_drop('b11', 11)  # Drop a small block to connect the vertical and horizontal parts
+ab_drop('b11', 10)  # Drop a small block to support the horizontal part
+ab_drop('b13', 9)  # Drop a vertical block to extend the vertical stem
+ab_drop('b11', 8)  # Drop a small block to support the horizontal part
+ab_drop('b11', 7)  # Drop a small block to support the horizontal part
+ab_drop('b11', 6)  # Drop a small block to support the horizontal part
+ab_drop('b11', 5)  # Drop a small block to support the horizontal part
+ab_drop('b11', 4)  # Drop a small block to support the horizontal part
+ab_drop('b11', 3)  # Drop a small block to support the horizontal part
+ab_drop('b11', 2)  # Drop a small block to support the horizontal part
+ab_drop('b11', 1)  # Drop a small block to support the horizontal part
+ab_drop('b11', 0)  # Drop a small block to support the horizontal part

@@ -1,0 +1,33 @@
+The first step is to create the base of the "Z" character. We can achieve this by using two "b13" blocks placed horizontally, followed by a "b31" block placed vertically. Here is the code for creating the base:
+
+```
+ab_drop("b13", 6)
+ab_drop("b13", 7)
+ab_drop("b31", 7)
+```
+
+Next, we need to create the top part of the "Z" character. We can achieve this by using a "b13" block placed vertically, followed by a "b31" block placed horizontally. Here is the code for creating the top part:
+
+```
+ab_drop("b13", 9)
+ab_drop("b31", 7)
+```
+
+Finally, we need to create the middle part of the "Z" character. We can achieve this by using a "b13" block placed vertically, followed by a "b13" block placed horizontally. Here is the code for creating the middle part:
+
+```
+ab_drop("b13", 10)
+ab_drop("b13", 8)
+```
+
+Putting it all together, here is the complete implementation:
+
+```
+ab_drop("b13", 6)
+ab_drop("b13", 7)
+ab_drop("b31", 7)
+ab_drop("b13", 9)
+ab_drop("b31", 7)
+ab_drop("b13", 10)
+ab_drop("b13", 8)
+```

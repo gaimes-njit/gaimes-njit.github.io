@@ -1,0 +1,12 @@
+To generate a structure that looks like the letter "P", we can use the following sequence of `ab_drop` function calls:
+
+```python
+ab_drop("down")          # Drop the pen down
+ab_drop("forward", 60)   # Move forward with a length of 60 units
+ab_drop("turn", 90)      # Turn right by 90 degrees
+ab_drop("forward", 120)  # Move forward with a length of 120 units
+ab_drop("backward", 60)  # Move backward with a length of 60 units
+ab_drop("up")            # Lift the pen up
+```
+
+This sequence will create a structure that resembles the letter "P".

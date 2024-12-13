@@ -1,0 +1,67 @@
+To generate a structure that looks like the capital letter "O" in the level, we can follow these steps:
+
+1. Create the outer ring of the "O":
+   - Drop a row block ("b31") at x_position=0.
+   - Drop a row block ("b31") at x_position=19.
+   - Drop a column block ("b13") at x_position=0.
+   - Drop a column block ("b13") at x_position=19.
+
+2. Create the inner ring of the "O":
+   - Drop a row block ("b31") at x_position=2.
+   - Drop a row block ("b31") at x_position=17.
+   - Drop a column block ("b13") at x_position=2.
+   - Drop a column block ("b13") at x_position=17.
+
+3. Fill the inside of the "O":
+   - Drop a square block ("b11") at x_position=2.
+   - Drop a square block ("b11") at x_position=17.
+   - Drop a square block ("b11") at x_position=3.
+   - Drop a square block ("b11") at x_position=16.
+   - Drop a square block ("b11") at x_position=4.
+   - Drop a square block ("b11") at x_position=15.
+   - Drop a square block ("b11") at x_position=5.
+   - Drop a square block ("b11") at x_position=14.
+   - Drop a square block ("b11") at x_position=6.
+   - Drop a square block ("b11") at x_position=13.
+   - Drop a square block ("b11") at x_position=7.
+   - Drop a square block ("b11") at x_position=12.
+   - Drop a square block ("b11") at x_position=8.
+   - Drop a square block ("b11") at x_position=11.
+   - Drop a square block ("b11") at x_position=9.
+   - Drop a square block ("b11") at x_position=10.
+
+The complete implementation with the series of ab_drop() calls is as follows:
+
+```
+# Create the outer ring of the "O"
+ab_drop("b31", 0)
+ab_drop("b31", 19)
+ab_drop("b13", 0)
+ab_drop("b13", 19)
+
+# Create the inner ring of the "O"
+ab_drop("b31", 2)
+ab_drop("b31", 17)
+ab_drop("b13", 2)
+ab_drop("b13", 17)
+
+# Fill the inside of the "O"
+ab_drop("b11", 2)
+ab_drop("b11", 17)
+ab_drop("b11", 3)
+ab_drop("b11", 16)
+ab_drop("b11", 4)
+ab_drop("b11", 15)
+ab_drop("b11", 5)
+ab_drop("b11", 14)
+ab_drop("b11", 6)
+ab_drop("b11", 13)
+ab_drop("b11", 7)
+ab_drop("b11", 12)
+ab_drop("b11", 8)
+ab_drop("b11", 11)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+```
+
+This implementation should create a structure in the level that looks like the capital letter "O".

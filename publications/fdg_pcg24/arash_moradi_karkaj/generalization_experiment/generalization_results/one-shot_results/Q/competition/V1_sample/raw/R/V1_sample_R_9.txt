@@ -1,0 +1,26 @@
+```python
+# Dropping the bottom part of the "R"
+ab drop(b13, H, 10)
+ab drop(b13, H-1, 10)
+ab drop(b13, H-1, 11)
+ab drop(b13, H-1, 12)
+ab drop(b13, H-2, 10)
+ab drop(b13, H-2, 11)
+ab drop(b13, H-2, 12)
+ab drop(b13, H-3, 10)
+ab drop(b13, H-3, 11)
+ab drop(b13, H-3, 12)
+
+# Dropping the top part of the "R"
+ab drop(b11, H-4, 9)
+ab drop(b11, H-4, 13)
+ab drop(b11, H-5, 9)
+ab drop(b11, H-5, 13)
+ab drop(b11, H-6, 9)
+ab drop(b11, H-6, 13)
+ab drop(b11, H-7, 9)
+ab drop(b11, H-7, 10)
+ab drop(b11, H-7, 11)
+ab drop(b11, H-7, 12)
+ab drop(b11, H-7, 13)
+```

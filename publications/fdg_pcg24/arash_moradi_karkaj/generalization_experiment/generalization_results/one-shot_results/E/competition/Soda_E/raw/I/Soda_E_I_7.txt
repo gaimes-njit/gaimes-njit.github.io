@@ -1,0 +1,17 @@
+To build the structure that looks like the capital letter "I", we need to start by placing the base blocks and then adding the upper blocks. Here is the step-by-step implementation:
+
+Step 1: Place the base blocks
+```
+# The bottom horizontal bar of I
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+```
+
+Step 2: Place the upper blocks
+```
+# The top horizontal bar of I
+ab_drop("b31", 9)
+```
+
+With these steps, we have successfully generated a structure in the level that looks like the capital letter "I".

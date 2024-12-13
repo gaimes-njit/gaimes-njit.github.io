@@ -1,0 +1,37 @@
+1. Drawing of the letter "Y" with asterisks:
+```
+*   *
+ * * 
+  *
+  *
+  *
+```
+2. List of asterisks and spaces in each row of the drawing:
+- Row 1: 1 asterisk, 3 spaces
+- Row 2: 1 space, 1 asterisk, 1 space, 1 asterisk
+- Row 3: 2 spaces, 1 asterisk
+- Row 4: 2 spaces, 1 asterisk
+- Row 5: 2 spaces, 1 asterisk
+
+3. List of x's (asterisks) and y's (spaces) in each row of the drawing:
+- Row 1: xyyx
+- Row 2: yxyx
+- Row 3: yxx
+- Row 4: yxx
+- Row 5: yxx
+
+4. The position of each variable in each row:
+- Row 1: x-1; y-2; y-3; x-4;
+- Row 2: y-1; x-2; y-3; x-4;
+- Row 3: y-1; x-2; x-3;
+- Row 4: y-1; x-2; x-3;
+- Row 5: y-1; x-2; x-3;
+
+5. The sequence of `ab_drop` function calls for each row:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

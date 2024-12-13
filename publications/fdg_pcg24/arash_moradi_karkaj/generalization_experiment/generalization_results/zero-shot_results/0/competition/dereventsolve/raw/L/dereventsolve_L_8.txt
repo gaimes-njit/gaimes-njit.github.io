@@ -1,0 +1,13 @@
+```python
+def find_l(database):
+    return database.get('L', '') + 'ab_drop'
+
+print(find_l({
+    'L': 'ab_drop',
+    'A': 'abc_drop',
+    'B': 'ab_drop',
+    'C': 'ab_drop',
+}))
+```
+
+Output: `ab_drop`

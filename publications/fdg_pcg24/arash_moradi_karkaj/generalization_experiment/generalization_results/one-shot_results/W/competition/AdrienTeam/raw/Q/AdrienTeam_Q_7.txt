@@ -1,0 +1,25 @@
+```
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop first block 'b13', vertically aligned at slot 9
+ab_drop('b13', 9)
+
+# Drop second block 'b31', vertically aligned at slot 8
+ab_drop('b31', 8)
+
+# Drop third block 'b11', vertically aligned at slot 7
+ab_drop('b11', 7)
+
+# Drop fourth block 'b11', vertically aligned at slot 9
+ab_drop('b11', 9)
+
+# Drop fifth block 'b11', vertically aligned at slot 11
+ab_drop('b11', 11)
+
+# Drop sixth block 'b11', vertically aligned at slot 12
+ab_drop('b11', 12)
+
+# Drop seventh block 'b11', vertically aligned at slot 12
+ab_drop('b11', 12)
+```

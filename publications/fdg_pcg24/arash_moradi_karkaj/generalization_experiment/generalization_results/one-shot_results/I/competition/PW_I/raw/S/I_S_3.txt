@@ -1,0 +1,13 @@
+To create the uppercase letter "S", we can use the following ab_drop() commands:
+
+```python
+ab_drop('b31', 1)  # Place a b31 block at position 1
+ab_drop('b13', 4)  # Place a b13 block at position 4
+ab_drop('b31', 7)  # Place a b31 block at position 7
+ab_drop('b13', 10)  # Place a b13 block at position 10
+ab_drop('b31', 13)  # Place a b31 block at position 13
+ab_drop('b13', 16)  # Place a b13 block at position 16
+ab_drop('b31', 19)  # Place a b31 block at position 19
+```
+
+These commands will create the letter "S" using the defined block types and gravity rules.

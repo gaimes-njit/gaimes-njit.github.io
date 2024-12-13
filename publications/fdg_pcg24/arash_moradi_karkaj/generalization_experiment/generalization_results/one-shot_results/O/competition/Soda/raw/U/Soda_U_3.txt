@@ -1,0 +1,24 @@
+To create the capital letter "U" using the ab_drop() function, we need to build the structure block by block in a bottom-to-top fashion. 
+
+Step 1: Place the base of the "U" shape
+To create the base, we need a row block "b31" and drop it at the center of the grid. The center of the grid can be found by dividing the width (W) by 2 and subtracting 1. 
+
+```
+ab_drop("b31", (W/2)-1)
+```
+
+Step 2: Place the vertical sides of the "U"
+To create the vertical sides of the "U", we need two column blocks "b13" dropped on each side of the base. The x-position for each side can be calculated by subtracting 2 and 4 from the center of the grid.
+
+```
+ab_drop("b13", (W/2)-3)
+ab_drop("b13", (W/2)+1)
+```
+
+Putting it all together, the complete implementation to generate the capital letter "U" would be:
+
+```
+ab_drop("b31", (W/2)-1)
+ab_drop("b13", (W/2)-3)
+ab_drop("b13", (W/2)+1)
+```

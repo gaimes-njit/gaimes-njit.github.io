@@ -1,0 +1,22 @@
+To generate a structure in the shape of a capital "C", we can break it down into two parts: the vertical pipe and the bottom curve.
+
+First, we will create the vertical pipe. We will drop a column block ("b13") at the center position (x_position = 8) in the bottom row.
+
+```
+ab_drop("b13", 8)
+```
+
+Next, we will create the bottom curve. We will drop a row block ("b31") at the center position (x_position = 9) in the row above the bottom row.
+
+```
+ab_drop("b31", 9)
+```
+
+Finally, we have successfully generated the structure that looks like a capital "C" using the ab_drop() function.
+
+Complete code:
+
+```
+ab_drop("b13", 8)
+ab_drop("b31", 9)
+```

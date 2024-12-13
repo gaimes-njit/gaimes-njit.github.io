@@ -1,0 +1,31 @@
+The following is a stream of commands to generate the uppercase English letter "Q":
+
+```
+ab_drop(b31, 1)
+ab_drop(b31, 4)
+ab_drop(b31, 7)
+ab_drop(b13, 1)
+ab_drop(b13, 1)
+ab_drop(b11, 4)
+ab_drop(b11, 7)
+ab_drop(b11, 10)
+ab_drop(b11, 13)
+ab_drop(b11, 16)
+ab_drop(b11, 19)
+ab_drop(b11, 19)
+ab_drop(b31, 1)
+ab_drop(b31, 7)
+ab_drop(b31, 10)
+ab_drop(b31, 13)
+ab_drop(b13, 13)
+ab_drop(b13, 16)
+ab_drop(b11, 10)
+ab_drop(b11, 13)
+```
+
+Explanation:
+1. First, we drop three horizontal straight blocks (b31) in positions 1, 4, and 7 to form the top part of the letter "Q".
+2. Next, we drop two vertical straight blocks (b13) in position 1 to form the left side of the letter "Q".
+3. Then, we drop a single 1x1 square block (b11) in positions 4, 7, 10, 13, 16, and 19 to form the outline of the letter "Q".
+4. We drop a horizontal straight block (b31) in positions 1, 7, 10, and 13 to complete the bottom part of the letter "Q".
+5. Finally, we drop two vertical straight blocks (b13) in positions 13 and 16 to form the tail of the letter "Q".

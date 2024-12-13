@@ -1,0 +1,18 @@
+To generate the uppercase English letter "O", we will use the following commands:
+
+```plaintext
+ab_drop('b31', 5)
+ab_drop('b31', 6)
+ab_drop('b31', 7)
+ab_drop('b13', 4)
+ab_drop('b13', 8)
+ab_drop('b13', 4)
+ab_drop('b13', 8)
+```
+
+Explanation:
+- First, we create a horizontal straight block (b31) starting from position 5, continuing to positions 6 and 7. This creates the base of the letter "O".
+- Next, we create two vertical straight blocks (b13) at positions 4 and 8, forming the sides of the letter "O".
+- Finally, we create two more vertical straight blocks (b13) at positions 4 and 8, overlapping the previous ones, to complete the letter "O".
+
+The resulting letter "O" will be created inside the allowed space boundaries and will follow the gravity rules.

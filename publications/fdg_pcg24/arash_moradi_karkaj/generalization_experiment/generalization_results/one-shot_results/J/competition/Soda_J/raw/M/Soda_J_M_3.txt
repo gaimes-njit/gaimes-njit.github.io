@@ -1,0 +1,29 @@
+The first step is to create the two vertical bars of the letter M.
+
+```python
+ab_drop("b31", 5)
+ab_drop("b31", 6)
+```
+
+Next, we need to create the middle diagonal bar of the letter M.
+
+```python
+ab_drop("b13", 7)
+```
+
+Finally, we need to create the two diagonal bars at the sides of the letter M.
+
+```python
+ab_drop("b13", 4)
+ab_drop("b13", 8)
+```
+
+The complete implementation is as follows:
+
+```python
+ab_drop("b31", 5)
+ab_drop("b31", 6)
+ab_drop("b13", 7)
+ab_drop("b13", 4)
+ab_drop("b13", 8)
+```

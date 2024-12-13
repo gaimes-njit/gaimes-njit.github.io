@@ -1,0 +1,24 @@
+To generate a structure that looks like the letter "R", we can make use of the following database:
+
+```
+{
+  "top_left": "R",
+  "top_right": "ab_drop()",
+  "middle_right": "ab_drop()",
+  "bottom_left": "R",
+  "bottom_right": "ab_drop()",
+  "bottom_middle": "ab_drop()",
+  "middle_middle": "R"
+}
+```
+
+The sequence of `ab_drop` function calls to retrieve the letter "R" would be:
+
+```
+ab_drop()
+ab_drop()
+R
+ab_drop()
+ab_drop()
+R
+```

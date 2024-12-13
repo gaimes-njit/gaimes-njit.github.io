@@ -1,0 +1,11 @@
+To create the letter "C" inside the 20*16 box, you can use the following sequence of ab_drop commands:
+
+ab_drop('b31', 0)
+ab_drop('b13', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+ab_drop('b13', 4)
+ab_drop('b31', 4)
+
+This sequence will drop the different blocks from top to bottom, starting from the given x positions, to form the shape of the letter "C" inside the box.

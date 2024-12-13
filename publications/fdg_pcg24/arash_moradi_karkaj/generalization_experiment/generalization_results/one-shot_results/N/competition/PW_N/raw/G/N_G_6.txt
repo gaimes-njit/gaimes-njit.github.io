@@ -1,0 +1,17 @@
+ab_drop('b13',1) 
+ab_drop('b13',2) 
+ab_drop('b31',3) 
+ab_drop('b31',2) 
+ab_drop('b11',1) 
+ab_drop('b11',2) 
+
+Explanation:
+To create the letter "G", we need to carefully stack the blocks in a specific order to form the desired shape. 
+
+1) Start by placing a vertical straight block ('b13') at position (1,1) to form the vertical line of the letter.
+2) Place another vertical straight block ('b13') at position (2,1) to extend the vertical line.
+3) Place a horizontal straight block ('b31') at position (3,1) to create the top line of the letter.
+4) Continue by placing another horizontal straight block ('b31') at position (2,1) to extend the top line.
+5) Finally, place two 1x1 square blocks ('b11') at positions (1,2) and (2,2) to complete the letter "G".
+
+Make sure to follow the correct order and positions to achieve the desired result.

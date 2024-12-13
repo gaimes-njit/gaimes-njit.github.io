@@ -1,0 +1,29 @@
+To create the letter "N", we can start by placing the base of the letter first.
+
+To make the base of the letter "N", we can use the "b31" block. We will place it at the left side of the grid, centered vertically.
+
+```
+ab_drop("b31", 1)
+```
+
+Next, we will add the vertical part of the letter "N". We can also use the "b31" block for this.
+
+```
+ab_drop("b31", 8)
+```
+
+Finally, we will add the diagonal part of the letter "N". We will use the "b13" block for this.
+
+```
+ab_drop("b13", 15)
+```
+
+This will create a structure in the level that looks like the letter "N". The blocks are placed in a bottom-to-top fashion, ensuring stability.
+
+Here is the complete implementation:
+
+```
+ab_drop("b31", 1)
+ab_drop("b31", 8)
+ab_drop("b13", 15)
+```

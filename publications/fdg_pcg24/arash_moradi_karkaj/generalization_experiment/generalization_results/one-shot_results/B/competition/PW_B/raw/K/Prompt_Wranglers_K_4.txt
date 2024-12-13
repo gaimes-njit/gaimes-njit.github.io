@@ -1,0 +1,30 @@
+To generate uppercase letter "K", we can follow the following steps:
+
+1. Start by building the left vertical line of the letter:
+   - ab_drop('b13', 0)  # Place a vertical block at position x=0
+   - ab_drop('b13', 2)  # Place another vertical block at position x=2
+
+2. Build the diagonal line of the letter:
+   - ab_drop('b11', 1)  # Place a single block at position x=1
+   - ab_drop('b11', 3)  # Place a single block at position x=3
+
+3. Build the right vertical line of the letter:
+   - ab_drop('b13', 0)  # Place a vertical block at position x=0
+   - ab_drop('b13', 4)  # Place another vertical block at position x=4
+
+4. Build the horizontal line of the letter to complete the top part:
+   - ab_drop('b31', 1)  # Place a horizontal block at position x=1
+
+The final sequence of commands to generate the letter "K" would be:
+
+```
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b11', 1)
+ab_drop('b11', 3)
+ab_drop('b13', 0)
+ab_drop('b13', 4)
+ab_drop('b31', 1)
+```
+
+Make sure to execute the commands consecutively and in the given order to generate the letter accurately.

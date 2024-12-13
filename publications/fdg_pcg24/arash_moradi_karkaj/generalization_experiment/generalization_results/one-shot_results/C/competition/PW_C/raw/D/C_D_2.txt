@@ -1,0 +1,14 @@
+To generate the letter "D", we can use the following stream of ab_drop() commands:
+
+```
+ab_drop('b31', 1)   # Create the left side of the letter (vertical straight block)
+ab_drop('b13', 2)   # Extend the left side downwards (horizontal straight block)
+ab_drop('b13', 3)   # Extend the left side downwards again (horizontal straight block)
+ab_drop('b13', 4)   # Extend the left side downwards once more (horizontal straight block)
+ab_drop('b11', 3)   # Create the middle part of the letter (square block)
+ab_drop('b13', 5)   # Extend the right side downwards (horizontal straight block)
+ab_drop('b13', 6)   # Extend the right side downwards again (horizontal straight block)
+ab_drop('b31', 6)   # Create the right side of the letter (vertical straight block)
+```
+
+This sequence of commands will create the letter "D" within the allowed space boundaries, following the gravity rules.

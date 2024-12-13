@@ -1,0 +1,13 @@
+There are multiple ways to construct a stable structure resembling the letter "U" using the `ab_drop()` function. Here is one possible solution:
+
+```
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b11', 4)
+ab_drop('b11', 5)
+ab_drop('b31', 1)
+ab_drop('b11', 0)
+ab_drop('b11', 5)
+ab_drop('b31', 1)
+ab_drop('b11', 3)
+```

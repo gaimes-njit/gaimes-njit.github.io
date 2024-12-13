@@ -1,0 +1,5 @@
+ab_drop('b13', 9)  # place the first 'b13' block in the center
+ab_drop('b31', 11)  # place the 'b31' block above the 'b13' block
+ab_drop('b11', 9)  # place the 'b11' block above the center of the 'b31' block
+ab_drop('b13', 7)  # place the second 'b13' block on the left side of the 'b31' block
+ab_drop('b13', 11)  # place the third 'b13' block on the right side of the 'b31' block

@@ -1,0 +1,50 @@
+To generate the uppercase letter "G" using the given block types and commands, you can follow these steps:
+
+1. Start by placing two vertical blocks (b13) side by side at the top-left corner of the grid:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+2. Move to the right and place a horizontal block (b31) below the previous two blocks, aligning the right end of the horizontal block with the right end of the vertical blocks:
+
+```
+ab_drop('b31', 2)
+```
+
+3. Repeat steps 1 and 2 two more times to create the curved shape of the uppercase letter "G":
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```
+
+4. Finally, place a horizontal block (b31) just below the curved shape, aligning the right end of the horizontal block with the right end of the previous horizontal blocks:
+
+```
+ab_drop('b31', 2)
+```
+
+The complete stream of commands to generate the uppercase letter "G" would be:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+
+ab_drop('b31', 2)
+```

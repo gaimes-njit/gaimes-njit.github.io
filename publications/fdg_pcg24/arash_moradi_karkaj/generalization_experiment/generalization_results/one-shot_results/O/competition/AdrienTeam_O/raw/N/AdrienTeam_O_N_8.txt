@@ -1,0 +1,20 @@
+```
+# Initialize the structure
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the first block (b31) to create the base of the N
+ab_drop('b31', 1)
+
+# Drop the second block (b13) to create the left leg of the N
+ab_drop('b13', 0)
+
+# Drop the third block (b13) to create the right leg of the N
+ab_drop('b13', 2)
+
+# Drop the fourth block (b31) to create the diagonal line of the N
+ab_drop('b31', 1)
+
+# Print the resulting structure
+for row in structure:
+    print(row)
+```

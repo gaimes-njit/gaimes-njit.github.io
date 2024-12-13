@@ -1,0 +1,39 @@
+To generate the uppercase letter "X", we can follow these steps:
+
+1. Start by placing a horizontal straight block (b31) at the bottom of the grid:
+```
+ab_drop('b31', 1)
+```
+
+2. Move up to the next structural layer and place two vertical straight blocks (b13) at the positions 0 and 2:
+```
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+```
+
+3. Move up to the next layer and place a horizontal straight block (b31) in the center position:
+```
+ab_drop('b31', 1)
+```
+
+4. Move up to the next structural layer and place two vertical straight blocks (b13) at the positions 0 and 2:
+```
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+```
+
+5. Finally, move up to the top layer and place a horizontal straight block (b31) at the center position:
+```
+ab_drop('b31', 1)
+```
+
+The final sequence of commands to generate the letter "X" would be:
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```

@@ -1,0 +1,17 @@
+To generate the uppercase English letter "H", we can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b31', 6)
+ab_drop('b11', 4)
+ab_drop('b11', 5)
+ab_drop('b13', 6)
+ab_drop('b13', 1)
+```
+
+Explanation: 
+1. The first two `ab_drop('b31', x)` commands are used to create the two vertical lines of the letter "H".
+2. The `ab_drop('b11', 4)` and `ab_drop('b11', 5)` commands are used to create the horizontal line of the letter "H".
+3. Finally, the last two `ab_drop('b13', x)` commands are used to create the bottom part of the letter "H".
+
+Please note that the exact positions of each block may vary slightly as long as the resulting shape resembles the letter "H" and obeys the stacking and stability rules.

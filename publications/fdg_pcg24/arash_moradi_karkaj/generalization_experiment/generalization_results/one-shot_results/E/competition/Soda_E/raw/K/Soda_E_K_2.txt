@@ -1,0 +1,19 @@
+To create the letter "K" in the level, we can start by building the two vertical bars and then adding the horizontal bar in the middle. Here is the complete implementation:
+
+```python
+# The left vertical bar of K
+ab_drop("b31", 4)
+ab_drop("b31", 5)
+
+# The right vertical bar of K
+ab_drop("b31", 14)
+ab_drop("b31", 15)
+ab_drop("b31", 16)
+
+# The horizontal bar of K
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+ab_drop("b13", 11)
+```
+
+This implementation ensures that the blocks are stacked from bottom to top and creates a structure that resembles the letter "K".

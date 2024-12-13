@@ -1,0 +1,10 @@
+```
+# Drop the top bar 
+ab_drop("b13", 9)
+
+# Drop the middle pipe
+ab_drop("b31", 9)
+
+# Drop the bottom tick
+ab_drop("b13", 9)
+```

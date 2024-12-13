@@ -1,0 +1,6 @@
+# Solution:
+
+ab_drop('b31', 8)   # Place the horizontal line of the E at the bottom
+ab_drop('b11', 7)   # Place the top-right point of the E
+ab_drop('b31', 9)   # Place the vertical line of the E
+ab_drop('b13', 10)  # Place the middle horizontal bar of the E

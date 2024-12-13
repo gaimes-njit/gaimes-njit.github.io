@@ -1,0 +1,20 @@
+To build the letter "K" shape in the level, we can break it down into three blocks: two vertical columns and one horizontal bar. Here's the implementation to achieve the desired structure:
+
+1. Drop the first vertical column block at x_position=7:
+```python
+ab_drop("b31", 7)
+```
+2. Drop the second vertical column block at x_position=10:
+```python
+ab_drop("b31", 10)
+```
+3. Drop the horizontal bar at the top of the vertical columns, starting from x_position=6 and ending at x_position=11:
+```python
+ab_drop("b13", 6)
+ab_drop("b31", 7)
+ab_drop("b11", 8)
+ab_drop("b31", 9)
+ab_drop("b13", 10)
+```
+
+This implementation creates a stable structure that looks like the letter "K".

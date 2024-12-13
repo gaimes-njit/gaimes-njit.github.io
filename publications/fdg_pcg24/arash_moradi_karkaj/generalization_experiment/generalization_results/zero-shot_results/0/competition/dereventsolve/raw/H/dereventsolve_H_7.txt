@@ -1,0 +1,18 @@
+To generate a structure that looks like the letter "H", we can use the following sequence of `ab_drop` function calls:
+
+```ab_drop, ab_drop, ab_drop, ab_drop, ab_drop, ab_drop, ab_drop, ab_drop```
+
+The structure will look like this:
+
+```
+  aaaaa
+  aaaaa
+  aaaaa
+  aaaaa
+  aaaaa
+  aaaaa
+  aaaaa
+  aaaaa
+```
+
+Please note that the number of `ab_drop` function calls may vary depending on the size of the structure you want to create.

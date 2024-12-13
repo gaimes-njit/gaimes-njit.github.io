@@ -1,0 +1,14 @@
+To generate a structure that looks like the letter "M" from the given database, we can use the following sequence of `ab_drop` function calls:
+
+```
+ab_drop('AB')
+ab_drop('AB')
+ab_drop('AB')
+ab_drop('C')
+ab_drop('C')
+ab_drop('C')
+ab_drop('AB')
+ab_drop('AB')
+```
+
+This sequence will arrange the keys and values in the database to form the letter "M" structure.

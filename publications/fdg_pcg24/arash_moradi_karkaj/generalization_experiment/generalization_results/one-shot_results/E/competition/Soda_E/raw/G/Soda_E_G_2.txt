@@ -1,0 +1,34 @@
+To create a structure that looks like the capital letter "G", we can break it down into smaller components:
+
+1. Place the top horizontal bar of "G":
+```
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+```
+
+2. Place the middle vertical bar of "G":
+```
+ab_drop("b31", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 11)
+```
+
+3. Place the bottom horizontal bar of "G":
+```
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+```
+
+By following these steps, the complete implementation to generate a structure in the level that looks like the capital letter "G" would be:
+
+```python
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+ab_drop("b31", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 11)
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+```

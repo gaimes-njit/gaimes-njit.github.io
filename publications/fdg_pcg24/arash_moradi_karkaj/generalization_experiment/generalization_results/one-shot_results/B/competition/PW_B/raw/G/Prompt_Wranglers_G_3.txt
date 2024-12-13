@@ -1,0 +1,31 @@
+To generate the uppercase English letter "G", you can follow the instructions below:
+
+1. Start by building the bottom part of the letter using a horizontal straight block (b31):
+```
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+```
+
+2. Next, add a vertical straight block (b13) on top of the existing structure to create the left side of the letter:
+```
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+```
+
+3. Now, place two horizontal blocks (b31) above the left side to create the top part of the letter:
+```
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+```
+
+4. Lastly, add another vertical straight block (b13) on top of the existing structure to complete the right side of the letter:
+```
+ab_drop('b13', 3)
+ab_drop('b13', 3)
+ab_drop('b13', 3)
+```
+
+These commands will construct the uppercase English letter "G" in the Tetris-like environment, while maintaining structural stability and fitting within the allowed space boundaries.

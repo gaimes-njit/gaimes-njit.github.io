@@ -1,0 +1,13 @@
+To generate the uppercase letter "F", we can follow these steps:
+
+1. Place a horizontal straight block (b31) at position (1, 1). This will form the top part of the letter.
+2. Place a vertical straight block (b13) at position (1, 2). This will form the vertical line of the letter.
+3. Place another horizontal straight block (b31) at position (1, 3). This will form the bottom part of the letter.
+
+Using the ab_drop() command, the stream of commands to generate the letter "F" would be:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',1)
+ab_drop('b31',1)
+```

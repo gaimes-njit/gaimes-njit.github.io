@@ -1,0 +1,15 @@
+To build the letter P in a bottom-to-top fashion, we can break it down into two blocks - a vertical pipe and a horizontal bar.
+
+To create the vertical pipe, we will use the "b31" block type and drop it centered at position 10. This will occupy cells (9, 0), (10, 0), and (11, 0).
+
+Next, we will create the horizontal bar using the "b13" block type and drop it centered at position 9. This will occupy cells (8, 1), (9, 1), and (10, 1).
+
+Here is the complete implementation:
+
+```python
+# Create the vertical pipe
+ab_drop("b31", 10)
+
+# Create the horizontal bar
+ab_drop("b13", 9)
+```

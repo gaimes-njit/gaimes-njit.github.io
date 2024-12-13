@@ -1,0 +1,21 @@
+To generate the uppercase letter "C", you can follow these steps:
+
+1. Place a vertical straight block (b13) at position 1 in the first row.
+2. Place another vertical straight block (b13) at position 2 in the first row.
+3. Place a horizontal straight block (b31) at position 2 in the second row.
+4. Place a square block (b11) at position 1 in the third row.
+5. Place a square block (b11) at position 3 in the third row.
+6. Place a horizontal straight block (b31) at position 2 in the fourth row.
+7. Place a horizontal straight block (b31) at position 2 in the fifth row.
+
+Here is the stream of commands to generate the letter "C":
+
+```
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b31',2)
+ab_drop('b11',1)
+ab_drop('b11',3)
+ab_drop('b31',2)
+ab_drop('b31',2)
+```

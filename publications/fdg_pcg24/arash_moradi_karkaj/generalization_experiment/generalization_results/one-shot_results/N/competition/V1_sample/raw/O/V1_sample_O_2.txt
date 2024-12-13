@@ -1,0 +1,24 @@
+Here is an example code snippet using the 'ab drop()' function to generate a stable structure that looks like the letter "O":
+
+```python
+ab.drop(b13, y=10, H=15)
+ab.drop(b11, y=9, H=14)
+ab.drop(b11, y=11, H=14)
+ab.drop(b11, y=8, H=13)
+ab.drop(b11, y=12, H=13)
+ab.drop(b11, y=7, H=12)
+ab.drop(b11, y=13, H=12)
+ab.drop(b11, y=6, H=11)
+ab.drop(b11, y=14, H=11)
+ab.drop(b11, y=6, H=10)
+ab.drop(b11, y=14, H=10)
+ab.drop(b11, y=7, H=9)
+ab.drop(b11, y=13, H=9)
+ab.drop(b11, y=8, H=8)
+ab.drop(b11, y=12, H=8)
+ab.drop(b11, y=9, H=7)
+ab.drop(b11, y=11, H=7)
+ab.drop(b13, y=10, H=6)
+```
+
+This code snippet drops the blocks starting from layer 15 (H) to layer 6 to create the shape of the letter "O" with a height of 3 units and width of 3 units. The blocks are dropped at different slots to create the curved shape of the letter "O".

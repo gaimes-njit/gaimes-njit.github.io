@@ -1,0 +1,26 @@
+To generate a structure in the level that looks like a capital "H", we can break it down into three blocks: two vertical bars and one horizontal bar connecting them.
+
+Step 1: Place the two vertical bars
+
+To create the two vertical bars of the "H", we will use the block type "b13" and drop it in the grid at specific positions.
+
+```
+ab_drop("b13", 4)
+ab_drop("b13", 14)
+```
+
+Step 2: Place the horizontal bar
+
+To create the horizontal bar of the "H", we will use the block type "b31" and drop it in the grid at the center position.
+
+```
+ab_drop("b31", 9)
+```
+
+Complete Implementation:
+
+```
+ab_drop("b13", 4)
+ab_drop("b13", 14)
+ab_drop("b31", 9)
+```

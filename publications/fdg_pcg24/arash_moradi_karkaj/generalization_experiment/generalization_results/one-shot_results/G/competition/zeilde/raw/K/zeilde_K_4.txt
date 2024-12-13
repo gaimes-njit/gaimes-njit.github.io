@@ -1,0 +1,61 @@
+Here are the steps to draw the letter "K" with asterisks and convert it into a sequence of `ab_drop` function calls:
+
+1. Draw the letter "K" with asterisks:
+   ```
+   ****
+   **  *
+   ** *
+   ***
+   ** *
+   **  *
+   ****
+   ```
+
+2. List the asterisks and spaces generated in each row:
+   - Row 1: 4x
+   - Row 2: 2x, 2y, 1x
+   - Row 3: 2x, 1y, 1x
+   - Row 4: 3x
+   - Row 5: 2x, 1y, 1x
+   - Row 6: 2x, 2y, 1x
+   - Row 7: 4x
+
+3. Use "x" and "y" to represent asterisks and spaces respectively:
+   - Row 1: 4x
+   - Row 2: 2x, 2y, 1x
+   - Row 3: 2x, 1y, 1x
+   - Row 4: 3x
+   - Row 5: 2x, 1y, 1x
+   - Row 6: 2x, 2y, 1x
+   - Row 7: 4x
+
+4. Write out each x and y for each row, side-by-side:
+   - Row 1: xxxx
+   - Row 2: xxyyx
+   - Row 3: xxyx
+   - Row 4: xxx
+   - Row 5: xxyx
+   - Row 6: xxyyx
+   - Row 7: xxxx
+
+5. Indicate the position of each variable for each row:
+   - Row 1: x-1; x-2; x-3; x-4
+   - Row 2: x-1; x-2; y-3; y-4; x-5
+   - Row 3: x-1; x-2; y-3; x-4
+   - Row 4: x-1; x-2; x-3
+   - Row 5: x-1; x-2; y-3; x-4
+   - Row 6: x-1; x-2; y-3; y-4; x-5
+   - Row 7: x-1; x-2; x-3; x-4
+
+6. Return a sequence of `ab_drop` function calls for each row:
+   ```
+   ab_drop("b11", 1)
+   ab_drop("b11", 2)
+   ab_drop("b11", 3)
+   ab_drop("b11", 4)
+   ab_drop("b11", 5)
+   ab_drop("b11", 6)
+   ab_drop("b11", 7)
+   ```
+
+Note: In step 6, "b11" is the name of the droppable container or grid, and the numbers represent the position of the variable in the row.

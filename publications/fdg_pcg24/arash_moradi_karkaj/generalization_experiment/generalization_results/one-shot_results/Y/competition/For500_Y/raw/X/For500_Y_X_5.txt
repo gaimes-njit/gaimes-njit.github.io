@@ -1,0 +1,4 @@
+ab_drop('b13', 6)  # Place the vertical block in the center
+ab_drop('b13', 6)  # Place another vertical block on top
+ab_drop('b31', 6)  # Place the horizontal block on top
+ab_drop('b11', 6)  # Place the topmost block in the center

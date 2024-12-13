@@ -1,0 +1,15 @@
+To create the Z character, we can start by placing the bottom horizontal bar first, followed by the diagonal line and the top horizontal bar.
+
+To ensure stability, we need to place the blocks in a bottom-to-top fashion. 
+
+Here is the implementation:
+
+```python
+ab_drop("b31", 5)  # place the bottom horizontal bar (centered at x_position=5)
+
+ab_drop("b13", 4)  # place the diagonal line (centered at x_position=4)
+
+ab_drop("b31", 3)  # place the top horizontal bar (centered at x_position=3)
+```
+
+This implementation builds the Z structure in a bottom-to-top fashion, ensuring stability.

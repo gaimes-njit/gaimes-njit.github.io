@@ -1,0 +1,10 @@
+To create the uppercase letter "U" using the given block types and environment rules, the following stream of commands should be executed consecutively using the `ab_drop()` command:
+
+```
+ab_drop('b31', 1)   # Place horizontal bottom block at position 1
+ab_drop('b13', 1)   # Place vertical left block at position 1
+ab_drop('b13', 2)   # Place vertical right block at position 2
+ab_drop('b31', 3)   # Place horizontal top block at position 3
+```
+
+This sequence of commands will construct the "U" shape in the Tetris-like environment, aligning with the grid boundaries and following the gravity rules.

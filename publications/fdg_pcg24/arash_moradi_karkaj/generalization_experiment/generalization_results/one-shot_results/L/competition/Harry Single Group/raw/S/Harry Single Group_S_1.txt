@@ -1,0 +1,63 @@
+To generate the letter "S" shape using the provided bricks, we can follow these steps:
+
+1. Initialize the field as a 20x16 grid with all cells set to 0 (unoccupied).
+
+2. Start by placing the b31 brick horizontally at the bottom-left corner of the field, with x_position = 0.
+
+```python
+ab_drop('b31', 0)
+```
+
+3. Place the b13 brick vertically above the b31 brick, with x_position = 1.
+    - Before placing the brick, check if the cells (1, 0), (1, 1), and (1, 2) are already occupied. If occupied, decrease the x_position until a position is found where these cells are unoccupied.
+
+```python
+ab_drop('b13', 1)
+```
+
+4. Place the b31 brick horizontally above the b13 brick, with x_position = 2.
+    - Before placing the brick, check if the cells (2, 3), (3, 3), and (4, 3) (the middle row) are already occupied. If occupied, decrease the x_position until a position is found where these cells are unoccupied.
+
+```python
+ab_drop('b31', 2)
+```
+
+5. Place the b11 brick (square) diagonally above the b31 brick, with x_position = 4.
+    - Before placing the brick, check if the cells (4, 4) and (5, 4) are already occupied. If occupied, decrease the x_position until a position is found where these cells are unoccupied.
+
+```python
+ab_drop('b11', 4)
+```
+
+6. Place the b13 brick vertically above the b11 brick, with x_position = 6.
+    - Before placing the brick, check if the cells (6, 4), (6, 5), and (6, 6) are already occupied. If occupied, decrease the x_position until a position is found where these cells are unoccupied.
+
+```python
+ab_drop('b13', 6)
+```
+
+7. Place the b31 brick horizontally above the b13 brick, with x_position = 7.
+    - Before placing the brick, check if the cells (7, 7), (8, 7), and (9, 7) (the middle row) are already occupied. If occupied, decrease the x_position until a position is found where these cells are unoccupied.
+
+```python
+ab_drop('b31', 7)
+```
+
+Overall, the code will look like this:
+
+```python
+# Initialize field
+
+def ab_drop(x, y):
+    # Implement ab_drop function
+    
+# Generate shape resembling letter "S"
+ab_drop('b31', 0)
+ab_drop('b13', 1)
+ab_drop('b31', 2)
+ab_drop('b11', 4)
+ab_drop('b13', 6)
+ab_drop('b31', 7)
+```
+
+With these steps, the code will generate a shape resembling the letter "S" using the specified bricks while satisfying the stability and boundary collision requirements.

@@ -1,0 +1,45 @@
+To create an X shape using the block-stacking technique, we can break it down into two parts: the diagonal lines of the X and the horizontal bar in the middle. 
+
+First, we need to create the diagonal lines. We can use the "b13" block for this purpose. 
+
+For the left diagonal line:
+ab_drop("b13", 7)
+ab_drop("b11", 6)
+ab_drop("b13", 5)
+
+For the right diagonal line:
+ab_drop("b13", 12)
+ab_drop("b11", 13)
+ab_drop("b13", 14)
+
+Next, we need to create the horizontal bar in the middle. We can use the "b31" block for this.
+
+ab_drop("b31", 7)
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+ab_drop("b31", 12)
+ab_drop("b31", 13)
+ab_drop("b31", 14)
+ab_drop("b31", 15)
+
+Here is the complete implementation:
+
+ab_drop("b13", 7)
+ab_drop("b11", 6)
+ab_drop("b13", 5)
+
+ab_drop("b13", 12)
+ab_drop("b11", 13)
+ab_drop("b13", 14)
+
+ab_drop("b31", 7)
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+ab_drop("b31", 12)
+ab_drop("b31", 13)
+ab_drop("b31", 14)
+ab_drop("b31", 15)

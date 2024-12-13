@@ -1,0 +1,5 @@
+ab_drop('b31', 9)  # Place the top horizontal bar of the 'D'
+ab_drop('b11', 9)  # Place the center of the 'D'
+ab_drop('b11', 8)  # Place the left side of the 'D'
+ab_drop('b11', 10)  # Place the right side of the 'D'
+ab_drop('b31', 9)  # Place the bottom horizontal bar of the 'D'

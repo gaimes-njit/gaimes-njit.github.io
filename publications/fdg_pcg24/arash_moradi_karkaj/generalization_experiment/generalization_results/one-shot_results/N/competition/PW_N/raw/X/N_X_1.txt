@@ -1,0 +1,21 @@
+Your task is to create uppercase English letter "X" using the given block types and the ab_drop() command. The specific commands required to construct the letter "X" are as follows:
+
+ab_drop('b13', 2)  # Place a vertical straight block (b13) at position 2 along the width
+ab_drop('b13', 3)  # Place another vertical straight block (b13) at position 3 along the width
+top                # Drops the blocks until they reach the top boundary
+ab_drop('b31', 3)  # Place a horizontal straight block (b31) at position 3 along the width
+side               # Drops the block until it reaches the stack beneath
+ab_drop('b13', 5)  # Place a vertical straight block (b13) at position 5 along the width
+ab_drop('b11', 5)  # Place a square block (b11) at position 5 along the width
+
+Please use the consecutive inclusion of commands between three backticks (```) to represent the stream of commands:
+
+```
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+top
+ab_drop('b31', 3)
+side
+ab_drop('b13', 5)
+ab_drop('b11', 5)
+```

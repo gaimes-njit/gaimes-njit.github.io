@@ -1,0 +1,19 @@
+# Solution
+
+# Command 0: Drop the first 'b13' block to form the base
+ab_drop('b13', 9)
+
+# Command 1: Drop the second 'b13' block to form the bottom curve of the 'D'
+ab_drop('b13', 9)
+
+# Command 2: Drop the third 'b13' block to form the top curve of the 'D'
+ab_drop('b13', 9)
+
+# Command 3: Drop the 'b31' block on the left side to form the left straight line of the 'D'
+ab_drop('b31', 6)
+
+# Command 4: Drop the 'b31' block on the left side to form the left straight line of the 'D'
+ab_drop('b31', 12)
+
+# Command 5: Drop the 'b11' block in the center to complete the 'D' shape
+ab_drop('b11', 9)

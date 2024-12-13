@@ -1,0 +1,104 @@
+To generate a stable structure that looks like the uppercase character "X" using the `ab_drop()` function and meet all the hard constraints, you can follow these steps:
+
+1. Initialize the structure grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start building the structure from the bottom layer (layer 0).
+
+3. Drop a b31 block at slot 9 (center slot) using `ab_drop('b31', 9)`.
+
+4. Drop a b31 block at slot 5 (center slot) using `ab_drop('b31', 5)`.
+
+5. Drop a b31 block at slot 13 (center slot) using `ab_drop('b31', 13)`.
+
+6. Drop a b13 block at slot 9 (center slot) using `ab_drop('b13', 9)`.
+
+7. Drop a b13 block at slot 5 (center slot) using `ab_drop('b13', 5)`.
+
+8. Drop a b13 block at slot 13 (center slot) using `ab_drop('b13', 13)`.
+
+9. Drop a b31 block at slot 9 (center slot) using `ab_drop('b31', 9)`.
+
+10. Drop a b31 block at slot 5 (center slot) using `ab_drop('b31', 5)`.
+
+11. Drop a b31 block at slot 13 (center slot) using `ab_drop('b31', 13)`.
+
+12. Move to the second layer (layer 1).
+
+13. Drop a b11 block at slot 9 (center slot) using `ab_drop('b11', 9)`.
+
+14. Move to the third layer (layer 2).
+
+15. Drop a b11 block at slot 9 (center slot) using `ab_drop('b11', 9)`.
+
+16. Move to the fourth layer (layer 3).
+
+17. Drop a b31 block at slot 9 (center slot) using `ab_drop('b31', 9)`.
+
+18. Drop a b11 block at slot 5 (center slot) using `ab_drop('b11', 5)`.
+
+19. Drop a b11 block at slot 13 (center slot) using `ab_drop('b11', 13)`.
+
+20. Move to the fifth layer (layer 4).
+
+21. Drop a b13 block at slot 0 (center slot) using `ab_drop('b13', 0)`.
+
+22. Drop a b13 block at slot 18 (center slot) using `ab_drop('b13', 18)`.
+
+23. Move to the sixth layer (layer 5).
+
+24. Drop a b13 block at slot 0 (center slot) using `ab_drop('b13', 0)`.
+
+25. Drop a b13 block at slot 18 (center slot) using `ab_drop('b13', 18)`.
+
+26. Move to the seventh layer (layer 6).
+
+27. Drop a b31 block at slot 0 (center slot) using `ab_drop('b31', 0)`.
+
+28. Drop a b31 block at slot 18 (center slot) using `ab_drop('b31', 18)`.
+
+29. Move to the eighth layer (layer 7).
+
+30. Drop a b11 block at slot 5 (center slot) using `ab_drop('b11', 5)`.
+
+31. Drop a b11 block at slot 13 (center slot) using `ab_drop('b11', 13)`.
+
+32. Move to the ninth layer (layer 8).
+
+33. Drop a b11 block at slot 5 (center slot) using `ab_drop('b11', 5)`.
+
+34. Drop a b11 block at slot 13 (center slot) using `ab_drop('b11', 13)`.
+
+35. Move to the tenth layer (layer 9).
+
+36. Drop a b31 block at slot 0 (center slot) using `ab_drop('b31', 0)`.
+
+37. Drop a b31 block at slot 18 (center slot) using `ab_drop('b31', 18)`.
+
+38. Move to the eleventh layer (layer 10).
+
+39. Drop a b31 block at slot 9 (center slot) using `ab_drop('b31', 9)`.
+
+40. Move to the twelfth layer (layer 11).
+
+41. Drop a b31 block at slot 9 (center slot) using `ab_drop('b31', 9)`.
+
+42. Move to the thirteenth layer (layer 12).
+
+43. Drop a b11 block at slot 9 (center slot) using `ab_drop('b11', 9)`.
+
+44. Move to the fourteenth layer (layer 13).
+
+45. Drop a b11 block at slot 9 (center slot) using `ab_drop('b11', 9)`.
+
+46. Move to the fifteenth layer (layer 14).
+
+47. Drop a b13 block at slot 9 (center slot) using `ab_drop('b13', 9)`.
+
+48. Move to the top layer (layer 15).
+
+49. Drop a b11 block at slot 9 (center slot) using `ab_drop('b11', 9)`.
+
+By following these steps, you will generate a stable structure that looks like the uppercase character "X" and meets all the hard constraints.

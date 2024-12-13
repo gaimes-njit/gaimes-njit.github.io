@@ -1,0 +1,30 @@
+To generate a stable structure that looks like the uppercase character "L" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the structure as an empty WxH grid: 
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+2. Drop the b13 block at the bottom left corner (slot 0): 
+```python
+ab_drop('b13', 0)
+```
+3. Drop the b31 block above the b13 block (slot 0): 
+```python
+ab_drop('b31', 0)
+```
+4. Drop the b11 block above the b31 block (slot 0):
+```python
+ab_drop('b11', 0)
+```
+
+At this point, the structure will look like the uppercase letter "L". The complete sequence of ab_drop() calls can be represented as follows:
+
+```
+ab_drop('b13', 0)
+ab_drop('b31', 0)
+ab_drop('b11', 0)
+```
+
+This sequence of drops satisfies the stability constraint, as each block is dropped in a stable position and provides support for the blocks above it. The resulting structure resembles the uppercase letter "L", as specified in the constraints.
+
+Please note that this specific sequence of drops is just one possible solution that meets the constraints. There may be multiple valid solutions to create a stable structure resembling the letter "L".

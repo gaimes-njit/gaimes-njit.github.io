@@ -1,0 +1,13 @@
+To create the capital letter L, we can break it down into two blocks: a vertical pipe and a bottom bar.
+
+1. Place the vertical pipe at the leftmost column (x_position = 0):
+```
+ab_drop("b31", 0)
+```
+
+2. Place the bottom bar just below the vertical pipe:
+```
+ab_drop("b13", 0)
+```
+
+By following these steps, we can create the capital letter L structure in the level.

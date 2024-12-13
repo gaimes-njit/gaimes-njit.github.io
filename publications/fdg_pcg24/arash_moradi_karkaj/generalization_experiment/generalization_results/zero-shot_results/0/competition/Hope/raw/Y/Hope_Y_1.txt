@@ -1,0 +1,37 @@
+To create a structure exactly like "Y" inside a 20*16 box block using the given blocktypes and ab_drop('blocktype', x position) command, we can follow these steps:
+
+1. Drop the first vertical block (b11) at (5, 0):
+   ab_drop('b11', 5)
+
+2. Drop the first horizontal block (b31) at (2, 1):
+   ab_drop('b31', 2)
+
+3. Drop the second vertical block (b11) at (8, 1):
+   ab_drop('b11', 8)
+
+4. Drop the third vertical block (b11) at (11, 1):
+   ab_drop('b11', 11)
+
+5. Drop the second horizontal block (b31) at (2, 4):
+   ab_drop('b31', 2)
+
+This should create a structure in the shape of "Y" inside the 20*16 box block as follows:
+  
+  000000000011111111112
+  012345678901234567890
+0:000000000000000000000
+1:000000000000000000000
+2:000bbb000000000000000
+3:000000000000000000000
+4:000bbb000000000000000
+5:000000000000000000000
+6:000000000000000000000
+7:000000000000000000000
+8:000000000000000000000
+9:000000000000000000000
+10:00000000000000000000
+11:00000000000000000000
+12:00000000000000000000
+13:00000000000000000000
+14:00000000000000000000
+15:00000000000000000000

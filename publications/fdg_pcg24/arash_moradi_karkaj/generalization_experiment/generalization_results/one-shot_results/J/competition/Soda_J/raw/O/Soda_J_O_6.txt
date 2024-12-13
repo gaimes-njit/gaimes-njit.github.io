@@ -1,0 +1,16 @@
+To create the letter O, we can start by placing a row block (b31) at the top. We will then place a square block (b11) on either side of the row block to form the circular shape.
+
+Here is the code implementation for creating the letter O:
+
+```
+# Place the top row block
+ab_drop("b31", 9)
+
+# Place the first square block on the left
+ab_drop("b11", 8)
+
+# Place the second square block on the right
+ab_drop("b11", 10)
+```
+
+This will create a stable structure that resembles the letter O.

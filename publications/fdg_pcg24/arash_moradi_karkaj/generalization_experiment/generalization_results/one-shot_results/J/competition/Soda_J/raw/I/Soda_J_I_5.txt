@@ -1,0 +1,20 @@
+To create the letter "I" using the block-stacking technique, we can start by dropping a row block "b31" at the center of the grid.
+
+```
+ab_drop("b31", 9)
+```
+
+Next, we can drop a column block "b13" at the center of the grid, just above the row block to form the letter "I".
+
+```
+ab_drop("b13", 9)
+```
+
+This arrangement of blocks will create a structure that resembles the capital letter "I". It balances properly and is stable under gravity.
+
+Here's the complete implementation:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+```

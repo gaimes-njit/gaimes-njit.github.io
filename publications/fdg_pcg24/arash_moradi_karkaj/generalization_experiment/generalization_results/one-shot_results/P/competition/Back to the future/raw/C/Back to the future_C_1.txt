@@ -1,0 +1,58 @@
+Here is an example of how the `ab_drop()` function can be used to generate a stable structure that looks like the uppercase character "C" while satisfying all the hard constraints:
+
+```python
+import random
+
+# Define the map size
+W = 20
+H = 16
+
+# Initialize the structure as an empty grid
+structure = [[' ']*W for _ in range(H)]
+
+# Define the block types
+b11 = 'b11'
+b31 = 'b31'
+b13 = 'b13'
+
+# Helper function to check stability
+def is_stable(drop_pos):
+    x, y = drop_pos
+    
+    # Check if there is a block directly below
+    if structure[x+1][y] != ' ':
+        return True
+    
+    # Check if there are blocks on both sides
+    if (y > 0 and structure[x][y-1] != ' ') and (y < W-1 and structure[x][y+1] != ' '):
+        return True
+    
+    return False
+
+# Helper function to print the structure
+def print_structure():
+    for row in structure:
+        print(' '.join(row))
+
+# Drop the first block (b13) to form the outer shape of "C"
+ab_drop(b13, random.randint(0, W-1))
+print_structure()
+
+# Drop the second block (b31) to complete the top part of "C"
+ab_drop(b31, random.randint(0, W-1))
+print_structure()
+
+# Drop the third block (b31) to complete the bottom part of "C"
+ab_drop(b31, random.randint(0, W-1))
+print_structure()
+
+# Drop the fourth block (b11) to close the gap in the middle of "C"
+ab_drop(b11, random.randint(0, W-1))
+print_structure()
+```
+
+In this example, we use the `random.randint()` function to generate a random slot number `y` to drop each block. This ensures that the generated content is diverse and not always the same.
+
+Note that before each call to `ab_drop()`, we need to check the stability of the current structure using the `is_stable()` function. This ensures that the entire architecture is stable before generating each block.
+
+By following this approach and using the `ab_drop()` function, you can generate a stable structure that looks like the uppercase character "C" while satisfying all the hard constraints.

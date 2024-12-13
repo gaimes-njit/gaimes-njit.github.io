@@ -1,0 +1,18 @@
+To generate the letter "K" using the ab_drop() command and Block Types, you can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 3)
+ab_drop('b13', 3)
+```
+
+Explanation:
+1. Start by dropping a horizontal straight block (b31) at position 1.
+2. Drop a vertical straight block (b13) at position 1 to form the first vertical line of the "K".
+3. Drop another vertical straight block (b13) at position 2 to complete the second vertical line of the "K".
+4. Drop another horizontal straight block (b31) at position 3 to form the top part of the "K".
+5. Finally, drop another vertical straight block (b13) at position 3 to complete the third vertical line of the "K".
+
+You should obtain a "K" shape resembling the uppercase letter in the Tetris-like environment.

@@ -1,0 +1,8 @@
+To generate the letter "P" using the given blocks, you can use the following sequence of commands:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',0)
+ab_drop('b13',2)
+ab_drop('b31',1)
+```

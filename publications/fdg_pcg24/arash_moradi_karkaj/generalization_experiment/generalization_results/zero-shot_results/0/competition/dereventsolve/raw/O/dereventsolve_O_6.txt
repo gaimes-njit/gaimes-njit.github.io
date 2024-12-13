@@ -1,0 +1,27 @@
+```
+def ab_drop():
+    return "ab_drop"
+
+database = {
+    (0, 0): "O",
+    (0, 1): "O",
+    (0, 2): "O",
+    (1, 0): "O",
+    (1, 2): "O",
+    (2, 0): "O",
+    (2, 1): "O",
+    (2, 2): "O"
+}
+
+def generate_letter_O():
+    result = []
+    
+    for x in range(3):
+        for y in range(3):
+            if (x, y) in database and database[(x, y)] == "O":
+                result.append(ab_drop())
+    
+    return result
+
+generate_letter_O()
+```

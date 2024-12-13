@@ -1,0 +1,17 @@
+ab_drop('b31', 6)   # drop B31 block in the middle of the map
+ab_drop('b13', 6)   # drop B13 block on top of B31 block
+ab_drop('b13', 6)   # drop another B13 block on top of the previous block
+ab_drop('b13', 6)   # drop another B13 block on top of the previous block
+ab_drop('b13', 6)   # drop another B13 block on top of the previous block
+ab_drop('b13', 6)   # drop another B13 block on top of the previous block
+ab_drop('b13', 7)   # drop B13 block on the right side of the previous block
+ab_drop('b11', 5)   # drop B11 block on the left side of the previous block
+ab_drop('b11', 5)   # drop another B11 block on the left side of the previous block
+ab_drop('b11', 5)   # drop another B11 block on the left side of the previous block
+ab_drop('b11', 7)   # drop another B11 block on the right side of the previous block
+ab_drop('b11', 7)   # drop another B11 block on the right side of the previous block
+ab_drop('b11', 7)   # drop another B11 block on the right side of the previous block
+ab_drop('b11', 5)   # drop another B11 block on the left side of the previous block
+ab_drop('b11', 5)   # drop another B11 block on the left side of the previous block
+ab_drop('b11', 7)   # drop another B11 block on the right side of the previous block
+ab_drop('b11', 7)   # drop another B11 block on the right side of the previous block

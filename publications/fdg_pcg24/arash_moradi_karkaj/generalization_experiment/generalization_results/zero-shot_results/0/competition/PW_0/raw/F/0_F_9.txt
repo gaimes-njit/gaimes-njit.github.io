@@ -1,0 +1,11 @@
+To create the uppercase English letter "F", we can use the following stream of ab_drop() commands:
+
+```
+ab_drop('b31', 1)    # Place the horizontal straight block at position 1
+ab_drop('b13', 1)    # Place the vertical straight block at position 1
+ab_drop('b11', 2)    # Place the square block at position 2
+ab_drop('b11', 2)    # Place the square block at position 2
+ab_drop('b11', 2)    # Place the square block at position 2
+```
+
+These commands will construct the letter "F" using the Block Types provided in the defined environment.

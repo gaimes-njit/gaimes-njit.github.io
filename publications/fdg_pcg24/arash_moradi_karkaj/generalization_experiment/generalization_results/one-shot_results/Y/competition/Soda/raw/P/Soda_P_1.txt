@@ -1,0 +1,12 @@
+To build the structure that looks like the letter "P", we need to place two blocks: a row block and a column block. 
+
+First, we will place the row block at the bottom of the grid, centered at the 10th column (since the width is 20). This will give us the top part of the letter "P".
+
+Next, we will place the column block on top of the row block. We will center it at the 10th column as well, but this time at the 7th row (since the height is 16). This will complete the letter "P".
+
+Here's the code to achieve this:
+
+```
+ab_drop("b31", 10)
+ab_drop("b13", 10)
+```

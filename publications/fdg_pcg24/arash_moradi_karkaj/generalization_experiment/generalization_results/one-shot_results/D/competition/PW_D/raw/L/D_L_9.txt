@@ -1,0 +1,17 @@
+To create the uppercase English letter "L", we can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```
+
+Explanation:
+
+- `ab_drop('b31', 1)` places the horizontal straight block with a width of 3 units at position 1 along the width.
+- `ab_drop('b13', 0)` places the vertical straight block with a height of 3 units at position 0 along the width.
+- `ab_drop('b13', 2)` places another vertical straight block with a height of 3 units at position 2 along the width.
+- `ab_drop('b31', 1)` places another horizontal straight block with a width of 3 units at position 1 along the width.
+
+By executing these commands in a Tetris-like environment with 2D gravity rules, the resulting structure will resemble the uppercase English letter "L".

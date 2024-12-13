@@ -1,0 +1,7 @@
+ab drop(b13, H, y) // Drop a vertical block at the top layer centered at slot y
+ab drop(b31, H-3, y) // Drop a horizontal block 3 layers below the top layer centered at slot y
+ab drop(b11, H-4, y) // Drop a square block 4 layers below the top layer centered at slot y
+ab drop(b11, H-5, y) // Drop another square block 5 layers below the top layer centered at slot y
+ab drop(b31, H-8, y) // Drop a horizontal block 8 layers below the top layer centered at slot y
+ab drop(b31, H-11, y) // Drop a horizontal block 11 layers below the top layer centered at slot y
+ab drop(b31, H-14, y) // Drop a horizontal block 14 layers below the top layer centered at slot y

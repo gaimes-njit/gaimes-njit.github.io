@@ -1,0 +1,21 @@
+To create the uppercase English letter "V" using the given block types and the Tetris-like environment, follow these steps:
+
+1. Start by dropping the 'b13' block at position 2. This will create the leftmost vertical line of the "V":
+```
+ab_drop('b13',2)
+```
+
+2. Next, drop four 'b11' blocks one by one at positions 3, 4, 4, and 5 respectively. These blocks will form the diagonal line of the "V":
+```
+ab_drop('b11',3) 
+ab_drop('b11',4) 
+ab_drop('b11',4) 
+ab_drop('b11',5)
+```
+
+3. Finally, drop another 'b13' block at position 6. This will create the rightmost vertical line of the "V" and complete the formation of the letter:
+```
+ab_drop('b13',6)
+```
+
+Following these commands will result in the uppercase English letter "V" formed using the specified block types and gravity rules.

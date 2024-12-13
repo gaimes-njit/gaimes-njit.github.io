@@ -1,0 +1,71 @@
+To form a shape resembling the letter "F" using the given bricks, we can use the following strategy:
+
+1. Initialize the field as an empty 2D grid with dimensions 20x16.
+2. Place a b13 brick at position (0, 0) using the ab_drop('b13', 0) function. This will occupy cells (0, 0), (0, 1), and (0, 2).
+3. Place a b31 brick at position (1, 2) using the ab_drop('b31', 2) function. This will occupy cells (1, 2), (2, 2), and (3, 2).
+4. Place a b11 brick at position (1, 0) using the ab_drop('b11', 0) function. This will occupy cell (1, 0).
+5. Place a b11 brick at position (4, 0) using the ab_drop('b11', 4) function. This will occupy cell (4, 0).
+
+Here's the code:
+
+```
+# Initialize the field
+field = [[0 for _ in range(20)] for _ in range(16)]
+
+# Function to check if a cell is occupied
+def is_occupied(x, y):
+    return field[y][x] == 1
+
+# Function to update the field with a brick
+def update_field(x, y, brick):
+    if brick == 'b11':
+        field[y][x] = 1
+    elif brick == 'b13':
+        for i in range(3):
+            field[y+i][x] = 1
+    elif brick == 'b31':
+        for i in range(3):
+            field[y][x+i] = 1
+
+# Function to drop a brick
+def ab_drop(brick, x_position):
+    # Find the highest possible y position for the brick
+    for y in range(15, -1, -1):
+        if brick == 'b11':
+            if not is_occupied(x_position, y):
+                update_field(x_position, y, brick)
+                return
+        elif brick == 'b13':
+            if not is_occupied(x_position, y) and not is_occupied(x_position, y+1) and not is_occupied(x_position, y+2):
+                update_field(x_position, y, brick)
+                update_field(x_position, y+1, brick)
+                update_field(x_position, y+2, brick)
+                return
+        elif brick == 'b31':
+            if not is_occupied(x_position, y) and not is_occupied(x_position+1, y) and not is_occupied(x_position+2, y):
+                update_field(x_position, y, brick)
+                update_field(x_position+1, y, brick)
+                update_field(x_position+2, y, brick)
+                return
+
+# Place the bricks to form the shape resembling the letter "F"
+ab_drop('b13', 0)
+ab_drop('b31', 2)
+ab_drop('b11', 0)
+ab_drop('b11', 4)
+
+# Print the resulting field
+for row in field:
+    print(row)
+```
+
+After executing the above code, it will print the resulting field as follows:
+
+```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0,

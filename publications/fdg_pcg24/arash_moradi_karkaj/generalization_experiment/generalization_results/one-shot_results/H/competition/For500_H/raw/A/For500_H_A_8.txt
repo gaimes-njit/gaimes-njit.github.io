@@ -1,0 +1,4 @@
+ab_drop('b31', 9) # Drop the horizontal block in the middle, creating the baseline of the letter A
+ab_drop('b11', 8) # Drop a single block above the horizontal block, creating the top of the letter A
+ab_drop('b31', 8) # Drop another horizontal block centered on the previous block, completing the top part of the letter A
+ab_drop('b11', 9) # Drop two blocks in the center, one on top of the other, to create the middle part of the letter A

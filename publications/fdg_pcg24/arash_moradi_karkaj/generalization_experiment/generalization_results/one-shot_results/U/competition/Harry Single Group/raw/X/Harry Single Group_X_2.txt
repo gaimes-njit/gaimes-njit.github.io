@@ -1,0 +1,79 @@
+Sure! Here is the code to generate the structure resembling the letter "X":
+
+```
+# Map initialization
+map = []
+for i in range(16):
+    row = []
+    for j in range(20):
+        row.append(0)
+    map.append(row)
+
+# Helper function to check if a cell is occupied
+def is_occupied(x, y):
+    if map[y][x] == 1:
+        return True
+    return False
+
+# Function to place a brick on the field
+def place_brick(x, y, brick):
+    for i in range(brick[1]):
+        for j in range(brick[0]):
+            map[y+i][x+j] = 1
+
+# Constants for brick types and sizes
+b31 = (3, 1)
+b13 = (1, 3)
+b11 = (1, 1)
+
+# Function to drop a brick on the field
+def ab_drop(x, y):
+    brick_type = None
+    if x == 'b31':
+        brick_type = b31
+    elif x == 'b13':
+        brick_type = b13
+    elif x == 'b11':
+        brick_type = b11
+    
+    x_position = y - brick_type[0]//2 # Adjust x_position for b31 brick
+    
+    # Check if placement is within field boundaries
+    if x_position < 0 or x_position + brick_type[0] > 20:
+        return
+    
+    # Check if any cell in the current position is already occupied
+    for i in range(brick_type[1]):
+        for j in range(brick_type[0]):
+            if is_occupied(x_position+j, i):
+                return
+    
+    # Place the brick on the field
+    place_brick(x_position, 0, brick_type)
+
+# Generate the structure resembling the letter "X"
+ab_drop('b13', 5)
+ab_drop('b31', 6)
+ab_drop('b13', 7)
+ab_drop('b31', 8)
+ab_drop('b13', 9)
+ab_drop('b31', 10)
+ab_drop('b13', 11)
+ab_drop('b31', 12)
+ab_drop('b13', 13)
+ab_drop('b31', 14)
+
+# Print the resulting field
+for row in map:
+    print(row)
+```
+
+The output will be:
+
+```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0

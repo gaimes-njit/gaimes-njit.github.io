@@ -1,0 +1,44 @@
+To construct a stable structure resembling the letter "J" using the `ab_drop()` function, you can follow these steps:
+
+1. Initialize the structure grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the base blocks:
+```
+ab_drop('b31', 9)
+ab_drop('b13', 8)
+ab_drop('b13', 10)
+ab_drop('b31', 9)
+```
+
+3. Drop the vertical section:
+```
+ab_drop('b13', 11)
+ab_drop('b13', 11)
+```
+
+4. Combine the horizontal and vertical sections to form the letter "J":
+```
+ab_drop('b11', 12)
+ab_drop('b11', 12)
+ab_drop('b11', 12)
+```
+
+The complete code block for generating the "J" structure would be:
+```python
+structure = [[' ']*W for _ in range(H)]
+
+ab_drop('b31', 9)
+ab_drop('b13', 8)
+ab_drop('b13', 10)
+ab_drop('b31', 9)
+
+ab_drop('b13', 11)
+ab_drop('b13', 11)
+
+ab_drop('b11', 12)
+ab_drop('b11', 12)
+ab_drop('b11', 12)
+```

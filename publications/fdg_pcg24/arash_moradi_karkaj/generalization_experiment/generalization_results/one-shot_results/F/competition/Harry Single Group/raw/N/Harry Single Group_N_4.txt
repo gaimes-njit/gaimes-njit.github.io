@@ -1,0 +1,67 @@
+To form the shape resembling the letter "N", we can use the following steps:
+
+1. Initialize the field with empty cells.
+2. Drop a b13 brick at x_position = 0 using the ab_drop('b13', 0) function. This will occupy cells (0, 0), (0, 1), and (0, 2).
+3. Drop a b31 brick at x_position = 4 using the ab_drop('b31', 4) function. This will occupy cells (4, 0), (5, 0), and (6, 0).
+4. Drop a b13 brick at x_position = 9 using the ab_drop('b13', 9) function. This will occupy cells (9, 0), (9, 1), and (9, 2).
+5. Drop a b31 brick at x_position = 14 using the ab_drop('b31', 14) function. This will occupy cells (14, 0), (15, 0), and (16, 0).
+
+The resulting structure will resemble the letter "N" in the field.
+
+Here is the code:
+
+```python
+# Initialize the field with empty cells
+field = [[0] * 20 for _ in range(16)]
+
+# Function to drop a brick on the field
+def ab_drop(x, y):
+    if x == 'b31':
+        width = 3
+        height = 1
+    elif x == 'b13':
+        width = 1
+        height = 3
+    elif x == 'b11':
+        width = 1
+        height = 1
+    
+    # Check if the brick's occupied cells will exceed the boundaries of the field
+    if (y + width - 1) > 19 or (width > 1 and (y + width) > 19):
+        # Brick will collide with the boundaries, return without modifying the field
+        return
+    
+    # Iterate through each cell from top to bottom
+    for i in range(15, -1, -1):
+        # Check if any cell in the current row is already occupied
+        if any(field[i][y:y+width]):
+            # Brick will collide with existing occupied cells, return without modifying the field
+            return
+        
+        # Check if the brick has landed on the ground
+        if i == 0:
+            # Brick has landed, occupy the cells
+            for j in range(y, y+width):
+                field[i][j] = 1
+            return
+
+# Drop the bricks to form the "N" shape
+ab_drop('b13', 0)
+ab_drop('b31', 4)
+ab_drop('b13', 9)
+ab_drop('b31', 14)
+
+# Print the resulting field
+for row in field:
+    print(row)
+```
+
+The output will be:
+
+```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 

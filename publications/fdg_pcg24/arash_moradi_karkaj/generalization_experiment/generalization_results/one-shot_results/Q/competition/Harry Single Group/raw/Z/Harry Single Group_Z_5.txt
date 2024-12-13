@@ -1,0 +1,50 @@
+To form a shape resembling the letter "Z", we can use the available props and the ab_drop function in the following order:
+
+1. First, we need to initialize the map as an empty field of size 20x16. We can represent it as a 2D list with 16 lists, each containing 20 zeros. This will help us keep track of the occupied cells.
+
+```python
+map = [[0] * 20 for _ in range(16)]
+```
+
+2. Next, we can use the ab_drop function to form the letter "Z" shape.
+
+```python
+# Place the upper horizontal b31 brick
+ab_drop('b31', 6)  # Occupies cells (5, 3), (6, 3), (7, 3)
+
+# Place the lower vertical b13 brick
+ab_drop('b13', 7)  # Occupies cells (7, 0), (7, 1), (7, 2)
+
+# Place the lower square b11 brick
+ab_drop('b11', 6)  # Occupies cell (6, 0)
+```
+
+3. After executing these ab_drop functions, the occupied cells will form the letter "Z" shape on the field as follows:
+
+```
+ 01234567890123456789
+0
+1
+2
+3        ###
+4        ##
+5
+6         #
+7
+8
+9
+0  #
+1  #
+2  #
+3
+4
+5
+6
+7         #
+8        ##
+9        ###
+```
+
+This arrangement satisfies the stability condition as the number of occupied cells on the left and right sides of the pivot (cell (6, 0)) remains the same for both upper and lower bricks. It also avoids any boundary collisions as all occupied cells are within the boundaries of the field.
+
+Note: Make sure to run the ab_drop function after the map initialization and separate the code between the last two pairs of three backticks to execute the game structure.

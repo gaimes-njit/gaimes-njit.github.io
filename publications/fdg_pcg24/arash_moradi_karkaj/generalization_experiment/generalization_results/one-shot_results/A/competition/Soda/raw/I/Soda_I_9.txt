@@ -1,0 +1,28 @@
+To create a structure that looks like the capital letter "I", we can follow the bottom-to-top approach and place the blocks in a stable manner. 
+
+Step 1: Place the base block (b31) in the center of the grid.
+```
+ab_drop("b31", 9)
+```
+
+Step 2: Place the second block (b31) on top of the base block, also in the center.
+```
+ab_drop("b31", 9)
+```
+
+Step 3: Place the third block (b31) on top of the second block, again in the center.
+```
+ab_drop("b31", 9)
+```
+
+Step 4: Place the fourth block (b31) on top of the third block, in the center.
+```
+ab_drop("b31", 9)
+```
+
+Step 5: Place the fifth block (b31) on top of the fourth block, in the center.
+```
+ab_drop("b31", 9)
+```
+
+This series of ab_drop() calls will create a structure that resembles the capital letter "I" in the game.

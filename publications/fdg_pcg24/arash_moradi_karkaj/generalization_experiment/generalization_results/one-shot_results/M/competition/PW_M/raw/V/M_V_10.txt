@@ -1,0 +1,16 @@
+To generate the uppercase letter "V" using the given block types and rules, we can use the following stream of commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b13', 4)
+ab_drop('b13', 5)
+ab_drop('b31', 4)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+```
+
+This stream of commands will construct the letter "V" in the grid, starting from the leftmost position. The vertical blocks (b13) are used to create the sides of the letter, while the horizontal blocks (b31) are placed on top to form the top section of the letter. Finally, two single blocks (b11) are placed in the center to complete the shape.

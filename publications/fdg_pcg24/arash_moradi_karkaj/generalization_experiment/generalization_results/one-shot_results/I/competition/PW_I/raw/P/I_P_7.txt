@@ -1,0 +1,12 @@
+To generate the uppercase letter "P", you can use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b11', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+```
+
+This sequence of commands will construct the letter "P" in the Tetris-like environment, following the gravity rules and staying within the allowed space boundaries.

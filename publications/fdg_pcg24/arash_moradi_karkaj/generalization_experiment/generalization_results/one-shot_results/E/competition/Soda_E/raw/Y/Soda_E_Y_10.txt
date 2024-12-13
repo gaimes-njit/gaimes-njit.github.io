@@ -1,0 +1,20 @@
+To create the letter Y in the level, we can break it down into three blocks: the top bar, the middle bar, and the bottom bar. Here is the complete implementation to create the letter Y:
+
+```
+# Place the top bar of Y
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+ab_drop("b13", 11)
+
+# Place the middle bar of Y
+ab_drop("b31", 10)
+
+# Place the bottom bar of Y
+ab_drop("b31", 10)
+ab_drop("b11", 9)
+ab_drop("b31", 10)
+```
+
+This implementation follows the bottom-to-top approach, ensuring stability. It also creates the letter Y in the level while maintaining similarity to the target character.
+
+Please note that this implementation assumes that the initial state of the level is empty.

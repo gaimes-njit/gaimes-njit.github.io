@@ -1,0 +1,46 @@
+To generate a stable structure that looks like the uppercase character "K" and meets all the hard constraints, we can follow the steps below:
+
+1. Initialize the structure as an empty WxH grid using the provided code: 
+
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Begin by dropping the first part of the "K" shape, which is a b31 block, using the `ab_drop()` function. Choose an appropriate slot position for stability. For example, we can choose slot 4 for the center of the block:
+
+```python
+ab_drop('b31', 4)
+```
+The block will land on layer 15 and its center will be aligned with slot 4.
+
+3. Next, drop the second part of the "K" shape, which is another b31 block, on top of the first block. Choose a slot position that supports the stability of the structure. For example, we can choose slot 5:
+
+```python
+ab_drop('b31', 5)
+```
+The block will land on layer 14 and its center will be aligned with slot 5.
+
+4. Now, drop the third part of the "K" shape, which is a b13 block, to complete the vertical stroke of the "K". Choose a slot position that supports the stability of the structure. For example, we can choose slot 5:
+
+```python
+ab_drop('b13', 5)
+```
+The block will land on layer 13 and its center will be aligned with slot 5.
+
+5. To create the diagonal stroke of the "K", drop a b11 block in the slot to the left of the vertical stroke. Choose a slot position that supports the stability of the structure. For example, we can choose slot 3:
+
+```python
+ab_drop('b11', 3)
+```
+The block will land on layer 12 and its center will be aligned with slot 3.
+
+6. Finally, drop another b11 block in the slot to the right of the vertical stroke. Choose a slot position that supports the stability of the structure. For example, we can choose slot 7:
+
+```python
+ab_drop('b11', 7)
+```
+The block will land on layer 12 and its center will be aligned with slot 7.
+
+7. Repeat steps 5 and 6 multiple times, dropping additional diagonal strokes of the "K" at different heights to create a diverse and varied structure that still resembles the uppercase character "K".
+
+Note: Before each call to `ab_drop()`, make sure to check the stability of the structure using appropriate stability checks to avoid any accidents.

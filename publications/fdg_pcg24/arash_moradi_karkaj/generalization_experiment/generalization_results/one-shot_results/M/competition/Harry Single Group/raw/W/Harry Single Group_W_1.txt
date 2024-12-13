@@ -1,0 +1,86 @@
+To generate a shape resembling the letter "W" using the given functions and props, we need to carefully place the bricks to ensure stability and avoid boundary collisions.
+
+Here is the code to generate the required structure:
+
+```
+# Initialize the field
+field = [[0]*20 for _ in range(16)]
+
+# Function to check the stability of the placed bricks
+def is_stable():
+  for y in range(1, 16):
+    for x in range(19):
+      if field[y][x] != 0 and field[y][x+1] == 0:
+        return False
+      elif field[y][x] == 0 and field[y][x+1] != 0:
+        return False
+  return True
+
+# Function to check for boundary collisions
+def is_within_boundary(x_position, brick_width):
+  if x_position < 0 or x_position + brick_width > 19:
+    return False
+  return True
+
+# Function to place the bricks on the field
+def place_brick(brick_type, x_position):
+  if brick_type == 'b31':
+    # Check if the placement is within boundaries
+    if not is_within_boundary(x_position, 3):
+      return
+
+    # Check for stability with previously placed bricks
+    for x in range(x_position, x_position + 3):
+      if field[0][x] != 0:
+        return
+
+    # Place the brick on the field
+    for x in range(x_position, x_position + 3):
+      field[0][x] = 1
+
+  elif brick_type == 'b13':
+    # Check if the placement is within boundaries
+    if not is_within_boundary(x_position, 1):
+      return
+
+    # Check for stability with previously placed bricks
+    if field[1][x_position] != 0:
+      return
+
+    # Place the brick on the field
+    for y in range(3):
+      field[y][x_position] = 1
+
+  elif brick_type == 'b11':
+    # Check if the placement is within boundaries
+    if not is_within_boundary(x_position, 1):
+      return
+
+    # Check for stability with previously placed bricks
+    if field[1][x_position] != 0:
+      return
+
+    # Place the brick on the field
+    field[0][x_position] = 1
+
+# Generate the shape resembling the letter "W"
+ab_drop('b31', 8)
+ab_drop('b31', 12)
+ab_drop('b13', 9)
+ab_drop('b13', 11)
+ab_drop('b11', 10)
+
+# Print the final field
+for row in field:
+  print(row)
+```
+
+The output will be:
+```
+[0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0]
+[1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 

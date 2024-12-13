@@ -1,0 +1,18 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the first horizontal block (top bar of 'E')
+ab_drop('b31',9)
+
+# Drop the second horizontal block (middle bar of 'E')
+ab_drop('b31',9)
+
+# Drop the first vertical block (left bar of 'E')
+ab_drop('b13',7)
+
+# Drop the second vertical block (right bar of 'E')
+ab_drop('b13',11)
+
+# Drop the third vertical block (right bar of the middle bar in 'E')
+ab_drop('b13',9)
+```

@@ -1,0 +1,18 @@
+To create the structure of the letter "C" inside a 20*16 box, you can use the ab_drop function with the following commands:
+
+1. First, drop a b11 block at position (0, 0):
+ab_drop('b11', 0)
+
+2. Then, drop a b13 block at position (0, 1):
+ab_drop('b13', 0)
+
+3. Next, drop a b13 block at position (0, 5):
+ab_drop('b13', 0)
+
+4. After that, drop a b13 block at position (0, 10):
+ab_drop('b13', 0)
+
+5. Finally, drop a b31 block at position (17, 6):
+ab_drop('b31', 17)
+
+This sequence of commands will create a letter "C" shape inside the 20*16 box, following the given block types and positions.

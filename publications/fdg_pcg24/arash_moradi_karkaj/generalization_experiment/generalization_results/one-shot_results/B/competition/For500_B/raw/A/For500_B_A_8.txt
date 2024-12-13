@@ -1,0 +1,8 @@
+ab_drop('b13', 9) # Drop a vertical block at center
+ab_drop('b31', 9) # Drop a horizontal block at center
+ab_drop('b11', 8) # Drop a square block one unit to the left of center
+ab_drop('b11', 10) # Drop a square block one unit to the right of center
+ab_drop('b31', 9) # Drop another horizontal block at center
+ab_drop('b11', 8) # Drop another square block one unit to the left of center
+ab_drop('b11', 10) # Drop another square block one unit to the right of center
+ab_drop('b31', 9) # Drop another horizontal block at center

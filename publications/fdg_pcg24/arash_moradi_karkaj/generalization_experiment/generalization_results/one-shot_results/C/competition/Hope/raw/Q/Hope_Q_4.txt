@@ -1,0 +1,17 @@
+To create the structure of the letter "Q" inside a 20*16 box using the ab_drop() command, you would need to drop blocks in the following sequence:
+
+1. Drop a b31 block at position (2, 7).
+2. Drop a b13 block at position (2, 10).
+3. Drop a b31 block at position (9, 7).
+4. Drop a b11 block at position (18, 7).
+5. Drop a b13 block at position (9, 11).
+
+Here's the code:
+
+ab_drop('b31', 2)
+ab_drop('b13', 2)
+ab_drop('b31', 9)
+ab_drop('b11', 18)
+ab_drop('b13', 9)
+
+This sequence of ab_drop() commands will create the letter "Q" inside the 20*16 box.

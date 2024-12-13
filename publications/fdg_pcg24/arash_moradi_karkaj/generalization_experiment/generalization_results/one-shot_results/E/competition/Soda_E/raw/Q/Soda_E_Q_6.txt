@@ -1,0 +1,44 @@
+To create the letter Q, we can divide it into three parts: the top bar, the middle bar, and the bottom bar. 
+
+Here's the code to create the top bar: 
+```
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+ab_drop("b31", 12)
+```
+
+Next, let's create the middle bar:
+```
+ab_drop("b13", 12)
+ab_drop("b11", 11)
+ab_drop("b13", 10)
+```
+
+Finally, let's create the bottom bar:
+```
+ab_drop("b31", 8)
+ab_drop("b11", 9)
+ab_drop("b31", 10)
+```
+
+Putting it all together, here's the complete code to generate a structure that looks like the letter Q:
+```
+# Top bar
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+ab_drop("b31", 12)
+
+# Middle bar
+ab_drop("b13", 12)
+ab_drop("b11", 11)
+ab_drop("b13", 10)
+
+# Bottom bar
+ab_drop("b31", 8)
+ab_drop("b11", 9)
+ab_drop("b31", 10)
+```

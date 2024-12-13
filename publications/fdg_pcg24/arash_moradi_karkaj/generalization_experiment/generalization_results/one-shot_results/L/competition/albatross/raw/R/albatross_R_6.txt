@@ -1,0 +1,20 @@
+To construct the level for Science Birds that resembles the letter "R" while following all the constraints, the code sequence using the `ab_drop()` function would be:
+
+```python
+ab_drop('b13', 4)
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+ab_drop('b31', 6)
+ab_drop('b11', 5)
+ab_drop('b11', 6)
+ab_drop('b11', 7)
+ab_drop('b11', 4)
+```
+
+Explanation:
+
+1. The first `ab_drop('b13', 4)` places a vertical block at slot 4 to form the left vertical line of the "R".
+2. The next three `ab_drop('b31', 4)`, `ab_drop('b31', 5)`, and `ab_drop('b31', 6)` place horizontal blocks at slots 4, 5, and 6 to form the middle horizontal line of the "R".
+3. The next four `ab_drop('b11', 5)`, `ab_drop('b11', 6)`, `ab_drop('b11', 7)`, and `ab_drop('b11', 4)` place square blocks at slots 5, 6, 7, and 4 respectively to complete the right side of the "R".
+
+This sequence of calls to the `ab_drop()` function follows the constraints and constructs the level in the desired shape of the letter "R".

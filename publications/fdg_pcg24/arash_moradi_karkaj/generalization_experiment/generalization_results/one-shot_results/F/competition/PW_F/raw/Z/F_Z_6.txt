@@ -1,0 +1,10 @@
+To generate the uppercase letter Z, we need to use a combination of block types b13 and b31. Here is a stream of commands to create the letter Z:
+
+```
+ab_drop('b31', 1)  // Place horizontal block at the beginning
+ab_drop('b13', 1)  // Place vertical block below the horizontal block
+ab_drop('b31', 4)  // Place horizontal block to create the slant of Z
+ab_drop('b13', 4)  // Place vertical block to complete the letter Z
+```
+
+By following these commands, you can construct the uppercase letter Z within the defined environment.

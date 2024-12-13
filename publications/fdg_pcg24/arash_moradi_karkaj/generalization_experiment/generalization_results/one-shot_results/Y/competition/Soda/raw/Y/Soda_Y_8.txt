@@ -1,0 +1,9 @@
+To generate a structure in the shape of a capital letter "Y", we can break it down into three blocks: a row block (b31) for the top part, a column block (b13) for the middle part, and another row block (b31) for the bottom part. 
+
+To ensure stability, we need to start building from the bottom and work our way up. 
+
+Here is the complete implementation:
+
+ab_drop("b31", 10)  # Drop the bottom row block at x_position=10
+ab_drop("b13", 10)  # Drop the middle column block at x_position=10
+ab_drop("b31", 10)  # Drop the top row block at x_position=10

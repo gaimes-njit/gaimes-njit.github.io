@@ -1,0 +1,26 @@
+4. Instructions
+
+To generate a stable structure that looks like the "Z" shape, follow these steps:
+
+Step 1: Drop a b31 block from layer H with its center at slot 3.
+ab drop(b31, 3, H)
+
+Step 2: Drop a b13 block from layer H-1 with its center at slot 3.
+ab drop(b13, 3, H-1)
+
+Step 3: Drop a b31 block from layer H-2 with its center at slot 2.
+ab drop(b31, 2, H-2)
+
+Step 4: Drop a b13 block from layer H-3 with its center at slot 2.
+ab drop(b13, 2, H-3)
+
+Step 5: Drop a b31 block from layer H-4 with its center at slot 1.
+ab drop(b31, 1, H-4)
+
+Step 6: Drop a b11 block from layer H-1 with its center at slot 1.
+ab drop(b11, 1, H-1)
+
+Step 7: Drop a b11 block from layer H-2 with its center at slot 1.
+ab drop(b11, 1, H-2)
+
+By following these instructions and dropping the blocks in the specified order and position, you should be able to create a stable structure that resembles the "Z" shape.

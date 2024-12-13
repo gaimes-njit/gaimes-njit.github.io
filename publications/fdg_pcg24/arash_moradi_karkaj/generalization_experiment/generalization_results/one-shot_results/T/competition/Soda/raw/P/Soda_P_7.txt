@@ -1,0 +1,19 @@
+To generate a structure that looks like the capital letter "P" (TARGET) in a level, we can follow these steps:
+
+Step 1: Place the base blocks of the letter "P" horizontally.
+1. Drop a row block (b31) at x_position = 5.
+ab_drop("b31", 5)
+
+Step 2: Place the vertical bar of the letter "P" on top of the base.
+1. Drop a column block (b13) at x_position = 5.
+ab_drop("b13", 5)
+
+Step 3: Place the horizontal bar of the letter "P" on top of the vertical bar.
+1. Drop a row block (b31) at x_position = 10.
+ab_drop("b31", 10)
+
+Overall, the complete implementation to generate the letter "P" structure would be as follows:
+
+ab_drop("b31", 5)
+ab_drop("b13", 5)
+ab_drop("b31", 10)

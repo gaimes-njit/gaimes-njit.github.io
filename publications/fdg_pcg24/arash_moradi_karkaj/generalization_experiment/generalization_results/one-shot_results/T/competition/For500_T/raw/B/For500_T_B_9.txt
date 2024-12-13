@@ -1,0 +1,6 @@
+# Solution:
+
+ab_drop('b31', 9) /* Creating the top horizontal line of the letter B */
+ab_drop('b13', 9) /* Creating the vertical line of the letter B */
+
+This solution drops a horizontal block of width 3 (b31) at slot 9 to create the top part of the letter B. Then, it drops a vertical block of height 3 (b13) at slot 9 to create the vertical line of the letter B.

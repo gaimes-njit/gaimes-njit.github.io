@@ -1,0 +1,20 @@
+To generate a structure in the shape of a capital "Y" (TARGET), we can break it down into three blocks: the stem, the top left branch, and the top right branch. 
+
+Here is the step-by-step implementation:
+
+1. Drop the stem block (b31) in the center (x_position=9) of the grid:
+    ab_drop("b31", 9)
+
+2. Drop the top left branch block (b13) to the left of the stem:
+    ab_drop("b13", 8)
+
+3. Drop the top right branch block (b13) to the right of the stem:
+    ab_drop("b13", 10)
+
+The complete implementation is as follows:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 8)
+ab_drop("b13", 10)
+```

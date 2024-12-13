@@ -1,0 +1,20 @@
+To generate a stable structure that looks like the uppercase character "G" and meets all the hard constraints, we can follow the steps below:
+
+1. Initialize the structure as an empty WxH grid using the provided code:
+   ```
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. Start building the structure from the bottom layer (layer 0) to the top layer (layer 15).
+
+3. To meet the stability constraint, before each call to `ab_drop(x, y)`, check if the structure is stable by ensuring that the block to be dropped will not cause the structure to collapse. This can be done by checking if there is a stable support for the block on the layer below. For example, if the block is of type b31 and is centered at slot y, check if there is a structure (not necessarily the same block type) at slots y-1, y, and y+1 on the layer below. If there is no structure at any of these slots, the block will not have stable support and should not be dropped at y.
+
+4. To meet the no boundary intrusion constraint, when determining the slot for dropping the block, ensure that the block will not intrude on the boundary of the map. In other words, the slot y should be chosen such that the block width does not exceed the available slots on either side of y.
+
+5. To generate a structure similar to the uppercase letter "G", follow the pattern of the letter when dropping the blocks. Use a combination of b11, b13, and b31 blocks to create the shape. For example, you can start by dropping a b31 block centered at slot 9 on layer 0. Then, drop a b13 block centered at slot 8 on layer 1, followed by another b13 block centered at slot 10 on layer 1. Finally, drop a b31 block centered at slot 9 on layer 2. This will form the top curve of the "G" shape.
+
+6. Repeat steps 3-5 to continue building the rest of the structure, following the pattern of the letter "G".
+
+7. Make sure to keep track of the coordinates of each ab_drop(x, y) call to list the coordinates of each block's drop position.
+
+By following these steps, we can generate a stable structure that looks like the uppercase character "G" and meets all the hard constraints.

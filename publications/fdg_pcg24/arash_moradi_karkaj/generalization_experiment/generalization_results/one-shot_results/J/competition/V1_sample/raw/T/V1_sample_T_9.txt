@@ -1,0 +1,7 @@
+To generate a stable structure in the shape of a "T", we can use the 'ab drop()' function to drop blocks in the following order:
+
+1. Drop a b11 block at layer 15 with its center at slot 9.
+2. Drop a b31 block at layer 14 with its center at slot 9.
+3. Drop a b13 block at layer 13 with its center at slot 9.
+
+This sequence of blocks dropped in the specified positions and order will create a stable "T" structure on the map.

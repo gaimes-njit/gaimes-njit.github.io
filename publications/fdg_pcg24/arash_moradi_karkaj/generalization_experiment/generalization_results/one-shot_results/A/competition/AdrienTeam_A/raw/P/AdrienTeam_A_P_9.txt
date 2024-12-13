@@ -1,0 +1,16 @@
+To create a stable structure resembling "P" using the `ab_drop()` function, we need to follow the given constraints and pay attention to the order and position of the blocks being dropped. Here is the solution:
+
+```
+ab_drop('b13', 1)
+ab_drop('b11', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+ab_drop('b31', 1)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b31', 1)
+ab_drop('b11', 1)
+```
+Please note that the above solution assumes the bottom-left corner of the map is slot 0 and the bottom layer is layer 0. Make sure to adjust the slot numbers accordingly if your setup is different.

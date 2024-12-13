@@ -1,0 +1,10 @@
+To generate the uppercase letter "L" using the given block types and gravity rules, you can follow these steps:
+
+1. Place a b13 block at position 1 using the ab_drop('b13', 1) command. This will create the vertical part of the letter "L".
+2. Place a b31 block at position 2 using the ab_drop('b31', 2) command. This will create the horizontal part of the letter "L".
+
+Here's the stream of commands to generate the uppercase letter "L":
+```
+ab_drop('b13', 1)
+ab_drop('b31', 2)
+```

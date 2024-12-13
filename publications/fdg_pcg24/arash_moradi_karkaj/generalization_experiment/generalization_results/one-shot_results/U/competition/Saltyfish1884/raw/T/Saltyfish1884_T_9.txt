@@ -1,0 +1,38 @@
+To generate a stable structure that resembles the character "T" while meeting all hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty grid:
+
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Determine the appropriate dropping position for each block type according to the stability rules from the constraints.
+
+- For b11 (square block), we can drop it at the center slot (slot 9) of any layer above the base (layer 0).
+
+```python
+ab_drop('b11', 9)
+```
+
+- For b31 (horizontal block), it must be placed on a solid base (b11 or b13) to prevent overhangs. We can drop it at slots 7, 8, or 9 of the base (layer 0) to ensure stability.
+
+```python
+ab_drop('b31', 7)
+```
+
+- For b13 (vertical block), it can be placed anywhere on the base (layer 0). We can drop it at slot 8 of the base (layer 0) to form the vertical part of the "T".
+
+```python
+ab_drop('b13', 8)
+```
+
+3. Assemble the blocks together to form the final structure. In this case, the blocks are already in their correct positions, so there is no need for further steps.
+
+4. Print the resulting structure:
+
+```python
+for row in structure:
+    print(' '.join(row))
+```
+
+The output will be a stable structure that resembles the character "T" and meets all hard constraints.

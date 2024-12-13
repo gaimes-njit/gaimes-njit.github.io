@@ -1,0 +1,9 @@
+ab drop(b13, y=9, layer=15)  // Drop a vertical block at slot 9 in the top layer 
+ab drop(b11, y=9, layer=14)  // Drop a square block at slot 9 in layer 14 
+ab drop(b11, y=8, layer=14)  // Drop a square block at slot 8 in layer 14 
+ab drop(b11, y=10, layer=14)  // Drop a square block at slot 10 in layer 14 
+ab drop(b31, y=8, layer=13)  // Drop a horizontal block at slot 8 in layer 13 
+ab drop(b11, y=8, layer=12)  // Drop a square block at slot 8 in layer 12
+ab drop(b11, y=10, layer=12)  // Drop a square block at slot 10 in layer 12
+ab drop(b11, y=9, layer=11)  // Drop a square block at slot 9 in layer 11
+ab drop(b11, y=8, layer=10)  // Drop a square block at slot 8 in layer 10

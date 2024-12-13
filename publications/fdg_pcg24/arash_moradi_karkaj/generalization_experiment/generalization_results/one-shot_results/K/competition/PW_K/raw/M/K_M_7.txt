@@ -1,0 +1,15 @@
+To generate the uppercase letter "M", we will use a combination of the block types b11, b31, and b13. Here is the stream of commands to achieve the desired shape:
+
+```
+ab_drop('b31',1)
+ab_drop('b31',2)
+ab_drop('b31',3)
+ab_drop('b11',4)
+ab_drop('b11',5)
+ab_drop('b31',6)
+ab_drop('b11',7)
+ab_drop('b11',8)
+ab_drop('b11',9)
+```
+
+This sequence of commands will first create the two vertical lines on the sides of the "M" using the b31 block type. Then, it will place the middle horizontal line using the b11 block type. Finally, it will complete the "M" shape by placing the slanted lines using the b11 block type.

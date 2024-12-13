@@ -1,0 +1,26 @@
+To create a structure in the shape of the capital letter "Z", we will need to stack blocks in a specific order and position. Here is the step-by-step implementation to achieve this:
+
+1. Drop the base block (row block) at the bottom-left corner of the grid:
+```python
+ab_drop("b31", 0)
+```
+
+2. Drop the diagonal block (column block) one cell to the right of the base block:
+```python
+ab_drop("b13", 1)
+```
+
+3. Drop the top block (row block) two cells to the right of the diagonal block:
+```python
+ab_drop("b31", 3)
+```
+
+Together, these three steps will create a structure that resembles the letter "Z" when viewed from the top. The blocks are stacked in a bottom-to-top fashion to ensure stability, and the positioning is arranged to match the desired shape.
+
+Here is the complete implementation:
+
+```python
+ab_drop("b31", 0)
+ab_drop("b13", 1)
+ab_drop("b31", 3)
+```

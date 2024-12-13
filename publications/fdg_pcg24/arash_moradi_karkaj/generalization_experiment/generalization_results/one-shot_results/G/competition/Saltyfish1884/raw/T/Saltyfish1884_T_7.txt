@@ -1,0 +1,37 @@
+To generate a stable structure that resembles the character "T", we can follow these steps:
+
+1. Create the initial empty grid structure.
+
+```python
+W = 20
+H = 16
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Place the base blocks.
+
+```python
+for i in range(W):
+    ab_drop('b11', i)
+```
+
+3. Place the vertical block (b13) in the center of the base.
+
+```python
+ab_drop('b13', W // 2)
+```
+
+4. Place the horizontal block (b31) on top of the vertical block.
+
+```python
+ab_drop('b31', W // 2)
+```
+
+5. Print the final structure.
+
+```python
+for row in structure:
+    print(' '.join(row))
+```
+
+The above code will generate a stable structure resembling the character "T" by following the given constraints.

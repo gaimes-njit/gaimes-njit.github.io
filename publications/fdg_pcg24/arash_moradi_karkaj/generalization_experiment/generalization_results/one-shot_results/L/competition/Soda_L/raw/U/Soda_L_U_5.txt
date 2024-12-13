@@ -1,0 +1,27 @@
+The first step is to establish the base for the "U" shape. We can use the "b31" block to create the bottom horizontal line:
+
+```python
+ab_drop("b31", 5)
+```
+
+Next, we need to place the vertical bars on either side of the bottom line. We can use the "b13" block for this:
+
+```python
+ab_drop("b13", 3)
+ab_drop("b13", 7)
+```
+
+Finally, we can create the top horizontal line of the "U" shape using another "b31" block:
+
+```python
+ab_drop("b31", 5)
+```
+
+The complete implementation is as follows:
+
+```python
+ab_drop("b31", 5)
+ab_drop("b13", 3)
+ab_drop("b13", 7)
+ab_drop("b31", 5)
+```

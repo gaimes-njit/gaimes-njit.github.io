@@ -1,0 +1,43 @@
+To create the uppercase letter "V" using the ab_drop() command and the given block types, follow the instructions below:
+
+1. Start by placing a 1x1 square block ('b11') at position (1,1):
+```
+ab_drop('b11',1)
+```
+
+2. Place another 1x1 square block ('b11') at position (2,1):
+```
+ab_drop('b11',2)
+```
+
+3. Place a horizontal straight block ('b31') at position (3,1):
+```
+ab_drop('b31',3)
+```
+
+4. Place another 1x1 square block ('b11') at position (4,3):
+```
+ab_drop('b11',4)
+```
+
+5. Place a vertical straight block ('b13') at position (4,2):
+```
+ab_drop('b13',4)
+```
+
+6. Place another 1x1 square block ('b11') at position (4,1):
+```
+ab_drop('b11',4)
+```
+
+7. Place another 1x1 square block ('b11') at position (5,1):
+```
+ab_drop('b11',5)
+```
+
+8. Place a horizontal straight block ('b31') at position (6,1):
+```
+ab_drop('b31',6)
+```
+
+The resulting letter "V" should be formed within the allowed space boundaries.

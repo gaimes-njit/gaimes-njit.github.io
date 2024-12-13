@@ -1,0 +1,44 @@
+To generate a stable structure that resembles the character "Y" while meeting all hard constraints, we can follow these steps:
+
+Step 1: Initialize the structure as an empty grid with dimensions WxH.
+
+Step 2: Drop a b11 block at the center slot (slot number 9) of the bottom layer (layer 0) using the ab_drop() function.
+   ab_drop('b11', 9)
+
+Step 3: Drop a b31 block at the center slot (slot number 9) of the layer right above the base (layer 1).
+   ab_drop('b31', 9)
+
+Step 4: Drop a b13 block at the center slot (slot number 9) of the layer right above the previous block (layer 2).
+   ab_drop('b13', 9)
+
+Step 5: Drop another b31 block at the center slot (slot number 9) of the layer right above the previous block (layer 3).
+   ab_drop('b31', 9)
+
+Step 6: Drop another b11 block at the center slot (slot number 9) of the layer right above the previous block (layer 4).
+   ab_drop('b11', 9)
+
+Step 7: Drop a b11 block at the left adjacent slot (slot number 8) of the layer right above the base (layer 1).
+   ab_drop('b11', 8)
+
+Step 8: Drop a b11 block at the right adjacent slot (slot number 10) of the layer right above the base (layer 1).
+   ab_drop('b11', 10)
+
+Step 9: Drop a b11 block at the left adjacent slot (slot number 8) of the layer right above the previous block (layer 2).
+   ab_drop('b11', 8)
+
+Step 10: Drop a b11 block at the right adjacent slot (slot number 10) of the layer right above the previous block (layer 2).
+   ab_drop('b11', 10)
+
+Step 11: Drop a b31 block at the left adjacent slot (slot number 8) of the layer right above the previous block (layer 3).
+   ab_drop('b31', 8)
+
+Step 12: Drop a b31 block at the right adjacent slot (slot number 10) of the layer right above the previous block (layer 3).
+   ab_drop('b31', 10)
+
+Step 13: Drop a b13 block at the left adjacent slot (slot number 8) of the layer right above the previous block (layer 4).
+   ab_drop('b13', 8)
+
+Step 14: Drop a b13 block at the right adjacent slot (slot number 10) of the layer right above the previous block (layer 4).
+   ab_drop('b13', 10)
+
+By following these steps and using the ab_drop() function to drop the blocks in the correct order and position, a structure resembling the character "Y" will be generated while meeting all the specified constraints.

@@ -1,0 +1,15 @@
+To form a shape resembling the letter "J", we can use the following sequence of ab_drop() function calls:
+
+1. Place a b31 brick at x_position 9:
+ab_drop('b31', 9)
+This will occupy the cells (8, 0), (9, 0), and (10, 0).
+
+2. Place a b13 brick at x_position 9:
+ab_drop('b13', 9)
+This will occupy the cells (9, 1), (9, 0), and (9, 2).
+
+3. Place a b11 brick at x_position 8:
+ab_drop('b11', 8)
+This will occupy the cell (8, 3).
+
+By following this sequence, we have formed a shape resembling the letter "J" while satisfying the stability and boundary collision conditions.

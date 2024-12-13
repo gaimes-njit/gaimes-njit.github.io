@@ -1,0 +1,14 @@
+```
+# Initialize the structure
+structure = [[' ']*20 for _ in range(16)]
+
+# Step 1: Add the base of the "Y"
+ab_drop('b31', 9)
+
+# Step 2: Add the vertical part of the "Y"
+ab_drop('b13', 9)
+
+# Step 3: Add the horizontal part of the "Y"
+ab_drop('b31', 8)
+ab_drop('b31', 10)
+```

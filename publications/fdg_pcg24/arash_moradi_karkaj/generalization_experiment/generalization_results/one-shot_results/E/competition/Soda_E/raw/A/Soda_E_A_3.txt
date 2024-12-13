@@ -1,0 +1,33 @@
+Step 1: Place the top horizontal bar of the "A" character.
+
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+
+Step 2: Place the top-left diagonal bar of the "A" character.
+
+ab_drop("b31", 6)
+
+Step 3: Place the top-right diagonal bar of the "A" character.
+
+ab_drop("b31", 14)
+
+Step 4: Place the middle horizontal bar of the "A" character.
+
+ab_drop("b13", 7)
+ab_drop("b11", 8)
+
+Step 5: Place the bottom horizontal bar of the "A" character.
+
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+
+Full implementation:
+
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+ab_drop("b31", 6)
+ab_drop("b31", 14)
+ab_drop("b13", 7)
+ab_drop("b11", 8)
+ab_drop("b13", 9)
+ab_drop("b11", 10)

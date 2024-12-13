@@ -1,0 +1,14 @@
+Example of the `ab_drop()` function usage to create a stable structure for the capital letter "O":
+
+```python
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+ab_drop('b31', 8)
+ab_drop('b31', 10)
+ab_drop('b31', 7)
+ab_drop('b31', 11)
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+```
+
+This sequence of `ab_drop()` function calls drops blocks of the specified type (`'b11'`, `'b31'`, or `'b13'`) at the given `x_position` to form a stable structure resembling the letter "O".

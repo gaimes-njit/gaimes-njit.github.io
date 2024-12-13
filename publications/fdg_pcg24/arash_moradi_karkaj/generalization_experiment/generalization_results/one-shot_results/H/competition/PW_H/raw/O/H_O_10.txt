@@ -1,0 +1,31 @@
+To generate the capital letter "O", we can follow these steps:
+
+First, create the foundation of the "O" by stacking two vertical straight blocks (b13) on top of each other. Place the first block at position 1 and the second block at position 3.
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```
+
+Next, create the middle part of the "O" by placing a horizontal straight block (b31) at position 2.
+
+```
+ab_drop('b31', 2)
+```
+
+Finally, create the upper part of the "O" by stacking two vertical straight blocks (b13) on top of each other. Place the first block at position 1 and the second block at position 3.
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```
+
+Putting it all together, the stream of commands to generate the letter "O" would be:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```

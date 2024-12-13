@@ -1,0 +1,18 @@
+To generate a stable structure that looks like the uppercase character "U," we can use the ab_drop() function to strategically drop blocks in a bottom-up manner. The following steps outline the process:
+
+1. Initialize the structure as an empty WxH grid using the provided code:
+   ```python
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. To ensure stability, start by dropping a b31 block at the center of the base layer using ab_drop('b31', W//2). This will provide a stable foundation for the structure.
+
+3. Next, drop two b13 blocks on either side of the b31 block at slots (W//2 - 1) and (W//2 + 1) to form the sides of the "U" shape. Use ab_drop('b13', W//2 - 1) and ab_drop('b13', W//2 + 1) respectively.
+
+4. Now, we need to create the horizontal portion of the "U" shape. Start by dropping a b31 block at the slot W//2 on the layer above the base layer. It will serve as the horizontal portion of the "U" shape. Use ab_drop('b31', W//2, H-2) to drop the block.
+
+5. To stabilize the horizontal portion, drop two b11 blocks at slots (W//2 - 1) and (W//2 + 1) on the same layer. Use ab_drop('b11', W//2 - 1, H-2) and ab_drop('b11', W//2 + 1, H-2) respectively.
+
+6. Finally, complete the "U" shape by dropping two b31 blocks above the horizontal portion. Place one block at the slot W//2 on the layer above the horizontal portion, and another block at the slot W//2 on the layer above it. Use ab_drop('b31', W//2, H-3) and ab_drop('b31', W//2, H-4) respectively.
+
+The structure generated with these steps will resemble the uppercase character "U" and meet all the hard constraints specified.

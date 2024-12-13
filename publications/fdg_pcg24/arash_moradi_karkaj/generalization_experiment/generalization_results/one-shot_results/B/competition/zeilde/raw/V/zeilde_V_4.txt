@@ -1,0 +1,38 @@
+The process you described can be summarized as follows:
+
+1. Drawing the letter "V" with asterisks:
+```
+   *   *
+    * *  
+     *
+```
+
+2. List of asterisks and spaces in each row:
+- Row 1: 3 asterisks
+- Row 2: 1 asterisk, 1 space, 1 asterisk
+- Row 3: 1 space, 1 asterisk
+
+3. Using "x" for asterisks and "y" for spaces:
+- Row 1: xxx
+- Row 2: xyx
+- Row 3: yx
+
+4. Combining the "x" and "y" values for each row:
+- Row 1: xxx
+- Row 2: xyx
+- Row 3: yx
+
+5. Indicating the position of each variable for each row:
+- Row 1: x-1; x-2; x-3
+- Row 2: x-1; y-2; x-3
+- Row 3: y-1; x-2
+
+6. Sequence of `ab_drop` function calls for each row:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+```

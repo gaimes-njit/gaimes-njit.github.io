@@ -1,0 +1,27 @@
+To generate a stable structure that looks like the uppercase character "R," we can use the `ab_drop()` function along with the following steps:
+
+1. Initialize the structure as an empty grid using the `structure` variable: `structure = [[' ']*W for _ in range(H)]`
+
+2. Drop the bottom horizontal block (b31) centered at slot 9 using `ab_drop(b31, 9)`: `ab_drop(b31, 9)`
+
+3. Drop the vertical block (b13) centered at slot 9, one layer above the previous block, using `ab_drop(b13, 9)`: `ab_drop(b13, 9)`
+
+4. Drop the top horizontal block (b31) centered at slot 9, three layers above the previous block, using `ab_drop(b31, 9)`: `ab_drop(b31, 9)`
+
+5. Drop the square block (b11) centered at slot 9, one layer above the previous block, using `ab_drop(b11, 9)`: `ab_drop(b11, 9)`
+
+6. Drop the vertical block (b13) centered at slot 8, one layer above the previous block, using `ab_drop(b13, 8)`: `ab_drop(b13, 8)`
+
+7. Drop the bottom horizontal block (b31) centered at slot 10, one layer above the previous block, using `ab_drop(b31, 10)`: `ab_drop(b31, 10)`
+
+8. Drop the top horizontal block (b31) centered at slot 9, three layers above the previous block, using `ab_drop(b31, 9)`: `ab_drop(b31, 9)`
+
+9. Drop the square block (b11) centered at slot 8, one layer above the previous block, using `ab_drop(b11, 8)`: `ab_drop(b11, 8)`
+
+10. Drop the vertical block (b13) centered at slot 7, one layer above the previous block, using `ab_drop(b13, 7)`: `ab_drop(b13, 7)`
+
+11. Drop the bottom horizontal block (b31) centered at slot 5, one layer above the previous block, using `ab_drop(b31, 5)`: `ab_drop(b31, 5)`
+
+12. Drop the top horizontal block (b31) centered at slot 6, three layers above the previous block, using `ab_drop(b31, 6)`: `ab_drop(b31, 6)`
+
+By following these steps and calling the `ab_drop()` function with the appropriate block type and slot number, we can generate a stable structure that resembles the uppercase character "R."

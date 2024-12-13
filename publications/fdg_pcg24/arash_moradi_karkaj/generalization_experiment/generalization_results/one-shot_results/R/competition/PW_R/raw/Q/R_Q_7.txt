@@ -1,0 +1,14 @@
+To generate the uppercase letter "Q" in the grid, you can use the following stream of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+ab_drop('b31', 8)
+ab_drop('b31', 13)
+ab_drop('b13', 10)
+ab_drop('b13', 12)
+ab_drop('b31', 16)
+ab_drop('b13', 13)
+```
+
+This series of commands will create the letter "Q" by stacking and arranging the block types according to the defined environment.

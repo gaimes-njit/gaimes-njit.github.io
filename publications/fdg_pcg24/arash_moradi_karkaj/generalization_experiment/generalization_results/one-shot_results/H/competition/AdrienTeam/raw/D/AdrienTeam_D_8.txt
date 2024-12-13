@@ -1,0 +1,90 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Base layer
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b11', 12)
+ab_drop('b11', 13)
+ab_drop('b11', 14)
+ab_drop('b11', 15)
+
+# Second layer
+ab_drop('b11', 9)
+ab_drop('b11', 15)
+
+# Third layer
+ab_drop('b11', 9)
+ab_drop('b31', 10)
+ab_drop('b11', 12)
+ab_drop('b11', 15)
+
+# Fourth layer
+ab_drop('b11', 9)
+ab_drop('b11', 12)
+ab_drop('b11', 15)
+
+# Fifth layer
+ab_drop('b11', 9)
+ab_drop('b13', 10)
+ab_drop('b13', 13)
+ab_drop('b11', 15)
+
+# Sixth layer
+ab_drop('b11', 9)
+ab_drop('b11', 15)
+
+# Seventh layer
+ab_drop('b11', 9)
+ab_drop('b11', 15)
+
+# Eighth layer
+ab_drop('b11', 9)
+ab_drop('b11', 15)
+
+# Ninth layer
+ab_drop('b11', 9)
+ab_drop('b31', 10)
+ab_drop('b11', 12)
+ab_drop('b11', 15)
+
+# Tenth layer
+ab_drop('b11', 9)
+ab_drop('b11', 12)
+ab_drop('b11', 15)
+
+# Eleventh layer
+ab_drop('b11', 9)
+ab_drop('b13', 10)
+ab_drop('b13', 13)
+ab_drop('b11', 15)
+
+# Twelfth layer
+ab_drop('b11', 9)
+ab_drop('b11', 15)
+
+# Thirteenth layer
+ab_drop('b11', 9)
+ab_drop('b11', 15)
+
+# Fourteenth layer
+ab_drop('b11', 9)
+ab_drop('b31', 10)
+ab_drop('b11', 12)
+ab_drop('b11', 15)
+
+# Fifteenth layer
+ab_drop('b11', 9)
+ab_drop('b11', 12)
+ab_drop('b11', 15)
+
+# Top layer
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b11', 12)
+ab_drop('b11', 13)
+ab_drop('b11', 14)
+ab_drop('b11', 15)
+```

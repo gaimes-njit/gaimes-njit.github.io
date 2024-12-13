@@ -1,0 +1,24 @@
+To create the letter "X" in the level, we can start by building the base blocks and then adding the upper blocks. The key is to ensure that the blocks are well-supported and balanced.
+
+Here is the complete implementation:
+
+```python
+# Step 1: Build the base blocks
+ab_drop("b31", 8)  # Place a row block at x_position=8
+ab_drop("b13", 7)  # Place a column block at x_position=7
+ab_drop("b13", 9)  # Place a column block at x_position=9
+ab_drop("b31", 8)  # Place a row block at x_position=8
+
+# Step 2: Add the upper blocks
+ab_drop("b11", 8)  # Place a square block at x_position=8
+ab_drop("b11", 7)  # Place a square block at x_position=7
+ab_drop("b11", 9)  # Place a square block at x_position=9
+```
+
+This implementation starts by building the base blocks of the letter "X" using a combination of row and column blocks. The row blocks are placed horizontally to create the base, and the column blocks are placed vertically to connect the row blocks.
+
+Then, the upper blocks are added by placing square blocks on top of the base blocks.
+
+The implementation ensures that the blocks are well-supported and balanced, which makes the structure stable.
+
+Note: The order of the ab_drop() calls is crucial to create a stable structure.

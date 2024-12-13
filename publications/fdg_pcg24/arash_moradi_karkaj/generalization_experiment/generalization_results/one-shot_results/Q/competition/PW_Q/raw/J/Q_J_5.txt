@@ -1,0 +1,13 @@
+To generate the uppercase letter "J", we need to use the following block types and positions:
+
+1. Place a b13 block at position (1, 2) to create the vertical line of the "J".
+2. Place a b31 block at position (2, 1) to create the horizontal line at the top of the "J".
+3. Place a b11 block at position (2, 2) to create the bottom left corner of the "J".
+
+```
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b11', 2)
+```
+
+This sequence of ab_drop commands will generate the uppercase letter "J" in the Tetris-like environment.

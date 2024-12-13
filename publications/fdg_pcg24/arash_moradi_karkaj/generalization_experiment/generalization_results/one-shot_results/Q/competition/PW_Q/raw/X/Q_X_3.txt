@@ -1,0 +1,10 @@
+```
+ab_drop('b31',1) // Place the horizontal straight block at position 1
+ab_drop('b11',4) // Place the square block at position 4
+ab_drop('b31',7) // Place another horizontal straight block at position 7
+ab_drop('b31',10) // Place another horizontal straight block at position 10
+ab_drop('b13',1) // Place the vertical straight block at position 1
+ab_drop('b13',13) // Place another vertical straight block at position 13
+```
+
+This stream of commands will generate the uppercase English letter "X" within the given constraints and gravity rules.

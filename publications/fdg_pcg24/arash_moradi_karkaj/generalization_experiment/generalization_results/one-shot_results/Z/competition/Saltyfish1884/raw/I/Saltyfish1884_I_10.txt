@@ -1,0 +1,49 @@
+To generate a stable structure that resembles the character "I" while meeting all hard constraints, we can follow the steps below:
+
+Step 1: Import the required libraries and initialize the structure grid:
+
+```python
+W = 20  # Width of the map
+H = 16  # Height of the map
+
+structure = [[' ']*W for _ in range(H)]  # Initialize the structure as an empty WxH grid
+```
+
+Step 2: Define a function to determine the stability of the structure after placing a block:
+
+```python
+def is_stable(drop_pos):
+    # Check if the block is placed on a solid base (b11 or b13 blocks)
+    if drop_pos[0] < H-1 and (structure[drop_pos[0]+1][drop_pos[1]] == 'b11' or structure[drop_pos[0]+1][drop_pos[1]] == 'b13'):
+        return True
+    return False
+```
+
+Step 3: Place the b31 block on the base to prevent overhangs:
+
+```python
+ab_drop('b31', W//2)  # Drop a b31 block at the center slot
+```
+
+Step 4: Drop the b13 blocks below the b31 block:
+
+```python
+for i in range(W//2 - 1, W//2 + 2):  # Drop 3 b13 blocks horizontally below the b31 block
+    ab_drop('b13', i)
+```
+
+Step 5: Place the remaining b11 blocks to complete the structure:
+
+```python
+for i in range(W//2 - 1, W//2 + 2):  # Place 3 b11 blocks horizontally above the b31 block
+    structure[H-4][i] = 'b11'
+```
+
+Step 6: Print the final structure:
+
+```python
+for row in structure:
+    print(' '.join(row))
+```
+
+This will generate a stable structure that resembles the character "I" while meeting all hard constraints.

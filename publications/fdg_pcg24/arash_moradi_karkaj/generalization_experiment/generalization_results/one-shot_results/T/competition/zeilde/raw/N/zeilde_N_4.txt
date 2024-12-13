@@ -1,0 +1,76 @@
+1. Here is the letter "N" drawn with asterisks:
+```
+**
+* *
+*  *
+*   *
+*    *
+*     *
+*      *
+*       *
+*        *
+*         *
+```
+
+2. List of asterisks and spaces in each row:
+Row 1: 2 asterisks
+Row 2: 1 asterisk, 1 space, 1 asterisk
+Row 3: 1 asterisk, 2 spaces, 1 asterisk
+Row 4: 1 asterisk, 3 spaces, 1 asterisk
+Row 5: 1 asterisk, 4 spaces, 1 asterisk
+Row 6: 1 asterisk, 5 spaces, 1 asterisk
+Row 7: 1 asterisk, 6 spaces, 1 asterisk
+Row 8: 1 asterisk, 7 spaces, 1 asterisk
+Row 9: 1 asterisk, 8 spaces, 1 asterisk
+Row 10: 1 asterisk, 9 spaces, 1 asterisk
+
+3. Listing asterisks as "x" and spaces as "y":
+Row 1: xx
+Row 2: xyx
+Row 3: xyyx
+Row 4: xyyyx
+Row 5: xyyyyx
+Row 6: xyyyyyx
+Row 7: xyyyyyyx
+Row 8: xyyyyyyyx
+Row 9: xyyyyyyyyx
+Row 10: xyyyyyyyyyx
+
+4. Writing out each "x" and "y" side-by-side:
+Row 1: xx
+Row 2: xxyx
+Row 3: xyyx
+Row 4: xyyyx
+Row 5: xyyyyx
+Row 6: xyyyyyx
+Row 7: xyyyyyyx
+Row 8: xyyyyyyyx
+Row 9: xyyyyyyyyx
+Row 10: xyyyyyyyyyx
+
+5. Positions of each variable:
+Row 1: x-1, x-2
+Row 2: x-1, y-2, x-3
+Row 3: x-1, y-2, y-3, x-4
+Row 4: x-1, y-2, y-3, y-4, x-5
+Row 5: x-1, y-2, y-3, y-4, y-5, x-6
+Row 6: x-1, y-2, y-3, y-4, y-5, y-6, x-7
+Row 7: x-1, y-2, y-3, y-4, y-5, y-6, y-7, x-8
+Row 8: x-1, y-2, y-3, y-4, y-5, y-6, y-7, y-8, x-9
+Row 9: x-1, y-2, y-3, y-4, y-5, y-6, y-7, y-8, y-9, x-10
+Row 10: x-1, y-2, y-3, y-4, y-5, y-6, y-7, y-8, y-9, y-10, x-11
+
+6. Sequence of `ab_drop` function calls:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 11)
+```

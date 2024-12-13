@@ -1,0 +1,109 @@
+The steps for drawing the letter "J" with asterisks and converting it into `ab_drop` function calls are as follows:
+
+1. Drawing the letter "J" with asterisks:
+```
+   *****
+       *
+       *
+       *
+**     *
+ *******
+```
+
+2. Verbal listing of asterisks and spaces in each row:
+- Row 1: 5 asterisks
+- Row 2: 3 spaces, 1 asterisk
+- Row 3: 3 spaces, 1 asterisk
+- Row 4: 3 spaces, 1 asterisk
+- Row 5: 2 asterisks, 5 spaces, 1 asterisk
+- Row 6: 2 spaces, 7 asterisks
+
+3. Replacing asterisks with "x" and spaces with "y" in each row:
+- Row 1: xxxxx
+- Row 2: yyyx
+- Row 3: yyyx
+- Row 4: yyyx
+- Row 5: xxxyyyyyx
+- Row 6:  yyxxxxxxx
+
+4. Writing out each "x" and "y" side-by-side for each row:
+- Row 1: x x x x x
+- Row 2: y y y x
+- Row 3: y y y x
+- Row 4: y y y x
+- Row 5: x x x y y y y y x
+- Row 6: y y x x x x x x x
+
+5. Indicating the position of each variable in each row:
+- Row 1: x-1; x-2; x-3; x-4; x-5
+- Row 2: y-1; y-2; y-3; x-4
+- Row 3: y-1; y-2; y-3; x-4
+- Row 4: y-1; y-2; y-3; x-4
+- Row 5: x-1; x-2; x-3; y-4; y-5; y-6; y-7; y-8; x-9
+- Row 6: y-1; y-2; x-3; x-4; x-5; x-6; x-7; x-8; x-9
+
+6. Sequence of `ab_drop` function calls for each row:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+```

@@ -1,0 +1,17 @@
+To create the uppercase letter "Y", we can use the following set of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b11', 2)
+ab_drop('b31', 3)
+ab_drop('b13', 2)
+```
+
+Explanation:
+1. The first two commands `ab_drop('b31', 1)` and `ab_drop('b31', 2)` create the two horizontal bars at the top of the letter "Y".
+2. The third command `ab_drop('b11', 2)` adds a single block to connect the two bars together vertically.
+3. The fourth command `ab_drop('b31', 3)` creates the vertical bar of the letter "Y".
+4. The fifth command `ab_drop('b13', 2)` adds a single block below the connecting block to complete the letter "Y".
+
+Remember to include the command stream consecutively between the three backticks (```) when submitting your solution.

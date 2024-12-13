@@ -1,0 +1,47 @@
+Step 2:
+Row 1: 1x, 2y, 1x
+Row 2: 1y, 1x, 1y, 1x
+Row 3: 1y, 1x, 1y, 1x
+Row 4: 1x, 2y, 1x
+
+Step 3:
+Row 1: xx, yy, xx
+Row 2: yx, xy, yx
+Row 3: yx, xy, yx
+Row 4: xx, yy, xx
+
+Step 4:
+Row 1: xxyyxx
+Row 2: yxyyx
+Row 3: yxyyx
+Row 4: xxyyxx
+
+Step 5:
+Row 1: x-1; x-2; y-3; y-4; x-5; x-6
+Row 2: y-1; x-2; y-3; y-4; x-5
+Row 3: y-1; x-2; y-3; y-4; x-5
+Row 4: x-1; x-2; y-3; y-4; x-5; x-6
+
+Step 6:
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)

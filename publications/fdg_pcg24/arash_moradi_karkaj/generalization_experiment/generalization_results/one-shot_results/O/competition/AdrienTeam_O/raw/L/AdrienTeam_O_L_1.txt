@@ -1,0 +1,9 @@
+```
+# Initialize the structure
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the blocks to create the "L" shape
+ab_drop('b11', 1)
+ab_drop('b13', 0)
+ab_drop('b31', 1)
+```

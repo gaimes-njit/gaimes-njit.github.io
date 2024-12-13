@@ -1,0 +1,32 @@
+To generate the uppercase letter "Q" using the given block types and gravity rules, you can follow these steps:
+
+1. Start by placing the vertical foundations for the letter "Q" using the block type 'b13':
+
+```
+ab_drop('b13',1)
+ab_drop('b13',3)
+ab_drop('b13',4)
+ab_drop('b13',6)
+```
+
+This will create the left and right sides of the letter "Q".
+
+2. Place the horizontal top part of the letter "Q" using the block type 'b31':
+
+```
+ab_drop('b31',2)
+ab_drop('b31',5)
+```
+
+This will connect the left and right sides of the letter "Q" with a horizontal bar on top.
+
+Here is the complete stream of commands to generate the uppercase letter "Q":
+
+```
+ab_drop('b13',1)
+ab_drop('b13',3)
+ab_drop('b13',4)
+ab_drop('b13',6)
+ab_drop('b31',2)
+ab_drop('b31',5)
+```

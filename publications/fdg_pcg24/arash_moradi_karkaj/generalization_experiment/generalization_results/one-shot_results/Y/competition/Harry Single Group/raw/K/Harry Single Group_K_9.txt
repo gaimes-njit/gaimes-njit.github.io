@@ -1,0 +1,35 @@
+To form the shape resembling the letter "K" using the available props, we can use the following steps:
+
+1. Initialize the map as an empty 2D array with dimensions 16x20.
+
+```
+map = [[' ' for _ in range(20)] for _ in range(16)]
+```
+
+2. Place the b31 brick to form the vertical part of the "K" shape. We can use `ab_drop('b31', x)` to drop the brick at the desired x position, where x is the middle cell of the brick.
+
+```
+ab_drop('b31', 8)
+```
+
+This will occupy the cells (7, 0), (8, 0), and (9, 0).
+
+3. Place the b13 brick to form the horizontal part of the "K" shape. We can use `ab_drop('b13', x)` to drop the brick at the desired x position, where x is the middle cell of the brick.
+
+```
+ab_drop('b13', 8)
+```
+
+This will occupy the cells (8, 0), (8, 1), and (8, 2).
+
+4. Place the b11 brick to complete the top part of the "K" shape. We can use `ab_drop('b11', x)` to drop the brick at the desired x position.
+
+```
+ab_drop('b11', 7)
+```
+
+This will occupy the cell (7, 1).
+
+After executing the above steps, the cells occupied by the bricks will form a shape resembling the letter "K".
+
+Note: It is important to ensure stability and avoid boundary collisions while placing the bricks.

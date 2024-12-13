@@ -1,0 +1,14 @@
+There are multiple ways to build a "K" shape using the ab_drop function. Here is one possible solution:
+
+1. Place the first vertical line of the "K" using a 1*3 block (b13) at position (2,0):
+   ab_drop('b13', 2)
+
+2. Place the horizontal branch of the "K" using a 3*1 block (b31) at position (2,1):
+   ab_drop('b31', 2)
+
+3. Place the diagonal line of the "K" using three 1*1 blocks (b11) at positions (2,4), (3,3), and (4,2):
+   ab_drop('b11', 2)
+   ab_drop('b11', 3)
+   ab_drop('b11', 4)
+
+This should create the structure of a "K" inside the 20*16 box block.

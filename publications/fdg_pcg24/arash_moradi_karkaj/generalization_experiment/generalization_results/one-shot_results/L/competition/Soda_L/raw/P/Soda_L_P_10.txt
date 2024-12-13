@@ -1,0 +1,16 @@
+To create the capital letter "P" in the level, we can break it down into two blocks - a vertical line and a horizontal line.
+
+First, we will drop the vertical line (the left part of the letter "P") using the "b31" block type. We will center it at x_position=12. This will occupy cells (11, 0), (12, 0), and (13, 0).
+
+ab_drop("b31", 12)
+
+Next, we will drop the horizontal line (the base of the letter "P") using the "b13" block type. We will center it at x_position=11. This will occupy cells (10, 0), (11, 0), and (12, 0).
+
+ab_drop("b13", 11)
+
+By dropping these two blocks, we can create a structure that resembles the capital letter "P" in the level.
+
+The complete implementation would be:
+
+ab_drop("b31", 12)
+ab_drop("b13", 11)

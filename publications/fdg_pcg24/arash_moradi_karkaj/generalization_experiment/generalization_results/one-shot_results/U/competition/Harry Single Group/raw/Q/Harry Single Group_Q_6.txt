@@ -1,0 +1,59 @@
+```python
+# Map initialization
+field = [[0] * 20 for _ in range(16)]  # 16x20 field
+
+def check_stability():
+    for y in range(1, 16):
+        for x in range(19):
+            if field[y][x] == 1:
+                if field[y][x-1] == 0 or field[y][x+1] == 0:
+                    return False
+    return True
+
+def check_boundary(x, y, width, height):
+    if x < 0 or x + width > 20 or y < 0 or y + height > 16:
+        return False
+    return True
+
+def ab_drop(x, y):
+    if x == 'b13':
+        height = 3
+        width = 1
+    elif x == 'b31':
+        height = 1
+        width = 3
+    elif x == 'b11':
+        height = 1
+        width = 1
+    else:
+        return
+
+    # Check if brick exceeds field boundary
+    if not check_boundary(y, 15, width, height):
+        return
+
+    # Check if brick overlaps with previously placed bricks
+    for i in range(width):
+        if field[15 - height][y + i] == 1:
+            return
+
+    # Drop the brick
+    for i in range(height):
+        field[15 - i][y:y + width] = [1] * width
+
+# Generate the structure resembling the letter "Q"
+ab_drop('b13', 5)
+ab_drop('b31', 6)
+ab_drop('b13', 9)
+ab_drop('b13', 13)
+ab_drop('b31', 14)
+ab_drop('b13', 16)
+
+# Check stability
+if not check_stability():
+    print("The structure is unstable!")
+
+# Display the final field
+for row in field:
+    print(row)
+```

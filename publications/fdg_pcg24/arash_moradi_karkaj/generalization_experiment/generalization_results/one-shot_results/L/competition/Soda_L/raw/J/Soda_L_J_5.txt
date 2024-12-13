@@ -1,0 +1,13 @@
+```
+# Step 1: Create the top bar
+ab_drop("b31", 5)
+
+# Step 2: Create the middle pipe
+ab_drop("b13", 6)
+
+# Step 3: Create the bottom tick
+ab_drop("b13", 7)
+ab_drop("b11", 8)
+```
+
+The above code block creates a structure that looks like the capital letter "J" in the level. The blocks are dropped in a bottom-to-top fashion to ensure stability. The top bar is created first, followed by the middle pipe, and finally the bottom tick.

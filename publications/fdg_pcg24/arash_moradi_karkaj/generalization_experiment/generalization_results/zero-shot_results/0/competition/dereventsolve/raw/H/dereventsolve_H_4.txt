@@ -1,0 +1,12 @@
+Here is a sequence of `ab_drop` function calls to generate a structure that looks like the letter "H" using the given database:
+
+```python
+ab_drop(2, 1)  # Top-left vertical line
+ab_drop(4, 1)  # Top-right vertical line
+ab_drop(2, 5)  # Bottom-left vertical line
+ab_drop(4, 5)  # Bottom-right vertical line
+ab_drop(2, 3)  # Horizontal line
+ab_drop(4, 3)  # Horizontal line
+```
+
+The above sequence of `ab_drop` function calls will generate a structure that resembles the letter "H".

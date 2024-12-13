@@ -1,0 +1,87 @@
+To form a shape resembling the letter "C" using the given bricks and the ab_drop() function, we can follow the following steps:
+
+Step 1: Initialize the map
+```python
+map = [[0] * 20 for _ in range(16)]
+```
+This initializes a 16x20 2D array to represent the field, with all cells initially set to 0 (empty).
+
+Step 2: Place the bricks
+To form the letter "C" shape, we can use the following sequence of ab_drop() function calls:
+
+1. Place b31 brick at x_position = 5
+```python
+ab_drop('b31', 5)
+```
+This will occupy cells (4, 0), (5, 0), and (6, 0).
+
+2. Place b13 brick at x_position = 5
+```python
+ab_drop('b13', 5)
+```
+This will occupy cells (5, 0), (5, 1), and (5, 2).
+
+3. Place b31 brick at x_position = 3
+```python
+ab_drop('b31', 3)
+```
+This will occupy cells (2, 0), (3, 0), and (4, 0).
+
+4. Place b13 brick at x_position = 3
+```python
+ab_drop('b13', 3)
+```
+This will occupy cells (3, 0), (3, 1), and (3, 2).
+
+Step 3: Check stability and boundary collisions
+After each ab_drop() function call, we need to check for stability and boundary collisions to ensure the placed bricks remain stable and do not exceed the boundaries of the field. We can do this by adding additional code to the ab_drop() function.
+
+Final Code:
+You can modify the ab_drop() function to include stability and boundary collision checks, and then execute the step-by-step sequence of ab_drop() function calls mentioned above.
+
+```python
+# initialize map
+map = [[0] * 20 for _ in range(16)]
+
+# function to check stability
+def check_stability():
+    for y in range(1, 16):
+        for x in range(1, 19):
+            if map[y][x] != 0:
+                if (map[y-1][x] != 0 and map[y][x-1] == 0 and map[y][x+1] == 0) or (map[y-1][x] == 0 and map[y][x-1] != 0 and map[y][x+1] != 0):
+                    return False
+    return True
+
+# function to check boundary collision
+def check_boundary(x, y):
+    if x < 0 or x >= 20 or y < 0 or y >= 16:
+        return False
+    return True
+
+# modified ab_drop function with stability and boundary collision checks
+def ab_drop(x, y):
+    if x == 'b31':
+        for i in range(y-1, y+2):
+            if check_boundary(i, 0):
+                if map[0][i] != 0:
+                    return
+        for i in range(y-1, y+2):
+            map[0][i] = 1
+        return
+    elif x == 'b13':
+        for i in range(y-1, y+2):
+            if check_boundary(y, i):
+                if map[i][y] != 0:
+                    return
+        for i in range(y-1, y+2):
+            map[i][y] = 1
+        return
+
+# Place bricks to form the letter "C"
+ab_drop('b31', 5)
+ab_drop('b13', 5)
+ab_drop('b31', 3)
+ab_drop('b13', 3)
+```
+
+By executing the above code, the required structure resembling the letter "C" will be generated, satisfying the important notes of stability and avoiding boundary collisions.

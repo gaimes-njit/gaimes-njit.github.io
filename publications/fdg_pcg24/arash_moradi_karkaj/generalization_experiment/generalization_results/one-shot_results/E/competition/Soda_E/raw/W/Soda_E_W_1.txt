@@ -1,0 +1,39 @@
+First, let's start by creating the left leg of the "W" character:
+
+# The left column of W
+ab_drop("b31", 6)
+ab_drop("b13", 5)
+ab_drop("b31", 4)
+
+Then, let's create the center column of the "W" character:
+
+# The center column of W
+ab_drop("b13", 10)
+ab_drop("b11", 9)
+ab_drop("b11", 7)
+ab_drop("b13", 6)
+
+Finally, let's create the right leg of the "W" character:
+
+# The right column of W
+ab_drop("b31", 14)
+ab_drop("b13", 13)
+ab_drop("b31", 12)
+
+Overall, the complete implementation to generate a structure in the level that looks like a capital character "W" would be as follows:
+
+# The left column of W
+ab_drop("b31", 6)
+ab_drop("b13", 5)
+ab_drop("b31", 4)
+
+# The center column of W
+ab_drop("b13", 10)
+ab_drop("b11", 9)
+ab_drop("b11", 7)
+ab_drop("b13", 6)
+
+# The right column of W
+ab_drop("b31", 14)
+ab_drop("b13", 13)
+ab_drop("b31", 12)

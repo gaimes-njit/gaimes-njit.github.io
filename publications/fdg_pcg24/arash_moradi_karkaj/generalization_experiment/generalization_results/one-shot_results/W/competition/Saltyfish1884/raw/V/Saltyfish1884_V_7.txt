@@ -1,0 +1,32 @@
+To generate a stable structure that resembles the character "V", we need to carefully consider the constraints and plan the dropping positions and order of the blocks. Here is a step-by-step approach to building the structure:
+
+1. Initialize the structure grid:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start by dropping a b11 block at the center slot (slot number 9):
+```python
+ab_drop('b11', 9)
+```
+
+3. Next, drop two b13 blocks on either side of the b11 block to form the upper part of the "V":
+```python
+ab_drop('b13', 7)  # Left block
+ab_drop('b13', 11)  # Right block
+```
+
+4. Now, drop a b31 block at the center slot on the layer above the base to form the lower part of the "V":
+```python
+ab_drop('b31', 9)
+```
+
+5. Lastly, drop two b31 blocks on the sides of the lower b31 block to complete the structure:
+```python
+ab_drop('b31', 7)  # Left block
+ab_drop('b31', 11)  # Right block
+```
+
+After executing the above steps, the structure grid should contain the stable structure resembling the character "V". You can print the structure grid to visualize the result.
+
+Note: Make sure the ab_drop() function is defined correctly and accessible before executing the above code.

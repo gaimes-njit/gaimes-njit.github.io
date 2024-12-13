@@ -1,0 +1,61 @@
+To generate a stable structure that resembles the character "O" while meeting all the hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty WxH grid using the provided code snippet.
+
+2. Place a b31 block on the base layer (layer 0) by calling the ab_drop() function with x = "b31" and y = (W/2) - 1. This ensures that the block's center is aligned with the middle of the map.
+
+3. Place two b13 blocks on top of the b31 block to form a stable base for the structure. Call the ab_drop() function with x = "b13" and y = (W/2) - 2 and (W/2).
+
+4. Place two b13 blocks on the next layer (layer 2) above the previous blocks. Call the ab_drop() function with x = "b13" and y = (W/2) - 2 and (W/2).
+
+5. Place two b13 blocks on the next layer (layer 4) above the previous blocks. Call the ab_drop() function with x = "b13" and y = (W/2) - 2 and (W/2).
+
+6. Place a b31 block on the top layer (layer 6) above the previous blocks. Call the ab_drop() function with x = "b31" and y = (W/2) - 1.
+
+7. Place two b13 blocks on the next layer (layer 8) above the previous blocks. Call the ab_drop() function with x = "b13" and y = (W/2) - 2 and (W/2).
+
+8. Place two b13 blocks on the next layer (layer 10) above the previous blocks. Call the ab_drop() function with x = "b13" and y = (W/2) - 2 and (W/2).
+
+9. Place two b13 blocks on the next layer (layer 12) above the previous blocks. Call the ab_drop() function with x = "b13" and y = (W/2) - 2 and (W/2).
+
+10. Place a b31 block on the top layer (layer 14) above the previous blocks. Call the ab_drop() function with x = "b31" and y = (W/2) - 1.
+
+11. The resulting structure should resemble the character "O" and meet all the hard constraints of stability. The soft constraint of no boundary intrusion is automatically ensured by the ab_drop() function and the provided constraints.
+
+The code to generate this structure would look like:
+
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Place the first b31 block on the base layer
+ab_drop("b31", int((W/2) - 1))
+
+# Place two b13 blocks on top of the b31 block
+ab_drop("b13", int((W/2) - 2))
+ab_drop("b13", int((W/2)))
+
+# Place two b13 blocks on the next layer
+ab_drop("b13", int((W/2) - 2))
+ab_drop("b13", int((W/2)))
+
+# Repeat the above steps to build the structure
+# Place a b31 block
+ab_drop("b31", int((W/2) - 1))
+
+# Place two b13 blocks
+ab_drop("b13", int((W/2) - 2))
+ab_drop("b13", int((W/2)))
+
+# Place two b13 blocks
+ab_drop("b13", int((W/2) - 2))
+ab_drop("b13", int((W/2)))
+
+# Place two b13 blocks
+ab_drop("b13", int((W/2) - 2))
+ab_drop("b13", int((W/2)))
+
+# Place a b31 block on the top layer
+ab_drop("b31", int((W/2) - 1))
+```
+
+Please note that the exact values of the slot numbers (y) may need adjustments based on the specific dimensions of the grid and blocks used in your environment.

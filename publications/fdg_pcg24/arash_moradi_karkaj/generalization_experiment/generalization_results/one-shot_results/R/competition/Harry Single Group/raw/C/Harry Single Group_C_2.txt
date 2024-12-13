@@ -1,0 +1,11 @@
+To form the shape resembling the letter "C", we need to place the bricks in a specific order to ensure stability and avoid boundary collisions. Here is the step-by-step process:
+
+1. Initialize the field by creating a 20x16 grid and setting all cells to empty.
+2. Place a b31 brick starting at position (8, 14) to form the base of the "C": ab_drop('b31', 8)
+3. Place a b13 brick starting at position (11, 14) to form the stem of the "C": ab_drop('b13', 11)
+4. Place a b31 brick starting at position (8, 11) to form the top curve of the "C": ab_drop('b31', 8)
+5. Place a b11 brick starting at position (6, 10) to connect the top curve to the stem: ab_drop('b11', 6)
+6. Place a b11 brick starting at position (6, 9) to extend the stem of the "C": ab_drop('b11', 6)
+7. Place a b11 brick starting at position (6, 8) to complete the stem of the "C": ab_drop('b11', 6)
+
+The final structure resembling the letter "C" will be formed on the field.

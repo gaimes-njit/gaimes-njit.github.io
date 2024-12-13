@@ -1,0 +1,13 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Construct the left vertical block of the 'H'
+ab_drop('b13',9)
+ab_drop('b13',10)
+
+# Construct the horizontal block of the 'H'
+ab_drop('b31',9)
+
+# Construct the right vertical block of the 'H'
+ab_drop('b13',11)
+ab_drop('b13',10)

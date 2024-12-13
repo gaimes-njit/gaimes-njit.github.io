@@ -1,0 +1,10 @@
+To create the capital letter "I", we can start by creating two column blocks next to each other. The first column block will be placed at x_position = 8, and the second column block will be placed at x_position = 12. This will form the two vertical lines of the letter "I".
+
+Here is the code to create the structure:
+
+```
+ab_drop("b13", 8)   # Place the first column block
+ab_drop("b13", 12)  # Place the second column block
+```
+
+This code will create the structure of the letter "I" in a bottom-to-top fashion and ensures stability.

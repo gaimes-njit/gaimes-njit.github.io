@@ -1,0 +1,5 @@
+To build the capital letter "V" in a stable and similar manner, we can break it down into three blocks: one row block ("b31") as the base, and two column blocks ("b13") as the sides of the "V". Here's the implementation:
+
+ab_drop("b31", 8)
+ab_drop("b13", 10)
+ab_drop("b13", 6)

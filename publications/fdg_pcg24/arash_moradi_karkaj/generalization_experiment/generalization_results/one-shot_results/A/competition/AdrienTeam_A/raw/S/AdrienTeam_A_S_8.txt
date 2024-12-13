@@ -1,0 +1,94 @@
+First, let's initialize the map:
+
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+To build the "S" structure, we can follow these steps:
+
+1. Start by dropping a vertical block ('b13') at the leftmost slot (0) and align it with the bottom layer (layer 0):
+```
+ab_drop('b13', 0)
+```
+
+2. Next, drop a horizontal block ('b31') centered on slot 1 in the bottom layer (layer 0):
+```
+ab_drop('b31', 1)
+```
+
+3. Move up to layer 1 and drop a vertical block ('b13') at slot 0, aligning its center:
+```
+ab_drop('b13', 0)
+```
+
+4. Move up to layer 2 and drop a horizontal block ('b31') centered on slot 2:
+```
+ab_drop('b31', 2)
+```
+
+5. Move up to layer 3 and drop a vertical block ('b13') at slot 0, aligning its center:
+```
+ab_drop('b13', 0)
+```
+
+6. Move up to layer 4 and drop a horizontal block ('b31') centered on slot 1:
+```
+ab_drop('b31', 1)
+```
+
+7. Move up to layer 5 and drop a vertical block ('b13') at slot 2, aligning its center:
+```
+ab_drop('b13', 2)
+```
+
+8. Move up to layer 6 and drop a horizontal block ('b31') centered on slot 0:
+```
+ab_drop('b31', 0)
+```
+
+9. Move up to layer 7 and drop a vertical block ('b13') at slot 2, aligning its center:
+```
+ab_drop('b13', 2)
+```
+
+10. Move up to layer 8 and drop a horizontal block ('b31') centered on slot 1:
+```
+ab_drop('b31', 1)
+```
+
+11. Move up to layer 9 and drop a vertical block ('b13') at slot 0, aligning its center:
+```
+ab_drop('b13', 0)
+```
+
+12. Move up to layer 10 and drop a horizontal block ('b31') centered on slot 2:
+```
+ab_drop('b31', 2)
+```
+
+13. Move up to layer 11 and drop a vertical block ('b13') at slot 0, aligning its center:
+```
+ab_drop('b13', 0)
+```
+
+14. Move up to layer 12 and drop a horizontal block ('b31') centered on slot 1:
+```
+ab_drop('b31', 1)
+```
+
+15. Move up to layer 13 and drop a vertical block ('b13') at slot 2, aligning its center:
+```
+ab_drop('b13', 2)
+```
+
+16. Move up to layer 14 and drop a horizontal block ('b31') centered on slot 0:
+```
+ab_drop('b31', 0)
+```
+
+17. Move up to layer 15 and drop a vertical block ('b13') at slot 2, aligning its center:
+```
+ab_drop('b13', 2)
+```
+
+This sequence of `ab_drop()` calls will create a stable structure resembling the letter "S".

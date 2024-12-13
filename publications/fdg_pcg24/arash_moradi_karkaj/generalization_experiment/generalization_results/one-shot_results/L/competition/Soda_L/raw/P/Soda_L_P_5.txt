@@ -1,0 +1,25 @@
+To create a capital letter "P" in the level, we can break it down into three blocks: 
+1. The vertical left part of the letter "P" 
+2. The base of the letter "P" 
+3. The top bar of the letter "P"
+
+To create the vertical left part of the letter "P", we can use a "b31" block and center it at a specific x-position. For example, if we place it at x_position=5, it will occupy cells (4, 0), (5, 0), and (6, 0). 
+
+Next, we can create the base of the letter "P" using a "b13" block. We will center it at a specific x-position, and place it one row above the bottom row to leave space for the vertical left part. For example, if we place it at x_position=5, it will occupy cells (4, 1), (5, 1), and (6, 1). 
+
+Finally, we can create the top bar of the letter "P" using a "b13" block. We will center it between the vertical left part and the base, and place it one row above the base. For example, if we place it at x_position=5, it will occupy cells (4, 2), (5, 2), and (6, 2). 
+
+Below is the complete implementation to create a capital letter "P":
+
+```
+# Create the vertical left part of the letter "P"
+ab_drop("b31", 5)
+
+# Create the base of the letter "P"
+ab_drop("b13", 5)
+
+# Create the top bar of the letter "P"
+ab_drop("b13", 5)
+```
+
+This implementation ensures stability as each block is dropped in a bottom-to-top fashion, and it creates a structure that resembles the capital letter "P" in the level.

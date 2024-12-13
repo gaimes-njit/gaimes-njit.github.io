@@ -1,0 +1,5 @@
+# Solution:
+
+ab_drop('b13', 7)  # Drop first leg of M
+ab_drop('b31', 7)  # Drop base of M
+ab_drop('b13', 13)  # Drop second leg of M

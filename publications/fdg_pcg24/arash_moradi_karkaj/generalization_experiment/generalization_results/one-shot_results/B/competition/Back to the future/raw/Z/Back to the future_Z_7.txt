@@ -1,0 +1,43 @@
+To generate a stable structure that looks like the uppercase character "Z" using the `ab_drop()` function, we can follow the following steps:
+
+1. Initialize the structure as an empty WxH grid using the provided code:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the b31 block at the bottom layer (layer 0) and at slot 0 to provide a stable base:
+```
+ab_drop('b31', 0)
+```
+
+3. Drop the b13 block above the base block at slot 0 to support the b31 block:
+```
+ab_drop('b13', 0)
+```
+
+4. Drop the b11 block above the b13 block at slot 0 to complete the first vertical line of the "Z":
+```
+ab_drop('b11', 0)
+```
+
+5. Drop the b31 block next to the first line at slot 1 to create the top horizontal line of the "Z":
+```
+ab_drop('b31', 1)
+```
+
+6. Drop the b11 block above the top horizontal line at slot 1 to complete the diagonal line of the "Z":
+```
+ab_drop('b11', 1)
+```
+
+7. Repeat steps 5 and 6 to create the lower horizontal line of the "Z" and complete the structure:
+```
+ab_drop('b31', 2)
+ab_drop('b11', 2)
+ab_drop('b31', 3)
+ab_drop('b11', 3)
+```
+
+After executing these steps, the `structure` grid will contain a stable structure that resembles the uppercase character "Z" and meets all the hard constraints.
+
+Note: The exact coordinates of each `ab_drop()` call may vary depending on the specific implementation and adjustments made to meet the constraints.

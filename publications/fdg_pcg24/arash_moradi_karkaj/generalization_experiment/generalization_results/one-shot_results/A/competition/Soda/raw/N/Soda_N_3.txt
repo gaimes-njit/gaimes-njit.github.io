@@ -1,0 +1,18 @@
+To create the capital letter "N" using the ab_drop() function, we can break it down into three blocks: two column blocks and one row block. Here is the step-by-step implementation:
+
+1. Place the first column block at x_position = 4:
+```
+ab_drop("b13", 4)
+```
+
+2. Place the row block below the first column block at x_position = 4:
+```
+ab_drop("b31", 4)
+```
+
+3. Place the second column block to the right of the row block at x_position = 8:
+```
+ab_drop("b13", 8)
+```
+
+By following these three steps, we can create a structure in the level that looks like a capital "N".

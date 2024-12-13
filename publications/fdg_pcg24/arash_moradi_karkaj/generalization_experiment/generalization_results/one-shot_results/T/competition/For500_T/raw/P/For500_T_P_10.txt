@@ -1,0 +1,5 @@
+ab_drop('b13', 9) # Place the vertical block at the center of the bottom layer
+ab_drop('b31', 9) # Place the horizontal block right above the vertical block to form the vertical line of the letter "P"
+ab_drop('b31', 9) # Place another horizontal block right above the previous one to extend the vertical line of the letter "P"
+ab_drop('b11', 8) # Place a square block one unit to the left of the center of the top horizontal block to form the top-left part of the letter "P"
+ab_drop('b11', 10) # Place a square block one unit to the right of the center of the top horizontal block to form the top-right part of the letter "P"

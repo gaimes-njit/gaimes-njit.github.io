@@ -1,0 +1,11 @@
+```python
+ab_drop('b11', 8)
+ab_drop('b31', 9)
+ab_drop('b11', 8)
+ab_drop('b11', 7)
+ab_drop('b13', 6)
+ab_drop('b11', 5)
+ab_drop('b11', 4)
+ab_drop('b11', 3)
+```
+This code will vertically drop blocks to create a stable structure representing the capital letter "Y" while adhering to the constraints of stability and minimizing boundary intrusion.

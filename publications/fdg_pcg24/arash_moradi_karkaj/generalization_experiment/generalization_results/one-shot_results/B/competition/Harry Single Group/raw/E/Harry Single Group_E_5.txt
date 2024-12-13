@@ -1,0 +1,63 @@
+First, let's initialize the field as a 2D list with empty cells:
+
+```python
+field = [[' ' for _ in range(20)] for _ in range(16)]
+```
+
+Next, we'll create a function to print the current state of the field:
+
+```python
+def print_field():
+    for row in field:
+        print(' '.join(row))
+```
+
+Now, we can start placing the bricks to form the letter "E". We'll go through the required steps to ensure stability and avoid boundary collisions.
+
+Step 1: Place the first vertical brick (b13) at position (5,0):
+```python
+ab_drop('b13', 5)
+```
+This will occupy the cells (5,0), (5,1), and (5,2).
+
+Step 2: Place the horizontal brick (b31) on top of the vertical brick at position (6,3):
+```python
+ab_drop('b31', 6)
+```
+This will occupy the cells (5,3), (6,3), and (7,3).
+
+Step 3: Place the vertical brick (b13) on the right side of the horizontal brick at position (8,2):
+```python
+ab_drop('b13', 8)
+```
+This will occupy the cells (8,0), (8,1), and (8,2).
+
+Step 4: Place the horizontal brick (b31) on top of the other vertical brick at position (9,3):
+```python
+ab_drop('b31', 9)
+```
+This will occupy the cells (8,3), (9,3), and (10,3).
+
+Step 5: Place the vertical brick (b13) on the right side of the horizontal brick at position (11,2):
+```python
+ab_drop('b13', 11)
+```
+This will occupy the cells (11,0), (11,1), and (11,2).
+
+Finally, we can print the resulting field:
+```python
+print_field()
+```
+
+The output should be:
+```
+          
+          
+          
+          
+          
+          
+      ▄▄▄ 
+▄▄▄   ▄▄▄ 
+▄▄▄   ▄▄▄ 
+```

@@ -1,0 +1,25 @@
+To generate the uppercase English letter "X" using the given block types and environment, you can use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 3)
+ab_drop('b13', 3)
+ab_drop('b31', 5)
+ab_drop('b13', 5)
+ab_drop('b31', 7)
+ab_drop('b13', 7)
+ab_drop('b31', 9)
+ab_drop('b13', 9)
+ab_drop('b31', 11)
+ab_drop('b13', 11)
+ab_drop('b31', 13)
+ab_drop('b13', 13)
+ab_drop('b31', 15)
+ab_drop('b13', 15)
+ab_drop('b31', 17)
+ab_drop('b13', 17)
+ab_drop('b31', 19)
+```
+
+This sequence of commands will construct the letter "X" by stacking the block types in the correct positions and ensuring structural stability with respect to the gravity rules.

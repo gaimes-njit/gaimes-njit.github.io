@@ -1,0 +1,27 @@
+To create the structure that looks like the letter "B," we can break it down into different blocks and drop them one by one to form the letter.
+
+Here's the step-by-step implementation of the ab_drop() function to create the letter "B":
+
+```python
+# Step 1: Drop the square block at the bottom left corner
+ab_drop("b11", 1)
+
+# Step 2: Drop the row block above the square block
+ab_drop("b31", 2)
+
+# Step 3: Drop the column block to the right of the row block
+ab_drop("b13", 9)
+
+# Step 4: Drop the row block above the column block
+ab_drop("b31", 10)
+
+# Step 5: Drop the square block above the row block
+ab_drop("b11", 11)
+
+# Step 6: Drop the column block to the right of the square block
+ab_drop("b13", 13)
+```
+
+This implementation will create a structure that resembles the letter "B" in a stable manner.
+
+Please note that this implementation assumes that there are no existing blocks in the level before executing these steps.

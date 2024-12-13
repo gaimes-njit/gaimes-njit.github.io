@@ -1,0 +1,66 @@
+```
+# Database of key-value pairs
+database = {
+  "a": " ___ ",
+  "b": "|   |",
+  "c": "|___|",
+  "d": "|    ",
+  "e": "|___ ",
+  "f": "|    ",
+  "g": "| __ ",
+  "h": "|   |",
+  "i": "|___|",
+  "j": "    |",
+  "k": " ___|",
+  "l": "|    ",
+  "m": "|\\/ |",
+  "n": "|  |\\",
+  "o": "|  | ",
+  "p": "|   |",
+  "q": "|   |",
+  "r": "| __/",
+  "s": "|___ ",
+  "t": "  |  ",
+  "u": "|   |",
+  "v": "|   |",
+  "w": "|/\\ |",
+  "x": " \\/ |",
+  "y": "  |  ",
+  "z": "|___ ",
+}
+
+# Function to print value associated with a key
+def ab_drop(key):
+  print(database[key])
+
+# Required sequence of ab_drop function calls for letter "Q"
+ab_drop("a")
+ab_drop("b")
+ab_drop("c")
+ab_drop("d")
+ab_drop("e")
+ab_drop("f")
+ab_drop("g")
+ab_drop("h")
+ab_drop("h")
+ab_drop("i")
+ab_drop("j")
+ab_drop("k")
+ab_drop("l")
+ab_drop("m")
+ab_drop("n")
+ab_drop("o")
+ab_drop("p")
+ab_drop("q")
+ab_drop("r")
+ab_drop("s")
+ab_drop("t")
+ab_drop("u")
+ab_drop("v")
+ab_drop("w")
+ab_drop("x")
+ab_drop("y")
+ab_drop("z")
+```
+
+The above code will generate a structure that looks like the letter "Q" by making a sequence of `ab_drop` function calls for each line of the letter. The corresponding value associated with the key in the database is printed to form the letter shape.

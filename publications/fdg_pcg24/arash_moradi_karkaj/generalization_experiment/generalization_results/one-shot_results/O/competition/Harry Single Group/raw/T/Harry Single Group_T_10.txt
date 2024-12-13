@@ -1,0 +1,41 @@
+Here is one possible way to generate the "T" shape:
+
+```
+# Map initialization
+map = [[0] * 20 for _ in range(16)]
+
+# Function to check stability
+def check_stability():
+    for y in range(1, 16):
+        for x in range(1, 19):
+            if map[y][x] == 1 and map[y-1][x] == 0:
+                if map[y][x-1] == 0 and map[y][x+1] == 0:
+                    return False
+    return True
+
+# First brick (b11)
+ab_drop('b11', 8)
+
+# Second brick (b31)
+ab_drop('b31', 7)
+
+# Third brick (b13)
+ab_drop('b13', 8)
+
+# Checking stability
+if not check_stability():
+    raise Exception("Structure is unstable")
+
+# Printing the final map
+for row in map[::-1]:
+    print(row)
+```
+
+This code generates the "T" shape by placing the bricks in the following order:
+1. Place a b11 brick at position (8,0).
+2. Place a b31 brick at position (7,0).
+3. Place a b13 brick at position (8,0).
+
+The code then checks the stability of the structure using the `check_stability()` function. If the structure is unstable, an exception is raised.
+
+Lastly, the final map is printed, with occupied cells represented by 1 and empty cells represented by 0.

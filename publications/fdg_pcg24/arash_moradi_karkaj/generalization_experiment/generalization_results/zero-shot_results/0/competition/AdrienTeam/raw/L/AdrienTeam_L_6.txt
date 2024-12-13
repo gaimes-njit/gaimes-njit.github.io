@@ -1,0 +1,20 @@
+The code below shows the sequence of `ab_drop()` calls to create a stable structure resembling "L": 
+
+```
+ab_drop('b13', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+```
+
+Here's an explanation of the code:
+
+1. `ab_drop('b13', 1)`: This drops the vertical block ('b13') in the center of slot 1, starting from the bottom layer (layer 0). This forms the longer vertical part of the "L" shape.
+
+2. `ab_drop('b11', 1)`: This drops the small square block ('b11') horizontally in slot 1 above the previous block. It aligns with the center of the previous block.
+
+3. `ab_drop('b11', 0)`: This drops another small square block ('b11') horizontally in slot 0, forming the shorter part of the "L" shape. It aligns with the center of the previous block.
+
+4. `ab_drop('b11', 1)`: This drops another small square block ('b11') horizontally in slot 1, above the previous block. It completes the "L" shape and aligns with the center of the previous block.
+
+The resulting structure will resemble the letter "L" as desired, with no boundary intrusions and blocks aligned with their centers.

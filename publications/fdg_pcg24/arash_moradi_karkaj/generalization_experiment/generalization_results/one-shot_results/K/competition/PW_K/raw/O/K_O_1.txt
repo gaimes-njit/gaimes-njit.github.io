@@ -1,0 +1,14 @@
+To generate the uppercase letter "O" using the given block types and environment, the following stream of commands can be used:
+
+```
+ab_drop('b31',2)  # Top horizontal block
+ab_drop('b13',1)  # Left vertical block
+ab_drop('b13',4)  # Right vertical block
+ab_drop('b31',5)  # Bottom horizontal block
+ab_drop('b11',2)  # Top left corner
+ab_drop('b11',4)  # Top right corner
+ab_drop('b11',2)  # Bottom left corner
+ab_drop('b11',4)  # Bottom right corner
+```
+
+This sequence of commands will construct the letter "O" in the Tetris-like environment, while ensuring stability and fitting within the allowed space boundaries.

@@ -1,0 +1,27 @@
+To generate the uppercase English letter "E" using the given command and block types, follow these steps:
+
+1. Create the left vertical line of the letter "E":
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+```
+
+2. Create the horizontal line of the letter "E":
+
+```
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+```
+
+3. Create the right vertical line of the letter "E":
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+```
+
+The final result should resemble the uppercase letter "E" within the defined grid of 20W and 16H.

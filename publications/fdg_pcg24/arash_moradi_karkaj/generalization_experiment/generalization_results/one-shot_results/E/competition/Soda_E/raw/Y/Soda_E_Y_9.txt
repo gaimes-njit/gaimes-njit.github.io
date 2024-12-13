@@ -1,0 +1,28 @@
+# Steps to create a structure that looks like the letter "Y"
+
+Step 1: Create the left arm of the Y
+- Drop a row block "b31" at x_position=9
+- Drop a square block "b11" at x_position=8
+- Drop a square block "b11" at x_position=10
+
+Step 2: Create the vertical stem of the Y
+- Drop a column block "b13" at x_position=9
+- Drop a column block "b13" at x_position=9
+- Drop a column block "b13" at x_position=9
+
+Step 3: Create the right arm of the Y
+- Drop a row block "b31" at x_position=9
+- Drop a square block "b11" at x_position=8
+- Drop a square block "b11" at x_position=10
+
+# Complete implementation
+
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+ab_drop("b11", 10)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+ab_drop("b11", 10)

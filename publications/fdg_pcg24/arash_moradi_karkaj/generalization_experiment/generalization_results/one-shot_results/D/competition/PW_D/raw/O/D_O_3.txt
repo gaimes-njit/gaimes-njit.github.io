@@ -1,0 +1,10 @@
+To generate the uppercase letter "O", you can use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```
+
+These commands will first create the top and bottom parts of the letter "O" using the b31 block type. Then, the vertical straight blocks (b13) are used to create the sides of the letter. The resulting shape will resemble the uppercase letter "O" within the allowed space boundaries.

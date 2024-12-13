@@ -1,0 +1,15 @@
+To create the uppercase letter "B" using the given block types and command, you can follow these steps:
+
+1. Place the horizontal straight block (b31) at position 1: `ab_drop('b31',1)`
+2. Place the vertical straight block (b13) at position 0: `ab_drop('b13',0)`
+3. Place the vertical straight block (b13) at position 2: `ab_drop('b13',2)`
+4. Place the horizontal straight block (b31) at position 1: `ab_drop('b31',1)`
+
+Make sure to execute these commands consecutively as mentioned above.
+
+```python
+ab_drop('b31',1)
+ab_drop('b13',0)
+ab_drop('b13',2)
+ab_drop('b31',1)
+```

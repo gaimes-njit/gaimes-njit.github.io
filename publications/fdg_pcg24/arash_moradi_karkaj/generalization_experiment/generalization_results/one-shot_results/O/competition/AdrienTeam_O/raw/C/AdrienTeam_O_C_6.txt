@@ -1,0 +1,27 @@
+```python
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the first block horizontally to create the base of the "C"
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the second block vertically to create the vertical stroke of the "C"
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+
+# Drop the third block horizontally to create the horizontal stroke of the "C"
+ab_drop('b11', 9)
+ab_drop('b11', 11)
+ab_drop('b11', 7)
+
+# Drop the fourth block vertically to close the open space of the "C"
+ab_drop('b11', 8)
+ab_drop('b11', 8)
+
+# Rotate the structure to resemble "C" shape
+structure = list(zip(*structure[::-1]))
+
+# Print the final structure
+for row in structure:
+    print(''.join(row))
+```

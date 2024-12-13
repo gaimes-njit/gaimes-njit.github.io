@@ -1,0 +1,10 @@
+To generate the letter "D" using the given block types and environment, you can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b31', 2)
+```

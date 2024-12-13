@@ -1,0 +1,16 @@
+Here is one way to generate the uppercase English letter "U":
+
+```
+ab_drop('b31',1)
+ab_drop('b31',5)
+ab_drop('b13',1)
+ab_drop('b13',5)
+ab_drop('b31',9)
+ab_drop('b31',13)
+ab_drop('b13',9)
+ab_drop('b13',13)
+ab_drop('b13',14)
+ab_drop('b13',15)
+```
+
+This sequence of commands will place the blocks in the correct positions to form the letter "U" within the allowed space.

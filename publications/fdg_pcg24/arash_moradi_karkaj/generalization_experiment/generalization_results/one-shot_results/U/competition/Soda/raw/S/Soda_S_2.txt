@@ -1,0 +1,19 @@
+The first step is to create the base of the "S" structure. We will use the "b31" block for this. We need to place it at the center of the grid. The x_position will be (W-1)/2.
+
+```python
+ab_drop("b31", (19)/2)
+```
+
+The next step is to add the top part of the "S" structure. We will use the "b11" block for this. We need to place it right above the base block. The x_position will be the same as the previous block.
+
+```python
+ab_drop("b11", (19)/2)
+```
+
+Finally, we add the middle part of the "S" structure. We will use the "b13" block for this. We need to place it right next to the base block, in the same row as the top block. The x_position will be (W-1)/2 + 1.
+
+```python
+ab_drop("b13", (19)/2 + 1)
+```
+
+With these three steps, we have created a structure that looks like the capital letter "S" (TARGET). The blocks are placed in a bottom-to-top fashion, ensuring stability.

@@ -1,0 +1,45 @@
+To generate uppercase English letter "G", you can follow these steps:
+
+1. Place the foundation block b31 at position 2: `ab_drop('b31', 2)`
+
+```
+-----------------------
+|                     |
+|                     |
+|      [][][]         |
+|                     |
+|                     |
+|                     |
+|                     |
+-----------------------
+```
+
+2. Place two vertical blocks b13 to the left of the foundation block at positions 1 and 2: `ab_drop('b13', 1) ab_drop('b13', 2)`
+
+```
+-----------------------
+|       [][]          |
+|       []            |
+|       [][][]        |
+|       []            |
+|       [][]          |
+|                     |
+|                     |
+-----------------------
+```
+
+3. Place the top horizontal block b31 at position 2: `ab_drop('b31', 2)`
+
+```
+-----------------------
+|       [][]          |
+|       []            |
+|  [][] [][][]        |
+|       []            |
+|       [][]          |
+|                     |
+|                     |
+-----------------------
+```
+
+The resulting shape resembles the uppercase letter "G" within the allowed space boundaries.

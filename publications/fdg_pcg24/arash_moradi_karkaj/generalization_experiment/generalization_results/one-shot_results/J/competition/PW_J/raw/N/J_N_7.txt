@@ -1,0 +1,13 @@
+To create the letter "N", we can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+ab_drop('b31', 7)
+ab_drop('b13', 10)
+ab_drop('b11', 13)
+ab_drop('b11', 14)
+ab_drop('b13', 14)
+```
+
+This sequence of commands will place each block in the correct position to form the letter "N" within the allowed space boundaries and following the gravity rules.

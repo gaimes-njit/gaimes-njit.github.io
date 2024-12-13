@@ -1,0 +1,6 @@
+ab_drop('b31', 9)  # create a stable base for the letter 'S'
+ab_drop('b31', 9)  # add another layer to the base
+ab_drop('b31', 9)  # add another layer to the base
+ab_drop('b31', 10)  # raise the height of one side of the 'S'
+ab_drop('b13', 10)  # add the vertical bar of the 'S'
+ab_drop('b31', 10)  # raise the height of the other side of the 'S'

@@ -1,0 +1,45 @@
+The first step is to create the vertical bars of the H character. We will use the "b31" block type to do this. 
+
+```
+# The left vertical bar of the H
+ab_drop("b31", 4)
+
+# The right vertical bar of the H
+ab_drop("b31", 15)
+```
+
+Next, we will create the horizontal bar of the H character. We will use the "b13" block type for this.
+
+```
+# The horizontal bar of the H
+ab_drop("b13", 9)
+
+ab_drop("b13", 10)
+
+ab_drop("b13", 11)
+```
+
+Finally, we will add the middle block of the H character. We will use the "b11" block type for this.
+
+```
+# The middle block of the H
+ab_drop("b11", 9)
+```
+
+The complete implementation, with all the ab_drop() calls, is as follows:
+
+```
+# The left vertical bar of the H
+ab_drop("b31", 4)
+
+# The right vertical bar of the H
+ab_drop("b31", 15)
+
+# The horizontal bar of the H
+ab_drop("b13", 9)
+ab_drop("b13", 10)
+ab_drop("b13", 11)
+
+# The middle block of the H
+ab_drop("b11", 9)
+```

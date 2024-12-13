@@ -1,0 +1,78 @@
+Step 1:
+```
+*****
+*
+*
+****
+*
+*
+*
+```
+
+Step 2:
+```
+***** - 5 asterisks
+*     - 1 asterisk, 4 spaces
+*     - 1 asterisk, 4 spaces
+****  - 4 asterisks
+*     - 1 asterisk, 4 spaces
+*     - 1 asterisk, 4 spaces
+*     - 1 asterisk, 4 spaces
+```
+
+Step 3:
+```
+xxxxx - 5 asterisks
+y     - 1 asterisk
+y     - 1 asterisk
+xxxx  - 4 asterisks
+y     - 1 asterisk
+y     - 1 asterisk
+y     - 1 asterisk
+```
+
+Step 4:
+```
+5x
+1y, 4x
+1y, 4x
+4x
+1y, 4x
+1y, 4x
+1y, 4x
+```
+
+Step 5:
+```
+x-1, x-2, x-3, x-4, x-5
+y-1; x-1, x-2, x-3, x-4
+y-1; x-1, x-2, x-3, x-4
+x-1, x-2, x-3, x-4
+y-1; x-1, x-2, x-3, x-4
+y-1; x-1, x-2, x-3, x-4
+y-1; x-1, x-2, x-3, x-4
+```
+
+Step 6:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 1)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 1)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+```

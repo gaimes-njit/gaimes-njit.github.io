@@ -1,0 +1,60 @@
+To form the letter "R", we can use the following sequence of actions:
+
+1. Place the b11 brick at position (0, 0) using ab_drop('b11', 0).
+2. Place the b31 brick at position (2, 0) using ab_drop('b31', 2).
+3. Place the b13 brick at position (5, 0) using ab_drop('b13', 5).
+
+This sequence of actions will result in the formation of an "R" shape using the given bricks. 
+
+```python
+# map initialization
+field = [[0] * 20 for _ in range(16)]
+
+# function to check if a cell is occupied
+def is_occupied(x, y):
+    return field[y][x] == 1
+
+# function to place a brick on the field
+def place_brick(x, y, brick):
+    for i in range(brick.height):
+        for j in range(brick.width):
+            field[y + i][x + j] = 1
+
+# brick class definitions
+class Brick:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+# available bricks
+b31 = Brick(3, 1)
+b13 = Brick(1, 3)
+b11 = Brick(1, 1)
+
+# function to drop a brick on the field
+def ab_drop(x, y):
+    if x == 'b31':
+        brick = b31
+    elif x == 'b13':
+        brick = b13
+    elif x == 'b11':
+        brick = b11
+    else:
+        return
+    
+    # check if the brick can be placed at the given position
+    for i in range(brick.height):
+        for j in range(brick.width):
+            if is_occupied(y + j, -i):
+                return
+    
+    # place the brick on the field
+    place_brick(y, 0, brick)
+
+# generate the required structure
+ab_drop('b11', 0)
+ab_drop('b31', 2)
+ab_drop('b13', 5)
+```
+
+Note: This code assumes that the `ab_drop` function starts counting from 0 for the x-axis position. If it uses 1-based indexing, then you need to subtract 1 from the x-axis position inside the `ab_drop` function calls.

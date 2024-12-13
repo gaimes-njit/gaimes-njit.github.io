@@ -1,0 +1,46 @@
+Steps:
+1. Draw the letter "L" with asterisks:
+```
+*****
+   *
+   *
+   *
+   *
+```
+
+2. List the asterisks and spaces generated in each row:
+- Row 1: 5 asterisks, 0 spaces (5x)
+- Row 2: 3 asterisks, 3 spaces (3x, 3y)
+- Row 3: 1 asterisk, 3 spaces (1x, 3y)
+- Row 4: 1 asterisk, 3 spaces (1x, 3y)
+- Row 5: 1 asterisk, 3 spaces (1x, 3y)
+
+3. Convert asterisks to "x" and spaces to "y":
+- Row 1: 5x, 0y
+- Row 2: 3x, 3y
+- Row 3: 1x, 3y
+- Row 4: 1x, 3y
+- Row 5: 1x, 3y
+
+4. Write out each x and y for each row:
+- Row 1: xxxxx
+- Row 2: xxxyyy
+- Row 3: xyy
+- Row 4: xyy
+- Row 5: xyy
+
+5. Indicate the position of each variable for each row:
+- Row 1: x-1; x-2; x-3; x-4; x-5
+- Row 2: x-1; x-2; x-3; y-4; y-5; y-6
+- Row 3: x-1; y-2; y-3
+- Row 4: x-1; y-2; y-3
+- Row 5: x-1; y-2; y-3
+
+6. Line-by-line, return a sequence of `ab_drop` function calls for each row:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

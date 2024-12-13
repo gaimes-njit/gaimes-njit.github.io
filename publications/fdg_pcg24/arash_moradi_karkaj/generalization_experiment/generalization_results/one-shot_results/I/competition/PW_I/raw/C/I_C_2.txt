@@ -1,0 +1,11 @@
+To generate the uppercase English letter "C", you can use the following stream of commands:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',4)
+ab_drop('b13',2)
+ab_drop('b13',3)
+ab_drop('b31',4)
+```
+
+This will create the shape of a letter "C" within the allowed space and according to the gravity rules.

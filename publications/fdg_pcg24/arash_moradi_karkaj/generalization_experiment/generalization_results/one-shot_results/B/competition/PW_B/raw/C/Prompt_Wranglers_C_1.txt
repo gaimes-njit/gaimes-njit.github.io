@@ -1,0 +1,21 @@
+To generate capital case letter "C", we can follow the following steps:
+
+1. Start by placing a horizontal straight block at the bottom:
+   ab_drop('b31', 1)
+
+2. Place a vertical straight block next to the previous block to form the left side of the letter:
+   ab_drop('b13', 0)
+
+3. Place another vertical straight block next to the previous block to form the right side of the letter:
+   ab_drop('b13', 2)
+
+4. Place a horizontal straight block on top of the previous blocks to form the top part of the letter:
+   ab_drop('b31', 1)
+
+Here is the complete stream of commands to generate the letter "C":
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```

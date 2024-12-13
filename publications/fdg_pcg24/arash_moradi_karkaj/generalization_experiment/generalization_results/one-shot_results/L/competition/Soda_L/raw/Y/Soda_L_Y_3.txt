@@ -1,0 +1,17 @@
+To create the letter Y, we can break it down into three blocks: an upper bar, a middle bar, and a lower bar. Here is the complete implementation:
+
+```
+# Place the upper bar
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+
+# Place the middle bar
+ab_drop("b31", 9)
+ab_drop("b11", 9)
+
+# Place the lower bar
+ab_drop("b31", 9)
+ab_drop("b31", 9)
+```
+
+This implementation follows the bottom-to-top approach, ensuring stability of each block. The blocks are centered at x_position 9 to create the Y shape.

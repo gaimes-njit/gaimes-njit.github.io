@@ -1,0 +1,32 @@
+To generate the uppercase letter "E", we need to follow the same process as described for the letter "B" in the previous example. 
+
+Here are the steps to create the letter "E":
+
+1. Start by building the bottom horizontal line of the letter using a horizontal straight block:
+   ```
+   ab_drop('b31', 1)
+   ```
+
+2. Move to the next structural layer and place two vertical blocks:
+   ```
+   ab_drop('b13', 0)
+   ab_drop('b13', 2)
+   ```
+
+3. Place another horizontal straight block on top of the previous layer:
+   ```
+   ab_drop('b31', 1)
+   ```
+
+4. Move to the next structural layer and place two vertical blocks again:
+   ```
+   ab_drop('b13', 0)
+   ab_drop('b13', 2)
+   ```
+
+5. Finally, place the top horizontal line of the letter using a horizontal straight block:
+   ```
+   ab_drop('b31', 1)
+   ```
+
+After executing these commands consecutively, you will have successfully generated the uppercase letter "E" in the Tetris-like environment.

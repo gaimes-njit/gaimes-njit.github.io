@@ -1,0 +1,61 @@
+To generate a stable structure that looks like the uppercase character "Z" using the `ab_drop()` function, we need to follow these steps:
+
+1. Initialize the structure as an empty grid using the provided code:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start by dropping a b13 block at the bottom layer (layer 0) and a centrally aligned b31 block on top of it. This will form the left side of the "Z" shape:
+```python
+ab_drop('b13', W//2)
+ab_drop('b31', W//2)
+```
+
+3. To ensure stability, check if any part of the structure is unstable after each drop. If it is unstable, adjust the position and/or add additional supporting blocks before calling `ab_drop()` again.
+
+4. Next, drop another b13 block on top of the previously dropped b31 block, aligned with its left side. This will form the diagonal part of the "Z" shape:
+```python
+ab_drop('b13', W//2)
+```
+
+5. Repeat steps 3 and 4 to create the right side of the "Z" shape. Drop a b31 block on top of the previously dropped b13 block, aligned with its right side, and then drop another b13 block on top of it:
+```python
+ab_drop('b31', W//2)
+ab_drop('b13', W//2)
+```
+
+6. After dropping all the necessary blocks, the structure should resemble the uppercase character "Z".
+
+Here is the complete code for generating a stable "Z" structure using the `ab_drop()` function:
+
+```python
+# Role: Player of Tetris game
+# Definitions: Slots, Layers, Base, Top
+# Map Initialization
+W = 20
+H = 16
+structure = [[' ']*W for _ in range(H)]
+
+# Tool: ab_drop()
+def ab_drop(x, y):
+    drop_pos = (H-1, y)
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    structure[drop_pos[0]][drop_pos[1]] = x
+    print(f"ab_drop('{x}', {y})")
+
+# Generate the "Z" structure
+ab_drop('b13', W//2)
+ab_drop('b31', W//2)
+ab_drop('b13', W//2)
+ab_drop('b31', W//2)
+ab_drop('b13', W//2)
+
+# Print the final structure
+for row in structure:
+    print(' '.join(row))
+```
+
+Note: The code includes `print()` statements to display the `ab_drop()` function calls for each block drop. You can remove these statements if they are not needed.

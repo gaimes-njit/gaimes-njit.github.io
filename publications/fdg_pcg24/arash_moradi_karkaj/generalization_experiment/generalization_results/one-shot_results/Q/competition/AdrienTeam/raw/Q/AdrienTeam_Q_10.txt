@@ -1,0 +1,236 @@
+```
+# Initialize the structure
+structure = [[' ']*W for _ in range(H)]
+
+# Start building "Q" from the bottom layer (layer 0) to the top layer (layer 15)
+# Drop the first block (horizontal block) in the center
+ab_drop('b31', 9)
+
+# Drop the second block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the third block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the fourth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the fifth block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the sixth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the seventh block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the eighth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the ninth block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the tenth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the eleventh block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the twelfth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the thirteenth block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the fourteenth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the fifteenth block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the sixteenth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the seventeenth block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the eighteenth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the nineteenth block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the twentieth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the twenty-first block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the twenty-second block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the twenty-third block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the twenty-fourth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the twenty-fifth block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the twenty-sixth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the twenty-seventh block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the twenty-eighth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the twenty-ninth block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the thirtieth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the thirty-first block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the thirty-second block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the thirty-third block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the thirty-fourth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the thirty-fifth block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the thirty-sixth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the thirty-seventh block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the thirty-eighth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the thirty-ninth block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the fortieth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the forty-first block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the forty-second block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the forty-third block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the forty-fourth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the forty-fifth block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the forty-sixth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the forty-seventh block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the forty-eighth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the forty-ninth block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the fiftieth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the fifty-first block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the fifty-second block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the fifty-third block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the fifty-fourth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the fifty-fifth block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the fifty-sixth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the fifty-seventh block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the fifty-eighth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the fifty-ninth block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the sixtieth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the sixty-first block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the sixty-second block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the sixty-third block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the sixty-fourth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the sixty-fifth block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the sixty-sixth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the sixty-seventh block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the sixty-eighth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the sixty-ninth block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the seventieth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the seventy-first block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the seventy-second block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the seventy-third block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the seventy-fourth block (vertical block)
+ab_drop('b13', 9)
+
+# Drop the seventy-fifth block (horizontal block)
+ab_drop('b31', 9)
+
+# Drop the seventy-sixth block (vertical block)
+ab_drop('b13', 9)
+
+# Final block (square block)
+ab_drop('b11', 9)
+```

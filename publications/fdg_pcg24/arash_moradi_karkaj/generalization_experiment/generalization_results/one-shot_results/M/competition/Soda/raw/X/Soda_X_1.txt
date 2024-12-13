@@ -1,0 +1,24 @@
+To generate the structure that looks like a capital "X", we can break it down into two diagonal blocks and a center block. 
+
+Step 1: Drop the diagonal blocks
+We start by dropping the two diagonal blocks at the top corners of the grid. Since the blocks are positioned at the top, they will not be affected by gravity.
+
+```
+ab_drop("b11", 1)
+ab_drop("b11", 18)
+```
+
+Step 2: Drop the center block
+Next, we drop the center block between the two diagonal blocks. To achieve stability, we need to ensure that the center block is well-supported by the two diagonal blocks. We can achieve this by positioning the center block slightly above the bottom of the diagonal blocks.
+
+```
+ab_drop("b11", 9)
+```
+
+Complete implementation:
+
+```
+ab_drop("b11", 1)
+ab_drop("b11", 18)
+ab_drop("b11", 9)
+```

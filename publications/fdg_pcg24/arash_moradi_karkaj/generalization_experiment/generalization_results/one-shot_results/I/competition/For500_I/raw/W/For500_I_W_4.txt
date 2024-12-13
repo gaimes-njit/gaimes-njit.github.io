@@ -1,0 +1,5 @@
+ab_drop('b11', 9)  # Add the middle part of the 'W'
+ab_drop('b11', 8)  # Add the left side of the 'W'
+ab_drop('b11', 10)  # Add the right side of the 'W'
+ab_drop('b11', 7)  # Add the left side of the bottom of the 'W'
+ab_drop('b11', 11)  # Add the right side of the bottom of the 'W'

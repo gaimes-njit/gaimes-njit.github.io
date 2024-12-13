@@ -1,0 +1,16 @@
+To generate the uppercase English letter "C", we can use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b13',3)
+ab_drop('b13',4)
+ab_drop('b13',5)
+ab_drop('b13',6)
+ab_drop('b31',1)
+ab_drop('b31',6)
+ab_drop('b13',1)
+ab_drop('b13',6)
+```
+
+This sequence will construct the letter "C" using vertical and horizontal blocks as mentioned in the examples.

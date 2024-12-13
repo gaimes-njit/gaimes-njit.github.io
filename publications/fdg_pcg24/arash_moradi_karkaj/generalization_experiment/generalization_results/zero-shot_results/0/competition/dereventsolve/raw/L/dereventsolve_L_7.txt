@@ -1,0 +1,9 @@
+```
+def find_l(db):
+    if 'L' in db:
+        return db['L']
+    else:
+        return ab_drop()
+
+sequence = find_l(database)
+```

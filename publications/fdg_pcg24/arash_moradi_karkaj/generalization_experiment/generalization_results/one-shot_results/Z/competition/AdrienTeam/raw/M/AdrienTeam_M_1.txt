@@ -1,0 +1,26 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the base of the 'M'
+ab_drop('b11', 7)
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the left leg of the 'M'
+ab_drop('b13', 6)
+ab_drop('b11', 5)
+
+# Drop the middle part of the 'M'
+ab_drop('b31', 7)
+
+# Drop the right leg of the 'M'
+ab_drop('b11', 12)
+ab_drop('b13', 13)
+
+# Drop the top of the 'M'
+ab_drop('b11', 14)
+ab_drop('b11', 15)
+ab_drop('b11', 16)
+ab_drop('b11', 17)
+```

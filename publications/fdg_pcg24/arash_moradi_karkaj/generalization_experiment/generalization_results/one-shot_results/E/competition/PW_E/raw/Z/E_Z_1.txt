@@ -1,0 +1,11 @@
+To generate the uppercase letter "Z" using the given block types in the defined environment, you can use the following stream of commands:
+
+```
+ab_drop('b31',1)     # Place the first horizontal straight block at position 1
+ab_drop('b13',4)     # Place the first vertical straight block at position 4
+ab_drop('b31',4)     # Place the second horizontal straight block at position 4
+ab_drop('b13',7)     # Place the second vertical straight block at position 7
+ab_drop('b31',7)     # Place the third horizontal straight block at position 7
+```
+
+This sequence of commands will generate the uppercase letter "Z" in the Tetris-like environment.

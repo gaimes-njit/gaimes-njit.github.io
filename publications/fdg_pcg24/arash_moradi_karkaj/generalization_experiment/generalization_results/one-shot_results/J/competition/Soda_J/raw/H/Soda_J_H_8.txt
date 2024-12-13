@@ -1,0 +1,29 @@
+The first step is to create the two vertical bars of the letter H. We can achieve this by dropping two "b13" blocks side by side. 
+
+```python
+ab_drop("b13", 8)
+ab_drop("b13", 12)
+```
+
+Next, we will create the horizontal bar of the letter H by dropping a "b31" block. We need to ensure that it is centered properly, so we will place it at position 10.
+
+```python
+ab_drop("b31", 10)
+```
+
+To complete the letter H, we need to add two more "b13" blocks to the horizontal bar. We will center them at positions 8 and 12.
+
+```python
+ab_drop("b13", 8)
+ab_drop("b13", 12)
+```
+
+Here is the complete implementation:
+
+```python
+ab_drop("b13", 8)
+ab_drop("b13", 12)
+ab_drop("b31", 10)
+ab_drop("b13", 8)
+ab_drop("b13", 12)
+```

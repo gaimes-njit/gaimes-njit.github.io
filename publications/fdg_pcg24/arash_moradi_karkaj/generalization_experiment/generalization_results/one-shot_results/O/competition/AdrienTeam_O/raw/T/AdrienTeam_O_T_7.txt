@@ -1,0 +1,38 @@
+The structure can be built by following these steps:
+
+1. Initialize the structure with an empty grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the first block, which will be a vertical block (b13) in the center of the map:
+```
+ab_drop('b13', 9)
+```
+
+3. Drop the second block, which will be a horizontal block (b31) below the first block, aligning its center with the center of the first block:
+```
+ab_drop('b31', 9)
+```
+
+4. Drop the third block, which will be a vertical block (b13) next to the first block, aligning its center with the center of the first block:
+```
+ab_drop('b13', 8)
+```
+
+5. Drop the fourth block, which will be a vertical block (b13) next to the first block, aligning its center with the center of the first block:
+```
+ab_drop('b13', 10)
+```
+
+6. The structure has been successfully built.
+
+Here is the complete code:
+```
+structure = [[' ']*W for _ in range(H)]
+
+ab_drop('b13', 9)
+ab_drop('b31', 9)
+ab_drop('b13', 8)
+ab_drop('b13', 10)
+```

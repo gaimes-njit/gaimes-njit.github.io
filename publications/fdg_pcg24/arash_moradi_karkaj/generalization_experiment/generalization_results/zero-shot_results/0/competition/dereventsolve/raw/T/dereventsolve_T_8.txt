@@ -1,0 +1,20 @@
+```python
+def ab_drop():
+    return "ab_drop"
+
+database = {
+    "a": [ab_drop, ab_drop, ab_drop],
+    "b": [ab_drop],
+}
+
+result = []
+result.extend(database["a"])
+result.append(ab_drop)
+result.extend(database["b"])
+result.append(ab_drop)
+result.extend(database["a"])
+result.append(ab_drop)
+result.extend(database["b"])
+
+result
+```

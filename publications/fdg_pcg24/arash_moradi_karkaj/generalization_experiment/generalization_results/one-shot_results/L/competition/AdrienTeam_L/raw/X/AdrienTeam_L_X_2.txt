@@ -1,0 +1,15 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Dropping blocks to create the "X" structure
+
+# Bottom left diagonal of "X"
+ab_drop('b13', 0)
+ab_drop('b31', 1)
+
+# Top right diagonal of "X"
+ab_drop('b31', 18)
+ab_drop('b13', 19)
+
+```

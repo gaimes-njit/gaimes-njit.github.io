@@ -1,0 +1,24 @@
+The structure of the "W" character can be built by using the `ab_drop()` function to drop the blocks in the following order:
+
+```
+ab_drop('b11', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+ab_drop('b31', 0)
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b11', 5)
+ab_drop('b11', 5)
+```
+
+This sequence of `ab_drop()` calls will create a stable structure resembling the letter "W", satisfying all the specified constraints.

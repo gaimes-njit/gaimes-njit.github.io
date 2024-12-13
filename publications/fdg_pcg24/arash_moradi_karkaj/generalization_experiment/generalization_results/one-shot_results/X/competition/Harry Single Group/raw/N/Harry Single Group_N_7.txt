@@ -1,0 +1,23 @@
+To generate a shape resembling the letter "N" using the given props and functions, we can follow these steps:
+
+1. Initialize the field map with all cells set to 0 (unoccupied).
+
+2. Use the ab_drop() function to generate the bricks and place them on the field. We need to consider the stability and boundary collision rules while placing the bricks.
+
+```python
+# Initialize the field map
+field = [[0] * 20 for _ in range(16)]
+
+# Place the bricks to form the letter "N"
+ab_drop('b13', 1)  # Place the vertical brick at x_position 1
+ab_drop('b31', 0)  # Place the horizontal brick at x_position 0
+ab_drop('b13', 2)  # Place the vertical brick at x_position 2
+ab_drop('b11', 4)  # Place the square brick at x_position 4
+ab_drop('b11', 5)  # Place the square brick at x_position 5
+ab_drop('b31', 6)  # Place the horizontal brick at x_position 6
+ab_drop('b13', 7)  # Place the vertical brick at x_position 7
+```
+
+This sequence of ab_drop() function calls will generate the shape resembling the letter "N". Each ab_drop() call represents placing a specific brick at a specific x_position. By following the stability and boundary collision rules, the bricks will be placed correctly on the field.
+
+Note: The exact x_positions of the bricks may vary based on the desired positioning within the field. The above example provides a general outline of the placement order.

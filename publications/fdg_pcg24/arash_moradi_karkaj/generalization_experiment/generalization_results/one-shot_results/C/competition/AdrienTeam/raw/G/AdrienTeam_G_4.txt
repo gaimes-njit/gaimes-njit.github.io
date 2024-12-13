@@ -1,0 +1,22 @@
+Here is the solution to create the structure resembling "G" while satisfying all the given constraints:
+
+```python
+structure = [[' ']*W for _ in range(H)]
+
+# Dropping the horizontal block at the base
+ab_drop('b31', 4)
+
+# Dropping the vertical block below the horizontal block
+ab_drop('b13', 4)
+
+# Dropping the horizontal block on top of the vertical block
+ab_drop('b31', 4)
+
+# Dropping the horizontal block above the first horizontal block
+ab_drop('b31', 2)
+
+# Dropping the vertical block to complete the curve of "G"
+ab_drop('b13', 4)
+```
+
+This sequence of `ab_drop()` inputs will create a stable structure resembling the letter "G" while satisfying all the given constraints.

@@ -1,0 +1,25 @@
+```
+# Map initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the first block to create the base of the "M"
+ab_drop('b11', 9)
+
+# Drop the two vertical blocks to create the left side of the "M"
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+
+# Drop the horizontal block above the left side to create the middle part of the "M"
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+
+# Drop the two vertical blocks to create the right side of the "M"
+ab_drop('b11', 11)
+ab_drop('b11', 13)
+
+# Drop the horizontal block above the right side to complete the "M"
+ab_drop('b11', 12)
+ab_drop('b11', 12)
+ab_drop('b11', 12)
+```

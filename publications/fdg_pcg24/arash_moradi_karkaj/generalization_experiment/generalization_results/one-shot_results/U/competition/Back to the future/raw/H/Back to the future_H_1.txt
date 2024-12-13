@@ -1,0 +1,59 @@
+To generate a stable structure that looks like the uppercase character "H" and meets all the hard constraints, you can follow these steps:
+
+1. Initialize the structure as an empty WxH grid.
+
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start building the structure from the bottom layer by dropping the vertical block b13 at the center slot.
+
+```
+ab_drop('b13', W//2)
+```
+
+3. Calculate the stable support slots for the horizontal blocks b31. The stable support slots will be the center slot and the slots adjacent to it.
+
+```
+support_slots = [W//2-1, W//2, W//2+1]
+```
+
+4. Drop the horizontal block b31 on the layer above the base layer at one of the stable support slots.
+
+```
+ab_drop('b31', support_slots[0])
+```
+
+5. Drop the vertical block b13 above the horizontal block b31 at the center slot.
+
+```
+ab_drop('b13', W//2)
+```
+
+6. Increase the support slots for the next horizontal block b31 to maintain stability.
+
+```
+support_slots = [W//2-2, W//2-1, W//2, W//2+1, W//2+2]
+```
+
+7. Drop the horizontal block b31 above the previous vertical block b13 at one of the stable support slots.
+
+```
+ab_drop('b31', support_slots[0])
+```
+
+8. Drop the vertical block b13 above the horizontal block b31 at the center slot.
+
+```
+ab_drop('b13', W//2)
+```
+
+9. Repeat steps 6-8 to build the upper part of the structure.
+
+10. Once the structure is complete, check if it resembles the uppercase character "H" by visually inspecting the structure.
+
+11. If necessary, modify the structure by adjusting the placement of the blocks to meet the similarity constraint.
+
+12. Repeat steps 2-11 with different slot configurations and block types to generate diverse structures that resemble the uppercase character "H".
+
+Note: It's important to perform stability checks before each call to ab_drop to ensure that the entire structure remains stable during each drop.

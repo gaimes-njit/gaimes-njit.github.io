@@ -1,0 +1,31 @@
+To generate a structure that looks like the letter "C", we can use the following sequence of `ab_drop` function calls:
+
+```python
+ab_drop("a")  # Print 'a'
+ab_drop("b")  # Print 'b'
+ab_drop("c")  # Print 'c'
+ab_drop("d")  # Print 'd'
+ab_drop("e")  # Print 'e'
+ab_drop("f")  # Print 'f'
+ab_drop("g")  # Print 'g'
+ab_drop("h")  # Print 'h'
+ab_drop("i")  # Print 'i'
+ab_drop("j")  # Print 'j'
+ab_drop("k")  # Print 'k'
+ab_drop("l")  # Print 'l'
+ab_drop("m")  # Print 'm'
+ab_drop("n")  # Print 'n'
+ab_drop("o")  # Print 'o'
+ab_drop("p")  # Print 'p'
+ab_drop("q")  # Print 'q'
+ab_drop("r")  # Print 'r'
+ab_drop("s")  # Print 's'
+ab_drop("t")  # Print 't'
+ab_drop("u")  # Print 'u'
+ab_drop("v")  # Print 'v'
+ab_drop("w")  # Print 'w'
+ab_drop("x")  # Print 'x'
+ab_drop("y")  # Print 'y'
+```
+
+This sequence of `ab_drop` calls will generate a structure that resembles the letter "C" when executed.

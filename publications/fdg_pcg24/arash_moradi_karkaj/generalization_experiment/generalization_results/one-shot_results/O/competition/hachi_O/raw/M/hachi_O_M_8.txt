@@ -1,0 +1,9 @@
+Example solution for creating the letter "M":
+
+```
+ab_drop('b11', 4)
+ab_drop('b13', 4)
+ab_drop('b11', 3)
+ab_drop('b13', 5)
+ab_drop('b11', 6)
+```

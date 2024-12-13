@@ -1,0 +1,28 @@
+To generate uppercase letter "P", we need to utilize the block types b31 and b13 in the following pattern:
+
+1. Foundation: Place a horizontal straight block (b31) at position 2.
+```
+ab_drop('b31', 2)
+```
+
+2. Vertical Strokes: Place two vertical straight blocks (b13) on the left of the foundation, at positions 1 and 2.
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+3. Top Part: Place a horizontal straight block (b31) on top of the foundation at position 2.
+```
+ab_drop('b31', 2)
+```
+
+Combine all the commands together:
+
+```python
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```
+
+This sequence of commands will generate the uppercase letter "P" within the allowed space and following the gravity rules.

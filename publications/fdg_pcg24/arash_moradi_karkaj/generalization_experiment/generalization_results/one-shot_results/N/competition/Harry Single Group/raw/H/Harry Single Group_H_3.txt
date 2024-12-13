@@ -1,0 +1,16 @@
+To form the letter "H" using the available props and the ab_drop() function, we can follow the following steps:
+
+1. Initialize the map: Create a 2D matrix representing the field with dimensions 20x16 and initialize all cells to empty.
+
+2. Generate the bottom horizontal bar of the "H": Execute `ab_drop('b31', 4)` to place a b31 brick with x_position 4. This will occupy cells (3,0), (4,0), and (5,0).
+
+3. Generate the vertical bar of the "H": Execute `ab_drop('b13', 4)` to place a b13 brick with x_position 4. This will occupy cells (4,0), (4,1), and (4,2).
+
+4. Generate the top horizontal bar of the "H": Execute `ab_drop('b31', 4)` to place a b31 brick with x_position 4. This will occupy cells (3,3), (4,3), and (5,3).
+
+The final structure resembling the letter "H" would occupy the following cells:
+- (3,0), (4,0), and (5,0)
+- (4,0), (4,1), and (4,2)
+- (3,3), (4,3), and (5,3)
+
+Note: Make sure to execute the ab_drop() function in the correct sequence to achieve the desired structure.

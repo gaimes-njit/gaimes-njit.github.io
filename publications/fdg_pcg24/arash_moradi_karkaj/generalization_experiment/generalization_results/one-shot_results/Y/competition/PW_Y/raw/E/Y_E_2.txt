@@ -1,0 +1,16 @@
+To create the uppercase letter "E" using the given block types and gravity rules, you can follow these steps:
+
+1. Start by placing a vertical block (b13) at position (5,1) using the ab_drop('b13',5) command.
+2. Place a horizontal block (b31) starting from position (5,2) to (7,2) using the ab_drop('b31',5), ab_drop('b31',6), and ab_drop('b31',7) commands.
+3. Place two square blocks (b11) at positions (4,1) and (6,1) using the ab_drop('b11',4) and ab_drop('b11',6) commands. This will complete the letter "E".
+
+The final solution will be:
+
+```
+ab_drop('b13',5)
+ab_drop('b31',5)
+ab_drop('b31',6)
+ab_drop('b31',7)
+ab_drop('b11',4)
+ab_drop('b11',6)
+```

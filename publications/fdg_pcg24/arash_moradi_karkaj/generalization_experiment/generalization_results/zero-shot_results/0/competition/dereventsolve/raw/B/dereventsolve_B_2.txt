@@ -1,0 +1,15 @@
+To generate a structure that looks like the letter "B", we can use the `ab_drop()` function calls in the following sequence:
+
+```
+ab_drop('up')
+ab_drop('up')
+ab_drop('left')
+ab_drop('down')
+ab_drop('down')
+ab_drop('left')
+ab_drop('up')
+ab_drop('right')
+ab_drop('down')
+```
+
+This sequence of `ab_drop()` function calls will create a structure that resembles the letter "B" when viewed from a top-down perspective.

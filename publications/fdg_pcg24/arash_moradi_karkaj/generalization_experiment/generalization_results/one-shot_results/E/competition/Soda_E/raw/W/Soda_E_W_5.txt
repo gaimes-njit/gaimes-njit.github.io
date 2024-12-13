@@ -1,0 +1,20 @@
+To create the capital letter "W", we can break it down into three blocks: two diagonal bars and a horizontal bar in the middle. We will start by building the bottom diagonal bars first, and then add the horizontal bar in the middle.
+
+Here is the implementation of the ab_drop() function calls to create the letter "W":
+
+# Place the bottom left diagonal bar
+ab_drop("b31", 7)
+ab_drop("b11", 8)
+
+# Place the bottom right diagonal bar
+ab_drop("b31", 12)
+ab_drop("b11", 13)
+
+# Place the horizontal bar in the middle
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+ab_drop("b31", 11)
+
+This implementation creates a stable structure that resembles the letter "W" when viewed from a top-down orientation.
+
+Please note that the code provided assumes that the previous blocks have been cleared and the grid is empty before starting to build the "W" structure. This is just a snippet of code for building the "W" structure and does not include any error handling or other logic that might be needed in a complete implementation of the game.

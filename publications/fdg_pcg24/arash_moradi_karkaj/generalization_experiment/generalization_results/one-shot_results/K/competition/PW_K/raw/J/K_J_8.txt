@@ -1,0 +1,38 @@
+To generate uppercase letter "J" using the given block types in the defined environment, you can follow these steps:
+
+1. Start by placing a vertical straight block (b13) at position 1:
+```
+ab_drop('b13',1)
+```
+
+2. Place a horizontal straight block (b31) at position 1:
+```
+ab_drop('b31',1)
+```
+
+3. Place a square block (b11) at position 3:
+```
+ab_drop('b11',3)
+```
+
+4. Place a square block (b11) at position 3:
+```
+ab_drop('b11',3)
+```
+
+5. Place a square block (b11) at position 3:
+```
+ab_drop('b11',3)
+```
+
+6. Place a square block (b11) at position 3:
+```
+ab_drop('b11',3)
+```
+
+7. Place a vertical straight block (b13) at position 3:
+```
+ab_drop('b13',3)
+```
+
+Remember to include the stream of commands consecutively included between three backticks (```) in your submission.

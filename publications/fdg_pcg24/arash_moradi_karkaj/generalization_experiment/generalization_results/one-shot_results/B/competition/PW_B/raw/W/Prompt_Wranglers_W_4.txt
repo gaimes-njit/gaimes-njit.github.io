@@ -1,0 +1,46 @@
+To generate the uppercase English letter "W", we can follow the following steps:
+
+Step 1:
+Start by building the bottom-left part of the "W" using two vertical blocks:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```
+
+Step 2:
+Place a horizontal block on top of the two vertical blocks to connect them:
+```
+ab_drop('b31', 2)
+```
+
+Step 3:
+Build the middle part of the "W" by adding two more vertical blocks:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```
+
+Step 4:
+Connect the two sets of vertical blocks with another horizontal block:
+```
+ab_drop('b31', 2)
+```
+
+Step 5:
+Complete the "W" by adding two more vertical blocks on top:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```
+
+Overall, the stream of commands to generate the letter "W" would be:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```

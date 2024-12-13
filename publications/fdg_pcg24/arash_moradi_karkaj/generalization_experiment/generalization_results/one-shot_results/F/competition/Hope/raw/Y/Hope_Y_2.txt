@@ -1,0 +1,18 @@
+To create the structure of the letter "Y" using the given block types and commands, you can follow the steps below:
+
+1. Place the first vertical block (b13) at position (0, 0):
+   ab_drop('b13', 0)
+
+2. Place the second vertical block (b13) at position (2, 0):
+   ab_drop('b13', 2)
+
+3. Place the horizontal block (b31) at position (1, 1):
+   ab_drop('b31', 1)
+
+4. Place the horizontal block (b31) at position (1, 4):
+   ab_drop('b31', 1)
+
+5. Place the smallest block (b11) at position (1, 7):
+   ab_drop('b11', 1)
+
+By following these steps, you will have successfully created the letter "Y" inside the 20*16 box.

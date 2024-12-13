@@ -1,0 +1,29 @@
+Let's start by initializing the field:
+
+```python
+field = [[0] * 20 for _ in range(16)]
+```
+
+Next, we can start placing the bricks to form the letter "F". We will follow these steps:
+
+1. Place the b31 brick vertically on the ground at x_position = 4. This will form the base of the "F".
+2. Place the b13 brick horizontally above the base, starting from x_position = 4. This will form the upper bar of the "F".
+3. Place the b11 brick vertically above the point of contact between the base and upper bar. This will form the vertical stroke of the "F".
+
+```python
+ab_drop('b31', 4)
+ab_drop('b13', 4)
+ab_drop('b11', 5)
+```
+
+After executing these steps, the structure resembling the letter "F" will be formed on the field.
+
+Here is the complete code:
+
+```python
+field = [[0] * 20 for _ in range(16)]
+
+ab_drop('b31', 4)
+ab_drop('b13', 4)
+ab_drop('b11', 5)
+```

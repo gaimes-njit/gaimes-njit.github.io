@@ -1,0 +1,40 @@
+To construct a stable structure resembling "Z" using the given block types and constraints, we can follow these steps:
+
+1. Initialize the map:
+   ```python
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. Drop the first block by rotating it:
+   ```python
+   ab_drop('b31', 0)
+   ab_drop('b11', 1)
+   ```
+
+3. Drop the next block:
+   ```python
+   ab_drop('b11', 0)
+   ```
+
+4. Drop the next block to complete the upper part of the "Z":
+   ```python
+   ab_drop('b13', 1)
+   ab_drop('b11', 2)
+   ```
+
+5. Drop the remaining blocks to complete the lower part of the "Z":
+   ```python
+   ab_drop('b11', 1)
+   ab_drop('b13', 2)
+   ```
+
+The complete ab_drop() inputs to generate the "Z" structure are:
+```python
+ab_drop('b31', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 0)
+ab_drop('b13', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+ab_drop('b13', 2)
+```

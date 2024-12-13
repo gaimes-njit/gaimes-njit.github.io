@@ -1,0 +1,4 @@
+ab_drop('b31', 9)  # Create the horizontal top bar of the "O"
+ab_drop('b31', 9)  # Duplicate the horizontal top bar
+ab_drop('b11', 9)  # Place a block in the center of the top bar
+ab_drop('b13', 9)  # Create the vertical sides of the "O"

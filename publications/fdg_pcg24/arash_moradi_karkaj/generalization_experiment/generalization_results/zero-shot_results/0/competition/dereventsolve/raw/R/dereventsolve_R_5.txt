@@ -1,0 +1,3 @@
+To generate a structure that looks like the letter "R" from the given database, you can use the following sequence of `ab_drop` function calls:
+```ab_drop('b') -> ab_drop('G') -> ab_drop('o') -> ab_drop('C') -> ab_drop('K') -> ab_drop('Y') -> ab_drop('r')```
+This sequence of `ab_drop` function calls will create a structure that resembles the letter "R".

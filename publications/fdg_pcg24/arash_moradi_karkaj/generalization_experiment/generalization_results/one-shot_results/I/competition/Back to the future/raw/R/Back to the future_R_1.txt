@@ -1,0 +1,41 @@
+To generate a stable structure that looks like the uppercase character "R" and meets all the hard constraints, follow the steps below:
+
+1. Initialize the structure as an empty WxH grid: 
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start by dropping the b31 block on the bottom layer to form the vertical line of the "R" shape: 
+```
+ab_drop('b31', 9)
+```
+
+3. Next, drop the b13 block to form the baseline of the "R" shape, providing support for the vertical line:
+```
+ab_drop('b13', 9)
+```
+
+4. Drop another b31 block at a higher layer to form the top horizontal line of the "R" shape, with one end supported by the vertical line:
+```
+ab_drop('b31', 8)
+```
+
+5. Drop two b11 blocks on top of the vertical line to complete the upper part of the "R" shape:
+```
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+```
+
+6. Add support for the top horizontal line by dropping a b13 block at a higher layer:
+```
+ab_drop('b13', 8)
+```
+
+7. Finally, drop a b31 block at the same height as the top horizontal line to complete the diagonal line of the "R" shape:
+```
+ab_drop('b31', 7)
+```
+
+Make sure to perform stability checks before each call to `ab_drop()` to ensure that the structure remains stable. Also, remember to update the `structure` grid after each block is dropped.
+
+The above steps generate an example solution for creating the uppercase "R" shape, and you can explore different variations by adjusting the drop positions and order of block placement.

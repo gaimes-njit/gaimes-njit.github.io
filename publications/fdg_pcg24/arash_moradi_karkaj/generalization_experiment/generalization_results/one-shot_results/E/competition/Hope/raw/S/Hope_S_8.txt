@@ -1,0 +1,17 @@
+To create the letter "S" inside a 20*16 box using the ab_drop function, you can use the following sequence of commands:
+
+ab_drop('b11', 0)
+ab_drop('b13', 2)
+ab_drop('b11', 6)
+ab_drop('b13', 9)
+ab_drop('b11', 13)
+ab_drop('b13', 15)
+ab_drop('b11', 19)
+ab_drop('b31', 2)
+ab_drop('b11', 6)
+ab_drop('b31', 9)
+ab_drop('b11', 13)
+ab_drop('b31', 16)
+ab_drop('b11', 19)
+
+This sequence will drop the blocks in the specified x positions to create the shape of the letter "S" within the 20*16 box.

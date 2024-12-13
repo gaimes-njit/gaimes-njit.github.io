@@ -1,0 +1,20 @@
+To create a structure that looks like the capital letter "R", we will need to use the ab_drop() function to drop and position blocks in the level. We will start by creating the base of the letter "R" and then add the vertical pillar and the diagonal line.
+
+Here is the step-by-step implementation to create the letter "R":
+
+1. Place the base of the letter "R" using a row block ("b31") at position x=7.
+ab_drop("b31", 7)
+
+2. Place the vertical pillar of the letter "R" using a column block ("b13") at position x=9.
+ab_drop("b13", 9)
+
+3. Place the diagonal line of the letter "R" using a row block ("b31") at position x=12.
+ab_drop("b31", 12)
+
+The complete implementation is as follows:
+
+```
+ab_drop("b31", 7)
+ab_drop("b13", 9)
+ab_drop("b31", 12)
+```

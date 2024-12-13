@@ -1,0 +1,55 @@
+To generate a stable structure that looks like the uppercase character "F" using the `ab_drop()` function, we need to follow a systematic approach. Here is a step-by-step process:
+
+Step 1: Initialize the structure
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Generate the base of the "F"
+- Drop a b31 block at slot 9. This will create the horizontal line at the bottom of the "F".
+```
+ab_drop('b31', 9)
+```
+Coordinates: (15, 9)
+
+Step 3: Generate the vertical line of the "F"
+- To create the vertical line, we will use a combination of b13 and b11 blocks.
+- Drop a b11 block at slot 9, above the base.
+```
+ab_drop('b11', 9)
+```
+Coordinates: (14, 9)
+
+- Drop a b11 block at slot 9, above the previous block.
+```
+ab_drop('b11', 9)
+```
+Coordinates: (13, 9)
+
+- Drop a b13 block at slot 9, above the previous blocks.
+```
+ab_drop('b13', 9)
+```
+Coordinates: (10, 9)
+
+Step 4: Generate the horizontal line of the "F"
+- To create the horizontal line, we will again use a b31 block.
+- Drop a b31 block at slots 7, 8, and 9, aligned with the vertical line.
+```
+ab_drop('b31', 7)
+```
+Coordinates: (9, 7)
+
+```
+ab_drop('b31', 8)
+```
+Coordinates: (9, 8)
+
+```
+ab_drop('b31', 9)
+```
+Coordinates: (9, 9)
+
+With these steps, you will have generated a stable structure that looks like the uppercase character "F" and meets all the hard constraints.
+
+Please note that the order of dropping the blocks is crucial to maintain stability. Additionally, you can experiment with different slot positions and try to make the structure more diverse by introducing randomness while determining the positions.

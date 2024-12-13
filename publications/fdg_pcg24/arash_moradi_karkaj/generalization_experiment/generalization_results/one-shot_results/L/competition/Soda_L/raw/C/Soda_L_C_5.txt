@@ -1,0 +1,33 @@
+# Dropping the first block for the letter C
+
+ab_drop("b13", 7)
+
+# Dropping the second block for the letter C
+
+ab_drop("b13", 8)
+ab_drop("b31", 12)
+
+# Dropping the third block for the letter C
+
+ab_drop("b13", 9)
+ab_drop("b31", 11)
+
+# Dropping the fourth block for the letter C
+
+ab_drop("b13", 10)
+ab_drop("b31", 10)
+
+# Dropping the fifth block for the letter C
+
+ab_drop("b13", 11)
+ab_drop("b31", 9)
+
+# Dropping the sixth block for the letter C
+
+ab_drop("b13", 12)
+ab_drop("b31", 8)
+
+# Dropping the seventh block for the letter C
+
+ab_drop("b13", 13)
+ab_drop("b31", 7)

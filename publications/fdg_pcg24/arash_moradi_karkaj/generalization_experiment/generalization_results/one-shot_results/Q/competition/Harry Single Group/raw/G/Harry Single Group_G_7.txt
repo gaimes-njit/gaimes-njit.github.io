@@ -1,0 +1,46 @@
+```python
+# 1. Map Initialization
+field = [[0 for _ in range(20)] for _ in range(16)]  # 16 rows x 20 columns
+
+# 2. Placing bricks
+ab_drop('b11', 5)  # Place the first brick (G's upper left corner) at x_position = 5
+ab_drop('b31', 6)  # Place the second brick (G's upper horizontal line) at x_position = 6
+ab_drop('b13', 5)  # Place the third brick (G's vertical line) at x_position = 5
+
+# 3. Function to check stability
+def check_stability():
+    for i in range(15):  # Iterate through each row except the bottom row
+        for j in range(19):  # Iterate through each column except the rightmost column
+            if field[i][j] == 1:  # Check if a brick cell is occupied
+                if field[i+1][j] == 0 and field[i+1][j+1] == 0:  # Check if the cells below and right below are empty
+                    return False
+    return True
+
+# 4. Function to check boundary collisions
+def check_boundary(brick_type, x_position):
+    if brick_type == 'b31' and (x_position < 1 or x_position > 14):  # Check for horizontal brick boundary collision
+        return False
+    elif brick_type == 'b13' and (x_position < 0 or x_position > 15):  # Check for vertical brick boundary collision
+        return False
+    elif brick_type == 'b11' and (x_position < 0 or x_position > 18):  # Check for square brick boundary collision
+        return False
+    return True
+
+# 5. Generate the required structure
+while not check_stability():
+    for i in range(15):  # Iterate through each row except the bottom row
+        for j in range(20):  # Iterate through each column
+            if field[i][j] == 0:  # Check if cell is empty
+                if check_boundary('b13', j):  # Check if placing vertical brick 'b13' is possible
+                    ab_drop('b13', j)  # Place vertical brick 'b13'
+                if check_boundary('b31', j-1):  # Check if placing horizontal brick 'b31' is possible
+                    ab_drop('b31', j-1)  # Place horizontal brick 'b31'
+                if check_boundary('b11', j):  # Check if placing square brick 'b11' is possible
+                    ab_drop('b11', j)  # Place square brick 'b11'
+                break  # Move to the next row after placing a brick
+
+# 6. Print the final structure
+for row in field:
+    print(' '.join(map(str, row)))
+
+```

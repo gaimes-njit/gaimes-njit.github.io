@@ -1,0 +1,13 @@
+To create a structure that looks like the capital letter "T", we can break it down into two blocks - a vertical bar and a horizontal bar. We can use the "b31" block type for the vertical bar and the "b13" block type for the horizontal bar.
+
+We need to start by dropping the vertical bar from the top and centering it in the middle of the grid. We can then drop the horizontal bar on top of the vertical bar to complete the structure. Here's the step-by-step implementation:
+
+```
+ab_drop("b31", 9)  # Drop the vertical bar at x_position=9
+
+ab_drop("b13", 8)  # Drop the horizontal bar on top of the vertical bar at x_position=8
+ab_drop("b13", 9)  # Drop another horizontal bar on top of the vertical bar at x_position=9
+ab_drop("b13", 10)  # Drop another horizontal bar on top of the vertical bar at x_position=10
+```
+
+This implementation ensures that the blocks are well-supported and structurally stable. The resulting structure will resemble the letter "T".

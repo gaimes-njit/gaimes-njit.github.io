@@ -1,0 +1,11 @@
+The structure of "F" can be created using the following series of `ab_drop()` calls:
+
+```
+ab_drop('b13', 1)
+ab_drop('b11', 1)
+ab_drop('b31', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+```
+
+This sequence of calls drops the blocks in the correct order and position to form the shape of "F".

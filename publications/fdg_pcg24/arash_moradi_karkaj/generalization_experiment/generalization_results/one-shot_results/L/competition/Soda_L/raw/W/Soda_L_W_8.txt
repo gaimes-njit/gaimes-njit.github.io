@@ -1,0 +1,20 @@
+To create the letter "W" in the level, we can break it down into three blocks: two outer diagonal blocks and one center block.
+
+To begin, we need to create the outer diagonal blocks. We can achieve this by dropping two "b13" blocks diagonally from the top and centered at specific slots. 
+
+```python
+# Drop the first diagonal block
+ab_drop("b13", 5)
+
+# Drop the second diagonal block
+ab_drop("b13", 13)
+```
+
+Now, we need to create the center block. We can achieve this by dropping a "b31" block vertically from the top and center it at a specific slot.
+
+```python
+# Drop the center block
+ab_drop("b31", 9)
+```
+
+By following these steps, we will have successfully created the letter "W" in the level.

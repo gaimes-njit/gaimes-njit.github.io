@@ -1,0 +1,28 @@
+```
+# Define the letter "E" as a sequence of `ab_drop` function calls
+sequence = [
+    ab_drop('a'),
+    ab_drop('b'),
+    ab_drop('drop'),
+    ab_drop('a'),
+    ab_drop('b'),
+    ab_drop('drop'),
+    ab_drop('a'),
+    ab_drop('b'),
+    ab_drop('drop'),
+    ab_drop('a'),
+    ab_drop('b'),
+    ab_drop('drop'),
+    ab_drop('a'),
+    ab_drop('b'),
+    ab_drop('drop'),
+    ab_drop('a'),
+    ab_drop('b'),
+    ab_drop('drop'),
+    ab_drop('a'),
+    ab_drop('b'),
+    ab_drop('drop'),
+    ab_drop('a'),
+    ab_drop('b'),
+]
+```

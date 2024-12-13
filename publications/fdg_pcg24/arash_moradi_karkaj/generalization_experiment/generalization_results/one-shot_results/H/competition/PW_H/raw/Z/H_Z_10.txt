@@ -1,0 +1,18 @@
+To generate the uppercase English letter "Z", you can follow these steps:
+
+1. Start by placing a vertical straight block (b13) at position 1 to form the left side of the letter:
+```
+ab_drop('b13', 1)
+```
+
+2. Place another vertical straight block (b13) at position 3 to form the right side of the letter:
+```
+ab_drop('b13', 3)
+```
+
+3. Place a horizontal straight block (b31) at position 2 to connect the two vertical blocks and form the middle of the letter:
+```
+ab_drop('b31', 2)
+```
+
+4. The shape of the letter "Z" is now complete.

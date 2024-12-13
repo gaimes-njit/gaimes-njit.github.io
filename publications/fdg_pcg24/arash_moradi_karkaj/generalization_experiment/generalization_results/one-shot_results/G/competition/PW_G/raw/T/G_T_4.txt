@@ -1,0 +1,36 @@
+To generate the uppercase letter "T", you can follow these steps:
+
+Start by placing a horizontal straight block (b31) at position 2 along the width.
+``` 
+ab_drop('b31', 2)
+```
+
+Next, place a vertical straight block (b13) at position 1 along the width.
+``` 
+ab_drop('b13', 1)
+```
+
+Follow it with another vertical straight block (b13) at position 2 along the width.
+``` 
+ab_drop('b13', 2)
+```
+
+Then, place a small square block (b11) at position 4 along the width.
+``` 
+ab_drop('b11', 4)
+```
+
+Finally, place another small square block (b11) at position 4 along the width to complete the top of the "T".
+``` 
+ab_drop('b11', 4)
+```
+
+Here is the complete stream of commands to generate the letter "T":
+
+``` 
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+```

@@ -1,0 +1,21 @@
+To create a structure that looks like the capital letter "C", we can break it down into two parts: the top half and the bottom half. 
+
+In the top half, we will use two "b13" blocks placed vertically, followed by a "b31" block placed horizontally at the bottom of the two vertical blocks. 
+
+In the bottom half, we will use two "b13" blocks placed vertically, followed by a "b11" block placed horizontally at the bottom of the two vertical blocks. 
+
+Here is the complete implementation:
+
+```
+ab_drop("b11", 3)  # Bottom left corner of the C
+ab_drop("b13", 3)  # First vertical block in the top half
+ab_drop("b13", 5)  # Second vertical block in the top half
+ab_drop("b31", 4)  # Horizontal block connecting the top half
+
+ab_drop("b11", 3)  # Bottom left corner of the C (bottom half)
+ab_drop("b13", 3)  # First vertical block in the bottom half
+ab_drop("b13", 5)  # Second vertical block in the bottom half
+ab_drop("b11", 4)  # Horizontal block connecting the bottom half
+```
+
+This implementation creates a stable structure that resembles the letter "C" when viewed from the top.

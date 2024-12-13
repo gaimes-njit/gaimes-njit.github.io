@@ -1,0 +1,42 @@
+To generate the shape resembling the letter "I" using the available bricks and the ab_drop() function, we need to consider the stability and avoid boundary collisions. 
+
+Here is an example code to generate the structure:
+
+```python
+# Map Initialization
+field = [[False for _ in range(20)] for _ in range(16)]
+
+def ab_drop(x, y):
+  # Check if the current position is already occupied
+  for i in range(len(x)):
+    for j in range(len(x[i])):
+      if field[y+j][x[i][j]]:
+        return
+
+  # Check if the current position will exceed the boundaries
+  if y + len(x[0]) > 16:
+    return
+
+  # Place the brick on the field
+  for i in range(len(x)):
+    for j in range(len(x[i])):
+      field[y+j][x[i][j]] = True
+
+
+# Generate the shape resembling the letter "I"
+# First, drop the vertical brick (b13)
+ab_drop([[0],[0],[0]], 9)
+
+# Then, drop the horizontal brick (b31) on top of the vertical brick
+ab_drop([[0,1,2]], 7)
+
+# Print the resulting field
+for row in field:
+  print(row)
+```
+
+In this code, we first initialize the field as a 2D array of False. The ab_drop() function checks if the current position is already occupied by a previously placed brick and if it exceeds the boundaries. If either of these conditions is met, the function returns and no further action is taken. Otherwise, the function places the current brick on the field by setting the corresponding cells to True.
+
+Using the ab_drop() function, we drop the vertical brick (b13) starting from position 9, followed by dropping the horizontal brick (b31) on top of the vertical brick starting from position 7. The resulting field is then printed.
+
+Ensure that the code execution is between the last 2 pairs of three backticks (```), as mentioned in the instructions.

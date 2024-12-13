@@ -1,0 +1,27 @@
+To form a shape resembling the letter "J", we can use the available bricks in the following order:
+
+1. Place a b31 brick at (8, 0) using the ab_drop('b31', 8) function. This will occupy the cells (7, 0), (8, 0), and (9, 0).
+
+```
+ab_drop('b31', 8)
+```
+
+2. Place a b11 brick at (7, 1) using the ab_drop('b11', 7) function. This will occupy the cell (7, 1).
+
+```
+ab_drop('b11', 7)
+```
+
+3. Place a b11 brick at (9, 1) using the ab_drop('b11', 9) function. This will occupy the cell (9, 1).
+
+```
+ab_drop('b11', 9)
+```
+
+4. Place a b13 brick at (9, 2) using the ab_drop('b13', 9) function. This will occupy the cells (9, 2), (9, 3), and (9, 4).
+
+```
+ab_drop('b13', 9)
+```
+
+By following these steps, we will form a shape resembling the letter "J".

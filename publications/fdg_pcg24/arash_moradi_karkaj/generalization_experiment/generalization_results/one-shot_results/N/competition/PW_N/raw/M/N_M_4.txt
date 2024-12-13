@@ -1,0 +1,35 @@
+To generate the letter "M", we can break it down into several steps:
+
+1. Start by placing two vertical blocks (b13) next to each other at positions 2 and 3:
+```
+ab_drop('b13',2)
+ab_drop('b13',3)
+```
+
+2. Add a horizontal block (b31) on top of the two vertical blocks, starting from position 3:
+```
+top
+ab_drop('b31',3)
+```
+
+3. Place another vertical block (b13) at position 5:
+```
+side
+ab_drop('b13',5)
+```
+
+4. Finally, add a small square block (b11) on top of the last vertical block, at position 5:
+```
+ab_drop('b11',5)
+```
+
+Now, if we put all the commands together, we get the sequence of commands to generate the letter "M":
+```
+ab_drop('b13',2)
+ab_drop('b13',3)
+top
+ab_drop('b31',3)
+side
+ab_drop('b13',5)
+ab_drop('b11',5)
+```

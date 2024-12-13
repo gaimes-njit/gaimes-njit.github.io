@@ -1,0 +1,15 @@
+```
+db = {
+    'top': 'ab_drop();ab_move_up();',
+    'middle': 'ab_move_up();',
+    'bottom': 'ab_drop();ab_move_up();'
+}
+```
+
+To generate a structure that looks like the letter "I" using the database, you can use the following sequence of function calls:
+
+```
+ab_drop();ab_move_up();
+ab_move_up();
+ab_drop();ab_move_up();
+```

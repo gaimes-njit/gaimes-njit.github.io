@@ -1,0 +1,25 @@
+To generate a stable structure that looks like the uppercase character "G", we can follow the following steps:
+
+1. Initialize the structure as an empty grid:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Generate the stable base of the structure:
+```python
+ab_drop('b13', 9)  # Place a vertical block at slot 9
+ab_drop('b31', 9)  # Place a horizontal block above the vertical block at slot 9
+ab_drop('b31', 7)  # Place another horizontal block to the left of the previous block at slot 7
+```
+
+3. Generate the upper part of the G shape:
+```python
+ab_drop('b13', 5)  # Place a vertical block above the rightmost block at slot 5
+ab_drop('b31', 5)  # Place a horizontal block above the vertical block at slot 5
+ab_drop('b31', 3)  # Place another horizontal block to the left of the previous block at slot 3
+ab_drop('b13', 3)  # Place a vertical block above the leftmost block at slot 3
+```
+
+Note: The exact coordinates for each `ab_drop` call have been determined based on the constraints and the desired shape of the G. These coordinates may vary depending on the specific requirements or constraints of the problem.
+
+After following these steps, the `structure` grid will contain the generated stable structure that looks like the uppercase character "G".

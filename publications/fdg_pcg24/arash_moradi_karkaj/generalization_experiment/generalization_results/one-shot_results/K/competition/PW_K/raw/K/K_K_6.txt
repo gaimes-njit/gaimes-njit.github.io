@@ -1,0 +1,23 @@
+To create the capital letter "K" using the given block types and environment, you can follow these steps:
+
+1. Start by placing a 1x1 block at position 4.
+2. Place another 1x1 block at position 6.
+3. Place a horizontal straight block at position 5.
+4. Place another 1x1 block at position 4.
+5. Place another 1x1 block at position 5.
+6. Place another horizontal straight block at position 5.
+7. Place another 1x1 block at position 4.
+8. Place another 1x1 block at position 6.
+
+Here is the stream of commands to create the letter "K":
+
+```
+ab_drop('b11',4)
+ab_drop('b11',6)
+ab_drop('b31',5)
+ab_drop('b11',4)
+ab_drop('b11',5)
+ab_drop('b31',5)
+ab_drop('b11',4)
+ab_drop('b11',6)
+```

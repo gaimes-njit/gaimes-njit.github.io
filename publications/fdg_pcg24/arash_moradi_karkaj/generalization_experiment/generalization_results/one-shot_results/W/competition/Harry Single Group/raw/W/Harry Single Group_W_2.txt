@@ -1,0 +1,48 @@
+To form the letter "W" shape using the given bricks, we can break it down into multiple steps:
+
+Step 1: Initialize the field map with all cells set to 0 (unoccupied).
+```
+field = [[0] * 20 for _ in range(16)]
+```
+
+Step 2: Place the two vertical bricks (b13) on the left and right sides of the field.
+```
+ab_drop('b13', 2)  # Place the left vertical brick
+ab_drop('b13', 17)  # Place the right vertical brick
+```
+Now, the cells (2, 0), (2, 1), (2, 2) and (17, 0), (17, 1), (17, 2) are occupied.
+
+Step 3: Place the horizontal brick (b31) to form the middle part of the "W" shape.
+```
+ab_drop('b31', 5)  # Place the bottom part of the middle brick
+ab_drop('b31', 8)  # Place the middle part of the middle brick
+ab_drop('b31', 11) # Place the top part of the middle brick
+```
+Now, the cells (5, 0), (6, 0), (7, 0), (8, 0), (9, 0), (10, 0), (11, 0), (12, 0), (13, 0) are occupied.
+
+Step 4: Adjust the top part of the middle brick to form the "W" shape.
+```
+ab_drop('b11', 9)  # Place the first square brick above the middle brick
+ab_drop('b11', 14)  # Place the second square brick above the middle brick
+```
+Now, the cells (9, 1) and (14, 1) are occupied.
+
+The final structure will resemble the letter "W" and satisfy the stability and boundary collision requirements.
+
+```python
+# Initialize the field map
+field = [[0] * 20 for _ in range(16)]
+
+# Place the two vertical bricks
+ab_drop('b13', 2)  # Place the left vertical brick
+ab_drop('b13', 17)  # Place the right vertical brick
+
+# Place the horizontal brick
+ab_drop('b31', 5)  # Place the bottom part of the middle brick
+ab_drop('b31', 8)  # Place the middle part of the middle brick
+ab_drop('b31', 11) # Place the top part of the middle brick
+
+# Adjust the top part of the middle brick
+ab_drop('b11', 9)  # Place the first square brick above the middle brick
+ab_drop('b11', 14)  # Place the second square brick above the middle brick
+```

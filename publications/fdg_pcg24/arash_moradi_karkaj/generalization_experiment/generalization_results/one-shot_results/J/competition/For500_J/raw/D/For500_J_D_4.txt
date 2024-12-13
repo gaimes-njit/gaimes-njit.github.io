@@ -1,0 +1,5 @@
+# Solution
+ab_drop('b31', 9)  # Place 'b31' at center position (slot 12) to form the top part of the 'D' structure
+ab_drop('b11', 9)  # Place 'b11' block just below the 'b31' block at the same position (slot 12)
+ab_drop('b13', 14)  # Place 'b13' block to the right of the 'b31' block in order to form the curved part of the 'D' structure
+ab_drop('b31', 6)  # Place 'b31' block to form the curved bottom part of the 'D' structure

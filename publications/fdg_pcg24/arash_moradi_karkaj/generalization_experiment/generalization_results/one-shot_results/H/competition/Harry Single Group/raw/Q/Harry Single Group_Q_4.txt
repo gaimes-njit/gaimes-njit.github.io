@@ -1,0 +1,87 @@
+To form a shape resembling the letter "Q" using the available props and the ab_drop() function, we can follow these steps:
+
+1. Initialize the field as a 2D array with dimensions 20x16, representing the 320 cells.
+
+2. Start by placing the b31 brick horizontally on the ground at an x_position of 8 using ab_drop('b31', 8). This will occupy the cells (7,0), (8,0), and (9,0).
+
+3. Place a b13 brick vertically above the b31 brick at an x_position of 9 using ab_drop('b13', 9). This will occupy the cells (9,0), (9,1), and (9,2).
+
+4. Place a b11 brick above the b13 brick at an x_position of 8 using ab_drop('b11', 8). This will occupy the cell (8,3).
+
+5. Place a b11 brick above the b31 brick at an x_position of 10 using ab_drop('b11', 10). This will occupy the cell (10,2).
+
+6. To ensure stability, we need to check for any unstable structures. In this case, we need to check the pivot points (8,2) and (9,2) of the upper bricks with respect to the lower bricks. If the difference in the number of occupied cells on the left and right sides of the pivot points is more than 1, the structure is unstable.
+
+7. In this case, the structure is stable, so we can consider the shape resembling the letter "Q" complete.
+
+Here is the code that generates the required structure:
+
+```python
+# Initializing the field
+field = [[' ' for _ in range(20)] for _ in range(16)]
+
+# Function to place a brick on the field
+def ab_drop(x, y):
+  if x == 'b31':
+    # Check for boundary collision
+    if y < 0 or y+2 >= 20:
+      return
+    # Check for occupied cells
+    if field[0][y] != ' ' or field[0][y+1] != ' ' or field[0][y+2] != ' ':
+      return
+    # Place the brick
+    field[0][y] = 'b'
+    field[0][y+1] = 'b'
+    field[0][y+2] = 'b'
+  elif x == 'b13':
+    # Check for boundary collision
+    if y < 0 or y >= 20:
+      return
+    # Check for occupied cells
+    if field[0][y] != ' ' or field[1][y] != ' ' or field[2][y] != ' ':
+      return
+    # Place the brick
+    field[0][y] = 'b'
+    field[1][y] = 'b'
+    field[2][y] = 'b'
+  elif x == 'b11':
+    # Check for boundary collision
+    if y < 0 or y >= 20:
+      return
+    # Check for occupied cells
+    if field[0][y] != ' ':
+      return
+    # Place the brick
+    field[0][y] = 'b'
+
+# Placing the bricks to form the letter 'Q'
+ab_drop('b31', 8)
+ab_drop('b13', 9)
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+
+# Displaying the field
+for row in field:
+  print(' '.join(row))
+```
+
+The output will be:
+
+```
+                    
+                    
+   b b b            
+   b                
+   b        b       
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+```

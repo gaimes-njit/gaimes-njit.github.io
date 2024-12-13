@@ -1,0 +1,9 @@
+Here is the stream of commands to generate the uppercase letter "J":
+
+```
+ab_drop('b31',1)  // First vertical line of the J
+ab_drop('b31',1)  // Second vertical line of the J
+ab_drop('b13',2)  // Top horizontal line of the J
+ab_drop('b13',1)  // Bottom horizontal line of the J
+ab_drop('b11',3)  // Dot of the J
+```

@@ -1,0 +1,29 @@
+To create the capital letter "R", we can use the following set of commands:
+
+```plaintext
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b31', 4)
+ab_drop('b13', 1)
+ab_drop('b11', 5)
+ab_drop('b13', 2)
+ab_drop('b11', 6)
+ab_drop('b13', 3)
+ab_drop('b11', 7)
+```
+
+Explanation:
+
+1. Place a 1x1 square block ('b11') at position 1 to start the vertical line of the letter.
+2. Place another 1x1 square block ('b11') next to the first one at position 2.
+3. Place a third 1x1 square block ('b11') next to the second one at position 3.
+4. Place a horizontal straight block ('b31') at position 4 to form the top portion of the letter.
+5. Place a vertical straight block ('b13') at position 1 to create the vertical line of the letter.
+6. Place another 1x1 square block ('b11') next to the vertical straight block at position 5.
+7. Place another vertical straight block ('b13') next to the last block at position 2 to connect the two vertical lines.
+8. Place another 1x1 square block ('b11') next to the last block at position 6 to complete the top right portion of the letter.
+9. Place another vertical straight block ('b13') next to the last block at position 3 to complete the vertical line.
+10. Place another 1x1 square block ('b11') next to the last block at position 7 to complete the bottom right portion of the letter.
+
+By following these commands, the final result will resemble the uppercase letter "R" within the defined environment.

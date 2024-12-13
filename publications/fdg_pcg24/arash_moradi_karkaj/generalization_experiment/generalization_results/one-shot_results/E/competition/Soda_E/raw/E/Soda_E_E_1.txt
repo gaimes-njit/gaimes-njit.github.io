@@ -1,0 +1,31 @@
+First, let's start by building the three horizontal bars of the letter E. We will use the lying-down orientation since it provides stability.
+
+```
+# The top horizontal bar of E
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+
+# The middle horizontal bar of E
+ab_drop("b13", 10)
+ab_drop("b11", 11)
+
+# The bottom horizontal bar of E
+ab_drop("b13", 12)
+ab_drop("b11", 13)
+```
+
+This will give us a stable structure for the letter E. However, the E will be flipped due to gravity. We need to rotate it clockwise to match the target orientation.
+
+```
+# Rotate the structure
+# Move the top horizontal bar to the right
+ab_drop("b31", 14)
+
+# Move the middle horizontal bar to the right
+ab_drop("b31", 14)
+
+# Move the bottom horizontal bar to the right
+ab_drop("b31", 14)
+```
+
+Now the E structure is correctly oriented.

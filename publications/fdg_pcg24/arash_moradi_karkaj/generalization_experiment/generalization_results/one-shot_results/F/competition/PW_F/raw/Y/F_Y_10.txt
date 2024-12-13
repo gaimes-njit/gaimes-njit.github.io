@@ -1,0 +1,11 @@
+Y: To create the letter "Y" using the given block types and environment, you can use the following stream of commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 3)
+ab_drop('b11', 3)
+ab_drop('b31', 3)
+```
+
+These commands will place the blocks in the required positions to form the uppercase letter "Y" within the grid boundaries.

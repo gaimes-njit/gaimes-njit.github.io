@@ -1,0 +1,9 @@
+To generate the uppercase English letter "T", we can use the following commands:
+
+```
+ab_drop('b31', 2)    # Place the horizontal straight block as the foundation
+ab_drop('b13', 1)    # Place the left vertical straight block on top
+ab_drop('b13', 2)    # Place the right vertical straight block on top
+```
+
+These commands will create a stable structure resembling the letter "T" within the allowed space in the grid.

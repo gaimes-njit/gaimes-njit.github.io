@@ -1,0 +1,25 @@
+B:
+```
+ab_drop('b31',1)
+ab_drop('b31',1)
+ab_drop('b31',1)
+ab_drop('b31',1)
+ab_drop('b31',1)
+ab_drop('b11',4)
+ab_drop('b11',4)
+ab_drop('b11',4)
+ab_drop('b11',4)
+ab_drop('b11',4)
+ab_drop('b31',7)
+ab_drop('b31',7)
+ab_drop('b31',7)
+ab_drop('b31',7)
+ab_drop('b31',7)
+ab_drop('b11',10)
+ab_drop('b11',10)
+ab_drop('b11',10)
+ab_drop('b11',10)
+ab_drop('b11',10)
+```
+
+The stream of commands above will generate the letter "B" in the Tetris-like environment.

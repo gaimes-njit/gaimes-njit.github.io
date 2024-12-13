@@ -1,0 +1,12 @@
+To create the uppercase letter "P", we can start by placing a vertical straight block (b13) at position 1, followed by two horizontal straight blocks (b31) at positions 2 and 3. Finally, we can place a 1x1 square block (b11) just below the top of the vertical straight block.
+
+Here is the stream of commands to create the letter "P":
+
+```
+ab_drop('b13',1)
+ab_drop('b31',2)
+ab_drop('b31',3)
+ab_drop('b11',3)
+```
+
+By following these commands, the blocks will be stacked and placed in such a way that they form the letter "P" within the allowed boundaries and according to the gravity rules.

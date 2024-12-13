@@ -1,0 +1,35 @@
+Here is the code to generate the structure resembling "Z":
+
+```python
+structure = [[' ']*W for _ in range(H)]  # Map initialization
+
+# Drop the first block (b11) at the bottom left position
+ab_drop('b11', 0)
+
+# Drop the second block (b31) at the bottom right position
+ab_drop('b31', 19)
+
+# Drop the third block (b13) at the second layer from the bottom and one slot away from the right edge
+ab_drop('b13', 18)
+
+# Drop the fourth block (b11) at the third layer from the bottom and one slot away from the right edge
+ab_drop('b11', 18)
+
+# Drop the fifth block (b11) at the top left position
+ab_drop('b11', 0)
+
+# Drop the sixth block (b31) at the second layer from the top and one slot away from the left edge
+ab_drop('b31', 1)
+
+# Drop the seventh block (b13) at the third layer from the top and two slots away from the left edge
+ab_drop('b13', 2)
+
+# Drop the eighth block (b11) at the top right position
+ab_drop('b11', 19)
+
+# Drop the ninth block (b11) at the third layer from the top and one slot away from the right edge
+ab_drop('b11', 18)
+
+```
+
+The above code will create a stable structure resembling the letter "Z" while satisfying all the given constraints.

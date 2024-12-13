@@ -1,0 +1,10 @@
+To create the uppercase letter "Z", we will start by creating the foundation of the letter using the "b31" block. Then, we will add the vertical blocks on the left side and the top part of the letter using the "b13" and "b31" blocks.
+
+```plaintext
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```
+
+This sequence of commands will create the uppercase letter "Z" within the defined environment and gravity rules.

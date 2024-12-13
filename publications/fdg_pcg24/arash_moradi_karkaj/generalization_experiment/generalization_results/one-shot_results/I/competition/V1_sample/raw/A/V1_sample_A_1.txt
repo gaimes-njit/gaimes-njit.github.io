@@ -1,0 +1,17 @@
+```python
+ab drop(b13, y=10, layer=15)  # Drop the vertical block in the center at slot 10 from the top layer
+ab drop(b31, y=9, layer=14)   # Drop the horizontal block just below the vertical block at slot 9 from layer 14
+ab drop(b11, y=9, layer=13)   # Drop the square block just below the horizontal block at slot 9 from layer 13
+ab drop(b11, y=9, layer=12)   # Drop another square block just below the previous block at slot 9 from layer 12
+ab drop(b11, y=9, layer=11)   # Drop another square block just below the previous block at slot 9 from layer 11
+ab drop(b11, y=9, layer=10)   # Drop another square block just below the previous block at slot 9 from layer 10
+ab drop(b11, y=9, layer=9)    # Drop another square block just below the previous block at slot 9 from layer 9
+ab drop(b11, y=9, layer=8)    # Drop another square block just below the previous block at slot 9 from layer 8
+ab drop(b31, y=9, layer=7)    # Drop the horizontal block just below the previous blocks at slot 9 from layer 7
+ab drop(b11, y=9, layer=6)    # Drop the square block just below the horizontal block at slot 9 from layer 6
+ab drop(b11, y=9, layer=5)    # Drop another square block just below the previous block at slot 9 from layer 5
+ab drop(b31, y=9, layer=4)    # Drop the horizontal block just below the previous blocks at slot 9 from layer 4
+ab drop(b11, y=9, layer=3)    # Drop the square block just below the horizontal block at slot 9 from layer 3
+ab drop(b31, y=9, layer=2)    # Drop the horizontal block just below the previous blocks at slot 9 from layer 2
+ab drop(b11, y=9, layer=1)    # Drop the square block just below the horizontal block at slot 9 from layer 1
+```

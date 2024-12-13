@@ -1,0 +1,10 @@
+```
+ab_drop('b13', 0)    # lower leg of 'E'
+ab_drop('b13', 0)    # middle leg of 'E'
+ab_drop('b13', 0)    # upper leg of 'E'
+ab_drop('b31', 2)    # horizontal bar of 'E'
+ab_drop('b11', 0)    # center square of 'E'
+ab_drop('b11', 4)    # left end of horizontal bar of 'E'
+ab_drop('b11', 6)    # right end of horizontal bar of 'E'
+ab_drop('b11', 4)    # additional block to stabilize horizontal bar of 'E'
+```

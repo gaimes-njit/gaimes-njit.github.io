@@ -1,0 +1,73 @@
+Step 2:
+
+1st row: 2 asterisks, 3 spaces, 2 asterisks 
+2nd row: 2 asterisks, 1 space, 2 asterisks 
+3rd row: 2 asterisks, 1 space, 2 asterisks 
+4th row: 2 asterisks, 1 space, 2 asterisks 
+5th row: 2 asterisks, 1 space, 2 asterisks 
+
+Step 3:
+
+1st row: 2x, 3y, 2x 
+2nd row: 2x, 1y, 2x 
+3rd row: 2x, 1y, 2x 
+4th row: 2x, 1y, 2x 
+5th row: 2x, 1y, 2x 
+
+Step 4:
+
+1st row: xxyyyxx 
+2nd row: xxxyxx 
+3rd row: xxxyxx 
+4th row: xxxyxx 
+5th row: xxxyxx 
+
+Step 5:
+
+1st row: x-1; x-2; y-3; y-4; y-5; x-6; x-7 
+2nd row: x-1; x-2; x-3; y-4; x-5; x-6 
+3rd row: x-1; x-2; x-3; y-4; x-5; x-6 
+4th row: x-1; x-2; x-3; y-4; x-5; x-6 
+5th row: x-1; x-2; x-3; y-4; x-5; x-6 
+
+Step 6:
+
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+```

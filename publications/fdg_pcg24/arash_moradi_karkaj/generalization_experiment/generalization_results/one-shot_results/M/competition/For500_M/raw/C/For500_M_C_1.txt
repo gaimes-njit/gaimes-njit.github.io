@@ -1,0 +1,3 @@
+ab_drop('b13',9)  # Drop b13 at slot 9 to create the vertical line of the 'C'.
+ab_drop('b13',7)  # Drop b13 at slot 7 to create the round part of the 'C'.
+ab_drop('b31',10)  # Drop b31 at slot 10 to connect the two parts of the 'C'.

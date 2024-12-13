@@ -1,0 +1,16 @@
+My solution to generate a stable structure resembling the capital letter "N" using the `ab_drop()` function is as follows:
+
+# initialize the structure as an empty WxH grid
+structure = [[' ']*20 for _ in range(16)]
+
+# Place horizontal block 'b31' at the bottom left, supporting the left side of the structure
+ab_drop('b31', 1)
+
+# Place vertical block 'b13' next to the horizontal block, supporting the right side of the structure
+ab_drop('b13', 2)
+
+# Place horizontal block 'b31' above the vertical block, forming the middle part of the letter "N"
+ab_drop('b31', 1)
+
+# Place horizontal block 'b31' at the top right, forming the top part of the letter "N"
+ab_drop('b31', 18)

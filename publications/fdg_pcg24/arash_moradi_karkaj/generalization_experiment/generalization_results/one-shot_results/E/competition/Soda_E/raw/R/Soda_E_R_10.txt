@@ -1,0 +1,19 @@
+# Step 1: Building the base of the R shape
+# Creating the vertical pipe of the R shape
+ab_drop("b31", 9)
+
+# Creating the bottom horizontal bar of the R shape
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+ab_drop("b13", 10)
+
+# Step 2: Creating the diagonal stroke of the R shape
+ab_drop("b31", 8)
+ab_drop("b11", 9)
+
+# Step 3: Creating the top horizontal bar of the R shape
+ab_drop("b31", 7)
+ab_drop("b11", 8)
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+ab_drop("b13", 11)

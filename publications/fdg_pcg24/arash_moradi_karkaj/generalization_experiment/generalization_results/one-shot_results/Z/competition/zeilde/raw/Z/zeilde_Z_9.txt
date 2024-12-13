@@ -1,0 +1,49 @@
+Drawing the letter "Z" with asterisks:
+```
+*****
+   *
+  *
+ *
+*****
+```
+Listing the asterisks and spaces generated in each row:
+```
+5 asterisks, 0 spaces
+3 spaces, 1 asterisk
+2 spaces, 1 asterisk
+1 space, 1 asterisk
+5 asterisks, 0 spaces
+```
+Listing the variables:
+```
+5x
+3y, 1x
+2y, 1x
+1y, 1x
+5x
+```
+Listing the positions of the variables:
+```
+x-1; x-2; x-3; x-4; x-5
+y-1; x-2
+y-1; x-2
+y-1; x-2
+x-1; x-2; x-3; x-4; x-5
+```
+Using the `ab_drop` function calls:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

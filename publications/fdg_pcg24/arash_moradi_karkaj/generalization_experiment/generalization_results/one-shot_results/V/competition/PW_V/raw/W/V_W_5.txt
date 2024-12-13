@@ -1,0 +1,16 @@
+To generate the uppercase English letter "W", we can use a combination of block types b31 and b13. Here is the stream of ab_drop() commands to create the letter "W":
+
+```
+ab_drop('b31', 1)
+ab_drop('b31', 5)
+ab_drop('b31', 9)
+ab_drop('b13', 3)
+ab_drop('b13', 7)
+```
+
+Explanation:
+- The first three ab_drop() commands create the three horizontal lines of the letter "W" using block type b31.
+- The fourth ab_drop() command creates the first vertical line of the letter "W" using block type b13.
+- The fifth ab_drop() command creates the second vertical line of the letter "W" using block type b13.
+
+The resulting shape will resemble the uppercase letter "W" within the allowed space boundaries.

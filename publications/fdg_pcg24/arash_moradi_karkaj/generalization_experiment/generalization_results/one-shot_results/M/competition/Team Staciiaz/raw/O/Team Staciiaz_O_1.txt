@@ -1,0 +1,100 @@
+To generate a stable structure that looks like the character "O" using the `ab_drop()` function and meet all the constraints, we can follow these steps:
+
+1. Create an empty structure grid using the provided map initialization.
+
+```python
+W = 20
+H = 16
+structure = [[' '] * W for _ in range(H)]
+```
+
+2. Drop the first block at the bottom layer (layer 0) and at the center slot (W/2) using the `ab_drop()` function.
+
+```python
+ab_drop('b31', W/2)
+```
+
+3. Drop the four corners of the "O" shape using the `ab_drop()` function. Start from the top-left corner, then top-right, bottom-right, and finally bottom-left.
+
+```python
+ab_drop('b11', 1)
+ab_drop('b11', W-2)
+ab_drop('b11', W-2)
+ab_drop('b11', 1)
+```
+
+4. Drop the remaining blocks to form the outer and inner arcs of the "O" shape. Start from the top layer (layer 15) and work your way to the bottom.
+
+```python
+for i in range(2, W-2):
+    ab_drop('b11', i)
+
+for i in range(2, W-2):
+    ab_drop('b11', i)
+```
+
+5. The final structure should resemble the character "O" and meet all the constraints.
+
+Here is the complete code:
+
+```python
+W = 20
+H = 16
+structure = [[' '] * W for _ in range(H)]
+
+def ab_drop(block_type, x_position):
+    """Drop a block at `x_position` which are integers"""
+    """There are three block types: 'b11' is 1x1 unit block, 'b31' is a 3x1 unit block, and 'b13' is a 1x3 unit block"""
+
+    def get_highest_empty_y_position(x):
+        for y in range(H - 1, -1, -1):
+            if structure[y][x] == ' ':
+                return y
+        return -1
+
+    block_shapes = {
+        'b11': [(0, 0)],
+        'b31': [(0, 0), (0, 1), (0, 2)],
+        'b13': [(0, 0), (-1, 0), (-2, 0)]
+    }
+
+    highest_empty_height = get_highest_empty_y_position(x_position)
+
+    if x_position < 0 or x_position >= W:
+        print("Invalid x_position")
+        return
+
+    if block_type not in block_shapes:
+        print("Invalid block type")
+        return
+
+    for dx, dy in block_shapes[block_type]:
+        y = highest_empty_height + dy
+        if y < 0 or y >= H:
+            print(f"Invalid x_position for block type '{block_type}'")
+            return
+        structure[y][x_position + dx] = 'x'
+
+
+# Drop the first block
+ab_drop('b31', W//2)
+
+# Drop the four corners
+ab_drop('b11', 2)
+ab_drop('b11', W-3)
+ab_drop('b11', W-3)
+ab_drop('b11', 2)
+
+# Drop the outer and inner arcs
+for i in range(3, W-3):
+    ab_drop('b11', i)
+
+for i in range(3, W-3):
+    ab_drop('b11', i)
+
+# Print the final structure
+for row in structure:
+    print(' '.join(row))
+```
+
+The resulting structure should resemble the character "O" and meet all the constraints.

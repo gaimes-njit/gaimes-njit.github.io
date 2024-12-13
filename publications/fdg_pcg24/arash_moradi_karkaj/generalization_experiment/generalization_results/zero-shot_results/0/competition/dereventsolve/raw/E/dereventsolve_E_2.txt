@@ -1,0 +1,39 @@
+```
+def ab_drop(key):
+    return key
+
+structure = {}
+
+# Adding left side of E
+structure["1_1"] = "ab_drop(1)"
+structure["2_1"] = "ab_drop(2)"
+structure["3_1"] = "ab_drop(3)"
+structure["4_1"] = "ab_drop(4)"
+structure["5_1"] = "ab_drop(5)"
+
+# Adding middle horizontal line of E
+structure["3_2"] = "ab_drop(6)"
+structure["3_3"] = "ab_drop(7)"
+structure["3_4"] = "ab_drop(8)"
+structure["3_5"] = "ab_drop(9)"
+
+# Adding right side of E
+structure["1_6"] = "ab_drop(10)"
+structure["2_6"] = "ab_drop(11)"
+structure["3_6"] = "ab_drop(12)"
+structure["4_6"] = "ab_drop(13)"
+structure["5_6"] = "ab_drop(14)"
+
+# Printing the structure
+print(structure["1_1"], structure["2_1"], structure["3_1"], structure["4_1"], structure["5_1"])
+print(structure["3_2"], structure["3_3"], structure["3_4"], structure["3_5"])
+print(structure["1_6"], structure["2_6"], structure["3_6"], structure["4_6"], structure["5_6"])
+```
+
+The structure above generates a letter "E" using the `ab_drop` function calls. The letter "E" is structured as follows:
+
+```
+1 1 1 1 1
+1
+1 1 1 1 1
+```

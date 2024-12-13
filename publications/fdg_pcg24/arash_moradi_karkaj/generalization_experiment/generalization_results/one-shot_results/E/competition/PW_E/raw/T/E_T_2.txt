@@ -1,0 +1,14 @@
+To generate the uppercase English letter "T", we can use the following stream of commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b31', 2)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b13', 4)
+ab_drop('b31', 2)
+```
+
+This will create a stable "T" shape in the defined environment.

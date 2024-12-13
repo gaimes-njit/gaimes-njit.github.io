@@ -1,0 +1,13 @@
+To generate a stable structure that resembles the character "C", we can follow these steps:
+
+1. Determine the dropping position and order for each block type (b11, b31, b13) to meet the stability constraints:
+   - Place a b31 block at the bottom layer (layer 0) and at one of the slots near the left boundary (slot 1 or 2). This will serve as the base of the structure.
+   - Place a b13 block on top of the b31 block, at the same slot position.
+   - Place another b31 block on top of the b13 block, at the same slot position.
+
+2. Use the ab_drop() function to drop each block at the determined positions:
+   - Call ab_drop('b31', 1) to drop the first b31 block at slot 1.
+   - Call ab_drop('b13', 1) to drop the b13 block above the previous b31 block.
+   - Call ab_drop('b31', 1) to drop the second b31 block above the b13 block.
+
+3. The resulting structure should resemble the character "C" while satisfying the stability constraints.

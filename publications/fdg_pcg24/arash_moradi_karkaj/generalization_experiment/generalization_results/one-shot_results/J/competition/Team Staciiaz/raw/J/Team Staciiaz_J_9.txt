@@ -1,0 +1,61 @@
+To generate a stable structure that looks like the character "J" and meets all the given constraints, we can follow these steps:
+
+1. Initialize the structure grid using the provided code:
+```
+W = 20
+H = 16
+structure = [[' '] * W for _ in range(H)]
+```
+
+2. Define the block types and their shapes:
+```
+block_shapes = {
+    'b11': [(0, 0)],
+    'b31': [(0, 0), (0, 1), (0, 2)],
+    'b13': [(0, 0), (-1, 0), (-2, 0)]
+}
+```
+
+3. Start by dropping the 'b31' block at slot 0:
+```
+ab_drop('b31', 0)
+```
+
+4. Drop the 'b11' block at slot 2:
+```
+ab_drop('b11', 2)
+```
+
+5. Drop the 'b11' block at slot 3:
+```
+ab_drop('b11', 3)
+```
+
+6. Drop the 'b11' block at slot 4:
+```
+ab_drop('b11', 4)
+```
+
+7. Drop the 'b13' block at slot 4:
+```
+ab_drop('b13', 4)
+```
+
+8. Drop the 'b13' block at slot 4:
+```
+ab_drop('b13', 4)
+```
+
+9. Drop the 'b13' block at slot 3:
+```
+ab_drop('b13', 3)
+```
+
+10. Drop the 'b13' block at slot 2:
+```
+ab_drop('b13', 2)
+```
+
+11. Drop the 'b13' block at slot 1:
+```
+ab_drop('b13', 1)

@@ -1,0 +1,33 @@
+To generate a stable structure that resembles the character "U" and meets all the hard constraints, we can follow the following steps:
+
+1. Initialize the structure as an empty grid using the provided code:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start by placing a b11 block at the bottom center of the structure:
+```
+ab_drop('b11', W//2)
+```
+
+3. Place a b13 block to the left of the b11 block, ensuring stability:
+```
+ab_drop('b13', W//2 - 1)
+```
+
+4. Place another b13 block to the right of the b11 block, ensuring stability:
+```
+ab_drop('b13', W//2 + 1)
+```
+
+5. Place a b31 block above the b11 block, ensuring stability:
+```
+ab_drop('b31', W//2)
+```
+
+6. Place the remaining b31 block above the two b13 blocks, ensuring stability:
+```
+ab_drop('b31', W//2)
+```
+
+The resulting structure will resemble the character "U" and meet all the hard constraints of stability. The blocks will be placed low to reduce the risk of collapsing, and the structure will not be separated. Additionally, since the blocks are placed within the boundary of the map, no boundary intrusions will occur.

@@ -1,0 +1,13 @@
+Here are the ab_drop() commands to generate the uppercase letter "P":
+
+```
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+ab_drop('b11', 5)
+ab_drop('b11', 6)
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+ab_drop('b11', 3)
+ab_drop('b11', 6)
+```

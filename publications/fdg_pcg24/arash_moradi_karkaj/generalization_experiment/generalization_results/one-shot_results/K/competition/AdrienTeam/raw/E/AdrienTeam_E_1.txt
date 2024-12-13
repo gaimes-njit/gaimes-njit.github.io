@@ -1,0 +1,17 @@
+```
+W = 20
+H = 16
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the three horizontal blocks of a 'E'
+ab_drop('b31', 2)
+ab_drop('b31', 6)
+ab_drop('b31', 10)
+
+# Drop the vertical block of the 'E'
+ab_drop('b13', 8)
+
+# Drop the two horizontal blocks of the middle of the 'E'
+ab_drop('b31', 4)
+ab_drop('b31', 8)
+```

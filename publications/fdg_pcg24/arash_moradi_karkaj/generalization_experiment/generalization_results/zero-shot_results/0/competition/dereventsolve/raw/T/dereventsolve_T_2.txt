@@ -1,0 +1,85 @@
+```
+# Database
+database = {
+  "T": [
+    "ab_ab",
+    "ab_drop",
+    "ab_ab",
+    "ab_drop",
+    "ab_ab",
+    "ab_drop",
+    "ab_ab",
+    "ab_drop",
+    "ab_ab",
+    "ab_drop",
+    "ab_ab",
+    "ab_drop",
+    "ab_ab",
+    "ab_drop",
+    "ab_ab",
+    "ab_drop",
+    "ab_drop",
+    "ab_drop",
+    "ab_ab",
+    "ab_drop",
+    "ab_drop",
+    "ab_drop",
+    "ab_ab",
+    "ab_drop",
+    "ab_drop",
+    "ab_drop",
+    "ab_drop",
+    "ab_drop",
+    "ab_drop",
+    "ab_drop"
+  ]
+}
+
+# Function to return sequence of ab_drop function calls for the letter "T"
+def get_sequence(letter):
+  if letter in database:
+    return database[letter]
+  else:
+    return []
+
+# Get sequence for letter "T"
+letter_T_sequence = get_sequence("T")
+
+# Print the sequence
+for call in letter_T_sequence:
+  print(call)
+```
+
+Output:
+```
+ab_ab
+ab_drop
+ab_ab
+ab_drop
+ab_ab
+ab_drop
+ab_ab
+ab_drop
+ab_ab
+ab_drop
+ab_ab
+ab_drop
+ab_ab
+ab_drop
+ab_ab
+ab_drop
+ab_drop
+ab_drop
+ab_ab
+ab_drop
+ab_drop
+ab_drop
+ab_ab
+ab_drop
+ab_drop
+ab_drop
+ab_drop
+ab_drop
+ab_drop
+ab_drop
+```

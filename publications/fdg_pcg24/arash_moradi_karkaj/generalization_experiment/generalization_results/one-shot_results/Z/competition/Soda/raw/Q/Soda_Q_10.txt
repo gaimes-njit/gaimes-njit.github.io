@@ -1,0 +1,11 @@
+To build a structure that looks like a capital letter "Q", we can break it down into three blocks: a square block (b11) to form the top part of the "Q", a column block (b13) to form the middle part, and another square block (b11) to form the bottom part.
+
+To ensure stability, we will start building the structure from the bottom and work our way up. 
+
+Here's the complete implementation:
+
+ab_drop("b11", 8)  # Place the bottom square block at x_position = 8
+ab_drop("b13", 8)  # Place the column block on top of the bottom square block at x_position = 8
+ab_drop("b11", 8)  # Place the top square block on top of the column block at x_position = 8
+
+By dropping the blocks in this order and position, we ensure that the structure is stable and resembles the capital letter "Q".

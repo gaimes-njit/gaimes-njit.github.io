@@ -1,0 +1,17 @@
+```
+# Step 1: Initialize the map
+structure = [[' ']*W for _ in range(H)]
+
+# Step 2: Rotate the 'L' shape
+ab_drop('b31', 8)
+
+# Step 3: Drop the vertical block on the left side
+ab_drop('b13', 8)
+
+# Step 4: Drop the horizontal block on the right side
+ab_drop('b11', 11)
+ab_drop('b11', 10)
+
+# Step 5: Drop the vertical block on the right side
+ab_drop('b13', 11)
+```

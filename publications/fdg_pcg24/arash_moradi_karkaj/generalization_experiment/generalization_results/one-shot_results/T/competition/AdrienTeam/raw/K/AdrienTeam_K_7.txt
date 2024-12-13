@@ -1,0 +1,16 @@
+Here is the solution to create a structure resembling "K" while satisfying all the given constraints:
+
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Step 1: Drop the left vertical block of the "K"
+ab_drop('b13', 8)
+
+# Step 2: Drop the horizontal block of the "K"
+ab_drop('b31', 7)
+
+# Step 3: Drop the right vertical block of the "K"
+ab_drop('b13', 6)
+```
+
+This solution builds the structure of "K" from the bottom layer to the top layer, ensuring that the blocks do not extend beyond the map boundaries and the y-coordinate corresponds to the block's center. The blocks are positioned in a way that results in a realistic and proportional shape for the "K".

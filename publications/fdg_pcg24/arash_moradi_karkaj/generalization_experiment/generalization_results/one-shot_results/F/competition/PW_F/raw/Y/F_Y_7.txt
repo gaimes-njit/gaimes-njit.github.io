@@ -1,0 +1,15 @@
+To create the letter Y, we can use the following sequence of commands:
+
+```plaintext
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+```
+
+This sequence starts by placing two vertical blocks ('b13') in positions 1 and 2. Then, a horizontal block ('b31') is placed in position 2 to form the top of the Y. Next, another horizontal block ('b31') is placed in position 3 to form the base of the Y. Finally, three small square blocks ('b11') are placed in positions 3, 2, and 1 to complete the letter Y.
+
+The resulting Y shape should fit within the boundaries of the grid and have structural stability according to the gravity rules.

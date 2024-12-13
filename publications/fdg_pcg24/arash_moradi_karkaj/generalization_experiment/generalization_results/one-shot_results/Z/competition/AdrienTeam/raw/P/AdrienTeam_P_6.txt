@@ -1,0 +1,29 @@
+To create a structure resembling "P" using the `ab_drop()` function, the following approach can be taken:
+
+1. Start by initializing the map structure using the given code:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the first block (`b13`) at the bottom left slot (slot 0) to form the vertical part of the "P":
+```
+ab_drop('b13', 0)
+```
+
+3. Drop the second block (`b11`) at the bottom left slot (slot 0) to form the horizontal part of the "P":
+```
+ab_drop('b11', 0)
+```
+
+4. Drop the third block (`b11`) at the slot next to the previous block (slot 1) to complete the horizontal part of the "P":
+```
+ab_drop('b11', 1)
+```
+
+5. The resulting structure will now resemble the letter "P". Output the `ab_drop()` calls within a code block:
+
+```
+ab_drop('b13', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+```

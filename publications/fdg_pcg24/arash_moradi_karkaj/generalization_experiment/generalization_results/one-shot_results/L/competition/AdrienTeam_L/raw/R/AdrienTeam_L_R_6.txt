@@ -1,0 +1,44 @@
+```
+# Import the necessary libraries
+import random
+
+# Initialize the map
+W = 20  # Width of the map
+H = 16  # Height of the map
+structure = [[' ']*W for _ in range(H)]
+
+# Function to drop a block vertically
+def ab_drop(x, y):
+    drop_pos = (H-1, y)
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0] - 1, y)
+        if structure[drop_pos[0] + 1][drop_pos[1]] != ' ':
+            break
+    structure[drop_pos[0]][drop_pos[1]] = x
+
+# Build the "R" structure
+# Drop the base blocks
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b11', 12)
+ab_drop('b11', 13)
+ab_drop('b11', 14)
+ab_drop('b11', 15)
+
+# Drop the vertical blocks
+ab_drop('b11', 8)
+ab_drop('b11', 7)
+
+# Drop the horizontal blocks
+ab_drop('b11', 7)
+ab_drop('b11', 6)
+ab_drop('b11', 5)
+
+# Print the structure
+for row in structure:
+    print(''.join(row))
+```
+
+This code will generate a stable structure resembling the letter "R" with the provided constraints. The blocks are dropped in a specific order and position to achieve the desired shape.

@@ -1,0 +1,31 @@
+To generate a structure in the level that looks like the capital character "O" (TARGET), we can start by dropping the required blocks in a bottom-to-top fashion, following the gravity direction.
+
+First, we will create the bottom row of the "O" shape using a row block (b31). We will center it at x_position=9.
+
+```
+ab_drop("b31", 9)
+```
+
+Next, we will drop a column block (b13) on each side of the bottom row to create the sides of the "O" shape. We will center them at x_position=8 and x_position=10, respectively.
+
+```
+ab_drop("b13", 8)
+ab_drop("b13", 10)
+```
+
+Finally, we will drop a row block (b31) on top of the bottom row to complete the "O" shape. We will center it at x_position=9.
+
+```
+ab_drop("b31", 9)
+```
+
+The complete implementation to generate the "O" shape using the ab_drop() function is as follows:
+
+```python
+ab_drop("b31", 9)
+ab_drop("b13", 8)
+ab_drop("b13", 10)
+ab_drop("b31", 9)
+```
+
+This implementation will create a stable structure that resembles the capital letter "O".

@@ -1,0 +1,37 @@
+To construct the uppercase letter "H", we can follow the instructions as follows:
+
+1. Place a b31 block at position 2:
+```
+ab_drop('b31', 2)
+```
+
+2. Place a b13 block at position 1:
+```
+ab_drop('b13', 1)
+```
+
+3. Place another b13 block at position 2:
+```
+ab_drop('b13', 2)
+```
+
+4. Place two b11 blocks at position 4:
+```
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+```
+
+5. Place another b31 block at position 2:
+```
+ab_drop('b31', 2)
+```
+
+The stream of commands to generate the letter "H" would be:
+```
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b31', 2)
+```

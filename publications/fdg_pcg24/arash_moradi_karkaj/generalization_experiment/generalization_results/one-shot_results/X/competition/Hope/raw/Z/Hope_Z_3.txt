@@ -1,0 +1,10 @@
+To create the structure of the letter "Z" inside a 20*16 box, we can use the ab_drop function with the following commands:
+
+ab_drop('b13', 0)  #Drop a 1*3 block starting at position (0,0)
+ab_drop('b11', 1)  #Drop a 1*1 block starting at position (1,0)
+ab_drop('b13', 1)  #Drop a 1*3 block starting at position (1,1)
+ab_drop('b31', 3)  #Drop a 3*1 block starting at position (3,0)
+ab_drop('b13', 6)  #Drop a 1*3 block starting at position (6,0)
+ab_drop('b11', 9)  #Drop a 1*1 block starting at position (9,0)
+
+This will create the structure of the letter "Z" inside the 20*16 box.

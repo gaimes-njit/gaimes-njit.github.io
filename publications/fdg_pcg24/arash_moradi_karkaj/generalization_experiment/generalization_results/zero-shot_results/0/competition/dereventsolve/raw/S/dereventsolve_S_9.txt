@@ -1,0 +1,29 @@
+Here is a sequence of `ab_drop` calls that will generate a structure resembling the letter "S" using the given database:
+
+```
+ab_drop('down')
+ab_drop('down')
+ab_drop('down')
+ab_drop('down')
+ab_drop('up')
+ab_drop('right')
+ab_drop('right')
+ab_drop('right')
+ab_drop('right')
+ab_drop('up')
+ab_drop('down')
+ab_drop('down')
+ab_drop('down')
+ab_drop('down')
+ab_drop('down')
+ab_drop('up')
+ab_drop('up')
+ab_drop('up')
+ab_drop('up')
+ab_drop('right')
+ab_drop('right')
+ab_drop('right')
+ab_drop('right')
+```
+
+This sequence of `ab_drop` calls will create a structure that resembles the letter "S" when executed in order.

@@ -1,0 +1,23 @@
+To generate a structure resembling the letter "V", we can start by placing a b31 brick vertically on the ground. Then, we can place a b13 brick horizontally on top of the b31 brick, with the pivot point at the point of contact. Finally, we can place two b11 bricks on top of the b13 brick, one on each side. Here's how we can achieve this:
+
+```python
+# Initialize the map
+map = [[0 for _ in range(20)] for _ in range(16)]
+
+ab_drop('b31', 8)  # Place b31 brick vertically on the ground at x_position = 8
+ab_drop('b13', 7)  # Place b13 brick horizontally on top of the b31 brick at x_position = 7
+ab_drop('b11', 6)  # Place b11 brick on the left side of b13 brick at x_position = 6
+ab_drop('b11', 10)  # Place b11 brick on the right side of b13 brick at x_position = 10
+```
+
+After executing these function calls, the cells of the field that are occupied will be as follows:
+
+(5, 0), (6, 0), (6, 1), (6, 2)  -> b31 brick
+
+(4, 3), (5, 3), (6, 3)  -> b13 brick
+
+(3, 4)  -> b11 brick (left side)
+
+(7, 4)  -> b11 brick (right side)
+
+This arrangement forms a structure resembling the letter "V". The bricks are stable and do not exceed the boundaries of the field.

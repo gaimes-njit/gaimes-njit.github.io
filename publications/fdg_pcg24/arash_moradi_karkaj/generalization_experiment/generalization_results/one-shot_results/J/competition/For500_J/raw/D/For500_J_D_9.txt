@@ -1,0 +1,22 @@
+# Solution
+
+# Initialize the structure as an empty grid
+structure = [[' ']*20 for _ in range(16)]
+
+# Create the base of the letter 'D'
+ab_drop('b31', 3)   # Drop a 'b31' block at slot 3
+ab_drop('b31', 4)   # Drop a 'b31' block at slot 4
+
+# Add the vertical bar of the 'D'
+ab_drop('b13', 6)   # Drop a 'b13' block at slot 6
+
+# Add the top part of the 'D'
+ab_drop('b31', 3)   # Drop a 'b31' block at slot 3
+ab_drop('b31', 4)   # Drop a 'b31' block at slot 4
+
+# Add stability blocks
+ab_drop('b11', 3)   # Drop a 'b11' block at slot 3
+ab_drop('b11', 4)   # Drop a 'b11' block at slot 4
+ab_drop('b11', 6)   # Drop a 'b11' block at slot 6
+
+# The structure now resembles the letter 'D'

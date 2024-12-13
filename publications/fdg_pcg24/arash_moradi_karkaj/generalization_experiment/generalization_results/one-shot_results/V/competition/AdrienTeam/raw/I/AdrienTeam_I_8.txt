@@ -1,0 +1,42 @@
+```
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Bottom layer
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b11', 12)
+ab_drop('b11', 13)
+
+# Second layer
+ab_drop('b13', 10)
+ab_drop('b13', 10)
+
+# Third layer
+ab_drop('b13', 10)
+ab_drop('b13', 10)
+
+# Fourth to twelfth layers
+for i in range(4, 13):
+    ab_drop('b31', 9)
+    ab_drop('b31', 9)
+    ab_drop('b31', 9)
+
+# Thirteenth layer
+ab_drop('b13', 10)
+ab_drop('b13', 10)
+
+# Fourteenth layer
+ab_drop('b13', 10)
+ab_drop('b13', 10)
+
+# Top layer
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b11', 12)
+ab_drop('b11', 13)
+```

@@ -1,0 +1,32 @@
+To generate a stable structure that resembles the character "Z" while meeting all hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty grid.
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Place the base blocks (b11 or b13) at the bottom layer of the structure to create a solid base. Use the ab_drop() function to drop the blocks at the appropriate slots.
+```
+ab_drop('b11', 0)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+3. Place the b31 block on top of the base blocks, aligned with the bottom-left corner of the structure. This will be the left diagonal of the "Z" shape.
+```
+ab_drop('b31', 0)
+```
+
+4. Place another b31 block on top of the previous one, aligned with the bottom-right corner of the structure. This will be the right diagonal of the "Z" shape.
+```
+ab_drop('b31', 2)
+```
+
+5. Place the top block (b11) on top of the b31 blocks, aligned with the center slot. This will complete the "Z" shape.
+```
+ab_drop('b11', 1)
+```
+
+6. The final structure will resemble the character "Z" and meet all the given constraints.
+
+Note: The exact slot positions and order of dropping the blocks may vary depending on the specific requirements and constraints.

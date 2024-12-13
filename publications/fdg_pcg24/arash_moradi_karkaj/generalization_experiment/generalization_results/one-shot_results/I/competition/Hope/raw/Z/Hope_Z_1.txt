@@ -1,0 +1,29 @@
+To create a structure exactly like "Z" inside a 20*16 box block, we can use the ab_drop function with specific block types and x positions. Based on the given blocktypes, we can use b13 and b31 to construct the "Z" shape.
+
+Here is the sequence of ab_drop commands to create the "Z" structure:
+
+1. Drop a b13 block at position (0, 0):
+   ab_drop('b13', 0)
+
+2. Drop a b31 block at position (1, 2):
+   ab_drop('b31', 1)
+
+3. Drop a b13 block at position (4, 3):
+   ab_drop('b13', 4)
+
+4. Drop a b13 block at position (7, 4):
+   ab_drop('b13', 7)
+
+5. Drop a b31 block at position (8, 6):
+   ab_drop('b31', 8)
+
+6. Drop a b13 block at position (11, 7):
+   ab_drop('b13', 11)
+
+7. Drop a b13 block at position (14, 8):
+   ab_drop('b13', 14)
+
+8. Drop a b31 block at position (15, 10):
+   ab_drop('b31', 15)
+
+By applying these ab_drop commands in order, the resulting structure will resemble the letter "Z" inside a 20*16 box block.

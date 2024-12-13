@@ -1,0 +1,22 @@
+```
+ab_drop('b31', 1) // Place the first block at position 1 in the first row
+ab_drop('b31', 2) // Place the second block next to the first block
+ab_drop('b31', 3) // Place the third block next to the second block
+ab_drop('b13', 2) // Place the fourth block below the second block in the middle
+ab_drop('b31', 1) // Place the fifth block at position 1 in the second row
+ab_drop('b31', 3) // Place the sixth block at position 3 in the second row
+ab_drop('b31', 1) // Place the seventh block at position 1 in the third row
+ab_drop('b31', 2) // Place the eighth block next to the seventh block in the third row
+ab_drop('b31', 3) // Place the ninth block next to the eighth block in the third row
+ab_drop('b31', 1) // Place the tenth block at position 1 in the fourth row
+ab_drop('b31', 3) // Place the eleventh block at position 3 in the fourth row
+ab_drop('b11', 2) // Place the twelfth block below the tenth block in the middle
+ab_drop('b31', 1) // Place the thirteenth block at position 1 in the fifth row
+ab_drop('b31', 2) // Place the fourteenth block next to the thirteenth block in the fifth row
+ab_drop('b31', 3) // Place the fifteenth block next to the fourteenth block in the fifth row
+ab_drop('b31', 1) // Place the sixteenth block at position 1 in the sixth row
+ab_drop('b31', 3) // Place the seventeenth block at position 3 in the sixth row
+ab_drop('b31', 1) // Place the eighteenth block at position 1 in the seventh row
+ab_drop('b31', 2) // Place the nineteenth block next to the eighteenth block in the seventh row
+ab_drop('b31', 3) // Place the twentieth block next to the nineteenth block in the seventh row
+```

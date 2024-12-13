@@ -1,0 +1,6 @@
+ab_drop('b31', 9) # Place the base of the 'M' shape
+ab_drop('b13', 9) # Build the first vertical part of the 'M'
+ab_drop('b31', 8) # Support the first vertical part of the 'M'
+ab_drop('b11', 7) # Build the first diagonal part of the 'M'
+ab_drop('b11', 9) # Build the second diagonal part of the 'M'
+ab_drop('b31', 8) # Support the second diagonal part of the 'M'

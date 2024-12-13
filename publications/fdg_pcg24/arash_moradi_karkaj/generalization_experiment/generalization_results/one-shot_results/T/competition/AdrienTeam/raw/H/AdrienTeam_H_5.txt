@@ -1,0 +1,21 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the bottom left vertical block
+ab_drop('b13', 0)
+
+# Drop the bottom right vertical block
+ab_drop('b13', W-1)
+
+# Drop the horizontal block
+ab_drop('b31', 1)
+
+# Drop the middle vertical block
+ab_drop('b13', 1)
+
+# Drop the top left vertical block
+ab_drop('b13', 0)
+
+# Drop the top right vertical block
+ab_drop('b13', W-1)
+```

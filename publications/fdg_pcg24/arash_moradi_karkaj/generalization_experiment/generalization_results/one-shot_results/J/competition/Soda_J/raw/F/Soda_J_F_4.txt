@@ -1,0 +1,13 @@
+'''
+# Step 1: Create the horizontal bar of the 'F'
+ab_drop("b31", 4)
+
+# Step 2: Create the vertical bar of the 'F'
+ab_drop("b13", 4)
+
+# Step 3: Create the top part of the horizontal bar of the 'F'
+ab_drop("b31", 3)
+
+# Step 4: Create the bottom part of the horizontal bar of the 'F'
+ab_drop("b31", 5)
+'''

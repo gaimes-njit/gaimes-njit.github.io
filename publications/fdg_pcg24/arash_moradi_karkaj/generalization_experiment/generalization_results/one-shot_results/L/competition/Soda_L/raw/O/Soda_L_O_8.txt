@@ -1,0 +1,25 @@
+First, let's build the base of the O shape by dropping a row block at the bottom with a center position at column 9.
+
+```
+ab_drop("b31", 9)
+```
+
+Next, let's drop a column block on the left side of the base at column 8.
+
+```
+ab_drop("b13", 8)
+```
+
+Finally, let's drop another column block on the right side of the base at column 10.
+
+```
+ab_drop("b13", 10)
+```
+
+The complete implementation is as follows:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 8)
+ab_drop("b13", 10)
+```

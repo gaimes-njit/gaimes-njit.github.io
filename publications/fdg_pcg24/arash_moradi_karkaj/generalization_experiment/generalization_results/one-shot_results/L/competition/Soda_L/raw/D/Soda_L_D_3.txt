@@ -1,0 +1,16 @@
+For the letter "D", we can break it down into three blocks: a square block for the top, a row block for the middle, and a column block for the bottom.
+
+Here is the implementation to generate a structure in the level that looks like a capital "D" using the ab_drop() function:
+
+``` python
+# Drop the top block
+ab_drop("b11", 5)
+
+# Drop the middle row block
+ab_drop("b31", 5)
+
+# Drop the bottom column block
+ab_drop("b13", 6)
+```
+
+This implementation creates a stable structure that resembles the letter "D" when viewed in the natural top-down orientation.

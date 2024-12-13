@@ -1,0 +1,11 @@
+To generate a structure that looks like the letter "C", we can use the following sequence of `ab_drop` function calls:
+
+```
+ab_drop(2) -> ab_drop(2) -> ab_drop(2)
+ab_drop(1) -> ab_drop(4)
+ab_drop(1) -> ab_drop(4)
+ab_drop(1) -> ab_drop(4)
+ab_drop(2) -> ab_drop(2) -> ab_drop(2)
+```
+
+This sequence of `ab_drop` function calls will form a structure that resembles the letter "C".

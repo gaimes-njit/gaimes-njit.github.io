@@ -1,0 +1,14 @@
+To generate the uppercase English letter "V", you can use the following stream of commands:
+
+```python
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 4)
+```
+
+Explanation:
+- The first command `ab_drop('b31', 1)` places a horizontal straight block at position 1, forming the top part of the "V".
+- The second command `ab_drop('b13', 2)` places a vertical straight block at position 2, connecting the top and bottom parts of the "V".
+- The third command `ab_drop('b31', 4)` places another horizontal straight block at position 4, completing the bottom part of the "V".
+
+This sequence of commands ensures that the blocks are placed consecutively, forming the letter "V", and are structurally stable according to the gravity rules.

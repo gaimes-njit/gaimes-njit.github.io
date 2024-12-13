@@ -1,0 +1,25 @@
+The first step is to create the base of the letter "P" using the row block "b31". We can drop it at the bottom of the grid, centered at x_position=9. 
+
+```
+ab_drop("b31", 9)
+```
+
+Next, we need to create the vertical line of the letter "P" using the column block "b13". We can drop it just above the base, centered at x_position=9.
+
+```
+ab_drop("b13", 9)
+```
+
+Finally, we need to create the top horizontal line of the letter "P" using the row block "b31". We can drop it above the vertical line, centered at x_position=9.
+
+```
+ab_drop("b31", 9)
+```
+
+The complete implementation to generate a structure that looks like the capital letter "P" in the level is as follows:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+```

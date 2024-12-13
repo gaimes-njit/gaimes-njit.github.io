@@ -1,0 +1,31 @@
+```python
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the base block
+ab_drop('b31', 9)
+
+# Drop the left and right legs
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+
+# Drop the middle blocks
+ab_drop('b31', 7)
+ab_drop('b31', 11)
+
+# Drop the top blocks
+ab_drop('b31', 6)
+ab_drop('b13', 7)
+ab_drop('b11', 9)
+ab_drop('b13', 11)
+ab_drop('b31', 12)
+
+# Drop the top triangles
+ab_drop('b31', 5)
+ab_drop('b31', 13)
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+
+# Drop the top center block
+ab_drop('b11', 9)
+```

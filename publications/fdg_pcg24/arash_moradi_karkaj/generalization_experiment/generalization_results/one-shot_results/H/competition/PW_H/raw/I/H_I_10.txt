@@ -1,0 +1,9 @@
+To generate the uppercase English letter "I", you will need to use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b13',1)
+ab_drop('b13',1)
+ab_drop('b13',1)
+```
+
+This sequence will create a vertical straight block with a width of 1 unit and a height of 3 units, resembling the letter "I". Remember to start constructing the shapes from the X position 1.

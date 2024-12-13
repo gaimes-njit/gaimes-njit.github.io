@@ -1,0 +1,21 @@
+To create the letter "A" inside a 20*16 box, you can use the following series of ab_drop commands:
+
+ab_drop('b13', 6)     # Top slant of "A"
+ab_drop('b13', 7)     # Top slant of "A"
+ab_drop('b13', 8)     # Top slant of "A"
+ab_drop('b13', 9)     # Top slant of "A"
+ab_drop('b13', 10)    # Top slant of "A"
+ab_drop('b13', 11)    # Top slant of "A"
+
+ab_drop('b31', 7)     # Middle horizontal line of "A"
+ab_drop('b31', 8)     # Middle horizontal line of "A"
+ab_drop('b31', 9)     # Middle horizontal line of "A"
+
+ab_drop('b13', 6)     # Bottom slant of "A"
+ab_drop('b13', 7)     # Bottom slant of "A"
+ab_drop('b13', 8)     # Bottom slant of "A"
+ab_drop('b13', 9)     # Bottom slant of "A"
+ab_drop('b13', 10)    # Bottom slant of "A"
+ab_drop('b13', 11)    # Bottom slant of "A"
+
+This sequence of ab_drop commands will create the letter "A" inside the 20*16 box, with each block accurately positioned to form the desired structure.

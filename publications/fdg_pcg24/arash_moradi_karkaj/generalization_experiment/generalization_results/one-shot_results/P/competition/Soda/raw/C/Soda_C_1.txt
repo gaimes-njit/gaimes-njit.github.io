@@ -1,0 +1,34 @@
+To create a structure that looks like the letter "C" in the 2D grid, we can follow these steps:
+
+1. Start by placing a column block "b13" in the middle of the grid. This will serve as the base of the "C".
+
+```python
+ab_drop("b13", 9)
+```
+
+2. Place a row block "b31" on top of the column block, shifted to the left. This will form the top part of the "C".
+
+```python
+ab_drop("b31", 6)
+```
+
+3. Place another row block "b31" below the column block, shifted to the left. This will form the bottom part of the "C".
+
+```python
+ab_drop("b31", 6)
+```
+
+4. Place a column block "b13" on the left side of the "C". This will complete the shape of the letter "C".
+
+```python
+ab_drop("b13", 3)
+```
+
+The complete implementation to create the "C" structure in the level is as follows:
+
+```python
+ab_drop("b13", 9)
+ab_drop("b31", 6)
+ab_drop("b31", 6)
+ab_drop("b13", 3)
+```

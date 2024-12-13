@@ -1,0 +1,17 @@
+To create the "N" structure using the ab drop() function, start by dropping a b13 block at layer 15 with its center at slot 2.
+
+ab drop(b13, 15, 2) 
+
+Next, drop a b31 block at layer 14 with its center at slot 2.
+
+ab drop(b31, 14, 2)
+
+Then, drop another b13 block at layer 13 with its center at slot 5.
+
+ab drop(b13, 13, 5) 
+
+To complete the "N" structure, drop a b31 block at layer 12 with its center at slot 5.
+
+ab drop(b31, 12, 5) 
+
+By following these steps and dropping the blocks in the specified positions and order, you can generate a stable structure that looks like the letter "N" using the ab drop() function.

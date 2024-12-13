@@ -1,0 +1,22 @@
+To create the uppercase letter "L", we can use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b11', 5)
+```
+
+These commands will create the letter "L" by stacking the blocks in the defined environment while adhering to the gravity rules.

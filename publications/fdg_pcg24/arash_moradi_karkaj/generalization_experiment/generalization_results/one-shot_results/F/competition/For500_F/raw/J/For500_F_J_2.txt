@@ -1,0 +1,4 @@
+ab_drop('b13', 10)   # Create the vertical line of the 'J'
+ab_drop('b13', 9)    # Extend the vertical line downwards
+ab_drop('b31', 10)   # Create the horizontal line of the 'J'
+ab_drop('b11', 10)   # Create the small horizontal line at the top of the 'J'

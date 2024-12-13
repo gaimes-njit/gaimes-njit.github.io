@@ -1,0 +1,18 @@
+To generate the uppercase English letter "I", you can use the following ab_drop() commands:
+
+```
+ab_drop('b31', 1)       # Place a horizontal straight block at position 1
+ab_drop('b13', 1)       # Place a vertical straight block at position 1
+ab_drop('b13', 2)       # Place a vertical straight block at position 2
+ab_drop('b31', 2)       # Place a horizontal straight block at position 2
+ab_drop('b13', 3)       # Place a vertical straight block at position 3
+ab_drop('b13', 4)       # Place a vertical straight block at position 4
+ab_drop('b13', 5)       # Place a vertical straight block at position 5
+ab_drop('b31', 3)       # Place a horizontal straight block at position 3
+ab_drop('b13', 3)       # Place a vertical straight block at position 3
+ab_drop('b13', 4)       # Place a vertical straight block at position 4
+ab_drop('b13', 5)       # Place a vertical straight block at position 5
+ab_drop('b31', 3)       # Place a horizontal straight block at position 3
+```
+
+These commands will generate the uppercase English letter "I" in the defined environment, starting from position 1.

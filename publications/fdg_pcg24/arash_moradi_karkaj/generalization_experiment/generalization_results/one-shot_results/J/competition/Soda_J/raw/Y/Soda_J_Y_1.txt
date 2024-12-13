@@ -1,0 +1,41 @@
+The first step in creating the structure that looks like a capital "Y" in the Tetris game is to create the base of the "Y". We can achieve this by using the row block "b31". We will drop two row blocks next to each other with an offset of 4 to create a stable base. 
+
+```
+# Place the first row block
+ab_drop("b31", 4)
+
+# Place the second row block
+ab_drop("b31", 8)
+```
+
+Next, we need to create the vertical part of the "Y". We can achieve this by using the column block "b13". We will drop a column block on top of the base, centered at the third slot of the base.
+
+```
+# Place the vertical part of the "Y"
+ab_drop("b13", 6)
+```
+
+Finally, we need to create the top of the "Y". We can achieve this by using two row blocks "b31". We will drop the row blocks on top of the vertical part, centered at the third slot of the vertical part.
+
+```
+# Place the first row block of the top part
+ab_drop("b31", 6)
+
+# Place the second row block of the top part
+ab_drop("b31", 10)
+```
+
+The final implementation to create the structure that looks like a capital "Y" in the Tetris game is as follows:
+
+```
+# Create the base of the "Y"
+ab_drop("b31", 4)
+ab_drop("b31", 8)
+
+# Create the vertical part of the "Y"
+ab_drop("b13", 6)
+
+# Create the top part of the "Y"
+ab_drop("b31", 6)
+ab_drop("b31", 10)
+```

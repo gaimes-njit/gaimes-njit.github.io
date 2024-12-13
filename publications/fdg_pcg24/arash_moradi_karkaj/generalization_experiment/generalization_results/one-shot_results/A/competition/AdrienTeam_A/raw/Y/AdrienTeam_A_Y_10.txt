@@ -1,0 +1,12 @@
+The structure can be built in the following way using the `ab_drop()` function:
+
+```
+ab_drop('b11', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b31', 0)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b11', 1)
+```

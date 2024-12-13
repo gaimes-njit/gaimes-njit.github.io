@@ -1,0 +1,26 @@
+Here is the code to generate the structure resembling "H" while adhering to the given constraints:
+
+```python
+structure = [[' ']*20 for _ in range(16)]
+
+ab_drop('b31', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 9)
+ab_drop('b11', 11)
+ab_drop('b11', 9)
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 7)
+ab_drop('b11', 9)
+ab_drop('b11', 6)
+ab_drop('b11', 9)
+ab_drop('b11', 5)
+ab_drop('b11', 9)
+ab_drop('b11', 4)
+ab_drop('b11', 9)
+ab_drop('b13', 9)
+ab_drop('b31', 9)
+
+```
+
+This code follows the given constraints and generates the "H" structure as desired.

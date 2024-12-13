@@ -1,0 +1,37 @@
+To generate the structure resembling "D", we can follow these steps:
+
+1. Set up the map by initializing the structure with an empty grid.
+
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the blocks using the `ab_drop()` function to create the desired shape of "D".
+
+```python
+ab_drop('b13', 2)  # First vertical block on the left side
+ab_drop('b13', 8)  # Second vertical block on the right side
+ab_drop('b11', 3)  # Horizontal block connecting the two vertical blocks
+ab_drop('b11', 4)  # Horizontal block below the connection point
+ab_drop('b11', 5)  # Horizontal block above the connection point
+ab_drop('b11', 6)  # Horizontal block above the connection point
+ab_drop('b11', 7)  # Horizontal block above the connection point
+ab_drop('b11', 8)  # Horizontal block below the connection point
+```
+
+3. Return the `ab_drop()` calls within a code block.
+
+```python
+"""
+ab_drop('b13', 2)
+ab_drop('b13', 8)
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+ab_drop('b11', 5)
+ab_drop('b11', 6)
+ab_drop('b11', 7)
+ab_drop('b11', 8)
+"""
+```
+
+This set of `ab_drop()` calls will generate a stable structure resembling the letter "D" while satisfying all the specified constraints.

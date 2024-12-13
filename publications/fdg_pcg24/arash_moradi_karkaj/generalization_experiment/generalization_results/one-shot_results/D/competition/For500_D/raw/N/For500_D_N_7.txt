@@ -1,0 +1,6 @@
+ab_drop('b11', 9)  # Drop the topmost dot of the 'N'
+ab_drop('b11', 9)  # Drop the middle dot of the 'N'
+ab_drop('b31', 8)  # Drop the left part of the 'N'
+ab_drop('b31', 10) # Drop the right part of the 'N'
+ab_drop('b13', 7)  # Drop the left vertical line of the 'N'
+ab_drop('b13', 11) # Drop the right vertical line of the 'N'

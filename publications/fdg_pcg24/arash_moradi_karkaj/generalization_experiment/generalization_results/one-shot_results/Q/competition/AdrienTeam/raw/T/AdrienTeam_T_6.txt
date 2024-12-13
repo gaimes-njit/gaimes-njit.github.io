@@ -1,0 +1,23 @@
+```
+# Initialize the structure
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the base of the "T"
+ab_drop('b11', 9)
+
+# Drop the vertical part of the "T"
+ab_drop('b13', 9)
+
+# Drop the horizontal part of the "T"
+ab_drop('b31', 7)
+ab_drop('b31', 8)
+ab_drop('b31', 9)
+
+# Drop the top part of the "T"
+ab_drop('b13', 9)
+
+# Output the ab_drop() calls
+ab_drop('b11', 9)
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+```

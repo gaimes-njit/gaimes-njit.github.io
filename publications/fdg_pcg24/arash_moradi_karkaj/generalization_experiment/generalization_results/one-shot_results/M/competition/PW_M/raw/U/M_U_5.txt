@@ -1,0 +1,41 @@
+To generate the uppercase English letter "U" using the given block types and environment, you can follow these steps:
+
+1. Start with the left vertical foundation of the letter "U" by placing two vertical straight blocks (b13) at positions 1 and 2 along the width:
+```
+ab_drop('b13',1)
+ab_drop('b13',2)
+```
+
+2. Place a horizontal straight block (b31) at position 2 along the width to connect the two vertical blocks:
+```
+ab_drop('b31',2)
+```
+
+3. Continue building the left side of the letter "U" by placing three additional vertical straight blocks (b13) at positions 1, 2, and 3 along the width:
+```
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b13',3)
+```
+
+4. Place a horizontal straight block (b31) at position 3 along the width to connect the three vertical blocks:
+```
+ab_drop('b31',3)
+```
+
+5. Complete the letter "U" by placing a horizontal straight block (b31) at position 4 along the width:
+```
+ab_drop('b31',4)
+```
+
+The final stream of commands to generate the letter "U" would be:
+```
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b31',2)
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b13',3)
+ab_drop('b31',3)
+ab_drop('b31',4)
+```

@@ -1,0 +1,14 @@
+To generate a structure that looks like the letter "Y" using the given database, we can use the following sequence of `ab_drop` function calls:
+
+```
+ab_drop('A')
+ab_drop('B')
+ab_drop('B')
+ab_drop('C')
+ab_drop('D')
+ab_drop('E')
+ab_drop('F')
+ab_drop('F')
+```
+
+This sequence of `ab_drop` function calls will create a structure that resembles the letter "Y" in the given database.

@@ -1,0 +1,9 @@
+To generate a structure that looks like the letter "X", we can make use of the following key-value pairs in the database:
+
+Key: a, Value: `ab`
+Key: b, Value: `drop`
+Key: c, Value: `drop`
+
+The following sequence of `ab_drop` function calls can be used to generate the letter "X":
+
+```ab ab_drop ab_drop ```

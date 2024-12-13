@@ -1,0 +1,50 @@
+1. The letter "F" with asterisks can be drawn as follows:
+```
+*****
+*
+*
+*
+*
+```
+
+2. Line-by-line, verbally listing the asterisks and spaces generated in each row of the drawing:
+- Row 1: 5 asterisks, 0 spaces
+- Row 2: 1 asterisk, 4 spaces
+- Row 3: 1 asterisk, 4 spaces
+- Row 4: 1 asterisk, 4 spaces
+- Row 5: 1 asterisk, 4 spaces
+
+3. Using "x" for asterisks and "y" for spaces, the rows can be listed as follows:
+- Row 1: xxxxx
+- Row 2: xyxxx
+- Row 3: xyxxx
+- Row 4: xyxxx
+- Row 5: xyxxx
+
+4. Writing out each "x" and "y" side-by-side for each row:
+- Row 1: xx
+- Row 2: xyxx
+- Row 3: xyxx
+- Row 4: xyxx
+- Row 5: xyxx
+
+5. Indicating the position of each variable for each row:
+- Row 1: x-1, x-2
+- Row 2: x-1, y-2, x-3, x-4
+- Row 3: x-1, y-2, x-3, x-4
+- Row 4: x-1, y-2, x-3, x-4
+- Row 5: x-1, y-2, x-3, x-4
+
+6. Returning a sequence of `ab_drop` function calls for each row:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+```

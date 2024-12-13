@@ -1,0 +1,18 @@
+To generate a stable structure that looks like the character "J" using the `ab_drop()` function, we need to carefully select the dropping positions and order of the blocks to meet all the constraints. Here's a step-by-step approach to achieving this:
+
+1. Initialize the structure as an empty grid:
+   ```
+   W = 20
+   H = 16
+   structure = [[' '] * W for _ in range(H)]
+   ```
+
+2. Start by dropping the b13 block at slot 0 using the `ab_drop('b13', 0)` function. This will create the vertical part of the "J" shape.
+
+3. Next, drop the b31 block at slot 1 using the `ab_drop('b31', 1)` function. This will create the horizontal part of the "J" shape.
+
+4. Finally, drop the b11 block at slot 2 using the `ab_drop('b11', 2)` function. This will complete the "J" shape.
+
+The resulting structure will look like the character "J" and will meet all the constraints.
+
+Note: The order of block dropping is crucial for stability. Dropping the larger blocks first and then the smaller blocks helps distribute the weight properly and ensures stability.

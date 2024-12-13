@@ -1,0 +1,18 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Bottom of the Q
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+ab_drop('b31', 6)
+
+# Middle of the Q
+ab_drop('b31', 4)
+ab_drop('b11', 4)
+
+# Top of the Q
+ab_drop('b13', 4)
+ab_drop('b11', 5)
+ab_drop('b11', 6)
+```

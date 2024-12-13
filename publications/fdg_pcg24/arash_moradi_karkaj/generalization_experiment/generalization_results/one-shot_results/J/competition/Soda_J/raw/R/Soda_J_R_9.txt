@@ -1,0 +1,36 @@
+To create the letter "R" in the level, we can break it down into multiple blocks and place them in a specific order to achieve stability and similarity. Here's a step-by-step guide to building the letter "R":
+
+1. Start by placing a row block ("b31") at the bottom of the level, centered at x_position=2.
+```python
+ab_drop("b31", 2)
+```
+
+2. Place a column block ("b13") on top of the row block. Center it at x_position=3.
+```python
+ab_drop("b13", 3)
+```
+
+3. Place another column block ("b13") on the right side of the previous block. Center it at x_position=4.
+```python
+ab_drop("b13", 4)
+```
+
+4. Place a square block ("b11") on top of the right column block. Center it at x_position=3.
+```python
+ab_drop("b11", 3)
+```
+
+5. Finally, place a square block ("b11") on top of the left column block. Center it at x_position=2.
+```python
+ab_drop("b11", 2)
+```
+
+The complete implementation to build the letter "R" in the level would be:
+
+```python
+ab_drop("b31", 2)
+ab_drop("b13", 3)
+ab_drop("b13", 4)
+ab_drop("b11", 3)
+ab_drop("b11", 2)
+```

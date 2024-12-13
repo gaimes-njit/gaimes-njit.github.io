@@ -1,0 +1,23 @@
+To create a stable structure resembling "D" by using the `ab_drop()` function, the following steps can be taken:
+
+1. Initialize the map with an empty grid:
+```python
+structure = [[' ']*20 for _ in range(16)]
+```
+
+2. Rotate the 'L' character to achieve the desired shape. In this case, rotating the 'L' shape clockwise will produce the shape of "D".
+
+3. Determine the position and order for each block to be dropped, following the given constraints.
+
+Based on the provided constraints, a possible sequence of `ab_drop()` calls to create the "D" shape could be:
+
+```python
+ab_drop('b13', 1)    # Drop vertical block in the middle (slot 1)
+ab_drop('b11', 1)    # Drop horizontal block above vertical block
+ab_drop('b13', 3)    # Drop vertical block on the right (slot 3)
+ab_drop('b13', 0)    # Drop vertical block on the left (slot 0)
+ab_drop('b11', 0)    # Drop horizontal block above left vertical block
+ab_drop('b11', 2)    # Drop horizontal block above right vertical block
+```
+
+This sequence of `ab_drop()` calls will generate the stable structure resembling "D" that satisfies all the specified constraints.

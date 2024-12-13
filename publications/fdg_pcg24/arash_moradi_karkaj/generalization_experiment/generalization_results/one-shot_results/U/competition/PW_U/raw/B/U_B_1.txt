@@ -1,0 +1,18 @@
+ab_drop('b31',1) 
+ab_drop('b31',3) 
+ab_drop('b11',2) 
+ab_drop('b13',2) 
+ab_drop('b31',12) 
+ab_drop('b13',11) 
+ab_drop('b13',13) 
+
+Explanation:
+To create the uppercase letter "B", we need to stack and arrange the block types in a specific way. 
+
+1. Start by placing a horizontal straight block (b31) at position 1.
+2. Place another horizontal straight block (b31) at position 3.
+3. Place a square block (b11) at position 2 to close the top part of the letter.
+4. Place a vertical straight block (b13) at position 2 to create the vertical line of the letter.
+5. Place another horizontal straight block (b31) at position 12 to create the bottom part of the letter.
+6. Place a vertical straight block (b13) at position 11 to create the left side of the letter.
+7. Place another vertical straight block (b13) at position 13 to create the right side of the letter.

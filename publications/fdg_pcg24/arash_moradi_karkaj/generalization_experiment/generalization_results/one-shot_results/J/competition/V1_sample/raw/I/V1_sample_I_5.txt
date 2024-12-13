@@ -1,0 +1,11 @@
+
+
+4. Goal
+To create a stable structure resembling the letter "I" on the map by strategically dropping blocks using the 'ab drop()' function.
+
+5. Steps
+a. Start by dropping a b13 block at layer 15 with its center at slot 10 using the command 'ab drop(b13, 10, 15)'.
+b. Next, drop a b31 block at layer 12 with its center at slot 10 using the command 'ab drop(b31, 10, 12)'.
+c. Finally, drop another b13 block at layer 9 with its center at slot 10 using the command 'ab drop(b13, 10, 9)'.
+
+By following these steps and carefully positioning the blocks, you can create a stable structure that looks like the letter "I" on the map using the 'ab drop()' function.

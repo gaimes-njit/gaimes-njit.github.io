@@ -1,0 +1,9 @@
+```
+ab_drop("b13", 1) # Vertical block at position 1
+ab_drop("b11", 2) # Square block at position 2
+ab_drop("b13", 3) # Vertical block at position 3
+ab_drop("b31", 4) # Horizontal block at position 4
+ab_drop("b13", 5) # Vertical block at position 5
+ab_drop("b11", 6) # Square block at position 6
+ab_drop("b11", 7) # Square block at position 7
+```

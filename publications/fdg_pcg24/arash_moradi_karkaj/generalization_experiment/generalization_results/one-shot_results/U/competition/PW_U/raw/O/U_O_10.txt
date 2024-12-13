@@ -1,0 +1,18 @@
+To generate the letter "O" using the given command and block types, you can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 4)
+ab_drop('b13', 4)
+ab_drop('b31', 7)
+ab_drop('b13', 7)
+ab_drop('b31', 10)
+ab_drop('b13', 10)
+ab_drop('b31', 13)
+ab_drop('b13', 13)
+ab_drop('b31', 16)
+ab_drop('b13', 16)
+```
+
+This stream of commands will construct the letter "O" within the allowed space boundaries, following the gravity rules. Each block type is placed one by one in the specified position along the width to form the complete letter.

@@ -1,0 +1,30 @@
+To generate a stable structure that looks like the character "Y" using the `ab_drop()` function and meet all the constraints, we can follow the steps below:
+
+1. Initialize the structure as an empty grid:
+```python
+W = 20
+H = 16
+structure = [[' '] * W for _ in range(H)]
+```
+
+2. Drop the base block (`b31`) centered at slot 10:
+```python
+ab_drop('b31', 10)
+```
+
+3. Drop the two upper arms of the "Y" shape, which are vertical blocks (`b13`), at slots 8 and 12:
+```python
+ab_drop('b13', 8)
+ab_drop('b13', 12)
+```
+
+4. Drop the lower arm of the "Y" shape, which is a horizontal block (`b31`), centered at slot 10 and one layer above the base:
+```python
+ab_drop('b31', 10)
+```
+
+5. The final structure will look like the character "Y" and meet all the constraints.
+
+The resulting structure will have three blocks, forming the "Y" shape, that are stable and do not intrude on the boundary of the map.
+
+Note: This specific configuration of the blocks is just one possible solution that meets the constraints. There may be other valid configurations that also meet the requirements.

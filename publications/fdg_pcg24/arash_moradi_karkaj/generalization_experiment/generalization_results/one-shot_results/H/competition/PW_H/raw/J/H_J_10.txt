@@ -1,0 +1,11 @@
+To generate the uppercase English letter "J" in the Tetris-like environment, you can use the following stream of commands:
+
+```
+ab_drop('b31',1)  // Place a horizontal straight block at position 1
+ab_drop('b31',2)  // Place another horizontal straight block at position 2
+ab_drop('b13',2)  // Place a vertical straight block at position 2
+ab_drop('b13',2)  // Place another vertical straight block at position 1
+ab_drop('b13',2)  // Place another vertical straight block at position 2
+```
+
+By following these commands, the blocks will stack and form the shape of the uppercase letter "J" within the allowed space boundaries.

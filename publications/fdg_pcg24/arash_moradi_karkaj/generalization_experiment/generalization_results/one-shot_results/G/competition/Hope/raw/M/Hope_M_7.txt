@@ -1,0 +1,9 @@
+To create the "M" shape, you can use the following sequence of `ab_drop()` commands:
+
+1. Drop a b31 block at position (0, 0): `ab_drop('b31', 0)`
+2. Drop a b11 block at position (2, 0): `ab_drop('b11', 2)`
+3. Drop a b13 block at position (4, 0): `ab_drop('b13', 4)`
+4. Drop a b11 block at position (10, 0): `ab_drop('b11', 10)`
+5. Drop a b31 block at position (12, 0): `ab_drop('b31', 12)`
+
+This sequence of commands will create an "M" shape inside a 20*16 box block.

@@ -1,0 +1,13 @@
+To generate the uppercase English letter "D", you can use the following stream of commands:
+
+```
+ab_drop('b11', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 4)
+ab_drop('b31', 7)
+ab_drop('b11', 1)
+ab_drop('b11', 7)
+ab_drop('b11', 1)
+```
+
+This will result in the letter "D" being constructed in the defined environment, following the gravity rules.

@@ -1,0 +1,17 @@
+To generate the letter "B" using the provided block types, we can follow these steps:
+
+1. Place a b31 block at the X position 1. This will represent the vertical line of the letter "B".
+2. Place a b31 block at the X position 1, but at a lower Y position. This will represent the horizontal line of the letter "B".
+3. Place a b31 block at the X position 1, but at an even lower Y position. This will represent the bottom curve of the letter "B".
+4. Place a b13 block at the X position 2, just beside the vertical line. This will close the bottom curve of the letter "B".
+5. Place a b11 block at the X position 3, on top of the vertical line. This will complete the letter "B".
+
+The stream of commands to generate the letter "B" would be as follows:
+
+```
+ab_drop('b31',1)
+ab_drop('b31',1)
+ab_drop('b31',1)
+ab_drop('b13',2)
+ab_drop('b11',3)
+```

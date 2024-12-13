@@ -1,0 +1,19 @@
+To generate the uppercase English letter "Y", we can use the following stream of commands:
+
+```
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b31', 1)
+```
+
+Explanation:
+1. The foundation of the letter "Y" is created by stacking three horizontal straight blocks (b31) starting from the x position 2.
+2. Two vertical straight blocks (b13) are then placed at the x position 2 to form the left branch of the "Y".
+3. To complete the top part of the "Y", another horizontal straight block (b31) is stacked on top of the foundation at the x position 2.
+4. Finally, a horizontal straight block (b31) is placed at the x position 1 to form the right branch of the "Y".
+
+Make sure to follow the gravity rules and avoid exceeding the height boundary while constructing the letter.

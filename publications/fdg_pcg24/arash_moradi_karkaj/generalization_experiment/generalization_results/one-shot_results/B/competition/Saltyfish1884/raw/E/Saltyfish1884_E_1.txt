@@ -1,0 +1,50 @@
+To generate a stable structure that resembles the character "E", we can follow the steps below:
+
+1. Initialize the structure as an empty WxH grid using the provided code.
+
+2. Place the b13 block at the leftmost slot and the bottom layer (layer 0) using the ab_drop() function. This block will serve as the left vertical part of the "E".
+
+3. Place the b31 block on top of the b13 block, aligned with its center using the ab_drop() function. This block will serve as the horizontal middle part of the "E".
+
+4. Place the b13 block on top of the b31 block, aligned with its center using the ab_drop() function. This block will serve as the right vertical part of the "E".
+
+5. To meet the stability constraint, make sure that the b31 block is placed on a solid base (b11 or b13 blocks). Also, try to place the blocks as low as possible to reduce the risk of collapsing. Make adjustments if needed to achieve a stable and connected structure.
+
+6. To meet the no boundary intrusion constraint, make sure that all blocks are placed within the map boundaries. Adjust the dropping positions if necessary.
+
+Here's an example code that generates a structure resembling the character "E" while meeting the given constraints:
+
+```python
+# Constraints:
+W = 20
+H = 16
+
+# Map Initialization:
+structure = [[' ']*W for _ in range(H)]
+
+def ab_drop(x, y):
+    drop_pos = (H-1, y)
+    
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    
+    structure[drop_pos[0]][drop_pos[1]] = x
+
+
+# Place the left vertical part
+ab_drop('b13', 0)
+
+# Place the horizontal middle part
+ab_drop('b31', 9)
+
+# Place the right vertical part
+ab_drop('b13', 18)
+
+# Print the resulting structure
+for row in structure:
+    print(''.join(row))
+```
+
+The resulting structure will resemble the character "E" while meeting all the given constraints. Note that the slot numbers used in the ab_drop() function are based on the assumption that the character "E" should be centered within the 20 slots width of the structure. Adjustments can be made to the slot numbers to achieve a desired layout.

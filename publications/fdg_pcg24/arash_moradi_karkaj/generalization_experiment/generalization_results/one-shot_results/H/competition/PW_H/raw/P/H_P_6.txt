@@ -1,0 +1,31 @@
+To generate the uppercase letter "P", we need to create the following blocks:
+
+1. First, we need to create the vertical line of the letter "P". We can do this by using the b13 block twice in a row. 
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+```
+
+2. Next, we need to create the base of the letter "P" by using the b31 block.
+
+```
+ab_drop('b31', 1)
+```
+
+3. Finally, we need to create the top curve of the letter "P" by using the b13 block twice in a row.
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+```
+
+Putting it all together, the stream of commands to generate the uppercase letter "P" would be:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+```

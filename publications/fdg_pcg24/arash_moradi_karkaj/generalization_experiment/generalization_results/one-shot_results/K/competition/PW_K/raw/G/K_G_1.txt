@@ -1,0 +1,38 @@
+To create the uppercase English letter "G", we can follow these steps:
+
+1. Place a b31 block at position 1:
+```
+ab_drop('b31',1)
+```
+
+2. Place a b11 block at position 4:
+```
+ab_drop('b11',4)
+```
+
+3. Place a b11 block at position 7:
+```
+ab_drop('b11',7)
+```
+
+4. Place a b11 block at position 10:
+```
+ab_drop('b11',10)
+```
+
+5. Place a b11 block at position 13:
+```
+ab_drop('b11',13)
+```
+
+6. Place a b11 block at position 16:
+```
+ab_drop('b11',16)
+```
+
+7. Place a b13 block at position 19:
+```
+ab_drop('b13',19)
+```
+
+Make sure to input these commands consecutively between three backticks (```) to maintain the correct order and achieve the desired letter "G".

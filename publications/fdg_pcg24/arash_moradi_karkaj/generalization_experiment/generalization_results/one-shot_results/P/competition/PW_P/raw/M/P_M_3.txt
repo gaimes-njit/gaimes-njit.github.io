@@ -1,0 +1,35 @@
+To generate the uppercase English letter "M" using the given block types and environment:
+
+1. Place the vertical straight block (b13) at position 1 and position 2 along the width:
+```
+ab_drop('b13',1)
+ab_drop('b13',2)
+```
+
+2. Place the horizontal straight block (b31) at position 2 along the width, above the vertical straight block:
+```
+ab_drop('b31',2)
+```
+
+3. Place two square blocks (b11) at positions 1 and 3 along the width, above the horizontal straight block:
+```
+ab_drop('b11',1)
+ab_drop('b11',3)
+```
+
+4. Place two horizontal straight blocks (b31) at position 2 along the width, above the square blocks:
+```
+ab_drop('b31',2)
+ab_drop('b31',2)
+```
+
+The complete stream of commands to generate the letter "M" is as follows:
+```
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b31',2)
+ab_drop('b11',1)
+ab_drop('b11',3)
+ab_drop('b31',2)
+ab_drop('b31',2)
+```

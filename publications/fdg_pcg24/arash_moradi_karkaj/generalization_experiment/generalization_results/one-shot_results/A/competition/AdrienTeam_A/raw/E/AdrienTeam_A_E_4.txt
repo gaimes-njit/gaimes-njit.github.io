@@ -1,0 +1,27 @@
+To construct the structure resembling "E", we can follow the steps below:
+
+1. Start by initializing the map:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Specify the blocks to be dropped to form the shape of "E" in the desired order and position.
+
+```python
+# Lower parts of "E"
+ab_drop('b11', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+
+# Middle part of "E"
+ab_drop('b31', 1)
+
+# Upper part of "E"
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b31', 1)
+ab_drop('b11', 1)
+```
+
+By following the steps above, we can construct the structure resembling "E" while satisfying the given constraints.

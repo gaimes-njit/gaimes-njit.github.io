@@ -1,0 +1,11 @@
+Here is the stream of ab_drop() commands to generate the uppercase English letter "B":
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```

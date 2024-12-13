@@ -1,0 +1,9 @@
+To create the letter J, we can start by dropping the top bar, then the middle pipe, and finally the bottom tick. Here is the code to achieve this:
+
+```python
+ab_drop("b31", 9)     # Drop the top bar at position 9
+ab_drop("b13", 9)     # Drop the middle pipe at position 9
+ab_drop("b31", 9)     # Drop the bottom tick at position 9
+```
+
+This code will create a structure that resembles the letter J when viewed from the top.

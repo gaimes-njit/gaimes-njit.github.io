@@ -1,0 +1,15 @@
+To create a structure that looks like the capital letter "O" in a level, we can start by placing a row block (b31) at the center of the bottom row. This will serve as the base of the "O" shape.
+
+Next, we can place a column block (b13) directly above the row block, centered in the same column. This will form the vertical part of the "O" shape.
+
+Finally, we can place another row block (b31) directly above the column block, centered in the same row. This will complete the circular part of the "O" shape.
+
+Here is the code implementation to generate the "O" shape:
+
+```python
+ab_drop("b31", 9)  # Place row block at x_position=9
+ab_drop("b13", 9)  # Place column block above the row block
+ab_drop("b31", 9)  # Place another row block above the column block
+```
+
+This implementation will create a stable structure that resembles the capital letter "O". The blocks are placed in a bottom-to-top fashion, ensuring stability.

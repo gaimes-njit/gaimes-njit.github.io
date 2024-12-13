@@ -1,0 +1,4 @@
+ab_drop('b31',10)  # Create the top horizontal bar of the letter 'Z'
+ab_drop('b11',9)   # Create the diagonal line of the letter 'Z'
+ab_drop('b11',11)  # Create the diagonal line of the letter 'Z'
+ab_drop('b31',10)  # Create the bottom horizontal bar of the letter 'Z'

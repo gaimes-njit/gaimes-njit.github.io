@@ -1,0 +1,23 @@
+To generate a stable structure that looks like the character "Q", we can use the `ab_drop()` function to drop blocks in a specific order and position.
+
+Here's a strategy to create the "Q" structure while satisfying the constraints:
+
+1. Start by dropping a `b31` block at slot 8. This block will serve as the bottom part of the "Q".
+
+   `ab_drop('b31', 8)`
+
+2. Next, drop a `b11` block at slot 8, one layer above the previous block. This block will serve as the top part of the "Q".
+
+   `ab_drop('b11', 8)`
+
+3. Drop another `b11` block at slot 9, one slot to the right of the previous block. This block will be stacked on top of the previous block.
+
+   `ab_drop('b11', 9)`
+
+4. Finally, drop a `b13` block at slot 9, one layer above the previous block. This block will serve as the tail of the "Q".
+
+   `ab_drop('b13', 9)`
+
+The resulting structure will resemble the character "Q", and it will be stable and satisfy the constraints.
+
+Note: The exact positions and order of the blocks may vary depending on how the `ab_drop()` function is implemented. The given strategy provides a general idea of how to approach the problem.

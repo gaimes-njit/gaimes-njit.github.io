@@ -1,0 +1,26 @@
+To build the capital letter "N" in a bottom-to-top fashion, we can break it down into three parts - the left vertical pipe, the diagonal, and the right vertical pipe. Here's how we can construct it:
+
+1. Build the left vertical pipe:
+   - Drop a row block ("b31") at the center (x_position=9).
+   - Drop a row block ("b31") at the center (x_position=11).
+
+2. Build the diagonal:
+   - Drop a column block ("b13") at the center (x_position=10).
+   - Drop a row block ("b31") at the center (x_position=11).
+
+3. Build the right vertical pipe:
+   - Drop a row block ("b31") at the center (x_position=12).
+   - Drop a row block ("b31") at the center (x_position=14).
+  
+Here's the complete implementation:
+
+```python
+ab_drop("b31", 9)
+ab_drop("b31", 11)
+ab_drop("b13", 10)
+ab_drop("b31", 11)
+ab_drop("b31", 12)
+ab_drop("b31", 14)
+```
+
+This implementation will give us a stable structure that resembles the capital letter "N" in the top-down orientation.

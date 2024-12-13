@@ -1,0 +1,16 @@
+Example Solution:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 3)
+ab_drop('b11', 4)
+ab_drop('b31', 5)
+ab_drop('b13', 4)
+ab_drop('b31', 5)
+ab_drop('b11', 4)
+```
+
+Explanation:
+
+This solution starts by placing a horizontal block (`b31`) in the first slot. Then, a vertical block (`b13`) is placed in the second slot to form the top part of the letter "S". Next, another horizontal block is placed in the third slot, followed by a single block in the fourth slot to complete the middle part of the letter "S". Finally, two more horizontal blocks are placed in the fifth slot to form the bottom of the letter "S". This solution satisfies the constraints of stability and minimal boundary intrusion.

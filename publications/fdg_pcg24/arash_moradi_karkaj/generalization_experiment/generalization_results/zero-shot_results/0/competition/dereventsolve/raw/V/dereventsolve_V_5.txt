@@ -1,0 +1,7 @@
+To generate a structure that looks like the letter "V" using the given database, you can use the following sequence of `ab_drop` function calls:
+
+```
+ab_drop('V')
+```
+
+This will drop the letter "V" from the database and create its structure.

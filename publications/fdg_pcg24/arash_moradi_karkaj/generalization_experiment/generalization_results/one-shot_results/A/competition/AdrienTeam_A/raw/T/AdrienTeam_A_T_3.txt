@@ -1,0 +1,15 @@
+The structure of the "T" can be constructed by using the `ab_drop()` function with the following inputs:
+
+```
+# Place the bottom horizontal block
+ab_drop('b31', 9)
+
+# Place the vertical block on top of the bottom horizontal block
+ab_drop('b13', 9)
+
+# Place the horizontal blocks on top of the vertical block
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+```
+
+This sequence of `ab_drop()` inputs will generate the structure of the "T" as a stable and continuous figure while satisfying all the specified constraints.

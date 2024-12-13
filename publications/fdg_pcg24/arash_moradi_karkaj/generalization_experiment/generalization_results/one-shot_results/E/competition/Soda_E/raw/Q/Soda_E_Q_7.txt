@@ -1,0 +1,26 @@
+To generate a structure that looks like a capital "Q" in the Tetris game, we can break it down into several steps:
+
+Step 1: Create the circular part of the "Q"
+To create the circular part, we can use a row block ("b31") positioned vertically. We will drop it twice, one for the top half and one for the bottom half.
+
+```
+ab_drop("b13", 7)
+ab_drop("b13", 10)
+```
+
+Step 2: Create the tail of the "Q"
+To create the tail, we can use a column block ("b13") positioned horizontally. We will drop it once at the desired position.
+
+```
+ab_drop("b31", 14)
+```
+
+The complete implementation to generate the structure in the shape of a capital "Q":
+
+```
+ab_drop("b13", 7)
+ab_drop("b13", 10)
+ab_drop("b31", 14)
+```
+
+This implementation ensures stability by following the bottom-to-top order of block placements and creates a structure that resembles the letter "Q" in the level.

@@ -1,0 +1,5 @@
+ab_drop('b31',6)  # create stable base
+ab_drop('b31',13) # create middle horizontal block
+ab_drop('b13',5)  # create left vertical block
+ab_drop('b13',8)  # create right vertical block
+ab_drop('b31',6)  # create top horizontal block

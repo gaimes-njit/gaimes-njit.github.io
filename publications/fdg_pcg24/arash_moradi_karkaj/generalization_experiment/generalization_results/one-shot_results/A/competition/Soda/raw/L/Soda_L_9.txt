@@ -1,0 +1,18 @@
+To create the letter "L" in the level, we can use the following steps:
+
+1. First, drop a "b31" block centered at x_position=9:
+ab_drop("b31", 9)
+
+2. Next, drop a "b13" block centered at x_position=9:
+ab_drop("b13", 9)
+
+3. Finally, drop another "b11" block centered at x_position=11:
+ab_drop("b11", 11)
+
+The complete implementation is as follows:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+ab_drop("b11", 11)
+```

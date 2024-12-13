@@ -1,0 +1,36 @@
+To create the uppercase English letter "Z" using the block types, follow the steps below:
+
+1. Start by placing a horizontal straight block at the bottom of the grid:
+   ```
+   ab_drop('b31', 1)
+   ```
+
+2. Place a vertical straight block to the right of the previous block:
+   ```
+   ab_drop('b13', 4)
+   ```
+
+3. Place another vertical straight block to the right of the previous block, aligned with the top of the first block:
+   ```
+   ab_drop('b13', 6)
+   ```
+
+4. Place a horizontal straight block above the second and third blocks, aligned with the top of the second block:
+   ```
+   ab_drop('b31', 5)
+   ```
+
+5. Place a vertical straight block to the left of the previous block, aligned with the top of the second block:
+   ```
+   ab_drop('b13', 3)
+   ```
+
+6. Place another vertical straight block to the left of the previous block, aligned with the top of the second block:
+   ```
+   ab_drop('b13', 1)
+   ```
+
+7. Place a horizontal straight block above the last two blocks, aligned with the top of the second block:
+   ```
+   ab_drop('b31', 2)
+   ```

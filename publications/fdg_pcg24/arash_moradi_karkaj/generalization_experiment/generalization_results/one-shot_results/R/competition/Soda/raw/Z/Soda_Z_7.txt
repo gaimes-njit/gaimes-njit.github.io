@@ -1,0 +1,13 @@
+To create a structure that looks like the capital letter "Z", we need to first create the base of the letter, then add the diagonal line.
+
+Step 1: Creating the Base
+To create the base of the letter "Z", we will use a row block (b31). We will drop this block at the center position in the bottom row of the grid (x_position = 9). This will create a stable base for the letter.
+
+Step 2: Adding the Diagonal Line
+To add the diagonal line to the letter "Z", we will use two square blocks (b11). We will drop these blocks vertically, one on top of the other, in the second column from the right (x_position = 18). The first block will be dropped at the center position in the second row from the bottom, and the second block will be dropped at the center position in the third row from the bottom.
+
+Here is the complete implementation:
+
+ab_drop("b31", 9)  # Creating the base of the letter Z
+ab_drop("b11", 18)  # Adding the first square block of the diagonal line
+ab_drop("b11", 18)  # Adding the second square block of the diagonal line

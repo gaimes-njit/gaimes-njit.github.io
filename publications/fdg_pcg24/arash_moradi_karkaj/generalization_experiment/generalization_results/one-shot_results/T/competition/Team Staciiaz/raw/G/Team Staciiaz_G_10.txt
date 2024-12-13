@@ -1,0 +1,23 @@
+To generate a stable structure that looks like the character "G" and meets all the constraints, we can follow these steps:
+
+1. Determine the positions to drop each block in order to create the shape of the character "G". We will drop the blocks in the following order:
+
+   - Drop a b31 block at slot 4.
+   - Drop a b11 block at slot 4, aligned with the center of the b31 block.
+   - Drop a b13 block at slot 6, aligned with the center of the b31 block.
+   - Drop a b11 block at slot 8, aligned with the center of the b31 block.
+   - Drop a b11 block at slot 10, aligned with the center of the b31 block.
+
+2. Use the `ab_drop()` function to drop each block at the determined positions.
+
+```python
+# Step 1: Determine the positions to drop each block
+positions = [(4, 'b31'), (4, 'b11'), (6, 'b13'), (8, 'b11'), (10, 'b11')]
+
+# Step 2: Use the ab_drop() function to drop each block
+for position in positions:
+    x_position, block_type = position
+    ab_drop(block_type, x_position)
+```
+
+This will generate a stable structure that looks like the character "G" and meets all the constraints.

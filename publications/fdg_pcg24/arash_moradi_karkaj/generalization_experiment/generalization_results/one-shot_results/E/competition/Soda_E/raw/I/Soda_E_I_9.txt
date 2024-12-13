@@ -1,0 +1,15 @@
+To create the letter "I" in the grid, we can start by placing a vertical bar block in the center of the grid. We will then place a horizontal bar block on top of the vertical bar block to complete the letter.
+
+Here is the sequence of ab_drop() calls to achieve this:
+
+```
+# Place the vertical bar block (lower part of 'I')
+ab_drop("b13", 9)
+ab_drop("b11", 8)
+
+# Place the horizontal bar block (upper part of 'I')
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+```
+
+This sequence of ab_drop() calls will create a stable structure that resembles the letter "I" in the grid.

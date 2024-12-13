@@ -1,0 +1,7 @@
+To generate a structure that looks like the letter "U" using the given database, we can use the following sequence of `ab_drop` function calls:
+
+```python
+ab_drop('U')
+```
+
+This single `ab_drop('U')` function call will generate a structure that looks like the letter "U".

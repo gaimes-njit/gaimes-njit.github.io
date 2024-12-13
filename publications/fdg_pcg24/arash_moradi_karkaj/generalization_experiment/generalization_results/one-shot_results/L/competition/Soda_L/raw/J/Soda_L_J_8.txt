@@ -1,0 +1,24 @@
+To create the letter J, we can use the following ab_drop() calls:
+
+1. Place the top bar:
+```
+ab_drop("b31", 9)
+```
+
+2. Place the middle pipe:
+```
+ab_drop("b13", 9)
+```
+
+3. Place the bottom tick:
+```
+ab_drop("b11", 9)
+```
+
+The complete implementation to create the letter J would be:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+ab_drop("b11", 9)
+```

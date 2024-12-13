@@ -1,0 +1,22 @@
+To form the shape resembling the letter "Q" using the available props and the ab_drop() function, we can follow these steps:
+
+1. Initialize the field:
+```
+field = [[0]*20 for _ in range(16)]
+```
+
+2. Generate the upper part of the "Q" shape:
+```
+ab_drop('b31', 6)
+```
+This will place a b31 brick starting from x_position 6. The occupied cells will be (5, 3), (6, 3), and (7, 3).
+
+3. Generate the lower part of the "Q" shape:
+```
+ab_drop('b13', 6)
+ab_drop('b11', 5)
+```
+The first ab_drop() will place a b13 brick starting from x_position 6. The occupied cells will be (6, 0), (6, 1), and (6, 2).
+The second ab_drop() will place a b11 brick starting from x_position 5. The occupied cell will be (5, 0).
+
+The final arrangement of occupied cells will form the shape resembling the letter "Q".

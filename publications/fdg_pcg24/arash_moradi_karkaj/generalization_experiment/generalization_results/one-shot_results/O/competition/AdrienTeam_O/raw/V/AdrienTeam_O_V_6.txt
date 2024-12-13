@@ -1,0 +1,42 @@
+First, let's initialize the map structure:
+
+```
+structure = [[' ']*20 for _ in range(16)]
+```
+
+To create the structure resembling "V", let's follow these steps:
+
+1. Drop a horizontal block at slot 9:
+```
+ab_drop('b31', 9)
+```
+
+2. Drop a vertical block at slot 7:
+```
+ab_drop('b11', 7)
+ab_drop('b11', 7)
+```
+
+3. Drop a vertical block at slot 11:
+```
+ab_drop('b11', 11)
+ab_drop('b11', 11)
+```
+
+4. Drop a horizontal block at slot 9:
+```
+ab_drop('b31', 9)
+```
+
+Putting it all together, the code to generate the structure resembling "V" would be:
+
+```
+structure = [[' ']*20 for _ in range(16)]
+
+ab_drop('b31', 9)
+ab_drop('b11', 7)
+ab_drop('b11', 7)
+ab_drop('b11', 11)
+ab_drop('b11', 11)
+ab_drop('b31', 9)
+```

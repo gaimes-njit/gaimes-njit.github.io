@@ -1,0 +1,40 @@
+To generate a stable structure that resembles the character "U" while meeting all hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty grid:
+   ```
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. Drop a b31 block at slot 0 to create the left vertical line of the "U":
+   ```
+   ab_drop('b31', 0)
+   ```
+
+3. Drop a b31 block at slot 19 to create the right vertical line of the "U":
+   ```
+   ab_drop('b31', 19)
+   ```
+
+4. Drop a b13 block at slot 1 to connect the top of the left vertical line to the top of the right vertical line:
+   ```
+   ab_drop('b13', 1)
+   ```
+
+5. Drop a b13 block at slot 18 to connect the top of the right vertical line to the top of the left vertical line:
+   ```
+   ab_drop('b13', 18)
+   ```
+
+6. To meet stability constraints, place b31 blocks on top of the b13 blocks at the bottom to prevent overhangs:
+   ```
+   ab_drop('b31', 1)
+   ab_drop('b31', 18)
+   ```
+
+7. Finally, to meet the no boundary intrusion constraint, we can drop b11 blocks at the remaining slots within the U shape:
+   ```
+   for i in range(2, 18):  # slots 2 to 17
+       ab_drop('b11', i)
+   ```
+
+The final result will be a stable structure that resembles the character "U" and meets all the given constraints.

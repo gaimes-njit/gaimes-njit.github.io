@@ -1,0 +1,12 @@
+To create the letter "F" in the level, we will first create the vertical left part of the letter and then place the base below it.
+
+Here is the code to create the letter "F":
+
+```
+# The vertical left part
+ab_drop("b31", 10)
+# The base
+ab_drop("b13", 9)
+```
+
+This code will drop the "b31" block at x_position=10, creating the vertical left part of the letter. Then, it will drop the "b13" block at x_position=9, creating the base of the letter.

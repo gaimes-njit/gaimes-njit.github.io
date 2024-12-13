@@ -1,0 +1,14 @@
+To create the letter "O" using the given block types, we need to follow the instructions below:
+
+1. Start by placing a horizontal straight block (b31) at position 2 along the width: `ab_drop('b31', 2)`
+2. Place two vertical straight blocks (b13) to the left of the foundation. The first block goes at position 1 and the second block goes at position 2: `ab_drop('b13', 1)`, `ab_drop('b13', 2)`
+3. Finally, place another horizontal straight block (b31) at position 2 along the width to complete the top part of the letter: `ab_drop('b31', 2)`
+
+The complete stream of commands to generate the letter "O" should look like this:
+
+```
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```

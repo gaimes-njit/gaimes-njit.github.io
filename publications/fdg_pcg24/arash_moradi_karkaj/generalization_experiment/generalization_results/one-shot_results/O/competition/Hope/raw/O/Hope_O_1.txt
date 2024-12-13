@@ -1,0 +1,15 @@
+To create the structure "O" using only the `ab_drop` function, you will need to use a combination of different block types and positions. Here is one possible solution:
+
+1. Start by dropping a 3x1 block (`b31`) at position 2,0.
+   - `ab_drop('b31', 2)`
+
+2. Drop a 1x3 block (`b13`) at position 0,0.
+   - `ab_drop('b13', 0)`
+
+3. Drop a 1x3 block (`b13`) at position 4,0.
+   - `ab_drop('b13', 4)`
+
+4. Drop a 3x1 block (`b31`) at position 2,3.
+   - `ab_drop('b31', 2)`
+
+This should create the structure "O" inside a 20x16 box. Note that the positions are specified by the x-coordinate relative to the left side of the box.

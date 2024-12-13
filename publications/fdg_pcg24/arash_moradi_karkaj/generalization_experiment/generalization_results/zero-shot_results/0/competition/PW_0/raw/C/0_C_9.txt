@@ -1,0 +1,9 @@
+To create the uppercase letter "C" using the given block types, we can use the following stream of ab_drop() commands:
+
+```
+ab_drop('b31', 1)  # Create the top horizontal stroke of the letter "C" (Width: 3, Height: 1)
+ab_drop('b13', 3)  # Create the vertical stroke of the letter "C" (Width: 1, Height: 3)
+ab_drop('b31', 1)  # Create the bottom horizontal stroke of the letter "C" (Width: 3, Height: 1)
+```
+
+Note: These commands assume that the starting position is at the top left corner of the grid (x = 1, y = 1). Adjust the y values accordingly if a different starting position is specified.

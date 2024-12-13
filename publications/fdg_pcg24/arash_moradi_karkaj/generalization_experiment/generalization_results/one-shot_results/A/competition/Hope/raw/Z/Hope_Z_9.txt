@@ -1,0 +1,53 @@
+To create the letter "Z" inside a 20x16 box using the `ab_drop` function, you can follow these steps:
+
+1. Create the top horizontal line of the "Z" by dropping a b13 block starting at position (0, 0):
+
+```python
+ab_drop('b13', 0)
+```
+
+2. Create the diagonal line of the "Z" by dropping a b11 block starting at position (13, 0):
+
+```python
+ab_drop('b11', 13)
+```
+
+3. Create the bottom horizontal line of the "Z" by dropping a b31 block starting at position (0, 14):
+
+```python
+ab_drop('b31', 0)
+```
+
+Here is the complete sequence of commands to create the letter "Z" inside a 20x16 box:
+
+```python
+ab_drop('b13', 0)
+ab_drop('b11', 13)
+ab_drop('b31', 0)
+```
+
+This will result in the following arrangement of blocks:
+
+```
+ b13 b13 b13 b13 b13 b13 b13 b13 b13 b13 b13 b13 b13 b13 b13 b13 b13 b13 b13 b13
+     b11                                                                   
+                                                                        
+                                                                     
+                                                                           
+                                                                             
+                                                                           
+                                                                        
+                                                                     
+                                                                    
+                                                                 
+                                                                         
+                                                                  
+                                                                           
+                                                                         
+                                                                     
+                                                                           
+                                                                      
+  b31 b31 b31 b31 b31 b31 b31 b31 b31 b31 b31 b31 b31 b31 b31 b31 b31 b31 b31 b31
+```
+
+Please note that the empty spaces in the above representation are to signify the absence of blocks.

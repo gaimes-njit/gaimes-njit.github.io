@@ -1,0 +1,12 @@
+To generate the uppercase letter "K" in the defined environment using the ab_drop() command and block types, follow the instructions below:
+
+```
+ab_drop("b31", 1)   # Place a horizontal straight block at X position 1
+ab_drop("b31", 2)   # Place a horizontal straight block at X position 2
+ab_drop("b31", 3)   # Place a horizontal straight block at X position 3
+ab_drop("b13", 2)   # Place a vertical straight block at X position 2
+ab_drop("b13", 4)   # Place a vertical straight block at X position 4
+ab_drop("b11", 3)   # Place a square block at X position 3
+```
+
+Executing these commands consecutively will result in the creation of the uppercase letter "K" in the defined environment while ensuring structural stability and following the gravity rules.

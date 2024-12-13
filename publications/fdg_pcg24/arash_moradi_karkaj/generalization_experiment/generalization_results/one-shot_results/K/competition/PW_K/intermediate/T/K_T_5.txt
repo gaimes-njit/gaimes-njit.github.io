@@ -1,0 +1,9 @@
+To create the uppercase letter "T" using the given block types and command, you can follow the following sequence of ab_drop() commands:
+
+ab_drop('b31', 5)
+ab_drop('b13', 5)
+ab_drop('b11', 4)
+ab_drop('b11', 5)
+ab_drop('b11', 6)
+
+This sequence will create the letter "T" in the Tetris-like environment, following the gravity rules and staying within the allowed space boundaries.

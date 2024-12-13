@@ -1,0 +1,71 @@
+```
+# Map initialization
+map = [[0]*20 for _ in range(16)]
+
+# Function to check stability of bricks
+def check_stability():
+    for y in range(1, 16):
+        for x in range(1, 19):
+            # Check stability for vertical bricks
+            if map[y][x] in ['b13', 'b31']:
+                if map[y-1][x] != map[y][x]:
+                    return False
+            # Check stability for horizontal bricks
+            if map[y][x] == 'b31':
+                if map[y][x-1] != map[y][x+1]:
+                    return False
+    return True
+
+# Helper function to check if brick exceeds field boundaries
+def check_boundary(brick_type, x_position):
+    if brick_type == 'b31' and (x_position < 1 or x_position > 17):
+        return False
+    if brick_type == 'b13' and x_position < 0 or x_position > 18:
+        return False
+    if brick_type == 'b11' and (x_position < 0 or x_position > 19):
+        return False
+    return True
+
+# Function to drop bricks on the field
+def ab_drop(x, y):
+    brick_type = x
+    x_position = y
+    
+    # Check if brick exceeds field boundaries
+    if not check_boundary(brick_type, x_position):
+        return
+    
+    # Drop the brick from top to ground
+    for i in range(16):
+        if brick_type == 'b11':
+            if map[i][x_position] != 0:
+                break
+            map[i][x_position] = brick_type
+        elif brick_type == 'b31':
+            if map[i][x_position-1] != 0 or map[i][x_position] != 0 or map[i][x_position+1] != 0:
+                break
+            map[i][x_position-1] = brick_type
+            map[i][x_position] = brick_type
+            map[i][x_position+1] = brick_type
+        elif brick_type == 'b13':
+            if map[i][x_position] != 0 or map[i+1][x_position] != 0 or map[i+2][x_position] != 0:
+                break
+            map[i][x_position] = brick_type
+            map[i+1][x_position] = brick_type
+            map[i+2][x_position] = brick_type
+
+# Generate the required structure
+ab_drop('b13', 8)
+ab_drop('b13', 10)
+ab_drop('b13', 12)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b11', 12)
+ab_drop('b11', 13)
+ab_drop('b11', 14)
+
+# Print the resulting field
+for row in map:
+    print(row)
+```

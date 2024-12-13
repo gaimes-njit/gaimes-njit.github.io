@@ -1,0 +1,13 @@
+To create a structure exactly like "K" inside a 20*16 box, you can use the following set of ab_drop commands:
+
+ab_drop('b31', 2)
+ab_drop('b11', 6)
+ab_drop('b11', 7)
+ab_drop('b11', 8)
+ab_drop('b13', 6)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b11', 12)
+ab_drop('b31', 14)
+
+This will create a structure of "K" using the specified block types and positions within the given box area.

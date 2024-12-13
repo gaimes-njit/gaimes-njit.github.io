@@ -1,0 +1,43 @@
+Steps:
+1. Drawing the letter "H" with asterisks:
+```
+*     *
+*     *
+* * * *
+*     *
+*     *
+```
+2. Listing asterisks and spaces in each row:
+Row 1: 1 *, 5 spaces
+Row 2: 1 *, 5 spaces
+Row 3: 3 *, 1 space, 3 *
+Row 4: 1 *, 5 spaces
+Row 5: 1 *, 5 spaces
+
+3. Listing "x" for asterisks and "y" for spaces in each row:
+Row 1: 1x, 5y
+Row 2: 1x, 5y
+Row 3: 3x, 1y, 3x
+Row 4: 1x, 5y
+Row 5: 1x, 5y
+
+4. Writing out each x and y for each row side-by-side:
+Row 1: xyyyyy
+Row 2: xyyyyy
+Row 3: xxxyyyxxx
+Row 4: xyyyyy
+Row 5: xyyyyy
+
+5. Indicating the position of each variable in each row:
+Row 1: x-1; y-2 to y-6
+Row 2: x-1; y-2 to y-6
+Row 3: x-1 to x-3; y-4 to y-6; x-7 to x-9
+Row 4: x-1; y-2 to y-6
+Row 5: x-1; y-2 to y-6
+
+6. Returning a sequence of `ab_drop` function calls for each row:
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)

@@ -1,0 +1,6 @@
+ab_drop('b31', 9)  # Place the horizontal block to form the horizontal line of the 'H'
+ab_drop('b31', 8)  # Place another horizontal block below forming the vertical line of the 'H'
+ab_drop('b31', 7)  # Place another horizontal block below completing the vertical line of the 'H'
+ab_drop('b31', 6)  # Place another horizontal block below forming the horizontal line of the 'H'
+ab_drop('b13', 7)  # Place a vertical block to the left side of the horizontal line of the 'H'
+ab_drop('b13', 9)  # Place a vertical block to the right side of the horizontal line of the 'H'

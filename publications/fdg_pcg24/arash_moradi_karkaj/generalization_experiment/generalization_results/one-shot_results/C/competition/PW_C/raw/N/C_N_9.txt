@@ -1,0 +1,16 @@
+To create the uppercase letter "N" using the given block types and environment, the following ab_drop() commands are needed:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 4)
+ab_drop('b13', 5)
+ab_drop('b31', 5)
+```
+
+Explanation:
+1. The first two commands `ab_drop('b13', 1)` and `ab_drop('b13', 2)` create a vertical straight block on the left side of the letter.
+2. The third command `ab_drop('b31', 2)` creates the horizontal straight block in the middle of the letter.
+3. The fourth and fifth commands `ab_drop('b13', 4)` and `ab_drop('b13', 5)` create another vertical straight block on the right side of the letter.
+4. Lastly, the sixth command `ab_drop('b31', 5)` creates the horizontal straight block at the top of the letter.

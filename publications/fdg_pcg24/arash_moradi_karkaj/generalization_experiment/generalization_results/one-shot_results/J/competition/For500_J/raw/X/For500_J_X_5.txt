@@ -1,0 +1,6 @@
+ab_drop('b13', 9)   # Drop a 'b13' block at index 9 (centered horizontally)
+ab_drop('b13', 10)  # Drop another 'b13' block at index 10 (centered horizontally)
+ab_drop('b31', 8)   # Drop a 'b31' block at index 8 (centered horizontally)
+ab_drop('b31', 12)  # Drop another 'b31' block at index 12 (centered horizontally)
+ab_drop('b11', 7)   # Drop a 'b11' block at index 7 (centered horizontally)
+ab_drop('b11', 13)  # Drop a 'b11' block at index 13 (centered horizontally)

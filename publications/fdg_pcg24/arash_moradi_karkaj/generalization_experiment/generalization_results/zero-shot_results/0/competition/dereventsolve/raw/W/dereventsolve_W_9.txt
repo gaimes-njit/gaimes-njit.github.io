@@ -1,0 +1,13 @@
+To generate a structure that looks like the letter "W" using the `ab_drop` function calls, we can use the following sequence:
+
+```
+ab_drop("left")
+ab_drop("right")
+ab_drop("left")
+ab_drop("right")
+ab_drop("left")
+ab_drop("right")
+ab_drop("center")
+```
+
+This sequence of `ab_drop` function calls will create a structure that resembles the letter "W" when visualized.

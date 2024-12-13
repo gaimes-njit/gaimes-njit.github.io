@@ -1,0 +1,23 @@
+# Code Sequence to Construct the Letter "W" Level
+
+# Initialize the structure as an empty 20x16 grid
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the bottom part of the "W" (b31 at slot 3)
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+
+# Drop the top left part of the "W" (b13 at slot 7)
+ab_drop('b13', 7)
+
+# Drop the top right part of the "W" (b13 at slot 11)
+ab_drop('b13', 11)
+
+# Drop the middle part of the "W" (b31 at slot 9)
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+ab_drop('b31', 11)
+
+# Drop the middle dot of the "W" (b11 at slot 11)
+ab_drop('b11', 11)

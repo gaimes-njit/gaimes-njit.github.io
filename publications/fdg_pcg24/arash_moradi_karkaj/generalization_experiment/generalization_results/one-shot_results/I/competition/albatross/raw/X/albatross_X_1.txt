@@ -1,0 +1,18 @@
+In order to construct a level for Science Birds that resembles the English letter "X" and follows all the constraints of the game, we can use the following code sequence using the `ab_drop()` function:
+
+# Step 1: Place the vertical block b13 at slots 8, 9, and 10
+ab_drop('b13', 9)
+
+# Step 2: Place the horizontal block b31 at slots 6, 7, and 8
+ab_drop('b31', 7)
+
+# Step 3: Place the vertical block b13 at slots 8, 9, and 10
+ab_drop('b13', 9)
+
+# Step 4: Place the horizontal block b31 at slots 6, 7, and 8
+ab_drop('b31', 7)
+
+# Step 5: Place the vertical block b13 at slots 8, 9, and 10
+ab_drop('b13', 9)
+
+This code sequence follows the constraints of the Science Birds game and maintains stability under gravity. The blocks are dropped in a specific order and position to form the letter "X" while ensuring stability and not violating any constraints.

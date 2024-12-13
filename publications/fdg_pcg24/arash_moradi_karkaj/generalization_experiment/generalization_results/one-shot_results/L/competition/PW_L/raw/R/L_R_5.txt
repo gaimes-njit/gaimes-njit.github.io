@@ -1,0 +1,21 @@
+To generate the uppercase letter "R", you can use the following series of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+ab_drop('b11', 6)
+ab_drop('b11', 7)
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b31', 8)
+ab_drop('b31', 11)
+ab_drop('b13', 11)
+ab_drop('b31', 14)
+ab_drop('b31', 15)
+ab_drop('b11', 16)
+ab_drop('b11', 17)
+```
+
+These commands will place the blocks in a way that forms the letter "R" within the allowed space and follows the gravity rules.

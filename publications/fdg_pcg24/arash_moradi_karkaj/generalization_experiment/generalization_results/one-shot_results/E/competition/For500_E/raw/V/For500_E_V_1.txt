@@ -1,0 +1,4 @@
+ab_drop('b31', 9)  # Create the left side of the 'V'
+ab_drop('b13', 8)  # Create the bottom part of the left side of the 'V'
+ab_drop('b13', 7)  # Create the top part of the left side of the 'V'
+ab_drop('b31', 11)  # Create the right side of the 'V'

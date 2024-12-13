@@ -1,0 +1,15 @@
+```
+ab_drop("b13",1)
+ab_drop("b11",2)
+ab_drop("b13",3)
+ab_drop("b13",5)
+ab_drop("b11",6)
+ab_drop("b13",7)
+```
+In this example, we create the letter 'R':  
+- The vertical straight block 'b13' is placed at position 1 to form the slanted part on the left side of the letter.  
+- The 1x1 square block 'b11' is placed at position 2 to form the top part of the letter.  
+- Another vertical straight block 'b13' is placed at position 3 to form the slanted part on the right side of the letter.  
+- The slanted part on the right side of the letter is left empty.  
+- The 1x1 square block 'b11' is placed at position 6 to form the bottom left part of the letter.  
+- Another vertical straight block 'b13' is placed at position 7 to form the bottom right part of the letter.

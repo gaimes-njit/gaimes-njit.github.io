@@ -1,0 +1,24 @@
+To create a structure like "V" using the ab_drop() command, you can use the following steps:
+
+1. Drop the first block (b31) at position (6, 0):
+   ab_drop('b31', 6)
+
+2. Drop the second block (b13) at position (5, 1):
+   ab_drop('b13', 5)
+
+3. Drop the third block (b11) at position (4, 2):
+   ab_drop('b11', 4)
+
+4. Drop the fourth block (b11) at position (7, 2):
+   ab_drop('b11', 7)
+
+5. Drop the fifth block (b13) at position (3, 3):
+   ab_drop('b13', 3)
+
+6. Drop the sixth block (b31) at position (2, 4):
+   ab_drop('b31', 2)
+
+7. Drop the seventh block (b31) at position (8, 4):
+   ab_drop('b31', 8)
+
+Note: The positions mentioned above are with respect to the 20x16 block area, where the top-left block has coordinates (0,0) and the bottom-right block has coordinates (19, 15).

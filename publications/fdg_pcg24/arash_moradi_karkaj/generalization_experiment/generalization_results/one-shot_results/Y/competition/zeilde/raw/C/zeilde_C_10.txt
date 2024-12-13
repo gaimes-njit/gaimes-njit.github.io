@@ -1,0 +1,52 @@
+1. Drawing of letter "C" with asterisks:
+```
+ ****
+**
+**
+**
+ ****
+```
+
+2. List of asterisks and spaces generated in each row:
+- Row 1: ****
+- Row 2: **
+- Row 3: **
+- Row 4: **
+- Row 5: ****
+
+3. Asterisks = x, spaces = y:
+- Row 1: xxxx
+- Row 2: xx
+- Row 3: xx
+- Row 4: xx
+- Row 5: xxxx
+
+4. Writing out each x and y for each row:
+- Row 1: x-1; x-2; x-3; x-4
+- Row 2: x-1; x-2
+- Row 3: x-1; x-2
+- Row 4: x-1; x-2
+- Row 5: x-1; x-2; x-3; x-4
+
+5. Position of each variable for each row:
+- Row 1: x-1; x-2; x-3; x-4
+- Row 2: x-1; x-2
+- Row 3: x-1; x-2
+- Row 4: x-1; x-2
+- Row 5: x-1; x-2; x-3; x-4
+
+6. Sequence of `ab_drop` function calls:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+```

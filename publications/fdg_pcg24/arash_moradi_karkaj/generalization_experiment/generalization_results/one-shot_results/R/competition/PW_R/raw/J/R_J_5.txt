@@ -1,0 +1,12 @@
+```
+ab_drop("b31", 1)
+ab_drop("b13", 4)
+ab_drop("b13", 4)
+ab_drop("b13", 4)
+ab_drop("b13", 4)
+ab_drop("b13", 4)
+ab_drop("b31", 7)
+ab_drop("b13", 4)
+```
+
+This sequence of commands will generate the uppercase letter "R" in the specified environment. The blocks are placed one by one, starting from the leftmost position. The specific positions and block types are chosen to create the shape of the letter "R".

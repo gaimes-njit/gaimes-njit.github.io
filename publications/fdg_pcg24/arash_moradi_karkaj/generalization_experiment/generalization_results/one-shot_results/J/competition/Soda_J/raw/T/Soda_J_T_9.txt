@@ -1,0 +1,25 @@
+First, we need to create the base of the "T" structure. We can use a row block for that. The center pivot point of the row block should be in the middle of the grid, so we will use x_position = 9.
+
+```python
+ab_drop("b31", 9)
+```
+
+Next, we need to create the vertical part of the "T". We can use a column block for that. Again, the center pivot point of the column block should be in the middle of the grid, so we will use x_position = 9.
+
+```python
+ab_drop("b13", 9)
+```
+
+Finally, we need to create the horizontal part of the "T". We can use another row block for that. The center pivot point of the row block should be in the middle of the vertical part of the "T", so we will use x_position = 9 again.
+
+```python
+ab_drop("b31", 9)
+```
+
+The complete implementation is as follows:
+
+```python
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+```

@@ -1,0 +1,19 @@
+First, let's build the horizontal line of the "F" which consists of three 1x1 blocks:
+
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+
+Next, let's build the vertical line of the "F" which consists of a 1x3 block in the middle:
+
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+
+Finally, let's build the horizontal line of the bottom part of the "F" which consists of three 1x1 blocks:
+
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+
+This should create a structure exactly like the letter "F" inside the 20x16 box area.

@@ -1,0 +1,22 @@
+To create the letter "Y" in the Tetris game, we can break it down into three blocks:
+
+1. The stem of the "Y" (a column block):
+   We can drop this block at position 9 (centred horizontally) and align it vertically with the bottom row of the grid.
+
+2. The top part of the "Y" (a row block):
+   We can drop this block at position 9 (centred horizontally) and align it vertically with the top row of the grid.
+
+3. The bottom part of the "Y" (a row block):
+   We can drop this block at position 9 (centred horizontally) and align it vertically with the second row from the bottom of the grid.
+
+Here is the complete implementation:
+
+```python
+ab_drop("b13", 9) # Drop the stem of the "Y" at position 9
+
+ab_drop("b31", 9) # Drop the top part of the "Y" at position 9
+
+ab_drop("b31", 9) # Drop the bottom part of the "Y" at position 9
+```
+
+This implementation ensures that the blocks are dropped in a bottom-to-top fashion and are well-supported to maintain stability.

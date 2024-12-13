@@ -1,0 +1,9 @@
+To create the letter "H", we can use the following ab_drop() commands:
+
+```
+ab_drop(b13, 1)
+ab_drop(b31, 1)
+ab_drop(b13, 3)
+```
+
+This sequence of commands will first place a vertical straight block at position 1, creating the left vertical line of the "H". Then, a horizontal straight block will be placed at position 1 to create the top horizontal line of the "H". Finally, another vertical straight block will be placed at position 3 to complete the right vertical line of the "H".

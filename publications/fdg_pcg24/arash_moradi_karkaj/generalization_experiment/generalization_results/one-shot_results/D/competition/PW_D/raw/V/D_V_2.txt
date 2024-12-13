@@ -1,0 +1,12 @@
+To generate the uppercase letter "V", we can use a combination of horizontal and vertical straight blocks. Here is the series of ab_drop() commands to construct the letter "V":
+
+```python
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```
+
+This sequence of commands places a horizontal straight block (b31) at position 1, followed by two vertical straight blocks (b13) at positions 0 and 2, and finally another horizontal straight block (b31) at position 1. The resulting shape will resemble the letter "V".
+
+Remember to execute the commands consecutively, and ensure that the blocks are placed within the allowed space boundaries and maintain stability according to the gravity rules.

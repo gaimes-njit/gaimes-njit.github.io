@@ -1,0 +1,4 @@
+ab_drop('b31',9)  # bottom-left part of 'M'
+ab_drop('b13',7)  # top-left part of 'M'
+ab_drop('b13',11)  # top-right part of 'M'
+ab_drop('b31',9)  # bottom-right part of 'M'

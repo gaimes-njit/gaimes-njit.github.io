@@ -1,0 +1,18 @@
+To form the shape resembling the letter "K", we can use the following sequence of ab_drop() functions:
+
+```python
+ab_drop('b13', 5)
+ab_drop('b31', 8)
+ab_drop('b11', 7)
+ab_drop('b31', 11)
+ab_drop('b13', 11)
+```
+
+Explanation:
+1. The first ab_drop() function places a vertical brick b13 starting from position x_position = 5, occupying the cells (5, 0), (5, 1), and (5, 2).
+2. The second ab_drop() function places a horizontal brick b31 starting from position x_position = 8, occupying the cells (7, 3), (8, 3), and (9, 3).
+3. The third ab_drop() function places a square brick b11 starting from position x_position = 7, occupying the cell (7, 2).
+4. The fourth ab_drop() function places another horizontal brick b31 starting from position x_position = 11, occupying the cells (10, 1), (11, 1), and (12, 1).
+5. The fifth and final ab_drop() function places another vertical brick b13 starting from position x_position = 11, occupying the cells (11, 0), (11, 1), and (11, 2).
+
+This sequence of ab_drop() functions will form the shape resembling the letter "K" within the specified field, while also satisfying the stability and boundary collision requirements.

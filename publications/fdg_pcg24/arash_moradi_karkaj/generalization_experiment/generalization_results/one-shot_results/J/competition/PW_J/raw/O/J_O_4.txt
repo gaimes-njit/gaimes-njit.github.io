@@ -1,0 +1,10 @@
+To generate the uppercase English letter "O", we can use the following sequence of ab_drop() commands:
+
+``` 
+ab_drop('b13',1)
+ab_drop('b31',1)
+ab_drop('b31',4)
+ab_drop('b13',4)
+```
+
+These commands will place the blocks in such a way that they form the shape of the letter "O" within the allowed space boundaries.

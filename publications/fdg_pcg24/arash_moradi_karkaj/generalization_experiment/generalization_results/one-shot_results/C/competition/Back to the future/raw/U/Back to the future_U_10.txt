@@ -1,0 +1,89 @@
+To generate a stable structure that looks like the uppercase character "U" and meets all the hard constraints, we need to follow these steps:
+
+1. Initialize the structure as an empty grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the b31 block in the middle of the bottom layer, ensuring stability:
+```
+ab_drop('b31', W//2)
+```
+This will result in the following structure:
+```
+structure = [[' ']*W for _ in range(H)]
+structure[H-1][W//2] = 'b31'
+```
+Coordinates: [(15, 9)]
+
+3. Drop the b13 block above the b31 block, ensuring stability and support:
+```
+ab_drop('b13', W//2)
+```
+This will result in the following structure:
+```
+structure = [[' ']*W for _ in range(H)]
+structure[H-2][W//2] = 'b13'
+structure[H-1][W//2] = 'b31'
+```
+Coordinates: [(14, 9)]
+
+4. Drop the b13 block to the left of the b31 block, ensuring stability and support:
+```
+ab_drop('b13', W//2 - 1)
+```
+This will result in the following structure:
+```
+structure = [[' ']*W for _ in range(H)]
+structure[H-3][W//2 - 1] = 'b13'
+structure[H-2][W//2] = 'b13'
+structure[H-1][W//2] = 'b31'
+```
+Coordinates: [(13, 8), (14, 9)]
+
+5. Drop the b13 block to the right of the b31 block, ensuring stability and support:
+```
+ab_drop('b13', W//2 + 1)
+```
+This will result in the following structure:
+```
+structure = [[' ']*W for _ in range(H)]
+structure[H-3][W//2 - 1] = 'b13'
+structure[H-2][W//2] = 'b13'
+structure[H-3][W//2 + 1] = 'b13'
+structure[H-1][W//2] = 'b31'
+```
+Coordinates: [(13, 8), (14, 9), (13, 10)]
+
+6. Drop the b31 block above the b13 blocks, ensuring stability and support:
+```
+ab_drop('b31', W//2)
+```
+This will result in the following structure:
+```
+structure = [[' ']*W for _ in range(H)]
+structure[H-5][W//2] = 'b31'
+structure[H-3][W//2 - 1] = 'b13'
+structure[H-2][W//2] = 'b13'
+structure[H-3][W//2 + 1] = 'b13'
+structure[H-1][W//2] = 'b31'
+```
+Coordinates: [(11, 9)]
+
+7. Drop the b11 block above the b31 block, ensuring stability and support:
+```
+ab_drop('b11', W//2)
+```
+This will result in the following structure:
+```
+structure = [[' ']*W for _ in range(H)]
+structure[H-6][W//2] = 'b11'
+structure[H-5][W//2] = 'b31'
+structure[H-3][W//2 - 1] = 'b13'
+structure[H-2][W//2] = 'b13'
+structure[H-3][W//2 + 1] = 'b13'
+structure[H-1][W//2] = 'b31'
+```
+Coordinates: [(10, 9)]
+
+Now, the structure resembles the uppercase letter "U" and meets all the hard constraints. The coordinates of each ab_drop are listed above to indicate the placement of each block.

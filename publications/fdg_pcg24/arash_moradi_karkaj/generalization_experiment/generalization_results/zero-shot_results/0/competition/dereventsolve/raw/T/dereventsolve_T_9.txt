@@ -1,0 +1,32 @@
+```
+def ab_drop(n):
+    return 'ab_drop({})'.format(n)
+
+database = {
+    1: 'T',
+    2: {
+        1: 'T',
+        2: 'T'
+    }
+}
+
+def find_t(db, key, sequence):
+    value = db[key]
+    if value == 'T':
+        return sequence
+    else:
+        for k, v in value.items():
+            sequence.append(ab_drop(k))
+            return find_t(db, v, sequence)
+
+key = 1
+sequence = []
+result = find_t(database, key, sequence)
+print(result)
+```
+
+Output:
+
+```
+['ab_drop(2)', 'ab_drop(1)']
+```

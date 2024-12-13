@@ -1,0 +1,38 @@
+To generate the uppercase English letter "S":
+
+1. Start by placing a vertical block on the left side of the grid:
+```
+ab_drop('b13', 1)
+```
+
+2. Place a horizontal block on top of the vertical block, centered:
+```
+ab_drop('b31', 0)
+```
+
+3. Place another horizontal block on top of the previous one, centered:
+```
+ab_drop('b31', 1)
+```
+
+4. Place a vertical block on the right side of the grid, aligned with the vertical block at the bottom:
+```
+ab_drop('b13', 2)
+```
+
+5. Place a horizontal block on top of the vertical block, centered:
+```
+ab_drop('b31', 0)
+```
+
+6. Place another horizontal block on top of the previous one, centered:
+```
+ab_drop('b31', 1)
+```
+
+7. Place a vertical block on the right side of the grid, aligned with the horizontal blocks at the top:
+```
+ab_drop('b13', 2)
+```
+
+Make sure to follow the stacking and stability rules while placing the blocks to construct the letter accurately.

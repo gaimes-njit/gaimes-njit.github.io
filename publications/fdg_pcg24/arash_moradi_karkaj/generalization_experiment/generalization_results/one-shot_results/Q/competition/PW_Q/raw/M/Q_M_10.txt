@@ -1,0 +1,13 @@
+To create the uppercase letter "M", we can use the following stream of commands:
+
+```
+ab_drop('b13', 1)  # Place the first vertical straight block
+ab_drop('b31', 2)  # Place the first horizontal straight block
+ab_drop('b13', 5)  # Place the second vertical straight block
+ab_drop('b13', 8)  # Place the third vertical straight block
+ab_drop('b31', 9)  # Place the second horizontal straight block
+ab_drop('b13', 12)  # Place the fourth vertical straight block
+ab_drop('b13', 15)  # Place the fifth vertical straight block
+```
+
+This sequence of commands will construct the letter "M" by stacking the block types in the correct positions.

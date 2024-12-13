@@ -1,0 +1,23 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Layer 0
+ab_drop('b31', 1)   # First horizontal block
+ab_drop('b13', 0)   # First vertical block
+
+# Layer 1
+ab_drop('b31', 2)   # Second horizontal block
+
+# Layer 2
+ab_drop('b11', 1)   # Center block of the A
+
+# Layer 3
+ab_drop('b11', 0)   # Left block of the A
+ab_drop('b11', 2)   # Right block of the A
+
+# Layer 4 to 15 (top layer)
+# Stack empty blocks to complete the height of the A structure
+for _ in range(4, H):
+    ab_drop('b11', 1)
+```

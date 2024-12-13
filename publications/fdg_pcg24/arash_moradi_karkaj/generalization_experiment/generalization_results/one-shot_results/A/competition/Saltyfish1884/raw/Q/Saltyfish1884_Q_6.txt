@@ -1,0 +1,35 @@
+To generate a stable structure resembling the character "Q" while meeting all the hard constraints, we need to follow these steps:
+
+1. Initialize the structure grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop a b11 block at slot 6 to form the base of the structure:
+```
+ab_drop('b11', 6)
+```
+
+3. Drop a b13 block at slot 5 on top of the base:
+```
+ab_drop('b13', 5)
+```
+
+4. Drop a b13 block at slot 7 on top of the base:
+```
+ab_drop('b13', 7)
+```
+
+5. Drop a b13 block at slot 6 on top of the previous b13 blocks to complete the outer shape of the "Q":
+```
+ab_drop('b13', 6)
+```
+
+6. Drop a b31 block at slot 6 on top of the outer shape to fill the inner space of the "Q":
+```
+ab_drop('b31', 6)
+```
+
+7. The final structure will resemble the character "Q".
+
+Make sure to follow the stability rules and constraints mentioned in the problem statement while determining the dropping positions and order of the blocks.

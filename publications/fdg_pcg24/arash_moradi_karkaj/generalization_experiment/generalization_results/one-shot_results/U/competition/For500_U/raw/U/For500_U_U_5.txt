@@ -1,0 +1,16 @@
+The code to generate a stable structure that looks like the capital letter "U" can be achieved using a series of `ab_drop()` function calls. Here is the code:
+
+# Initialize the structure
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop blocks to form the letter U
+ab_drop('b31', 9)
+ab_drop('b13', 8)
+ab_drop('b13', 10)
+
+This code will drop the blocks in the following sequence:
+1. Drop a horizontal block ('b31') with the center at index 9. This forms the top of the letter U.
+2. Drop a vertical block ('b13') with the center at index 8. This forms the left vertical line of the letter U.
+3. Drop another vertical block ('b13') with the center at index 10. This forms the right vertical line of the letter U.
+
+The resulting structure will resemble the capital letter "U".

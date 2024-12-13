@@ -1,0 +1,12 @@
+To generate the uppercase English letter "U", we can use the following sequence of commands:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',1)
+ab_drop('b31',4)
+ab_drop('b13',4)
+ab_drop('b31',7)
+ab_drop('b13',7)
+```
+
+Each command represents placing a block of the specified type at the given position along the width. By stacking and aligning the blocks in this sequence, we can create the shape of the letter "U" in the Tetris-like environment.

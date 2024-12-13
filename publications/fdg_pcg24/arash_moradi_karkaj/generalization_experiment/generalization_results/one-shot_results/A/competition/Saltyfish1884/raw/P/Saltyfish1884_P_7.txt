@@ -1,0 +1,38 @@
+To generate a stable structure that resembles the character "P" using the ab_drop() function and meeting all hard constraints, we need to carefully determine the dropping position and order of the blocks. Here is a step-by-step approach:
+
+1. Initialize the structure as an empty grid:
+```python
+W = 20  # width of the map
+H = 16  # height of the map
+
+structure = [[' ']*W for _ in range(H)]  # empty structure grid
+```
+
+2. Determine the order of dropping the blocks. Since the b31 block must be placed on a solid base to prevent overhangs, we need to drop the base blocks (b11 or b13) first, and then drop the b31 block on top.
+
+3. Drop the first base block (b11) to create a stable base:
+```python
+ab_drop('b11', 9)  # Drop a b11 block at slot 9
+```
+
+4. Drop the second base block (b11 or b13):
+```python
+ab_drop('b11', 10)  # Drop a b11 block at slot 10
+```
+Note: The specific slot numbers are chosen based on the desired shape of the character "P" represented by the stable structure.
+
+5. Drop the third base block (b11 or b13):
+```python
+ab_drop('b13', 9)  # Drop a b13 block at slot 9
+```
+Note: The b13 block is placed vertically to form the upright part of the character "P".
+
+6. Drop the b31 block on top of the base blocks to complete the structure:
+```python
+ab_drop('b31', 9)  # Drop a b31 block at slot 9
+```
+Note: The b31 block is placed horizontally to form the curved part of the character "P" on top of the upright part.
+
+7. The resulting structure will resemble the character "P" and meet all hard constraints, including stability and no boundary intrusion.
+
+Note: The specific slot numbers and block types used in steps 3 to 6 can be adjusted to create different variations of the character "P" structure. The key is to ensure stability and fulfillment of the constraints.

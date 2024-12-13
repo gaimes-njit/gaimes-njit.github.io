@@ -1,0 +1,4 @@
+ab_drop('b31', 18)  # create a stable base for the structure
+ab_drop('b31', 9)   # create the top part of the 'G' shape
+ab_drop('b13', 8)   # create the middle part of the 'G' shape
+ab_drop('b13', 10)  # create the bottom part of the 'G' shape

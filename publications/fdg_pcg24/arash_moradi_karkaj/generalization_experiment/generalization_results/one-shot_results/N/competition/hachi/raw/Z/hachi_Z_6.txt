@@ -1,0 +1,19 @@
+Example:
+
+```python
+ab_drop("b31", 5)
+ab_drop("b13", 11)
+ab_drop("b31", 7)
+ab_drop("b13", 9)
+```
+
+Explanation:
+
+In this example, the blocks are dropped in a strategic manner to form the capital letter "Z". The blocks are placed in the following sequence:
+
+1. `b31` block dropped at `x_position` 5.
+2. `b13` block dropped at `x_position` 11.
+3. `b31` block dropped at `x_position` 7.
+4. `b13` block dropped at `x_position` 9.
+
+This sequence of block placements results in a stable structure resembling the letter "Z". The blocks are positioned to create the diagonal lines of the letter, while maintaining stability and minimizing boundary intrusion.

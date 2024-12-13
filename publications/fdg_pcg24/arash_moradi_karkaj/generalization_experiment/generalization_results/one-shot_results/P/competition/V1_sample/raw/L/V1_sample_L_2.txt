@@ -1,0 +1,15 @@
+To generate a stable structure that looks like the "L" shape, you can follow these steps:
+
+1. Start by dropping a b13 block from layer 15 with its center at slot 10 using the ‘ab drop()’ function.
+
+ab drop(b13, 15, 10);
+
+2. Next, drop a b31 block from layer 14 with its center at slot 10 using the ‘ab drop()’ function.
+
+ab drop(b31, 14, 10);
+
+3. Finally, drop a b11 block from layer 13 with its center at slot 10 using the ‘ab drop()’ function.
+
+ab drop(b11, 13, 10);
+
+These steps will create a stable structure that resembles the "L" shape, with each block stacked on top of the other to form the desired shape. Make sure to drop the blocks in the correct order and position to ensure stability and achieve the desired structure.

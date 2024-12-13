@@ -1,0 +1,48 @@
+To generate a stable structure that looks like the uppercase letter "G" using the `ab_drop()` function, you need to carefully consider the constraints and placement of each block. Here is a step-by-step process:
+
+1. Start by initializing the structure as an empty grid using the provided code:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Place the first block `b31` at a suitable slot near the center of the structure. This will act as the base for the letter "G". Use the `ab_drop()` function to drop the block and update the structure accordingly.
+```
+ab_drop('b31', 9)  # or any suitable slot near the center
+```
+
+3. Place the second block `b11` directly above the base block, aligned with its center. This will be the top-right part of the letter "G".
+```
+ab_drop('b11', 9)
+```
+
+4. Place the third block `b11` diagonally above the base block, aligned with its center. This will be the top-left part of the letter "G".
+```
+ab_drop('b11', 8)
+```
+
+5. Place the fourth block `b11` on top of the top-right block, aligned with its center. This will be the middle-right part of the letter "G".
+```
+ab_drop('b11', 9)
+```
+
+6. Place the fifth block `b31` diagonally above the fourth block, aligned with its center. This will complete the middle part of the letter "G".
+```
+ab_drop('b31', 8)
+```
+
+7. Place the sixth block `b13` on top of the fourth and fifth blocks, aligned with their center. This will be the top-middle part of the letter "G".
+```
+ab_drop('b13', 8)
+```
+
+8. Place the seventh block `b31` vertically above the base block, aligned with its center. This will be the bottom part of the letter "G".
+```
+ab_drop('b31', 9)
+```
+
+9. Finally, place the eighth block `b13` diagonally above the seventh block, aligned with its center. This will complete the bottom part of the letter "G".
+```
+ab_drop('b13', 8)
+```
+
+After following these steps, the `structure` variable will contain a stable structure that resembles the uppercase letter "G" and meets all the hard constraints. Remember to add stability checks before each call to `ab_drop()` to ensure the structure remains stable throughout the generation process.

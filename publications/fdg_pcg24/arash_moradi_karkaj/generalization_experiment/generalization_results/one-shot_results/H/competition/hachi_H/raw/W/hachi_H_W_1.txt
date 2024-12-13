@@ -1,0 +1,13 @@
+Here's one possible solution for the capital letter "W":
+
+```
+ab_drop('b13', 0)
+ab_drop('b11', 1)
+ab_drop('b31', 5)
+ab_drop('b11', 9)
+ab_drop('b31', 13)
+ab_drop('b11', 17)
+ab_drop('b13', 19)
+```
+
+This solution creates a stable structure for the letter "W" with minimal boundary intrusion.

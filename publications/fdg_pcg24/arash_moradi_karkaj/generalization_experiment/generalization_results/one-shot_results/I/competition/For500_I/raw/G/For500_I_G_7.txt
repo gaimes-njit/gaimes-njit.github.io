@@ -1,0 +1,9 @@
+ab_drop('b31', 9)  # Create the top horizontal bar of the 'G'
+ab_drop('b31', 9)
+ab_drop('b31', 9)
+ab_drop('b31', 8)  # Create the bottom horizontal bar of the 'G'
+ab_drop('b31', 8)
+ab_drop('b31', 8)
+ab_drop('b13', 8)  # Create the vertical part of the 'G'
+ab_drop('b13', 10)
+ab_drop('b13', 12)

@@ -1,0 +1,7 @@
+To create a level that looks like the letter Z, we can break it down into three blocks: a row block, a column block, and another row block. We will start building from the bottom.
+
+Here is the complete implementation:
+
+ab_drop("b31", 9)  # Bottom row block (centered at x_position=9), occupies cells (8, 0), (9, 0), (10, 0)
+ab_drop("b13", 10)  # Column block (centered at x_position=10), occupies cells (10, 1), (10, 0), (10, -1)
+ab_drop("b31", 11)  # Top row block (centered at x_position=11), occupies cells (10, 2), (11, 2), (12, 2)

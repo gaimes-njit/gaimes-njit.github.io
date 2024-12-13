@@ -1,0 +1,17 @@
+First, let's define the structure of the letter "U" using the available block types:
+
+```
+Stream of commands:
+ab_drop('b31', 1)  # Place the first horizontal block at position 1
+ab_drop('b13', 1)  # Place the first vertical block at position 1
+ab_drop('b13', 4)  # Place the second vertical block at position 4
+ab_drop('b31', 6)  # Place the second horizontal block at position 6
+ab_drop('b13', 6)  # Place the third vertical block at position 6
+ab_drop('b13', 9)  # Place the fourth vertical block at position 9
+ab_drop('b31', 11)  # Place the third horizontal block at position 11
+ab_drop('b13', 11)  # Place the fifth vertical block at position 11
+ab_drop('b13', 14)  # Place the sixth vertical block at position 14
+ab_drop('b31', 16)  # Place the fourth horizontal block at position 16
+```
+
+This sequence of commands will create a stable structure that resembles the uppercase letter "U".

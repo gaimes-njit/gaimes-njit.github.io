@@ -1,0 +1,43 @@
+To generate a stable structure that resembles the character "U" while meeting all hard constraints, we can follow these steps:
+
+1. Start by initializing the structure as an empty WxH grid using the provided code:
+```
+W = 20
+H = 16
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Place the base of the structure by dropping a b11 block at the center slot (W/2) using the ab_drop() function:
+```
+ab_drop('b11', W//2)
+```
+
+3. Place the two vertical sides of the "U" by dropping b13 blocks adjacent to the base blocks. We can drop them at slots W/2-2 and W/2+2:
+```
+ab_drop('b13', W//2-2)
+ab_drop('b13', W//2+2)
+```
+
+4. Place the horizontal bridge of the "U" by dropping a b31 block on top of the two vertical blocks. We can drop it at the slot W/2:
+```
+ab_drop('b31', W//2)
+```
+
+5. Make sure the structure is stable and does not collapse. To do this, we need to consider the stability rules:
+   - Ensure the b31 block is placed on a solid base by checking that the blocks below it (b11 or b13 blocks) are not empty. If they are, adjust the position of the b31 block until it is above a solid base.
+   - Ensure the blocks are placed as low as possible by dropping them at the lowest possible layer.
+
+6. Check if the structure meets the no boundary intrusion soft constraint. If any blocks are intruding on the map's boundary (slots 0 or 19), adjust their positions to avoid intrusion.
+
+7. Repeat steps 5 and 6 until the structure is stable and satisfies all constraints.
+
+Here is an example of how the final structure might look after applying these steps:
+
+```
+structure = [
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',

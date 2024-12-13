@@ -1,0 +1,10 @@
+To generate the uppercase English letter "T", we can use the following stream of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```
+
+These commands will place the blocks in such a way that they resemble the letter "T" within the defined boundaries and gravity rules.

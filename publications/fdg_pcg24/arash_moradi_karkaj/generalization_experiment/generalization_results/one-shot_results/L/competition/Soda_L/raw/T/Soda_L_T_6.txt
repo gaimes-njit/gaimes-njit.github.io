@@ -1,0 +1,15 @@
+To generate a structure in the shape of a capital "T", we can create two block types: a vertical pipe and a horizontal bar.
+
+Here is the implementation to create the "T" shape on the grid:
+
+```
+# Create the vertical pipe
+ab_drop("b31", 9) # Place block at x_position=9, occupying cells (8, 0), (9, 0), (10, 0)
+
+# Create the horizontal bar
+ab_drop("b13", 9) # Place block at x_position=9, occupying cells (8, 1), (9, 1), (10, 1)
+```
+
+This implementation places a vertical pipe block at position x=9 (centered) and a horizontal bar block at the same position. This will create the desired "T" shape on the grid.
+
+Note: The order of dropping the blocks is crucial. We place the vertical pipe block first to ensure it acts as the base for the horizontal bar block.

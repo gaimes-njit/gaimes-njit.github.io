@@ -1,0 +1,8 @@
+```
+ab_drop("b31", 1)  # Place horizontal block at position 1
+ab_drop("b11", 4)  # Place square block at position 4
+ab_drop("b13", 4)  # Place vertical block at position 4
+ab_drop("b11", 5)  # Place square block at position 5
+ab_drop("b11", 6)  # Place square block at position 6
+```
+This will create the letter "L" in the Tetris-like environment.

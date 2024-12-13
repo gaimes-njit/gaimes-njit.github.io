@@ -1,0 +1,12 @@
+To create the uppercase letter "F" in the Tetris-like environment, you can use the following stream of commands:
+
+```
+ab_drop('b13', 1)  // Place the vertical foundation of the letter 'F' at position 1
+ab_drop('b13', 3)  // Place the second vertical block of the letter 'F' at position 3
+ab_drop('b13', 4)  // Place the third vertical block of the letter 'F' at position 4
+ab_drop('b13', 6)  // Place the final vertical block of the letter 'F' at position 6
+ab_drop('b31', 2)  // Place the horizontal top bar of the letter 'F' at position 2
+ab_drop('b31', 5)  // Place the second horizontal top bar of the letter 'F' at position 5
+```
+
+By executing these commands consecutively, you will construct the uppercase letter "F" within the defined environment.

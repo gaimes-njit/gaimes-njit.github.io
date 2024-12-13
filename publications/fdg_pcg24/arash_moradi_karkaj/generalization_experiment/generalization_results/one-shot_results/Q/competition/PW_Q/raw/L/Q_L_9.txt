@@ -1,0 +1,10 @@
+To generate the uppercase letter "L", we can use the block types b31 and b13. Here is a stream of commands that will construct the letter "L" in the given environment:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+ab_drop('b13', 3)
+ab_drop('b13', 2)
+```
+
+The above commands will place the blocks in the correct positions to form the letter "L" within the boundaries of the allowed space.

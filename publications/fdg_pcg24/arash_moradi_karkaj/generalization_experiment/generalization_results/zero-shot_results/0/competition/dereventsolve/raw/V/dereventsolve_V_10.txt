@@ -1,0 +1,37 @@
+```python
+# Querying the database for required letter "V"
+letter_V = database['letter_V']
+
+# Returning the sequence of ab_drop function calls
+sequence_of_ab_drop_calls = ''
+for row in letter_V:
+    sequence_of_ab_drop_calls += 'ab_drop({})\n'.format(row)
+
+sequence_of_ab_drop_calls
+```
+
+Here's the sequence of `ab_drop` function calls to generate a structure that looks like the letter "V":
+
+```python
+ab_drop(2)
+ab_drop(2)
+ab_drop(0)
+ab_drop(1)
+ab_drop(1)
+ab_drop(2)
+ab_drop(0)
+ab_drop(2)
+ab_drop(1)
+ab_drop(0)
+ab_drop(1)
+ab_drop(1)
+ab_drop(0)
+ab_drop(1)
+ab_drop(2)
+ab_drop(0)
+ab_drop(1)
+ab_drop(2)
+ab_drop(2)
+ab_drop(0)
+ab_drop(1)
+```

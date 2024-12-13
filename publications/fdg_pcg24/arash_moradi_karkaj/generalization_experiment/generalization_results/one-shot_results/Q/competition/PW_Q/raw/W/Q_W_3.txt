@@ -1,0 +1,29 @@
+To generate the uppercase letter "W", we can break it down into three parts: two diagonal strokes and a middle horizontal stroke. 
+
+First, let's start with the first diagonal stroke. We can use the block type "b13" (vertical straight block) for this part. We need to place it at position 1 along the width and let gravity pull it down to the desired height. 
+
+```py
+ab_drop('b13', 1)
+```
+
+Next, let's move to the second diagonal stroke. Again, we will use the block type "b13" but this time we need to place it at position 5 along the width to create the diagonal effect. 
+
+```py
+ab_drop('b13', 5)
+```
+
+Finally, we need to add the middle horizontal stroke. For this, we will use the block type "b31" (horizontal straight block). We need to place it at position 2 along the width to align it with the two diagonal strokes. 
+
+```py
+ab_drop('b31', 2)
+```
+
+Combining all the commands, we get:
+
+```py
+ab_drop('b13', 1)
+ab_drop('b13', 5)
+ab_drop('b31', 2)
+```
+
+This will create the uppercase letter "W" in the Tetris-like environment with 2D gravity rules.

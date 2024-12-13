@@ -1,0 +1,53 @@
+Step 2:
+In drawing the letter "I" with asterisks, it consists of 3 rows.
+
+Row 1: 
+Asterisks - 1
+Spaces - 0
+
+Row 2: 
+Asterisks - 1
+Spaces - 0
+
+Row 3: 
+Asterisks - 1
+Spaces - 0
+
+Step 3:
+Using the alternative variables, "x" for asterisks and "y" for spaces:
+
+Row 1:
+x - 1
+y - 0
+
+Row 2:
+x - 1
+y - 0
+
+Row 3:
+x - 1
+y - 0
+
+Step 4:
+Combining the variables side by side for each row:
+
+Row 1: xy
+Row 2: xy
+Row 3: xy
+
+Step 5:
+Indicating the position of each variable for each row:
+
+Row 1: x-1; y-2
+Row 2: x-1; y-2
+Row 3: x-1; y-2
+
+Step 6:
+Converting the positions of the variables into `ab_drop` function calls:
+
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)

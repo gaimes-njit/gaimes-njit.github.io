@@ -1,0 +1,7 @@
+ab_drop('b31', 7)   # place bottom horizontal line of 'W'
+ab_drop('b11', 8)   # place bottom left diagonal line of 'W'
+ab_drop('b11', 6)   # place bottom right diagonal line of 'W'
+ab_drop('b31', 7)   # place middle horizontal line of 'W'
+ab_drop('b11', 8)   # place middle left diagonal line of 'W'
+ab_drop('b11', 6)   # place middle right diagonal line of 'W'
+ab_drop('b31', 7)   # place top horizontal line of 'W'

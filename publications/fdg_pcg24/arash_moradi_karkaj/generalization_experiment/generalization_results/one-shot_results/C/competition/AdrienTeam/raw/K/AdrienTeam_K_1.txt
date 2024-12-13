@@ -1,0 +1,36 @@
+```
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop b11 blocks to create the top of the diagonal line of the "K"
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+
+# Drop b11 blocks to create the diagonal line of the "K"
+ab_drop('b11', 6)
+ab_drop('b11', 7)
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Drop b11 blocks to create the bottom of the diagonal line of the "K"
+ab_drop('b11', 7)
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+
+# Drop b11 blocks to create the bottom leg of the "K"
+ab_drop('b11', 7)
+ab_drop('b11', 8)
+
+# Drop b13 blocks to create the bottom leg of the "K"
+ab_drop('b13', 7)
+
+# Drop b31 blocks to create the middle leg of the "K"
+ab_drop('b31', 8)
+
+# Drop b11 blocks to create the top leg of the "K"
+ab_drop('b11', 9)
+
+# Drop b13 blocks to create the top leg of the "K"
+ab_drop('b13', 9)
+```

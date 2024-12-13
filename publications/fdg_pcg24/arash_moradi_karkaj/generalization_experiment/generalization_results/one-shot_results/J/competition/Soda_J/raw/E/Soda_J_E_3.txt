@@ -1,0 +1,8 @@
+# Creating the top bar of the letter E
+ab_drop("b31", 8)
+
+# Creating the middle pipe of the letter E
+ab_drop("b31", 9)
+
+# Creating the bottom bar of the letter E
+ab_drop("b31", 10)

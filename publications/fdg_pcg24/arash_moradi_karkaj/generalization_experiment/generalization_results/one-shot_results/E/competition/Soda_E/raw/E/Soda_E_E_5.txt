@@ -1,0 +1,29 @@
+# Step 1: Build the top horizontal bar of E
+ab_drop("b13", 0)
+ab_drop("b11", 1)
+ab_drop("b13", 3)
+ab_drop("b11", 4)
+ab_drop("b13", 6)
+ab_drop("b11", 7)
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+
+# Step 2: Build the middle horizontal bar of E
+ab_drop("b13", 0)
+ab_drop("b11", 1)
+ab_drop("b13", 3)
+ab_drop("b11", 4)
+ab_drop("b13", 6)
+ab_drop("b11", 7)
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+
+# Step 3: Build the bottom horizontal bar of E
+ab_drop("b13", 0)
+ab_drop("b11", 1)
+ab_drop("b13", 3)
+ab_drop("b11", 4)
+ab_drop("b13", 6)
+ab_drop("b11", 7)
+ab_drop("b13", 9)
+ab_drop("b11", 10)

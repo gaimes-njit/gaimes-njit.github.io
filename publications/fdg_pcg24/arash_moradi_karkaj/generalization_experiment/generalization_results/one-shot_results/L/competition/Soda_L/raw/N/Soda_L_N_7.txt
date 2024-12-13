@@ -1,0 +1,18 @@
+To generate the letter "N" in the level, we can break it down into three blocks: two column blocks and a row block. We will start building the structure from the bottom and work our way up.
+
+1. Place the first column block at the bottom-left corner:
+```
+ab_drop("b13", 0)
+```
+
+2. Place the row block on top of the first column block:
+```
+ab_drop("b31", 0)
+```
+
+3. Place the second column block on top of the row block, shifted to the right:
+```
+ab_drop("b13", 2)
+```
+
+This series of ab_drop() calls will generate a structure that resembles the letter "N".

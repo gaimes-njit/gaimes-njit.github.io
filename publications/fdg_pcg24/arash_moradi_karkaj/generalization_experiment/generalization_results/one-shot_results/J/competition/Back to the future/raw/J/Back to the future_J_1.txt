@@ -1,0 +1,33 @@
+To generate a stable structure that looks like the uppercase character "J" and meets all the hard constraints, you can follow these steps:
+
+1. Initialize the structure as an empty WxH grid using the given code:
+    ```python
+    structure = [[' ']*W for _ in range(H)]
+    ```
+
+2. Drop the b31 block to form the base of the "J" structure using the `ab_drop()` function. Choose a suitable slot number y within the boundary and drop the block. For stability, make sure to check if the block can be placed without collapsing or descending. The drop position coordinates will be returned by the `ab_drop()` function.
+
+3. Drop the b31 block on top of the base to form the vertical part of the "J" structure. Again, choose a suitable slot number y within the boundary and drop the block. Make sure to check for stability before dropping.
+
+4. Drop the b13 block on top of the vertical part to complete the shape of the "J" structure. Choose a suitable slot number y within the boundary and drop the block. Ensure stability before dropping.
+
+Here's an example code snippet that demonstrates the steps mentioned above:
+
+```python
+# Initialize the structure as an empty grid
+structure = [[' ']*W for _ in range(H)]
+
+# First, drop the b31 block to form the base
+base_drop = ab_drop('b31', 8)  # Choose a suitable slot number for the base
+structure[base_drop[0]][base_drop[1]] = 'b31'
+
+# Next, drop the b31 block on top of the base
+vertical_drop = ab_drop('b31', 8)  # Choose a suitable slot number for the vertical part
+structure[vertical_drop[0]][vertical_drop[1]] = 'b31'
+
+# Finally, drop the b13 block on top of the vertical part to complete the "J" structure
+top_drop = ab_drop('b13', 8)  # Choose a suitable slot number for the top part
+structure[top_drop[0]][top_drop[1]] = 'b13'
+```
+
+Remember to choose suitable slot numbers for stability and adjust the drop positions accordingly. Repeat/modify the steps as necessary to meet the hard constraints and generate a stable "J" structure.

@@ -1,0 +1,9 @@
+```
+ab_drop('b31', 1)  # First row
+ab_drop('b13', 4)  # Second row
+ab_drop('b13', 7)  # Third row
+ab_drop('b31', 10) # Fourth row
+ab_drop('b13', 13) # Fifth row
+ab_drop('b13', 16) # Sixth row
+ab_drop('b31', 19) # Seventh row
+```

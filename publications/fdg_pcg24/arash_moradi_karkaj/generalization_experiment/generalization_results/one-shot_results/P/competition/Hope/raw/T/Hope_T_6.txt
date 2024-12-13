@@ -1,0 +1,7 @@
+To create a structure exactly like "T" inside a 20*16 box, you can use the following sequence of ab_drop commands:
+
+1. ab_drop('b13', 9) - This will drop a 1*3 block in the center of the top row (y=0).
+2. ab_drop('b31', 9) - This will drop a 3*1 block in the center of the second row (y=1).
+3. ab_drop('b11', 10) - This will drop a 1*1 block slightly right to the center of the second row (y=1).
+
+This sequence will create a structure exactly like "T" inside the given box.

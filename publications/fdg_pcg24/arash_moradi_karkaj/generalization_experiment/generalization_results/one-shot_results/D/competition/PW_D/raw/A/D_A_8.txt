@@ -1,0 +1,16 @@
+To create the uppercase English letter "A", we can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```
+
+Explanation:
+- The first command (`ab_drop('b31', 1)`) places a horizontal straight block (`b31`) at position 1.
+- The second command (`ab_drop('b13', 0)`) places a vertical straight block (`b13`) at position 0.
+- The third command (`ab_drop('b13', 2)`) places another vertical straight block (`b13`) at position 2.
+- The fourth command (`ab_drop('b31', 1)`) places another horizontal straight block (`b31`) at position 1.
+
+Together, these commands construct the uppercase letter "A" in the Tetris-like environment.

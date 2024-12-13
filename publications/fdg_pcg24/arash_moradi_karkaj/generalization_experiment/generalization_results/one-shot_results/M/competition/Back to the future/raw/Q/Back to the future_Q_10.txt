@@ -1,0 +1,11 @@
+To generate a stable structure that looks like the uppercase character "Q" and meets all the hard constraints, we can follow these steps using the `ab_drop()` function:
+
+1. Initialize the structure as an empty WxH grid using the provided initialization code.
+2. Drop a b13 block at slot 9 and layer 0 to form the vertical part of the "Q". This will be the initial support for the other blocks.
+3. Drop a b31 block at slot 7 and layer 3 to form the horizontal part of the "Q". This block will rest on top of the b13 block and provide stability.
+4. Drop a b11 block at slot 7 and layer 6 to form the upper part of the "Q". This block will rest on top of the b31 block and complete the shape.
+5. Drop a b31 block at slot 9 and layer 6 to add stability to the upper part of the "Q". This block will rest on top of the b11 block.
+6. Drop a b13 block at slot 8 and layer 9 to add support to the lower part of the "Q". This block will rest on top of the b31 block and connect to the b13 block at the base.
+7. Drop a b11 block at slot 9 and layer 12 to add the final piece to the lower part of the "Q". This block will rest on top of the b13 block and complete the shape.
+
+The resulting structure will resemble the uppercase letter "Q" and meet all the hard constraints.

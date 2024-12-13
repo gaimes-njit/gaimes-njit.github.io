@@ -1,0 +1,21 @@
+To create the letter "N" in the level, we can break it down into three blocks: a vertical pillar, a diagonal slant, and another vertical pillar. Here's the step-by-step implementation:
+
+1. Create the first vertical pillar:
+```
+# The left vertical pillar
+ab_drop("b31", 5)
+``` 
+
+2. Create the diagonal slant:
+```
+# The diagonal slant
+ab_drop("b13", 6)
+``` 
+
+3. Create the second vertical pillar:
+```
+# The right vertical pillar
+ab_drop("b31", 7)
+``` 
+
+This implementation will create the letter "N" in the level in a bottom-to-top fashion while maintaining stability.

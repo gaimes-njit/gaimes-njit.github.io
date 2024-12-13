@@ -1,0 +1,32 @@
+First, we need to build the bottom horizontal bar of the letter S. We can use the row block "b31" to achieve this. We will start at position x = 4 and drop the block. 
+
+```
+ab_drop("b31", 4)
+```
+
+Next, we need to build the middle vertical bar of the letter S. We can use the column block "b13" for this. We will start at position x = 7 and drop the block. 
+
+```
+ab_drop("b13", 7)
+```
+
+Now, we need to add the top horizontal bar of the letter S. We can use the row block "b31" again and start at position x = 4. 
+
+```
+ab_drop("b31", 4)
+```
+
+Finally, we need to add the diagonal extension of the letter S. We can use the square block "b11" to achieve this. We will start at position x = 5 and drop the block. 
+
+```
+ab_drop("b11", 5)
+```
+
+The final implementation, with all the ab_drop() calls, is as follows:
+
+```
+ab_drop("b31", 4)
+ab_drop("b13", 7)
+ab_drop("b31", 4)
+ab_drop("b11", 5)
+```

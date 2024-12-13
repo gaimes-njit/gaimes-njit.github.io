@@ -1,0 +1,20 @@
+To generate the target letter "N" in a level, we will build the structure in a bottom-to-top fashion using the ab_drop() function. 
+
+First, we need to build the two vertical bars of the letter "N". We can start from the left side and move to the right side to create the bars. The bars will be made using the "b13" block type.
+
+```
+# Drop the first vertical bar at position 5
+ab_drop("b13", 5)
+
+# Drop the second vertical bar at position 11
+ab_drop("b13", 11)
+```
+
+Next, we need to connect the two vertical bars with a horizontal bar at the top. We can use the "b31" block type to create the horizontal bar.
+
+```
+# Drop the horizontal bar at position 9
+ab_drop("b31", 9)
+```
+
+The above code sequence will create a structure that resembles the letter "N" in the level. The blocks will be dropped in a bottom-to-top fashion ensuring stability.

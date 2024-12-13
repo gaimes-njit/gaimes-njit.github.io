@@ -1,0 +1,13 @@
+To generate the uppercase letter "R" using the mentioned command and block types, you can follow the following steps:
+
+1. Start by placing a horizontal straight block (b31) at position 2 of the width: 
+   ```
+   ab_drop('b31',2)
+   ```
+
+2. Next, place a vertical straight block (b13) at position 1 of the width:
+   ```
+   ab_drop('b13',1)
+   ```
+
+This sequence of commands will generate the uppercase letter "R" in the defined environment.

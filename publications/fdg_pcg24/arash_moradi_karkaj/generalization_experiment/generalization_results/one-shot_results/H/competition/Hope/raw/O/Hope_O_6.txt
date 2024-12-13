@@ -1,0 +1,41 @@
+To create the structure "O" inside a 20*16 box block using the ab_drop() function, you can follow these steps:
+
+1. Place the top horizontal line of the "O" structure:
+   - Use ab_drop('b11', 3) to drop a 1*1 block at position (3,0).
+   - Use ab_drop('b11', 4) to drop a 1*1 block at position (4,0).
+   - Use ab_drop('b11', 5) to drop a 1*1 block at position (5,0).
+   - Use ab_drop('b11', 6) to drop a 1*1 block at position (6,0).
+
+2. Place the bottom horizontal line of the "O" structure:
+   - Use ab_drop('b11', 3) to drop a 1*1 block at position (3,15).
+   - Use ab_drop('b11', 4) to drop a 1*1 block at position (4,15).
+   - Use ab_drop('b11', 5) to drop a 1*1 block at position (5,15).
+   - Use ab_drop('b11', 6) to drop a 1*1 block at position (6,15).
+
+3. Place the left vertical line of the "O" structure:
+   - Use ab_drop('b11', 2) to drop a 1*1 block at position (2,7).
+   - Use ab_drop('b11', 2) to drop a 1*1 block at position (2,8).
+   - Use ab_drop('b11', 2) to drop a 1*1 block at position (2,9).
+   - Use ab_drop('b11', 2) to drop a 1*1 block at position (2,10).
+   - Use ab_drop('b11', 2) to drop a 1*1 block at position (2,11).
+   - Use ab_drop('b11', 2) to drop a 1*1 block at position (2,12).
+
+4. Place the right vertical line of the "O" structure:
+   - Use ab_drop('b11', 7) to drop a 1*1 block at position (7,7).
+   - Use ab_drop('b11', 7) to drop a 1*1 block at position (7,8).
+   - Use ab_drop('b11', 7) to drop a 1*1 block at position (7,9).
+   - Use ab_drop('b11', 7) to drop a 1*1 block at position (7,10).
+   - Use ab_drop('b11', 7) to drop a 1*1 block at position (7,11).
+   - Use ab_drop('b11', 7) to drop a 1*1 block at position (7,12).
+
+5. Place the top-left corner block of the "O" structure:
+   - Use ab_drop('b11', 2) to drop a 1*1 block at position (2,0).
+
+6. Place the top-right corner block of the "O" structure:
+   - Use ab_drop('b11', 7) to drop a 1*1 block at position (7,0).
+
+7. Place the bottom-left corner block of the "O" structure:
+   - Use ab_drop('b11', 2) to drop a 1*1 block at position (2,15).
+
+8. Place the bottom-right corner block of the "O" structure:
+  - Use ab_drop('b11', 7) to drop a 1*1 block at position (7,15).

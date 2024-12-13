@@ -1,0 +1,11 @@
+To generate the uppercase letter "W", we will break it down into three parts: two vertical straight blocks (b13) on the sides and a horizontal straight block (b31) in the middle.
+
+Here is the sequence of ab_drop() commands to create the letter "W":
+
+```
+ab_drop('b13',1)  # Place first vertical straight block on the left
+ab_drop('b31',2)  # Place horizontal straight block in the middle
+ab_drop('b13',4)  # Place second vertical straight block on the right
+```
+
+Please note that the exact position and alignment of the blocks within the grid may need adjustments depending on the specific implementation of the Tetris-like environment.

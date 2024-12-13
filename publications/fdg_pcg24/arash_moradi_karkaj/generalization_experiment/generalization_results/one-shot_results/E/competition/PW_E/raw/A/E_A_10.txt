@@ -1,0 +1,16 @@
+To generate the uppercase English letter "A", you can use the following stream of ab_drop() commands:
+
+```plaintext
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b11', 3)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+```
+
+Explanation:
+1. Start by placing a vertical straight block (b13) at position (1,1), which represents the left side of the letter "A".
+2. Place another vertical straight block (b13) at position (2,2), which represents the right side of the letter "A".
+3. Place a square block (b11) at position (3,3), which represents the middle part of the letter "A".
+4. Place a horizontal straight block (b31) at position (2,2), which represents the top part of the letter "A".
+5. Finally, place another horizontal straight block (b31) at position (3,3), which completes the formation of the letter "A".

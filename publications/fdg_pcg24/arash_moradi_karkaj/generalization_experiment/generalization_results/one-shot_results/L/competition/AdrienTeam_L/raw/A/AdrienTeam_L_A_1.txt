@@ -1,0 +1,25 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Bottom layer
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+
+# Layer 1
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+
+# Layer 2
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+
+# Layer 3 onwards
+for i in range(3, 16):
+    ab_drop('b11', 1)
+
+# Display the structure
+for layer in structure:
+    print(layer)
+```

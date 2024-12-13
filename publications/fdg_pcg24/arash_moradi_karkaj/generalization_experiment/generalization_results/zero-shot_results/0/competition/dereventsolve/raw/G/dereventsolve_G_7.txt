@@ -1,0 +1,15 @@
+To generate a structure that looks like the letter "G", we can use the following `ab_drop` function calls:
+
+```
+ab_drop("a", "G", {"a": "     _________",
+                    "   /____________\\",
+                    "  |      _______/",
+                    " /      /",
+                    "|      |",
+                    "|      |",
+                    " \\      \\____",
+                    "  |_________/",
+                    " /  gbqsdb  "})     
+```
+
+This sequence of `ab_drop` function calls displays the ASCII art representation of the letter "G" using the values stored in the database.

@@ -1,0 +1,64 @@
+```
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the first block vertically from layer 0, aligning its center with slot 0
+ab_drop('b11', 0)
+
+# Drop the second block vertically from layer 1, aligning its center with slot 0
+ab_drop('b11', 0)
+
+# Drop the third block vertically from layer 2, aligning its center with slot 1
+ab_drop('b11', 1)
+
+# Drop the fourth block vertically from layer 3, aligning its center with slot 1
+ab_drop('b11', 1)
+
+# Drop the fifth block vertically from layer 4, aligning its center with slot 2
+ab_drop('b11', 2)
+
+# Drop the sixth block vertically from layer 5, aligning its center with slot 3
+ab_drop('b11', 3)
+
+# Drop the seventh block vertically from layer 6, aligning its center with slot 3
+ab_drop('b11', 3)
+
+# Drop the eighth block vertically from layer 7, aligning its center with slot 4
+ab_drop('b11', 4)
+
+# Drop the ninth block vertically from layer 8, aligning its center with slot 5
+ab_drop('b11', 5)
+
+# Drop the tenth block vertically from layer 9, aligning its center with slot 6
+ab_drop('b31', 6)
+
+# Drop the eleventh block vertically from layer 9, aligning its center with slot 5
+ab_drop('b11', 5)
+
+# Drop the twelfth block vertically from layer 10, aligning its center with slot 6
+ab_drop('b11', 6)
+
+# Drop the thirteenth block vertically from layer 10, aligning its center with slot 5
+ab_drop('b11', 5)
+
+# Drop the fourteenth block vertically from layer 11, aligning its center with slot 6
+ab_drop('b11', 6)
+
+# Drop the fifteenth block vertically from layer 11, aligning its center with slot 5
+ab_drop('b11', 5)
+
+# Drop the sixteenth block vertically from layer 12, aligning its center with slot 4
+ab_drop('b13', 4)
+
+# Drop the seventeenth block vertically from layer 12, aligning its center with slot 2
+ab_drop('b11', 2)
+
+# Drop the eighteenth block vertically from layer 13, aligning its center with slot 3
+ab_drop('b11', 3)
+
+# Drop the nineteenth block vertically from layer 14, aligning its center with slot 1
+ab_drop('b11', 1)
+
+# Drop the twentieth block vertically from layer 15, aligning its center with slot 2
+ab_drop('b11', 2)
+
+```

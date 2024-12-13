@@ -1,0 +1,105 @@
+Steps:
+1. Drawing the letter "W" with asterisks:
+```
+*     *  
+*     *  
+*  *  *  
+* * * * 
+*    *  
+*     *  
+```
+2. Verbal list of asterisks and spaces in each row:
+- Row 1: 1 asterisk, 5 spaces
+- Row 2: 1 asterisk, 5 spaces
+- Row 3: 1 asterisk, 3 spaces, 1 asterisk, 3 spaces, 1 asterisk
+- Row 4: 1 asterisk, 1 space, 1 asterisk, 1 space, 1 asterisk, 1 space, 1 asterisk
+- Row 5: 1 asterisk, 3 spaces, 1 asterisk, 3 spaces, 1 asterisk
+- Row 6: 1 asterisk, 5 spaces
+3. Asterisks as "x" and spaces as "y":
+- Row 1: 1x, 5y
+- Row 2: 1x, 5y
+- Row 3: 1x, 3y, 1x, 3y, 1x
+- Row 4: 1x, 1y, 1x, 1y, 1x, 1y, 1x
+- Row 5: 1x, 3y, 1x, 3y, 1x
+- Row 6: 1x, 5y
+4. Converted to a sequence of "x" and "y" without separators:
+- Row 1: xyyyyy
+- Row 2: xyyyyy
+- Row 3: xyyxyyx
+- Row 4: xxyxxyx
+- Row 5: xyyxyyx
+- Row 6: xyyyyy
+5. Position of each variable in each row:
+- Row 1: x-1; y-2, y-3, y-4, y-5, y-6
+- Row 2: x-1; y-2, y-3, y-4, y-5, y-6
+- Row 3: x-1; y-2, y-3, y-4; x-5; y-6, y-7, y-8; x-9; y-10, y-11, y-12
+- Row 4: x-1; y-2; x-3; y-4; x-5; y-6; x-7; y-8; x-9; y-10; x-11; y-12
+- Row 5: x-1; y-2, y-3, y-4; x-5; y-6, y-7, y-8; x-9; y-10, y-11, y-12
+- Row 6: x-1; y-2, y-3, y-4, y-5, y-6
+6. Sequence of `ab_drop` function calls for each row:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+```
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+```
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+```
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+```
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+```
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+ab_drop("b11", 2)
+```
+Note: The sequence of `ab_drop` function calls should be adjusted based on the starting number according to the actual function implementation. The above sequence assumes the first number is 1.

@@ -1,0 +1,8 @@
+ab_drop('b31', 9)  # bottom horizontal line of G
+ab_drop('b11', 8)  # middle point of G
+ab_drop('b31', 8)  # top horizontal line of G
+ab_drop('b31', 13)  # bottom horizontal line of G (support)
+ab_drop('b31', 15)  # bottom horizontal line of G (support)
+ab_drop('b11', 10)  # middle point of G (support)
+ab_drop('b11', 12)  # middle point of G (support)
+ab_drop('b11', 14)  # middle point of G (support)

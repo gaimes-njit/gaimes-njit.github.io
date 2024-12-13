@@ -1,0 +1,7 @@
+ab_drop('b31', 0)  # Place the horizontal block at the leftmost position to act as the base for the vertical block
+ab_drop('b13', 2)  # Place the vertical block on top of the horizontal block
+
+# Remaining blocks to form the letter F
+ab_drop('b11', 0)
+ab_drop('b11', 4)
+ab_drop('b11', 6)

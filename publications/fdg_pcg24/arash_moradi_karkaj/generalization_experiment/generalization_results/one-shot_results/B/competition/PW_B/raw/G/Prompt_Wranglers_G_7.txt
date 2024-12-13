@@ -1,0 +1,29 @@
+To generate the uppercase letter "G" using the block types b11, b31, and b13, follow the steps below:
+
+1. Start by building the bottom of the letter "G":
+   - Place a horizontal block (b31) at position 1: `ab_drop('b31', 1)`
+
+2. Move to the next structural layer and add two vertical blocks:
+   - Place a vertical block (b13) at position 0: `ab_drop('b13', 0)`
+   - Place another vertical block (b13) at position 2: `ab_drop('b13', 2)`
+
+3. Place another block on top of the previous layer:
+   - Place a horizontal block (b31) at position 1: `ab_drop('b31', 1)`
+
+4. Add two vertical blocks on top of the current structure:
+   - Place a vertical block (b13) at position 0: `ab_drop('b13', 0)`
+   - Place another vertical block (b13) at position 2: `ab_drop('b13', 2)`
+
+5. Finally, place the top part of the letter "G":
+   - Place a horizontal block (b31) at position 1: `ab_drop('b31', 1)`
+
+So, the stream of commands to generate the uppercase letter "G" would be:
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```

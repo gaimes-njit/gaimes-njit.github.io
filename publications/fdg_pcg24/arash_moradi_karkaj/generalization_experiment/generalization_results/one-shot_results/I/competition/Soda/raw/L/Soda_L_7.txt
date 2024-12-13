@@ -1,0 +1,12 @@
+To create the letter "L" shape, we can start by placing a row block horizontally at the bottom of the grid. This will serve as the base of the "L" shape. We can then place a column block vertically on top of the row block to complete the "L" shape.
+
+Here is the code to achieve this:
+
+```
+ab_drop("b31", 9)  # Place a row block at x_position=9
+ab_drop("b13", 9)  # Place a column block on top of the row block
+```
+
+The first `ab_drop()` call places a row block at x_position=9, which means it will occupy cells (8,0), (9,0), and (10,0). The second `ab_drop()` call places a column block on top of the row block, centered at x_position=9. This column block will occupy cells (9,1), (9,0), and (9,-1).
+
+When executed, this code will create a stable structure that resembles the letter "L".

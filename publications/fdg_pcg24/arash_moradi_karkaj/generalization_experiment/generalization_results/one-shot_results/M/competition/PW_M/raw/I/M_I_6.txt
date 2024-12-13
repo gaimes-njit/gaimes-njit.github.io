@@ -1,0 +1,12 @@
+To generate the uppercase English letter "I" using the mentioned command and block types, we need to stack vertical straight blocks of width 1 unit and height 3 units.
+
+Here is the stream of commands to construct the letter "I":
+
+```
+ab_drop('b13',1)  // Place the first vertical straight block at position 1
+ab_drop('b13',3)  // Place the second vertical straight block at position 3
+ab_drop('b13',4)  // Place the third vertical straight block at position 4
+ab_drop('b13',6)  // Place the fourth vertical straight block at position 6
+```
+
+This will create the letter "I" in the specified environment, representing a vertical straight line with a width of 1 unit and a height of 12 units.

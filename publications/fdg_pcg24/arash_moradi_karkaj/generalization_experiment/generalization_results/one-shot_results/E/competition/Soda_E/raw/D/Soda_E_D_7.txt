@@ -1,0 +1,49 @@
+In order to create the structure that looks like the letter "D", we need to carefully drop the blocks in a bottom-to-top fashion to ensure stability. Here is the step-by-step implementation:
+
+1. Add the base of the letter "D":
+```
+ab_drop("b13", 8)
+ab_drop("b11", 7)
+```
+
+2. Add the vertical bar of the letter "D":
+```
+ab_drop("b31", 9)
+```
+
+3. Add the top portion of the letter "D":
+```
+ab_drop("b13", 8)
+ab_drop("b11", 7)
+```
+
+4. Add the extension of the letter "D":
+```
+ab_drop("b13", 10)
+ab_drop("b11", 9)
+```
+
+5. Add the extension of the letter "D" on the other side:
+```
+ab_drop("b13", 6)
+ab_drop("b11", 5)
+```
+
+6. Add the top portion of the letter "D" on the other side:
+```
+ab_drop("b13", 4)
+ab_drop("b11", 3)
+```
+
+7. Add the vertical bar of the letter "D" on the other side:
+```
+ab_drop("b31", 5)
+```
+
+8. Add the base of the letter "D" on the other side:
+```
+ab_drop("b13", 4)
+ab_drop("b11", 3)
+```
+
+This sequence of ab_drop() calls will generate a structure that looks like the letter "D" in the level.

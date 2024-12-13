@@ -1,0 +1,16 @@
+To generate a structure in the shape of a capital "A", we can follow these steps:
+
+1. Build the two diagonal lines of the "A" from bottom to top.
+2. Place a square block at the center of the "A" to connect the two diagonal lines.
+3. Place a row block above the square block to complete the structure.
+
+Here is the code implementation to achieve this:
+
+```
+ab_drop("b31", 7)
+ab_drop("b31", 12)
+ab_drop("b11", 9)
+ab_drop("b13", 9)
+```
+
+This code will create a stable structure with the shape of a capital "A" in the given level.

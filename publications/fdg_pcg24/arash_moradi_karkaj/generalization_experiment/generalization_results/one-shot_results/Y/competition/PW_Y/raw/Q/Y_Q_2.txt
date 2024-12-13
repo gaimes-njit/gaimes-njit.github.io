@@ -1,0 +1,23 @@
+To generate the uppercase letter "Q" using the ab_drop() command and the given block types, you can follow the instructions below:
+
+1. Start by placing a vertical straight block (b13) at position 5 along the width:
+```
+ab_drop('b13',5)
+```
+
+2. Next, place a horizontal straight block (b31) right below the previous block, also at position 5 along the width:
+```
+ab_drop('b31',5)
+```
+
+3. Place a square block (b11) to the left of the horizontal straight block, at position 4 along the width:
+```
+ab_drop('b11',4)
+```
+
+4. Finally, place another square block (b11) to the right of the horizontal straight block, at position 6 along the width:
+```
+ab_drop('b11',6)
+```
+
+The sequence of commands above will generate the uppercase letter "Q" in the Tetris-like environment.

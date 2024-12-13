@@ -1,0 +1,13 @@
+To create the letter "K" using the given block types and environment, we can follow these steps:
+
+1. Place the first vertical straight block (b13) at position 1.
+2. Place the second vertical straight block (b13) at position 3.
+3. Place the horizontal straight block (b31) at position 2.
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+```
+
+These commands will create the letter "K" in the specified environment while ensuring stability and adherence to the gravity rules.

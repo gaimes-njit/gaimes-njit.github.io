@@ -1,0 +1,21 @@
+To create the uppercase letter "I" using the given block types, follow these steps:
+
+1. Place a b13 block at position (1, 10).
+2. Place a b13 block at position (1, 11).
+3. Place a b13 block at position (1, 12).
+4. Place a b31 block at position (2, 11).
+5. Place a b13 block at position (3, 10).
+6. Place a b13 block at position (3, 11).
+7. Place a b13 block at position (3, 12).
+
+The resulting stream of commands would be:
+
+```
+ab_drop(b13, 10)
+ab_drop(b13, 11)
+ab_drop(b13, 12)
+ab_drop(b31, 11)
+ab_drop(b13, 10)
+ab_drop(b13, 11)
+ab_drop(b13, 12)
+```

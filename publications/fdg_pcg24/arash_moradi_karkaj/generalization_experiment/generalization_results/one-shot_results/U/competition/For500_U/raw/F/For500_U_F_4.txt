@@ -1,0 +1,5 @@
+ab_drop('b13', 9)  # bottom part of 'F'
+ab_drop('b13', 10)  # bottom part of 'F'
+ab_drop('b13', 11)  # bottom part of 'F'
+ab_drop('b31', 10)  # middle horizontal part of 'F'
+ab_drop('b11', 10)  # top horizontal part of 'F'

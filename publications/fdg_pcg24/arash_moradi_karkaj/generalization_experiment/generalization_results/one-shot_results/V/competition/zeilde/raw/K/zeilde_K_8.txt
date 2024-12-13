@@ -1,0 +1,112 @@
+Step 1:
+```
+**    **
+**   * 
+**  *  
+** *   
+***    
+** *   
+**  *  
+**   * 
+**    **
+```
+
+Step 2:
+Row 1: 2 asterisks, 4 spaces
+Row 2: 2 asterisks, 3 spaces, 1 asterisk
+Row 3: 2 asterisks, 2 spaces, 1 asterisk
+Row 4: 2 asterisks, 1 space, 1 asterisk
+Row 5: 3 asterisks
+Row 6: 2 asterisks, 1 space, 1 asterisk
+Row 7: 2 asterisks, 2 spaces, 1 asterisk
+Row 8: 2 asterisks, 3 spaces, 1 asterisk
+Row 9: 2 asterisks, 4 spaces
+
+Step 3:
+Row 1: 2x, 4y
+Row 2: 2x, 3y, 1x
+Row 3: 2x, 2y, 1x
+Row 4: 2x, 1y, 1x
+Row 5: 3x
+Row 6: 2x, 1y, 1x
+Row 7: 2x, 2y, 1x
+Row 8: 2x, 3y, 1x
+Row 9: 2x, 4y
+
+Step 4:
+Row 1: xxyyyy
+Row 2: xxyyyx
+Row 3: xxyyxx
+Row 4: xxyxxy
+Row 5: xxx
+Row 6: xxyxxy
+Row 7: xxyyxx
+Row 8: xxyyyx
+Row 9: xxyyyy
+
+Step 5:
+Row 1: x-1; x-2; y-3; y-4; y-5; y-6; 
+Row 2: x-1; x-2; y-3; y-4; y-5; x-6; 
+Row 3: x-1; x-2; y-3; y-4; x-5; x-6; 
+Row 4: x-1; x-2; y-3; x-4; x-5; y-6; 
+Row 5: x-1; x-2; x-3; 
+Row 6: x-1; x-2; y-3; x-4; x-5; y-6; 
+Row 7: x-1; x-2; y-3; y-4; x-5; x-6; 
+Row 8: x-1; x-2; y-3; y-4; y-5; x-6; 
+Row 9: x-1; x-2; y-3; y-4; y-5; y-6; 
+
+Step 6:
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)

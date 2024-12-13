@@ -1,0 +1,10 @@
+The stream of ab_drop() commands to generate the uppercase letter "V" would be as follows:
+
+```
+ab_drop('b13', 1)  # Vertical straight block starting at position 1
+ab_drop('b31', 2)  # Horizontal straight block starting at position 2
+ab_drop('b13', 4)  # Vertical straight block starting at position 4
+```
+
+Explanation:
+We start by placing a vertical straight block (b13) at position 1. Then, we place a horizontal straight block (b31) starting at position 2, which completes the left side of the V shape. Finally, we place another vertical straight block (b13) starting at position 4 to complete the right side of the V shape.

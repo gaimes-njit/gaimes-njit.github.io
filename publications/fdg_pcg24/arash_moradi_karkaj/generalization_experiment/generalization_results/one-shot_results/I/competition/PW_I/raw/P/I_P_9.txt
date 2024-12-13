@@ -1,0 +1,7 @@
+To generate the uppercase English letter "P", here is the sequence of ab_drop() commands:
+
+```
+ab_drop('b13',1) ab_drop('b31',1) ab_drop('b31',1) ab_drop('b13',2)
+```
+
+This sequence of commands will create the letter "P" using the block types provided.

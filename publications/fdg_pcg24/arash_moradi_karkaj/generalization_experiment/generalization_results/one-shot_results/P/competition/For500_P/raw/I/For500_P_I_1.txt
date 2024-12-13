@@ -1,0 +1,6 @@
+ab_drop('b13', 7)  # Place a vertical block on slot 7
+ab_drop('b13', 9)  # Place another vertical block on slot 9
+ab_drop('b31', 8)  # Place a horizontal block on slot 8
+ab_drop('b11', 7)  # Place a square block on slot 7
+ab_drop('b11', 9)  # Place another square block on slot 9
+ab_drop('b31', 8)  # Place another horizontal block on slot 8

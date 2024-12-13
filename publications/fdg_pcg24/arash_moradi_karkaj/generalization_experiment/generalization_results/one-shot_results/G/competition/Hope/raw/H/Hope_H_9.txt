@@ -1,0 +1,15 @@
+To create the structure exactly like "H" inside a 20*16 box area, you can use the following commands:
+
+1. Place the first vertical block of height 3 at position (4, 0):
+   ab_drop('b13', 4)
+
+2. Place the second vertical block of height 3 at position (14, 0):
+   ab_drop('b13', 14)
+
+3. Place the horizontal block of width 11 at position (2, 6):
+   ab_drop('b11', 2)
+
+4. Place the horizontal block of width 11 at position (2, 10):
+   ab_drop('b11', 2)
+
+This will form the structure exactly like "H" inside the 20*16 box area.

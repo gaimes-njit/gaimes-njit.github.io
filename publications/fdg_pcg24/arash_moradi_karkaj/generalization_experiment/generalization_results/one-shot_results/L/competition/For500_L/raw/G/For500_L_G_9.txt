@@ -1,0 +1,20 @@
+ab_drop('b31', 9)  # Place the horizontal block in the center
+ab_drop('b31', 8)  # Add another horizontal block to support the center
+ab_drop('b13', 7)  # Place a vertical block on the left side
+ab_drop('b13', 10)  # Place a vertical block on the right side
+ab_drop('b13', 4)  # Place a vertical block on the left side
+ab_drop('b31', 14)  # Add a horizontal block on the right side
+ab_drop('b31', 5)  # Add a horizontal block on the left side
+ab_drop('b13', 13)  # Place a vertical block on the right side
+ab_drop('b11', 13)  # Place a square block on the right side
+ab_drop('b13', 2)  # Place a vertical block on the left side
+ab_drop('b11', 6)  # Add a square block in the center left
+ab_drop('b11', 12)  # Add a square block in the center right
+ab_drop('b13', 1)  # Place a vertical block on the left side
+ab_drop('b13', 14)  # Place a vertical block on the right side
+ab_drop('b13', 0)  # Place a vertical block on the left side
+ab_drop('b11', 7)  # Add a square block on the left side
+ab_drop('b11', 11)  # Add a square block on the right side
+ab_drop('b11', 8)  # Add a square block on the left side
+ab_drop('b11', 10)  # Add a square block on the right side
+ab_drop('b11', 9)  # Add a square block in the center

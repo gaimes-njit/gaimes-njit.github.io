@@ -1,0 +1,60 @@
+To generate the structure resembling a "W" while adhering to the given constraints, we can follow the following steps:
+
+1. Initialize the empty structure:
+
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the first block in the bottom left corner:
+
+```python
+ab_drop('b11', 0)
+```
+
+3. Build the left side of the "W":
+
+```python
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+ab_drop('b31', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+```
+
+4. Build the right side of the "W":
+
+```python
+ab_drop('b11', 15)
+ab_drop('b11', 14)
+ab_drop('b31', 13)
+ab_drop('b11', 12)
+ab_drop('b11', 11)
+```
+
+5. Build the center of the "W":
+
+```python
+ab_drop('b11', 7)
+ab_drop('b13', 6)
+ab_drop('b11', 5)
+```
+
+The complete code block is as follows:
+
+```python
+ab_drop('b11', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+ab_drop('b31', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+ab_drop('b11', 15)
+ab_drop('b11', 14)
+ab_drop('b31', 13)
+ab_drop('b11', 12)
+ab_drop('b11', 11)
+ab_drop('b11', 7)
+ab_drop('b13', 6)
+ab_drop('b11', 5)
+```

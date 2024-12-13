@@ -1,0 +1,5 @@
+ab_drop('b13', 9)  # Place the first vertical block in the center (supported by the bottom layer)
+ab_drop('b11', 10)  # Place the top part of the 'G' shape (supported by the bottom block)
+ab_drop('b13', 10)  # Place the bottom part of the 'G' shape (supported by the bottom layer)
+ab_drop('b13', 11)  # Place the bottom part of the 'G' shape (supported by the bottom layer)
+ab_drop('b11', 11)  # Place the top part of the 'G' shape (supported by the bottom block)

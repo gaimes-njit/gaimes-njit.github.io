@@ -1,0 +1,19 @@
+To generate the uppercase letter "I" using the given block types and environment, you can use the following stream of commands:
+
+```
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b13',3)
+ab_drop('b13',2)
+ab_drop('b13',1)
+```
+
+Explanation:
+
+1. The first command `ab_drop('b13',1)` places a vertical straight block at position 1 along the width.
+2. The second command `ab_drop('b13',2)` places another vertical straight block at position 2 along the width.
+3. The third command `ab_drop('b13',3)` places a third vertical straight block at position 3 along the width.
+4. The fourth command `ab_drop('b13',2)` places another vertical straight block at position 2 along the width.
+5. The fifth command `ab_drop('b13',1)` places a final vertical straight block at position 1 along the width.
+
+This sequence of commands creates the uppercase letter "I" within the defined environment, with the blocks stacked vertically to form the letter shape.

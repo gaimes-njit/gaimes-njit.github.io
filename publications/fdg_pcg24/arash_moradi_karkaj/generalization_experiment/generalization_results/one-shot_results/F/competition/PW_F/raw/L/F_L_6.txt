@@ -1,0 +1,7 @@
+To generate the uppercase English letter "L", we can use the following sequence of `ab_drop()` commands:
+
+```
+ab_drop('b13',1)  // Place a vertical straight block at position 1
+ab_drop('b13',1)  // Place another vertical straight block at position 1 (stacked on top)
+ab_drop('b31',1)  // Place a horizontal straight block starting at position 1 (stacked on top)
+```

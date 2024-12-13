@@ -1,0 +1,8 @@
+Here is one possible solution for generating the structure resembling "O":
+
+```
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+```

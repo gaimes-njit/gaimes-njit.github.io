@@ -1,0 +1,25 @@
+To create the capital letter "D" in the level, we can break it down into two blocks: the vertical pipe and the bottom half circle.
+
+First, we will create the vertical pipe using a column block "b13" at the center of the grid. This will form the straight part of the "D" shape.
+
+```python
+# Creating the vertical pipe
+ab_drop("b13", 9)
+```
+
+Next, we will create the bottom half circle using a row block "b31" at the center of the grid, one row below the bottom end of the pipe. This will form the curved part of the "D" shape.
+
+```python
+# Creating the bottom half circle
+ab_drop("b31", 8)
+```
+
+The complete implementation to generate the capital letter "D" in the level is as follows:
+
+```python
+# Creating the vertical pipe
+ab_drop("b13", 9)
+
+# Creating the bottom half circle
+ab_drop("b31", 8)
+```

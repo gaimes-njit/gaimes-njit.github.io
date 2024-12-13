@@ -1,0 +1,14 @@
+ab_drop('b13', 9)  # Place the first 'b13' block in the bottom layer at slot 9.
+ab_drop('b13', 11)  # Place another 'b13' block in the bottom layer at slot 11.
+ab_drop('b13', 13)  # Place another 'b13' block in the bottom layer at slot 13.
+ab_drop('b13', 8)  # Place another 'b13' block in the second bottom layer at slot 8.
+ab_drop('b13', 14)  # Place another 'b13' block in the second bottom layer at slot 14.
+ab_drop('b13', 7)  # Place another 'b13' block in the third bottom layer at slot 7.
+ab_drop('b13', 15)  # Place another 'b13' block in the third bottom layer at slot 15.
+ab_drop('b13', 6)  # Place another 'b13' block in the fourth bottom layer at slot 6.
+ab_drop('b13', 16)  # Place another 'b13' block in the fourth bottom layer at slot 16.
+ab_drop('b13', 5)  # Place another 'b13' block in the fifth bottom layer at slot 5.
+ab_drop('b13', 17)  # Place another 'b13' block in the fifth bottom layer at slot 17.
+ab_drop('b31', 13)  # Place a 'b31' block in the sixth bottom layer at slot 13.
+ab_drop('b11', 13)  # Place a 'b11' block in the seventh bottom layer at slot 13.
+ab_drop('b31', 13)  # Place a 'b31' block in the eighth bottom layer at slot 13.

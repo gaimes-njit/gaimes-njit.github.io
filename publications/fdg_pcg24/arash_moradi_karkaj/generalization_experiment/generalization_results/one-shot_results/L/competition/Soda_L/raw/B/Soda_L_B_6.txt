@@ -1,0 +1,32 @@
+To create the letter "B" in the level, we can break it down into multiple blocks and drop them in a bottom-to-top fashion. Here is the step-by-step implementation to create the "B" shape:
+
+1. Create the base of the letter "B" using two row blocks ("b31") stacked vertically:
+```
+ab_drop("b31", 6)
+ab_drop("b31", 7)
+```
+
+2. Create the upper left part of the letter "B" using a column block ("b13") and a square block ("b11"):
+```
+ab_drop("b13", 5)
+ab_drop("b11", 5)
+```
+
+3. Create the upper right part of the letter "B" using a square block ("b11") and a row block ("b31"):
+```
+ab_drop("b11", 8)
+ab_drop("b31", 9)
+```
+
+With these steps, you should have a structure in the level that resembles the letter "B" (when viewed from the top). The blocks are dropped in a bottom-to-top fashion to ensure stability.
+
+Here is the complete implementation:
+
+```
+ab_drop("b31", 6)
+ab_drop("b31", 7)
+ab_drop("b13", 5)
+ab_drop("b11", 5)
+ab_drop("b11", 8)
+ab_drop("b31", 9)
+```

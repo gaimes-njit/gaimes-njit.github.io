@@ -1,0 +1,10 @@
+To generate the capital letter "G" in Tetris, we can divide it into three blocks: the top bar, the vertical pipe, and the bottom bar. Let's start building the structure from the bottom to the top.
+
+1. Place the bottom bar:
+ab_drop("b13", 2)
+
+2. Place the vertical pipe:
+ab_drop("b31", 2)
+
+3. Place the top bar:
+ab_drop("b13", 2)

@@ -1,0 +1,17 @@
+```
+# Initialize the structure
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the blocks to form the "X" shape
+ab_drop('b11', 1) # Drop the first block in the middle slot to form the base of the left diagonal of "X"
+ab_drop('b11', 2) # Drop the second block in the slot to the right of the first block to continue the left diagonal
+ab_drop('b11', 3) # Drop the third block in the slot to the right of the second block to complete the left diagonal
+ab_drop('b11', 15) # Drop the fourth block in the middle slot on the top layer to form the top of the left diagonal
+
+ab_drop('b11', 4) # Drop the fifth block in the slot to the right of the third block on the base layer to form the base of the right diagonal
+ab_drop('b11', 5) # Drop the sixth block in the slot to the right of the fifth block to continue the right diagonal
+ab_drop('b11', 6) # Drop the seventh block in the slot to the right of the sixth block to complete the right diagonal
+ab_drop('b11', 14) # Drop the eighth block in the slot to the left of the fourth block on the top layer to form the top of the right diagonal
+
+ab_drop('b13', 2) # Drop the ninth block in the middle slot to connect the left and right diagonals
+```

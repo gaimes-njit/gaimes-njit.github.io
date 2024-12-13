@@ -1,0 +1,23 @@
+To create the uppercase English letter "T" using the given block types and commands, you can follow these steps:
+
+1. Place a vertical straight block (b13) at position 1 on the width:
+```
+ab_drop(13, 1)
+```
+
+2. Place a horizontal straight block (b31) at position 2 on the width:
+```
+ab_drop(31, 2)
+```
+
+3. Place a vertical straight block (b13) at position 3 on the width:
+```
+ab_drop(13, 3)
+```
+
+The final stream of commands to generate the letter "T" would be:
+```
+ab_drop(13, 1)
+ab_drop(31, 2)
+ab_drop(13, 3)
+```

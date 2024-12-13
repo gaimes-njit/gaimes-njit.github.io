@@ -1,0 +1,5 @@
+The first step is to create the horizontal bar of the letter K. We can use the row block "b31" for this. We will place it at the center of the grid with x_position = 9.
+
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)

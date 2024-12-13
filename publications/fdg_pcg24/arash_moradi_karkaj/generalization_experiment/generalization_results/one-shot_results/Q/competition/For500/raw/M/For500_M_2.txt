@@ -1,0 +1,7 @@
+ab_drop('b31', 8)  # Add support for the center of the 'b31'
+ab_drop('b31', 7)  # Add support for the left side of the 'b31'
+ab_drop('b31', 9)  # Add support for the right side of the 'b31'
+ab_drop('b11', 7)  # Add a block to form the bottom part of 'M'
+ab_drop('b11', 9)  # Add a block to form the bottom part of 'M'
+ab_drop('b13', 7)  # Add a vertical block to form the left side of 'M'
+ab_drop('b13', 9)  # Add a vertical block to form the right side of 'M'

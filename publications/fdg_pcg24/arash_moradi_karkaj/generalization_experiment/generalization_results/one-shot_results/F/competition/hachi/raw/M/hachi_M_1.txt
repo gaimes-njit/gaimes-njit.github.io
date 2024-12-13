@@ -1,0 +1,96 @@
+Example Output:
+
+```python
+ab_drop('b31', 8)
+ab_drop('b13', 7)
+ab_drop('b13', 9)
+ab_drop('b11', 6)
+ab_drop('b11', 10)
+```
+
+Explanation:
+
+In this example, we drop the blocks in a specific order and position to create stable structures resembling the letter "M". 
+
+1. `ab_drop('b31', 8)`: We start by dropping a horizontal block (`b31`) at position 8, which forms the top of the "M". 
+
+```
+_________________________
+|                       |
+|                       |
+|                       |
+|                       |
+|                       |
+|                       |
+|                       |
+|         b31           |
+|                       |
+|                       |
+_________________________
+```
+
+2. `ab_drop('b13', 7)`: We then drop a vertical block (`b13`) at position 7, which forms the left side of the "M".
+
+```
+_________________________
+|                       |
+|                       |
+|                       |
+|                       |
+|                       |
+|                       |
+|         b31           |
+|         b13           |
+|                       |
+_________________________
+```
+
+3. `ab_drop('b13', 9)`: Next, we drop another vertical block (`b13`) at position 9, which forms the right side of the "M".
+
+```
+_________________________
+|                       |
+|                       |
+|                       |
+|                       |
+|                       |
+|         b13           |
+|         b31           |
+|         b13           |
+|                       |
+_________________________
+```
+
+4. `ab_drop('b11', 6)`: We then drop a square block (`b11`) at position 6, which fills the gap between the left side and the top of the "M".
+
+```
+_________________________
+|                       |
+|                       |
+|                       |
+|                       |
+|                       |
+|         b11           |
+|         b13           |
+|         b31           |
+|         b13           |
+_________________________
+```
+
+5. `ab_drop('b11', 10)`: Finally, we drop another square block (`b11`) at position 10, which fills the gap between the right side and the top of the "M".
+
+```
+_________________________
+|                       |
+|                       |
+|                       |
+|                       |
+|         b11           |
+|         b11           |
+|         b13           |
+|         b31           |
+|         b13           |
+_________________________
+```
+
+The resulting structure perfectly represents the capital letter "M" while adhering to the stability constraint and minimizing boundary intrusion.

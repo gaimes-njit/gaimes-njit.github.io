@@ -1,0 +1,31 @@
+To create a structure in the shape of a capital "Q", we can follow these steps:
+
+1. Place a column block (b13) at the left side of the grid to form the vertical line of the "Q":
+   ```
+   ab_drop("b31", 0)
+   ```
+
+2. Place a square block (b11) at the bottom-right corner of the grid to form the lower tail of the "Q":
+   ```
+   ab_drop("b11", 19)
+   ```
+
+3. Place a row block (b31) at the bottom-right corner of the grid, one cell above the previous block, to form the upper tail of the "Q":
+   ```
+   ab_drop("b31", 18)
+   ```
+
+4. Place a square block (b11) at the top-right corner of the grid, one cell above the previous block, to complete the "Q":
+   ```
+   ab_drop("b11", 19)
+   ```
+
+Here is the complete implementation:
+```python
+ab_drop("b31", 0)
+ab_drop("b11", 19)
+ab_drop("b31", 18)
+ab_drop("b11", 19)
+```
+
+This implementation ensures stability by placing blocks in a bottom-to-top fashion and creates a structure that resembles the capital letter "Q".

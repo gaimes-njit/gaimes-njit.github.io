@@ -1,0 +1,14 @@
+To generate the uppercase letter H, you can use the following stream of commands:
+
+```plaintext
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b31',2)
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b31',1)
+ab_drop('b13',1)
+ab_drop('b13',2)
+```
+
+This sequence of commands will place the block types in the correct positions to form the letter H in the grid.

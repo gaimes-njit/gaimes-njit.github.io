@@ -1,0 +1,18 @@
+To create the uppercase letter "M" using the block types and the given environment, we can proceed as follows:
+
+```
+ab_drop("b13", 1)
+ab_drop("b13", 5)
+ab_drop("b13", 9)
+ab_drop("b31", 3)
+ab_drop("b31", 7)
+ab_drop("b31", 11)
+ab_drop("b31", 15)
+```
+
+Explanation:
+1. The first three `ab_drop("b13", x)` commands will stack three vertical straight blocks of width 1 unit and height 3 units, starting from positions 1, 5, and 9. This forms the letter "M"'s two side vertical lines.
+
+2. The next four `ab_drop("b31", x)` commands will stack four horizontal straight blocks of width 3 units and height 1 unit, starting from positions 3, 7, 11, and 15. This forms the letter "M"'s two middle horizontal lines.
+
+By following these commands in order, the blocks will stack up and create the uppercase letter "M" within the given boundaries of the grid.

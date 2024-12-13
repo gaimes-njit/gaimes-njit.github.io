@@ -1,0 +1,26 @@
+To generate the uppercase English letter "U", we can follow these steps:
+
+1. Start by creating the bottom of the letter "U" using a horizontal straight block (b31) at position 1:
+```
+ab_drop('b31', 1)
+```
+
+2. Move up one row and add two vertical straight blocks (b13) at positions 0 and 2:
+```
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+```
+
+3. Move up one row and add another horizontal straight block (b31) at position 1:
+```
+ab_drop('b31', 1)
+```
+
+4. Repeat steps 2 and 3 to create the top of the letter "U":
+```
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```
+
+By following these steps, you should be able to generate the uppercase English letter "U" using the given command and block types.

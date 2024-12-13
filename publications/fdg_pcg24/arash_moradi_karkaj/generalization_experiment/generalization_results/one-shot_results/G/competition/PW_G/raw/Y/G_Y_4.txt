@@ -1,0 +1,19 @@
+To create the uppercase English letter "Y", we need to place the blocks in the following order:
+
+- Place the first horizontal straight block (b31) at y = 2.
+- Place the first vertical straight block (b13) at y = 1.
+- Place the second vertical straight block (b13) at y = 2.
+- Place the first square block (b11) at y = 4.
+- Place the second square block (b11) at y = 4.
+- Place the second horizontal straight block (b31) at y = 2.
+
+The sequence of ab_drop() commands to achieve this is as follows:
+
+```
+ab_drop('b31',2)
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b11',4)
+ab_drop('b11',4)
+ab_drop('b31',2)
+```

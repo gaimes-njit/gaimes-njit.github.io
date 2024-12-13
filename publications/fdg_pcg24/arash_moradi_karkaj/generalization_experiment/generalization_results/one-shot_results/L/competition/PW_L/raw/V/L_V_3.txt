@@ -1,0 +1,12 @@
+Here is a stream of commands to generate the uppercase letter "V":
+
+```
+ab_drop('b31',1)
+ab_drop('b13',2)
+ab_drop('b31',3)
+ab_drop('b11',2)
+ab_drop('b11',3)
+ab_drop('b11',4)
+```
+
+Please note that the numbers inside the ab_drop() function indicate the type of block and the position along the width, respectively. The commands should be executed consecutively.

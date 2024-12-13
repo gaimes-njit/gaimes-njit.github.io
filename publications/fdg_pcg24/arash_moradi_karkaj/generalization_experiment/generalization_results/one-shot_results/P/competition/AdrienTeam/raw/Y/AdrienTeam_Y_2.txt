@@ -1,0 +1,16 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Construct the bottom horizontal block
+ab_drop('b31', 8)
+
+# Construct the left vertical block above the bottom horizontal block
+ab_drop('b13', 7)
+
+# Construct the right vertical block above the bottom horizontal block
+ab_drop('b13', 9)
+
+# Construct the top horizontal block connecting the left and right vertical blocks
+ab_drop('b31', 8)
+```

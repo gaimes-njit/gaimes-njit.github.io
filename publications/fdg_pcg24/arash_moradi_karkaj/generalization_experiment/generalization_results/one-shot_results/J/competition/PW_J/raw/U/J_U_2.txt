@@ -1,0 +1,15 @@
+To generate the uppercase letter "U", we can use the following series of ab_drop() commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 5)
+ab_drop('b31', 5)
+ab_drop('b13', 9)
+ab_drop('b31', 9)
+ab_drop('b13', 13)
+ab_drop('b31', 13)
+ab_drop('b13', 17)
+```
+
+This sequence of commands will construct the letter "U" within the allowed space and maintain stability according to the gravity rules.

@@ -1,0 +1,21 @@
+To generate the uppercase English letter "B", we can use the following stream of ab_drop() commands:
+
+```
+ab_drop("b31", 1)
+ab_drop("b13", 1)
+ab_drop("b13", 1)
+ab_drop("b31", 4)
+ab_drop("b11", 4)
+ab_drop("b13", 7)
+ab_drop("b31", 7)
+ab_drop("b11", 10)
+ab_drop("b13", 10)
+ab_drop("b31", 13)
+ab_drop("b31", 16)
+ab_drop("b11", 16)
+ab_drop("b13", 16)
+ab_drop("b13", 16)
+ab_drop("b31", 19)
+```
+
+This sequence of commands will generate the letter "B" in the grid, following the gravity rules and boundaries specified.

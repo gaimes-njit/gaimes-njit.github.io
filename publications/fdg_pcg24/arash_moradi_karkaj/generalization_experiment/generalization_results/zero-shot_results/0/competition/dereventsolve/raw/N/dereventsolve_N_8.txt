@@ -1,0 +1,10 @@
+To generate a structure that looks like the letter "N," we can use the following sequence of `ab_drop` function calls:
+
+```
+ab_drop('down')
+ab_drop('left_down')
+ab_drop('down')
+ab_drop('right_down')
+```
+
+This sequence of calls results in a structure that resembles the uppercase letter "N," with two vertical lines intersected by a diagonal line.

@@ -1,0 +1,29 @@
+To create the structure of the letter "Q" inside a 20*16 box, you would have to use the ab_drop('blocktype', x position) command in the following sequence:
+
+1. Place the top horizontal line of the letter "Q" using a b11 block. Start from position (0, 0) and drop the b11 block at x position 0. The command is: ab_drop('b11', 0).
+
+2. Place the left vertical line of the letter "Q" using a b31 block. Start from position (0, 1) and drop the b31 block at x position 0. The command is: ab_drop('b31', 0).
+
+3. Place the right vertical line of the letter "Q" using a b31 block. Start from position (2, 1) and drop the b31 block at x position 2. The command is: ab_drop('b31', 2).
+
+4. Place the bottom horizontal line of the letter "Q" using a b13 block. Start from position (0, 4) and drop the b13 block at x position 0. The command is: ab_drop('b13', 0).
+
+5. Place the bottom right corner of the letter "Q" using a b11 block. Start from position (3, 4) and drop the b11 block at x position 3. The command is: ab_drop('b11', 3).
+
+Here is the structure of the letter "Q" inside a 20*16 box using the ab_drop('blocktype', x position) commands:
+
+00000000000000000000
+00000000000000000000
+0b11------------0b11
+0000000|      |0000
+0000000|      |0000
+0000000|  b31 |0000
+0000000|      |0000
+0000000|   b31|0000
+0000000|      |0000
+0000000b13----b11
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000

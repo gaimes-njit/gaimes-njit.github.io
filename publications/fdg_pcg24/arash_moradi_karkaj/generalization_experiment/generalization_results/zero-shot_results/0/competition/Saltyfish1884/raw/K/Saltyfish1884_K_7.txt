@@ -1,0 +1,61 @@
+To generate a stable structure that resembles the character "K" and meets all the hard constraints, we can follow these step-by-step instructions:
+
+Step 1: Initialize the structure
+We start by initializing the structure as an empty grid with size WxH, where W = 20 and H = 16.
+
+```python
+W = 20
+H = 16
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Place the base
+Place a b11 block at the bottom layer (layer 0) and at the center slot (slot 10).
+
+```python
+ab_drop('b11', 10)
+```
+
+Step 3: Place the vertical bar
+Place a b13 block vertically on top of the base, at the center slot (slot 10) and the second layer (layer 1).
+
+```python
+ab_drop('b13', 10)
+```
+
+Step 4: Place the diagonal bar
+Place two b31 blocks horizontally, forming a diagonal bar, on top of the vertical bar. The left block should be placed at slot 8 and the right block at slot 12, both on the third layer (layer 2).
+
+```python
+ab_drop('b31', 8)
+ab_drop('b31', 12)
+```
+
+Step 5: Place the top horizontal bar
+Place a b31 block horizontally on top of the diagonal bar, spanning from slot 7 to slot 13, on the fourth layer (layer 3).
+
+```python
+ab_drop('b31', 7)
+ab_drop('b31', 8)
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+ab_drop('b31', 11)
+ab_drop('b31', 12)
+ab_drop('b31', 13)
+```
+
+Step 6: Check stability
+Check if the structure meets the stability constraints by ensuring that the b31 blocks are placed on top of solid bases (b11 or b13 blocks) and that the structure is not separated.
+
+Step 7: Check boundary intrusion
+Check if the structure meets the constraint of not intruding on the map's boundaries.
+
+Step 8: Print the final structure
+Print the structure to verify if it resembles the character "K" and meets all the constraints.
+
+```python
+for row in structure:
+    print(''.join(row))
+```
+
+Note: This code assumes that the ab_drop() function is defined and available for use. Make sure to define it before executing the above steps.

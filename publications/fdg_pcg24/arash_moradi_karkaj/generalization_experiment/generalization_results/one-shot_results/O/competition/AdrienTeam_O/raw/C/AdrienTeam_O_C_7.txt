@@ -1,0 +1,42 @@
+First, let's initialize the structure grid:
+
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+Next, we can start building the "C" structure. We will drop the blocks in the following order:
+
+1. Drop the horizontal block on the bottom layer:
+
+```
+ab_drop('b31', 1)
+```
+
+2. Drop the vertical block on the bottom layer:
+
+```
+ab_drop('b13', 0)
+```
+
+3. Drop the vertical block on the top layer:
+
+```
+ab_drop('b13', 2)
+```
+
+4. Drop the horizontal block on the top layer:
+
+```
+ab_drop('b31', 1)
+```
+
+By following these steps, we will create a stable structure resembling the letter "C".
+
+The final code block with all the `ab_drop()` calls is as follows:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```

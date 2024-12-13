@@ -1,0 +1,56 @@
+To use the `ab_drop()` function to generate a stable structure that looks like the uppercase letter "O", we can follow these steps:
+
+1. Initialize the structure as an empty grid using the provided code:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the b31 block at the center of the bottom layer to create a stable base. The center slot can be calculated as `(W // 2) - 1`. Call `ab_drop('b31', (W // 2) - 1)` to drop the block and update the structure.
+
+3. To create the sides of the "O", we need to drop b13 blocks vertically aligned with the sides of the base. Call `ab_drop('b13', 0)` to drop the left side block, and `ab_drop('b13', W - 1)` to drop the right side block.
+
+4. To complete the top part of the "O", we need to drop a b31 block on top of the left and right side blocks. Call `ab_drop('b31', 1)` to drop the block above the left side, and `ab_drop('b31', W - 2)` to drop the block above the right side.
+
+5. After completing the steps above, the structure should resemble the uppercase letter "O". You can print the structure to see the final result.
+
+Here is the complete code:
+
+```python
+W = 20
+H = 16
+
+def ab_drop(x, y):
+    # x is the block type, y is the slot number from 0 to W-1 where the block center is aligned
+    
+    # initialize the drop position at the top of the map
+    drop_pos = (H-1, y)
+    
+    # drop the block from the top and move it down until it lands on the base or another block
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    
+    # place the block on the structure
+    structure[drop_pos[0]][drop_pos[1]] = x
+
+# initialize the structure as an empty grid
+structure = [[' ']*W for _ in range(H)]
+
+# Drop b31 block to create a stable base
+ab_drop('b31', (W // 2) - 1)
+
+# Drop b13 blocks on the sides of the base
+ab_drop('b13', 0)  # Left side
+ab_drop('b13', W - 1)  # Right side
+
+# Drop b31 blocks on top of the sides
+ab_drop('b31', 1)  # Above the left side
+ab_drop('b31', W - 2)  # Above the right side
+
+# Print the final structure
+for row in structure:
+    print(' '.join(row))
+```
+
+This code will generate a stable structure that resembles the uppercase letter "O" by using the `ab_drop()` function according to the given constraints.

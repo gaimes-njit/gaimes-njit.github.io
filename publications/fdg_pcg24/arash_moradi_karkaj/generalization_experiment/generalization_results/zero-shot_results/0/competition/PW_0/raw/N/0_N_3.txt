@@ -1,0 +1,18 @@
+To construct the letter "N", we can use the following sequence of `ab_drop()` commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+ab_drop('b31', 8)
+ab_drop('b13', 11)
+ab_drop('b31', 15)
+```
+
+Explanation:
+1. Place a horizontal block of type `b31` at position 1, creating the top of the "N".
+2. Place a vertical block of type `b13` at position 4, extending downwards from the top-left corner of the "N".
+3. Place another horizontal block of type `b31` at position 8, connecting the vertical block and completing the middle of the "N".
+4. Place another vertical block of type `b13` at position 11, extending downwards from the top-right corner of the "N".
+5. Finally, place one last horizontal block of type `b31` at position 15, connecting the two vertical blocks and completing the bottom of the "N".
+
+Note: The grid positions are indexed from 1 to 19 for width and 1 to 15 for height.

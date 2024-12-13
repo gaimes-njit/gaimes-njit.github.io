@@ -1,0 +1,30 @@
+# Solution
+To generate a structure resembling the letter "K", we can break it down into smaller components and build each component one by one using the `ab_drop()` function. Here is the step-by-step solution:
+
+1. First, we initialize the structure as an empty grid:
+```python
+structure = [[' ']*20 for _ in range(16)]
+```
+
+2. Next, we start building the components of the letter "K" using the `ab_drop()` function:
+
+```python
+# Drop the vertical line of the letter "K"
+ab_drop('b13', 8)
+ab_drop('b13', 11)
+
+# Drop the horizontal line of the letter "K"
+ab_drop('b31', 9)
+```
+
+3. Finally, we have a stable structure resembling the letter "K"!
+
+```python
+[[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'b13', 'b13', 'b13', 'b13', 'b13', 'b13', 'b13', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'b13', 'b13', 'b13', 'b13', 'b13', 'b13', 'b13', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'b31', 'b31', 'b31', 'b13', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'b31', ' ', ' ', 'b13', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ',

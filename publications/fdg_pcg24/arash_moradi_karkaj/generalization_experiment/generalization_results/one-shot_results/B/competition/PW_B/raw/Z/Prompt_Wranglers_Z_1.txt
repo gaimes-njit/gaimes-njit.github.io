@@ -1,0 +1,45 @@
+Here's a step-by-step guide to generating the uppercase letter "Z" using the ab_drop() command and block types b11, b31, and b13:
+
+1. Start by placing a horizontal straight block (b31) at the bottom of the grid, at position 1:
+ab_drop('b31', 1)
+
+2. Move to the next structural layer and place a vertical straight block (b13) at position 2:
+ab_drop('b13', 2)
+
+3. Place another vertical straight block (b13) at position 4 to create a gap between the two vertical blocks:
+ab_drop('b13', 4)
+
+4. Place a horizontal straight block (b31) at position 3 on top of the vertical blocks to close the gap:
+ab_drop('b31', 3)
+
+5. Move to the next structural layer and place a vertical straight block (b13) at position 2:
+ab_drop('b13', 2)
+
+6. Place another vertical straight block (b13) at position 4:
+ab_drop('b13', 4)
+
+7. Place a horizontal straight block (b31) at position 3 on top of the vertical blocks:
+ab_drop('b31', 3)
+
+8. Continue to the next structural layer and place a horizontal straight block (b31) at position 1:
+ab_drop('b31', 1)
+
+9. Place another horizontal straight block (b31) at position 3:
+ab_drop('b31', 3)
+
+10. Finally, place a horizontal straight block (b31) at position 5 to complete the top of the letter "Z":
+ab_drop('b31', 5)
+
+The complete stream of commands to generate the letter "Z" is as follows:
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 4)
+ab_drop('b31', 3)
+ab_drop('b13', 2)
+ab_drop('b13', 4)
+ab_drop('b31', 3)
+ab_drop('b31', 1)
+ab_drop('b31', 3)
+ab_drop('b31', 5)
+```

@@ -1,0 +1,15 @@
+To create the desired structure that looks like the letter "X", we can break it down into two diagonal blocks - one from the top-left to bottom-right and the other from top-right to bottom-left. 
+
+To ensure stability, we need to start building from the bottom and work our way up. We can achieve this by dropping the bottom-left diagonal block first, adjusting its center position to align with the bottom-left corner of the grid. Then we drop the bottom-right diagonal block by adjusting its center position to align with the bottom-right corner of the grid.
+
+Here is the code implementation:
+
+```
+# Drop the bottom-left diagonal block
+ab_drop("b31", 0)
+
+# Drop the bottom-right diagonal block
+ab_drop("b31", 19)
+```
+
+Please note that the code assumes that the grid is already empty and no other blocks are present.

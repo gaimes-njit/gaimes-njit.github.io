@@ -1,0 +1,13 @@
+To generate the uppercase letter "M", we can use a combination of block types b31 and b13. 
+
+Here is the sequence of ab_drop() commands to generate the letter "M":
+
+```
+ab_drop('b13', 1)   # Place a vertical block at x=1, forming the left side of "M"
+ab_drop('b13', 2)   # Place another vertical block at x=2, next to the previous block
+ab_drop('b31', 2)   # Place a horizontal block at x=2, connecting the two vertical blocks
+ab_drop('b13', 3)   # Place a vertical block at x=3, forming the right side of "M"
+ab_drop('b13', 4)   # Place another vertical block at x=4, next to the previous block
+```
+
+This sequence of commands will generate the uppercase letter "M" using the defined block types and within the allowed space boundaries.

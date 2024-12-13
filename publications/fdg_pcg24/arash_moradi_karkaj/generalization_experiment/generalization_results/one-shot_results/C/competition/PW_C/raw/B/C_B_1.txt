@@ -1,0 +1,18 @@
+To generate the uppercase letter "B", we will need to strategically place the block types in the defined environment. Here is the sequence of ab_drop() commands to create the letter "B":
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1) 
+ab_drop('b13', 2) 
+ab_drop('b31', 2) 
+ab_drop('b13', 1) 
+ab_drop('b13', 2) 
+```
+
+Explanation:
+- We start by placing a horizontal straight block (b31) at position 1 to form the bottom part of the letter "B".
+- Then, we place two vertical straight blocks (b13) at positions 1 and 2 to form the left side of the letter "B".
+- Next, we place another horizontal straight block (b31) at positions 1 and 2 to form the top part of the letter "B".
+- Finally, we repeat the placement of the two vertical straight blocks (b13) at positions 1 and 2 to complete the right side of the letter "B".
+
+By following these commands, the blocks will stack on top of each other according to the 2D gravity rules, resulting in the uppercase letter "B" within the allowed space boundaries.

@@ -1,0 +1,11 @@
+The structure of the "V" can be generated using the following `ab_drop()` calls:
+
+```
+ab_drop('b31', 9)
+ab_drop('b31', 8)
+ab_drop('b13', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 8)
+```
+
+This sequence of `ab_drop()` calls will create a stable structure resembling the letter "V". The blocks are dropped in the specified order and position to satisfy the constraints and achieve the desired shape.

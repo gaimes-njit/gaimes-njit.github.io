@@ -1,0 +1,21 @@
+ab_drop('b13', 9)  # Place the bottom part of the vertical stroke
+ab_drop('b13', 9)  # Place the middle part of the vertical stroke
+ab_drop('b13', 9)  # Place the top part of the vertical stroke
+ab_drop('b31', 9)  # Place the horizontal stroke
+ab_drop('b31', 9)  # Place the second horizontal stroke
+ab_drop('b31', 9)  # Place the third horizontal stroke
+ab_drop('b31', 9)  # Place the fourth horizontal stroke
+ab_drop('b31', 9)  # Place the fifth horizontal stroke
+ab_drop('b31', 9)  # Place the sixth horizontal stroke
+ab_drop('b13', 11)  # Place the top part of the diagonal
+ab_drop('b31', 10)  # Place the top part of the diagonal
+ab_drop('b11', 10)  # Place the center part of the diagonal
+ab_drop('b31', 11)  # Place the bottom part of the diagonal
+ab_drop('b13', 8)  # Place the bottom part of the diagonal
+ab_drop('b11', 8)  # Place the center part of the diagonal
+ab_drop('b13', 8)  # Place the top part of the diagonal
+ab_drop('b11', 11)  # Place the top part of the vertical stroke
+ab_drop('b31', 11)  # Place the bottom part of the vertical stroke
+ab_drop('b11', 11)  # Place the middle part of the vertical stroke
+ab_drop('b31', 10)  # Place the center part of the vertical stroke
+ab_drop('b13', 9)  # Place the bottom part of the horizontal stroke

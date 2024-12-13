@@ -1,0 +1,81 @@
+To generate a stable structure that looks like the uppercase character "D" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the structure as an empty grid using the `structure` variable:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start building the structure from bottom to top by dropping the blocks in the appropriate positions.
+
+3. First, drop a b31 block at the center slot, aligned with the center of the base:
+```
+ab_drop('b31', W//2)
+```
+
+4. Check the stability of the structure after each drop. If the structure is not stable, adjust the drop positions to ensure stability.
+
+5. Drop a b11 block one slot to the right of the previously dropped b31 block, aligned with its center:
+```
+ab_drop('b11', W//2 + 1)
+```
+
+6. Drop a b13 block directly above the b31 block, aligned with its center:
+```
+ab_drop('b13', W//2)
+```
+
+7. Drop a b11 block one slot to the left of the previously dropped b31 block, aligned with its center:
+```
+ab_drop('b11', W//2 - 1)
+```
+
+8. Repeat steps 3-7 starting from the second layer until the desired height is reached. Each time, adjust the drop positions according to the previous layer's blocks to ensure stability and create the shape of the uppercase "D".
+
+9. Once the structure is complete, it should resemble the uppercase letter "D" and meet the hard constraints of stability and no boundary intrusion.
+
+Here is an example code implementation of the above steps:
+
+```python
+W = 20  # width of the map
+H = 16  # height of the map
+
+def ab_drop(x, y):
+    # x is the block type, y is the slot number from 0 to W-1 where the block center is aligned
+    
+    # initialize the drop position at the top of the map
+    drop_pos = (H-1, y)
+    
+    # drop the block from the top and move it down until it lands on the base or another block
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    
+    # place the block on the structure
+    structure[drop_pos[0]][drop_pos[1]] = x
+    print(f"ab_drop('{x}', {y})")
+
+# initialize the structure as an empty WxH grid
+structure = [[' ']*W for _ in range(H)]
+
+# Step 3
+ab_drop('b31', W//2)
+
+# Step 5
+ab_drop('b11', W//2 + 1)
+
+# Step 6
+ab_drop('b13', W//2)
+
+# Step 7
+ab_drop('b11', W//2 - 1)
+
+# Repeat Steps 3-7 for the remaining layers
+# ...
+
+# Print the final structure
+for row in structure:
+    print(' '.join(row))
+```
+
+Note: The above code is a basic starting point and would need to be extended to handle all the required layers and adjust the drop positions accordingly to meet the constraints and create a complete uppercase "D" structure.

@@ -1,0 +1,4 @@
+ab_drop('b11', 9)  # Place the first vertical line of the letter "F"
+ab_drop('b11', 8)  # Place the horizontal line of the letter "F"
+ab_drop('b11', 10) # Place the horizontal line of the letter "F"
+ab_drop('b11', 9)  # Place the second vertical line of the letter "F"

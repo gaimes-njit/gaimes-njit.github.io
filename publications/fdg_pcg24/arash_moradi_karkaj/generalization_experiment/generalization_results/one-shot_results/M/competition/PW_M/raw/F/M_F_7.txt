@@ -1,0 +1,17 @@
+To generate the letter "F" using the given block types and environment, you can follow the following steps:
+
+1. Place the vertical foundation of the letter by using the vertical straight block 'b13' at positions (1,1), (1,3), (1,4), and (1,6):
+```
+ab_drop('b13',1)
+ab_drop('b13',3)
+ab_drop('b13',4)
+ab_drop('b13',6)
+```
+
+2. Place the top of the letter by using the horizontal straight block 'b31' at positions (2,2) and (2,5):
+```
+ab_drop('b31',2)
+ab_drop('b31',5)
+```
+
+When you execute the above commands consecutively, it will construct the uppercase English letter "F" in the Tetris-like environment while ensuring stability within the defined gravity rules.

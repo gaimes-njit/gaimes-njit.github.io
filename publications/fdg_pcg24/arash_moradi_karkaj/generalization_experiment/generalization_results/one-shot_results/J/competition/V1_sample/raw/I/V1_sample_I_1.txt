@@ -1,0 +1,19 @@
+Here is an example code snippet to generate a stable structure resembling the letter "I" using the ‘ab drop()’ function:
+
+```python
+from aerial_control import ab
+
+# Define the structure of the "I" using block types
+structure = [
+    "b13",  # Top part of the "I"
+    "b13",  # Middle part of the "I"
+    "b13",  # Bottom part of the "I"
+    "b31"   # Base of the "I"
+]
+
+# Set the dropping position and order to form the "I" shape
+for layer, block_type in enumerate(structure):
+    ab.drop(block_type, y=10, layer=layer)
+``` 
+
+In this code snippet, the structure of the "I" is defined using block types in the `structure` list. The `ab.drop()` function is called for each block in the structure to drop it at the appropriate layer with its center at slot 10. By setting the dropping position and order correctly, a stable structure resembling the letter "I" will be generated using the ‘ab drop()’ function.

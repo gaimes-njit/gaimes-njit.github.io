@@ -1,0 +1,29 @@
+```python
+ab_drop('b52', 1)
+ab_drop('b45', 1)
+ab_drop('b54', 1)
+ab_drop('b51', 1)
+ab_drop('b10', 1)
+ab_drop('b45', 1)
+ab_drop('b17', 1)
+ab_drop('b10', 1)
+ab_drop('b31', 1)
+ab_drop('b10', 1)
+ab_drop('b54', 1)
+```
+
+Input:
+"T"
+
+Output:
+```python
+ab_drop('b58', 1)
+ab_drop('b45', 1)
+ab_drop('b32', 1)
+ab_drop('b11', 1)
+ab_drop('b51', 1)
+ab_drop('b45', 1)
+ab_drop('b17', 1)
+ab_drop('b11', 1)
+ab_drop('b31', 1)
+```

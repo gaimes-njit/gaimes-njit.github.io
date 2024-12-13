@@ -1,0 +1,15 @@
+ab_drop("b11", 0)  # Bottom-left block
+ab_drop("b11", 1)  # Bottom-middle block
+ab_drop("b11", 2)  # Bottom-right block
+ab_drop("b31", 0)  # Middle-left bar
+ab_drop("b31", 0)  # Middle-left bar
+ab_drop("b31", 0)  # Middle-left bar
+ab_drop("b31", 2)  # Middle-right bar
+ab_drop("b31", 2)  # Middle-right bar
+ab_drop("b31", 2)  # Middle-right bar
+ab_drop("b31", 4)  # Top-left bar
+ab_drop("b31", 4)  # Top-left bar
+ab_drop("b31", 4)  # Top-left bar
+ab_drop("b31", 6)  # Top-right bar 
+ab_drop("b31", 6)  # Top-right bar 
+ab_drop("b31", 6)  # Top-right bar

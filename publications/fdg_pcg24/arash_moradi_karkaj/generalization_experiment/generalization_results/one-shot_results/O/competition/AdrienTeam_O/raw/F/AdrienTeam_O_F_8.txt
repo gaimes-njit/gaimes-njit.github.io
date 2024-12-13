@@ -1,0 +1,16 @@
+```
+# Initialize the structure
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the first block, b31, to form the base
+ab_drop('b31', 9)
+
+# Drop the second block, b13, to form the vertical line of the "F"
+ab_drop('b13', 9)
+
+# Drop the third block, b13, to form the horizontal line of the "F"
+ab_drop('b13', 8)
+
+# Drop the fourth block, b31, to form the top part of the "F"
+ab_drop('b31', 9)
+```

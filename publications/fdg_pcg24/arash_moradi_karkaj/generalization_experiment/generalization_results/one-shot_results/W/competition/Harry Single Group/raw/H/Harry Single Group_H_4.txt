@@ -1,0 +1,23 @@
+To form the shape resembling the letter "H" using the available props, we can break it down into multiple steps:
+
+Step 1: Place the vertical b13 brick in the middle of the field. We can use ab_drop('b13', 9) to place the brick with an x_position of 9. This will occupy the cells (9, 0), (9, 1), and (9, 2).
+
+Step 2: Place two horizontal b31 bricks on top of the vertical brick. We can use ab_drop('b31', 9) to place the first brick with an x_position of 9. This will occupy the cells (8, 3), (9, 3), and (10, 3). Then, we can use ab_drop('b31', 7) to place the second brick with an x_position of 7. This will occupy the cells (6, 3), (7, 3), and (8, 3).
+
+To ensure stability, we need to make sure the two horizontal bricks have the same number of occupied cells on both sides of the vertical brick's pivot. In this case, the pivot is (9, 2). Both b31 bricks have one occupied cell on the left side and one occupied cell on the right side, so the structure is stable.
+
+Here's the code to generate this structure:
+
+```python
+def ab_drop(x, y):
+    # Generate bricks based on input and drop them
+
+# Step 1
+ab_drop('b13', 9)
+
+# Step 2
+ab_drop('b31', 9)
+ab_drop('b31', 7)
+```
+
+By executing the above code, the cells specified will be occupied, forming the shape resembling the letter "H" on the field.

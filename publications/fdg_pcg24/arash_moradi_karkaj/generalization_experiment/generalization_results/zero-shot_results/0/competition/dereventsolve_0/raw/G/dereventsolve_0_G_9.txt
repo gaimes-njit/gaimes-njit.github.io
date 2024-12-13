@@ -1,0 +1,7 @@
+```
+ab_drop(key='G', value='bottom_right', duplicates='keep')
+ab_drop(key='G', value='top_right', duplicates='keep')
+ab_drop(key='G', value='middle_right', duplicates='drop')
+ab_drop(key='G', value='bottom_left', duplicates='drop')
+ab_drop(key='G', value='top_left', duplicates='keep')
+```

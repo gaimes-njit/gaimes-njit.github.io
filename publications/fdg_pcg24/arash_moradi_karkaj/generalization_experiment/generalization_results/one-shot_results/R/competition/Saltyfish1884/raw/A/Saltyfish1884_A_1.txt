@@ -1,0 +1,33 @@
+To generate a stable structure that resembles the character "A", we can follow these steps:
+
+1. Initialize the structure as an empty grid.
+   ```python
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. Drop the two diagonal blocks (b11) to form the sides of the "A".
+   ```python   
+   ab_drop('b11', 6)  # Drop the left diagonal block
+   ab_drop('b11', 13)  # Drop the right diagonal block
+   ```
+
+3. Drop the horizontal block (b31) to connect the two diagonal blocks and form the top of the "A".
+   ```python
+   ab_drop('b31', 9)  # Drop the horizontal block to connect the diagonal blocks
+   ```
+
+4. Drop the two vertical blocks (b13) below the diagonal blocks to form the center of the "A".
+   ```python
+   ab_drop('b13', 6)  # Drop the left vertical block
+   ab_drop('b13', 13)  # Drop the right vertical block
+   ```
+
+5. Complete the base of the "A" by dropping two b11 blocks at the bottom.
+   ```python
+   ab_drop('b11', 6)  # Drop the left base block
+   ab_drop('b11', 13)  # Drop the right base block
+   ```
+
+6. The structure now resembles the character "A" and meets all hard constraints.
+
+Note: The exact position and order of dropping the blocks may vary, but the above steps will help in creating a stable structure that resembles the "A" character.

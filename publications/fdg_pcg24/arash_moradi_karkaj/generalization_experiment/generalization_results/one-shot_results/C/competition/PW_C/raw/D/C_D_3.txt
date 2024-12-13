@@ -1,0 +1,12 @@
+To generate the capital letter "D", we will follow the instructions provided in the task. Here is the stream of `ab_drop()` commands to create the letter "D":
+
+```
+ab_drop('b31', 1)  # Create the bottom straight block
+ab_drop('b13', 1)  # Create the left vertical block
+ab_drop('b13', 2)  # Create the right vertical block
+ab_drop('b31', 2)  # Create the top straight block
+ab_drop('b31', 3)  # Create the middle straight block
+ab_drop('b13', 3)  # Create the middle vertical block
+```
+
+This sequence of commands will generate the letter "D" accurately within the given boundaries.

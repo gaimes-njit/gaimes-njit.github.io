@@ -1,0 +1,16 @@
+To generate the uppercase English letter "N", we can use the following commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 3)
+ab_drop('b13', 4)
+ab_drop('b31', 4)
+```
+
+Explanation:
+- First, we place a vertical straight block ('b13') at position 1.
+- Then, we place a horizontal straight block ('b31') starting from position 1.
+- Next, we place a vertical straight block ('b13') at position 3 to create the diagonal of the "N".
+- After that, we place another vertical straight block ('b13') at position 4 to complete the diagonal.
+- Finally, we place a horizontal straight block ('b31') starting from position 4 to create the base of the "N".

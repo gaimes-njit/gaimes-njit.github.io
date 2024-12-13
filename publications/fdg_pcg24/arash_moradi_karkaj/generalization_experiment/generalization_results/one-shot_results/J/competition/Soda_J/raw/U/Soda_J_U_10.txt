@@ -1,0 +1,29 @@
+Here is the complete implementation to generate a structure that looks like the letter "U" on the given level:
+
+1. Dropping the bottom base of the "U":
+```
+# Bottom part of the U
+ab_drop("b31", 5)
+ab_drop("b31", 6)
+ab_drop("b31", 7)
+```
+
+2. Dropping the left side of the "U":
+```
+# Left side of the U
+ab_drop("b31", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 5)
+ab_drop("b11", 5)
+```
+
+3. Dropping the right side of the "U":
+```
+# Right side of the U
+ab_drop("b31", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 9)
+ab_drop("b11", 9)
+```
+
+The implementation above should generate a structure that resembles the letter "U" in the level.

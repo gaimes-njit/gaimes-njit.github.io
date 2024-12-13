@@ -1,0 +1,54 @@
+To generate the shape resembling the letter "Y" using the available props and function, we need to carefully plan the placement of each brick to ensure stability and avoid boundary collisions.
+
+First, we initialize the field and set it to empty by mapping each cell to 0:
+
+``` python
+field = [[0] * 20 for _ in range(16)]
+```
+
+Next, we start placing the bricks one by one to form the shape resembling the letter "Y".
+
+Step 1: Place the vertical brick b13 at (5,0):
+
+``` python
+ab_drop('b13', 5)
+```
+
+After this step, the cells (5, 0), (5, 1), and (5, 2) will be occupied.
+
+Step 2: Place the horizontal brick b31 at (4,3):
+
+``` python
+ab_drop('b31', 4)
+```
+
+After this step, the cells (4, 3), (5, 3), and (6, 3) will be occupied.
+
+Step 3: Place another horizontal brick b31 at (1,3):
+
+``` python
+ab_drop('b31', 1)
+```
+
+After this step, the cells (1, 3), (2, 3), and (3, 3) will be occupied.
+
+Step 4: Place the square brick b11 at (1,4):
+
+``` python
+ab_drop('b11', 1)
+```
+
+After this step, the cell (1, 4) will be occupied.
+
+Finally, we have successfully generated the required structure resembling the letter "Y".
+
+Here is the complete code:
+
+``` python
+field = [[0] * 20 for _ in range(16)]
+
+ab_drop('b13', 5)
+ab_drop('b31', 4)
+ab_drop('b31', 1)
+ab_drop('b11', 1)
+```

@@ -1,0 +1,12 @@
+```
+# Step 1: Drop the top horizontal bar of the letter A
+ab_drop("b31", 3)
+ab_drop("b13", 4)
+ab_drop("b31", 5)
+
+# Step 2: Drop the middle horizontal bar of the letter A
+ab_drop("b31", 4)
+
+# Step 3: Drop the bottom tick of the letter A
+ab_drop("b13", 4)
+```

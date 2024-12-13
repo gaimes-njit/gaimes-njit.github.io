@@ -1,0 +1,64 @@
+To generate a stable structure that looks like the uppercase character "W" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the structure as an empty WxH grid using the provided code:
+
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Use the `ab_drop()` function to drop the blocks in a way that satisfies the stability constraint and creates a structure similar to the uppercase letter "W".
+
+3. Start building the base of the "W" by dropping a b31 block at slot 8 (assuming W = 20):
+
+```
+ab_drop('b31', 8)
+```
+
+This block will land on layer 0 and provide a stable foundation for the rest of the structure.
+
+4. Drop two b13 blocks on top of the base, one at slot 6 and another at slot 10:
+
+```
+ab_drop('b13', 6)
+ab_drop('b13', 10)
+```
+
+These blocks will form the outer edges of the "W".
+
+5. Drop another b31 block on top of the previous b31 block, at slot 14:
+
+```
+ab_drop('b31', 14)
+```
+
+This block will connect the outer edges and complete the top part of the "W".
+
+6. Drop a b11 block on top of the middle slot of the top b31 block, at slot 14:
+
+```
+ab_drop('b11', 14)
+```
+
+This block will form the middle part of the "W".
+
+7. Drop a b11 block on top of the left outer edge, at slot 6:
+
+```
+ab_drop('b11', 6)
+```
+
+This block will add a small bar to the left side of the structure, making it resemble the uppercase letter "W".
+
+8. Drop a b11 block on top of the right outer edge, at slot 10:
+
+```
+ab_drop('b11', 10)
+```
+
+This block will add a small bar to the right side of the structure, completing the resemblance to the letter "W".
+
+9. Check the stability of the structure after each block drop to ensure that it remains stable.
+
+10. Repeat steps 3-9 multiple times, changing the slot positions of the blocks and the block types to create diverse and varied structures that resemble the letter "W".
+
+Note: The exact coordinates for each block drop will depend on the actual values of W and H, so adjust the slot numbers accordingly.

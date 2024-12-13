@@ -1,0 +1,26 @@
+To create a stable structure resembling "D" while adhering to the given constraints, the following `ab_drop()` calls can be used:
+
+```python
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Drop b31 to create the vertical line of "D"
+ab_drop('b31', 6)
+ab_drop('b31', 6)
+
+# Drop b13 to create the vertical line of "D"
+ab_drop('b13', 7)
+ab_drop('b13', 7)
+ab_drop('b13', 7)
+
+# Drop b31 and b13 to create the diagonal line of "D"
+ab_drop('b31', 8)
+ab_drop('b13', 9)
+
+# Drop b11 to create the horizontal line of "D"
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+```
+
+This will generate a stable structure resembling the letter "D" with the blocks aligned correctly.

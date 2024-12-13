@@ -1,0 +1,31 @@
+To generate the uppercase letter "D", we can follow these steps:
+
+1. Start by stacking a horizontal block (b31) at position 1 to form the bottom of the letter D:
+```
+ab_drop('b31', 1)
+```
+
+2. Place a vertical block (b13) at position 0 and another vertical block (b13) at position 3 to form the left side of the letter D:
+```
+ab_drop('b13', 0)
+ab_drop('b13', 3)
+```
+
+3. Stack another horizontal block (b31) at position 2 to connect the left side and the bottom of the letter D:
+```
+ab_drop('b31', 2)
+```
+
+4. Finally, place a vertical block (b13) at position 1 to complete the right side of the letter D:
+```
+ab_drop('b13', 1)
+```
+
+The complete stream of commands to generate the letter "D" would be:
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+```

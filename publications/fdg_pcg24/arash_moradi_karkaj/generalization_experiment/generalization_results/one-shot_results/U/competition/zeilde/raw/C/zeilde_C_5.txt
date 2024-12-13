@@ -1,0 +1,59 @@
+1. The letter "C" with asterisks:
+```
+ ****
+**
+**
+**
+**
+ ****
+```
+
+2. List of asterisks and spaces in each row:
+```
+row 1: 4x
+row 2: 2x
+row 3: 2x
+row 4: 2x
+row 5: 2x
+row 6: 4x
+```
+
+3. Asterisks as "x" and spaces as "y":
+```
+row 1: 4x, 0y
+row 2: 2x, 2y
+row 3: 2x, 2y
+row 4: 2x, 2y
+row 5: 2x, 2y
+row 6: 4x, 0y
+```
+
+4. Sequence of "x" and "y" for each row:
+```
+row 1: xxxxyyyyxx
+row 2: xxyyxx
+row 3: xxyyxx
+row 4: xxyyxx
+row 5: xxyyxx
+row 6: xxxxyyyyxx
+```
+
+5. Positions of each variable for each row:
+```
+row 1: x-1; x-2; x-3; x-4; y-5; y-6; y-7; y-8; x-9; x-10
+row 2: x-1; x-2; y-3; y-4; x-5; x-6
+row 3: x-1; x-2; y-3; y-4; x-5; x-6
+row 4: x-1; x-2; y-3; y-4; x-5; x-6
+row 5: x-1; x-2; y-3; y-4; x-5; x-6
+row 6: x-1; x-2; x-3; x-4; y-5; y-6; y-7; y-8; x-9; x-10
+```
+
+6. Sequence of `ab_drop` function calls for each row:
+```
+ab_drop("b11", 1) ab_drop("b11", 2) ab_drop("b11", 3) ab_drop("b11", 4) ab_drop("b11", 5) ab_drop("b11", 6) ab_drop("b11", 7) ab_drop("b11", 8) ab_drop("b11", 9) ab_drop("b11", 10)
+ab_drop("b11", 1) ab_drop("b11", 2) ab_drop("b11", 3) ab_drop("b11", 4) ab_drop("b11", 5) ab_drop("b11", 6)
+ab_drop("b11", 1) ab_drop("b11", 2) ab_drop("b11", 3) ab_drop("b11", 4) ab_drop("b11", 5) ab_drop("b11", 6)
+ab_drop("b11", 1) ab_drop("b11", 2) ab_drop("b11", 3) ab_drop("b11", 4) ab_drop("b11", 5) ab_drop("b11", 6)
+ab_drop("b11", 1) ab_drop("b11", 2) ab_drop("b11", 3) ab_drop("b11", 4) ab_drop("b11", 5) ab_drop("b11", 6)
+ab_drop("b11", 1) ab_drop("b11", 2) ab_drop("b11", 3) ab_drop("b11", 4) ab_drop("b11", 5) ab_drop("b11", 6) ab_drop("b11", 7) ab_drop("b11", 8) ab_drop("b11", 9) ab_drop("b11", 10)
+```

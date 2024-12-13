@@ -1,0 +1,45 @@
+To generate the shape resembling the letter "I", we can use the following steps:
+
+1. Initialize the field with a 2D array of zeros, representing the empty cells.
+
+```python
+field = [[0] * 20 for _ in range(16)]
+```
+
+2. Use the ab_drop() function to place bricks on the field.
+
+```python
+ab_drop('b13', 8)   # Place the first vertical brick at x_position=8
+ab_drop('b31', 7)   # Place the horizontal brick on top of the vertical brick at x_position=7
+```
+
+3. Verify the stability of the structure by checking the number of occupied cells on each side of the pivot.
+
+```python
+def check_stability():
+    left_count = sum(field[y][x] == 1 for y in range(16) for x in range(7))
+    right_count = sum(field[y][x] == 1 for y in range(16) for x in range(9, 20))
+    return left_count == right_count
+
+stability = check_stability()
+```
+
+4. Repeat steps 2 and 3 to complete the structure.
+
+```python
+ab_drop('b31', 7)   # Place another horizontal brick on top of the existing structure at x_position=7
+ab_drop('b13', 8)   # Place another vertical brick on top of the existing structure at x_position=8
+
+ab_drop('b31', 7)   # Place another horizontal brick on top of the existing structure at x_position=7
+ab_drop('b13', 8)   # Place another vertical brick on top of the existing structure at x_position=8
+
+ab_drop('b31', 7)   # Place another horizontal brick on top of the existing structure at x_position=7
+```
+
+5. Verify the stability of the final structure.
+
+```python
+final_stability = check_stability()
+```
+
+Now, the structure resembling the letter "I" should be generated on the field, satisfying the stability and boundary collision requirements.

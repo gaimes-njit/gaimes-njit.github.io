@@ -1,0 +1,15 @@
+To generate a structure that looks like the letter "T," we can use the following sequence of `ab_drop` function calls:
+
+```python
+ab_drop('a')
+ab_drop('b')
+ab_drop('append')
+ab_drop('b')
+ab_drop('a')
+ab_drop('append')
+ab_drop('b')
+ab_drop('b')
+ab_drop('append')
+```
+
+This sequence of `ab_drop` function calls will create a structure that resembles the letter "T" using the key-value pairs in the given database.

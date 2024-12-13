@@ -1,0 +1,40 @@
+To generate a stable structure that resembles the character "G", we need to carefully consider the constraints and follow a step-by-step approach:
+
+Step 1: Initialize the structure as an empty grid:
+```python
+# initialize the structure as an empty WxH grid
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Identify the dropping positions and order using techniques from the block-stacking problem. Based on the stability rules mentioned in the constraints:
+
+- We need to start with a base (b11 or b13 block), so we drop a b11 block in the middle slot to create a stable foundation:
+```python
+ab_drop('b11', W//2)
+```
+
+Step 3: Determine the shape of the structure. To resemble the character "G", we need three blocks: one vertical block (b13) and two horizontal blocks (b31).
+
+- Drop a b13 block on top of the base, aligning its center with the middle slot:
+```python
+ab_drop('b13', W//2)
+```
+
+- Drop two b31 blocks horizontally, one above the other, in the middle slots (left and right):
+```python
+ab_drop('b31', W//2 - 1)  # left b31 block
+ab_drop('b31', W//2 + 1)  # right b31 block
+```
+
+Step 4: Ensure the stability and adjust the dropping positions if necessary. Check if any part of the structure violates the stability rules, and make adjustments as needed.
+
+Step 5: Repeat step 4 until the entire structure is stable and satisfies all constraints.
+
+Step 6: Print the final structure:
+
+```python
+for row in structure:
+    print(''.join(row))
+```
+
+This approach ensures that the generated structure resembles the character "G" while meeting the stability and boundary intrusion constraints.

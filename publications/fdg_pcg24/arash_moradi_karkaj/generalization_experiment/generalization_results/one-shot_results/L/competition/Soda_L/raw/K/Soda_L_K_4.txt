@@ -1,0 +1,16 @@
+To create the letter "K" in the level, we can break it down into three blocks - the two vertical pipes and one diagonal bar. We will start by placing the vertical pipes and then add the diagonal bar on top.
+
+Here is the code to create the letter "K":
+
+```
+# Place the left vertical pipe
+ab_drop("b31", 8)
+
+# Place the right vertical pipe
+ab_drop("b31", 11)
+
+# Place the diagonal bar on top
+ab_drop("b13", 9)
+```
+
+This code will create the letter "K" in the level. Make sure to follow the order of placement and the provided parameters for stability and similarity.

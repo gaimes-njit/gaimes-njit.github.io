@@ -1,0 +1,192 @@
+1. A
+ab_drop('b31', 10)
+ab_drop('b31', 11)
+ab_drop('b31', 12)
+ab_drop('b31', 11)
+ab_drop('b31', 10)
+
+2. B
+ab_drop('b31', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 11)
+ab_drop('b31', 9)
+ab_drop('b13', 8)
+
+3. C
+ab_drop('b31', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 11)
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+ab_drop('b13', 11)
+
+4. D
+ab_drop('b31', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 11)
+ab_drop('b31', 9)
+ab_drop('b13', 10)
+ab_drop('b13', 13)
+
+5. E
+ab_drop('b31', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 11)
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+ab_drop('b13', 8)
+ab_drop('b13', 11)
+
+6. F
+ab_drop('b31', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 11)
+ab_drop('b31', 9)
+ab_drop('b13', 8)
+ab_drop('b13', 11)
+
+7. G
+ab_drop('b31', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 11)
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+ab_drop('b13', 11)
+ab_drop('b31', 11)
+
+8. H
+ab_drop('b13', 10)
+ab_drop('b31', 9)
+ab_drop('b13', 9)
+ab_drop('b31', 10)
+ab_drop('b13', 11)
+
+9. I
+ab_drop('b13', 10)
+ab_drop('b13', 9)
+ab_drop('b13', 11)
+ab_drop('b13', 8)
+ab_drop('b13', 12)
+
+10. J
+ab_drop('b31', 10)
+ab_drop('b31', 11)
+ab_drop('b13', 10)
+
+11. K
+ab_drop('b31', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 11)
+ab_drop('b31', 8)
+ab_drop('b31', 12)
+
+12. L
+ab_drop('b31', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 11)
+ab_drop('b13', 11)
+
+13. M
+ab_drop('b31', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 11)
+ab_drop('b13', 10)
+ab_drop('b31', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 11)
+
+14. N
+ab_drop('b31', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 11)
+ab_drop('b13', 10)
+ab_drop('b31', 11)
+ab_drop('b31', 9)
+
+15. O
+ab_drop('b13', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+ab_drop('b31', 11)
+ab_drop('b13', 12)
+
+16. P
+ab_drop('b31', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 11)
+ab_drop('b31', 9)
+ab_drop('b13', 8)
+
+17. Q
+ab_drop('b13', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+ab_drop('b31', 11)
+ab_drop('b13', 12)
+ab_drop('b31', 10)
+ab_drop('b13', 11)
+
+18. R
+ab_drop('b31', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 11)
+ab_drop('b31', 9)
+ab_drop('b13', 8)
+ab_drop('b31', 10)
+ab_drop('b13', 11)
+
+19. S
+ab_drop('b31', 10)
+ab_drop('b31', 11)
+ab_drop('b31', 12)
+ab_drop('b31', 11)
+ab_drop('b31', 10)
+
+20. T
+ab_drop('b13', 10)
+ab_drop('b31', 10)
+ab_drop('b13', 9)
+ab_drop('b13', 11)
+
+21. U
+ab_drop('b13', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+ab_drop('b31', 11)
+
+22. V
+ab_drop('b13', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 11)
+ab_drop('b13', 8)
+ab_drop('b13', 12)
+
+23. W
+ab_drop('b13', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+ab_drop('b31', 11)
+ab_drop('b31', 12)
+ab_drop('b31', 10)
+
+24. X
+ab_drop('b13', 10)
+ab_drop('b31', 9)
+ab_drop('b13', 9)
+ab_drop('b31', 10)
+ab_drop('b13', 11)
+
+25. Y
+ab_drop('b13', 10)
+ab_drop('b31', 9)
+ab_drop('b13', 9)
+ab_drop('b13', 11)
+ab_drop('b13', 12)
+
+26. Z
+ab_drop('b13', 10)
+ab_drop('b31', 10)
+ab_drop('b13', 9)
+ab_drop('b13', 11)
+
+Note: This is not an exhaustive list of all possible capital English letters, but it includes some common ones.

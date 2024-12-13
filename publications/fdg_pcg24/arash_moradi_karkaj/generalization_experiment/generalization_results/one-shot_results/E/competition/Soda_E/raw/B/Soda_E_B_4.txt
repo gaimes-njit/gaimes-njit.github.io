@@ -1,0 +1,24 @@
+To create the letter "B" in the 2D grid, we can break it down into three blocks - the top horizontal bar, the bottom horizontal bar, and the two diagonal bars in the middle.
+
+Here is the code implementing the blocks in a bottom-to-top fashion to create the letter "B":
+
+```python
+# Add the bottom diagonal bar
+ab_drop("b13", 6)
+ab_drop("b11", 7)
+
+# Add the bottom horizontal bar
+ab_drop("b31", 6)
+ab_drop("b11", 7)
+
+# Add the top diagonal bar
+ab_drop("b13", 8)
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+
+# Add the top horizontal bar
+ab_drop("b31", 8)
+ab_drop("b11", 10)
+```
+
+This code will create a stable structure that resembles the letter "B" in the 2D grid.

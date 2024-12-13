@@ -1,0 +1,15 @@
+To create a structure that looks like the capital letter "U" in the level, we can use the following steps:
+
+1. Start by dropping a row block ("b31") at the leftmost position of the grid (x_position=0). This will act as the base of the "U" shape.
+2. Drop a column block ("b13") at the left side of the base block, centered vertically. This will act as the left side of the "U" shape.
+3. Drop another column block ("b13") at the right side of the base block, centered vertically. This will act as the right side of the "U" shape.
+
+Here is the complete implementation:
+
+```
+ab_drop("b31", 0)          # Drop the base block
+ab_drop("b13", 0)          # Drop the left side block
+ab_drop("b13", 2)          # Drop the right side block
+```
+
+Please note that we assume the grid is initially empty and that the "U" shape is created in a bottom-to-top fashion, as stated in the problem requirements. Additionally, the positions and order of the blocks are crucial to achieve the desired "U" shape.

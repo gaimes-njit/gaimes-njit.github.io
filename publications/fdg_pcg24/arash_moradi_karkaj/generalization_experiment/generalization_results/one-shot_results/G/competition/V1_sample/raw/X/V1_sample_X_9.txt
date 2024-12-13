@@ -1,0 +1,17 @@
+Below is the code to generate a stable structure that looks like the "X" using the 'ab drop()' function:
+
+ab drop(b13, y=10, H=13) // Drop a vertical block at slot 10 from layer 13
+ab drop(b11, y=9, H=12) // Drop a square block at slot 9 from layer 12
+ab drop(b11, y=8, H=11) // Drop a square block at slot 8 from layer 11
+ab drop(b11, y=7, H=10) // Drop a square block at slot 7 from layer 10
+ab drop(b31, y=6, H=9) // Drop a horizontal block at slot 6 from layer 9
+ab drop(b11, y=10, H=8) // Drop a square block at slot 10 from layer 8
+ab drop(b11, y=11, H=7) // Drop a square block at slot 11 from layer 7
+ab drop(b31, y=12, H=6) // Drop a horizontal block at slot 12 from layer 6
+ab drop(b11, y=10, H=5) // Drop a square block at slot 10 from layer 5
+ab drop(b11, y=9, H=4) // Drop a square block at slot 9 from layer 4
+ab drop(b11, y=8, H=3) // Drop a square block at slot 8 from layer 3
+ab drop(b31, y=7, H=2) // Drop a horizontal block at slot 7 from layer 2
+ab drop(b11, y=6, H=1) // Drop a square block at slot 6 from layer 1
+
+This code will create a stable "X" structure with correct positioning and ordering of blocks.

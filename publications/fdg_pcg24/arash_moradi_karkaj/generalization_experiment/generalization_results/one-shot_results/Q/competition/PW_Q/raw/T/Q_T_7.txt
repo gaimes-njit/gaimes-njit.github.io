@@ -1,0 +1,16 @@
+To generate the uppercase English letter "T", we can use the following stream of commands:
+
+```
+ab_drop('b13', 8)
+ab_drop('b31', 8)
+ab_drop('b11', 7)
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+```
+
+Explanation:
+1. We start by placing a vertical straight block (`b13`) at position 8 to form the vertical line of the "T". This block has a width of 1 and a height of 3 units.
+2. Next, we place a horizontal straight block (`b31`) at position 8 to form the horizontal line of the "T". This block has a width of 3 and a height of 1 unit.
+3. Finally, we place three 1x1 square blocks (`b11`) consecutively at positions 7, 8, and 9 to complete the cross of the "T". These blocks have a width and height of 1 unit each.
+
+By following these commands, we will generate the uppercase English letter "T" in the Tetris-like environment.

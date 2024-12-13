@@ -1,0 +1,21 @@
+To generate the uppercase English letter "R" using the given block types and environment, you can follow these steps:
+
+1. Place a horizontal straight block (b31) at position 1. This will create the left vertical line of the "R".  
+   `ab_drop('b31', 1)`
+
+2. Place a vertical straight block (b13) at position 2. This will create the upper horizontal line of the "R".  
+   `ab_drop('b13', 2)`
+
+3. Place a horizontal straight block (b31) at position 2. This will create the right vertical line of the "R".  
+   `ab_drop('b31', 2)`
+
+4. Place a horizontal straight block (b31) at position 3, but one row lower than the blocks placed in the previous steps. This will create the lower horizontal line of the "R".   
+   `ab_drop('b31', 3)`
+
+Here is the complete stream of commands to generate the uppercase English letter "R":
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+```

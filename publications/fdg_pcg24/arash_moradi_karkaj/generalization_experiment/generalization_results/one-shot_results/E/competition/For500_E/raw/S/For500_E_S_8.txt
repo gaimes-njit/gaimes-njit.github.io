@@ -1,0 +1,12 @@
+# Initialize the structure with an empty grid
+structure = [[' ']*20 for _ in range(16)]
+
+# Generate the letter 'S'
+ab_drop('b31', 7)
+ab_drop('b13', 7)
+ab_drop('b13', 10)
+ab_drop('b31', 10)
+
+# Display the resulting structure
+for row in structure:
+    print(' '.join(row))

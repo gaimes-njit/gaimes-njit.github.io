@@ -1,0 +1,15 @@
+Task: Generate uppercase English letter "U"
+
+To generate the letter "U", we can break it down into three parts: the left vertical stroke, the right vertical stroke, and the horizontal stroke connecting them.
+
+Here is the sequence of ab_drop() commands to generate the letter "U":
+
+```
+ab_drop('b13', 1)   # Place the left vertical stroke at position 1
+ab_drop('b13', 3)   # Place the left vertical stroke at position 3
+ab_drop('b31', 2)   # Place the horizontal stroke at position 2
+ab_drop('b13', 1)   # Place the right vertical stroke at position 1
+ab_drop('b13', 3)   # Place the right vertical stroke at position 3
+```
+
+By following these commands in order, the blocks will be placed in such a way that they form the letter "U" within the allowed space boundaries.

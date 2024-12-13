@@ -1,0 +1,23 @@
+```
+ab_drop('b11', 9)  # drop a square block at slot 9
+ab_drop('b13', 9)  # drop a vertical block at slot 9
+ab_drop('b31', 9)  # drop a horizontal block at slot 9
+ab_drop('b11', 10)  # drop a square block at slot 10
+ab_drop('b11', 8)  # drop a square block at slot 8
+ab_drop('b11', 11)  # drop a square block at slot 11
+ab_drop('b11', 7)  # drop a square block at slot 7
+ab_drop('b11', 12)  # drop a square block at slot 12
+ab_drop('b11', 6)  # drop a square block at slot 6
+ab_drop('b11', 13)  # drop a square block at slot 13
+ab_drop('b11', 5)  # drop a square block at slot 5
+ab_drop('b11', 14)  # drop a square block at slot 14
+ab_drop('b11', 4)  # drop a square block at slot 4
+ab_drop('b11', 15)  # drop a square block at slot 15
+ab_drop('b11', 3)  # drop a square block at slot 3
+ab_drop('b11', 16)  # drop a square block at slot 16
+ab_drop('b11', 2)  # drop a square block at slot 2
+ab_drop('b11', 17)  # drop a square block at slot 17
+ab_drop('b11', 1)  # drop a square block at slot 1
+ab_drop('b11', 18)  # drop a square block at slot 18
+ab_drop('b11', 0)  # drop a square block at slot 0
+```

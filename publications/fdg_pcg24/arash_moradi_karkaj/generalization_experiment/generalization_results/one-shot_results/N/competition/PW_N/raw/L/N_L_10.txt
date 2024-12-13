@@ -1,0 +1,21 @@
+To generate the uppercase letter L using the given block types and environment, you can follow these steps:
+
+1. Drop a vertical straight block at position 2: `ab_drop('b13',2)`
+2. Drop another vertical straight block at position 3: `ab_drop('b13',3)`
+3. Move to the top of the blocks: `top`
+4. Drop a horizontal straight block at position 3 to create the side of the L: `ab_drop('b31',3)`
+5. Move to the side of the blocks: `side`
+6. Drop another vertical straight block at position 5 to complete the L shape: `ab_drop('b13',5)`
+7. Finally, drop a square block at position 5 to stabilize the structure: `ab_drop('b11',5)`
+
+Putting it all together, the stream of commands to generate the uppercase letter L would be:
+
+```
+ab_drop('b13',2)
+ab_drop('b13',3)
+top
+ab_drop('b31',3)
+side
+ab_drop('b13',5)
+ab_drop('b11',5)
+```

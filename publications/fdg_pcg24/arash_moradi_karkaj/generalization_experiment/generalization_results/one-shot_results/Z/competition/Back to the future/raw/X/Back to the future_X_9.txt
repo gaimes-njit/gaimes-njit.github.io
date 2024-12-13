@@ -1,0 +1,66 @@
+To generate a stable structure that looks like the uppercase character "X" using the `ab_drop()` function, we need to carefully drop the blocks one by one and ensure stability at each step. Here is a possible algorithm to achieve this:
+
+1. Initialize the structure as an empty grid: `structure = [[' ']*W for _ in range(H)]`.
+
+2. Start by dropping a b31 block at the center slot of the bottom layer (layer 0) using `ab_drop('b31', W//2)`. This creates the base of the "X" structure.
+
+3. To create the diagonal lines of the "X", we need to vertically stack b13 blocks on top of the b31 block. Start by dropping a b13 block just above the middle slot of the b31 block. We'll call the slot at the center of the b31 block as the "pivot" slot.
+
+4. To ensure stability, check if the structure has a stable support at the position where we want to drop the b13 block. In this case, we need to check if there is a block in the slot just below the pivot slot, and if not, drop a b11 block there using `ab_drop('b11', W//2)`. Repeat this stability check for all the slots we want to drop a block.
+
+5. After ensuring stability, we can drop the b13 block at the desired position.
+
+6. Repeat steps 4 and 5 for the other side of the "X", ensuring stability and dropping b13 blocks in the mirrored positions.
+
+7. Finally, to create the intersecting line of the "X", we need to drop a b31 block just above the middle slot of the b31 block in the previous layer. Again, ensure stability before dropping the block.
+
+8. Repeat steps 4 and 5 for the blocks above the intersecting line of the "X" to complete the structure.
+
+Here's an example implementation of the above algorithm:
+
+```python
+# Map dimensions
+W = 20
+H = 16
+
+# Initialize the structure as an empty grid
+structure = [[' ']*W for _ in range(H)]
+
+def ab_drop(x, y):
+    # x is the block type, y is the slot number from 0 to W-1 where the block center is aligned
+    
+    # initialize the drop position at the top of the map
+    drop_pos = (H-1, y)
+    
+    # drop the block from the top and move it down until it lands on the base or another block
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    
+    # place the block on the structure
+    structure[drop_pos[0]][drop_pos[1]] = x
+    
+# Drop the initial b31 block at the center of the bottom layer
+ab_drop('b31', W//2)
+
+# Drop b13 blocks above the pivot slots to create the diagonal lines of the "X"
+ab_drop('b11', W//2 - 1)   # Left diagonal line - top slot
+ab_drop('b13', W//2)       # Left diagonal line - middle slot
+ab_drop('b11', W//2 + 1)   # Left diagonal line - bottom slot
+
+ab_drop('b11', W//2 - 1)   # Right diagonal line - top slot
+ab_drop('b13', W//2)       # Right diagonal line - middle slot
+ab_drop('b11', W//2 + 1)   # Right diagonal line - bottom slot
+
+# Drop the intersecting b31 block above the middle slot of the previous b31 block
+ab_drop('b31', W//2)
+
+# Repeat the above steps for the other layers of the structure above the intersecting line
+
+# Print the resulting structure
+for row in structure:
+    print(' '.join(row))
+```
+
+This algorithm ensures stability by checking for existing support before dropping each block and creates a structure that resembles the uppercase character "X" by carefully positioning the blocks.

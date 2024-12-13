@@ -1,0 +1,18 @@
+To generate a stable structure that looks like the uppercase character "M", we can use the `ab_drop()` function in a systematic way. Here is a high-level outline of the steps we can follow:
+
+1. Initialize the structure as an empty grid using the provided `structure` variable.
+2. Generate the left vertical part of the "M":
+   a. Use `ab_drop('b13', y)` to drop a vertical block at a suitable slot and store the coordinates of the drop.
+   b. Repeat step a twice more, adjusting the slot position, to create three vertically stacked blocks.
+3. Generate the middle horizontal part of the "M":
+   a. Use `ab_drop('b31', y)` to drop a horizontal block at a suitable slot and store the coordinates of the drop.
+   b. Replicate step a twice more, adjusting the slot position, to create three horizontally stacked blocks.
+4. Generate the right vertical part of the "M":
+   a. Use `ab_drop('b13', y)` to drop a vertical block at a suitable slot and store the coordinates of the drop.
+   b. Repeat step a twice more, adjusting the slot position, to create three vertically stacked blocks.
+5. Check the stability of the structure after each drop to ensure that it remains stable and does not collapse.
+6. Adjust the slot positions in each drop to satisfy the constraint of not intruding on the boundary of the map.
+7. Ensure that the overall shape of the structure resembles the "M" by arranging the drops appropriately.
+8. Randomize the order of the drops to promote diversity in the generated structures.
+
+This outline provides a general approach, but the specific implementation will require fine-tuning and experimentation to generate stable structures that closely resemble the desired "M" shape.

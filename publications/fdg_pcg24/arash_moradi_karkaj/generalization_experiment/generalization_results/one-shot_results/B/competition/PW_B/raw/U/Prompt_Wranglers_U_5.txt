@@ -1,0 +1,39 @@
+To create the uppercase English letter "U", we can follow the following steps:
+
+1. Start by constructing the left vertical side of the letter:
+
+```
+ab_drop('b13', 0)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+2. Next, create the horizontal bar at the top of the letter:
+
+```
+ab_drop('b31', 0)
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+```
+
+3. Finally, complete the letter "U" by constructing the right vertical side:
+
+```
+ab_drop('b13', 3)
+ab_drop('b13', 4)
+ab_drop('b13', 5)
+```
+
+Combine all the steps together:
+
+```
+ab_drop('b13', 0)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 0)
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b13', 3)
+ab_drop('b13', 4)
+ab_drop('b13', 5)
+```

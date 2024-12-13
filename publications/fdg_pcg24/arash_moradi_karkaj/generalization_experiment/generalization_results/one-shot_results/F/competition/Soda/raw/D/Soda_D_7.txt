@@ -1,0 +1,25 @@
+First, let's start by creating the base of the letter "D". We can use the `b13` block to create a column in the bottom left corner. We will drop it at `x_position=0` to center it in the leftmost column.
+
+```
+ab_drop("b13", 0)
+```
+
+Next, we need to create the vertical stroke of the letter "D". We can use another `b13` block and drop it at `x_position=2` to center it in the third column.
+
+```
+ab_drop("b13", 2)
+```
+
+Now, let's create the rounded part of the letter "D". We will use a `b31` block and drop it at `x_position=5` to center it in the sixth column.
+
+```
+ab_drop("b31", 5)
+```
+
+That completes the structure of the letter "D". Here's the complete implementation:
+
+```
+ab_drop("b13", 0)
+ab_drop("b13", 2)
+ab_drop("b31", 5)
+```

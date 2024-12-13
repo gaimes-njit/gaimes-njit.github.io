@@ -1,0 +1,27 @@
+First, let's create the top bar of the letter "J":
+
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+
+Next, let's add the middle pipe of the letter "J":
+
+ab_drop("b13", 10)
+ab_drop("b11", 10)
+ab_drop("b13", 10)
+ab_drop("b11", 10)
+
+Finally, let's add the bottom tick of the letter "J":
+
+ab_drop("b31", 10)
+ab_drop("b11", 9)
+
+The complete implementation is as follows:
+
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+ab_drop("b13", 10)
+ab_drop("b11", 10)
+ab_drop("b13", 10)
+ab_drop("b11", 10)
+ab_drop("b31", 10)
+ab_drop("b11", 9)

@@ -1,0 +1,16 @@
+To generate a structure that looks like the letter "U" using the given key-value pairs, we can define the `ab_drop` function with the following calls:
+
+```
+ab_drop('a')
+ab_drop('b')
+ab_drop('a')
+ab_drop('b')
+```
+
+Explanation:
+1. The first call to `ab_drop('a')` creates the top-left vertical line of the "U".
+2. The second call to `ab_drop('b')` creates the horizontal line connecting the two vertical lines at the top.
+3. The third call to `ab_drop('a')` creates the top-right vertical line of the "U".
+4. The fourth call to `ab_drop('b')` creates the horizontal line connecting the two vertical lines at the bottom.
+
+Please note that the key-value pairs in the database are not utilized in this task.

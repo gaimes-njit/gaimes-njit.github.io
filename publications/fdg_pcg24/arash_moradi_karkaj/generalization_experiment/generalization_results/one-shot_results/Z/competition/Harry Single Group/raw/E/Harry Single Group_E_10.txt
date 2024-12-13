@@ -1,0 +1,27 @@
+To form the shape resembling the letter "E" using the available bricks and the ab_drop function, we need to strategically place the bricks in a stable manner. Here's a step-by-step approach to accomplish this:
+
+1. Initialize the field by creating an empty 2D grid with dimensions 20x16.
+
+```python
+field = [[0 for _ in range(20)] for _ in range(16)]
+```
+
+2. Start by placing the b31 brick vertically in the leftmost position of the bottom row to form the vertical stroke of the "E".
+
+```python
+ab_drop('b31', 0)
+```
+
+3. Now, place the b13 brick horizontally in the bottom row, starting from x_position 1 to form the center horizontal stroke of the "E".
+
+```python
+ab_drop('b13', 1)
+```
+
+4. Finally, place the b31 brick vertically in the rightmost position of the bottom row to form the right vertical stroke of the "E".
+
+```python
+ab_drop('b31', 18)
+```
+
+By following these steps, the required structure resembling the letter "E" will be generated on the field. Make sure to handle stability and boundary collision constraints while placing the bricks.

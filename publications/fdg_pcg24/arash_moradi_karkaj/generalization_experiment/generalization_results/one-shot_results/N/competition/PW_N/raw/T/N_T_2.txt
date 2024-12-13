@@ -1,0 +1,16 @@
+To create the letter "T" using the given block types in the defined environment, you can follow these steps:
+
+1. Start by placing a vertical straight block (b13) at position 2 and 3 along the width.
+2. Place a horizontal straight block (b31) at position 3.
+3. Move to the side and place another vertical straight block (b13) at position 5.
+4. Finally, complete the letter "T" by placing a 1x1 square block (b11) at positions 5.
+
+The stream of commands to generate the letter "T" would be as follows:
+
+```
+ab_drop('b13',2)
+ab_drop('b13',3)
+ab_drop('b31',3)
+ab_drop('b13',5)
+ab_drop('b11',5)
+```

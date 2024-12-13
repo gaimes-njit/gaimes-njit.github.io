@@ -1,0 +1,15 @@
+To generate the letter "T" using the given block types, you need to follow the instructions below:
+
+1. Start by placing a horizontal straight block (b31) at position 1: `ab_drop('b31', 1)`
+2. Place a vertical straight block (b13) at position 0: `ab_drop('b13', 0)`
+3. Place another vertical straight block (b13) at position 2: `ab_drop('b13', 2)`
+4. Finally, place another horizontal straight block (b31) at position 1: `ab_drop('b31', 1)`
+
+The stream of commands to generate the letter "T" would be:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```

@@ -1,0 +1,22 @@
+To create the letter "H" using the given block types, you can follow these steps:
+
+1. Start with the vertical foundations:
+   - Place a vertical block at position (1, 1) using the command `ab_drop('b13', 1)`
+   - Place a vertical block at position (3, 1) using the command `ab_drop('b13', 3)`
+   - Place a vertical block at position (4, 1) using the command `ab_drop('b13', 4)`
+   - Place a vertical block at position (6, 1) using the command `ab_drop('b13', 6)`
+
+2. Create the top of the "H":
+   - Place a horizontal block at position (2, 2) using the command `ab_drop('b31', 2)`
+   - Place a horizontal block at position (5, 2) using the command `ab_drop('b31', 5)`
+
+The complete stream of commands to generate the letter "H" would be:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b13', 4)
+ab_drop('b13', 6)
+ab_drop('b31', 2)
+ab_drop('b31', 5)
+```

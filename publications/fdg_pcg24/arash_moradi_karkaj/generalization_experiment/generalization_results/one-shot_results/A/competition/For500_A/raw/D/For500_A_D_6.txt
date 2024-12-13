@@ -1,0 +1,9 @@
+To generate a structure resembling the capital letter "D", we can use the following series of ab_drop() function calls:
+
+ab_drop('b11', 7)    # Place a single unit block at slot 7
+ab_drop('b31', 8)    # Place a horizontal block at slot 8
+ab_drop('b11', 7)    # Place another single unit block at slot 7
+ab_drop('b11', 9)    # Place a single unit block at slot 9
+ab_drop('b31', 8)    # Place another horizontal block at slot 8
+
+This series of ab_drop() function calls will generate a stable structure that resembles the letter "D".

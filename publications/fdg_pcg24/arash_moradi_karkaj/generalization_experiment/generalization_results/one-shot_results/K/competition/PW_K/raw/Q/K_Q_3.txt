@@ -1,0 +1,16 @@
+To generate the uppercase letter "Q", we can use the following commands:
+
+```
+ab_drop('b31',4)
+ab_drop('b13',4)
+ab_drop('b13',6)
+ab_drop('b13',4)
+```
+
+Explanation:
+1. The first command `ab_drop('b31',4)` places a horizontal straight block starting from position 4. This forms the top part of the letter "Q".
+2. The second command `ab_drop('b13',4)` places a vertical straight block starting from position 4. This extends the left side of the letter "Q".
+3. The third command `ab_drop('b13',6)` places another vertical straight block starting from position 6. This extends the right side of the letter "Q".
+4. The fourth command `ab_drop('b13',4)` places another vertical straight block starting from position 4. This completes the bottom part of the letter "Q".
+
+By following these commands in consecutive order, you'll be able to generate the uppercase letter "Q" in the defined environment.

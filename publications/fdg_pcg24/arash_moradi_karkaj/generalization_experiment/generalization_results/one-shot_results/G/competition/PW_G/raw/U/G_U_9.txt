@@ -1,0 +1,20 @@
+To generate the uppercase letter "U", you can use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 4)
+ab_drop('b13', 4)
+ab_drop('b13', 6)
+ab_drop('b31', 7)
+```
+
+Explanation:
+1. Place a horizontal straight block ('b31') at position 1 to create the top of the letter "U".
+2. Place a vertical straight block ('b13') at position 1 to create the left side of the letter "U".
+3. Place another vertical straight block ('b13') at position 3 to continue the left side of the letter "U".
+4. Place a horizontal straight block ('b31') at position 4 to create the bottom of the letter "U".
+5. Place another vertical straight block ('b13') at position 4 to connect the bottom of the letter "U" to the left side.
+6. Place another vertical straight block ('b13') at position 6 to complete the left side of the letter "U".
+7. Place a horizontal straight block ('b31') at position 7 to create the right side of the letter "U".

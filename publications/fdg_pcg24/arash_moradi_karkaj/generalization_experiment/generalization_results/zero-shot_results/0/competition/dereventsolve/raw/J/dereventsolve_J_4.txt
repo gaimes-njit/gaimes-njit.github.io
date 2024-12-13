@@ -1,0 +1,15 @@
+To generate a structure that looks like the letter "J", we can use the following sequence of `ab_drop` function calls:
+
+```
+ab_drop(1)
+ab_drop(1)
+ab_drop(1)
+ab_drop(1)
+ab_drop(1)
+ab_drop(1)
+ab_drop(3)
+ab_drop(3)
+ab_drop(3)
+```
+
+This sequence will generate a structure that resembles the letter "J" in the database.

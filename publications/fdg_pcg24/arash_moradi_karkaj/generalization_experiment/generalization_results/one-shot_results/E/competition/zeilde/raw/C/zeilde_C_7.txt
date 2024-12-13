@@ -1,0 +1,52 @@
+Steps:
+1. Draw the letter "C" with asterisks. Here is the drawing:
+
+```
+*****
+*     
+*     
+*     
+*     
+*****
+```
+
+2. Line-by-line, verbally list the asterisks and spaces generated in each row of the drawing:
+- Row 1: 5 asterisks
+- Row 2: 1 asterisk, 4 spaces
+- Row 3: 1 asterisk, 4 spaces
+- Row 4: 1 asterisk, 4 spaces
+- Row 5: 1 asterisk, 4 spaces
+- Row 6: 5 asterisks
+
+3. Replace asterisks with "x" and spaces with "y", following the new rules:
+- Row 1: xxxxx
+- Row 2: xyyyy
+- Row 3: xyyyy
+- Row 4: xyyyy
+- Row 5: xyyyy
+- Row 6: xxxxx
+
+4. Write out each "x" and "y" for each row side-by-side:
+- Row 1: x5
+- Row 2: xy4
+- Row 3: xy4
+- Row 4: xy4
+- Row 5: xy4
+- Row 6: x5
+
+5. Indicate the position of each variable for each row:
+- Row 1: x-1; x-2; x-3; x-4; x-5
+- Row 2: x-1; y-2; y-3; y-4; y-5
+- Row 3: x-1; y-2; y-3; y-4; y-5
+- Row 4: x-1; y-2; y-3; y-4; y-5
+- Row 5: x-1; y-2; y-3; y-4; y-5
+- Row 6: x-1; x-2; x-3; x-4; x-5
+
+6. Return a sequence of `ab_drop` function calls using the variables "b11" and the corresponding numbers:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

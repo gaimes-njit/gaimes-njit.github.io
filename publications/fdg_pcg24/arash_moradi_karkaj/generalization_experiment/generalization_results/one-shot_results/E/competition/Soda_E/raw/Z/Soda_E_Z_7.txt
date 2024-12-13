@@ -1,0 +1,18 @@
+To create a structure that looks like the capital letter "Z", we can start by building the vertical pipe on the left. Then, we can proceed to build the top horizontal bar and the bottom horizontal bar. Here is the step-by-step implementation:
+
+# The vertical pipe of Z
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+ab_drop("b31", 9)
+
+# The top horizontal bar of Z
+ab_drop("b31", 12)
+ab_drop("b13", 13)
+ab_drop("b11", 14)
+
+# The bottom horizontal bar of Z
+ab_drop("b11", 12)
+ab_drop("b13", 13)
+ab_drop("b31", 14)
+
+This implementation ensures that the structure is built in a bottom-to-top fashion, following the rules of the block-stacking problem. It also aims to create the best stability and similarity to the letter "Z".

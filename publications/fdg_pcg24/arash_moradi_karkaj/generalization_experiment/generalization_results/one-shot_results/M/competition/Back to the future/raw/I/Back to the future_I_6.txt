@@ -1,0 +1,36 @@
+To generate a stable structure that looks like the uppercase character "I" using the `ab_drop()` function, we can follow these steps:
+
+1. Start by initializing the structure as an empty grid using the `Map Initialization` code provided in the environment section.
+
+2. To build the base of the structure, drop a b31 block at the center slot y=9 (slot 9 is at the center of the 20 slots).
+
+```
+ab_drop("b31", 9)
+```
+
+3. Next, we need to add stability to the base by supporting it with b13 blocks. Drop two b13 blocks at slots y=4 and y=14 to support the b31 block.
+
+```
+ab_drop("b13", 4)
+ab_drop("b13", 14)
+```
+
+4. Now, to build the vertical part of the structure, drop a b13 block at the top of the base, aligned with the center slot y=9.
+
+```
+ab_drop("b13", 9)
+```
+
+5. To add stability to the top layer of the vertical part, drop a b11 block at the center slot y=9.
+
+```
+ab_drop("b11", 9)
+```
+
+6. Finally, to complete the structure, drop a b31 block at the top layer, aligned with the center slot y=9.
+
+```
+ab_drop("b31", 9)
+```
+
+The resulting structure generated using the `ab_drop()` function should resemble the uppercase character "I" and meet all the hard constraints specified in the problem.

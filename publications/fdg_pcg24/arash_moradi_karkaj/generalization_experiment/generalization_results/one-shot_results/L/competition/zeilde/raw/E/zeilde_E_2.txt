@@ -1,0 +1,56 @@
+The step-by-step description for drawing the letter "E" with asterisks and converting it into `ab_drop` function calls is as follows:
+
+1. Drawing the letter "E" with asterisks:
+```
+*****
+*
+*****
+*
+*****
+```
+
+2. Verbal list of asterisks and spaces in each row:
+- Row 1: 5 asterisks
+- Row 2: 1 asterisk
+- Row 3: 5 asterisks
+- Row 4: 1 asterisk
+- Row 5: 5 asterisks
+
+3. Converting asterisks and spaces into "x" and "y":
+- Row 1: 5x
+- Row 2: 1x
+- Row 3: 5x
+- Row 4: 1x
+- Row 5: 5x
+
+4. Writing out "x" and "y" side-by-side for each row:
+- Row 1: x-1; x-2; x-3; x-4; x-5
+- Row 2: x-1
+- Row 3: x-1; x-2; x-3; x-4; x-5
+- Row 4: x-1
+- Row 5: x-1; x-2; x-3; x-4; x-5
+
+5. Indicating the position of each variable for each row:
+- Row 1: x-1; x-2; x-3; x-4; x-5
+- Row 2: x-1
+- Row 3: x-1; x-2; x-3; x-4; x-5
+- Row 4: x-1
+- Row 5: x-1; x-2; x-3; x-4; x-5
+
+6. Line-by-line `ab_drop` function calls:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```
+
+Therefore, the `ab_drop` function calls to draw the letter "E" with asterisks would be:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

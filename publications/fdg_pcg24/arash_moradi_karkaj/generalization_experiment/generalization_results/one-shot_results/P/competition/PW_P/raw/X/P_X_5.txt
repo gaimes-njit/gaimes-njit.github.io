@@ -1,0 +1,24 @@
+To generate the uppercase English letter "X" using the given block types and environment, you can follow these steps:
+
+1. Place the left vertical stroke of the "X":
+   ```
+   ab_drop('b13', 1)
+   ab_drop('b13', 2)
+   ```
+
+2. Place the right vertical stroke of the "X":
+   ```
+   ab_drop('b13', 1)
+   ab_drop('b13', 2)
+   ```
+
+3. Place the diagonal stroke of the "X":
+   ```
+   ab_drop('b31', 3)
+   ab_drop('b11', 1)
+   ab_drop('b11', 3)
+   ab_drop('b31', 2)
+   ab_drop('b31', 2)
+   ```
+
+Make sure to enter the commands consecutively between three backticks (```) in the final response.

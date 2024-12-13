@@ -1,0 +1,24 @@
+To create the capital letter "Y" in the level, we can break it down into three parts: the top segment, the middle segment, and the bottom segment. Each segment will be created using a combination of different block types and drop positions.
+
+Here is the complete implementation to create the "Y" structure:
+
+```python
+# The top segment of Y
+ab_drop("b31", 9)
+ab_drop("b13", 8)
+
+# The middle segment of Y
+ab_drop("b31", 9)
+ab_drop("b13", 10)
+
+# The bottom segment of Y
+ab_drop("b31", 9)
+ab_drop("b13", 12)
+```
+
+Explanation:
+- The top segment of "Y" is created using a row block ("b31") placed at x_position=9 (centered) and a column block ("b13") placed at x_position=8.
+- The middle segment of "Y" is also created using a row block placed at x_position=9 and another column block placed at x_position=10.
+- The bottom segment of "Y" is created using a row block placed at x_position=9 and a column block placed at x_position=12.
+
+By following this sequence of block drops, we will have a stable structure that resembles the capital letter "Y".

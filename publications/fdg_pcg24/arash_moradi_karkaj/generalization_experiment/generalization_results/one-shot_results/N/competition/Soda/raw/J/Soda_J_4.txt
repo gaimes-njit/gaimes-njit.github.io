@@ -1,0 +1,15 @@
+To create a capital character "J" in the Tetris game using the ab_drop() function, we can follow these steps:
+
+1. Drop a row block "b31" at the center of the grid.
+2. Drop a column block "b13" next to the row block on the left side.
+3. Drop a square block "b11" on top of the row block.
+
+Here is the complete implementation:
+
+```python
+ab_drop("b31", 9)     # Drop a row block in the middle
+ab_drop("b13", 7)     # Drop a column block on the left side
+ab_drop("b11", 9)     # Drop a square block on top
+```
+
+By following these steps, the implemented structure will resemble the capital character "J" and maintain structural stability.

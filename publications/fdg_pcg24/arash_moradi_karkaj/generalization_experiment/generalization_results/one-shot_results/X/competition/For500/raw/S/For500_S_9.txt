@@ -1,0 +1,5 @@
+ab_drop('b31', 0)  # generate the top horizontal part of the 'S'
+ab_drop('b13', 2)  # generate the short vertical part of the 'S'
+ab_drop('b11', 1)  # generate the diagonal part of the 'S'
+ab_drop('b13', 0)  # generate the long vertical part of the 'S'
+ab_drop('b31', 2)  # generate the bottom horizontal part of the 'S'

@@ -1,0 +1,30 @@
+To create the structure of "Y" using only the ab_drop('blocktype', x position) command, you can follow these steps:
+
+1. Start by dropping a b13 block at (0, 0).
+   - ab_drop('b13', 0)
+
+2. Drop a b11 block at (2, 2).
+   - ab_drop('b11', 2)
+
+3. Drop a b11 block at (4, 4).
+   - ab_drop('b11', 4)
+
+4. Drop a b11 block at (6, 6).
+   - ab_drop('b11', 6)
+
+5. Drop a b11 block at (8, 8).
+   - ab_drop('b11', 8)
+
+6. Drop a b11 block at (10, 10).
+   - ab_drop('b11', 10)
+
+7. Drop a b11 block at (12, 12).
+   - ab_drop('b11', 12)
+
+8. Drop a b13 block at (14, 14).
+   - ab_drop('b13', 14)
+
+9. Drop a b31 block at (6, 6).
+   - ab_drop('b31', 6)
+
+This arrangement will create the structure of "Y" inside a 20*16 box block.

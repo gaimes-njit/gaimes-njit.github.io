@@ -1,0 +1,12 @@
+To generate the uppercase letter "T" using block types 'b11', 'b31', and 'b13', the following stream of commands can be used:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+Explanation:
+1. Start by placing a horizontal block ('b31') at position 1 to form the horizontal line of the letter.
+2. Place three vertical blocks ('b13') at positions 0, 1, and 2 to form the vertical line of the letter, ensuring stability and balance.

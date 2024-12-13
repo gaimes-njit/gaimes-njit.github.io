@@ -1,0 +1,53 @@
+```
+ab_drop("b31",1); // Create the first horizontal line of the letter "R"
+ab_drop("b13",4); // Create the vertical line of the letter "R"
+ab_drop("b31",7); // Create the second horizontal line of the letter "R"
+ab_drop("b11",8); // Fill in the empty space in the middle of the letter "R"
+ab_drop("b31",11); // Create the third horizontal line of the letter "R"
+```
+
+A:equal to 'A'
+```
+ab_drop("b31",1); // Create the first horizontal line of the letter "A"
+ab_drop("b13",4); // Create the vertical line of the letter "A"
+ab_drop("b31",7); // Create the second horizontal line of the letter "A"
+ab_drop("b31",11); // Create the third horizontal line of the letter "A"
+```
+
+N:equal to 'A'
+```
+ab_drop("b31",1); // Create the first horizontal line of the letter "N"
+ab_drop("b13",4); // Create the diagonal line of the letter "N"
+ab_drop("b31",7); // Create the second horizontal line of the letter "N"
+ab_drop("b13",10); // Create the diagonal line of the letter "N"
+ab_drop("b31",13); // Create the third horizontal line of the letter "N"
+```
+
+K:equal to 'A'
+```
+ab_drop("b31",1); // Create the first horizontal line of the letter "K"
+ab_drop("b13",4); // Create the diagonal line of the letter "K"
+ab_drop("b13",9); // Create the diagonal line of the letter "K"
+ab_drop("b31",11); // Create the second horizontal line of the letter "K"
+ab_drop("b11",12); // Fill in the empty space in the middle of the letter "K"
+ab_drop("b13",13); // Create the diagonal line of the letter "K"
+ab_drop("b31",16); // Create the third horizontal line of the letter "K"
+```
+
+E:equal to 'A'
+```
+ab_drop("b31",1); // Create the first horizontal line of the letter "E"
+ab_drop("b11",4); // Fill in the vertical line of the letter "E"
+ab_drop("b31",7); // Create the second horizontal line of the letter "E"
+ab_drop("b11",10); // Fill in the vertical line of the letter "E"
+ab_drop("b31",13); // Create the third horizontal line of the letter "E"
+```
+
+S:equal to 'A'
+```
+ab_drop("b31",1); // Create the first horizontal line of the letter "S"
+ab_drop("b11",4); // Fill in the vertical line of the letter "S"
+ab_drop("b31",7); // Create the second horizontal line of the letter "S"
+ab_drop("b11",9); // Fill in the vertical line of the letter "S"
+ab_drop("b31",12); // Create the third horizontal line of the letter "S"
+```

@@ -1,0 +1,33 @@
+To generate a stable structure that looks like the character "T" and meets all the constraints, we can follow the steps below:
+
+1. Define the base layer (layer 0) of the structure by adding a horizontal 1x3 block (b31) at slot 8 using the `ab_drop()` function.
+
+```
+ab_drop('b31', 8)
+```
+
+2. Add a vertical 1x3 block (b13) at slot 9 on layer 1 using the `ab_drop()` function.
+
+```
+ab_drop('b13', 9)
+```
+
+3. Add a horizontal 3x1 block (b31) at slot 7 on layer 2 using the `ab_drop()` function.
+
+```
+ab_drop('b31', 7)
+```
+
+4. Add a horizontal 3x1 block (b31) at slot 10 on layer 2 using the `ab_drop()` function.
+
+```
+ab_drop('b31', 10)
+```
+
+5. Add a horizontal 1x1 block (b11) at slot 9 on layer 3 using the `ab_drop()` function.
+
+```
+ab_drop('b11', 9)
+```
+
+This sequence of block drops will generate a stable structure that looks like the character "T" and meets all the constraints. The resulting structure will have a stable weight distribution and will not intrude on the boundary of the map.

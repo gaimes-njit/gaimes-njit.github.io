@@ -1,0 +1,14 @@
+This task involves creating a stable structure for the capital letter "P" using the `ab_drop()` function. The specific placement and combination of blocks will depend on the player's strategy and creativity. Here is an example solution to create the letter "P":
+
+```python
+ab_drop('b31', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 3)
+ab_drop('b31', 3)
+ab_drop('b11', 1)
+ab_drop('b11', 0)
+```
+
+This solution uses a combination of three `b31` blocks and three `b11` blocks to form the shape of the letter "P". The blocks are dropped vertically at different x positions to achieve the desired structure while maintaining stability and minimizing boundary intrusion.
+
+Keep in mind that this is just one possible solution, and there are many other ways to create a stable structure for the letter "P" using the given blocks. Enjoy experimenting and finding your creative solutions!

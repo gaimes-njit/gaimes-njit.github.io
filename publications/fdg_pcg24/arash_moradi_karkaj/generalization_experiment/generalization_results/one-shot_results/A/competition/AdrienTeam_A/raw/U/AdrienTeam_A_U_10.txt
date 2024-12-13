@@ -1,0 +1,24 @@
+To build the structure resembling a "U" shape, we can use the `ab_drop()` function and follow these steps:
+
+1. Drop a vertical block ('b13') at slot 0 to create the left side of the "U" shape:
+```
+ab_drop('b13', 0)
+```
+
+2. Drop a horizontal block ('b31') at slot 1 to create the top part of the "U" shape:
+```
+ab_drop('b31', 1)
+```
+
+3. Drop a vertical block ('b13') at slot 2 to create the right side of the "U" shape:
+```
+ab_drop('b13', 2)
+```
+
+The complete code for generating the "U" structure is as follows:
+
+```
+ab_drop('b13', 0)
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+```

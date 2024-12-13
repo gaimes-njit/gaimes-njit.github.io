@@ -1,0 +1,46 @@
+```
+def ab_drop(x, y):
+    # x represents the block type, and y is the slot number (0 to W-1) where the block center aligns, the block type muste be wright between cote.
+    
+    # Initialize the drop position at the top of the map
+    drop_pos = (H-1, y)
+    
+    # Move the block down until it lands on the base or another block
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0] - 1, y)
+        if structure[drop_pos[0] + 1][drop_pos[1]] != ' ':
+            break
+    
+    #Place the block on the structure
+    structure[drop_pos[0]][drop_pos[1]] = x
+
+# Initialize the structure
+structure = [[' ']*W for _ in range(H)]
+
+# Bottom horizontal blocks
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+ab_drop('b11', 5)
+
+# Bottom vertical blocks
+ab_drop('b11', 2)
+ab_drop('b11', 6)
+
+# Middle horizontal block
+ab_drop('b31', 4)
+
+# Top horizontal blocks
+ab_drop('b11', 2)
+ab_drop('b11', 6)
+
+# Top vertical blocks
+ab_drop('b11', 1)
+ab_drop('b11', 7)
+
+# Final block to complete the "M" shape
+ab_drop('b13', 4)
+
+# Display the structure
+for row in structure:
+    print(''.join(row))
+```

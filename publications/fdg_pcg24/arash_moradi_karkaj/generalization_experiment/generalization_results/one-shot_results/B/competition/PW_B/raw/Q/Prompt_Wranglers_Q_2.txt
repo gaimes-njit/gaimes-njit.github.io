@@ -1,0 +1,47 @@
+To generate the uppercase English letter "Q", we can follow the following steps:
+
+1. Start by building the bottom of the letter. Place two vertical blocks (b13) at positions 2 and 4.
+   ```
+   ab_drop('b13', 2)
+   ab_drop('b13', 4)
+   ```
+
+2. Move up to the next structural layer and place a horizontal block (b31) at position 3.
+   ```
+   ab_drop('b31', 3)
+   ```
+
+3. Place another horizontal block (b31) at position 2 to create the curve of the letter.
+   ```
+   ab_drop('b31', 2)
+   ```
+
+4. Move up to the next structural layer and place a horizontal block (b31) at position 3.
+   ```
+   ab_drop('b31', 3)
+   ```
+
+5. Place two vertical blocks (b13) at positions 2 and 4 above the previous layer.
+   ```
+   ab_drop('b13', 2)
+   ab_drop('b13', 4)
+   ```
+
+6. Place a horizontal block (b31) at position 3 to close off the top of the letter.
+   ```
+   ab_drop('b31', 3)
+   ```
+
+7. The letter "Q" has been constructed.
+
+Complete stream of commands to generate the letter "Q":
+```
+ab_drop('b13', 2)
+ab_drop('b13', 4)
+ab_drop('b31', 3)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+ab_drop('b13', 2)
+ab_drop('b13', 4)
+ab_drop('b31', 3)
+```

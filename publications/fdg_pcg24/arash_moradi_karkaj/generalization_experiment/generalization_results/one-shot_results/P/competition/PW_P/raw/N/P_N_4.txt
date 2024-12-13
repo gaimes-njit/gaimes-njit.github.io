@@ -1,0 +1,11 @@
+To generate the uppercase English letter "N", we can use the following stream of `ab_drop()` commands:
+
+```python
+ab_drop('b31', 1)  # First vertical line of the 'N'
+ab_drop('b13', 2)  # Second vertical line of the 'N'
+ab_drop('b31', 3)  # Third vertical line of the 'N'
+ab_drop('b13', 4)  # Fourth vertical line of the 'N'
+ab_drop('b31', 5)  # Fifth vertical line of the 'N'
+```
+
+This will create the letter "N" within the allowed space boundaries and ensure stability with the 2D gravity rules.

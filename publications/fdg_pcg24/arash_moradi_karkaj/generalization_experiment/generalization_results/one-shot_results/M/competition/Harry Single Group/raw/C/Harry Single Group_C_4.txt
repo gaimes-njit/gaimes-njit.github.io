@@ -1,0 +1,25 @@
+To form the shape resembling the letter "C" using the available props, we can use the following sequence of ab_drop() function calls:
+
+```
+# Initialize field
+ab_drop('b11', 0)
+ab_drop('b13', 1)
+ab_drop('b11', 4)
+ab_drop('b13', 0)
+ab_drop('b11', 6)
+ab_drop('b31', 6)
+ab_drop('b31', 8)
+ab_drop('b31', 9)
+ab_drop('b11', 2)
+```
+
+Explanation:
+1. The first ab_drop('b11', 0) call is used to place a single brick at the bottom-left corner of the field.
+2. The next ab_drop('b13', 1) call places a vertical rectangular brick next to the previous brick, forming the vertical part of the "C" shape.
+3. Another ab_drop('b11', 4) call places a single brick above the previous vertical brick to complete the vertical part of the "C" shape.
+4. The ab_drop('b13', 0) call places another vertical rectangular brick next to the previous vertical bricks, slightly higher.
+5. Continuing, the ab_drop('b11', 6) call places a single brick above the previous vertical bricks, completing the top right part of the "C" shape.
+6. To form the bottom curve of the "C" shape, three ab_drop('b31', x) calls are used. These bricks are placed horizontally above the previous bricks, starting from x = 6, 8, and 9 respectively.
+7. Finally, the ab_drop('b11', 2) call places a single brick above the previous horizontal bricks, completing the bottom curve of the "C" shape.
+
+This sequence of ab_drop() calls satisfies the requirements mentioned in the important notes, including stability and avoiding boundary collisions.

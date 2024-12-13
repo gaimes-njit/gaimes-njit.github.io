@@ -1,0 +1,14 @@
+Task Solution:
+
+```
+# Place the blocks to form the letter 'C'
+
+ab_drop('b31', 1)  # Place the horizontal block at position 1
+ab_drop('b13', 1)  # Place the vertical block at position 1
+ab_drop('b31', 4)  # Place the horizontal block at position 4
+ab_drop('b31', 7)  # Place the horizontal block at position 7
+ab_drop('b13', 7)  # Place the vertical block at position 7
+```
+
+Explanation:
+To create the letter 'C', we need to use a combination of horizontal and vertical blocks. The letter 'C' has three horizontal segments and two vertical segments. We start by placing a horizontal block at position 1. Then, we place a vertical block at position 1 to form the left vertical segment of the letter 'C'. Next, we place another horizontal block at position 4 to form the top horizontal segment. We continue by placing a horizontal block at position 7 to form the bottom horizontal segment. Finally, we place a vertical block at position 7 to complete the right vertical segment of the letter 'C'.

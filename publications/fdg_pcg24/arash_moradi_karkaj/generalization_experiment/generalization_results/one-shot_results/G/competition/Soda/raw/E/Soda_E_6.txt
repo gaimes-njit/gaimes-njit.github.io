@@ -1,0 +1,17 @@
+To build the letter "E" in a stable and similar manner, we can use the following steps:
+
+1. Drop a square block at the bottom-left corner (x_position = 0).
+2. Drop a column block centered at the second column (x_position = 1) and on the fifth row (y = 4).
+3. Drop a row block centered at the second column (x_position = 1) and on the eighth row (y = 7).
+4. Drop a square block at the top-right corner (x_position = 19).
+
+The complete implementation is as follows:
+
+```
+ab_drop("b11", 0)
+ab_drop("b13", 1)
+ab_drop("b31", 1)
+ab_drop("b11", 19)
+```
+
+This implementation will create a stable structure in the shape of the letter "E" in the game grid.

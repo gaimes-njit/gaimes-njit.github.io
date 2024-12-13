@@ -1,0 +1,8 @@
+To generate a structure that looks like the letter "T" from the given database:
+
+Assistant:
+```
+ab_drop("b31", 5)
+ab_drop("b11", 7)
+ab_drop("b31", 6)
+```

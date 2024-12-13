@@ -1,0 +1,11 @@
+Example:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b11', 0)
+ab_drop('b11', 4)
+ab_drop('b11', 8)
+ab_drop('b13', 11)
+ab_drop('b13', 15)
+```

@@ -1,0 +1,16 @@
+```
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the blocks to form the "M" structure
+ab_drop('b11', 0)     # bottom-left corner of the 'M'
+ab_drop('b11', 1)     # bottom-left corner of the left leg of the 'M'
+ab_drop('b11', 2)     # bottom-left corner of the middle part of the 'M'
+ab_drop('b11', 3)     # bottom-left corner of the right leg of the 'M'
+ab_drop('b11', 4)     # bottom-right corner of the 'M'
+ab_drop('b11', 5)     # bottom-right corner of the right leg of the 'M'
+ab_drop('b11', 6)     # bottom-right corner of the middle part of the 'M'
+ab_drop('b11', 7)     # bottom-right corner of the left leg of the 'M'
+ab_drop('b11', 8)     # bottom-right corner of the 'M'
+
+```

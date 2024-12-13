@@ -1,0 +1,37 @@
+To generate a stable structure that looks like the uppercase character "E", we can follow these steps:
+
+1. Initialize the structure:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Determine the drop positions for each block type to form an "E" shape.
+
+3. For the first vertical block (b13), drop it at the center slot:
+```python
+ab_drop('b13', W//2)
+```
+
+4. For the second vertical block (b13), drop it at the slot next to the first block, slightly shifted upwards:
+```python
+ab_drop('b13', W//2 + 1)
+```
+
+5. For the horizontal block (b31), drop it at the slot next to the second vertical block, aligned with the center slot:
+```python
+ab_drop('b31', W//2 + 2)
+```
+
+6. For the third vertical block (b13), drop it at the slot next to the horizontal block, slightly shifted upwards:
+```python
+ab_drop('b13', W//2 + 3)
+```
+
+7. For the last vertical block (b13), drop it at the slot next to the third vertical block, slightly shifted upwards:
+```python
+ab_drop('b13', W//2 + 4)
+```
+
+8. Repeat steps 3-7 for stability checks before each drop to ensure the structure remains stable.
+
+By following these steps, you should be able to generate a stable structure that resembles the uppercase character "E".

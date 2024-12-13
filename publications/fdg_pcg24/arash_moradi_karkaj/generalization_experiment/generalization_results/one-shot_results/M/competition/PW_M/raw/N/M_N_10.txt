@@ -1,0 +1,10 @@
+ab_drop('b31',1) ab_drop('b31',6) to achieve M.
+
+B:start with left vertical ab_drop('b13',1) ab_drop('b13',3) ab_drop('b13',4) ab_drop('b31',2) ab_drop('b31',5) ab_drop('b11',7) and tops ab_drop('b13',6) ab_drop('b13',3) ab_drop('b31',2) ab_drop('b31',5) ab_drop('b11',8) to achieve B.
+
+H:start with left vertical ab_drop('b13',1) ab_drop('b13',3) ab_drop('b13',4) ab_drop('b31',2) ab_drop('b31',5) ab_drop('b11',7) and tops ab_drop('b13',3) ab_drop('b13',4) to achieve H.
+
+N:start with left vertical ab_drop('b13',1) ab_drop('b13',3) ab_drop('b31',2) ab_drop('b31',5) ab_drop('b11',4) and tops ab_drop('b13',4) ab_drop('b31',3) to achieve N.
+
+Note
+You can't go beyond the boundaries of the grid or exceed the height limit. Each block has a width of 1 unit and a height of 1 unit. You can only use the given block types (b11, b31, b13) to create the letters.

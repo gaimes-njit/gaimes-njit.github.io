@@ -1,0 +1,12 @@
+To generate the uppercase English letter "R", we can use a combination of the block types b13 (vertical straight block) and b31 (horizontal straight block). Here's the stream of ab_drop() commands to construct the letter "R":
+
+```plaintext
+ab_drop('b31', 1)  // First vertical stroke of "R"
+ab_drop('b31', 2)  // Second vertical stroke of "R"
+ab_drop('b31', 3)  // Third vertical stroke of "R"
+ab_drop('b31', 4)  // Fourth vertical stroke of "R"
+ab_drop('b13', 1)  // Top horizontal stroke of "R"
+ab_drop('b13', 2)  // Bottom horizontal stroke of "R"
+```
+
+Make sure to place the commands consecutively within the three backticks (```) to form the stream of commands.

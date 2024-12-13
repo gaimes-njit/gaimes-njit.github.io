@@ -1,0 +1,8 @@
+Using the ab_drop('blocktype',x position) command, we can create the "W" structure inside the 20*16 box block as follows:
+
+ab_drop('b13', 2)  # first vertical line of the "W"
+ab_drop('b13', 6)  # second vertical line of the "W"
+ab_drop('b31', 3)  # top slanted line of the "W"
+ab_drop('b31', 10) # bottom slanted line of the "W"
+
+This will create a structure exactly like a "W" inside the 20*16 box block.

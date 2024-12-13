@@ -1,0 +1,15 @@
+To create a stable structure resembling "T", we can use the following `ab_drop()` calls:
+
+```
+ab_drop('b31',9)
+ab_drop('b13',8)
+ab_drop('b13',10)
+ab_drop('b31',9)
+```
+
+Explanation:
+1. The first block, `ab_drop('b31',9)`, is dropped in slot 9 with a height of 1 unit. This block will serve as the horizontal bar of the "T".
+2. Next, the two vertical blocks, `ab_drop('b13',8)` and `ab_drop('b13',10)`, are added on either side of the horizontal bar. These blocks have a width of 1 unit and a height of 3 units.
+3. Finally, the second horizontal block, `ab_drop('b31',9)`, is added on top of the horizontal bar. This completes the structure of the "T".
+
+The resulting structure will resemble the letter "T" and will satisfy all the specified constraints.

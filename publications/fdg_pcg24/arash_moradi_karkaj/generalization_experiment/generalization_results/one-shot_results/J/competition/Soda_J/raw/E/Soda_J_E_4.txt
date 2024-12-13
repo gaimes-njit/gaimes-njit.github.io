@@ -1,0 +1,32 @@
+Here is the code implementation to generate a structure in the level that looks like the capital character "E":
+
+1. Create the base of the letter E:
+ab_drop("b31", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+
+2. Create the middle bar of the letter E:
+ab_drop("b31", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+
+3. Create the top bar of the letter E:
+ab_drop("b31", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+
+Complete implementation:
+
+```python
+ab_drop("b31", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b31", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b31", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+```
+
+By following these steps, you will generate a structure in the level that looks like the capital character "E".

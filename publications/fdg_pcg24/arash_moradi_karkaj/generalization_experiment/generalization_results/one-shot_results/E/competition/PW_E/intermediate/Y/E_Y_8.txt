@@ -1,0 +1,10 @@
+To generate the uppercase English letter "Y," you can use the following stream of commands:
+
+ab_drop('b31', 1)   // Place the first block of type b31 at position 1
+ab_drop('b13', 2)   // Place the second block of type b13 at position 2
+ab_drop('b13', 1)   // Place the third block of type b13 at position 1
+ab_drop('b31', 3)   // Place the fourth block of type b31 at position 3
+ab_drop('b11', 1)   // Place the fifth block of type b11 at position 1
+ab_drop('b11', 3)   // Place the sixth block of type b11 at position 3
+
+This sequence of commands will generate the uppercase letter "Y" in the Tetris-like environment while following the gravity rules.

@@ -1,0 +1,25 @@
+The structure for "O" can be constructed using the following sequence of `ab_drop()` inputs:
+
+```
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+ab_drop('b11', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+```
+
+The above sequence of `ab_drop()` inputs will create a stable structure resembling the letter "O".

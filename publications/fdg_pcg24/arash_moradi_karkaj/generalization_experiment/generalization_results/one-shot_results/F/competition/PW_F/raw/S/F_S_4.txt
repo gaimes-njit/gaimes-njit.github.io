@@ -1,0 +1,25 @@
+To generate the uppercase English letter "S" using the given block types, we can use the following commands:
+
+```
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b31',2)
+ab_drop('b31',3)
+ab_drop('b13',3)
+ab_drop('b13',4)
+ab_drop('b31',1)
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b31',2)
+```
+
+Explanation: 
+- We start by placing a vertical straight block ('b13') at position 1.
+- Then, we place another vertical straight block ('b13') at position 2, right next to the previous block.
+- Next, we place a horizontal straight block ('b31') at position 2, overlapping the previous vertical block.
+- We continue by placing another horizontal straight block ('b31') at position 3, right next to the previous block.
+- Then, we place a vertical straight block ('b13') at position 3, right next to the previous horizontal block.
+- Next, we place another vertical straight block ('b13') at position 4, right next to the previous block.
+- Finally, we repeat the steps to complete the letter "S" by placing a horizontal straight block ('b31') at position 1, overlapping the previous vertical blocks.
+
+This sequence of commands will create the uppercase English letter "S" within the allowed space and following the gravity rules.

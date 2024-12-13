@@ -1,0 +1,7 @@
+To generate the uppercase English letter "N", we can use the following stream of commands:
+
+```
+ab_drop('b31', 1)  // Create the left vertical line of the letter
+ab_drop('b13', 2)  // Create the diagonal line of the letter
+ab_drop('b31', 4)  // Create the right vertical line of the letter
+```

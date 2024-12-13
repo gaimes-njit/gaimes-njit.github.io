@@ -1,0 +1,29 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the base of the "I"
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b11', 12)
+
+
+# Drop the middle section of the "I"
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b11', 12)
+ab_drop('b11', 13)
+
+
+# Drop the top section of the "I"
+ab_drop('b11', 7)
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b11', 12)
+ab_drop('b11', 13)
+ab_drop('b11', 14)
+```

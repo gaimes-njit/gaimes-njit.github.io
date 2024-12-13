@@ -1,0 +1,13 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# First, drop the vertical block to form the left side of the "P"
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+
+# Next, drop the horizontal block to form the top of the "P"
+ab_drop('b31', 2)
+
+# Finally, drop the horizontal block to form the bottom of the "P"
+ab_drop('b31', 2)
+```

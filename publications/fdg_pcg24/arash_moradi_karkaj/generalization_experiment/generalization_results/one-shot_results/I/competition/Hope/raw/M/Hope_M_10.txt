@@ -1,0 +1,39 @@
+To create the letter "M" inside a 20x16 box using the ab_drop() command, we would need to drop the blocks in a specific sequence. Here is one way to achieve this:
+
+1. Drop a b13 block at position (2, 8):
+
+ab_drop('b13', 2)
+
+2. Drop a b11 block at position (3, 7):
+
+ab_drop('b11', 3)
+
+3. Drop a b11 block at position (4, 8):
+
+ab_drop('b11', 4)
+
+4. Drop a b13 block at position (5, 8):
+
+ab_drop('b13', 5)
+
+5. Drop a b31 block at position (7, 8):
+
+ab_drop('b31', 7)
+
+6. Drop a b31 block at position (11, 8):
+
+ab_drop('b31', 11)
+
+7. Drop a b13 block at position (13, 8):
+
+ab_drop('b13', 13)
+
+8. Drop a b11 block at position (14, 7):
+
+ab_drop('b11', 14)
+
+9. Drop a b11 block at position (15, 8):
+
+ab_drop('b11', 15)
+
+By following these steps, you should be able to construct the letter "M" inside the 20x16 box using the ab_drop() command.

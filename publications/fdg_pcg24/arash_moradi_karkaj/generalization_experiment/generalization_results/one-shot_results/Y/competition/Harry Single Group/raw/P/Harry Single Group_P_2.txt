@@ -1,0 +1,18 @@
+To generate the shape resembling the letter "P", we can start by placing a b13 brick vertically on the ground at x_position 6. This will occupy the cells (6, 0), (6, 1), and (6, 2).
+
+```
+ab_drop('b13', 6)
+```
+
+Next, we can place a b31 brick horizontally above the b13 brick. To ensure stability, we need to make sure that the upper brick has the same number of occupied cells on both sides of the pivot. Therefore, we will place the b31 brick with an x_position of 5. This will occupy the cells (5, 3), (6, 3), and (7, 3).
+
+```
+ab_drop('b31', 5)
+```
+
+Here is the full code to generate the shape resembling the letter "P":
+
+```
+ab_drop('b13', 6)
+ab_drop('b31', 5)
+```

@@ -1,0 +1,15 @@
+To generate the uppercase letter "E", you can follow these steps:
+
+1. Place the first block, which is a horizontal straight block (b31), at position 1: `ab_drop('b31',1)`.
+2. Place the second block, which is a vertical straight block (b13), at position 0: `ab_drop('b13',0)`.
+3. Place the third block, which is another vertical straight block (b13), at position 2: `ab_drop('b13',2)`.
+4. Place the fourth block, which is again a horizontal straight block (b31), at position 1: `ab_drop('b31',1)`.
+
+So the complete stream of commands to generate the letter "E" would be:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',0)
+ab_drop('b13',2)
+ab_drop('b31',1)
+```

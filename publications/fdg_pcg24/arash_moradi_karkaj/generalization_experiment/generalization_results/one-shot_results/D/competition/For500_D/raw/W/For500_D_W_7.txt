@@ -1,0 +1,5 @@
+ab_drop('b13',10)  # Drop the vertical block to create the two outer parts of the letter 'W'
+ab_drop('b31',9)   # Drop the horizontal block to connect the two outer parts of the letter 'W'
+ab_drop('b13',8)   # Drop the vertical block to create the middle part of the letter 'W'
+ab_drop('b31',9)   # Drop the horizontal block to connect the middle part with the outer parts of the letter 'W'
+ab_drop('b11',7)   # Drop the square block to complete the letter 'W'

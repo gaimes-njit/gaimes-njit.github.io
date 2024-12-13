@@ -1,0 +1,12 @@
+To create the structure "X" inside a 20*16 box block, you can use the following sequence of ab_drop commands:
+
+ab_drop('b13', 7)
+ab_drop('b11', 6)
+ab_drop('b11', 8)
+ab_drop('b31', 7)
+ab_drop('b31', 10)
+ab_drop('b11', 6)
+ab_drop('b11', 8)
+ab_drop('b13', 7)
+
+This sequence will place the blocks in the desired positions to form the structure "X" inside the 20*16 box block.

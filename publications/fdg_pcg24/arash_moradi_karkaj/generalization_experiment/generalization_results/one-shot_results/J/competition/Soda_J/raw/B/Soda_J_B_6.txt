@@ -1,0 +1,34 @@
+1. Start by creating the stable base of the letter "B" using two row blocks.
+
+```python
+ab_drop("b31", 1)
+ab_drop("b31", 2)
+```
+
+2. Create the vertical bar of the letter "B" using a column block.
+
+```python
+ab_drop("b13", 3)
+```
+
+3. Create the top horizontal bar of the letter "B" using a row block.
+
+```python
+ab_drop("b31", 0)
+```
+
+4. Create the bottom horizontal bar of the letter "B" using a row block.
+
+```python
+ab_drop("b31", 0)
+```
+
+The complete implementation is as follows:
+
+```python
+ab_drop("b31", 1)
+ab_drop("b31", 2)
+ab_drop("b13", 3)
+ab_drop("b31", 0)
+ab_drop("b31", 0)
+```

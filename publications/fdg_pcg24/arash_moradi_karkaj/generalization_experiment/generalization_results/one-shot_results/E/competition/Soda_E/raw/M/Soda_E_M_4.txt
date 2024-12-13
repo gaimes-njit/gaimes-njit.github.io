@@ -1,0 +1,19 @@
+# Step 1: Creating the left side of the M
+# Drop the top block of the left side of the M
+ab_drop("b31", 4)
+ab_drop("b13", 5)
+ab_drop("b13", 6)
+ab_drop("b31", 7)
+
+# Step 2: Creating the middle of the M
+# Drop the top block of the middle of the M
+ab_drop("b31", 9)
+ab_drop("b13", 10)
+ab_drop("b31", 11)
+
+# Step 3: Creating the right side of the M
+# Drop the top block of the right side of the M
+ab_drop("b31", 13)
+ab_drop("b13", 14)
+ab_drop("b13", 15)
+ab_drop("b31", 16)

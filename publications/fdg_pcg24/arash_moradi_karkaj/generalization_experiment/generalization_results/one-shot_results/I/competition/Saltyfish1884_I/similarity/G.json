@@ -1,0 +1,708 @@
+{
+  "count": 5,
+  "similarityRate": 0.005420457698346581,
+  "trials": [
+    {
+      "id": "Saltyfish1884_I_G_1.png",
+      "label": "G",
+      "similarity": 0.015751194208860397
+    },
+    {
+      "id": "Saltyfish1884_I_G_10.png",
+      "label": "G",
+      "similarity": 0.00047354030539281666
+    },
+    {
+      "id": "Saltyfish1884_I_G_3.png",
+      "label": "G",
+      "similarity": 0.0004884361405856907
+    },
+    {
+      "id": "Saltyfish1884_I_G_5.png",
+      "label": "G",
+      "similarity": 3.7961021007504314e-05
+    },
+    {
+      "id": "Saltyfish1884_I_G_9.png",
+      "label": "G",
+      "similarity": 0.010351156815886497
+    }
+  ],
+  "similarities": [
+    {
+      "id": "Saltyfish1884_I_G_1.png",
+      "raws": [
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "A",
+          "softmax_prob": 0.007179230451583862
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "B",
+          "softmax_prob": 0.011189942248165607
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "C",
+          "softmax_prob": 0.07091187685728073
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "D",
+          "softmax_prob": 0.008817226625978947
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "E",
+          "softmax_prob": 0.0333813801407814
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "F",
+          "softmax_prob": 0.12972527742385864
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "G",
+          "softmax_prob": 0.015751194208860397
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "H",
+          "softmax_prob": 0.06474746018648148
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "I",
+          "softmax_prob": 0.15293101966381073
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "J",
+          "softmax_prob": 0.19041895866394043
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "K",
+          "softmax_prob": 0.009730820544064045
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "L",
+          "softmax_prob": 0.05597468838095665
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "M",
+          "softmax_prob": 0.0115080326795578
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "N",
+          "softmax_prob": 0.0035943847615271807
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "O",
+          "softmax_prob": 0.01675967313349247
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "P",
+          "softmax_prob": 0.0384003184735775
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "Q",
+          "softmax_prob": 0.009252977557480335
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "R",
+          "softmax_prob": 0.006670830305665731
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "S",
+          "softmax_prob": 0.030959295108914375
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "T",
+          "softmax_prob": 0.024806860834360123
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "U",
+          "softmax_prob": 0.02014225162565708
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "V",
+          "softmax_prob": 0.006810598541051149
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "W",
+          "softmax_prob": 0.013286253437399864
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "X",
+          "softmax_prob": 0.008368069306015968
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "Y",
+          "softmax_prob": 0.015800481662154198
+        },
+        {
+          "id": "Saltyfish1884_I_G_1.png",
+          "label": "Z",
+          "softmax_prob": 0.042880862951278687
+        }
+      ]
+    },
+    {
+      "id": "Saltyfish1884_I_G_10.png",
+      "raws": [
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "A",
+          "softmax_prob": 0.00024260205100290477
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "B",
+          "softmax_prob": 0.00031927993404679
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "C",
+          "softmax_prob": 0.00028605852276086807
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "D",
+          "softmax_prob": 0.0005323456134647131
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "E",
+          "softmax_prob": 0.00027245021192356944
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "F",
+          "softmax_prob": 0.0006066586938686669
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "G",
+          "softmax_prob": 0.00047354030539281666
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "H",
+          "softmax_prob": 0.00069393590092659
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "I",
+          "softmax_prob": 0.04777853935956955
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "J",
+          "softmax_prob": 0.0033272081054747105
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "K",
+          "softmax_prob": 0.0006878642598167062
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "L",
+          "softmax_prob": 0.9394703507423401
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "M",
+          "softmax_prob": 0.0002828981669154018
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "N",
+          "softmax_prob": 0.00020255375420674682
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "O",
+          "softmax_prob": 0.0001531134475953877
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "P",
+          "softmax_prob": 0.0008227135986089706
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "Q",
+          "softmax_prob": 0.0003242489183321595
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "R",
+          "softmax_prob": 0.0002864376874640584
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "S",
+          "softmax_prob": 0.0006699399091303349
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "T",
+          "softmax_prob": 0.0004997301148250699
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "U",
+          "softmax_prob": 0.0001564238191349432
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "V",
+          "softmax_prob": 0.0003507948713377118
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "W",
+          "softmax_prob": 0.0002529515768401325
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "X",
+          "softmax_prob": 0.0004100349033251405
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "Y",
+          "softmax_prob": 0.00044980598613619804
+        },
+        {
+          "id": "Saltyfish1884_I_G_10.png",
+          "label": "Z",
+          "softmax_prob": 0.0004474965971894562
+        }
+      ]
+    },
+    {
+      "id": "Saltyfish1884_I_G_3.png",
+      "raws": [
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "A",
+          "softmax_prob": 0.00019296894606668502
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "B",
+          "softmax_prob": 0.00019467188394628465
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "C",
+          "softmax_prob": 0.0006083807093091309
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "D",
+          "softmax_prob": 0.00016482197679579258
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "E",
+          "softmax_prob": 0.0005038862582296133
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "F",
+          "softmax_prob": 0.0008328832918778062
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "G",
+          "softmax_prob": 0.0004884361405856907
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "H",
+          "softmax_prob": 0.00043449661461636424
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "I",
+          "softmax_prob": 0.9591014385223389
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "J",
+          "softmax_prob": 0.007740925531834364
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "K",
+          "softmax_prob": 0.0006062891916371882
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "L",
+          "softmax_prob": 0.022913817316293716
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "M",
+          "softmax_prob": 0.00023112501366995275
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "N",
+          "softmax_prob": 0.00020908382430206984
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "O",
+          "softmax_prob": 0.00010304021270712838
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "P",
+          "softmax_prob": 0.00027067572227679193
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "Q",
+          "softmax_prob": 0.00038353336276486516
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "R",
+          "softmax_prob": 0.00045149680227041245
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "S",
+          "softmax_prob": 0.0005679369787685573
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "T",
+          "softmax_prob": 0.0010291676735505462
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "U",
+          "softmax_prob": 0.00015442786389030516
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "V",
+          "softmax_prob": 0.0003284223785158247
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "W",
+          "softmax_prob": 0.00027778599178418517
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "X",
+          "softmax_prob": 0.0005146977491676807
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "Y",
+          "softmax_prob": 0.00040814242674969137
+        },
+        {
+          "id": "Saltyfish1884_I_G_3.png",
+          "label": "Z",
+          "softmax_prob": 0.0012873242376372218
+        }
+      ]
+    },
+    {
+      "id": "Saltyfish1884_I_G_5.png",
+      "raws": [
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "A",
+          "softmax_prob": 4.646501474780962e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "B",
+          "softmax_prob": 7.320158329093829e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "C",
+          "softmax_prob": 4.43050594185479e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "D",
+          "softmax_prob": 4.682220969698392e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "E",
+          "softmax_prob": 7.608022860949859e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "F",
+          "softmax_prob": 0.00015166547382250428
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "G",
+          "softmax_prob": 3.7961021007504314e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "H",
+          "softmax_prob": 5.993170998408459e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "I",
+          "softmax_prob": 0.9981606602668762
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "J",
+          "softmax_prob": 0.0001774323172867298
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "K",
+          "softmax_prob": 5.5136541050160304e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "L",
+          "softmax_prob": 6.621150532737374e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "M",
+          "softmax_prob": 4.474189336178824e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "N",
+          "softmax_prob": 4.404013088787906e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "O",
+          "softmax_prob": 5.451169636216946e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "P",
+          "softmax_prob": 5.004555350751616e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "Q",
+          "softmax_prob": 4.0578517655376345e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "R",
+          "softmax_prob": 4.6376342652365565e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "S",
+          "softmax_prob": 0.00011571369395824149
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "T",
+          "softmax_prob": 0.00012007376790279523
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "U",
+          "softmax_prob": 3.4457396395737305e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "V",
+          "softmax_prob": 6.529685924760997e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "W",
+          "softmax_prob": 5.458962914417498e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "X",
+          "softmax_prob": 6.655609467998147e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "Y",
+          "softmax_prob": 6.430739449569955e-05
+        },
+        {
+          "id": "Saltyfish1884_I_G_5.png",
+          "label": "Z",
+          "softmax_prob": 0.00020298683375585824
+        }
+      ]
+    },
+    {
+      "id": "Saltyfish1884_I_G_9.png",
+      "raws": [
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "A",
+          "softmax_prob": 0.009836969897150993
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "B",
+          "softmax_prob": 0.008379964157938957
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "C",
+          "softmax_prob": 0.012888471595942974
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "D",
+          "softmax_prob": 0.01717963255941868
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "E",
+          "softmax_prob": 0.006519251503050327
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "F",
+          "softmax_prob": 0.01870829239487648
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "G",
+          "softmax_prob": 0.010351156815886497
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "H",
+          "softmax_prob": 0.011395234614610672
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "I",
+          "softmax_prob": 0.21228183805942535
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "J",
+          "softmax_prob": 0.018123643472790718
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "K",
+          "softmax_prob": 0.013583814725279808
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "L",
+          "softmax_prob": 0.4491634964942932
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "M",
+          "softmax_prob": 0.007596897426992655
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "N",
+          "softmax_prob": 0.005463884677737951
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "O",
+          "softmax_prob": 0.014388254843652248
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "P",
+          "softmax_prob": 0.009851096197962761
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "Q",
+          "softmax_prob": 0.005826123524457216
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "R",
+          "softmax_prob": 0.004838862456381321
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "S",
+          "softmax_prob": 0.020348992198705673
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "T",
+          "softmax_prob": 0.02726513147354126
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "U",
+          "softmax_prob": 0.006790469866245985
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "V",
+          "softmax_prob": 0.010791405104100704
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "W",
+          "softmax_prob": 0.007075062487274408
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "X",
+          "softmax_prob": 0.020111141726374626
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "Y",
+          "softmax_prob": 0.05606803670525551
+        },
+        {
+          "id": "Saltyfish1884_I_G_9.png",
+          "label": "Z",
+          "softmax_prob": 0.015172860585153103
+        }
+      ]
+    }
+  ]
+}

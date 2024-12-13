@@ -1,0 +1,58 @@
+To generate a stable structure that looks like the uppercase character "Y" and meets all the given hard constraints, we can use the `ab_drop()` function provided. We will follow the steps below:
+
+1. Initialize the structure as an empty grid using the given map initialization code:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the b13 block in the center slot:
+```python
+ab_drop('b13', W//2)
+```
+
+3. Drop the b31 blocks on the left and right sides:
+```python
+ab_drop('b31', W//2 - 1)
+ab_drop('b31', W//2 + 1)
+```
+
+4. Drop the b11 blocks above the b31 blocks to complete the structure:
+```python
+ab_drop('b11', W//2 - 1)
+ab_drop('b11', W//2)
+ab_drop('b11', W//2 + 1)
+```
+
+5. The final structure will resemble the uppercase character "Y" and will meet the stability and boundary intrusion constraints.
+
+Here is the complete code for generating the structure:
+```python
+W = 20
+H = 16
+
+def ab_drop(x, y):
+    drop_pos = (H-1, y)
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    structure[drop_pos[0]][drop_pos[1]] = x
+    return drop_pos
+
+# Initialize the structure as an empty grid
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the b13 block in the center slot
+ab_drop('b13', W//2)
+
+# Drop the b31 blocks on the left and right sides
+ab_drop('b31', W//2 - 1)
+ab_drop('b31', W//2 + 1)
+
+# Drop the b11 blocks above the b31 blocks
+ab_drop('b11', W//2 - 1)
+ab_drop('b11', W//2)
+ab_drop('b11', W//2)
+```
+
+The resulting structure will resemble the uppercase character "Y" and will be stable according to the given hard constraints.

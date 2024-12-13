@@ -1,0 +1,16 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Dropping blocks to create the "S" structure
+ab_drop('b11', 9)
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 8)
+ab_drop('b31', 9)
+```

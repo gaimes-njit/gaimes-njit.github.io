@@ -1,0 +1,7 @@
+ab_drop('b13', 9)  # Drop a b13 block at position 9
+ab_drop('b31', 9)  # Drop a b31 block at position 9
+ab_drop('b11', 7)  # Drop a b11 block at position 7
+ab_drop('b13', 5)  # Drop a b13 block at position 5
+ab_drop('b31', 5)  # Drop a b31 block at position 5
+ab_drop('b31', 11)  # Drop a b31 block at position 11
+ab_drop('b11', 9)  # Drop a b11 block at position 9

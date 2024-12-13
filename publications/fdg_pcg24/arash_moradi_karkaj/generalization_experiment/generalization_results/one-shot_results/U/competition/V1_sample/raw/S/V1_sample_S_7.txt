@@ -1,0 +1,19 @@
+```python
+from adbk import ab
+
+def drop_block(block_type, y):
+    if block_type == "b11":
+        ab.drop(1, 1, y)
+        ab.drop(1, 1, y)
+    elif block_type == "b31":
+        ab.drop(3, 1, y)
+    elif block_type == "b13":
+        ab.drop(1, 3, y)
+
+# Build the "S" structure from top to bottom
+drop_block("b13", 9)
+drop_block("b31", 7)
+drop_block("b13", 5)
+drop_block("b31", 3)
+drop_block("b13", 1)
+```

@@ -1,0 +1,49 @@
+1. Drawing of letter "S" with asterisks:
+
+```
+*****
+**
+*****
+    **
+*****
+```
+
+2. Asterisks and spaces generated in each row:
+
+Row 1: 5 asterisks
+Row 2: 2 asterisks
+Row 3: 5 asterisks
+Row 4: 4 spaces, 2 asterisks
+Row 5: 5 asterisks
+
+3. Asterisks as "x" and spaces as "y":
+
+Row 1: 5x
+Row 2: 2x
+Row 3: 5x
+Row 4: 4y, 2x
+Row 5: 5x
+
+4. Listing variables side-by-side:
+
+Row 1: xxxxx
+Row 2: xx
+Row 3: xxxxx
+Row 4: yyyyxx
+Row 5: xxxxx
+
+5. Position of each variable:
+
+Row 1: x-1, x-2, x-3, x-4, x-5
+Row 2: x-1, x-2
+Row 3: x-1, x-2, x-3, x-4, x-5
+Row 4: y-1, y-2, y-3, y-4, x-5, x-6
+Row 5: x-1, x-2, x-3, x-4, x-5
+
+6. `ab_drop` function calls:
+
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)

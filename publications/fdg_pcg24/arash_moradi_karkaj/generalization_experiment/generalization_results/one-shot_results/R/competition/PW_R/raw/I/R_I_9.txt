@@ -1,0 +1,7 @@
+To generate the uppercase letter "I", we can use three consecutive vertical straight blocks (b13) positioned at the same X coordinate, with each block starting at a different Y coordinate. Here is the stream of commands to generate the letter "I":
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+```

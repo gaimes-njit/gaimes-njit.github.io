@@ -1,0 +1,230 @@
+```
+# Database of key-value pairs
+database = {
+    "a": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_lock",
+        "ab_down",
+        "ab_drop"
+    ],
+    "b": [
+        "ab_lock",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop"
+    ],
+    "c": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop"
+    ],
+    "d": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop"
+    ],
+    "e": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_lock",
+        "ab_down",
+        "ab_drop"
+    ],
+    "f": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_lock"
+    ],
+    "g": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop"
+    ],
+    "h": [
+        "ab_lock",
+        "ab_down",
+        "ab_drop",
+        "ab_lock",
+        "ab_down",
+        "ab_drop"
+    ],
+    "i": [
+        "ab_down",
+        "ab_drop",
+        "ab_down"
+    ],
+    "j": [
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop"
+    ],
+    "k": [
+        "ab_lock",
+        "ab_down",
+        "ab_drop",
+        "ab_lock",
+        "ab_down",
+        "ab_drop"
+    ],
+    "l": [
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_lock"
+    ],
+    "m": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_drop",
+        "ab_down",
+        "ab_drop"
+    ],
+    "n": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_lock",
+        "ab_down",
+        "ab_drop"
+    ],
+    "o": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down"
+    ],
+    "p": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_lock",
+        "ab_down",
+        "ab_drop"
+    ],
+    "q": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_lock",
+        "ab_down",
+        "ab_drop"
+    ],
+    "r": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_lock",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop"
+    ],
+    "s": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop"
+    ],
+    "t": [
+        "ab_lock",
+        "ab_down",
+        "ab_drop"
+    ],
+    "u": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop"
+    ],
+    "v": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop"
+    ],
+    "w": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_drop",
+        "ab_down",
+        "ab_drop"
+    ],
+    "x": [
+        "ab_lock",
+        "ab_down",
+        "ab_drop",
+        "ab_lock",
+        "ab_down",
+        "ab_drop",
+        "ab_lock"
+    ],
+    "y": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_lock",
+        "ab_down",
+        "ab_drop"
+    ],
+    "z": [
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_down",
+        "ab_drop",
+        "ab_lock"
+    ]
+}
+
+# Function to generate letter structure
+def generate_letter_structure(letter):
+    if letter in database:
+        return "\n".join(database[letter])
+
+# Generate the structure for the letter "D"
+letter_structure = generate_letter_structure("d")
+print(letter_structure)
+```
+
+Output:
+```
+ab_drop
+ab_down
+ab_drop
+```

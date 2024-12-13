@@ -1,0 +1,16 @@
+To generate the uppercase letter "I", we need to create a vertical straight line with a width of 1 unit and a height of 3 units. 
+
+Here is the stream of commands to generate the letter "I":
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+```
+
+Explanation:
+- The first command `ab_drop('b13', 1)` drops a vertical block at position 1, creating the bottom part of the letter "I".
+- The second command `ab_drop('b13', 1)` drops another vertical block at position 1, creating the middle part of the letter "I".
+- The third command `ab_drop('b13', 1)` drops the final vertical block at position 1, creating the top part of the letter "I".
+
+This completes the construction of the letter "I" using the ab_drop() commands.

@@ -1,0 +1,21 @@
+To generate the uppercase English letter X using the given block types, you need to follow these steps:
+
+1. Create the bottom-left diagonal of the letter X:
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+
+2. Create the middle horizontal line of the letter X:
+ab_drop('b31', 2)
+
+3. Create the top-right diagonal of the letter X:
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+
+Here is the complete sequence of commands:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```

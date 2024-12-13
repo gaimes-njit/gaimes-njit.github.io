@@ -1,0 +1,107 @@
+1. The letter "N" with asterisks can be drawn as follows:
+
+```
+*     *
+**    *
+* *   *
+*  *  *
+*   * *
+*    **
+*     *
+```
+
+2. Line-by-line, verbally list the asterisks and spaces generated in each row of the drawing:
+
+Row 1: 1 asterisk, 5 spaces
+Row 2: 2 asterisks, 2 spaces, 1 asterisk
+Row 3: 1 asterisk, 2 spaces, 1 asterisk, 1 space, 1 asterisk
+Row 4: 1 asterisk, 1 space, 1 asterisk, 2 spaces, 1 asterisk
+Row 5: 1 asterisk, 1 space, 1 asterisk, 3 spaces, 1 asterisk
+Row 6: 1 asterisk, 1 space, 1 asterisk, 2 spaces, 1 asterisk
+Row 7: 1 asterisk, 2 spaces, 1 asterisk, 1 space, 1 asterisk
+Row 8: 2 asterisks, 2 spaces, 1 asterisk
+Row 9: 1 asterisk, 5 spaces
+
+3. Using the new rules, asterisks are now represented by "x" and spaces are represented by "y". Repeat step #2 with the new rules:
+
+Row 1: 1x, 5y
+Row 2: 2x, 2y, 1x
+Row 3: 1x, 2y, 1x, 1y, 1x
+Row 4: 1x, 1y, 1x, 2y, 1x
+Row 5: 1x, 1y, 1x, 3y, 1x
+Row 6: 1x, 1y, 1x, 2y, 1x
+Row 7: 1x, 2y, 1x, 1y, 1x
+Row 8: 2x, 2y, 1x
+Row 9: 1x, 5y
+
+4. For each row, write out each x and y. Each must be listed side-by-side:
+
+Row 1: xyyyyy
+Row 2: xxyyxx
+Row 3: xxyyxyx
+Row 4: xyxyyxx
+Row 5: xyxyyyyx
+Row 6: xyxyyxx
+Row 7: xxyyxyx
+Row 8: xxyyxx
+Row 9: xyyyyy
+
+5. For each row, indicate the position of each variable:
+
+Row 1: 1x-1; 2y-2; 3y-3; 4y-4; 5y-5; 6y-6
+Row 2: 1x-1; 2x-2; 3y-3; 4y-4; 5x-5; 6x-6
+Row 3: 1x-1; 2x-2; 3y-3; 4y-4; 5x-5; 6y-6; 7x-7; 8y-8; 9x-9
+Row 4: 1x-1; 2y-2; 3x-3; 4y-4; 5x-5; 6y-6; 7x-7; 8x-8
+Row 5: 1x-1; 2y-2; 3x-3; 4y-4; 5y-5; 6y-6; 7y-7; 8x-8
+Row 6: 1x-1; 2y-2; 3x-3; 4y-4; 5x-5; 6y-6; 7x-7; 8x-8
+Row 7: 1x-1; 2x-2; 3y-3; 4y-4; 5x-5; 6y-6; 7x-7; 8y-8
+Row 8: 1x-1; 2x-2; 3y-3; 4y-4; 5x-5; 6x-6
+Row 9: 1x-1; 2y-2; 3y-3; 4y-4; 5y-5; 6y-6
+
+6. For each row, line-by-line, return a sequence of `ab_drop` function calls:
+
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

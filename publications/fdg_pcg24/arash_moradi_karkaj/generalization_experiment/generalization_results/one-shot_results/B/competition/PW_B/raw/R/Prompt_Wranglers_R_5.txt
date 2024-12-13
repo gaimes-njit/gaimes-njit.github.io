@@ -1,0 +1,16 @@
+To generate the uppercase English letter "R", the following commands can be used:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b11', 1)
+ab_drop('b13', 2)
+ab_drop('b11', 1)
+ab_drop('b13', 4)
+ab_drop('b11', 1)
+```
+
+These commands will create a symmetrical and balanced structure resembling the letter "R" in the defined environment. Starting from the bottom, it first places a horizontal block (`b31`) at position 1. Then, two vertical blocks (`b13`) are placed at positions 0 and 2 to create the vertical structure of the letter. Another horizontal block (`b31`) is placed at position 1 to continue building the horizontal structure. Two vertical blocks (`b13`) are placed at positions 0 and 2 on top of the current structure. Finally, a horizontal block (`b31`) is placed at position 1 to complete the top part of the letter "R".

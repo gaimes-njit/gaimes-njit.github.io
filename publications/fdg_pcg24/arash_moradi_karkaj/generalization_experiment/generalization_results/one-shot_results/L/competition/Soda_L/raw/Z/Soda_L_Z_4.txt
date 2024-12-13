@@ -1,0 +1,4 @@
+First, let's start by generating the bottom bar of the "Z" character. We can achieve this by dropping a column block "b13" and then placing a row block "b31" centered on top of it.
+
+ab_drop("b13", 8)
+ab_drop("b31", 9)

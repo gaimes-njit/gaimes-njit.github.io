@@ -1,0 +1,5 @@
+ab_drop('b31', 9)  # Place a 'b31' block centered at slot 9
+ab_drop('b31', 10)  # Place a 'b31' block centered at slot 10
+ab_drop('b31', 11)  # Place a 'b31' block centered at slot 11
+ab_drop('b13', 8)  # Place a 'b13' block centered at slot 8
+ab_drop('b13', 12)  # Place a 'b13' block centered at slot 12

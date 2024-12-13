@@ -1,0 +1,45 @@
+To generate the uppercase letter "R", you can follow these steps:
+
+1. Start by building the vertical stem of the "R" using two vertical blocks (b13) stacked on top of each other:
+   ```plaintext
+   ab_drop('b13', 1)
+   ab_drop('b13', 1)
+   ```
+
+2. Move up to the next layer and place a horizontal block (b31) in the center:
+   ```plaintext
+   ab_drop('b31', 1)
+   ```
+
+3. Move up to the next layer and place another horizontal block (b31) in the center:
+   ```plaintext
+   ab_drop('b31', 1)
+   ```
+
+4. Move up to the next layer and place two vertical blocks (b13) on each side of the horizontal block:
+   ```plaintext
+   ab_drop('b13', 0)
+   ab_drop('b13', 2)
+   ```
+
+5. Move up to the next layer and place a horizontal block (b31) in the center:
+   ```plaintext
+   ab_drop('b31', 1)
+   ```
+
+6. Move up to the next layer and place a horizontal block (b31) in the center:
+   ```plaintext
+   ab_drop('b31', 1)
+   ```
+
+7. Move up to the next layer and place a vertical block (b13) on the right side of the horizontal block:
+   ```plaintext
+   ab_drop('b13', 2)
+   ```
+
+8. Finally, move up to the top layer and place a horizontal block (b31) in the center to complete the top of the "R":
+   ```plaintext
+   ab_drop('b31', 1)
+   ```
+
+After following these steps, you will have successfully generated the uppercase letter "R" using the given block types and adhering to the gravity rules.

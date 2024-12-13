@@ -1,0 +1,11 @@
+To generate the uppercase letter "V", we can use the following stream of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b11', 2)
+ab_drop('b31', 3)
+ab_drop('b11', 4)
+ab_drop('b31', 5)
+```
+
+This sequence of commands will create a stable structure that resembles the letter "V" within the allowed space boundaries.

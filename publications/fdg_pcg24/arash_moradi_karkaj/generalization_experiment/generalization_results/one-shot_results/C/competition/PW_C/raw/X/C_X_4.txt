@@ -1,0 +1,10 @@
+To generate the uppercase letter "X" using the provided block types, the following sequence of ab_drop() commands can be used:
+
+```
+ab_drop('b31', 2)  # Place the foundation of the letter X
+ab_drop('b13', 1)  # Place the left vertical part of the X
+ab_drop('b13', 2)  # Place the right vertical part of the X
+ab_drop('b31', 2)  # Place the top horizontal part of the X
+```
+
+This sequence of commands will generate the uppercase letter X by stacking the blocks according to the given rules of the environment.

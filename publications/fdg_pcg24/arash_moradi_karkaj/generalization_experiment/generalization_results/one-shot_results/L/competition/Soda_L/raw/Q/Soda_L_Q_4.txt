@@ -1,0 +1,31 @@
+First, let's start by creating the base for the letter "Q". Since "Q" consists of a square block and a column block, we can drop them in the following order:
+
+```
+ab_drop("b31", 10)  # The column block
+ab_drop("b11", 9)   # The square block
+```
+
+Next, let's add the upper part of the letter "Q". To create a stable structure, we'll need to add a row block and a square block. We can achieve this by dropping the blocks in the following order:
+
+```
+ab_drop("b31", 10)  # The row block
+ab_drop("b11", 9)   # The square block
+```
+
+Finally, let's add the tail of the letter "Q". This can be done by dropping a row block and a square block in the following order:
+
+```
+ab_drop("b31", 10)  # The row block
+ab_drop("b11", 9)   # The square block
+```
+
+This completes the implementation. The final code block should look like this:
+
+```
+ab_drop("b31", 10)
+ab_drop("b11", 9)
+ab_drop("b31", 10)
+ab_drop("b11", 9)
+ab_drop("b31", 10)
+ab_drop("b11", 9)
+```

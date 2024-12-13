@@ -1,0 +1,19 @@
+To build the capital letter "K" on the grid, we need to consider the stability of the blocks. Let's break the problem down into multiple steps:
+
+Step 1: Build the left vertical bar of the letter "K".
+- Drop a column block "b13" centered at x_position = 4.
+  ab_drop("b13", 4)
+
+Step 2: Build the top horizontal bar of the letter "K".
+- Drop a row block "b31" centered at x_position = 7.
+  ab_drop("b31", 7)
+
+Step 3: Build the bottom horizontal bar of the letter "K".
+- Drop a row block "b31" centered at x_position = 7.
+  ab_drop("b31", 7)
+
+Step 4: Build the right diagonal bar of the letter "K".
+- Drop a row block "b31" centered at x_position = 10.
+  ab_drop("b31", 10)
+
+Note: The order of dropping the blocks is important to maintain stability.

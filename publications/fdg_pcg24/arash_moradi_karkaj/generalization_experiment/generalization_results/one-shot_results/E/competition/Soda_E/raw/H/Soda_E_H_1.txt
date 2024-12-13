@@ -1,0 +1,18 @@
+To generate a structure in the shape of a capital "H", we can break it down into three parts: the top horizontal bar, the middle vertical bar, and the bottom horizontal bar. Here is the complete implementation:
+
+```python
+# The top horizontal bar of H
+ab_drop("b13", 6)
+ab_drop("b11", 7)
+ab_drop("b13", 8)
+
+# The middle vertical bar of H
+ab_drop("b31", 10)
+
+# The bottom horizontal bar of H
+ab_drop("b13", 6)
+ab_drop("b11", 7)
+ab_drop("b13", 8)
+```
+
+This implementation follows the bottom-to-top construction approach and ensures stable placement of blocks.

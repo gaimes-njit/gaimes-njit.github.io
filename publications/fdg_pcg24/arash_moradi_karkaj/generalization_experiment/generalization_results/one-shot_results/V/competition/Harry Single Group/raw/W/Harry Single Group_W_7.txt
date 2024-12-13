@@ -1,0 +1,51 @@
+First, let's initialize the field by creating an empty map with a width of 20 and a height of 16:
+
+```Python
+field = [[0] * 20 for _ in range(16)]
+```
+
+Now, we can start placing the bricks to form the shape resembling the letter "W". We will be using the `ab_drop(x, y)` function to place the bricks.
+
+```Python
+def ab_drop(x, y):
+    if x == 'b31':
+        # To place a b31 brick at x_position y, we need to check if the cells (y-1, 0), (y, 0), and (y+1, 0) are empty
+        if field[0][y-1] == 0 and field[0][y] == 0 and field[0][y+1] == 0:
+            # Place the b31 brick at y_position y
+            field[0][y-1] = 1
+            field[0][y] = 1
+            field[0][y+1] = 1
+    elif x == 'b13':
+        # To place a b13 brick at x_position y, we need to check if the cells (y, 0), (y, 1), and (y, 2) are empty
+        if field[0][y] == 0 and field[1][y] == 0 and field[2][y] == 0:
+            # Place the b13 brick at y_position y
+            field[0][y] = 1
+            field[1][y] = 1
+            field[2][y] = 1
+    elif x == 'b11':
+        # To place a b11 brick at x_position y, we need to check if the cell (y, 0) is empty
+        if field[0][y] == 0:
+            # Place the b11 brick at y_position y
+            field[0][y] = 1
+```
+
+Using the above function, we can generate the required structure. Here is an example:
+
+```Python
+# Place the first b31 brick at x_position 5
+ab_drop('b31', 5)
+
+# Place the first b13 brick at x_position 7
+ab_drop('b13', 7)
+
+# Place the second b13 brick at x_position 12
+ab_drop('b13', 12)
+
+# Place the second b31 brick at x_position 14
+ab_drop('b31', 14)
+
+# Place the third b31 brick at x_position 18
+ab_drop('b31', 18)
+```
+
+After executing the above code, the field will contain the bricks forming the shape resembling the letter "W". Note that this is just one possible solution, and there may be multiple valid configurations.

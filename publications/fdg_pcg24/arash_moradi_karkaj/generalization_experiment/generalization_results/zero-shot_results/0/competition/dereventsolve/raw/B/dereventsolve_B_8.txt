@@ -1,0 +1,32 @@
+```
+# Database
+database = {
+    "a": {
+        "b": {
+            "c": "letter_B"
+        }
+    },
+    "drop": lambda x: print(f"Calling ab_drop({x})")
+}
+
+def ab_drop(key):
+    if key == "drop":
+        return database["drop"]
+    else:
+        return ab_drop
+
+# Function to generate the letter "B"
+def generate_letter_B():
+    # Step 1: Access the 'a' key
+    ab_drop('a')
+
+    # Step 2: Access the 'b' key
+    ab_drop('b')
+
+    # Step 3: Access the 'drop' key and execute the function
+    ab_drop('drop')()
+
+generate_letter_B()
+```
+
+The above code uses recursion to generate the structure that looks like the letter "B". It accesses the "a" key, then the "b" key, and finally executes the "drop" function to get the letter "B". The "ab_drop" function is used to simulate the structure and make the required function calls. The "print" statement inside the "drop" function is used to display the function calls.

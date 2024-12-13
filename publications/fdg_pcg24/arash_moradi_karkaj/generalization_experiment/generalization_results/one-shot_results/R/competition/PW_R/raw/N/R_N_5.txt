@@ -1,0 +1,16 @@
+To generate the uppercase English letter "N", we can use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b31', 5)
+ab_drop('b31', 9)
+ab_drop('b13', 13)
+```
+
+Explanation:
+1. We start by dropping a vertical straight block ('b13') at position 1 to form the left side of the letter "N".
+2. Next, we drop a horizontal straight block ('b31') at position 5 to connect the left side with the middle part of the letter.
+3. We repeat step 2 by dropping another horizontal straight block ('b31') at position 9.
+4. Finally, we drop another vertical straight block ('b13') at position 13 to complete the right side of the letter "N".
+
+This sequence of commands will construct the uppercase English letter "N" in the Tetris-like environment.

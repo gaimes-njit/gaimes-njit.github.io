@@ -1,0 +1,39 @@
+To generate a stable structure that resembles the character "K", we can follow the steps below:
+
+Step 1: Initialize the structure as an empty WxH grid.
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Add the first vertical block (b13) in the middle of the structure.
+```python
+ab_drop('b13', 10)
+```
+
+Step 3: Add two horizontal blocks (b31) on top of the vertical block, forming the top part of the "K".
+```python
+ab_drop('b31', 9)
+ab_drop('b31', 11)
+```
+
+Step 4: Add a vertical block (b13) on the left side of the vertical block, forming the middle part of the "K".
+```python
+ab_drop('b13', 7)
+```
+
+Step 5: Add another vertical block (b13) on the right side of the vertical block, forming the right side of the "K".
+```python
+ab_drop('b13', 13)
+```
+
+Step 6: Add a horizontal block (b31) on top of the left vertical block, completing the left side of the "K".
+```python
+ab_drop('b31', 8)
+```
+
+Step 7: Add a horizontal block (b31) on top of the right vertical block, completing the right side of the "K".
+```python
+ab_drop('b31', 12)
+```
+
+The final structure will resemble the character "K" and will meet all the hard constraints of stability and no boundary intrusion.

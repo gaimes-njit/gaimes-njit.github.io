@@ -1,0 +1,9 @@
+Here is the code to generate the structure resembling "T":
+
+```
+ab_drop('b31', 9)
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+ab_drop('b31', 9)
+ab_drop('b11', 9)
+```

@@ -1,0 +1,18 @@
+To create the uppercase letter "O" using the given block types, you can follow these steps:
+
+1. Place a b31 block at position (1, 6).
+2. Place a b13 block at position (3, 1).
+3. Place a b13 block at position (3, 19).
+4. Place a b31 block at position (15, 6).
+
+Here are the ab_drop() commands for each step:
+
+```
+ab_drop(31, 6)
+ab_drop(13, 1)
+ab_drop(13, 19)
+ab_drop(31, 6)
+```
+
+Make sure to execute these commands consecutively.
+Remember to adjust the position values if the grid has different dimensions.

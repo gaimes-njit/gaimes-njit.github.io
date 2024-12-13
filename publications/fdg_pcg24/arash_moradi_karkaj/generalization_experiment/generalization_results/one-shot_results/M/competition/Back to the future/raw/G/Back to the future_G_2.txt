@@ -1,0 +1,30 @@
+To generate a stable structure that looks like the uppercase character "G" and meets all the hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty grid using the provided code:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. To create the base of the "G", we need to drop two b31 blocks next to each other. We can do this by calling `ab_drop('b31', 4)` and `ab_drop('b31', 5)`. This will create a stable base for the structure.
+
+3. To create the vertical part of the "G", we need to drop a b13 block on top of the previous b31 blocks. We can do this by calling `ab_drop('b13', 4)`. This block will be supported by the b31 blocks below it.
+
+4. To create the horizontal part of the "G", we need to drop a b31 block on top of the vertical part. We can do this by calling `ab_drop('b31', 5)`. This block will be supported by the b31 and b13 blocks below it.
+
+Here is an example of the code to generate the "G" structure:
+
+```python
+structure = [[' ']*W for _ in range(H)]
+
+# Create the base
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+
+# Create the vertical part
+ab_drop('b13', 4)
+
+# Create the horizontal part
+ab_drop('b31', 5)
+```
+
+After running this code, the `structure` grid will contain the dropped blocks representing the uppercase character "G", meeting all the hard constraints.

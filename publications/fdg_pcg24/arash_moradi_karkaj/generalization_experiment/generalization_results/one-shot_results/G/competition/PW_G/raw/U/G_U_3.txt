@@ -1,0 +1,8 @@
+U: The letter U can be constructed by placing a vertical straight block (b13) followed by two horizontal straight blocks (b31) in the middle, and another vertical straight block (b13) on the right side. Here is the sequence of ab_drop() commands to generate the letter U:
+
+```
+ab_drop('b13', 1)
+ab_drop('b31', 5)
+ab_drop('b31', 8)
+ab_drop('b13', 12)
+```

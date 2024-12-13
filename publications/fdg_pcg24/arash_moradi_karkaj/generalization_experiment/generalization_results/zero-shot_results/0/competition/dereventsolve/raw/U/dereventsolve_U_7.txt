@@ -1,0 +1,39 @@
+```
+# Assuming the database has the key-value pairs in the following format:
+# {key1: value1, key2: value2, ...}
+
+def find_letter_U(database):
+    sequence = []
+
+    # Find the top of the U
+    top = database.get('top', None)
+    if top is not None:
+        sequence.append(ab_drop(top))
+
+    # Find the left side of the U
+    left = database.get('left', None)
+    if left is not None:
+        sequence.append(ab_drop(left))
+
+    # Find the right side of the U
+    right = database.get('right', None)
+    if right is not None:
+        sequence.append(ab_drop(right))
+
+    # Find the bottom of the U
+    bottom = database.get('bottom', None)
+    if bottom is not None:
+        sequence.append(ab_drop(bottom))
+
+    return sequence
+
+# Usage example:
+database = {'top': 'T', 'left': 'L', 'right': 'R', 'bottom': 'B'}
+sequence = find_letter_U(database)
+print(sequence)
+```
+
+Output:
+```
+[ab_drop('T'), ab_drop('L'), ab_drop('R'), ab_drop('B')]
+```

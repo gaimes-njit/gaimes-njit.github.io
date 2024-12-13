@@ -1,0 +1,9 @@
+# Solution:
+
+ab_drop('b31', 9)  # bottom horizontal base
+ab_drop('b31', 10)  # bottom horizontal base
+ab_drop('b31', 11)  # bottom horizontal base
+ab_drop('b11', 10)  # top center vertical base
+ab_drop('b31', 10)  # top horizontal base
+ab_drop('b31', 9)  # top horizontal base
+ab_drop('b31', 11)  # top horizontal base

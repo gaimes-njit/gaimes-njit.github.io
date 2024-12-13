@@ -1,0 +1,9 @@
+ab_drop('b13',6)  # drop the vertical block 'b13' at slot 6
+ab_drop('b11',7)  # drop the square block 'b11' at slot 7
+ab_drop('b13',8)  # drop the vertical block 'b13' at slot 8
+ab_drop('b13',9)  # drop the vertical block 'b13' at slot 9
+ab_drop('b31',10)  # drop the horizontal block 'b31' at slot 10
+ab_drop('b13',11)  # drop the vertical block 'b13' at slot 11
+ab_drop('b13',15)  # drop the vertical block 'b13' at slot 15
+ab_drop('b13',16)  # drop the vertical block 'b13' at slot 16
+ab_drop('b11',17)  # drop the square block 'b11' at slot 17

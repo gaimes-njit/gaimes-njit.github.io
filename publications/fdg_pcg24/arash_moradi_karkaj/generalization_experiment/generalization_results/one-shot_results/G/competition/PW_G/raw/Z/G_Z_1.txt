@@ -1,0 +1,16 @@
+To generate the uppercase letter "Z", we need to follow the specified environment rules and use the provided block types. Here's the stream of commands to construct the letter "Z":
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```
+
+Explanation:
+1. Place a horizontal straight block ('b31') at position 1. This forms the top part of the "Z".
+2. Place a vertical straight block ('b13') at position 1. This forms the vertical line of the "Z".
+3. Place another vertical straight block ('b13') at position 2. This completes the vertical line of the "Z".
+4. Place another horizontal straight block ('b31') at position 2. This forms the bottom part of the "Z".
+
+By following these commands, you will accurately represent and fit the uppercase English letter "Z" within the allowed space boundaries.

@@ -1,0 +1,16 @@
+To create the letter "Y" using the block-stacking technique, we can break it down into three blocks: the vertical pipe, the angled part on the left, and the angled part on the right. We will build the structure from bottom to top to ensure stability. Here is the complete implementation:
+
+```
+# Place the vertical pipe block
+ab_drop("b13", 9)
+
+# Place the left angled part block
+ab_drop("b13", 9)
+ab_drop("b31", 10)
+
+# Place the right angled part block
+ab_drop("b31", 8)
+ab_drop("b13", 9)
+```
+
+This implementation ensures stability by building each block on a well-supported base. Additionally, the resulting structure will resemble the letter "Y" in the top-down orientation.

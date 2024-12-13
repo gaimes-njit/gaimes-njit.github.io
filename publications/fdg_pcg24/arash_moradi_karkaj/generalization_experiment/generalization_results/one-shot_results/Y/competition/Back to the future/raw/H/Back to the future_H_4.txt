@@ -1,0 +1,28 @@
+To generate a stable structure that looks like the uppercase character "H" and meets all the hard constraints, we can follow the following steps:
+
+1. Initialize the structure as an empty grid using the provided map initialization code:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the blocks one by one using the `ab_drop()` function to build the structure from bottom to top.
+
+3. Start by dropping a b31 block to form the two vertical strokes of the "H". This block should be dropped in a stable position such that it is supported by the base layer or a previously dropped block. Choose a slot (y coordinate) such that the block appears in the middle of the structure. For example:
+```python
+ab_drop('b31', 9)  # Drop a b31 block at slot 9
+```
+
+4. Next, drop two b13 blocks on top of the two vertical strokes. These blocks should be dropped in stable positions, with one on the left and one on the right. These positions will provide support for the horizontal stroke of the "H". For example:
+```python
+ab_drop('b13', 7)  # Drop a b13 block on the left side
+ab_drop('b13', 11)  # Drop a b13 block on the right side
+```
+
+5. Finally, drop a b31 block on top of the two b13 blocks to complete the horizontal stroke of the "H". This block should be dropped in a stable position such that it is supported by the two b13 blocks. Choose a slot (y coordinate) such that the block appears in the middle of the structure. For example:
+```python
+ab_drop('b31', 9)  # Drop a b31 block on top of the b13 blocks
+```
+
+By following these steps and making sure to check for stability before each drop, you can generate a stable structure that looks like the uppercase character "H" and meets all the hard constraints.
+
+Please note that the exact slot positions and order of drops may vary depending on the initial empty structure and the specific implementation of the `ab_drop()` function. Feel free to adjust the code accordingly to suit your needs.

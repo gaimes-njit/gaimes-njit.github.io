@@ -1,0 +1,568 @@
+{
+  "count": 4,
+  "similarityRate": 0.013280759749250137,
+  "trials": [
+    {
+      "id": "AdrienTeam_A_B_10.png",
+      "label": "B",
+      "similarity": 9.543610212858766e-05
+    },
+    {
+      "id": "AdrienTeam_A_B_5.png",
+      "label": "B",
+      "similarity": 5.501058330992237e-05
+    },
+    {
+      "id": "AdrienTeam_A_B_7.png",
+      "label": "B",
+      "similarity": 9.363506978843361e-05
+    },
+    {
+      "id": "AdrienTeam_A_B_9.png",
+      "label": "B",
+      "similarity": 0.052878957241773605
+    }
+  ],
+  "similarities": [
+    {
+      "id": "AdrienTeam_A_B_10.png",
+      "raws": [
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "A",
+          "softmax_prob": 0.0003963856433983892
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "B",
+          "softmax_prob": 9.543610212858766e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "C",
+          "softmax_prob": 0.00029867718694731593
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "D",
+          "softmax_prob": 0.00020847865380346775
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "E",
+          "softmax_prob": 0.0001612647611182183
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "F",
+          "softmax_prob": 0.0002509883197490126
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "G",
+          "softmax_prob": 0.00016290805069729686
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "H",
+          "softmax_prob": 0.0006086442735977471
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "I",
+          "softmax_prob": 0.00017250783275812864
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "J",
+          "softmax_prob": 0.00040094356518238783
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "K",
+          "softmax_prob": 7.905896927695721e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "L",
+          "softmax_prob": 0.00016312958905473351
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "M",
+          "softmax_prob": 0.992333173751831
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "N",
+          "softmax_prob": 0.0018518874421715736
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "O",
+          "softmax_prob": 0.00017969995678868145
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "P",
+          "softmax_prob": 0.00029089400777593255
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "Q",
+          "softmax_prob": 0.0001617920643184334
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "R",
+          "softmax_prob": 0.00012389043695293367
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "S",
+          "softmax_prob": 0.00020247261272743344
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "T",
+          "softmax_prob": 0.00020728280651383102
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "U",
+          "softmax_prob": 0.00019224554125685245
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "V",
+          "softmax_prob": 0.0001803109043976292
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "W",
+          "softmax_prob": 0.0009139926405623555
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "X",
+          "softmax_prob": 0.00012372052879072726
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "Y",
+          "softmax_prob": 0.00013343639147933573
+        },
+        {
+          "id": "AdrienTeam_A_B_10.png",
+          "label": "Z",
+          "softmax_prob": 0.00010670838673831895
+        }
+      ]
+    },
+    {
+      "id": "AdrienTeam_A_B_5.png",
+      "raws": [
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "A",
+          "softmax_prob": 5.7973957154899836e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "B",
+          "softmax_prob": 5.501058330992237e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "C",
+          "softmax_prob": 0.0001120377637562342
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "D",
+          "softmax_prob": 7.779984298394993e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "E",
+          "softmax_prob": 6.381588900694624e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "F",
+          "softmax_prob": 9.608537948224694e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "G",
+          "softmax_prob": 0.0002680880425032228
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "H",
+          "softmax_prob": 8.974533557193354e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "I",
+          "softmax_prob": 0.00022008408268447965
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "J",
+          "softmax_prob": 0.00043542441562749445
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "K",
+          "softmax_prob": 0.0001326881319982931
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "L",
+          "softmax_prob": 0.9973830580711365
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "M",
+          "softmax_prob": 6.528837548103184e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "N",
+          "softmax_prob": 4.536847700364888e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "O",
+          "softmax_prob": 2.3252639948623255e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "P",
+          "softmax_prob": 0.00015951317618601024
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "Q",
+          "softmax_prob": 0.00010098974598804489
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "R",
+          "softmax_prob": 7.208517490653321e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "S",
+          "softmax_prob": 6.947817746549845e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "T",
+          "softmax_prob": 8.708193490747362e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "U",
+          "softmax_prob": 3.591472341213375e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "V",
+          "softmax_prob": 8.161997538991272e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "W",
+          "softmax_prob": 7.060521602397785e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "X",
+          "softmax_prob": 6.776634108973667e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "Y",
+          "softmax_prob": 6.609074625885114e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_5.png",
+          "label": "Z",
+          "softmax_prob": 6.32356241112575e-05
+        }
+      ]
+    },
+    {
+      "id": "AdrienTeam_A_B_7.png",
+      "raws": [
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "A",
+          "softmax_prob": 0.0008925804868340492
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "B",
+          "softmax_prob": 9.363506978843361e-05
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "C",
+          "softmax_prob": 0.0016117867780849338
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "D",
+          "softmax_prob": 0.0006412993534468114
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "E",
+          "softmax_prob": 0.000438397575635463
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "F",
+          "softmax_prob": 0.0003849380009341985
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "G",
+          "softmax_prob": 0.00042659026803448796
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "H",
+          "softmax_prob": 0.002041280036792159
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "I",
+          "softmax_prob": 0.0007462527137249708
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "J",
+          "softmax_prob": 0.0002884196292143315
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "K",
+          "softmax_prob": 0.00021563307382166386
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "L",
+          "softmax_prob": 0.00012076026177965105
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "M",
+          "softmax_prob": 0.9867715239524841
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "N",
+          "softmax_prob": 0.0011408213758841157
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "O",
+          "softmax_prob": 0.00041875976603478193
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "P",
+          "softmax_prob": 0.00017709366511553526
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "Q",
+          "softmax_prob": 0.0002783089585136622
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "R",
+          "softmax_prob": 0.00021837159874849021
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "S",
+          "softmax_prob": 0.00027781521202996373
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "T",
+          "softmax_prob": 0.00020374688028823584
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "U",
+          "softmax_prob": 0.00037704198621213436
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "V",
+          "softmax_prob": 0.000296679325401783
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "W",
+          "softmax_prob": 0.001238213968463242
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "X",
+          "softmax_prob": 0.00020905316341668367
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "Y",
+          "softmax_prob": 0.00019343091116752476
+        },
+        {
+          "id": "AdrienTeam_A_B_7.png",
+          "label": "Z",
+          "softmax_prob": 0.0002974297967739403
+        }
+      ]
+    },
+    {
+      "id": "AdrienTeam_A_B_9.png",
+      "raws": [
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "A",
+          "softmax_prob": 0.016154801473021507
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "B",
+          "softmax_prob": 0.052878957241773605
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "C",
+          "softmax_prob": 0.009849672205746174
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "D",
+          "softmax_prob": 0.016905756667256355
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "E",
+          "softmax_prob": 0.032339245080947876
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "F",
+          "softmax_prob": 0.08143630623817444
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "G",
+          "softmax_prob": 0.004949880298227072
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "H",
+          "softmax_prob": 0.022983545437455177
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "I",
+          "softmax_prob": 0.024034954607486725
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "J",
+          "softmax_prob": 0.010724632069468498
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "K",
+          "softmax_prob": 0.012861009687185287
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "L",
+          "softmax_prob": 0.010209494270384312
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "M",
+          "softmax_prob": 0.04567410796880722
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "N",
+          "softmax_prob": 0.2447613775730133
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "O",
+          "softmax_prob": 0.03146439045667648
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "P",
+          "softmax_prob": 0.02047026716172695
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "Q",
+          "softmax_prob": 0.002158322837203741
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "R",
+          "softmax_prob": 0.013795088976621628
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "S",
+          "softmax_prob": 0.014059477485716343
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "T",
+          "softmax_prob": 0.16258525848388672
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "U",
+          "softmax_prob": 0.011196975596249104
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "V",
+          "softmax_prob": 0.011784922331571579
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "W",
+          "softmax_prob": 0.011299443431198597
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "X",
+          "softmax_prob": 0.028270265087485313
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "Y",
+          "softmax_prob": 0.006943895481526852
+        },
+        {
+          "id": "AdrienTeam_A_B_9.png",
+          "label": "Z",
+          "softmax_prob": 0.10020791739225388
+        }
+      ]
+    }
+  ]
+}

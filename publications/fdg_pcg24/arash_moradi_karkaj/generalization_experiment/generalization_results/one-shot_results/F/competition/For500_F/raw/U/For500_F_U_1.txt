@@ -1,0 +1,3 @@
+ab_drop('b31', 10)  # Drop the bottom part of the 'U' shape, supporting the letter structure
+ab_drop('b11', 10)  # Drop the center part of the 'U' shape
+ab_drop('b13', 10)  # Drop the top part of the 'U' shape, completing the letter structure

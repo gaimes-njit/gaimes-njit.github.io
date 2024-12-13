@@ -1,0 +1,11 @@
+To generate the uppercase letter "X", you can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b31', 4)
+ab_drop('b31', 7)
+ab_drop('b31', 10)
+ab_drop('b31', 13)
+```
+
+This will create a letter "X" in the Tetris-like environment.

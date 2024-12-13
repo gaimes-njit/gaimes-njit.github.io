@@ -1,0 +1,12 @@
+The solution to create a stable structure resembling "J" using the `ab_drop()` function while adhering to the given constraints is as follows:
+
+```
+ab_drop('b13',0)
+ab_drop('b11',1)
+ab_drop('b11',2)
+```
+
+Explanation:
+1. The first block dropped is `'b13'` at slot 0.
+2. The second block dropped is `'b11'` at slot 1.
+3. The third block dropped is `'b11'` at slot 2.

@@ -1,0 +1,17 @@
+To create the uppercase English letter "E" in the given environment using the ab_drop() command and the three block types b11, b31, and b13, follow these instructions:
+
+1. Place the horizontal straight block (b31) at position 1. (ab_drop('b31',1))
+2. Place the vertical straight block (b13) at position 1. (ab_drop('b13',1))
+3. Place the horizontal straight block (b31) at position 1. (ab_drop('b31',1))
+4. Place the vertical straight block (b13) at position 1. (ab_drop('b13',1))
+5. Place the horizontal straight block (b31) at position 1. (ab_drop('b31',1))
+
+The stream of commands would look like this:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',1)
+ab_drop('b31',1)
+ab_drop('b13',1)
+ab_drop('b31',1)
+```

@@ -1,0 +1,27 @@
+To generate the capital letter "D" using the given block types and environment, you need to carefully place each block to form the desired shape. Here is a stream of ab_drop() commands that resemble the target letter "D":
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b13', 4)
+ab_drop('b31', 2)
+ab_drop('b11', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b13', 4)
+```
+
+This sequence of commands places the blocks in the following positions:
+
+```
+1. Place a vertical straight block ('b13') at position (1, 1).
+2. Place a vertical straight block ('b13') at position (3, 1).
+3. Place a vertical straight block ('b13') at position (4, 1).
+4. Place a horizontal straight block ('b31') at position (2, 2).
+5. Place a 1x1 square block ('b11') at position (2, 3).
+6. Place a vertical straight block ('b13') at position (1, 4).
+7. Place a vertical straight block ('b13') at position (3, 4).
+8. Place a vertical straight block ('b13') at position (4, 4).
+```
+
+This arrangement of blocks forms the letter "D" within the allowed space and follows the gravity rules.

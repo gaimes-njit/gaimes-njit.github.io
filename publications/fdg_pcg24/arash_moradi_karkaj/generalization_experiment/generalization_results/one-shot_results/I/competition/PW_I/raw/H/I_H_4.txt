@@ -1,0 +1,18 @@
+To generate the letter "H", we can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b11', 2)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+```
+
+Explanation:
+1. The first command `ab_drop('b31', 1)` places a horizontal straight block (b31) at position 1.
+2. The second command `ab_drop('b31', 1)` places another horizontal straight block (b31) adjacent to the previous one.
+3. The third command `ab_drop('b11', 2)` places a 1x1 square block (b11) between the two horizontal blocks, creating the vertical line of the letter "H".
+4. The fourth command `ab_drop('b31', 1)` places another horizontal straight block (b31) below the vertical line, completing the left side of the letter "H".
+5. The fifth command `ab_drop('b31', 1)` places the final horizontal straight block (b31) below the previous one, completing the right side of the letter "H".
+
+By following these commands, the letter "H" will be generated in the Tetris-like environment.

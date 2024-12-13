@@ -1,0 +1,12 @@
+```
+ab_drop(b31,1)    # Horizontal bar
+ab_drop(b31,4)
+ab_drop(b13,1)    # Vertical bar
+ab_drop(b13,4)
+ab_drop(b11,1)    # Top left corner
+ab_drop(b31,1)    # Top bar
+ab_drop(b13,1)    # Left bar
+ab_drop(b13,4)    # Right bar
+ab_drop(b31,4)    # Bottom bar
+ab_drop(b11,4)    # Bottom right corner
+```

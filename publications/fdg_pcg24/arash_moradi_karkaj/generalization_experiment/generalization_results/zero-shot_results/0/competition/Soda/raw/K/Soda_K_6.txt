@@ -1,0 +1,29 @@
+The first step is to create the two vertical bars of the letter "K". We will use the column block "b13" for this.
+
+```
+ab_drop("b13", 5)
+ab_drop("b13", 15)
+```
+
+Next, we need to create the horizontal bar of the letter "K". We will use the row block "b31" for this.
+
+```
+ab_drop("b31", 10)
+```
+
+Finally, we need to create the diagonal segments of the letter "K". We will use the square block "b11" for this.
+
+```
+ab_drop("b11", 5)
+ab_drop("b11", 15)
+```
+
+Putting it all together, the complete implementation is:
+
+```
+ab_drop("b13", 5)
+ab_drop("b13", 15)
+ab_drop("b31", 10)
+ab_drop("b11", 5)
+ab_drop("b11", 15)
+```

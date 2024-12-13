@@ -1,0 +1,19 @@
+To create the uppercase letter "O" in the grid, we can use a combination of block types b31 and b13. We will place them in a way that resembles the shape of the letter "O". Here is the solution:
+
+```
+ab_drop("b31", 1)
+ab_drop("b13", 18)
+ab_drop("b31", 1)
+ab_drop("b13", 1)
+ab_drop("b31", 3)
+ab_drop("b13", 1)
+ab_drop("b31", 17)
+ab_drop("b13", 1)
+ab_drop("b31", 3)
+ab_drop("b13", 1)
+ab_drop("b31", 1)
+ab_drop("b13", 1)
+ab_drop("b31", 1)
+```
+
+These commands will place the blocks in a way that resembles the uppercase letter "O". The b31 blocks will form the outer edges of the letter, while the b13 blocks will form the inner circle of the letter.

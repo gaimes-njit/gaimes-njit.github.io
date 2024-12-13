@@ -1,0 +1,14 @@
+To build the letter 'P' in a bottom-to-top fashion, we will start by placing the base. Then, we will add the vertical line on the left side. Finally, we will add the top horizontal line. Here is the code to generate the letter 'P':
+
+```python
+# Step 1: Place the base
+ab_drop("b13", 9)
+
+# Step 2: Add the vertical line on the left side
+ab_drop("b31", 9)
+
+# Step 3: Add the top horizontal line
+ab_drop("b13", 8)
+```
+
+This code will generate a structure that resembles the letter 'P' and ensures stability. It follows the hints provided in the problem description to create the desired shape.

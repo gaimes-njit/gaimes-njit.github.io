@@ -1,0 +1,15 @@
+To create the structure exactly like the letter "D" inside a 20*16 box, you can use the following steps:
+
+1. Drop a b31 block at position 0.
+2. Drop a b13 block at position 0.
+3. Drop a b13 block at position 3.
+4. Drop a b13 block at position 6.
+5. Drop a b11 block at position 6.
+
+Here is the code to achieve this:
+
+ab_drop('b31', 0)
+ab_drop('b13', 0)
+ab_drop('b13', 3)
+ab_drop('b13', 6)
+ab_drop('b11', 6)

@@ -1,0 +1,19 @@
+To generate a stable structure that looks like the uppercase letter "T", we can follow these steps:
+
+1. Initialize the structure as an empty grid with dimensions WxH.
+2. Drop a b13 block at slot 9, which will be the base of the "T" shape.
+   - Call ab_drop("b13", 9) to drop the block at slot 9.
+   - Mark the dropped coordinates as the support for future blocks.
+3. Drop a b31 block centered at slot 9 on layer 1 to form the vertical part of the "T".
+   - Call ab_drop("b31", 9) to drop the block at slot 9.
+4. Iterate over the slots 7, 8, 10, and 11 on layer 2 to form the horizontal part of the "T".
+   - Call ab_drop("b11", 7) to drop a b11 block at slot 7.
+   - Call ab_drop("b11", 8) to drop a b11 block at slot 8.
+   - Call ab_drop("b11", 10) to drop a b11 block at slot 10.
+   - Call ab_drop("b11", 11) to drop a b11 block at slot 11.
+5. Repeat steps 3 and 4 for the layers 3, 4, and 5 to form the upper part of the "T".
+6. Check the stability of the structure before each block drop to ensure it remains stable.
+   - Before each ab_drop call, check if the positions below the current drop position are empty or already filled with stable blocks.
+   - If any position below the current drop position is not empty or already filled, break the loop to prevent collapse.
+   - If the stability check passes, continue with the next block drop.
+7. The resulting structure should now resemble the uppercase letter "T".

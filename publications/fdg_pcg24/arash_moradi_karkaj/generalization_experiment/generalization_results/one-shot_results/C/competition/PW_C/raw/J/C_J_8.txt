@@ -1,0 +1,14 @@
+To generate the uppercase letter "J", we can follow these steps:
+
+1. Place a horizontal straight block (`b31`) at position 1: `ab_drop('b31', 1)`. This will be the base of the letter.
+2. Place a vertical straight block (`b13`) at position 1 and 2: `ab_drop('b13', 1) ab_drop('b13', 2)`. These blocks will form the vertical part of the letter.
+3. Place another horizontal straight block (`b31`) at position 2: `ab_drop('b31', 2)`. This will complete the top part of the letter.
+
+The stream of commands to generate the uppercase letter "J" would be:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```

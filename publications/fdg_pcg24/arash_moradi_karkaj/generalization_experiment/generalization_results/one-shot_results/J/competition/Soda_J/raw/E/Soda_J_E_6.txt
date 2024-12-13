@@ -1,0 +1,19 @@
+```
+# Step 1: Drop the bottom bar of E
+ab_drop("b31", 9)
+ab_drop("b31", 8)
+ab_drop("b31", 7)
+ab_drop("b31", 6)
+ab_drop("b31", 5)
+
+# Step 2: Drop the middle bar of E
+ab_drop("b31", 9)
+ab_drop("b31", 5)
+
+# Step 3: Drop the top bar of E
+ab_drop("b31", 9)
+ab_drop("b31", 8)
+ab_drop("b31", 7)
+ab_drop("b31", 6)
+ab_drop("b31", 5)
+```

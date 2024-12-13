@@ -1,0 +1,30 @@
+To generate the uppercase letter "Y", we can follow the following steps:
+
+- First, we start by building the left vertical stem of the "Y" using the b13 block type:
+    - ab_drop('b13', 1) to place the block at position 1 along the width.
+    - ab_drop('b13', 1) to place another block on top of the previous one.
+    - ab_drop('b13', 1) to place the third block on top of the previous two.
+    
+- Next, we move to the next structural layer and build the horizontal crossbar of the "Y" using the b31 block type:
+    - ab_drop('b31', 0) to place the block at position 0 along the width.
+    - ab_drop('b31', 1) to place the block at position 1 along the width.
+    - ab_drop('b31', 2) to place the block at position 2 along the width.
+    
+- Finally, we complete the right vertical stem of the "Y" using the b13 block type:
+    - ab_drop('b13', 2) to place the block at position 2 along the width.
+    - ab_drop('b13', 2) to place another block on top of the previous one.
+    - ab_drop('b13', 2) to place the third block on top of the previous two.
+
+Here is the complete stream of commands to generate the uppercase letter "Y":
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 0)
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+```

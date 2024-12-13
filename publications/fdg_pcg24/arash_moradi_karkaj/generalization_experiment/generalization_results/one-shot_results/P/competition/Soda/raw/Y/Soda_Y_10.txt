@@ -1,0 +1,29 @@
+To build a structure in the shape of a capital Y, we will follow these steps:
+
+1. Place the top part of the Y (the horizontal bar):
+
+```
+ab_drop("b31", 5)  # Places the top part at column 5
+```
+
+2. Place the left part of the Y (the vertical bar):
+
+```
+ab_drop("b13", 5)  # Places the left part at column 5
+```
+
+3. Place the right part of the Y (the vertical bar):
+
+```
+ab_drop("b13", 7)  # Places the right part at column 7
+```
+
+The final code block with the complete implementation is as follows:
+
+```python
+ab_drop("b31", 5)  # Places the top part at column 5
+ab_drop("b13", 5)  # Places the left part at column 5
+ab_drop("b13", 7)  # Places the right part at column 7
+```
+
+This code will generate a stable structure that looks like a capital Y.

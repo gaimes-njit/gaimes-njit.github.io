@@ -1,0 +1,32 @@
+To build a capital "V" using the given block types and the ab_drop() function, we can break it down into three parts: the top part, middle part, and bottom part. 
+
+1. Top Part:
+Use a row block (b31) and position it at the center of the grid to create the top part of the "V". We can use x_position=9 to place it in the middle of the grid.
+
+```python
+ab_drop("b31", 9)
+```
+
+2. Middle Part:
+Use a column block (b13) and position it at the center of the grid to create the middle part of the "V". We can use x_position=9 to place it in the middle of the grid.
+
+```python
+ab_drop("b13", 9)
+```
+
+3. Bottom Part:
+Use another row block (b31) and position it at the center of the grid to create the bottom part of the "V". We can use x_position=9 to place it in the middle of the grid.
+
+```python
+ab_drop("b31", 9)
+```
+
+Overall Implementation:
+
+```python
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+```
+
+This implementation will generate a structure in the level that looks like a capital "V".

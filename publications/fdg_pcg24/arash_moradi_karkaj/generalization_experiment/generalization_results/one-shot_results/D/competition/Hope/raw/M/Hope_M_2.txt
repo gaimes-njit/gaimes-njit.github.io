@@ -1,0 +1,23 @@
+To create the structure of "M" using the ab_drop() function, we need to place the blocks in the following positions:
+
+- b31 at (0, 0)
+- b11 at (1, 1)
+- b11 at (2, 2)
+- b11 at (3, 1)
+- b11 at (4, 0)
+- b31 at (5, 0)
+- b31 at (6, 0)
+- b31 at (7, 0)
+
+Here is the code to achieve this structure:
+
+ab_drop('b31', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+ab_drop('b31', 5)
+ab_drop('b31', 6)
+ab_drop('b31', 7)
+
+This code will drop the blocks of the specified types in the given positions to form the structure of "M" inside a 20*16 box.

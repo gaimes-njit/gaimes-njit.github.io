@@ -1,0 +1,47 @@
+To create a stable structure resembling the letter "Q" while adhering to the given constraints, we can follow these steps:
+
+1. Initialize the map:
+```python
+structure = [[' ']*20 for _ in range(16)]
+```
+
+2. Rotate the 'L' shape to achieve the desired orientation:
+```python
+block_orientation = 'b13'
+```
+
+3. Start building the "Q" structure from the bottom layer to the top layer using `ab_drop()`:
+
+```python
+ab_drop('b11', 0)  # Place the first block on the leftmost slot of the bottom layer
+
+ab_drop('b11', 0)  # Place the second block on the same slot as the previous one
+
+ab_drop('b11', 2)  # Place the third block on the third slot of the bottom layer
+
+ab_drop('b11', 2)  # Place the fourth block on the same slot as the previous one
+
+ab_drop('b31', 1)  # Place the fifth block centered on the fourth slot of the bottom layer
+
+ab_drop('b11', 0)  # Place the sixth block on the leftmost slot of the second layer
+
+ab_drop('b11', 2)  # Place the seventh block on the third slot of the second layer
+
+ab_drop('b31', 1)  # Place the eighth block centered on the fourth slot of the second layer
+
+ab_drop('b11', 1)  # Place the final block on the second slot of the second layer
+```
+
+4. The final output will be:
+```python
+```
+ab_drop('b11', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+ab_drop('b31', 1)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b31', 1)
+ab_drop('b11', 1)
+```

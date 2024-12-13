@@ -1,0 +1,22 @@
+To create the structure of the letter "E" inside a 20*16 block area, you can use the ab_drop() function with the following commands:
+
+1. Drop a b31 block at position x=1:
+   ab_drop('b31', 1)
+
+2. Drop a b31 block at position x=1 and x=7:
+   ab_drop('b31', 1)
+   ab_drop('b31', 7)
+
+3. Drop a b31 block at position x=1 and x=13:
+   ab_drop('b31', 1)
+   ab_drop('b31', 13)
+
+4. Drop a b13 block at position x=1:
+   ab_drop('b13', 1)
+
+5. Drop a b13 block at position x=1, x=7, and x=13:
+   ab_drop('b13', 1)
+   ab_drop('b13', 7)
+   ab_drop('b13', 13)
+
+This will create a structure exactly like the letter "E" inside the 20*16 box block area.

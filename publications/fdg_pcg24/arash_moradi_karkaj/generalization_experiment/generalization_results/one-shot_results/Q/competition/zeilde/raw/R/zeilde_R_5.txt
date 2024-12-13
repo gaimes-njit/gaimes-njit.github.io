@@ -1,0 +1,77 @@
+Step 2: The asterisks and spaces generated in each row of the drawing for the letter "R":
+
+Row 1: 5 asterisks
+Row 2: 2 asterisks, 3 spaces
+Row 3: 2 asterisks, 3 spaces
+Row 4: 2 asterisks, 3 spaces
+Row 5: 2 asterisks, 3 spaces
+Row 6: 2 asterisks, 3 spaces
+Row 7: 2 asterisks, 3 spaces
+
+Step 3: The asterisks are now x and spaces are y. Repeat step #2:
+
+Row 1: 5x
+Row 2: 2x, 3y
+Row 3: 2x, 3y
+Row 4: 2x, 3y
+Row 5: 2x, 3y
+Row 6: 2x, 3y
+Row 7: 2x, 3y
+
+Step 4: Writing out each x and y for each row:
+
+Row 1: x-x-x-x-x
+Row 2: x-x-y-y-y
+Row 3: x-x-y-y-y
+Row 4: x-x-y-y-y
+Row 5: x-x-y-y-y
+Row 6: x-x-y-y-y
+Row 7: x-x-y-y-y
+
+Step 5: Indicating the position of each variable:
+
+Row 1: x-1; x-2; x-3; x-4; x-5
+Row 2: x-1; x-2; y-3; y-4; y-5
+Row 3: x-1; x-2; y-3; y-4; y-5
+Row 4: x-1; x-2; y-3; y-4; y-5
+Row 5: x-1; x-2; y-3; y-4; y-5
+Row 6: x-1; x-2; y-3; y-4; y-5
+Row 7: x-1; x-2; y-3; y-4; y-5
+
+Step 6: Returning the sequence of `ab_drop` function calls:
+
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)

@@ -1,0 +1,53 @@
+To generate a stable structure that resembles the character "P", we can follow these steps:
+
+Step 1: Initialize the structure as an empty grid.
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Place the b11 block at the bottom-left corner (slot 0, layer 0) as the base.
+```
+ab_drop("b11", 0)
+```
+
+Step 3: Place the b31 block on top of the base.
+```
+ab_drop("b31", 1)
+```
+
+Step 4: Place the b13 block on top of the b31 block, aligned with the slot of the b31 block.
+```
+ab_drop("b13", 1)
+```
+
+Step 5: Place the b31 block on top of the b13 block, aligned with the slot of the b13 block.
+```
+ab_drop("b31", 1)
+```
+
+Step 6: Place the b11 block on top of the b31 block, aligned with the slot of the b31 block.
+```
+ab_drop("b11", 1)
+```
+
+Step 7: Place the b11 block on top of the previous b11 block, aligned with the slot of the previous b11 block.
+```
+ab_drop("b11", 1)
+```
+
+Step 8: Place the b11 block on top of the previous b31 block, aligned with the slot of the previous b31 block.
+```
+ab_drop("b11", 1)
+```
+
+Step 9: Place the b11 block on top of the previous b11 block, aligned with the slot of the previous b11 block.
+```
+ab_drop("b11", 1)
+```
+
+Step 10: Place the b11 block on top of the previous b31 block, aligned with the slot of the previous b31 block.
+```
+ab_drop("b11", 1)
+```
+
+By following these steps, we can generate a stable structure that resembles the character "P". The ab_drop() function is used to drop and place the blocks according to the given constraints to ensure stability and no boundary intrusion.

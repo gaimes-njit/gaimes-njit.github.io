@@ -1,0 +1,14 @@
+To create the letter "X" using the given block types and gravity rules, you can follow the following sequence of ab_drop commands:
+
+```
+ab_drop('b31', 1)  # Place the horizontal straight block at position 1
+ab_drop('b13', 5)  # Place the vertical straight block at position 5
+ab_drop('b13', 1)  # Place another vertical straight block at position 1
+ab_drop('b31', 5)  # Place another horizontal straight block at position 5
+ab_drop('b31', 9)  # Place another horizontal straight block at position 9
+ab_drop('b13', 13)  # Place another vertical straight block at position 13
+ab_drop('b13', 9)  # Place another vertical straight block at position 9
+ab_drop('b31', 13)  # Place another horizontal straight block at position 13
+```
+
+This sequence of commands will create the uppercase English letter "X" in the given environment.

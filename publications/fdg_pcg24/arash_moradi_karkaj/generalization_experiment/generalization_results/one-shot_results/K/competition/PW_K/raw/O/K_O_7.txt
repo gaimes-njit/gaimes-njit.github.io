@@ -1,0 +1,12 @@
+To generate the uppercase letter "O", we can use a combination of block types b11 and b31. Here is a possible set of commands to create the letter O:
+
+```
+
+ab_drop('b31', 1)       # Place a horizontal block at the leftmost position
+ab_drop('b31', 19)      # Place a horizontal block at the rightmost position
+ab_drop('b11', 4)       # Place a square block at the top left corner
+ab_drop('b11', 6)       # Place a square block at the top right corner
+ab_drop('b11', 4)       # Place a square block at the bottom left corner
+ab_drop('b11', 6)       # Place a square block at the bottom right corner
+
+```

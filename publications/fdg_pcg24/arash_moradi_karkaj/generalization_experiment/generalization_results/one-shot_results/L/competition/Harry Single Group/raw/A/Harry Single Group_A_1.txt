@@ -1,0 +1,64 @@
+```python
+# Initialize the field
+field = [[' ' for _ in range(20)] for _ in range(16)]
+
+# Function to print the field
+def print_field():
+    for row in field:
+        print(' '.join(row))
+    print()
+
+# Function to check stability of a brick
+def is_stable(brick, x, y):
+    # Check the left side of the pivot
+    left_side = sum(field[y][x-i] == ' ' for i in range(1, brick // 10))
+    # Check the right side of the pivot
+    right_side = sum(field[y][x+i] == ' ' for i in range(1, brick % 10))
+    return left_side == right_side
+
+# Function to place a brick on the field
+def place_brick(brick, x):
+    if brick == 11:
+        # Place a square brick
+        y = 0
+        while y < 16 and field[y][x] == ' ':
+            y += 1
+        if y > 0:
+            field[y-1][x] = 'X'
+    elif brick == 13:
+        # Place a vertical rectangular brick
+        y = 0
+        while y < 14 and field[y][x] == ' ' and field[y+1][x] == ' ' and field[y+2][x] == ' ':
+            y += 1
+        if y > 0:
+            field[y-1][x] = 'X'
+            field[y][x] = 'X'
+            field[y+1][x] = 'X'
+    elif brick == 31:
+        # Place a horizontal rectangular brick
+        y = 0
+        while y < 16 and field[y][x-1] == ' ' and field[y][x] == ' ' and field[y][x+1] == ' ':
+            y += 1
+        if y > 0:
+            field[y-1][x-1] = 'X'
+            field[y-1][x] = 'X'
+            field[y-1][x+1] = 'X'
+
+# Place the bricks to form the letter "A"
+ab_drop('b13', 5)
+ab_drop('b31', 7)
+ab_drop('b31', 12)
+
+# Print the final field
+print_field()
+```
+
+The code above initializes the field as an empty grid of 16 rows and 20 columns. The `print_field()` function is used to display the current state of the field.
+
+The `is_stable()` function checks the stability of a brick by comparing the number of empty cells on the left and right sides of the pivot. This is used to ensure stability when stacking bricks.
+
+The `place_brick()` function is used to place a specific brick on the field at the specified x-coordinate. It uses a while loop to find the appropriate y-coordinate where the brick can be placed, based on the conditions mentioned in the problem definition.
+
+The `ab_drop()` function is called to place the bricks one by one to form the letter "A". The coordinates and brick types are chosen based on the desired shape of the letter "A".
+
+Finally, the `print_field()` function is called to display the final field with the letter "A" formed by the bricks.

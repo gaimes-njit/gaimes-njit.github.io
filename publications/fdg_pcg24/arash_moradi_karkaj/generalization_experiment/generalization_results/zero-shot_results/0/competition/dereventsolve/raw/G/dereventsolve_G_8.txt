@@ -1,0 +1,34 @@
+```
+def ab_drop():
+    return "ab_drop"
+
+db = {
+    "1-1": "ab_drop",
+    "1-2": "ab_drop",
+    "1-3": "ab_drop",
+    "2-1": "ab_drop",
+    "2-3": "ab_drop",
+    "3-3": "ab_drop",
+    "4-3": "ab_drop",
+    "5-1": "ab_drop",
+    "5-3": "ab_drop",
+    "6-1": "ab_drop",
+    "6-3": "ab_drop",
+    "7-1": "ab_drop",
+    "7-3": "ab_drop",
+    "8-1": "ab_drop",
+    "8-3": "ab_drop",
+    "9-1": "ab_drop",
+    "9-2": "ab_drop",
+    "9-3": "ab_drop"
+}
+
+sequence = []
+for key, value in db.items():
+    if value == "ab_drop":
+        sequence.append(ab_drop())
+
+sequenceStr = "".join(sequence)
+sequenceStr
+```
+```

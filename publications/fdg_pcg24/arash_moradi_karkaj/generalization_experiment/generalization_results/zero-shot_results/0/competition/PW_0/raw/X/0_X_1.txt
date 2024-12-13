@@ -1,0 +1,12 @@
+To generate the uppercase English letter 'X' using the given block types and gravity rules, follow the below sequence of ab_drop() commands:
+
+```
+ab_drop('b31', 1)  # Place the first part of the horizontal line on the bottom left
+ab_drop('b13', 2)  # Place the vertical line on top of the horizontal line, slightly to the right
+ab_drop('b31', 5)  # Place the second part of the horizontal line on top of the vertical line, extending to the right
+ab_drop('b13', 6)  # Place the second vertical line on top of the horizontal line, slightly to the right
+ab_drop('b31', 9)  # Place the third part of the horizontal line on top of the second vertical line, extending to the right
+ab_drop('b13', 10) # Place the third vertical line on top of the third horizontal line, slightly to the right
+```
+
+These commands will create a stable structure resembling the uppercase letter 'X' within the allowed space boundaries and gravity rules.

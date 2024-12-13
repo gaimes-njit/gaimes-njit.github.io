@@ -1,0 +1,29 @@
+To generate a stable structure that looks like the uppercase character "K" using the `ab_drop()` function, we can follow the following approach:
+
+1. Initialize the structure grid using the provided code snippet:
+
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start by dropping the b31 block, which forms the vertical part of the "K" shape. We need to ensure that it is stable, so we have to place it on a stable support provided by the b13 block. Drop the b31 block at the center slot of the fourth layer (layer 3).
+
+```python
+ab_drop('b31', 9)  # Dropping b31 at slot 9, centered in the layer
+```
+
+3. Now, we can proceed with dropping the b13 block, which forms the horizontal part of the "K" shape. Place it in the layer just above the base (layer 1). Drop the block at the center slot.
+
+```python
+ab_drop('b13', 9)  # Dropping b13 at slot 9, centered in the layer
+```
+
+4. Finally, we can drop the three b11 blocks to complete the top part of the "K" shape. Place them in the layer above the b13 block (layer 2). Drop one block at the slot to the left of the b13 block, one at the center slot, and one at the slot to the right of the b13 block.
+
+```python
+ab_drop('b11', 8)  # Dropping b11 at slot 8, to the left of b13
+ab_drop('b11', 9)  # Dropping b11 at slot 9, centered
+ab_drop('b11', 10)  # Dropping b11 at slot 10, to the right of b13
+```
+
+By following this sequence of `ab_drop()` calls, we can generate a stable structure that looks like the uppercase character "K" and meets all the hard constraints.

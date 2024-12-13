@@ -1,0 +1,10 @@
+Here is the stream of commands to generate the uppercase letter "C":
+
+```
+ab_drop('b31',1)
+ab_drop('b13',1)
+ab_drop('b13',3)
+ab_drop('b31',4)
+```
+
+This sequence of commands will place the blocks on the grid to form the letter "C" while ensuring stability and adherence to the gravity rules.

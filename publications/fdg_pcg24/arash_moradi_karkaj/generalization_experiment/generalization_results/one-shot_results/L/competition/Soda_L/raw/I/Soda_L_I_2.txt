@@ -1,0 +1,12 @@
+Here is the implementation to build the letter "I" structure:
+
+```python
+# Step 1: Building the base of the letter "I"
+ab_drop("b13", 9)
+
+# Step 2: Building the vertical part of the letter "I"
+ab_drop("b31", 9)
+
+```
+
+This code will create a structure in the level grid that resembles the capital letter "I". The first step is to build the base of the letter "I" using a column block ("b13") centered at position 9. The second step is to build the vertical part of the letter "I" using a row block ("b31") also centered at position 9. This will create a stable structure that looks like the letter "I".

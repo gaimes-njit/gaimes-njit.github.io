@@ -1,0 +1,13 @@
+To generate the uppercase letter "B", we can break it down into three parts: the top horizontal bar, the vertical line in the middle, and the bottom horizontal bar. We will use the block types b31 and b13 to construct the letter.
+
+Here are the commands to generate the letter "B":
+
+```
+ab_drop('b13', 1)      # Place the first vertical block at position 1
+ab_drop('b13', 3)      # Place the second vertical block at position 3
+ab_drop('b31', 2)      # Place the horizontal block at position 2
+ab_drop('b13', 1)      # Place the third vertical block at position 1
+ab_drop('b13', 3)      # Place the fourth vertical block at position 3
+```
+
+This sequence of commands will construct the uppercase letter "B" within the allowed space and follow the gravity rules.

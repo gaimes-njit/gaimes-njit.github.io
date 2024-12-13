@@ -1,0 +1,7 @@
+The code to generate the structure resembling "V" while adhering to the given constraints is as follows:
+
+```
+ab_drop('b13', 0)
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+```

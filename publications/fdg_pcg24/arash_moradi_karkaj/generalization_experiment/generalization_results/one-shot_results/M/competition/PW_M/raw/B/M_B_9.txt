@@ -1,0 +1,12 @@
+To generate the uppercase English letter "B", the following stream of commands can be used:
+
+```plaintext
+ab_drop('b13',1)  // Place the vertical foundation for the left side of the letter 'B'
+ab_drop('b13',3)  // Place the vertical foundation for the middle part of the letter 'B'
+ab_drop('b13',4)  // Place the vertical foundation for the middle part of the letter 'B'
+ab_drop('b13',6)  // Place the vertical foundation for the right side of the letter 'B'
+ab_drop('b31',2)  // Place the horizontal block on top of the left side foundation of the letter 'B'
+ab_drop('b31',5)  // Place the horizontal block on top of the right side foundation of the letter 'B'
+```
+
+This sequence of commands will create a stable representation of the uppercase letter "B" within the defined environment.

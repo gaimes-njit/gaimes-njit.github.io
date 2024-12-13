@@ -1,0 +1,30 @@
+To create a structure that looks like a capital "U" (TARGET), we can divide the construction process into three steps:
+
+Step 1: Place the bottom bar of the "U"
+We will use a row block (b31) to create the bottom bar of the "U". To ensure stability, we will place it at the center of the bottom row, x_position=9.
+
+```
+ab_drop("b31", 9)
+```
+
+Step 2: Place the left vertical bar of the "U"
+Next, we will use a column block (b13) to create the left vertical bar of the "U". To ensure stability, we will place it at the second column from the left, x_position=1.
+
+```
+ab_drop("b13", 1)
+```
+
+Step 3: Place the right vertical bar of the "U"
+Finally, we will use another column block (b13) to create the right vertical bar of the "U". To ensure stability, we will place it at the second column from the right, x_position=18.
+
+```
+ab_drop("b13", 18)
+```
+
+Now we have completed the construction of the "U" structure.
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 1)
+ab_drop("b13", 18)
+```

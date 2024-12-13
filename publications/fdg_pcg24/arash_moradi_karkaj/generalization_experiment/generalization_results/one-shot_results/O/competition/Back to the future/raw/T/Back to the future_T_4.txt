@@ -1,0 +1,23 @@
+To generate a stable structure that looks like the uppercase character "T" and meets all the hard constraints, the following steps can be followed:
+
+1. Initialize the structure as an empty WxH grid according to the provided code snippet.
+
+2. Start building the structure from the bottom layer (layer 0) upwards.
+
+3. Use the ab_drop() function to drop the b31 block at the center slot (y = 9) on layer 0. This will provide a stable base for the vertical part of the "T" shape.
+
+4. Check the stability of the structure after each drop.
+
+5. Use the ab_drop() function to drop the b11 block at the center slot (y = 9) on layer 1. This will create the vertical part of the "T" shape.
+
+6. Check the stability of the structure after each drop.
+
+7. Use the ab_drop() function to drop the b13 block at the left slot (y = 8) on layer 1. This will create the horizontal part of the "T" shape.
+
+8. Check the stability of the structure after each drop.
+
+9. The structure now resembles the uppercase character "T" and meets the stability and shape constraints.
+
+10. If desired, repeat the process with different starting positions and orders of block drops to generate diverse structures resembling the uppercase character "T".
+
+Note: During each drop, make sure to update the structure grid and check the stability of the structure using appropriate checks based on the block type being dropped.

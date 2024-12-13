@@ -1,0 +1,10 @@
+# Solution
+
+ab_drop('b13', 9)  # Create the vertical line of the letter 'A'
+
+# Build the top part of the 'A' using 'b31'
+ab_drop('b31', 8)
+ab_drop('b31', 10)
+
+# Build the tip of the 'A' using 'b11'
+ab_drop('b11', 9)

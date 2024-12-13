@@ -1,0 +1,29 @@
+To build the target character "T" using the given ab_drop() function, we will break it down into three blocks - a horizontal bar and two vertical pipes. Here's the step-by-step implementation:
+
+1. Drop the horizontal bar at the center:
+```
+ab_drop("b31", 9)
+```
+
+2. Drop the first vertical pipe at the left of the bar:
+```
+ab_drop("b13", 8)
+```
+
+3. Drop the second vertical pipe at the right of the bar:
+```
+ab_drop("b13", 10)
+```
+
+The complete implementation can be represented as follows:
+
+```
+# Horizontal bar
+ab_drop("b31", 9)
+
+# Left pipe
+ab_drop("b13", 8)
+
+# Right pipe
+ab_drop("b13", 10)
+```

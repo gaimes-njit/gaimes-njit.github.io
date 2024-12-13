@@ -1,0 +1,117 @@
+Step 2:
+Row 1: 4 asterisks, 1 space, 4 asterisks
+Row 2: 1 asterisk, 1 space, 1 asterisk, 1 space, 2 asterisks
+Row 3: 1 asterisk, 1 space, 1 asterisk, 1 space, 2 asterisks
+Row 4: 1 asterisk, 1 space, 1 asterisk, 1 space, 2 asterisks
+Row 5: 1 asterisk, 6 spaces, 2 asterisks
+Row 6: 1 asterisk, 1 space, 1 asterisk, 1 space, 2 asterisks
+Row 7: 1 asterisk, 1 space, 1 asterisk, 1 space, 2 asterisks
+
+Step 3:
+Row 1: 4x, 1y, 4x
+Row 2: 1x, 1y, 1x, 1y, 2x
+Row 3: 1x, 1y, 1x, 1y, 2x
+Row 4: 1x, 1y, 1x, 1y, 2x
+Row 5: 1x, 6y, 2x
+Row 6: 1x, 1y, 1x, 1y, 2x
+Row 7: 1x, 1y, 1x, 1y, 2x
+
+Step 4:
+Row 1: xxxxyxxxx
+Row 2: xxyxxyxx
+Row 3: xxyxxyxx
+Row 4: xxyxxyxx
+Row 5: xyyyyyyyxx
+Row 6: xxyxxyxx
+Row 7: xxyxxyxx
+
+Step 5:
+Row 1: x-1; x-2; x-3; x-4; y-5; x-6; x-7; x-8; x-9; x-10
+Row 2: x-1; x-2; y-3; x-4; x-5; y-6; x-7; x-8; x-9; x-10
+Row 3: x-1; x-2; y-3; x-4; x-5; y-6; x-7; x-8; x-9; x-10
+Row 4: x-1; x-2; y-3; x-4; x-5; y-6; x-7; x-8; x-9; x-10
+Row 5: x-1; y-2; y-3; y-4; y-5; y-6; y-7; x-8; x-9; x-10
+Row 6: x-1; x-2; y-3; x-4; x-5; y-6; x-7; x-8; x-9; x-10
+Row 7: x-1; x-2; y-3; x-4; x-5; y-6; x-7; x-8; x-9; x-10
+
+Step 6:
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)

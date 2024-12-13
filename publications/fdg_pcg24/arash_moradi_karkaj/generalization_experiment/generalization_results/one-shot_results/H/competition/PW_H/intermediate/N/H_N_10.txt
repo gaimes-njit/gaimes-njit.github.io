@@ -1,0 +1,86 @@
+To generate the uppercase letter "N" using the given block types and environment, you can follow these steps:
+
+Step 1:
+Start by placing two vertical straight blocks (b13) at positions 1 and 3 along the width. This will form the foundational part of the letter "N".
+
+Command:
+```
+ab_drop('b13',1)
+ab_drop('b13',3)
+```
+
+Grid Status:
+```
+  b13    
+  b13    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+```
+
+Step 2:
+Next, place a horizontal straight block (b31) at position 2 along the width. This will form the middle part of the letter "N".
+
+Command:
+```
+ab_drop('b31',2)
+```
+
+Grid Status:
+```
+  b31    
+  b13    
+  b13    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+```
+
+Step 3:
+Finally, place two vertical straight blocks (b13) at positions 1 and 3 along the width, above the previous blocks. This will complete the upper part of the letter "N".
+
+Command:
+```
+ab_drop('b13',1)
+ab_drop('b13',3)
+```
+
+Grid Status:
+```
+  b31    
+  b13    
+  b13    
+  b13    
+  b13    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+```
+
+After following these steps, you will have successfully generated the uppercase letter "N" within the allowed space boundaries and in accordance with the gravity rules.

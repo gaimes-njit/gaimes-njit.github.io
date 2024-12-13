@@ -1,0 +1,12 @@
+To generate the uppercase letter "D", we need to construct the vertical and horizontal lines that make up its shape. Here is a stream of commands to achieve this:
+
+```
+ab_drop('b13',1)  // Place the first vertical line at position 1
+ab_drop('b13',3)  // Place the second vertical line at position 3
+ab_drop('b13',4)  // Place the third vertical line at position 4
+ab_drop('b13',6)  // Place the fourth vertical line at position 6
+ab_drop('b31',2)  // Place the top horizontal line at position 2
+ab_drop('b31',5)  // Place the bottom horizontal line at position 5
+```
+
+By executing these commands consecutively, you will create the uppercase letter "D" within the allowed space boundaries. Remember to follow the 2D gravity rules to ensure stability and avoid exceeding the height boundary.

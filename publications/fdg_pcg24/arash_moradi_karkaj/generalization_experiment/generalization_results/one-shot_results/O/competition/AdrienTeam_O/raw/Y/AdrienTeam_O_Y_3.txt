@@ -1,0 +1,20 @@
+The code to generate the structure resembling "Y" while adhering to the given constraints is as follows:
+
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the horizontal block at the bottom layer
+ab_drop('b31', 1)
+
+# Drop the vertical blocks at the bottom layer
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+
+# Drop the horizontal block at the middle layer
+ab_drop('b31', 1)
+
+# Drop the vertical block at the top layer
+ab_drop('b13', 1)
+```
+
+The above code will build the structure resembling "Y" from the bottom layer to the top layer, using the provided `ab_drop()` function and adhering to the specified constraints.

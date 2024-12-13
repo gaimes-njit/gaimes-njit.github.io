@@ -1,0 +1,16 @@
+Here is how you can generate the uppercase letter "X" using the ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 5)
+ab_drop('b13', 5)
+ab_drop('b31', 9)
+ab_drop('b13', 9)
+```
+
+First, you drop a horizontal straight block ('b31') at position 1 to create the left side of the letter "X". Then, you drop a vertical straight block ('b13') at position 1 to connect the left side with the middle of the letter.
+
+Next, you drop another horizontal straight block at position 5 to create the middle part of the letter "X". Finally, you drop another vertical straight block at position 9 to complete the right side of the letter.
+
+By following these commands, you will successfully generate the uppercase letter "X" within the allowed space boundaries.

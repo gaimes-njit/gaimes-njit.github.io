@@ -1,0 +1,15 @@
+To generate the uppercase English letter "K", we can follow the following steps:
+
+1. Start by placing a horizontal straight block (b31) at position 1: 
+```ab_drop('b31',1)```
+
+2. Place a vertical straight block (b13) to the left of the previous block at position 1: 
+```ab_drop('b13',1)```
+
+3. Place another vertical straight block (b13) to the left of the previous block at position 2: 
+```ab_drop('b13',2)```
+
+4. Place another horizontal straight block (b31) on top of the previously placed blocks at position 2: 
+```ab_drop('b31',2)```
+
+Following these steps will result in the creation of an uppercase letter "K" in the given Tetris-like environment.

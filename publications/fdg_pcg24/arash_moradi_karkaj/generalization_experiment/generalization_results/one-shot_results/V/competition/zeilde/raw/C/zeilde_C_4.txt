@@ -1,0 +1,46 @@
+1. The letter "C" drawn with asterisks:
+
+```
+*****
+**
+**
+**
+*****
+```
+
+2. Verbal listing of asterisks and spaces in each row:
+- Row 1: 5 asterisks
+- Row 2: 2 asterisks
+- Row 3: 2 asterisks
+- Row 4: 2 asterisks
+- Row 5: 5 asterisks
+
+3. Asterisks as "x" and spaces as "y":
+- Row 1: 5x
+- Row 2: 2x
+- Row 3: 2x
+- Row 4: 2x
+- Row 5: 5x
+
+4. Listing x and y side-by-side:
+- Row 1: "xxxxx"
+- Row 2: "xx"
+- Row 3: "xx"
+- Row 4: "xx"
+- Row 5: "xxxxx"
+
+5. Position of each variable:
+- Row 1: x-1; x-2; x-3; x-4; x-5
+- Row 2: x-1; x-2
+- Row 3: x-1; x-2
+- Row 4: x-1; x-2
+- Row 5: x-1; x-2; x-3; x-4; x-5
+
+6. `ab_drop` function calls in sequence:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

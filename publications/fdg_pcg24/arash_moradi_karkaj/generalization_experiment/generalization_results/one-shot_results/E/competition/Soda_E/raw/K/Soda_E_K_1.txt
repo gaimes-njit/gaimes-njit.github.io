@@ -1,0 +1,20 @@
+To create the letter "K" using only the ab_drop() function, we need to carefully place the blocks in a specific order to ensure stability and achieve the desired shape. Here is one possible implementation:
+
+# Place the left vertical bar of the "K"
+ab_drop("b31", 3)
+ab_drop("b13", 4)
+ab_drop("b11", 5)
+ab_drop("b13", 4)
+ab_drop("b31", 3)
+
+# Place the top horizontal bar of the "K"
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+
+# Place the bottom horizontal bar of the "K"
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+
+By following these ab_drop() calls, we create a stable structure that resembles the letter "K".

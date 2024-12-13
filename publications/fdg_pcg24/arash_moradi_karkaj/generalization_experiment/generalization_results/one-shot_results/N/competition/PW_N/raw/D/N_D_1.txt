@@ -1,0 +1,21 @@
+To create the letter "D" using the given block types and command, follow the steps below:
+
+1. Start by placing a vertical straight block (b13) at position (2,1) using the command `ab_drop('b13',2)`.
+2. Place another vertical straight block (b13) at position (3,1) using the command `ab_drop('b13',3)`.
+3. Move to the top of the letter by using the command `top`.
+4. Place a horizontal straight block (b31) at position (3,1) using the command `ab_drop('b31',3)`.
+5. Move to the side of the letter by using the command `side`.
+6. Place another vertical straight block (b13) at position (5,1) using the command `ab_drop('b13',5)`.
+7. Finally, complete the letter by placing a square block (b11) at position (5,1) using the command `ab_drop('b11',5)`.
+
+The complete stream of commands to generate the letter "D" should look like this:
+
+```
+ab_drop('b13',2)
+ab_drop('b13',3)
+top
+ab_drop('b31',3)
+side
+ab_drop('b13',5)
+ab_drop('b11',5)
+```

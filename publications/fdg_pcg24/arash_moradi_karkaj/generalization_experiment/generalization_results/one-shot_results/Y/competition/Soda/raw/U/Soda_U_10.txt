@@ -1,0 +1,15 @@
+To create a structure that looks like a capital "U" using the ab_drop() function, we can follow these steps:
+
+1. Drop a row block (b31) at x_position=4 to create the base of the "U".
+2. Drop a column block (b13) at x_position=1 to create the left side of the "U".
+3. Drop a column block (b13) at x_position=7 to create the right side of the "U".
+
+Here is the complete implementation:
+
+```
+ab_drop("b31", 4)
+ab_drop("b13", 1)
+ab_drop("b13", 7)
+```
+
+This implementation creates a stable structure that looks like a capital "U".

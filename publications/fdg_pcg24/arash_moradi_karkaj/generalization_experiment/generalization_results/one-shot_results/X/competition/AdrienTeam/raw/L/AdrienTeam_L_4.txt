@@ -1,0 +1,12 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the vertical block (b13) starting from the bottom-left corner at slot 0
+ab_drop('b13', 0)
+
+# Drop the horizontal block (b31) above the previous block at slot 0
+ab_drop('b31', 0)
+
+# Drop the square block (b11) above the previous block at slot 1
+ab_drop('b11', 1)
+```

@@ -1,0 +1,22 @@
+```python
+from ab import drop
+
+# Define the structure of the "R" shape using block types
+structure = [
+    "b13", # Vertical block at top left
+    "b13", # Vertical block at bottom left
+    "b31", # Horizontal block at bottom
+    "b13" # Vertical block at right
+]
+
+# Define the dropping position and order
+position = {
+    "b13": [(0, 15), (0, 0), (18, 0)], # Drop vertical blocks at specific positions
+    "b31": [(0, 2)] # Drop horizontal block at specific position
+}
+
+# Drop blocks to generate the "R" shape
+for block_type in structure:
+    for pos in position[block_type]:
+        drop(block_type, pos[0], pos[1])
+```

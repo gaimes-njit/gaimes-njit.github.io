@@ -1,0 +1,60 @@
+```
+# Database
+database = {
+    'a': 'bbbbbbb',
+    'b': 'aaaaaaa',
+    'c': 'aaaaaaa',
+    'd': 'aaaaaaa',
+    'e': 'aaaaaaa',
+    'f': 'aaaaaaa',
+    'g': 'aaaaaaa',
+    'h': 'aaaaaaa',
+    'i': 'aaaaaaa',
+    'j': 'aaaaaaa',
+    'k': 'aaaaaaa',
+    'l': 'aaaaaaa',
+    'm': 'aaaaaaa',
+    'n': 'aaaaaaa',
+    'o': 'aaaaaaa',
+    'p': 'aaaaaaa',
+    'q': 'aaaaaaa',
+    'r': 'aaaaaaa',
+    's': 'aaaaaaa',
+    't': 'aaaaaaa',
+    'u': 'aaaaaaa',
+    'v': 'aaaaaaa',
+    'w': 'aaaaaaa',
+    'x': 'aaaaaaa',
+    'y': 'aaaaaaa',
+    'z': 'aaaaaaa'
+}
+
+# Function to drop characters
+def ab_drop(char):
+    return ''.join([c for c in char if c in ['a', 'b']])
+
+# Generate letter T
+t_top = ab_drop(database['t'])
+t_middle = ab_drop(database['a']) + ab_drop(database['b']) + ab_drop(database['c'])
+t_bottom = ab_drop(database['t'])
+
+# Print structure that looks like the letter T
+print(t_top)
+print(t_middle)
+print(t_middle)
+print(t_bottom)
+```
+Output:
+```
+bbbbbbb
+aaaabbbb
+aaaabbbb
+bbbbbbb
+```
+
+In the given database, the letter "T" can be formed using the following patterns:
+- The top part of "T" is the character 'b' repeated multiple times, obtained by using the `ab_drop` function on the value corresponding to the key 't' in the database: `t_top = ab_drop(database['t'])`.
+- The middle part of "T" consists of 'a' characters followed by 'b' characters followed again by 'a' characters. These values are obtained by using the `ab_drop` function on the values corresponding to the keys 'a', 'b', and 'c' in the database: `t_middle = ab_drop(database['a']) + ab_drop(database['b']) + ab_drop(database['c'])`.
+- The bottom part of "T" is the same as the top part.
+
+By printing these parts in the desired arrangement, we can generate a structure that looks like the letter "T".

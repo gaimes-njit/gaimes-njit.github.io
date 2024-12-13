@@ -1,0 +1,14 @@
+The code sequence to construct a level for Science Birds resembling the letter "V" while satisfying all the constraints is as follows:
+
+ab_drop('b31', 8)
+ab_drop('b13', 7)
+ab_drop('b13', 9)
+ab_drop('b11', 6)
+ab_drop('b11', 10)
+
+Explanation:
+1. The first call ab_drop('b31', 8) drops a horizontal block (b31) centered at slot 8, creating the base of the "V" shape.
+2. The second call ab_drop('b13', 7) drops a vertical block (b13) centered at slot 7, adding the left side of the "V" shape.
+3. The third call ab_drop('b13', 9) drops another vertical block (b13) centered at slot 9, adding the right side of the "V" shape.
+4. The fourth call ab_drop('b11', 6) drops a square block (b11) at slot 6, extending the left side of the "V" shape.
+5. The fifth call ab_drop('b11', 10) drops another square block (b11) at slot 10, extending the right side of the "V" shape.

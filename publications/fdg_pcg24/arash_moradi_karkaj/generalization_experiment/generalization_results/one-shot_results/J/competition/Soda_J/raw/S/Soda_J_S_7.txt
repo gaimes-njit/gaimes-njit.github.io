@@ -1,0 +1,11 @@
+To build the capital letter "S", we can start by placing two row blocks ("b31") on top of each other to create the two vertical bars of the letter. Then, we can place a column block ("b13") on top of the left vertical bar, followed by another row block ("b31") on top of the column block. Finally, we can place another column block ("b13") on top of the right vertical bar.
+
+```python
+ab_drop("b31", 9)
+ab_drop("b31", 9)
+ab_drop("b13", 10)
+ab_drop("b31", 11)
+ab_drop("b13", 12)
+```
+
+This implementation creates a stable structure that resembles the letter "S".

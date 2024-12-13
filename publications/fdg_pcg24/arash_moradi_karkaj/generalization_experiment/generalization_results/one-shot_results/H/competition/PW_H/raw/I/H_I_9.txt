@@ -1,0 +1,16 @@
+To generate the uppercase English letter "I", you can use the following commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+```
+
+Explanation:
+- The first command `ab_drop('b13', 1)` places a vertical straight block (`b13`) at position 1.
+- The second command `ab_drop('b13', 1)` places another vertical straight block (`b13`) at position 1, just below the first block.
+- Repeat this process for a total of 5 blocks to create the letter "I".
+
+Ensure that you follow the gravity rules and avoid exceeding the height boundary of the grid.

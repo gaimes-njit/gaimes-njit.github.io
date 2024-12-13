@@ -1,0 +1,57 @@
+To create the uppercase letter "E" using the given block types, we can follow these steps:
+
+1. Place a vertical straight block (b13) at position 1 and height 15.
+
+```
+ab_drop('b13', 1)
+```
+
+2. Place a horizontal straight block (b31) at position 2 and height 14.
+
+```
+ab_drop('b31', 2)
+```
+
+3. Place a horizontal straight block (b31) at position 2 and height 12.
+
+```
+ab_drop('b31', 2)
+```
+
+4. Place a horizontal straight block (b31) at position 2 and height 10.
+
+```
+ab_drop('b31', 2)
+```
+
+5. Place a vertical straight block (b13) at position 1 and height 8.
+
+```
+ab_drop('b13', 1)
+```
+
+6. Place a horizontal straight block (b31) at position 2 and height 7.
+
+```
+ab_drop('b31', 2)
+```
+
+7. Place a horizontal straight block (b31) at position 2 and height 5.
+
+```
+ab_drop('b31', 2)
+```
+
+8. Place a horizontal straight block (b31) at position 2 and height 3.
+
+```
+ab_drop('b31', 2)
+```
+
+9. Place a horizontal straight block (b31) at position 2 and height 1.
+
+```
+ab_drop('b31', 2)
+```
+
+This sequence of commands will generate the uppercase letter "E" in the defined environment.

@@ -1,0 +1,9 @@
+To generate the uppercase letter "J," we need to first create the vertical line and then add the horizontal line at the bottom. Here are the commands to generate the letter "J":
+
+```
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b13',3)
+ab_drop('b31',3)
+ab_drop('b31',1)
+```

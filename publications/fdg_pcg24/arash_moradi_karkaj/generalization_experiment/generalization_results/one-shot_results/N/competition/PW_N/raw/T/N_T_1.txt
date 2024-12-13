@@ -1,0 +1,9 @@
+To generate the uppercase English letter "T", you can use the following stream of commands:
+
+```py
+ab_drop('b31', 1)  # Place the horizontal block at position 1
+ab_drop('b13', 2)  # Place the vertical block at position 2 on top of the horizontal block
+ab_drop('b11', 2)  # Place the small square block at position 2 on top of the vertical block
+```
+
+This will create the shape of the letter "T" within the allowed space and in accordance with the given gravity rules.

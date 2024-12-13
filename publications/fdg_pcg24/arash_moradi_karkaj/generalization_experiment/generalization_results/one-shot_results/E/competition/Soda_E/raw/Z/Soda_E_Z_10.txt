@@ -1,0 +1,18 @@
+To generate the capital letter "Z" in the level, we can follow these steps:
+
+1. Create the top horizontal bar of the "Z":
+ab_drop("b13", 9)
+ab_drop("b31", 8)
+ab_drop("b13", 7)
+
+2. Create the middle diagonal bar of the "Z":
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+
+3. Create the bottom horizontal bar of the "Z":
+ab_drop("b13", 6)
+ab_drop("b31", 5)
+ab_drop("b13", 4)
+
+By following these steps, we will generate a structure in the level that looks like the capital letter "Z".

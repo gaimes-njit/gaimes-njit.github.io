@@ -1,0 +1,23 @@
+To generate a structure that resembles the character "U" while meeting all the hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty WxH grid:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start by dropping a b31 block at a suitable position and slot:
+```python
+ab_drop('b31', 1)
+```
+
+3. Drop a b13 block on top of the b31 block, aligned with its center:
+```python
+ab_drop('b13', 1)
+```
+
+4. Finally, drop another b31 block on top of the b13 block, aligned with its center:
+```python
+ab_drop('b31', 1)
+```
+
+The above code will generate a structure that resembles the character "U" while satisfying the stability and no boundary intrusion constraints. You can adjust the slot values according to your requirements to achieve the desired structure.

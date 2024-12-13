@@ -1,0 +1,27 @@
+To generate a structure that resembles the character "U" while meeting all the hard constraints, we need to carefully consider the stability and boundary intrusion constraints. 
+
+Step 1: Establish the base 
+To ensure stability, we will start by placing a b11 block at the leftmost slot (slot 0) on the base layer (layer 0). 
+```python
+ab_drop('b11', 0)
+```
+
+Step 2: Build the left side of the "U"
+Next, we will build the left side of the "U" by placing a b13 block on top of the base block at slot 0. This will prevent overhangs and maintain stability. 
+```python
+ab_drop('b13', 0)
+```
+
+Step 3: Build the middle part of the "U"
+To create the middle part of the "U", we will place a b31 block on top of the b13 block at slot 1. This will create the horizontal segment of the "U". 
+```python
+ab_drop('b31', 1)
+```
+
+Step 4: Build the right side of the "U"
+Finally, we will build the right side of the "U" by placing a b13 block on top of the b31 block at slot 2. This will complete the shape of the "U". 
+```python
+ab_drop('b13', 2)
+```
+
+The above steps use the ab_drop() function to vertically drop the blocks in the correct order and positions to form the desired structure. By following these steps, we generate a stable structure resembling the character "U".

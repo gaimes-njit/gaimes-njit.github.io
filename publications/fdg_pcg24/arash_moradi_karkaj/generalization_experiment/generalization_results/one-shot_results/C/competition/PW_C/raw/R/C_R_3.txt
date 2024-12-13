@@ -1,0 +1,11 @@
+To generate the uppercase letter "R" using the given block types and environment, you can follow the following stream of commands:
+
+```
+ab_drop('b31', 1)  # Place a horizontal straight block at position 1
+ab_drop('b13', 1)  # Place a vertical straight block at position 1
+ab_drop('b13', 2)  # Place a vertical straight block at position 2
+ab_drop('b13', 3)  # Place a vertical straight block at position 3
+ab_drop('b31', 2)  # Place a horizontal straight block at position 2
+```
+
+This sequence of commands will create the uppercase letter "R" in the Tetris-like environment, following the stacking and stability rules.

@@ -1,0 +1,5 @@
+ab_drop('b11', 9)  # Place the top part of the 'J'
+ab_drop('b11', 9)  # Place the middle part of the 'J'
+ab_drop('b11', 9)  # Place the bottom part of the 'J'
+ab_drop('b11', 8)  # Place the bottom left part of the 'J'
+ab_drop('b11', 10)  # Place the bottom right part of the 'J'

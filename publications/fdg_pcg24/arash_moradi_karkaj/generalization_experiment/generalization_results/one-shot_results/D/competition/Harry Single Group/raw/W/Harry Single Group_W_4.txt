@@ -1,0 +1,63 @@
+To generate a shape resembling the letter "W" using the available bricks and the ab_drop(x, y) function, we need to carefully plan the placement of the bricks to ensure stability and avoid boundary collisions. 
+
+Here is the code to generate the structure:
+
+```python
+# Map initialization
+field = [[0] * 20 for _ in range(16)]
+
+# Helper function to check if a cell is occupied
+def check_occupied(x, y):
+    if y < 0 or y >= 16 or x < 0 or x >= 20:
+        return True
+    return field[y][x] == 1
+
+# Function to place a brick on the field
+def place_brick(x, y, brick):
+    for i in range(brick[1]):
+        for j in range(brick[0]):
+            field[y+i][x+j] = 1
+
+# Function to check if two bricks are stacked stably
+def check_stability(x, y, brick):
+    for i in range(brick[1]):
+        if check_occupied(x-1, y+i) or check_occupied(x+brick[0], y+i):
+            return False
+    return True
+
+# Function to drop a brick on the field
+def ab_drop(x, y):
+    if x == 'b31':
+        brick = (3, 1)
+    elif x == 'b13':
+        brick = (1, 3)
+    elif x == 'b11':
+        brick = (1, 1)
+    else:
+        return
+    
+    x_position = y
+
+    while True:
+        if check_occupied(x_position, 15):
+            break
+        if not check_stability(x_position, 15, brick):
+            break
+        x_position += 1
+
+    place_brick(x_position - 1, 15 - brick[1], brick)
+
+# Generate the shape resembling the letter "W"
+ab_drop('b13', 5)
+ab_drop('b31', 6)
+ab_drop('b13', 9)
+ab_drop('b31', 10)
+ab_drop('b13', 13)
+ab_drop('b31', 14)
+
+# Print the resulting field
+for row in field:
+    print(row)
+```
+
+After executing the code, it will print the resulting field with 1 representing occupied cells and 0 representing empty cells. The structure resembling the letter "W" will be formed.

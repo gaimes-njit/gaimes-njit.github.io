@@ -1,0 +1,12 @@
+To generate the letter "C", we can use the following ab_drop() commands:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',1)
+ab_drop('b13',4)
+ab_drop('b31',1)
+ab_drop('b13',1)
+ab_drop('b13',4)
+```
+
+This will create the uppercase letter "C" in the Tetris-like environment, following the stacking and stability rules.

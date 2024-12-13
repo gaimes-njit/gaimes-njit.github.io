@@ -1,0 +1,14 @@
+To generate the uppercase letter "P", we need to stack the blocks in a way that forms the letter shape. Here is the stream of ab_drop() commands to achieve that:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 2)
+ab_drop('b11', 2)
+ab_drop('b31', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 1)
+ab_drop('b11', 4)
+```
+
+These commands will stack the blocks in the correct order and position to form the letter "P" within the boundaries of the allowed space.

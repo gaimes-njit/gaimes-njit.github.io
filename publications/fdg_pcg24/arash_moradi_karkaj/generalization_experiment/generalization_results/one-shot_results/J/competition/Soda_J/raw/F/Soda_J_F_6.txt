@@ -1,0 +1,18 @@
+To generate a structure that looks like the capital letter "F" in the Tetris game, we can follow these steps:
+
+1. Create the vertical bar of the "F":
+   - ab_drop("b13", 9)
+
+2. Create the horizontal bar of the "F":
+   - ab_drop("b31", 8)
+   - ab_drop("b31", 9)
+   - ab_drop("b31", 10)
+
+Here's the complete implementation:
+
+```
+ab_drop("b13", 9)
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+```

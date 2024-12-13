@@ -1,0 +1,51 @@
+To form a shape resembling the letter "U", we can use a combination of b31 and b13 bricks. 
+
+We will start by initializing the field and creating two b13 bricks at the bottom corners of the field to act as supports for the U shape.
+
+```python
+# Map Initialization
+def init_map():
+    for y in range(16):
+        for x in range(20):
+            # Set all cells as empty
+            ab_drop('b11', x)
+```
+
+Next, we will place the b31 bricks to form the sides of the U shape. To ensure stability, we will avoid placing any cells on the sides of the bottom b13 bricks, which act as the pivot for the U shape.
+
+```python
+# Placing b31 bricks
+ab_drop('b31', 2)   # Left side of U
+ab_drop('b31', 16)  # Right side of U
+```
+
+To complete the U shape, we will place a b13 brick on top of each b31 brick, making sure to align them with the sides of the U shape.
+
+```python
+# Placing b13 bricks on top
+ab_drop('b13', 2)   # Left side of U
+ab_drop('b13', 16)  # Right side of U
+```
+
+The final code looks like this:
+
+```python
+# Map Initialization
+def init_map():
+    for y in range(16):
+        for x in range(20):
+            # Set all cells as empty
+            ab_drop('b11', x)
+            
+# Placing bricks to form the U shape
+ab_drop('b13', 0)   # Bottom left corner
+ab_drop('b13', 19)  # Bottom right corner
+
+ab_drop('b31', 2)   # Left side of U
+ab_drop('b31', 16)  # Right side of U
+
+ab_drop('b13', 2)   # Left side of U
+ab_drop('b13', 16)  # Right side of U
+```
+
+Executing the code will generate a shape resembling the letter "U" using the given bricks.

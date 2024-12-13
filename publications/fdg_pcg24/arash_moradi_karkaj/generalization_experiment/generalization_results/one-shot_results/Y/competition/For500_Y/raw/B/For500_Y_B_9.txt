@@ -1,0 +1,40 @@
+To generate a stable structure that resembles the capital letter "B" using the ab_drop() function, we can follow these steps:
+
+1. Initialize the structure as an empty WxH grid.
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the first vertical block ('b13') at slot 0.
+```
+ab_drop('b13', 0)
+```
+This creates the left vertical part of the letter "B".
+
+3. Drop the first horizontal block ('b31') at slot 0.
+```
+ab_drop('b31', 0)
+```
+This creates the top horizontal part of the letter "B".
+
+4. Drop the second vertical block ('b13') at slot 2.
+```
+ab_drop('b13', 2)
+```
+This creates the right vertical part of the letter "B".
+
+5. Drop the lower square block ('b11') at slot 1.
+```
+ab_drop('b11', 1)
+```
+This creates the bottom part of the letter "B".
+
+The final code using the ab_drop() function would be:
+```
+structure = [[' ']*W for _ in range(H)]
+
+ab_drop('b13', 0)
+ab_drop('b31', 0)
+ab_drop('b13', 2)
+ab_drop('b11', 1)
+```

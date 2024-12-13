@@ -1,0 +1,12 @@
+To create the letter Z, we can break it down into two blocks: a row block and a column block. The row block will form the top bar of the Z, and the column block will form the bottom part of the Z.
+
+Here is the code to create the letter Z:
+
+```
+# Drop the row block at the top
+ab_drop("b31", 1)
+# Drop the column block at the bottom
+ab_drop("b13", 10)
+```
+
+This code will drop the blocks in the correct order and positions to form a stable and similar structure to the letter Z.

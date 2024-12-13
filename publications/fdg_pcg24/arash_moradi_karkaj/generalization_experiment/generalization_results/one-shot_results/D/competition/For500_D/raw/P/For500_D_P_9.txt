@@ -1,0 +1,17 @@
+#ab_drop('b31', 9) -> Initial vertical line of the letter 'P'
+#ab_drop('b13', 8) -> Left vertical line of the letter 'P'
+#ab_drop('b31', 9) -> Top horizontal line of the letter 'P'
+#ab_drop('b11', 8) -> Top middle part of the letter 'P'
+#ab_drop('b31', 9) -> Bottom horizontal line of the letter 'P'
+#ab_drop('b13', 10) -> Right vertical line of the letter 'P'
+#ab_drop('b13', 8) -> Bottom left diagonal line of the letter 'P'
+#ab_drop('b13', 10) -> Bottom right diagonal line of the letter 'P'
+
+ab_drop('b31', 9)
+ab_drop('b13', 8)
+ab_drop('b31', 9)
+ab_drop('b11', 8)
+ab_drop('b31', 9)
+ab_drop('b13', 10)
+ab_drop('b13', 8)
+ab_drop('b13', 10)

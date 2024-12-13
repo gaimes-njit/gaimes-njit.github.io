@@ -1,0 +1,12 @@
+Structure resembling the capital English letter "E":
+
+ab_drop('b13', 9)  # Bottom vertical line
+ab_drop('b11', 7)  # Top left horizontal line
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b31', 9)  # Middle horizontal line
+ab_drop('b11', 7)  # Top right horizontal line
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 10)

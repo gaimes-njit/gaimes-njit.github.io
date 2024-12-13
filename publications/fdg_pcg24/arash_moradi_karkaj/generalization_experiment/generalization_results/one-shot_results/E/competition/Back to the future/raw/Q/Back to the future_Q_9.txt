@@ -1,0 +1,71 @@
+To generate a stable structure that looks like the uppercase character "Q" using the `ab_drop()` function, we need to follow these steps:
+
+1. Initialize the structure as an empty grid using the provided `structure` variable.
+2. Start by dropping a b31 block at the center slot of the bottom layer (layer 0) using `ab_drop('b31', W // 2)`.
+3. Next, drop a b11 block right above the b31 block, centered at the same slot using `ab_drop('b11', W // 2)`.
+4. Drop another b11 block above the previous one, but shifted one slot to the left using `ab_drop('b11', W // 2 - 1)`.
+5. Drop a b13 block above the b31 block, centered at the same slot using `ab_drop('b13', W // 2)`.
+6. Drop two b11 blocks above the previous one, aligned with the left and right sides of the b13 block using `ab_drop('b11', W // 2 - 1)` and `ab_drop('b11', W // 2 + 1)`.
+7. Repeat steps 5 and 6 until you reach the top layer (layer 15), gradually shifting the b13 block and b11 blocks upwards in their respective slots.
+8. After reaching the top layer, drop another b31 block right above the previous b31 block in the center slot using `ab_drop('b31', W // 2)`.
+9. Drop a b11 block above the b31 block, centered at the same slot using `ab_drop('b11', W // 2)`.
+10. The final structure will now resemble the uppercase character "Q".
+
+The code for implementing these steps would look like this:
+
+```
+W = 20
+H = 16
+
+def ab_drop(x, y):
+    # x is the block type, y is the slot number from 0 to W-1 where the block center is aligned
+    
+    # initialize the drop position at the top of the map
+    drop_pos = (H-1, y)
+    
+    # drop the block from the top and move it down until it lands on the base or another block
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    
+    # place the block on the structure
+    structure[drop_pos[0]][drop_pos[1]] = x
+
+# Initialize the structure as an empty grid
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the b31 block at the center slot of the bottom layer
+ab_drop('b31', W // 2)
+
+# Drop the b11 block above the b31 block
+ab_drop('b11', W // 2)
+
+# Drop another b11 block shifted one slot to the left
+ab_drop('b11', W // 2 - 1)
+
+# Drop the b13 block above the b31 block
+ab_drop('b13', W // 2)
+
+# Drop two b11 blocks aligned with the left and right sides of the b13 block
+ab_drop('b11', W // 2 - 1)
+ab_drop('b11', W // 2 + 1)
+
+# Repeat steps 5 and 6 until the top layer is reached
+for i in range(2, H-1):
+    ab_drop('b13', W // 2)
+    ab_drop('b11', W // 2 - 1)
+    ab_drop('b11', W // 2 + 1)
+
+# Drop another b31 block above the previous b31 block
+ab_drop('b31', W // 2)
+
+# Drop a b11 block above the b31 block
+ab_drop('b11', W // 2)
+
+# Print the final structure
+for row in structure:
+    print(''.join(row))
+```
+
+This code will generate a stable structure in the shape of the uppercase character "Q" using the `ab_drop()` function while satisfying all the hard constraints.

@@ -1,0 +1,66 @@
+To generate the uppercase letter "G" using the given block types, we can break down the letter into multiple steps:
+
+Step 1:
+Place a horizontal straight block (b31) at position 1: ab_drop('b31',1)
+
+Step 2:
+Place a vertical straight block (b13) at position 1: ab_drop('b13',1)
+
+Step 3:
+Place a horizontal straight block (b31) at position 1: ab_drop('b31',1)
+
+Step 4:
+Place a vertical straight block (b13) at position 2: ab_drop('b13',2)
+
+Step 5:
+Place a 1x1 square block (b11) at position 3: ab_drop('b11',3)
+
+Step 6:
+Place a horizontal straight block (b31) at position 1: ab_drop('b31',1)
+
+Step 7:
+Place a vertical straight block (b13) at position 4: ab_drop('b13',4)
+
+Step 8:
+Place a 1x1 square block (b11) at position 3: ab_drop('b11',3)
+
+Step 9:
+Place a horizontal straight block (b31) at position 1: ab_drop('b31',1)
+
+Step 10:
+Place a vertical straight block (b13) at position 3: ab_drop('b13',3)
+
+Step 11:
+Place a horizontal straight block (b31) at position 2: ab_drop('b31',2)
+
+Step 12:
+Place a vertical straight block (b13) at position 3: ab_drop('b13',3)
+
+Step 13:
+Place a horizontal straight block (b31) at position 3: ab_drop('b31',3)
+
+Step 14:
+Place a vertical straight block (b13) at position 4: ab_drop('b13',4)
+
+Step 15:
+Place a 1x1 square block (b11) at position 3: ab_drop('b11',3)
+
+Step 16:
+Place a horizontal straight block (b31) at position 4: ab_drop('b31',4)
+
+Step 17:
+Place a vertical straight block (b13) at position 2: ab_drop('b13',2)
+
+Step 18:
+Place a 1x1 square block (b11) at position 4: ab_drop('b11',4)
+
+Step 19:
+Place a horizontal straight block (b31) at position 3: ab_drop('b31',3)
+
+Step 20:
+Place a vertical straight block (b13) at position 2: ab_drop('b13',2)
+
+Step 21:
+Place a horizontal straight block (b31) at position 2: ab_drop('b31',2)
+
+Following these steps will result in the uppercase letter "G" being generated in the Tetris-like environment.

@@ -1,0 +1,25 @@
+The first step is to create the base of the letter J. We will drop a row block (`"b31"`) at the center of the bottom row (`x_position = 9`):
+
+```
+ab_drop("b31", 9)
+```
+
+The next step is to add the vertical part of the letter J. We will drop a column block (`"b13"`) one row above the base and at the same x-position:
+
+```
+ab_drop("b13", 9)
+```
+
+Finally, we will add the tick of the letter J by dropping another row block (`"b31"`) at the same x-position but two rows above the base:
+
+```
+ab_drop("b31", 9)
+```
+
+Putting it all together, the complete implementation to create a level that looks like the letter J is:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+```

@@ -1,0 +1,80 @@
+First, let's initialize the map with all cells set to 0 (unoccupied):
+
+```python
+map = []
+for i in range(16):
+    map.append([0] * 20)
+```
+
+Next, we can start generating the structure. We will use the `ab_drop()` function to place each brick on the field. We need to carefully consider the stability and boundary collision rules.
+
+To form the letter "C", we will need 5 bricks: b13, b31, b31, b13, and b11. Here's the code to generate the structure:
+
+```python
+# Place b13 brick
+ab_drop('b13', 5)
+
+# Place b31 brick
+ab_drop('b31', 6)
+
+# Place b31 brick
+ab_drop('b31', 8)
+
+# Place b13 brick
+ab_drop('b13', 9)
+
+# Place b11 brick
+ab_drop('b11', 11)
+```
+
+Now, let's modify the `ab_drop()` function to make sure the bricks are placed in a stable manner and don't collide with the boundaries:
+
+```python
+def ab_drop(x, y):
+    # Get the brick shape and dimensions based on x
+    if x == 'b31':
+        shape = 'b31'
+        width = 3
+        height = 1
+    elif x == 'b13':
+        shape = 'b13'
+        width = 1
+        height = 3
+    elif x == 'b11':
+        shape = 'b11'
+        width = 1
+        height = 1
+    else:
+        return
+
+    # Check if the brick will collide with the boundaries
+    if y+width > 19 or y < 0:
+        return
+
+    # Check if the brick will collide with other occupied cells or cause instability
+    for i in range(height):
+        for j in range(width):
+            if map[i][y+j] == 1:
+                return
+            if i > 0 and map[i-1][y+j] == 0:
+                return
+
+    # Place the brick on the map
+    for i in range(height):
+        for j in range(width):
+            map[i][y+j] = 1
+```
+
+Finally, we can print the resulting structure:
+
+```python
+for row in map:
+    for cell in row:
+        if cell == 1:
+            print('█', end='')
+        else:
+            print(' ', end='')
+    print()
+```
+
+This will print the structure resembling the letter "C" using the ASCII character '█' for occupied cells.

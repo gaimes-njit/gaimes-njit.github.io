@@ -1,0 +1,36 @@
+We will start by building the base of the "Q" shape. Since the shape is similar to the letter "O" in its natural orientation, we can start by building the outer circle of the "Q". 
+
+To build the outer circle, we can use the column block "b13" placed at the leftmost column and the rightmost column. This will create a stable base that supports the upper parts of the "Q".
+
+We will now proceed with the implementation step by step:
+
+1. Place the left column block at the leftmost position:
+```
+ab_drop("b13", 0)
+```
+
+2. Place the right column block at the rightmost position:
+```
+ab_drop("b13", 19)
+```
+
+Next, we will focus on building the upper parts of the "Q".
+
+3. Place the row block "b31" above the left column block:
+```
+ab_drop("b31", 0)
+```
+
+4. Place the row block "b31" above the right column block:
+```
+ab_drop("b31", 19)
+```
+
+With these steps, we have completed building the letter "Q" shape in its natural orientation. The final implementation will look as follows:
+
+```
+ab_drop("b13", 0)
+ab_drop("b13", 19)
+ab_drop("b31", 0)
+ab_drop("b31", 19)
+```

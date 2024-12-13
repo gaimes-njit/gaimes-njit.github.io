@@ -1,0 +1,16 @@
+To create the letter "O" in the level, we can start by placing a row block at the center of the bottom row. Then, we can place a column block above the row block, centered at the same position. Finally, we can place another row block above the column block, centered at the same position.
+
+Here is the complete implementation:
+
+```
+# Place the bottom row block
+ab_drop("b31", 9)
+
+# Place the column block above the row block
+ab_drop("b13", 9)
+
+# Place the top row block above the column block
+ab_drop("b31", 9)
+```
+
+This implementation will create a structure in the level that looks like the letter "O" when viewed from the top-down orientation. The blocks are placed in a bottom-to-top fashion to ensure stability.

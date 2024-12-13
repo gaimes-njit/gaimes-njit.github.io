@@ -1,0 +1,20 @@
+To create the capital letter "Y" using the block-stacking technique, we can break it down into three separate blocks:
+
+1. The top bar of the "Y" can be represented using a row block ("b31") and placed at the center of the grid.
+2. The vertical part of the "Y" can be represented using a column block ("b13") and placed at the center of the grid, one row below the top bar.
+3. The bottom part of the "Y" can be represented using a column block ("b13") and placed at the center of the grid, two rows below the top bar.
+
+Following the given instructions, the implementation to create a capital "Y" would be as follows:
+
+```
+# Place the top bar of the "Y"
+ab_drop("b31", 9)
+
+# Place the vertical part of the "Y"
+ab_drop("b13", 9)
+
+# Place the bottom part of the "Y"
+ab_drop("b13", 9)
+```
+
+This implementation ensures that the blocks are placed in a bottom-to-top fashion, creating a stable structure that resembles the capital letter "Y".

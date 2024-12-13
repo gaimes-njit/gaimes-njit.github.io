@@ -1,0 +1,19 @@
+To generate the uppercase English letter "E", we can use the following commands:
+
+```
+ab_drop('b31',1)
+ab_drop('b11',1)
+ab_drop('b11',1)
+ab_drop('b11',1)
+ab_drop('b31',1)
+ab_drop('b11',1)
+ab_drop('b11',1)
+ab_drop('b11',1)
+ab_drop('b31',1)
+ab_drop('b11',1)
+ab_drop('b11',1)
+ab_drop('b11',1)
+ab_drop('b31',1)
+```
+
+These commands will place the block types in the specified positions to form the letter "E" in the Tetris-like environment.

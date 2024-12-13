@@ -1,0 +1,35 @@
+To generate the uppercase letter "Q", you can follow the following steps:
+
+1. Start by building the stem of the letter. Use two vertical blocks (b13) placed next to each other:
+```
+ab_drop('b13', 0)
+ab_drop('b13', 1)
+```
+
+2. Next, add the curve at the top of the letter by using a horizontal block (b31) placed above the two vertical blocks:
+```
+ab_drop('b31', 0)
+```
+
+3. Now, add the tail of the letter by using two vertical blocks (b13) placed next to each other, below the stem:
+```
+ab_drop('b13', 0)
+ab_drop('b13', 1)
+```
+
+4. Finally, finish the letter by adding the small triangular block at the bottom right corner. Use a square block (b11):
+```
+ab_drop('b11', 1)
+```
+
+Your final stream of commands to generate the letter "Q" in the Tetris-like environment would be:
+```
+ab_drop('b13', 0)
+ab_drop('b13', 1)
+ab_drop('b31', 0)
+ab_drop('b13', 0)
+ab_drop('b13', 1)
+ab_drop('b11', 1)
+```
+
+Please note that the exact positioning of the blocks within the grid may vary based on the specific measurements of the blocks and the letter "Q" shape requirements.

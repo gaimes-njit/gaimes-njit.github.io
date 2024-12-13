@@ -1,0 +1,19 @@
+To create the letter "C" using the given block types and environment, we can follow the following steps:
+
+1. Start by creating the vertical foundations of the letter by placing 4 vertical blocks in a row at the appropriate positions. We can use the block type 'b13' for this.
+
+```
+ab_drop('b13',1)
+ab_drop('b13',3)
+ab_drop('b13',4)
+ab_drop('b13',6)
+```
+
+2. Now, place two horizontal blocks on top of the vertical foundations to complete the letter "C". We can use the block type 'b31' for this.
+
+```
+ab_drop('b31',2)
+ab_drop('b31',5)
+```
+
+By following the above steps, the desired uppercase letter "C" can be created in the Tetris-like environment.

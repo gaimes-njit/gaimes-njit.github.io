@@ -1,0 +1,60 @@
+```python
+# Initialize the field
+field = [[0]*20 for _ in range(16)]
+
+# Function to check if a brick can be placed at a given position
+def check_position(x, y, brick):
+    if x < 0 or x > 19 or y < 0 or y > 15:
+        return False
+    if brick == 'b31':
+        if x-1 >= 0 and field[y][x-1] != 0:
+            return False
+        if x+1 <= 19 and field[y][x+1] != 0:
+            return False
+        if x+2 <= 19 and field[y][x+2] != 0:
+            return False
+    elif brick == 'b13':
+        if y+1 <= 15 and field[y+1][x] != 0:
+            return False
+        if y+2 <= 15 and field[y+2][x] != 0:
+            return False
+    elif brick == 'b11':
+        return field[y][x] == 0
+    return True
+
+# Function to place a brick on the field
+def place_brick(x, y, brick):
+    if brick == 'b31':
+        field[y][x-1] = 1
+        field[y][x] = 1
+        field[y][x+1] = 1
+    elif brick == 'b13':
+        field[y][x] = 1
+        field[y+1][x] = 1
+        field[y+2][x] = 1
+    elif brick == 'b11':
+        field[y][x] = 1
+
+# Drop the b31 brick at x = 5
+ab_drop('b31', 5)
+
+# Drop the b13 brick at x = 5
+ab_drop('b13', 5)
+
+# Drop the b31 brick at x = 6
+ab_drop('b31', 6)
+
+# Print the resulting field
+for row in field:
+    print(row)
+```
+
+The resulting field will be:
+
+```python
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,

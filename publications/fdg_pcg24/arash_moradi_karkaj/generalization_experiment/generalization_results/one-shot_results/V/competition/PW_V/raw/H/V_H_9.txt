@@ -1,0 +1,49 @@
+```
+ab_drop(2,1)
+ab_drop(2,2)
+ab_drop(2,3)
+ab_drop(2,4)
+ab_drop(2,5)
+ab_drop(3,1)
+ab_drop(3,5)
+```
+Explanation: To create the letter "V", we use two b31 blocks placed vertically to form the sides of the letter, and a b31 block placed horizontally at the bottom to form the point of the letter.
+
+A: 
+```
+ab_drop(2,2)
+ab_drop(2,3)
+ab_drop(3,1)
+ab_drop(3,2)
+ab_drop(3,3)
+ab_drop(3,4)
+ab_drop(4,2)
+ab_drop(4,3)
+```
+Explanation: To create the letter "A", we use two b31 blocks placed vertically to form the sides of the letter, two b31 blocks placed horizontally at the top and bottom to form the crossbar of the letter, and a b13 block placed vertically in the center to form the diagonal of the letter.
+
+I: 
+```
+ab_drop(2,1)
+ab_drop(2,2)
+ab_drop(2,3)
+ab_drop(2,4)
+ab_drop(2,5)
+```
+Explanation: To create the letter "I", we use a b31 block placed vertically to form the vertical line of the letter.
+
+H: 
+```
+ab_drop(2,1)
+ab_drop(2,2)
+ab_drop(2,3)
+ab_drop(2,4)
+ab_drop(2,5)
+ab_drop(3,3)
+ab_drop(4,1)
+ab_drop(4,2)
+ab_drop(4,3)
+ab_drop(4,4)
+ab_drop(4,5)
+```
+Explanation: To create the letter "H", we use two b31 blocks placed vertically to form the sides of the letter, a b13 block placed vertically in the center to form the middle line of the letter, and two b31 blocks placed horizontally at the top and bottom to form the crossbars of the letter.

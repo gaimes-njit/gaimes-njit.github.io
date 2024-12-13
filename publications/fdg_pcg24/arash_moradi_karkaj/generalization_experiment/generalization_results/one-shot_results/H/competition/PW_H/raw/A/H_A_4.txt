@@ -1,0 +1,11 @@
+To create the uppercase letter "A", you can use the following stream of commands:
+
+```
+ab_drop('b13',1)
+ab_drop('b13',3)
+ab_drop('b31',2)
+ab_drop('b13',1)
+ab_drop('b13',3)
+```
+
+This will first create the two legs of the "A" shape by placing two vertical straight blocks ('b13') at positions 1 and 3 along the width. Then, a horizontal straight block ('b31') is placed in the middle (position 2) to create the crossbar of the "A". Finally, two more vertical straight blocks are placed at positions 1 and 3 to complete the upper part of the letter.

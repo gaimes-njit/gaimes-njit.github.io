@@ -1,0 +1,41 @@
+```
+structure = [[' ']*W for _ in range(H)]
+ab_drop('b13', 2)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+ab_drop('b13', 4)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+ab_drop('b31', 1)
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+ab_drop('b13', 2)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+```
+Explanation:
+
+1. Initialize the structure.
+
+2. Drop the 'b13' block in the second slot from the left to form the left vertical line of the 'H'.
+
+3. Drop four 'b11' blocks from the first to the fourth slot to form the horizontal line of the 'H'.
+
+4. Drop the 'b13' block in the fourth slot to form the right vertical line of the 'H'.
+
+5. Drop four 'b11' blocks from the first to the fourth slot to form the bottom part of the 'H'.
+
+6. Drop three 'b31' blocks in the first, third, and fourth slots to extend the vertical lines of the 'H'.
+
+7. Drop four 'b11' blocks from the first to the fourth slot to form the top part of the 'H'.
+
+8. Drop the 'b13' block in the second slot to complete the structure of the 'H'.

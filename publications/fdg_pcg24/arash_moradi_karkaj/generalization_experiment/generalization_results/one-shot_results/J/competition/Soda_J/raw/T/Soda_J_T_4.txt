@@ -1,0 +1,8 @@
+First, let's start by creating the horizontal bar of the "T" shape:
+
+ab_drop("b31", 9)
+ab_drop("b13", 6)
+
+Next, let's create the vertical bar of the "T" shape:
+
+ab_drop("b31", 9)

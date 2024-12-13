@@ -1,0 +1,14 @@
+To generate the uppercase English letter "V", we can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+ab_drop('b31', 7)
+```
+
+Explanation:
+1. Place a horizontal straight block (b31) at position 1.
+2. Place a vertical straight block (b13) at position 4.
+3. Place another horizontal straight block (b31) at position 7.
+
+This arrangement of blocks resembles the letter "V" and satisfies the gravity rules in the defined environment.

@@ -1,0 +1,17 @@
+To create the letter "P" using the ab_drop() function, we will need to drop two blocks. One block will be a vertical pipe and the other block will be a horizontal bar at the bottom.
+
+Here is the implementation to create the letter "P":
+
+```python
+# Drop the vertical pipe block
+ab_drop("b31", 9)
+
+# Drop the horizontal bar block
+ab_drop("b13", 8)
+```
+
+The first ab_drop() call drops the vertical pipe block (b31) at x_position 9. This will create a vertical pipe shape in the grid.
+
+The second ab_drop() call drops the horizontal bar block (b13) at x_position 8. This will create a horizontal bar shape at the bottom of the vertical pipe, completing the letter "P".
+
+This implementation ensures stability by starting from the bottom and building upwards. The resulting structure will resemble the letter "P".

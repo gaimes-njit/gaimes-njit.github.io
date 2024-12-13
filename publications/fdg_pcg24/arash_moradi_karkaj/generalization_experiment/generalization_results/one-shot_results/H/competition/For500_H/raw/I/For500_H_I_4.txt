@@ -1,0 +1,4 @@
+ab_drop('b31', 9)  # Create the vertical stem of the 'I'
+ab_drop('b11', 9)  # Add support at the bottom of the stem
+ab_drop('b11', 8)  # Add support at the bottom left of the stem
+ab_drop('b11', 10)  # Add support at the bottom right of the stem

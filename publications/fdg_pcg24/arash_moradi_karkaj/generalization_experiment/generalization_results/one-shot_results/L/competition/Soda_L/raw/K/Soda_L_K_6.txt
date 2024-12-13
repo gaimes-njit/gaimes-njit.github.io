@@ -1,0 +1,12 @@
+To create the letter "K" using Tetris blocks, we can break it down into three blocks - a column block in the middle and two row blocks on either side. Here is the implementation:
+
+```
+# Place the left row block
+ab_drop("b31", 6)
+# Place the middle column block
+ab_drop("b13", 9)
+# Place the right row block
+ab_drop("b31", 12)
+```
+
+This implementation follows the bottom-to-top approach, dropping the blocks from the top and creating a stable structure.

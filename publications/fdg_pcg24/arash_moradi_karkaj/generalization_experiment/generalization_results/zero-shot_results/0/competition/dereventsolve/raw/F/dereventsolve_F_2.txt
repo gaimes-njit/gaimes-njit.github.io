@@ -1,0 +1,151 @@
+```
+def ab_drop():
+    return 'ab_drop'
+
+database = {
+    'A': [
+        [ab_drop, ab_drop],
+        [ab_drop, None],
+        [ab_drop, ab_drop]
+    ],
+    'B': [
+        [ab_drop, ab_drop, ab_drop],
+        [ab_drop, None, None],
+        [ab_drop, ab_drop, ab_drop]
+    ],
+    'C': [
+        [ab_drop, ab_drop, ab_drop],
+        [ab_drop, None, None],
+        [ab_drop, None, None]
+    ],
+    'D': [
+        [ab_drop, ab_drop, ab_drop],
+        [ab_drop, None, ab_drop],
+        [ab_drop, ab_drop, ab_drop]
+    ],
+    'E': [
+        [ab_drop, ab_drop, ab_drop],
+        [ab_drop, None, None],
+        [ab_drop, None, None]
+    ],
+    'F': [
+        [ab_drop, ab_drop, ab_drop],
+        [ab_drop, None, None],
+        [ab_drop, ab_drop, None]
+    ],
+    'G': [
+        [ab_drop, ab_drop, ab_drop],
+        [ab_drop, None, ab_drop],
+        [ab_drop, None, ab_drop]
+    ],
+    'H': [
+        [ab_drop, None, ab_drop],
+        [ab_drop, ab_drop, ab_drop],
+        [ab_drop, None, ab_drop]
+    ],
+    'I': [
+        [ab_drop],
+        [None],
+        [ab_drop]
+    ],
+    'J': [
+        [None, None, ab_drop],
+        [None, None, ab_drop],
+        [ab_drop, ab_drop, ab_drop]
+    ],
+    'K': [
+        [ab_drop, None, ab_drop],
+        [ab_drop, ab_drop, None],
+        [ab_drop, None, ab_drop]
+    ],
+    'L': [
+        [ab_drop, None, None],
+        [ab_drop, None, None],
+        [ab_drop, ab_drop, ab_drop]
+    ],
+    'M': [
+        [ab_drop, ab_drop, ab_drop],
+        [ab_drop, ab_drop, ab_drop],
+        [ab_drop, None, ab_drop]
+    ],
+    'N': [
+        [ab_drop, ab_drop, None],
+        [ab_drop, ab_drop, ab_drop],
+        [ab_drop, None, ab_drop]
+    ],
+    'O': [
+        [ab_drop, ab_drop, ab_drop],
+        [ab_drop, None, ab_drop],
+        [ab_drop, ab_drop, ab_drop]
+    ],
+    'P': [
+        [ab_drop, ab_drop, ab_drop],
+        [ab_drop, None, ab_drop],
+        [ab_drop, None, None]
+    ],
+    'Q': [
+        [ab_drop, ab_drop, ab_drop],
+        [ab_drop, None, ab_drop],
+        [ab_drop, ab_drop, ab_drop],
+        [None, None, ab_drop]
+    ],
+    'R': [
+        [ab_drop, ab_drop, ab_drop],
+        [ab_drop, None, ab_drop],
+        [ab_drop, None, ab_drop]
+    ],
+    'S': [
+        [ab_drop, ab_drop, ab_drop],
+        [None, None, ab_drop],
+        [ab_drop, ab_drop, ab_drop]
+    ],
+    'T': [
+        [ab_drop, ab_drop, ab_drop],
+        [None, None, ab_drop],
+        [None, None, ab_drop]
+    ],
+    'U': [
+        [ab_drop, None, ab_drop],
+        [ab_drop, None, ab_drop],
+        [ab_drop, ab_drop, ab_drop]
+    ],
+    'V': [
+        [ab_drop, None, ab_drop],
+        [ab_drop, None, ab_drop],
+        [None, ab_drop, None]
+    ],
+    'W': [
+        [ab_drop, None, ab_drop],
+        [ab_drop, ab_drop, ab_drop],
+        [ab_drop, ab_drop, ab_drop]
+    ],
+    'X': [
+        [ab_drop, None, ab_drop],
+        [None, ab_drop, None],
+        [ab_drop, None, ab_drop]
+    ],
+    'Y': [
+        [ab_drop, None, ab_drop],
+        [None, ab_drop, None],
+        [None, None, ab_drop]
+    ],
+    'Z': [
+        [ab_drop, ab_drop, ab_drop],
+        [None, None, ab_drop],
+        [None, ab_drop, None]
+    ]
+}
+
+result = ''
+letter = 'F'
+for row in database[letter]:
+    for cell in row:
+        if cell is None:
+            result += ' '
+        else:
+            result += cell() + ' '
+
+result = result.strip()
+
+print(result)
+```

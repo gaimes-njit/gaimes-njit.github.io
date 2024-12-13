@@ -1,0 +1,6 @@
+```
+ab_drop('b31', 10)  # Drop the horizontal block in the middle column
+ab_drop('b13', 9)   # Drop the vertical block to the left of the horizontal block
+ab_drop('b11', 10)  # Drop the center block of the horizontal block
+ab_drop('b11', 11)  # Drop the right block of the horizontal block
+```

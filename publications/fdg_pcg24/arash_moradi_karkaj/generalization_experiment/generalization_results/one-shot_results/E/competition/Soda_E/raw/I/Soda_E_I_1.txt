@@ -1,0 +1,10 @@
+To create a structure of the capital letter "I", we can use a column block (b13) as the base and place a square block (b11) on top of it. Here is the code to achieve this:
+
+ab_drop("b13", 9)
+ab_drop("b11", 9)
+
+Explanation:
+- We first drop a column block (b13) at the x position 9. This will occupy cells (8, 0), (9, 0), and (10, 0).
+- We then drop a square block (b11) at the same x position 9. This will occupy cell (9, 1).
+
+This code will create a stable structure in the shape of the capital letter "I".

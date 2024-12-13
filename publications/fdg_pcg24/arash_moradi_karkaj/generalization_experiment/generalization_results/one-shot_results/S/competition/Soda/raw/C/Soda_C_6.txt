@@ -1,0 +1,17 @@
+First, we need to build the base of the letter "C". The base will be made up of a row block and two column blocks. We'll place the row block in the center of the grid and the two column blocks on either side of it to form a symmetrical base. 
+
+Next, we'll add the top of the letter "C". This will be made up of a column block on the left side and a column block on the right side. We'll place both column blocks just above the base, ensuring that they are vertically aligned with the column blocks in the base. 
+
+Finally, we'll add the center of the letter "C". This will be made up of a row block and a column block. We'll place the row block just above the center of the base, and the column block just to the right of the row block. 
+
+This sequence of ab_drop() calls will generate a structure in the level that looks like the capital letter "C" (TARGET).
+
+```
+ab_drop("b31", 9)  # Place row block (base)
+ab_drop("b13", 4)  # Place left column block (base)
+ab_drop("b13", 14) # Place right column block (base)
+ab_drop("b13", 4)  # Place left column block (top)
+ab_drop("b13", 14) # Place right column block (top)
+ab_drop("b31", 10) # Place row block (center)
+ab_drop("b13", 11) # Place column block (center)
+```

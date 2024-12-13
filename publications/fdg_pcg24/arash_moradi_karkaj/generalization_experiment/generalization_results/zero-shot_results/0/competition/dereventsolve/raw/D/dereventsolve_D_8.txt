@@ -1,0 +1,28 @@
+```
+def ab_drop():
+    return "ab_drop"
+
+database = {
+    "D": [
+        ab_drop, ab_drop,
+        ab_drop, ab_drop,
+        ab_drop, ab_drop,
+        ab_drop, ab_drop,
+        ab_drop, ab_drop,
+        ab_drop, ab_drop,
+        ab_drop, ab_drop,
+        ab_drop, ab_drop,
+        ab_drop, ab_drop,
+        ab_drop, ab_drop,
+        ab_drop, ab_drop,
+        ab_drop, ab_drop,
+        ab_drop, ab_drop,
+        ab_drop, ab_drop,
+        ab_drop, ab_drop,
+        ab_drop, ab_drop,
+        ab_drop,
+    ]
+}
+
+sequence = database["D"]
+sequence

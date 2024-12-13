@@ -1,0 +1,30 @@
+First, let's start by creating the vertical pipe of the letter D.
+
+```
+ab_drop("b31", 4)
+ab_drop("b31", 5)
+ab_drop("b31", 6)
+```
+
+Next, let's create the base of the letter D.
+
+```
+ab_drop("b13", 5)
+```
+
+Finally, let's create the top-right bend of the letter D.
+
+```
+ab_drop("b11", 7)
+```
+
+This series of steps will generate a structure that resembles the letter D on the 2D grid. Please note that the stability and similarity of the structure may vary depending on factors such as the presence of other blocks and the implementation of gravity.
+
+Complete implementation:
+```
+ab_drop("b31", 4)
+ab_drop("b31", 5)
+ab_drop("b31", 6)
+ab_drop("b13", 5)
+ab_drop("b11", 7)
+```

@@ -1,0 +1,4 @@
+ab_drop('b31', 0) # bottom left
+ab_drop('b31', 4) # bottom right
+ab_drop('b31', 6) # top left
+ab_drop('b31', 10) # top right

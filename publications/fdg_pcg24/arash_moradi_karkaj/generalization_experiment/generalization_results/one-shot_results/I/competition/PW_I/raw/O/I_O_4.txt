@@ -1,0 +1,10 @@
+To generate the uppercase English letter "O", the following stream of ab_drop() commands can be used:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',4)
+ab_drop('b31',1)
+ab_drop('b13',1)
+ab_drop('b13',5)
+ab_drop('b31',1)
+```

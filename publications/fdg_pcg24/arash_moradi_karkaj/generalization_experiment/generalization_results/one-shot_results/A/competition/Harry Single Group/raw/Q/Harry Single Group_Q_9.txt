@@ -1,0 +1,42 @@
+First, let's initialize the field by creating a 20x16 grid with zeros representing empty cells and ones representing occupied cells. We will also define a function to check if a brick can be placed at a given position without colliding with any occupied cells or going beyond the boundaries of the field.
+
+```python
+# Field initialization
+field = [[0]*20 for _ in range(16)]
+
+def can_place_brick(brick, x_position):
+    if brick == 'b13':
+        # Check if all cells of the b13 brick are within bounds and available
+        for y in range(x_position, x_position + 3):
+            if y > 19 or field[y][0] == 1:
+                return False
+    elif brick == 'b31':
+        # Check if all cells of the b31 brick are within bounds and available
+        if x_position < 1 or x_position + 3 > 19:
+            return False
+        for y in range(x_position, x_position + 3):
+            if field[y][0] == 1:
+                return False
+    elif brick == 'b11':
+        # Check if the cell for b11 brick is within bounds and available
+        if x_position == 0 or x_position > 19 or field[x_position][0] == 1:
+            return False
+    return True
+```
+
+Now, we can start generating the required structure, resembling the letter "Q", by placing bricks using the `ab_drop()` function:
+
+```python
+# Generating the shape resembling the letter "Q"
+ab_drop('b13', 1)  # Drop a b13 brick at x_position 1
+ab_drop('b13', 8)  # Drop a b13 brick at x_position 8
+ab_drop('b13', 15)  # Drop a b13 brick at x_position 15
+ab_drop('b13', 18)  # Drop a b13 brick at x_position 18
+ab_drop('b31', 1)  # Drop a b31 brick at x_position 1
+ab_drop('b11', 4)  # Drop a b11 brick at x_position 4
+ab_drop('b11', 5)  # Drop a b11 brick at x_position 5
+ab_drop('b11', 14)  # Drop a b11 brick at x_position 14
+ab_drop('b11', 15)  # Drop a b11 brick at x_position 15
+```
+
+After executing the above code, the cells occupied by the bricks will form a shape resembling the letter "Q" on the field.

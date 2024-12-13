@@ -1,0 +1,21 @@
+```python
+def find_letter_Y(database):
+    if 'Y' in database:
+        return database['Y']
+    else:
+        raise ValueError("Letter Y not found in the database.")
+
+letter_Y_db = {
+    'Y': [
+        ab_drop(),
+        ab_drop(),
+        ab_drop(),
+        ab_drop(),
+        ab_drop(),
+        ab_drop(),
+        ab_drop()
+    ]
+}
+
+find_letter_Y(letter_Y_db)
+```

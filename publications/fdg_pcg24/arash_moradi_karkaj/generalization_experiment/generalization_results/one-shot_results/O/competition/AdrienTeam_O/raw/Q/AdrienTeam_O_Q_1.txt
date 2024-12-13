@@ -1,0 +1,60 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the first block
+ab_drop('b31', 0)
+
+# Drop the second block
+ab_drop('b13', 1)
+
+# Drop the third block
+ab_drop('b13', 3)
+
+# Drop the fourth block
+ab_drop('b13', 4)
+
+# Drop the fifth block
+ab_drop('b31', 5)
+
+# Drop the sixth block
+ab_drop('b11', 1)
+
+# Drop the seventh block
+ab_drop('b11', 6)
+
+# Drop the eighth block
+ab_drop('b31', 7)
+
+# Drop the ninth block
+ab_drop('b13', 6)
+
+# Drop the tenth block
+ab_drop('b13', 8)
+
+# Drop the eleventh block
+ab_drop('b31', 9)
+
+# Drop the twelfth block
+ab_drop('b13', 10)
+
+# Drop the thirteenth block
+ab_drop('b13', 12)
+
+# Drop the fourteenth block
+ab_drop('b31', 11)
+
+# Drop the fifteenth block
+ab_drop('b31', 13)
+
+# Drop the sixteenth block
+ab_drop('b31', 14)
+
+# Drop the seventeenth block
+ab_drop('b31', 17)
+
+# Drop the eighteenth block
+ab_drop('b31', 18)
+
+# Drop the nineteenth block
+ab_drop('b31', 19)
+```

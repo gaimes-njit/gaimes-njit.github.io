@@ -1,0 +1,11 @@
+The following stream of commands can be used to generate the uppercase English letter "H":
+
+```
+ab_drop(b31,1)
+ab_drop(b31,4)
+ab_drop(b31,7)
+ab_drop(b13,2)
+ab_drop(b13,3)
+ab_drop(b13,5)
+ab_drop(b13,6)
+```

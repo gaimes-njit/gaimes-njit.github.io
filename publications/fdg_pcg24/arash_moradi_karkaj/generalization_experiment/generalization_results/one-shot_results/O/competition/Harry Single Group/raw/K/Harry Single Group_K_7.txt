@@ -1,0 +1,88 @@
+To form a shape resembling the letter "K" using the given props and function, we need to carefully plan the placement of bricks to ensure stability and avoid boundary collisions. Here is an example code to generate the required structure:
+
+```python
+# Map initialization
+map = [[' ' for _ in range(20)] for _ in range(16)]
+
+# Helper function to print the map
+def print_map():
+    for row in map:
+        print(''.join(row))
+
+# Function to check if a cell is occupied
+def is_occupied(x, y):
+    return map[y][x] != ' '
+
+# Function to place the brick on the map
+def place_brick(x, y, type, width, height):
+    for j in range(y, y+height):
+        for i in range(x, x+width):
+            map[j][i] = type
+
+# Function to check stability at pivot point
+def check_stability(x, y, width, height):
+    pivot = x + width // 2
+    left_count = 0
+    right_count = 0
+    for j in range(y+height, 16):
+        if is_occupied(pivot, j):
+            break
+        else:
+            left_count += 1
+    for j in range(y+height, 16):
+        if is_occupied(pivot+1, j):
+            break
+        else:
+            right_count += 1
+    if left_count != right_count:
+        return False
+    return True
+
+# Function to drop and place a brick
+def ab_drop(type, x_position):
+    if type == 'b31':
+        width = 3
+        height = 1
+        x = x_position - 1
+        y = 15
+        while y >= 0 and is_occupied(x, y) == False and is_occupied(x+1, y) == False and is_occupied(x+2, y) == False:
+            y -= 1
+        y += 1
+        place_brick(x, y, type, width, height)
+        if not check_stability(x, y, width, height):
+            for i in range(y, y+height):
+                map[i][x] = ' '
+            return
+    elif type == 'b13':
+        width = 1
+        height = 3
+        x = x_position
+        y = 15
+        while y >= 0 and is_occupied(x, y) == False and is_occupied(x, y-1) == False and is_occupied(x, y-2) == False:
+            y -= 1
+        y += 1
+        place_brick(x, y, type, width, height)
+        if not check_stability(x, y, width, height):
+            for i in range(y, y+height):
+                map[i][x] = ' '
+            return
+    elif type == 'b11':
+        width = 1
+        height = 1
+        x = x_position
+        y = 15
+        if is_occupied(x, y):
+            return
+        place_brick(x, y, type, width, height)
+    
+    print_map()
+
+# Generate the structure
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b13', 4)
+ab_drop('b31', 4)
+
+```
+
+This code will generate the required structure resembling the letter "K" while taking into account stability and boundary collisions. The structure will be printed after each brick placement. You can modify the `ab_drop()` calls to generate different variations of the "K" shape.

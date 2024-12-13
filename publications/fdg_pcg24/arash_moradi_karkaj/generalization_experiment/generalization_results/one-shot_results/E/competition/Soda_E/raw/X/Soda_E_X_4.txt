@@ -1,0 +1,30 @@
+To generate a structure that looks like the capital letter "X" in the level using the ab_drop() function, we can follow the following steps:
+
+1. Place the bottom-left arm of the "X":
+   ```
+   ab_drop("b13", 8)
+   ab_drop("b11", 9)
+   ```
+
+2. Place the top-right arm of the "X":
+   ```
+   ab_drop("b13", 11)
+   ab_drop("b11", 12)
+   ```
+
+3. Place the central part of the "X":
+   ```
+   ab_drop("b11", 10)
+   ```
+
+By following these steps, we can create a structure in the level that resembles the capital letter "X". The ab_drop() function is used to drop the blocks in a bottom-to-top fashion, ensuring stability and proper positioning.
+
+Complete implementation:
+
+```
+ab_drop("b13", 8)  # Bottom-left arm of "X"
+ab_drop("b11", 9)
+ab_drop("b11", 10)  # Central part of "X"
+ab_drop("b13", 11)  # Top-right arm of "X"
+ab_drop("b11", 12)
+```

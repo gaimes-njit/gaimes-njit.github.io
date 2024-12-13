@@ -1,0 +1,14 @@
+ab_drop('b11', 9)  # drop a single block at index 9, creating the base of the letter "J"
+ab_drop('b11', 9)  # drop another single block at index 9
+ab_drop('b11', 9)  # drop another single block at index 9
+ab_drop('b13', 9)  # drop a vertical block at index 9, creating the stem of the letter "J"
+ab_drop('b13', 9)  # drop another vertical block at index 9
+ab_drop('b13', 9)  # drop another vertical block at index 9
+ab_drop('b31', 6)  # drop a horizontal block at index 6, supporting the right side of the letter "J"
+ab_drop('b11', 9)  # drop a single block at index 9, creating the top part of the letter "J"
+ab_drop('b11', 10)  # drop a single block at index 10, creating the top part of the letter "J"
+ab_drop('b11', 11)  # drop a single block at index 11, creating the top part of the letter "J"
+ab_drop('b11', 12)  # drop a single block at index 12, creating the top part of the letter "J"
+ab_drop('b31', 15)  # drop a horizontal block at index 15, supporting the left side of the top part of the letter "J"
+ab_drop('b11', 10)  # drop a single block at index 10, creating the top right part of the letter "J"
+ab_drop('b31', 6)  # drop a horizontal block at index 6, supporting the left side of the top right part of the letter "J"

@@ -1,0 +1,13 @@
+To generate the uppercase letter "K," we can follow the instructions given in the example for the letter "G" and make some modifications.
+
+The stream of ab_drop() commands to generate the letter "K" would be as follows:
+
+```
+ab_drop('b31',2)
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b13',3)
+ab_drop('b11',4)
+ab_drop('b11',4)
+ab_drop('b31',2)
+```

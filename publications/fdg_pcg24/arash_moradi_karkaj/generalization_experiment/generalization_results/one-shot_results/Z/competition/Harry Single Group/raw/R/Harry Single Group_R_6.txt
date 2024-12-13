@@ -1,0 +1,25 @@
+To form the shape resembling the letter "R", we can start by placing a b13 brick vertically at the bottom-left corner of the field.
+
+```
+ab_drop('b13', 0)
+```
+
+Now, let's add the horizontal part of the letter "R" using a b31 brick. We can place it on top of the vertical brick, making sure it remains stable.
+
+```
+ab_drop('b31', 1)
+```
+
+To complete the shape, let's add another vertical part of the letter "R" using a b13 brick. We can place it to the right of the horizontal part, again making sure it remains stable.
+
+```
+ab_drop('b13', 4)
+```
+
+This will form the shape resembling the letter "R". The final code would look like:
+
+```
+ab_drop('b13', 0)
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+```

@@ -1,0 +1,4 @@
+ab_drop('b13', 10)  # place the vertical part of the 'Y' shape
+ab_drop('b31', 10)  # place the horizontal part of the 'Y' shape
+ab_drop('b31', 7)   # stabilize the left side of the 'Y' shape
+ab_drop('b31', 13)  # stabilize the right side of the 'Y' shape

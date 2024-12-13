@@ -1,0 +1,60 @@
+To generate a stable structure that looks like the character "Z" and meets all the constraints, we can use the `ab_drop()` function to strategically drop the blocks.
+
+Here's the step-by-step process to achieve the goal:
+
+1. Initialize the structure:
+```python
+W = 20
+H = 16
+structure = [[' '] * W for _ in range(H)]
+```
+
+2. Drop the first block `b31` at slot 0:
+```python
+ab_drop('b31', 0)
+```
+This will drop the block `b31` vertically at slot 0, aligning its center with layer H, and place it on the bottom layer (layer 0) of the structure.
+
+3. Drop the second block `b13` at slot 3:
+```python
+ab_drop('b13', 3)
+```
+This will drop the block `b13` vertically at slot 3, aligning its center with layer H, and place it on the top of the previously dropped block.
+
+4. Drop the third block `b31` at slot 5:
+```python
+ab_drop('b31', 5)
+```
+This will drop the block `b31` vertically at slot 5, aligning its center with layer H, and place it on top of the previously dropped blocks.
+
+5. Drop the fourth block `b11` at slot 8:
+```python
+ab_drop('b11', 8)
+```
+This will drop the block `b11` vertically at slot 8, aligning its center with layer H, and place it on top of the previously dropped blocks.
+
+6. Drop the fifth block `b31` at slot 9:
+```python
+ab_drop('b31', 9)
+```
+This will drop the block `b31` vertically at slot 9, aligning its center with layer H, and place it on top of the previously dropped blocks.
+
+7. Drop the sixth block `b13` at slot 12:
+```python
+ab_drop('b13', 12)
+```
+This will drop the block `b13` vertically at slot 12, aligning its center with layer H, and place it on top of the previously dropped blocks.
+
+8. Drop the seventh block `b31` at slot 14:
+```python
+ab_drop('b31', 14)
+```
+This will drop the block `b31` vertically at slot 14, aligning its center with layer H, and place it on top of the previously dropped blocks.
+
+9. Drop the eighth block `b11` at slot 17:
+```python
+ab_drop('b11', 17)
+```
+This will drop the block `b11` vertically at slot 17, aligning its center with layer H, and place it on top of the previously dropped blocks.
+
+After executing these steps, the `structure` grid will represent a stable "Z" structure that meets all the constraints.

@@ -1,0 +1,13 @@
+```
+# Drop the base layer of the J structure
+ab_drop("b31", 9)
+
+# Drop the first vertical block of the J structure
+ab_drop("b13", 9)
+
+# Drop the top horizontal block of the J structure
+ab_drop("b31", 11)
+
+# Drop the second vertical block of the J structure
+ab_drop("b13", 9)
+```

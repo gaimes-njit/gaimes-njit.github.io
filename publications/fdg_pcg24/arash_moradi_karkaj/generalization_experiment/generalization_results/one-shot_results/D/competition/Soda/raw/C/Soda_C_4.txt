@@ -1,0 +1,13 @@
+To create a capital "C" in the level, we can use the following steps:
+
+1. Drop the top bar of the "C" using a row block (b31) at x_position=9.
+2. Drop the vertical pipe of the "C" using a column block (b13) at x_position=8.
+3. Drop the bottom bar of the "C" using a row block (b31) at x_position=9.
+
+Here is the complete implementation:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 8)
+ab_drop("b31", 9)
+```

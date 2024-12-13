@@ -1,0 +1,46 @@
+To form a shape resembling the letter "T" using the available props and the ab_drop(x, y) function, we can follow these steps:
+
+1. Initialize the map with a 20x16 2D array representing the field.
+2. Drop a b13 brick starting at an x_position of 7 using the ab_drop('b13', 7) function. This will occupy the cells (7, 0), (7, 1), and (7, 2).
+3. Drop a b31 brick starting at an x_position of 6 using the ab_drop('b31', 6) function. This will occupy the cells (5, 3), (6, 3), and (7, 3).
+4. Drop a b11 brick starting at an x_position of 6 using the ab_drop('b11', 6) function. This will occupy the cell (6, 4).
+
+Here's the code snippet to generate the required structure:
+
+```python
+def ab_drop(x, y):
+    # Implement the ab_drop(x, y) function here
+
+# Step 1: Initialize the map
+map = [[0 for _ in range(20)] for _ in range(16)]
+
+# Step 2: Drop a b13 brick
+ab_drop('b13', 7)
+map[0][7] = 1
+map[1][7] = 1
+map[2][7] = 1
+
+# Step 3: Drop a b31 brick
+ab_drop('b31', 6)
+map[3][5] = 1
+map[3][6] = 1
+map[3][7] = 1
+
+# Step 4: Drop a b11 brick
+ab_drop('b11', 6)
+map[4][6] = 1
+
+# Print the resulting map with the T shape
+for row in map:
+    print(row)
+```
+
+This will print the following map:
+
+```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 

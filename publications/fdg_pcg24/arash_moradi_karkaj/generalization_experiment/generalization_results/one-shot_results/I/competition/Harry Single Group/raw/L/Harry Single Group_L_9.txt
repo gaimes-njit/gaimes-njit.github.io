@@ -1,0 +1,48 @@
+To form a shape resembling the letter "L", we can use a combination of the available props - b31 and b11.
+
+First, let's initialize the map with all cells empty:
+
+```python
+map = [[0] * 20 for _ in range(16)]
+```
+
+Next, we can start placing the bricks using the ab_drop() function. 
+
+To create the vertical part of the "L" shape, we can use the b31 brick. We need to make sure it is stable, so we will place it with the pivot point towards the right side. We can start from x_position = 1 to ensure it fits within the field boundaries and doesn't collide with any existing bricks.
+
+```python
+ab_drop('b31', 1)  # Placing the b31 brick at x_position = 1
+```
+
+This will occupy cells (0, 0), (1, 0), (2, 0) on the ground.
+
+Next, we can create the horizontal part of the "L" shape using the b11 brick. We will place it just above the vertical part, at x_position = 2 to maintain stability.
+
+```python
+ab_drop('b11', 2)  # Placing the b11 brick at x_position = 2
+```
+
+This will occupy the cell (2, 1).
+
+The final structure would look like this:
+
+```
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+01100000000000000000
+01100000000000000000
+01100000000000000000
+00000000000000000000
+```
+
+Note: These codes should be written between the last 2 pairs of three backticks(```).

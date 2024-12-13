@@ -1,0 +1,11 @@
+To create the uppercase letter "I" in the given environment, we can use the following stream of ab_drop() commands:
+
+```
+ab_drop('b31',1)  # Place a horizontal block at X=1
+ab_drop('b13',1)  # Place a vertical block at X=1
+ab_drop('b13',1)  # Place another vertical block at X=1
+ab_drop('b31',1)  # Place another horizontal block at X=1
+
+```
+
+Make sure to execute the commands consecutively and in the specified order to accurately represent the letter "I" while maintaining stability within the gravity rules of the game.

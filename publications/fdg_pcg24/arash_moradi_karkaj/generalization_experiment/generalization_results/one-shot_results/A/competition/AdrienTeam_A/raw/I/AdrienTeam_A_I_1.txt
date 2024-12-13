@@ -1,0 +1,7 @@
+To create a stable structure resembling the letter "I" while following the given constraints, we can use the following `ab_drop()` calls:
+
+```
+ab_drop('b13', 0)
+ab_drop('b13', 0)
+ab_drop('b13', 0)
+```

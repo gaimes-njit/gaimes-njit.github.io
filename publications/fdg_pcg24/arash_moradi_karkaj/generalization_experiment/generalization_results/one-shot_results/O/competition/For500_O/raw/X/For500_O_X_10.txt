@@ -1,0 +1,9 @@
+ab_drop('b31', 9) # Create the left vertical line of the letter X
+ab_drop('b31', 12) # Create the right vertical line of the letter X
+ab_drop('b13', 9) # Extend the left vertical line downwards
+ab_drop('b13', 12) # Extend the right vertical line downwards
+ab_drop('b13', 8) # Create the top left diagonal line of the letter X
+ab_drop('b13', 13) # Create the top right diagonal line of the letter X
+ab_drop('b31', 9) # Create the middle horizontal line of the letter X
+ab_drop('b31', 12) # Create the middle horizontal line of the letter X
+ab_drop('b31', 11) # Create the bottom horizontal line of the letter X

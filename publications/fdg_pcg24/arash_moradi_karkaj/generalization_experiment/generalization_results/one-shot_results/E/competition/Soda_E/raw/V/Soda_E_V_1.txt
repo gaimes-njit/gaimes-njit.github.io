@@ -1,0 +1,26 @@
+To create a capital "V" shape in the level, we can follow the following steps:
+
+1. Start by placing the base of the "V" shape. This can be done by dropping a row block ("b31") at the center of the grid.
+```python
+ab_drop("b31", 9)
+```
+
+2. Next, we need to place the two sides of the "V" shape. These can be done by dropping two column blocks ("b13") on either side of the base, at a distance of 3 units from the center.
+```python
+ab_drop("b13", 6)
+ab_drop("b13", 12)
+```
+
+3. Finally, we can add an additional row block at the top of the "V" shape to make it more stable.
+```python
+ab_drop("b31", 9)
+```
+
+The complete implementation to create the "V" shape would be as follows:
+
+```python
+ab_drop("b31", 9)
+ab_drop("b13", 6)
+ab_drop("b13", 12)
+ab_drop("b31", 9)
+```

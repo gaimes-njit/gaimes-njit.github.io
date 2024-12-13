@@ -1,0 +1,6 @@
+```
+ab_drop("b31", 1)  # Place a horizontal straight block at x=1
+ab_drop("b13", 1)  # Place a vertical straight block at x=1
+ab_drop("b31", 4)  # Place a horizontal straight block at x=4
+ab_drop("b13", 4)  # Place a vertical straight block at x=4
+```

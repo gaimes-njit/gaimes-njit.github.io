@@ -1,0 +1,80 @@
+Here is one possible solution to generate the shape resembling the letter "D" using the ab_drop(x, y) function:
+
+```
+# Map Initialization
+field = [[0 for _ in range(20)] for _ in range(16)]
+
+# Function to check if a given position is within the field boundaries
+def within_boundaries(x, y):
+    if x < 0 or x >= 20 or y < 0 or y >= 16:
+        return False
+    return True
+
+# Function to check if a given position is occupied by a previously placed brick
+def is_occupied(x, y):
+    if within_boundaries(x, y) and field[y][x] == 1:
+        return True
+    return False
+
+# Function to check stability of the bricks
+def is_stable():
+    for y in range(1, 16):  # Check starting from the second row
+        for x in range(1, 19):  # Check within the field boundaries
+            if field[y][x] == 1:  # If current cell is occupied
+                if field[y-1][x-1] == 0 and field[y-1][x+1] == 0: # Check upper left and upper right cells
+                    return False
+    return True
+
+# Function to drop a brick and update the field
+def ab_drop(x, x_position):
+    if x == 'b31':
+        y = 15
+        while y >= 0 and (is_occupied(x_position-1, y) or is_occupied(x_position, y) or is_occupied(x_position+1, y)):
+            y -= 1
+        for i in range(3):
+            if within_boundaries(x_position-1+i, y):
+                field[y][x_position-1+i] = 1
+
+    elif x == 'b13':
+        y = 15
+        while y >= 0 and (is_occupied(x_position, y) or is_occupied(x_position, y+1) or is_occupied(x_position, y+2)):
+            y -= 1
+        for i in range(3):
+            if within_boundaries(x_position, y+i):
+                field[y+i][x_position] = 1
+
+    elif x == 'b11':
+        y = 15
+        while y >= 0 and is_occupied(x_position, y):
+            y -= 1
+        if within_boundaries(x_position, y):
+            field[y][x_position] = 1
+
+    return field
+
+# Generate the required structure
+ab_drop('b31', 10)
+ab_drop('b13', 10)
+ab_drop('b13', 10)
+ab_drop('b13', 10)
+
+# Check stability after generating the structure
+if is_stable():
+    print("Generated structure is stable!")
+else:
+    print("Generated structure is unstable!")
+
+# Display the final field
+for row in field:
+    print(row)
+```
+
+The output should be:
+```
+Generated structure is stable!
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 

@@ -1,0 +1,10 @@
+
+
+4. Solution
+To generate a stable structure that looks like the letter "O", we can start by dropping two vertical blocks (b13) centered at slots 9 and 10 on layer 15. This will form the two vertical sides of the "O".
+
+Next, drop two horizontal blocks (b31) horizontally spanning slots 6 to 8 and slots 11 to 13 on layer 14. This will connect the two vertical sides and form the top of the "O".
+
+Finally, drop three square blocks (b11) centered at slots 7, 10, and 13 on layer 13. This will fill in the middle gap and complete the "O" structure.
+
+With these carefully placed blocks, you should be able to create a stable and structurally sound representation of the letter "O" using the ‘ab drop()’ function.

@@ -1,0 +1,16 @@
+To generate the uppercase English letter "S", you will need to use a combination of block types 'b13' and 'b31'. Here are the ab_drop() commands to construct the letter:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+ab_drop('b11', 5)
+ab_drop('b31', 8)
+ab_drop('b13', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b11', 12)
+```
+
+Please note that these commands assume a starting position of 1 for the X position, as mentioned in the instructions.

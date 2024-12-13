@@ -1,0 +1,5 @@
+ab_drop('b13', 0)  # top horizontal line
+ab_drop('b11', 0)  # top left corner
+ab_drop('b13', 2)  # diagonal line
+ab_drop('b11', 4)  # bottom right corner
+ab_drop('b13', 4)  # bottom horizontal line

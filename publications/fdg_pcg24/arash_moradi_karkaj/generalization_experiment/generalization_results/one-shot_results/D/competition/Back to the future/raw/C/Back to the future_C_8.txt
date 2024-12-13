@@ -1,0 +1,28 @@
+To generate a stable structure that looks like the uppercase character "C" and meets all the hard constraints, we can follow the following steps:
+
+1. Start by initializing the structure as an empty WxH grid using the provided code: 
+
+`structure = [[' ']*W for _ in range(H)]`
+
+2. To ensure stability, we need to carefully drop each block in a way that the structure remains stable. We can achieve this by using the `ab_drop()` function.
+
+3. First, we will drop a b13 block at the bottom-left corner of the structure. This will serve as the base of the "C". The coordinates for this drop will be (0, 0). Call the `ab_drop()` function as follows:
+
+`ab_drop('b13', 0)`
+
+This will drop the b13 block at the bottom-left corner of the structure.
+
+4. Next, we will drop a b31 block just above the base to form the curved part of the "C". This block needs to be supported by another block to ensure stability. We will drop a b11 block at the center of the b31 block to provide support. The coordinates for these drops will be (1, 5) for the b31 block and (2, 5) for the b11 block. Call the `ab_drop()` function as follows:
+
+`ab_drop('b31', 5)`
+`ab_drop('b11', 5)`
+
+This will drop the b31 and b11 blocks at the appropriate positions.
+
+5. Finally, we will drop a b13 block just above the curved part of the "C". This block will complete the shape of the "C". The coordinates for this drop will be (1, 8). Call the `ab_drop()` function as follows:
+
+`ab_drop('b13', 8)`
+
+This will drop the b13 block to complete the shape of the "C".
+
+After following these steps, the structure should resemble the uppercase character "C" and meet all the hard constraints. Note that the exact coordinates for the blocks may vary depending on the implementation of the `ab_drop()` function and the stability checks.

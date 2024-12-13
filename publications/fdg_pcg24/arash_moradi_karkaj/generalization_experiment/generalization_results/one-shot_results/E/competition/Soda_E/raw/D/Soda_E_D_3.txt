@@ -1,0 +1,41 @@
+To build the letter 'D' using the block-stacking technique, we can break it down into two components: the vertical pipe and the bottom semi-circle. 
+
+1. Vertical Pipe:
+To create the vertical pipe, we can use a column block ('b13') and place it at an appropriate position. We will place the column block at the center of the grid, spanning three rows from the bottom to the top of the grid.
+
+```
+ab_drop("b13", 9)
+```
+
+2. Bottom Semi-circle:
+To create the bottom semi-circle, we can use a combination of square blocks ('b11') placed in a circular pattern. Starting from the top-left corner of the semi-circle, we will drop square blocks in a clockwise direction to form the shape of a 'D'.
+
+```
+ab_drop("b11", 11)
+ab_drop("b11", 12)
+ab_drop("b11", 12)
+ab_drop("b11", 13)
+ab_drop("b11", 13)
+ab_drop("b11", 14)
+ab_drop("b11", 14)
+ab_drop("b11", 15)
+ab_drop("b11", 16)
+ab_drop("b11", 16)
+```
+
+Combining both the vertical pipe and the bottom semi-circle, we can form the letter 'D' in the desired orientation.
+
+Complete Implementation:
+```
+ab_drop("b13", 9)
+ab_drop("b11", 11)
+ab_drop("b11", 12)
+ab_drop("b11", 12)
+ab_drop("b11", 13)
+ab_drop("b11", 13)
+ab_drop("b11", 14)
+ab_drop("b11", 14)
+ab_drop("b11", 15)
+ab_drop("b11", 16)
+ab_drop("b11", 16)
+```

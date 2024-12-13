@@ -1,0 +1,3 @@
+ab_drop('b31', 9)  # Drop the left arm of the "X"
+ab_drop('b31', 11)  # Drop the right arm of the "X"
+ab_drop('b13', 10)  # Drop the middle part of the "X"

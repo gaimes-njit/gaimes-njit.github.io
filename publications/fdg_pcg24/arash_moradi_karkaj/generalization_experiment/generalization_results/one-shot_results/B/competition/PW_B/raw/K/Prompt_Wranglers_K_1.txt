@@ -1,0 +1,24 @@
+To generate the uppercase English letter "K", we can follow these steps:
+
+1. Start by creating the left vertical stroke of the letter:
+   - Drop a b13 block at position 1 to create the base of the left vertical stroke.
+
+2. Next, create the diagonal stroke of the letter:
+   - Drop a b11 block at position 2 to create the connection between the left vertical stroke and the diagonal stroke.
+
+3. Now, create the horizontal stroke of the letter:
+   - Drop a b31 block at position 3 to create the base of the horizontal stroke.
+
+4. Finally, complete the right vertical stroke of the letter:
+   - Drop a b13 block at position 4 to create the top of the right vertical stroke.
+
+The stream of commands to generate the letter "K" would look as follows:
+
+```
+ab_drop('b13', 1)
+ab_drop('b11', 2)
+ab_drop('b31', 3)
+ab_drop('b13', 4)
+```
+
+Please note that these commands assume a grid with 20W and 16H, with positions indexed from 1 to 19 and 1 to 15 respectively, and that the stacking and stability rules are followed to avoid invalid shapes.

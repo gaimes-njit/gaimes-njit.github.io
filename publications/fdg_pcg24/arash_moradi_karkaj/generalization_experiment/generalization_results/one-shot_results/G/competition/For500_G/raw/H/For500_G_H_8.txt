@@ -1,0 +1,8 @@
+ab_drop('b11', 10)  # place a single block in the center at slot 10
+ab_drop('b31', 10)  # place a horizontal block centered at slot 10
+ab_drop('b11', 10)  # place a single block in the center at slot 10
+ab_drop('b31', 10)  # place a horizontal block centered at slot 10
+ab_drop('b11', 10)  # place a single block in the center at slot 10
+ab_drop('b13', 8)  # place a vertical block centered at slot 8
+
+# The resulting structure will resemble the capital English letter "H"

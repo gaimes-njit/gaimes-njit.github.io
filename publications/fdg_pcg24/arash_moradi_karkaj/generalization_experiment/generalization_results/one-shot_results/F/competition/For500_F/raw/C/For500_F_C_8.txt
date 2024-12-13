@@ -1,0 +1,5 @@
+ab_drop('b11', 0)  # Place the bottom-left corner of the 'C'
+ab_drop('b13', 0)  # Place the left vertical line of the 'C'
+ab_drop('b31', 2)  # Place the horizontal line of the 'C'
+ab_drop('b13', 0)  # Place the right vertical line of the 'C'
+ab_drop('b11', 0)  # Place the top-right corner of the 'C'

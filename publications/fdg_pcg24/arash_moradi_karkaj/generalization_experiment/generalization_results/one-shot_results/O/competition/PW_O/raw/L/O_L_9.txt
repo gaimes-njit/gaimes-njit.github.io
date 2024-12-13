@@ -1,0 +1,9 @@
+To generate the uppercase letter "L", we will use the following ab_drop() commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 2)
+```
+
+This will create the letter "L" in the Tetris-like environment, following the gravity rules and staying within the allowed space boundaries.

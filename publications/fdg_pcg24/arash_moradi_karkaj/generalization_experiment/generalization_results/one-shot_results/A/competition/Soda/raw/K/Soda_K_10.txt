@@ -1,0 +1,15 @@
+To create the letter K, we can break it down into three blocks: two column blocks for the vertical lines and a row block for the connecting horizontal line.
+
+First, we can drop the left column block at position 5. This will occupy cells (4, 0), (5, 0), and (6, 0).
+
+Next, we drop the right column block at position 8. This will occupy cells (7, 0), (8, 0), and (9, 0).
+
+Finally, we drop the row block at position 7. This will occupy cells (6, 1), (7, 1), and (8, 1).
+
+Here is the complete implementation:
+
+```
+ab_drop("b13", 5)
+ab_drop("b13", 8)
+ab_drop("b31", 7)
+```

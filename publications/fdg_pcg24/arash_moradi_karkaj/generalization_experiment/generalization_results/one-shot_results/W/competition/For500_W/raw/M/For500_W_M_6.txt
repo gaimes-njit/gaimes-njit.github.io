@@ -1,0 +1,5 @@
+ab_drop('b31', 9)  # place the top horizontal bar of the "M"
+ab_drop('b31', 6)  # place the bottom horizontal bar of the "M"
+ab_drop('b11', 6)  # fill the gap between the two horizontal bars of the "M"
+ab_drop('b13', 6)  # place the left vertical bar of the "M"
+ab_drop('b13', 12)  # place the right vertical bar of the "M"

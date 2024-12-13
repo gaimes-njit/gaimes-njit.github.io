@@ -1,0 +1,21 @@
+To generate the uppercase English letter "C" using the given block types, we can follow these steps:
+
+1. Start with the vertical foundation by placing two vertical straight blocks (b13) at positions 1 and 2 along the width:
+```py
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+2. Place a horizontal straight block (b31) on top of the second vertical block at position 5 along the width:
+```py
+ab_drop('b31', 5)
+```
+
+3. Place another vertical straight block (b13) at the top right corner of the previous block, at position 6 along the width:
+```py
+ab_drop('b13', 6)
+```
+
+These commands will create the uppercase English letter "C" within the allowed space boundaries, adhering to the gravity rules.
+
+Let me know if you need further assistance!

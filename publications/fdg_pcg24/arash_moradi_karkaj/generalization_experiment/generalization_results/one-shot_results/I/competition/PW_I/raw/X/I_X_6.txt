@@ -1,0 +1,13 @@
+To create the letter "X" using the mentioned block types, you can use the following stream of commands:
+
+```
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 3)
+ab_drop('b13', 3)
+```
+
+This sequence of commands will build the letter "X" within the allowed space boundaries and ensure stability based on the gravity rules.

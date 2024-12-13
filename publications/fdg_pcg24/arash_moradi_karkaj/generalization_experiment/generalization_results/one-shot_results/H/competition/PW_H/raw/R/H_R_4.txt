@@ -1,0 +1,45 @@
+To generate the uppercase letter "R", we need to stack and arrange the blocks in a specific way. Here are the steps to achieve this:
+
+1. Start by placing two vertical straight blocks (b13) side by side at positions 1 and 2:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+This creates the left vertical stroke of the letter "R".
+
+2. Place a horizontal straight block (b31) across positions 1, 2, and 3, overlapping the top of the left vertical stroke:
+```
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+```
+This creates the top bar of the letter "R".
+
+3. Place another vertical straight block (b13) at position 3, overlapping the right end of the top bar:
+```
+ab_drop('b13', 3)
+```
+This creates the right vertical stroke of the letter "R".
+
+4. Finally, place another horizontal straight block (b31) across positions 2, 3, and 4, just below the top bar and overlapping the right vertical stroke:
+```
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+```
+This creates the bottom bar of the letter "R".
+
+The complete set of commands to generate the uppercase letter "R" is as follows:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+```
+
+Using these commands consecutively will generate the uppercase letter "R" within the defined 20x16 grid while ensuring stability with regard to the gravity rules.

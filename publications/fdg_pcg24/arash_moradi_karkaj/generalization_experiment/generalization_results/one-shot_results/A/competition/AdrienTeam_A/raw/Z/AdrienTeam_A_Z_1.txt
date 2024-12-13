@@ -1,0 +1,10 @@
+```
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop blocks to build "Z" structure
+ab_drop('b13', 1)
+ab_drop('b31', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+```

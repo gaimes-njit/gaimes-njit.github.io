@@ -1,0 +1,10 @@
+To create the capital letter "I" in the level, we can start by placing a row block ('b31') at the center of the level and then adding a column block ('b13') on top of the row block.
+
+Here is the complete implementation to generate the capital letter "I" in the level:
+
+```
+ab_drop("b31", 10)  # Place the row block at x_position=10
+ab_drop("b13", 10)  # Place the column block on top of the row block
+```
+
+This implementation ensures the stability of the blocks and generates the letter "I" in the level.

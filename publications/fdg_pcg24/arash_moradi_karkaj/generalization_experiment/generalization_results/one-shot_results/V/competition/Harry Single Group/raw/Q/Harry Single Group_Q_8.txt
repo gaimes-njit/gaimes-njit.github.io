@@ -1,0 +1,39 @@
+The key to generating the shape resembling the letter "Q" using the ab_drop() function is to carefully plan the placement of each brick. 
+
+To ensure stability, we will stack the bricks in a way that maintains a balance on both sides of the pivot point. In this case, the pivot point will be the center of the Q shape. 
+
+Here is how we can generate the Q shape:
+
+1. Initialize the field by creating an empty 2D array of size 20x16.
+
+```
+field = [[' ' for _ in range(20)] for _ in range(16)]
+```
+
+2. Start by placing the large vertical brick (b13) at the center-bottom of the field.
+
+```
+ab_drop('b13', 9)
+```
+
+This will place the brick at the y-axis position 9, occupying cells (9, 0), (9, 1), and (9, 2).
+
+3. Next, place the small horizontal brick (b11) to the right of the vertical brick, slightly above its center.
+
+```
+ab_drop('b11', 10)
+```
+
+This will place the brick at the y-axis position 10, occupying cell (10, 3).
+
+4. Finally, place the large horizontal brick (b31) on top of the vertical brick, spanning across its entire width, slightly shifted to the right.
+
+```
+ab_drop('b31', 8)
+```
+
+This will place the brick at the y-axis position 8, occupying cells (8, 0), (9, 0), (10, 0), (11, 0), (12, 0), (13, 0), and (14, 0).
+
+The final structure will resemble the letter "Q" and will satisfy the stability requirements since the bricks are balanced around the pivot point.
+
+Note: Ensure that the ab_drop() function takes care of avoiding boundary collisions and stopping when cells are already occupied.

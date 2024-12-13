@@ -1,0 +1,62 @@
+To generate a stable structure that resembles the character "X" while meeting all hard constraints, we can follow these steps:
+
+1. Start by initializing the structure as an empty WxH grid using the provided code.
+
+2. Place the first b31 block at the bottom layer (layer 0) so that it spans across the middle slots. This ensures stability by providing a solid base.
+
+3. Place two b11 blocks above the b31 block at an angle to form the diagonal lines of the "X" character. These blocks should be placed as low as possible to reduce the risk of collapsing.
+
+4. Place a b31 block on top of the two b11 blocks to connect them and complete the diagonal lines of the "X" character.
+
+5. Place two b11 blocks diagonally opposite to the existing diagonal lines. These blocks should be at a higher layer than the previous blocks to avoid separation of the structure.
+
+6. Place a b31 block on top of the two new b11 blocks to connect them and complete the remaining diagonal lines of the "X" character.
+
+7. Finally, use the ab_drop() function to drop the blocks onto the structure in the determined positions and orders. The dropping positions and orders are crucial for meeting the stability constraint.
+
+Here's an example code that demonstrates these steps:
+
+```python
+W = 20
+H = 16
+
+# initialize the structure as an empty WxH grid
+structure = [[' ']*W for _ in range(H)]
+
+def ab_drop(x, y):
+    # x is the block type
+    # y is the slot number from 0 to W-1 where the block center is aligned
+    
+    # initialize the drop position at the top of the map
+    drop_pos = (H-1, y)
+    
+    # drop the block from the top and move it down until it lands on the base or another block
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    
+    # place the block on the structure
+    structure[drop_pos[0]][drop_pos[1]] = x
+
+# Place the first b31 block at the bottom layer to form a solid base
+ab_drop('b31', W//2 - 1)
+ab_drop('b31', W//2)
+ab_drop('b31', W//2 + 1)
+
+# Place two b11 blocks above the base to form the diagonal lines of the "X" character
+ab_drop('b11', W//2 - 2)
+ab_drop('b11', W//2 + 2)
+
+# Place a b31 block on top of the two b11 blocks to connect them
+ab_drop('b31', W//2)
+
+# Place two b11 blocks diagonally opposite to the existing diagonal lines
+ab_drop('b11', W//2 - 2)
+ab_drop('b11', W//2 + 2)
+
+# Place a b31 block on top of the two b11 blocks to connect them
+ab_drop('b31', W//2)
+```
+
+After running this code, the `structure` grid will represent a stable structure resembling the character "X" that meets all the given hard constraints.

@@ -1,0 +1,18 @@
+To create the structure "Y" inside a 20*16 box using the given block types, you can use the following sequence of ab_drop commands:
+
+1. Place the top left block of the Y - Type "b11" at position (6, 0):
+   ab_drop('b11', 6)
+
+2. Place the top right block of the Y - Type "b11" at position (14, 0):
+   ab_drop('b11', 14)
+
+3. Place the middle vertical block of the Y - Type "b31" at position (10, 1):
+   ab_drop('b31', 10)
+
+4. Place the bottom left block of the Y - Type "b13" at position (8, 2):
+   ab_drop('b13', 8)
+
+5. Place the bottom right block of the Y - Type "b13" at position (12, 2):
+   ab_drop('b13', 12)
+
+This sequence of commands will create a structure exactly like the letter "Y" inside the 20*16 box.

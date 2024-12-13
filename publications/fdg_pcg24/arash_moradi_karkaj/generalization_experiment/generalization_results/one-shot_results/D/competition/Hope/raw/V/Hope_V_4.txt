@@ -1,0 +1,39 @@
+To create a "V" shape inside a 20*16 box using ab_drop() function, you can follow these steps:
+
+1. Drop a single block (b11) at position (9, 0).
+       ab_drop('b11', 9)
+
+2. Drop a single block (b11) at position (10, 1).
+       ab_drop('b11', 10)
+
+3. Drop a 3*1 block (b31) at position (8, 2).
+       ab_drop('b31', 8)
+
+4. Drop a 3*1 block (b31) at position (11, 2).
+       ab_drop('b31', 11)
+
+5. Drop a single block (b11) at position (7, 3).
+       ab_drop('b11', 7)
+
+6. Drop a single block (b11) at position (12, 3).
+       ab_drop('b11', 12)
+
+7. Drop a single block (b11) at position (6, 4).
+       ab_drop('b11', 6)
+
+8. Drop a single block (b11) at position (13, 4).
+       ab_drop('b11', 13)
+
+9. Drop a single block (b11) at position (5, 5).
+       ab_drop('b11', 5)
+
+10. Drop a single block (b11) at position (14, 5).
+        ab_drop('b11', 14)
+
+11. Drop a single block (b11) at position (4, 6).
+        ab_drop('b11', 4)
+
+12. Drop a single block (b11) at position (15, 6).
+        ab_drop('b11', 15)
+
+The structure created with these commands will form a "V" shape inside the 20*16 box.

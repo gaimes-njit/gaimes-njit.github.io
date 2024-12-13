@@ -1,0 +1,18 @@
+To generate the uppercase letter "V" using the given block types, we can follow these steps:
+
+1. Build the left side of the letter "V":
+  - Place a vertical straight block (b13) at position 1.
+  - Place another vertical straight block (b13) at position 3.
+
+2. Build the right side of the letter "V":
+  - Place a horizontal straight block (b31) at position 2.
+
+By following these steps, we will have constructed the uppercase letter "V" using the given block types.
+
+Here are the required ab_drop() commands:
+
+```
+ab_drop('b13',1)
+ab_drop('b13',3)
+ab_drop('b31',2)
+```

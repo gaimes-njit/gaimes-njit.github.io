@@ -1,0 +1,25 @@
+To generate the uppercase letter "G", we can use a combination of block types b31 and b13. Here are the commands to create the letter "G":
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 3)
+ab_drop('b13', 0)
+ab_drop('b31', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+ab_drop('b11', 5)
+ab_drop('b31', 1)
+```
+
+Explanation:
+1. Place the first horizontal straight block (b31) at position 1.
+2. Place the first vertical straight block (b13) at position 0.
+3. Place the second vertical straight block (b13) at position 3.
+4. Place the third vertical straight block (b13) at position 0.
+5. Place the second horizontal straight block (b31) at position 1.
+6. Add four 1x1 square blocks (b11) starting from position 2 to create the top portion of the letter "G".
+7. Place the final horizontal straight block (b31) at position 1 to complete the bottom portion of the letter "G".
+
+Please ensure to follow the given instructions and constraints while executing the commands to create the letter "G".

@@ -1,0 +1,16 @@
+To generate the uppercase English letter "T", we can use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b31', 8)
+ab_drop('b13', 7)
+ab_drop('b13', 9)
+ab_drop('b31', 8)
+```
+
+Explanation of the sequence:
+1. The first command places a horizontal straight block ('b31') at position 8 on the width.
+2. The second command places a vertical straight block ('b13') at position 7 on the width.
+3. The third command places a vertical straight block ('b13') at position 9 on the width.
+4. Lastly, the fourth command places another horizontal straight block ('b31') at position 8 on the width, completing the letter "T".
+
+This sequence of commands ensures that the blocks are stacked in a stable manner, following the gravity rules, and the resulting shape represents the uppercase English letter "T" within the allowed space boundaries.

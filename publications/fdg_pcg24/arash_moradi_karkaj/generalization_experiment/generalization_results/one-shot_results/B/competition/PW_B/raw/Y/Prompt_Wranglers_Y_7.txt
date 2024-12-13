@@ -1,0 +1,40 @@
+To generate the uppercase English letter "Y" in the Tetris-like environment, we can follow these steps:
+
+1. Start by creating the bottom part of the letter "Y". Place a horizontal straight block (b31) at position 1:
+```
+ab_drop('b31', 1)
+```
+
+2. Move to the next structural layer and add two vertical straight blocks (b13) at positions 0 and 2:
+```
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+```
+
+3. Place another horizontal straight block (b31) at position 1 on top of the previous layer:
+```
+ab_drop('b31', 1)
+```
+
+4. Add another layer of two vertical straight blocks (b13) at positions 0 and 2 on top of the previous layer:
+```
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+```
+
+5. Finally, create the top part of the letter "Y" by placing a horizontal straight block (b31) at position 1 on top of the previous layer:
+```
+ab_drop('b31', 1)
+```
+
+The complete set of commands to generate the letter "Y" in the Tetris-like environment would be:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```

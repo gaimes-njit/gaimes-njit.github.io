@@ -1,0 +1,69 @@
+To generate a structure that resembles the character "L" while meeting all the constraints, we can follow these steps:
+
+1. Initialize the structure as an empty grid.
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Define the function `ab_drop(x, y)` to vertically drop a block onto the structure.
+```python
+def ab_drop(x, y):
+    drop_pos = (H-1, y)
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    structure[drop_pos[0]][drop_pos[1]] = x
+```
+
+3. Place b11 blocks in slots 0 and 1 of the bottom layer to create a solid base.
+```python
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+```
+
+4. Place a b31 block on top of the solid base.
+```python
+ab_drop('b31', 1)
+```
+
+5. Place a b13 block on top of the b31 block, aligned with the left side.
+```python
+ab_drop('b13', 0)
+```
+
+6. The resulting structure should resemble the character "L".
+
+The complete code to generate the structure is as follows:
+
+```python
+W = 20  # Width of the map
+H = 16  # Height of the map
+
+# Initialize the structure as an empty grid
+structure = [[' ']*W for _ in range(H)]
+
+def ab_drop(x, y):
+    drop_pos = (H-1, y)
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    structure[drop_pos[0]][drop_pos[1]] = x
+
+# Place b11 blocks in slots 0 and 1 of the bottom layer
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+
+# Place a b31 block on top of the solid base
+ab_drop('b31', 1)
+
+# Place a b13 block on top of the b31 block, aligned with the left side
+ab_drop('b13', 0)
+
+# Print the resulting structure
+for row in structure:
+    print(' '.join(row))
+```
+
+This code will generate a stable structure that resembles the character "L" while meeting all the hard constraints.

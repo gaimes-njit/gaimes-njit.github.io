@@ -1,0 +1,21 @@
+To create a structure that looks like a capital "O" in the level, we can start by dropping the bottom row of blocks first, followed by the middle rows, and finally the top row. This will ensure stability and create the desired shape.
+
+Here is the complete implementation:
+
+```python
+# Drop bottom row
+ab_drop("b31", 8)
+ab_drop("b31", 10)
+
+# Drop middle rows
+ab_drop("b13", 6)
+ab_drop("b11", 8)
+ab_drop("b11", 10)
+ab_drop("b13", 12)
+
+# Drop top row
+ab_drop("b31", 8)
+ab_drop("b31", 10)
+```
+
+This implementation follows the bottom-to-top approach, ensuring stability and creating a structure that resembles the letter "O".

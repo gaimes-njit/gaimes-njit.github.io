@@ -1,0 +1,27 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the base of the T structure
+ab_drop('b11', 9)
+
+# Place the vertical stem of the T structure
+ab_drop('b13', 9)
+
+# Place the horizontal bar of the T structure
+ab_drop('b31', 7)
+ab_drop('b31', 8)
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+ab_drop('b31', 11)
+
+# Place the top part of the T structure
+ab_drop('b31', 9)
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+ab_drop('b11', 7)
+ab_drop('b11', 11)
+
+# Output the structure
+for row in structure:
+    print(row)
+```

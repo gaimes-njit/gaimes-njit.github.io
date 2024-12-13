@@ -1,0 +1,9 @@
+To create the uppercase letter "N", we can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+ab_drop('b31', 7)
+```
+
+This will first create the left vertical stroke of the letter "N" using the b31 block type starting from position 1. Then, it will create the diagonal stroke of the letter "N" using the b13 block type starting from position 4. Finally, it will create the right vertical stroke of the letter "N" using the b31 block type starting from position 7.

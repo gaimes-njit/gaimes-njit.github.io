@@ -1,0 +1,25 @@
+To generate a stable structure that looks like the uppercase character "P" using the `ab_drop()` function and meet all the hard constraints, we can follow the steps below:
+
+1. Initialize the structure as an empty WxH grid using the provided code:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start building the structure from bottom to top:
+- First, we need to drop a b31 block at the center slot to form the vertical line of the "P" shape. We can do this by calling `ab_drop('b31', W // 2)` and storing the drop coordinates.
+```
+ab_drop('b31', W // 2)
+```
+
+- Next, we need to drop two b13 blocks to form the horizontal line of the "P" shape. We can do this by calling `ab_drop('b13', W // 2 + 1)` and `ab_drop('b13', W // 2 - 1)` and storing the drop coordinates.
+```
+ab_drop('b13', W // 2 + 1)
+ab_drop('b13', W // 2 - 1)
+```
+Note: We drop the b13 blocks on either side of the b31 block to support it and make the structure stable.
+
+3. Repeat steps 2 multiple times to ensure diversity in the generated structures. Each time, before calling `ab_drop()`, check the stability of the current structure by ensuring that there is support for any blocks that could potentially collapse.
+
+4. Finally, check whether the generated structure satisfies the soft constraint of not intruding on the boundary. If any block intrudes on the boundary, adjust the drop positions or modify the structure according to the condition.
+
+By following these steps and considering the stability and boundary constraints, we can generate a stable structure that looks like the uppercase character "P" while meeting all the hard constraints.

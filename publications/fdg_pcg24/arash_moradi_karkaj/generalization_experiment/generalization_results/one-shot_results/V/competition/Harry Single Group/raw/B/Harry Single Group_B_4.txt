@@ -1,0 +1,38 @@
+To generate the shape resembling the letter "B", we will use the available props and the ab_drop() function. 
+
+First, we initialize the field by creating a 20x16 grid filled with zeros. We will represent empty cells with 0 and occupied cells with 1.
+
+```
+field = [[0] * 20 for _ in range(16)]
+```
+
+Next, we start placing the bricks on the field using the ab_drop() function. We will follow a step-by-step approach to ensure stability and avoid boundary collisions.
+
+Step 1: Place the left vertical part of the "B" shape.
+```
+ab_drop('b13', 2)  # Place the first vertical brick on x_position = 2
+ab_drop('b13', 1)  # Place the second vertical brick on x_position = 1
+```
+After this step, the cells (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), and (2, 2) will be occupied.
+
+Step 2: Place the horizontal part of the "B" shape.
+```
+ab_drop('b31', 3)  # Place the horizontal brick starting at x_position = 3
+```
+After this step, the cells (3, 3), (4, 3), (5, 3), (6, 3), and (7, 3) will be occupied.
+
+Step 3: Adjust the position of the horizontal part.
+```
+ab_drop('b11', 2)  # Place a square brick at the bottom-left corner of the horizontal part
+ab_drop('b11', 8)  # Place a square brick at the bottom-right corner of the horizontal part
+```
+After this step, the cells (2, 0), (8, 0) will be occupied.
+
+The final structure resembling the letter "B" will occupy the following cells:
+```
+(1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (2, 0), (8, 0)
+```
+
+Please note that this is just one way to generate the "B" shape using the given props and function. There may be alternative solutions.
+
+Make sure to execute the code within the specified format and observe the important notes to ensure stability and boundary avoidance.

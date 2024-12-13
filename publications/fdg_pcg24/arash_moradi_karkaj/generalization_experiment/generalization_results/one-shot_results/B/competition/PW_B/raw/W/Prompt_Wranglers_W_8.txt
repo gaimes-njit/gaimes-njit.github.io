@@ -1,0 +1,16 @@
+Here is an example of how to generate the uppercase English letter "W":
+
+Always start from the bottom to build a symmetrical and balanced foundation:
+ab_drop('b31', 1)
+Next, place two vertical blocks on top of the previous layer, slightly offset to form the two bottom points of the "W":
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+Then, place a horizontal block on top of the two vertical blocks to form the middle line of the "W":
+ab_drop('b31', 0)
+Next, place two vertical blocks on top of the middle line, aligned with the bottom points:
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+Finally, place a horizontal block on top of the two vertical blocks to form the top line of the "W":
+ab_drop('b31', 1)
+
+This sequence of commands should generate the uppercase English letter "W" in the defined environment while maintaining structural stability and balance.

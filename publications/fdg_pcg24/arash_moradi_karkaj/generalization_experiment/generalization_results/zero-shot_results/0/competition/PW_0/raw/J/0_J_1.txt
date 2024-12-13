@@ -1,0 +1,16 @@
+To generate the uppercase letter "J" using the given block types and environment, we need to stack the blocks in a specific pattern. Here is the stream of commands using the ab_drop() function to construct the letter "J":
+
+```
+ab_drop('b31', 1)  # Place the horizontal block at position 1
+ab_drop('b13', 1)  # Place the vertical block at position 1
+ab_drop('b11', 2)  # Place the square block at position 2
+ab_drop('b11', 2)  # Place another square block at position 2
+ab_drop('b11', 2)  # Place another square block at position 2
+```
+
+Explanation:
+- We start by placing the horizontal block ('b31') at position 1 to form the top part of the letter J.
+- Then, we place the vertical block ('b13') at position 1 to form the stem of the letter J.
+- Finally, we stack three square blocks ('b11') at position 2 to complete the letter J's body.
+
+Make sure to follow the gravity rules by stacking the blocks on top of each other without intruding the height boundary.

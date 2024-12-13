@@ -1,0 +1,55 @@
+First, we need to create the base of the "Q" structure using a row block (b31). The base will be 5 cells long, centered at the x_position=9.
+
+```
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+```
+
+Next, we need to create the vertical part of the "Q" structure using a column block (b13). The vertical part will extend 10 cells high, starting at the (x_position=9).
+
+```
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+```
+
+Finally, we need to create the top part of the "Q" structure using a row block (b31). The top part will be 3 cells long, centered at the x_position=9.
+
+```
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+```
+
+The complete implementation:
+
+```
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+```

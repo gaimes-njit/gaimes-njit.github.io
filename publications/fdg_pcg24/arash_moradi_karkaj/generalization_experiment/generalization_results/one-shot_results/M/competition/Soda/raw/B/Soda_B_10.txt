@@ -1,0 +1,31 @@
+To create a "B" shape, we can break it down into two parts: the vertical bar and the top horizontal line. Let's start by creating the vertical bar using the "b13" block.
+
+```
+ab_drop("b13", 4)
+ab_drop("b13", 4)
+```
+
+This will create a stable vertical bar on the left side of the grid. 
+
+Next, let's create the top horizontal line using the "b31" block.
+
+```
+ab_drop("b31", 7)
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+```
+
+This will create a stable top horizontal line. 
+
+Combining both parts, we will have a stable "B" shape.
+
+```
+ab_drop("b13", 4)
+ab_drop("b13", 4)
+
+ab_drop("b31", 7)
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+```
+
+Make sure to drop the blocks in the given order and positions to ensure stability and similarity to the "B" shape.

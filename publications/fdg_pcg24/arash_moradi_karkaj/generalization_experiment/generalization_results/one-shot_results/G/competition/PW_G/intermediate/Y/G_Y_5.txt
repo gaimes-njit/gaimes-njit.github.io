@@ -1,0 +1,8 @@
+Y: To form the uppercase letter Y, the following ab_drop commands can be used:
+
+ab_drop('b31', 1)  # Place the horizontal block at position 1
+ab_drop('b13', 1)  # Place the vertical block at position 1
+ab_drop('b13', 3)  # Place the vertical block at position 3
+ab_drop('b31', 2)  # Place the horizontal block at position 2
+
+Please note that these commands should be executed consecutively within the backticks (```).

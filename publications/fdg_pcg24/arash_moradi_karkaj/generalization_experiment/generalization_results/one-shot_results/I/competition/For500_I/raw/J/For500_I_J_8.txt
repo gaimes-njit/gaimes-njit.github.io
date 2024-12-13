@@ -1,0 +1,9 @@
+ab_drop('b11', 10)  # Drop the first block in the center of the map
+ab_drop('b13', 10)  # Drop a vertical block on top of the previous block
+ab_drop('b13', 10)  # Drop another vertical block on top of the previous block
+ab_drop('b31', 8)   # Drop a horizontal block to the left of the vertical blocks
+ab_drop('b31', 12)  # Drop another horizontal block to the right of the vertical blocks
+ab_drop('b31', 10)  # Drop another horizontal block on top of the vertical blocks
+ab_drop('b11', 10)  # Drop a block in the center of the horizontal block
+ab_drop('b31', 8)   # Drop a horizontal block to the left of the previous block
+ab_drop('b31', 12)  # Drop another horizontal block to the right of the previous block

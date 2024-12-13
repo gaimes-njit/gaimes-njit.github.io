@@ -1,0 +1,11 @@
+To create the uppercase letter "F", you can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+ab_drop('b13', 2)
+```
+
+This will create the letter "F" in the grid.

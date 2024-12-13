@@ -1,0 +1,12 @@
+To generate the capital letter "E", you can use the ab_drop() commands in the following sequence:
+
+```
+ab_drop('b31', 1)    # Create the horizontal foundation
+ab_drop('b13', 1)    # Create the vertical bar on the left
+ab_drop('b13', 2)    # Create the second vertical bar on the left
+ab_drop('b31', 1)    # Create the horizontal bar at the top
+ab_drop('b13', 1)    # Create the vertical bar in the center
+ab_drop('b13', 2)    # Create the second vertical bar in the center
+```
+
+Make sure to follow the gravity rules and stack the blocks one by one in the given order.

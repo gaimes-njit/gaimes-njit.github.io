@@ -1,0 +1,21 @@
+To generate the uppercase letter "U" using the given block types and commands, you can follow these steps:
+
+1. Start by placing a 1x1 square block at position (4,1): `ab_drop('b11',4)`
+2. Place another 1x1 square block at position (6,1): `ab_drop('b11',6)`
+3. Add a horizontal straight block of width 3 at position (5,1): `ab_drop('b31',5)`
+4. Place another 1x1 square block at position (4,2): `ab_drop('b11',4)`
+5. Place another 1x1 square block at position (5,2): `ab_drop('b11',5)`
+6. Add another horizontal straight block of width 3 at position (5,2): `ab_drop('b31',5)`
+7. Finally, place two more 1x1 square blocks at positions (4,3) and (6,3): `ab_drop('b11',4)` and `ab_drop('b11',6)`
+
+The resulting stream of commands to generate the letter "U" would be:
+```
+ab_drop('b11',4)
+ab_drop('b11',6)
+ab_drop('b31',5)
+ab_drop('b11',4)
+ab_drop('b11',5)
+ab_drop('b31',5)
+ab_drop('b11',4)
+ab_drop('b11',6)
+```

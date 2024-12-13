@@ -1,0 +1,9 @@
+To create the letter "V" using the given block types, we need to place the blocks in a specific sequence. Here is the stream of `ab_drop()` commands to construct the letter "V":
+
+```
+ab_drop("b31", 1)  # Place the first horizontal block at position 1
+ab_drop("b13", 2)  # Place the vertical block next to the horizontal block
+ab_drop("b31", 4)  # Place the second horizontal block at position 4
+```
+
+By following these commands, the blocks will be placed in such a way that they form the letter "V" within the allowed space boundaries.

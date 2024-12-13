@@ -1,0 +1,10 @@
+To create the structure exactly like "W" inside a 20*16 box, you can use the following ab_drop commands:
+
+ab_drop('b31', 1)  # Top-left vertical line
+ab_drop('b31', 8)  # Top-right vertical line
+ab_drop('b13', 2)  # Top middle section
+ab_drop('b13', 7)  # Bottom middle section
+ab_drop('b31', 14)  # Bottom-left vertical line
+ab_drop('b31', 19)  # Bottom-right vertical line
+
+This arrangement of ab_drop commands will create the shape of "W" inside the given 20*16 box.

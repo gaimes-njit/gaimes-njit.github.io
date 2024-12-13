@@ -1,0 +1,32 @@
+To generate a stable structure that resembles the character "L" while meeting all hard constraints, we need to carefully plan the dropping positions and order of the blocks. Here is a step-by-step approach to achieve this:
+
+Step 1: Initialize the structure as an empty grid:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Drop the b13 block to form the vertical part of the "L" shape:
+```python
+ab_drop('b13', 3)
+```
+
+Step 3: Drop the b31 block on top of the b13 block, aligning its center with the b13 block:
+```python
+ab_drop('b31', 3)
+```
+Note: The b31 block needs to be dropped on a solid base (b11 or b13 blocks) to maintain stability.
+
+Step 4: Drop the b11 block on top of the b31 block:
+```python
+ab_drop('b11', 4)
+```
+
+Step 5: Drop the b11 block on top of the b11 block:
+```python
+ab_drop('b11', 4)
+```
+Note: This step is optional and may vary depending on the desired height of the structure.
+
+Step 6: Check the stability and adjust the dropping positions if needed. Make sure that the blocks are placed as low as possible and the structure is not separated.
+
+This step-by-step approach will generate a stable structure resembling the character "L" while meeting all hard constraints. You can modify the dropping positions and order to create different structures based on your requirements.

@@ -1,0 +1,12 @@
+To generate the uppercase English letter "U", you can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+ab_drop('b13', 7)
+ab_drop('b31', 10)
+ab_drop('b13', 13)
+ab_drop('b13', 16)
+```
+
+This sequence of commands will construct the letter "U" within the defined grid boundaries while adhering to the gravity rules.

@@ -1,0 +1,27 @@
+To generate the uppercase letter "B", you will need to use the following ab_drop() commands:
+
+1. First, place a horizontal straight block (b31) at position 2:
+ab_drop('b31', 2)
+
+2. Then, place a vertical straight block (b13) at position 1:
+ab_drop('b13', 1)
+
+3. Next, place another vertical straight block (b13) at position 2:
+ab_drop('b13', 2)
+
+4. Now, place two 1x1 square blocks (b11) at position 4:
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+
+5. Finally, place another horizontal straight block (b31) at position 2:
+ab_drop('b31', 2)
+
+The stream of commands to generate the uppercase letter "B" would be:
+```
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b31', 2)
+```

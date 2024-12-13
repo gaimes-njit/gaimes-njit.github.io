@@ -1,0 +1,64 @@
+To generate a stable structure that resembles the character "Y" while meeting all the hard constraints, the following steps can be followed:
+
+Step 1: Initialize the structure as an empty grid with dimensions W x H.
+
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Place the bottom horizontal block (b31) at a suitable slot to form the base of the structure. This block should be placed on layer 0 to ensure stability.
+
+```python
+ab_drop('b31', X)
+```
+
+Step 3: Place two vertical blocks (b13) on either side of the base, overlapping with the bottom horizontal block. These blocks should also be placed on layer 0 for stability.
+
+```python
+ab_drop('b13', X - 1)
+ab_drop('b13', X + 1)
+```
+
+Step 4: Place a square block (b11) above the top of the vertical blocks, aligned with the center of the structure. This block should be placed on layer 1 to maintain stability.
+
+```python
+ab_drop('b11', X)
+```
+
+Step 5: Place another square block (b11) above the previous one, shifted to the left or right depending on the desired width of the structure. This block should be placed on layer 2 for stability.
+
+```python
+ab_drop('b11', X - 1)
+```
+
+Step 6: Repeat step 5 to add more square blocks above the previous one, alternating the sides each time, until the desired height of the structure is reached. Each new block should be placed one layer above the previous block.
+
+```python
+ab_drop('b11', X + 1)
+```
+
+Step 7: Place a vertical block (b13) above the top square block, centered with the structure. This block should be placed on the layer above the top square block for stability.
+
+```python
+ab_drop('b13', X)
+```
+
+Step 8: Repeat steps 5 to 7 on the left and right sides of the structure to create the branches of the character "Y". Use the same drop positions but change the block types accordingly.
+
+```python
+# Left branch
+ab_drop('b11', X - 1)
+ab_drop('b11', X - 2)
+ab_drop('b11', X - 3)
+ab_drop('b13', X - 2)
+
+# Right branch
+ab_drop('b11', X + 1)
+ab_drop('b11', X + 2)
+ab_drop('b11', X + 3)
+ab_drop('b13', X + 2)
+```
+
+Step 9: Optionally, add more blocks to modify the shape or width of the character "Y" as desired.
+
+The final structure should resemble the character "Y" and meet all the given hard constraints.

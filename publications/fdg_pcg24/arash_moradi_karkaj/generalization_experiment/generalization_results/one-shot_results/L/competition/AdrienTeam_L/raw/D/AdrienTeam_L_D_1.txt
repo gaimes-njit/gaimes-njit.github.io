@@ -1,0 +1,28 @@
+Here is one possible solution to create a stable structure resembling "D" while satisfying all the specified constraints:
+
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Drop b31 block
+ab_drop('b31', 2)
+
+# Drop b13 block
+ab_drop('b13', 1)
+
+# Drop horizontal blocks for the top part
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+ab_drop('b11', 3)
+
+# Drop vertical blocks for the middle part
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+
+# Drop horizontal blocks for the bottom part
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+ab_drop('b11', 3)
+```
+
+This solution uses the `ab_drop()` function to drop blocks in a specific order and position to create a stable structure resembling the letter "D". The blocks are dropped starting from layer 0 and progressing upwards to layer 15. The structure is created by dropping blocks in a strategic pattern to achieve the desired shape.

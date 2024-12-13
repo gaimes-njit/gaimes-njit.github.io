@@ -1,0 +1,10 @@
+# Steps to create a capital "K" structure:
+
+1. Create the vertical bar of the "K":
+   ab_drop("b31", 8)
+   ab_drop("b11", 9)
+   
+2. Create the horizontal bar of the "K":
+   ab_drop("b13", 8)
+   ab_drop("b11", 9)
+   ab_drop("b13", 10)

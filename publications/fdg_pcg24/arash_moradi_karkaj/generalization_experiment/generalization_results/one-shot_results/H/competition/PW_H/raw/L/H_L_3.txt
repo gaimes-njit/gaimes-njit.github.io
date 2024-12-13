@@ -1,0 +1,12 @@
+To generate the uppercase letter "L", you can use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b13',3)
+ab_drop('b31',3)
+```
+
+This will first create the vertical part of the "L" using three vertical straight blocks (b13) placed sequentially from left to right. Then, a horizontal straight block (b31) will be placed at the top-right corner to complete the shape.
+
+Please note that the instructions assume the starting X position is 1, so all blocks will be placed accordingly.

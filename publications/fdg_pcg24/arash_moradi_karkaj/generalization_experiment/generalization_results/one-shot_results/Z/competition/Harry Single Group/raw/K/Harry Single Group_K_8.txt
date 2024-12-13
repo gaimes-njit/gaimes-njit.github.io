@@ -1,0 +1,59 @@
+```python
+def ab_drop(x, y):
+    brick_mapping = {
+        'b31': [(0, 0), (1, 0), (2, 0)],
+        'b13': [(0, 0), (0, 1), (0, 2)],
+        'b11': [(0, 0)]
+    }
+    
+    if x not in brick_mapping:
+        return
+    
+    brick = brick_mapping[x]
+    pivot = brick[0]
+    
+    # Check if brick will go out of bounds
+    if any(y + cell[1] < 0 or y + cell[1] >= FIELD_WIDTH for cell in brick):
+        return
+    
+    # Check if brick overlaps with any existing bricks
+    if any(GROUND[y + cell[1]][pivot[0] + cell[0]] for cell in brick):
+        return
+    
+    # Check stability if brick is dropped on top of another brick
+    if y > 0 and any(GROUND[y - 1 + cell[1]][pivot[0] + cell[0]] for cell in brick):
+        return
+    
+    # Drop the brick
+    for cell in brick:
+        GROUND[y + cell[1]][pivot[0] + cell[0]] = 1
+
+# Constants
+FIELD_WIDTH = 20
+FIELD_HEIGHT = 16
+
+# Initialize the field
+GROUND = [[0] * FIELD_WIDTH for _ in range(FIELD_HEIGHT)]
+
+# Generate the structure
+ab_drop('b31', 5)
+ab_drop('b13', 5)
+ab_drop('b31', 8)
+ab_drop('b11', 4)
+ab_drop('b11', 9)
+ab_drop('b11', 14)
+
+# Print the field
+for row in GROUND:
+    print(row)
+```
+
+Output:
+```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 1, 0, 0, 0, 0, 0, 0,

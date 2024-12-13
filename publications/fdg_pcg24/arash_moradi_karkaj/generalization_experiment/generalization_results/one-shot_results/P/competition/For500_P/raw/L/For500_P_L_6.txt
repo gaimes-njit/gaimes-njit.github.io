@@ -1,0 +1,8 @@
+ab_drop('b31',8) # drop horizontal block in the center
+ab_drop('b13',10) # drop vertical block on top
+ab_drop('b11',10) # drop square block on top
+ab_drop('b13',10) # drop vertical block on top
+ab_drop('b31',8) # drop horizontal block in the center
+ab_drop('b13',5) # drop vertical block on top
+ab_drop('b13',12) # drop vertical block on top
+ab_drop('b31',8) # drop horizontal block in the center

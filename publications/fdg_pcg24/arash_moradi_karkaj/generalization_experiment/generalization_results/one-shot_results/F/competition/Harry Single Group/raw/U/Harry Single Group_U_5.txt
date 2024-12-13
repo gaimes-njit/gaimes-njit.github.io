@@ -1,0 +1,73 @@
+Here is the code to generate the shape resembling the letter "U" on the field:
+
+```python
+# Map initialization
+field = [[0 for _ in range(20)] for _ in range(16)]
+
+# Function to check stability of bricks
+def is_stable(brick):
+    for y in range(len(brick)):
+        for x in range(len(brick[y])):
+            if brick[y][x] == 1:
+                if y == 0 or brick[y-1][x] == 0:
+                    return False
+    return True
+
+# Function to check boundary collisions
+def is_within_boundary(x, y, brick):
+    for i in range(len(brick)):
+        for j in range(len(brick[i])):
+            if brick[i][j] == 1:
+                if x+j < 0 or x+j >= 20 or y-i < 0:
+                    return False
+    return True
+
+# Function to place brick on the field
+def place_brick(x, y, brick):
+    for i in range(len(brick)):
+        for j in range(len(brick[i])):
+            if brick[i][j] == 1:
+                field[y-i][x+j] = 1
+
+# Function to generate shape resembling the letter "U"
+def generate_U_shape():
+    # Place first b31 brick
+    ab_drop('b31', 5)
+
+    # Place second b31 brick
+    ab_drop('b31', 10)
+
+    # Place vertical bricks to complete the sides of the "U" shape
+    for i in range(1, 10):
+        ab_drop('b13', 4-i)
+        ab_drop('b13', 10+i)
+
+    # Check stability and adjust brick positions if necessary
+    for i in range(15):
+        for j in range(20):
+            brick = [
+                [field[i-2][j], field[i-1][j], field[i][j]],
+                [field[i-3][j], field[i][j], field[i+1][j]],
+            ]
+            if not is_stable(brick):
+                # Move brick left until stable
+                while not is_stable(brick) and is_within_boundary(j-1, i, brick):
+                    j -= 1
+                    brick = [
+                        [field[i-2][j], field[i-1][j], field[i][j]],
+                        [field[i-3][j], field[i][j], field[i+1][j]],
+                    ]
+                # Move brick right until stable
+                while not is_stable(brick) and is_within_boundary(j+1, i, brick):
+                    j += 1
+                    brick = [
+                        [field[i-2][j], field[i-1][j], field[i][j]],
+                        [field[i-3][j], field[i][j], field[i+1][j]],
+                    ]
+                place_brick(j, i, brick)
+
+# Generate the required structure
+generate_U_shape()
+```
+
+Note: This is a rough implementation and may require further adjustments to satisfy all the stability and boundary collision conditions. It's recommended to test the code and make adjustments as needed.

@@ -1,0 +1,64 @@
+To create a structure resembling "Y" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the structure:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the first block horizontally to create the base:
+```
+ab_drop('b11', 9)
+```
+
+3. Drop two blocks vertically on the left side of the base:
+```
+ab_drop('b11', 8)
+ab_drop('b11', 8)
+```
+
+4. Drop two blocks vertically on the right side of the base:
+```
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+```
+
+5. Drop a horizontal block between the two vertical blocks on the left side:
+```
+ab_drop('b11', 8)
+ab_drop('b11', 8)
+ab_drop('b11', 8)
+```
+
+6. Drop a horizontal block between the two vertical blocks on the right side:
+```
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+```
+
+7. Drop a vertical block on top of the horizontal block in the middle:
+```
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+```
+
+8. Drop a horizontal block on top of the vertical block to complete the upper part of the structure:
+```
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+```
+
+The final structure resembling "Y" can be represented as follows:
+```python
+structure = [
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'b11', ' ', 'b11', ' ', 'b11', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', 'b11', 'b11', 'b11', 'b11', 'b11', 'b11', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', 'b11', 'b31', 'b31', 'b31', 'b31', 'b11', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', 'b11', ' ', ' ', ' ', ' ', 'b11', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', 'b11', ' ', ' ', ' ', ' ', 'b11', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', 'b11', ' ', ' ', ' ', ' ', 'b11', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', '

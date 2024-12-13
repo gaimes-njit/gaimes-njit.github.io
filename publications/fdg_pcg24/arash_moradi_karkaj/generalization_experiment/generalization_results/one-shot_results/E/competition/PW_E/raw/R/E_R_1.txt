@@ -1,0 +1,38 @@
+To generate the uppercase English letter "R", we can break it down into several steps:
+
+1. Build the vertical line on the left side of the "R":
+   ab_drop('b13', 1)
+   ab_drop('b13', 1)
+   ab_drop('b13', 1)
+
+2. Build the top horizontal line of the "R":
+   ab_drop('b31', 2)
+   ab_drop('b31', 2)
+   ab_drop('b31', 2)
+
+3. Build the diagonal line:
+   ab_drop('b13', 3)
+   ab_drop('b13', 4)
+   ab_drop('b13', 5)
+
+4. Build the bottom horizontal line of the "R":
+   ab_drop('b31', 2)
+   ab_drop('b31', 2)
+   ab_drop('b31', 2)
+
+Putting it all together, the complete stream of commands to generate the uppercase English letter "R" would be:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 2)
+ab_drop('b31', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 3)
+ab_drop('b13', 4)
+ab_drop('b13', 5)
+ab_drop('b31', 2)
+ab_drop('b31', 2)
+ab_drop('b31', 2)
+```

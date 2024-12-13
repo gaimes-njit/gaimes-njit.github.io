@@ -1,0 +1,14 @@
+# First, we will create the top horizontal bar of the letter E.
+
+ab_drop("b31", 8)
+ab_drop("b11", 9)
+
+# Next, we will create the middle horizontal bar of the letter E.
+
+ab_drop("b31", 8)
+ab_drop("b11", 9)
+
+# Lastly, we will create the bottom horizontal bar of the letter E.
+
+ab_drop("b31", 8)
+ab_drop("b11", 9)

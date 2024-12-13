@@ -1,0 +1,37 @@
+To generate a structure that resembles the character "U" while meeting all the hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the base blocks (b11 or b13) at the bottom of the structure to provide a stable foundation:
+```
+ab_drop('b11', 5)
+ab_drop('b11', 6)
+ab_drop('b11', 7)
+```
+
+3. Drop a b31 block on top of the base blocks to form the horizontal part of the "U" shape:
+```
+ab_drop('b31', 5)
+```
+
+4. Drop two b13 blocks on top of the b31 block to form the vertical parts of the "U" shape:
+```
+ab_drop('b13', 4)
+ab_drop('b13', 6)
+```
+
+5. Drop another b31 block on top of the vertical blocks to form the top of the "U" shape:
+```
+ab_drop('b31', 5)
+```
+
+6. The resulting structure will resemble the character "U" and meet all the hard constraints. Print the structure to see the final result:
+```
+for row in structure:
+    print(' '.join(row))
+```
+
+Note: The specific slot and layer numbers used in the ab_drop() function calls may need to be adjusted based on the desired positioning of the "U" shape within the structure.

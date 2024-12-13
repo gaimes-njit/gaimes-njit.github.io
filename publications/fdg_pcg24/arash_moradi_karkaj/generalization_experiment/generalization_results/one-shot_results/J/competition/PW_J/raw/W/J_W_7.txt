@@ -1,0 +1,20 @@
+To generate the uppercase letter "W" using the given block types and environment, we can follow these steps:
+
+1. Drop a horizontal straight block (b31) at position 1: `ab_drop('b31', 1)`
+2. Drop a vertical straight block (b13) at position 2: `ab_drop('b13', 2)`
+3. Drop a vertical straight block (b13) at position 4: `ab_drop('b13', 4)`
+4. Drop a horizontal straight block (b31) at position 5: `ab_drop('b31', 5)`
+5. Drop a vertical straight block (b13) at position 7: `ab_drop('b13', 7)`
+6. Drop a vertical straight block (b13) at position 9: `ab_drop('b13', 9)`
+7. Drop a horizontal straight block (b31) at position 10: `ab_drop('b31', 10)`
+
+The resulting stream of commands to generate the letter "W" would be:
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 4)
+ab_drop('b31', 5)
+ab_drop('b13', 7)
+ab_drop('b13', 9)
+ab_drop('b31', 10)
+```

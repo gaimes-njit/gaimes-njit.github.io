@@ -1,0 +1,25 @@
+First, let's create the base of the letter "I" with a row block placed at the bottom center of the grid:
+
+```
+ab_drop("b31", 9)
+```
+
+Next, let's add the vertical part of the letter "I" by placing a column block on top of the base block:
+
+```
+ab_drop("b13", 9)
+```
+
+Finally, let's complete the letter "I" by placing another row block on top of the vertical block:
+
+```
+ab_drop("b31", 9)
+```
+
+The complete implementation is as follows:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+```

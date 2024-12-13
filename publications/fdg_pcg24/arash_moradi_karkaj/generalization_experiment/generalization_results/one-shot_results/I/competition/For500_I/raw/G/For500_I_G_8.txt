@@ -1,0 +1,18 @@
+# Solution:
+To generate a structure resembling the letter "G", we can follow a step-by-step approach using the `ab_drop()` function. We will start from the bottom layer and build the structure upwards, ensuring stability at each step.
+
+Here is the series of `ab_drop()` calls to generate the letter "G":
+
+1. Place the base of the letter "G" by dropping a `b31` block at slot 5:
+   `ab_drop('b31', 5)`
+
+2. Add the upper section of the letter "G" by dropping a `b31` block at slot 5, one layer above the base:
+   `ab_drop('b31', 5)`
+
+3. Extend the top part of the letter "G" by dropping a `b11` block at slot 4, one layer above the previous step:
+   `ab_drop('b11', 4)`
+
+4. Complete the top part of the letter "G" by dropping a `b11` block at slot 6, one layer above the previous step:
+   `ab_drop('b11', 6)`
+
+And that's it! We have successfully generated a stable structure resembling the letter "G" using only `ab_drop()` calls.

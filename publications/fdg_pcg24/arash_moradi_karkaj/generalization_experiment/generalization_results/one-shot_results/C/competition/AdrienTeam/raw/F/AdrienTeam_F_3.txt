@@ -1,0 +1,22 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Base
+ab_drop('b31', 9)
+
+# Vertical bars of F
+ab_drop('b13', 0)
+ab_drop('b13', 19)
+
+# Horizontal bar of F
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+
+# Top of F
+ab_drop('b31', 1)
+
+# Print the structure
+for row in structure:
+    print(row)
+```

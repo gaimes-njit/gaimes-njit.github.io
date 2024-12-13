@@ -1,0 +1,15 @@
+```
+
+# Step 1: Place the first vertical straight block (b13) to form the left side of the letter H
+ab_drop("b13", 1)
+
+# Step 2: Place the horizontal straight block (b31) to form the middle bar of the letter H
+ab_drop("b31", 2)
+
+# Step 3: Place the second vertical straight block (b13) to form the right side of the letter H
+ab_drop("b13", 4)
+
+# Step 4: Place the first vertical straight block (b13) above the middle bar to complete the letter H
+ab_drop("b13", 2)
+
+```

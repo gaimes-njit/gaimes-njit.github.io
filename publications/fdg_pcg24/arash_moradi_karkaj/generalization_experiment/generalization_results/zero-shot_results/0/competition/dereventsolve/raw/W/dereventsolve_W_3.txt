@@ -1,0 +1,23 @@
+To generate a structure that looks like the letter "W" using the key-value pairs in the database, you can use the following sequence of `ab_drop` function calls:
+
+```python
+ab_drop('down')
+ab_drop('down')
+ab_drop('up')
+ab_drop('up')
+ab_drop('right')
+ab_drop('right')
+ab_drop('down')
+ab_drop('up')
+ab_drop('down')
+ab_drop('up')
+ab_drop('right')
+ab_drop('right')
+ab_drop('up')
+ab_drop('down')
+ab_drop('down')
+ab_drop('up')
+ab_drop('up')
+```
+
+This sequence will create a structure that resembles the letter "W".

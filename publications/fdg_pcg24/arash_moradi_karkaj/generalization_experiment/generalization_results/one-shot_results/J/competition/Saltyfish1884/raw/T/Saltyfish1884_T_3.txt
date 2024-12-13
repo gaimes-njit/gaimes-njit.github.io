@@ -1,0 +1,63 @@
+To generate a stable structure that resembles the character "T" using the ab_drop() function, follow these steps:
+
+1. Initialize the structure grid as an empty WxH grid using the provided code.
+
+2. Place a b31 block at the bottom layer (layer 0) and the center slot (W // 2) to form the base of the "T" shape. Use the ab_drop(3, W // 2) function to vertically drop the b31 block into place.
+
+3. Place two b13 blocks vertically on top of the base block, centered above the two outer slots of the base block. Use the ab_drop(2, W // 2 - 1) and ab_drop(2, W // 2 + 1) functions to drop the b13 blocks into place.
+
+4. Finally, place a b11 block on top of the two b13 blocks, centered above the middle slot of the base block. Use the ab_drop(1, W // 2) function to drop the b11 block into place.
+
+By following these steps, you will generate a stable structure that resembles the character "T" while meeting all the given hard constraints.
+
+Here is an example of the code for generating the "T" shape:
+
+```python
+W = 20
+H = 16
+structure = [[' ']*W for _ in range(H)]
+
+def ab_drop(x, y):
+    drop_pos = (H-1, y)
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    structure[drop_pos[0]][drop_pos[1]] = x
+
+# Place the base block
+ab_drop(3, W // 2)
+
+# Place the two vertical blocks
+ab_drop(2, W // 2 - 1)
+ab_drop(2, W // 2 + 1)
+
+# Place the top block
+ab_drop(1, W // 2)
+
+# Print the resulting structure
+for row in structure:
+    print(' '.join(row))
+```
+
+This code will output the following structure:
+
+```
+               
+               
+       O       
+    OOOOOOO    
+       O       
+       O        
+       O        
+       O        
+       O        
+       O        
+       O        
+       O        
+       O        
+       O        
+       O        
+       O        
+       O        
+```

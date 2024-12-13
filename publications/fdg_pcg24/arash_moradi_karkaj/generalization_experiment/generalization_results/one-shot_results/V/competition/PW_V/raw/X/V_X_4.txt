@@ -1,0 +1,6 @@
+```
+ab_drop('b13', 1)
+ab_drop('b31', 2)
+ab_drop('b13', 5)
+```
+Explanation: This sequence of commands will create the letter "V" by placing the vertical straight block (b13) at position 1, the horizontal straight block (b31) at position 2, and another vertical straight block (b13) at position 5. The blocks will stack on top of each other according to the gravity rules, forming the letter "V".

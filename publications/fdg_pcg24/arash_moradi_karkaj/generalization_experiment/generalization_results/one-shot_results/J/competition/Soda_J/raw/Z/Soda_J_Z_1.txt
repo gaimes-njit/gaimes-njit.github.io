@@ -1,0 +1,9 @@
+# Step 1: Create the base of the letter Z
+ab_drop("b13", 0)
+
+# Step 2: Create the middle part of the letter Z
+ab_drop("b31", 7)
+
+# Step 3: Create the top part of the letter Z
+ab_drop("b13", 8)
+ab_drop("b13", 9)

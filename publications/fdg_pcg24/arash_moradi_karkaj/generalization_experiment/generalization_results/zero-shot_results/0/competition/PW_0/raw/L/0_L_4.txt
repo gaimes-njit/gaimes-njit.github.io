@@ -1,0 +1,13 @@
+The target letter is "L". Here is the stream of commands to generate uppercase English letter "L" using the given block types:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b11', 4)
+```
+
+Please note that these commands assume the initial state of the grid is empty and the blocks are placed consecutively from left to right.

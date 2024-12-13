@@ -1,0 +1,27 @@
+To generate the uppercase letter "Q", you can follow these steps:
+
+1. Place two horizontal blocks at the top-left corner of the grid to form the top part of the letter:
+   ab_drop('b31', 1)
+   ab_drop('b31', 4)
+
+2. Place a vertical block below the right end of the top part to form the right side of the letter:
+   ab_drop('b13', 7)
+
+3. Place a horizontal block below the bottom-left corner of the top part to form the bottom part of the letter:
+   ab_drop('b31', 1)
+
+4. Place a vertical block below the left end of the bottom part to form the left side of the letter:
+   ab_drop('b13', 1)
+
+5. Place a vertical block below the right side of the bottom part to complete the tail of the letter:
+   ab_drop('b13', 5)
+
+The final stream of commands to generate the uppercase letter "Q" would be:
+```
+ab_drop('b31', 1)
+ab_drop('b31', 4)
+ab_drop('b13', 7)
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 5)
+```

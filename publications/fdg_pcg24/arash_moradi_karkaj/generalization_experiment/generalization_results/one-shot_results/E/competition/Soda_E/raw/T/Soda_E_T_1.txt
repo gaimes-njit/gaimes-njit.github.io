@@ -1,0 +1,23 @@
+First, let's start by creating the top horizontal bar of the letter "T".
+
+ab_drop("b31", 8)
+ab_drop("b11", 9)
+ab_drop("b31", 10)
+
+Next, we'll create the vertical bar of the letter "T".
+
+ab_drop("b13", 9)
+
+Finally, we'll create the base of the letter "T".
+
+ab_drop("b31", 8)
+ab_drop("b31", 10)
+
+Here's the complete implementation:
+
+ab_drop("b31", 8)
+ab_drop("b11", 9)
+ab_drop("b31", 10)
+ab_drop("b13", 9)
+ab_drop("b31", 8)
+ab_drop("b31", 10)

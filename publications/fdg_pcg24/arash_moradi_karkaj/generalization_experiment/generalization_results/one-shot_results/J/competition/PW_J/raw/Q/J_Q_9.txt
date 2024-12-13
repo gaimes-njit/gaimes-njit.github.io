@@ -1,0 +1,78 @@
+To construct the letter "Q" using the given block types and commands, we can follow the steps below:
+
+1. Start by placing a horizontal straight block (b31) at position 1:
+```
+ab_drop('b31',1)
+```
+
+2. Place a vertical straight block (b13) at position 2, aligned with the bottom of the first block:
+```
+ab_drop('b13',2)
+```
+
+3. Place a vertical straight block (b13) at position 3, aligned with the bottom of the previous block:
+```
+ab_drop('b13',3)
+```
+
+4. Place a vertical straight block (b13) at position 4, aligned with the bottom of the previous block:
+```
+ab_drop('b13',4)
+```
+
+5. Place a horizontal straight block (b31) at position 5, aligned with the right side of the previous block:
+```
+ab_drop('b31',5)
+```
+
+6. Place a vertical straight block (b13) at position 19, aligned with the right side of the previous block:
+```
+ab_drop('b13',19)
+```
+
+7. Place a horizontal straight block (b31) at position 18, aligned with the bottom of the previous block:
+```
+ab_drop('b31',18)
+```
+
+8. Place a vertical straight block (b13) at position 18, aligned with the bottom of the previous block:
+```
+ab_drop('b13',18)
+```
+
+9. Place a horizontal straight block (b31) at position 17, aligned with the bottom of the previous block:
+```
+ab_drop('b31',17)
+```
+
+10. Place a vertical straight block (b13) at position 17, aligned with the bottom of the previous block:
+```
+ab_drop('b13',17)
+```
+
+11. Place a horizontal straight block (b31) at position 16, aligned with the bottom of the previous block:
+```
+ab_drop('b31',16)
+```
+
+12. Place a vertical straight block (b13) at position 16, aligned with the bottom of the previous block:
+```
+ab_drop('b13',16)
+```
+
+13. Place a horizontal straight block (b31) at position 15, aligned with the bottom of the previous block:
+```
+ab_drop('b31',15)
+```
+
+14. Place a vertical straight block (b13) at position 2, aligned with the bottom of the previous block:
+```
+ab_drop('b13',2)
+```
+
+15. Place a horizontal straight block (b31) at position 1, aligned with the bottom of the previous block:
+```
+ab_drop('b31',1)
+```
+
+The stream of commands mentioned above will generate the letter "Q" in the given Tetris-like environment and 2D gravity rules.

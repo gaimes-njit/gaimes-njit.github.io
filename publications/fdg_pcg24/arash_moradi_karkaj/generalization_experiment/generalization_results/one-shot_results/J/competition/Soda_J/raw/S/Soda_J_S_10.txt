@@ -1,0 +1,50 @@
+First, let's start by creating the base of the "S" shape. We can use a row block "b31" for this.
+
+```python
+ab_drop("b31", 0)
+ab_drop("b31", 1)
+ab_drop("b31", 2)
+ab_drop("b31", 3)
+ab_drop("b31", 4)
+```
+
+Next, we need to create the top-left part of the "S" shape, which consists of a column block "b13" and a square block "b11".
+
+```python
+ab_drop("b13", 4)
+ab_drop("b11", 3)
+```
+
+Now, let's create the bottom-right part of the "S" shape, which is a row block "b31".
+
+```python
+ab_drop("b31", 2)
+ab_drop("b31", 3)
+ab_drop("b31", 4)
+ab_drop("b31", 5)
+```
+
+Finally, we need to add the top-right part of the "S" shape, which is a column block "b13" and a square block "b11".
+
+```python
+ab_drop("b13", 6)
+ab_drop("b11", 7)
+```
+
+Here is the complete implementation:
+
+```python
+ab_drop("b31", 0)
+ab_drop("b31", 1)
+ab_drop("b31", 2)
+ab_drop("b31", 3)
+ab_drop("b31", 4)
+ab_drop("b13", 4)
+ab_drop("b11", 3)
+ab_drop("b31", 2)
+ab_drop("b31", 3)
+ab_drop("b31", 4)
+ab_drop("b31", 5)
+ab_drop("b13", 6)
+ab_drop("b11", 7)
+```

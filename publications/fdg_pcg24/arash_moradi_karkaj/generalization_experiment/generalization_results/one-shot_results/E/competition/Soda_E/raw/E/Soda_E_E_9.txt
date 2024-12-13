@@ -1,0 +1,16 @@
+First, let's start by building the horizontal bars of the E structure in a bottom-to-top fashion.
+
+# The bottom horizontal bar of E
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+
+# The middle horizontal bar of E
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+ab_drop("b31", 11)
+
+# The top horizontal bar of E
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)

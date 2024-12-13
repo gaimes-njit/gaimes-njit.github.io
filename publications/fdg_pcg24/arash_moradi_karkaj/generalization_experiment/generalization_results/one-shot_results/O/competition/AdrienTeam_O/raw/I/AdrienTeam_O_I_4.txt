@@ -1,0 +1,52 @@
+To create a stable structure resembling the letter "I" while satisfying all the specified constraints, we can follow the steps below:
+
+1. Start by initializing the map:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the first block, a vertical block with a width of 1 unit and a height of 3 units, in the middle slot (slot 10) of the bottom layer (layer 0):
+```python
+ab_drop('b13', 10)
+```
+
+3. Drop the second block, a vertical block with a width of 1 unit and a height of 2 units, in the middle slot (slot 10) of the second layer (layer 1):
+```python
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+```
+
+4. Drop the third block, a vertical block with a width of 1 unit and a height of 3 units, in the middle slot (slot 10) of the third layer (layer 2):
+```python
+ab_drop('b13', 10)
+```
+
+5. Drop the fourth block, a vertical block with a width of 1 unit and a height of 2 units, in the middle slot (slot 10) of the fourth layer (layer 3):
+```python
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+```
+
+6. Repeat steps 4 and 5 until the top layer (layer 15) is reached.
+
+The final code block would be:
+```python
+ab_drop('b13', 10)
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+ab_drop('b13', 10)
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+ab_drop('b13', 10)
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+ab_drop('b13', 10)
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+ab_drop('b13', 10)
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+ab_drop('b13', 10)
+```
+
+This set of `ab_drop()` inputs will generate a stable structure resembling the letter "I" while satisfying the given constraints.

@@ -1,0 +1,49 @@
+Step 2:
+The letter "S" with asterisks is represented as follows:
+
+*****
+*     
+***** 
+    *
+*****
+
+Line-by-line, the asterisks and spaces generated in each row are as follows:
+- Row 1: 5 asterisks, 0 spaces
+- Row 2: 1 asterisk, 4 spaces
+- Row 3: 5 asterisks, 0 spaces
+- Row 4: 3 spaces, 1 asterisk, 3 spaces
+- Row 5: 5 asterisks, 0 spaces
+
+Step 3:
+Replacing asterisks with "x" and spaces with "y" in each row, we have:
+- Row 1: "xxxxx"
+- Row 2: "xyyyy"
+- Row 3: "xxxxx"
+- Row 4: "yyyxyyy"
+- Row 5: "xxxxx"
+
+Step 4:
+Writing out each "x" and "y" side-by-side for each row, we get:
+- Row 1: "x5" (5 "x")
+- Row 2: "x1y4" (1 "x", 4 "y")
+- Row 3: "x5" (5 "x")
+- Row 4: "y3x1y3" (3 "y", 1 "x", 3 "y")
+- Row 5: "x5" (5 "x")
+
+Step 5:
+Indicating the position of each variable, we have:
+- Row 1: "x-1; x-2; x-3; x-4; x-5"
+- Row 2: "x-1; y-2; y-3; y-4; y-5"
+- Row 3: "x-1; x-2; x-3; x-4; x-5"
+- Row 4: "y-1; y-2; y-3; x-4; y-5; y-6; y-7"
+- Row 5: "x-1; x-2; x-3; x-4; x-5"
+
+Step 6:
+Returning a sequence of `ab_drop` function calls for each row:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

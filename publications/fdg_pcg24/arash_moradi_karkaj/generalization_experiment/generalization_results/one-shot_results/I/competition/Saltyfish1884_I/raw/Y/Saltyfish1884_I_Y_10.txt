@@ -1,0 +1,35 @@
+To generate a stable structure that resembles the character "Y" while meeting all hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty WxH grid using the provided code:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Place the base of the "Y" structure by dropping a b31 block on layer 0 and slot 9 by calling the `ab_drop('b31', 9)` function.
+
+```
+ab_drop('b31', 9)
+```
+
+3. Place the two arms of the "Y" structure by dropping a b13 block on layer 1 and slots 8 and 10 by calling the `ab_drop('b13', slot)` function.
+
+```
+ab_drop('b13', 8)
+ab_drop('b13', 10)
+```
+
+4. Place the vertical line of the "Y" structure by dropping a b31 block on layer 4 and slot 9 by calling the `ab_drop('b31', 9)` function.
+
+```
+ab_drop('b31', 9)
+```
+
+5. Print the final structure to see the result:
+```
+for row in structure:
+    print(' '.join(row))
+```
+
+The final structure should resemble the character "Y" and meet all hard constraints.
+
+Note: The specific slot numbers and order of block placements may vary, but the general steps above should result in a stable structure that resembles the character "Y".

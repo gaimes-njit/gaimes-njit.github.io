@@ -1,0 +1,9 @@
+To create the capital letter "V" in the Tetris-like environment, you can use the following commands:
+
+```plaintext
+ab_drop('b31', 1)  # Place a horizontal straight block at position 1
+ab_drop('b13', 2)  # Place a vertical straight block at position 2
+ab_drop('b31', 3)  # Place another horizontal straight block at position 3
+```
+
+This sequence of commands will create the letter "V" with proper stacking and stability within the allowed space boundaries.

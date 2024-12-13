@@ -1,0 +1,10 @@
+To generate a structure that looks like the capital letter "L", we can follow the hints provided. We will first drop the vertical pipe and then the bottom bar.
+
+```python
+# Drop the vertical pipe
+ab_drop("b31", 10)
+# Drop the bottom bar
+ab_drop("b13", 9)
+```
+
+This sequence of `ab_drop()` calls will create a structure in the shape of the letter "L" in the level. The vertical pipe block will be placed at x=10 and the bottom bar block will be placed at x=9.

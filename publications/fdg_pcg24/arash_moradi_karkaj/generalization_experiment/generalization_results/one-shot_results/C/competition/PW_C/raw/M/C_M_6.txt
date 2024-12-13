@@ -1,0 +1,20 @@
+The solution to generate the uppercase English letter "M" using the provided block types and environment is as follows:
+
+```
+# First leg of "M"
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+
+# Middle part of "M"
+ab_drop('b31', 8)
+ab_drop('b13', 8)
+ab_drop('b13', 9)
+
+# Second leg of "M"
+ab_drop('b31', 15)
+ab_drop('b13', 15)
+ab_drop('b13', 16)
+```
+
+This sequence of commands will create the letter "M" in the Tetris-like environment while ensuring stability and fitting within the allowed boundaries.

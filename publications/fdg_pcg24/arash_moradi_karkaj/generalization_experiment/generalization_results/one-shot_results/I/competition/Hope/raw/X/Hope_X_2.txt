@@ -1,0 +1,30 @@
+To create a structure exactly like "X" inside a 20x16 box, we can use the `ab_drop()` function with the appropriate block types and x positions. Here is the code:
+
+```
+# Top-left arm of X
+ab_drop('b13', 0)                  # Top block
+ab_drop('b13', 1)                  # Middle block
+ab_drop('b13', 2)                  # Bottom block
+
+# Top-right arm of X
+ab_drop('b13', 17)                 # Top block
+ab_drop('b13', 18)                 # Middle block
+ab_drop('b13', 19)                 # Bottom block
+
+# Central diagonal of X
+ab_drop('b31', 7)                  # Left block
+ab_drop('b11', 8)                  # Middle block
+ab_drop('b31', 9)                  # Right block
+
+# Bottom-left arm of X
+ab_drop('b13', 14)                 # Top block
+ab_drop('b13', 15)                 # Middle block
+ab_drop('b13', 16)                 # Bottom block
+
+# Bottom-right arm of X
+ab_drop('b13', 3)                  # Top block
+ab_drop('b13', 4)                  # Middle block
+ab_drop('b13', 5)                  # Bottom block
+```
+
+This code will create the "X" structure inside the 20x16 box using the specified block types and positions.

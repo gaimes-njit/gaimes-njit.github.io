@@ -1,0 +1,10 @@
+To create the structure of the letter "P" using the ab_drop('blocktype', x position) command, you can follow these steps within a 20*16 box:
+
+1. Place a 1*3 block (b13) at position (0,0) using ab_drop('b13', 0).
+2. Place a 3*1 block (b31) at positions (0,0), (0,1), and (0,2) using ab_drop('b31', 0), ab_drop('b31', 1), and ab_drop('b31', 2) respectively.
+3. Place a 1*3 block (b13) at position (0,2) using ab_drop('b13', 2).
+4. Place a 1*1 block (b11) at position (1,1) using ab_drop('b11', 1).
+5. Place a 1*1 block (b11) at position (2,0) using ab_drop('b11', 0).
+6. Place a 1*3 block (b13) at positions (2,1), (2,2), and (2,3) using ab_drop('b13', 1), ab_drop('b13', 2), and ab_drop('b13', 3) respectively.
+
+The resulting structure will resemble the letter "P" inside the 20*16 box.

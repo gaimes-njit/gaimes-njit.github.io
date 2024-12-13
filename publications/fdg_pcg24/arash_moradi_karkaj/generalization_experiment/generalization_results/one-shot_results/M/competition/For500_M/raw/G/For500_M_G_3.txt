@@ -1,0 +1,14 @@
+# Code:
+
+# Initialize the structure
+structure = [[' ']*20 for _ in range(16)]
+
+# Generating the letter 'G'
+ab_drop('b13', 9)  # Drop the vertical block in the center
+ab_drop('b13', 7)  # Drop the vertical block on the left
+ab_drop('b13', 11)  # Drop the vertical block on the right
+ab_drop('b31', 9)  # Drop the horizontal block on top
+
+# Display the final structure
+for row in structure:
+    print(''.join(row))

@@ -1,0 +1,30 @@
+To create the capital letter "Q" in the level, we need to build it using blocks in a bottom-to-top fashion. We will start by building the base of the letter and then add the upper part.
+
+Step 1: Build the base of the letter "Q"
+To build the base of the letter "Q", we will start from the bottom-left corner and build towards the right side. We will use a row block (b31) with its center pivot at the leftmost column of the grid. We will also use a square block (b11) to fill the first cell of the row block.
+
+ab_drop("b31", 0)  # drop the row block with pivot at the leftmost column
+ab_drop("b11", 0)  # drop the square block to fill the first cell of the row block
+
+Next, to complete the base of the letter "Q", we will add another row block (b31) to the right of the existing row block. We will use a square block (b11) to fill the first cell of this row block as well.
+
+ab_drop("b31", 2)  # drop the row block with pivot at the third column
+ab_drop("b11", 2)  # drop the square block to fill the first cell of the row block
+
+Step 2: Build the upper part of the letter "Q"
+To build the upper part of the letter "Q", we will start from the top-right corner of the base and build towards the left side. We will use a column block (b13) with its center pivot at the rightmost cell of the grid.
+
+ab_drop("b13", 19)  # drop the column block with pivot at the rightmost column
+
+Finally, to complete the letter "Q", we will add a square block (b11) above the column block to fill the top-right cell of the grid.
+
+ab_drop("b11", 19)  # drop the square block to fill the top-right cell
+
+Complete implementation:
+
+ab_drop("b31", 0)
+ab_drop("b11", 0)
+ab_drop("b31", 2)
+ab_drop("b11", 2)
+ab_drop("b13", 19)
+ab_drop("b11", 19)

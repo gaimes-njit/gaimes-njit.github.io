@@ -1,0 +1,9 @@
+ab_drop('b31',9)  # Start by dropping a 'b31' block at slot 9, bottom layer
+ab_drop('b31',3)  # Drop another 'b31' block at slot 3, bottom layer
+ab_drop('b13',8)  # Drop a 'b13' block at slot 8, bottom layer
+ab_drop('b13',13)  # Drop a 'b13' block at slot 13, bottom layer
+ab_drop('b13',7)  # Drop a 'b13' block at slot 7, bottom layer
+ab_drop('b13',14)  # Drop a 'b13' block at slot 14, bottom layer
+ab_drop('b31',8)  # Drop a 'b31' block at slot 8, bottom layer
+ab_drop('b31',13)  # Drop a 'b31' block at slot 13, bottom layer
+ab_drop('b31',11)  # Drop a 'b31' block at slot 11, bottom layer

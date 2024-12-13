@@ -1,0 +1,26 @@
+To generate the uppercase English letter "G", we can use the following stream of commands:
+
+```plaintext
+ab_drop('b31', 1)
+ab_drop('b11', 5)
+ab_drop('b11', 4)
+ab_drop('b13', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b13', 5)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```
+
+Explanation:
+1. Place a horizontal straight block (`b31`) at position 1 to create the top of the letter.
+2. Place a 1x1 square block (`b11`) at position 5 for the upper-right corner of the letter.
+3. Place another 1x1 square block (`b11`) at position 4 for the lower-right corner of the letter.
+4. Place a vertical straight block (`b13`) at position 2 for the left side of the letter.
+5. Place a vertical straight block (`b13`) at position 1 for the bottom-left corner of the letter.
+6. Place a vertical straight block (`b13`) at position 3 for the top-left corner of the letter.
+7. Place a vertical straight block (`b13`) at position 5 for the bottom-right corner of the letter.
+8. Place a vertical straight block (`b13`) at position 1 for the inner-left part of the letter.
+9. Place a vertical straight block (`b13`) at position 3 for the inner-right part of the letter.
+
+This sequence of commands will result in the formation of the uppercase letter "G" within the given boundaries and gravity rules.

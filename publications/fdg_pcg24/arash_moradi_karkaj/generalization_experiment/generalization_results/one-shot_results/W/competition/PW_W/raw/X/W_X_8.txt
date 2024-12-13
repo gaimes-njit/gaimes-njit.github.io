@@ -1,0 +1,12 @@
+To generate the uppercase English letter "X", you can use the following stream of commands:
+
+```
+ab_drop('b13',2)
+ab_drop('b11',3)
+ab_drop('b11',4)
+ab_drop('b11',4)
+ab_drop('b11',5)
+ab_drop('b13',6)
+```
+
+This sequence of commands will place the necessary blocks in the grid to form the letter "X" while adhering to the gravity rules and maintaining stability.

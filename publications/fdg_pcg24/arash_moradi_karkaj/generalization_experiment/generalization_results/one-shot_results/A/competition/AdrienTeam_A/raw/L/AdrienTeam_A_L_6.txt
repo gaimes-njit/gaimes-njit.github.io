@@ -1,0 +1,19 @@
+```python
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the first block (b11)
+ab_drop('b11', 3)
+
+# Drop the second block (b11)
+ab_drop('b11', 2)
+
+# Drop the third block (b31)
+ab_drop('b31', 4)
+
+# Drop the fourth block (b11)
+ab_drop('b11', 1)
+
+# Drop the fifth block (b11)
+ab_drop('b11', 1)
+
+```

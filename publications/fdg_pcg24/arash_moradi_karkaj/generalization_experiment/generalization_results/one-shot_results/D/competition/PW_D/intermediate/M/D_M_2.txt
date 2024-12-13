@@ -1,0 +1,13 @@
+To generate the uppercase letter "M", you would need to use the following commands:
+
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+ab_drop('b31', 2)
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 1)
+
+These commands will place the blocks in the defined environment, respecting the gravity rules, and construct the letter "M".

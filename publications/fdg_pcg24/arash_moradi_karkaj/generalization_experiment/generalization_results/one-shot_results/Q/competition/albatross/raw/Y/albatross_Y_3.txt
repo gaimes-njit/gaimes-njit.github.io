@@ -1,0 +1,18 @@
+The following code sequence can be used to construct a level for Science Birds that resembles the English letter "Y":
+
+ab_drop('b13', 9)
+ab_drop('b31', 9)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 8)
+ab_drop('b11', 11)
+ab_drop('b11', 7)
+ab_drop('b11', 12)
+
+Explanation:
+- First, we drop a vertical block (b13) in the middle slot (y=9) to form the central stem of the "Y".
+- Then, we drop a horizontal block (b31) in the same slot (y=9) to create the top part of the "Y".
+- Next, we drop four individual blocks (b11) on both sides of the stem to complete the top portion of the "Y".
+- Finally, we drop two more individual blocks (b11) on the outside of the top part to extend the arms of the "Y".
+
+By following this sequence, the resulting structure will resemble the letter "Y" and satisfy all the constraints of the Science Birds game while maintaining stability under gravity.

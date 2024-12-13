@@ -1,0 +1,23 @@
+One way to create the structure of the letter "D" using the ab_drop('blocktype', x position) command is as follows:
+
+1) Drop a b31 block at position (0, 0):
+ab_drop('b31', 0)
+
+2) Drop a b13 block at position (3, 0):
+ab_drop('b13', 3)
+
+3) Drop a b11 block at position (4, 2):
+ab_drop('b11', 4)
+
+4) Drop a b13 block at position (3, 5):
+ab_drop('b13', 3)
+
+5) Drop a b31 block at position (0, 8):
+ab_drop('b31', 0)
+
+6) Drop a b11 block at position (0, 15):
+ab_drop('b11', 0)
+
+The resulting structure will look like the letter "D" inside a 20*16 box block.
+
+Note: This is just one of the possible ways to create the structure. There might be alternative solutions using different combinations of block types and positions.

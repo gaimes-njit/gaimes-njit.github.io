@@ -1,0 +1,16 @@
+To generate the uppercase letter "Y" using the given block types, we can follow these steps:
+
+1. Place the horizontal block at the top-left corner of the grid, starting at position 1. This will form the diagonal line of the letter "Y". Use the command ab_drop('b31', 1) to place the block.
+
+2. Place the vertical block on top of the horizontal block, starting at position 2. This will form the left side of the letter "Y". Use the command ab_drop('b13', 2) to place the block.
+
+3. Finally, place two square blocks horizontally adjacent to the vertical block, starting at positions 2 and 3. This will form the right side of the letter "Y". Use the command ab_drop('b11', 2) followed by ab_drop('b11', 3) to place the blocks.
+
+The complete sequence of commands to generate the uppercase letter "Y" would be:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+```

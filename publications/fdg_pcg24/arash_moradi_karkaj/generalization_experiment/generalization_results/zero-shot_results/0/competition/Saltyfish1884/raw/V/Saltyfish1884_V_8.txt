@@ -1,0 +1,36 @@
+To generate a stable structure that resembles the character "V", let's consider the constraints and plan our steps:
+
+1. Create an empty grid structure with the given initializaton function.
+
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. We can start by placing a b31 block on the base (layer 0) at a slot position around the center of the map. This will serve as the foundation for the "V" shape.
+
+```
+ab_drop('b31', 9)  # Place a b31 block at slot 9
+```
+
+3. Next, we need to place two b13 blocks on top of the b31 block to form the sides of the "V" shape. We should place these blocks as low as possible to minimize the risk of collapsing.
+
+```
+ab_drop('b13', 8)  # Place a b13 block at slot 8 (left side)
+ab_drop('b13', 10)  # Place a b13 block at slot 10 (right side)
+```
+
+4. Now, we have the basic shape of the "V" ready. We can add stability by placing b11 blocks on top of the b13 blocks to fill any gaps and distribute the weight evenly.
+
+```
+ab_drop('b11', 8)  # Place a b11 block on top of the left side (slot 8)
+ab_drop('b11', 10)  # Place a b11 block on top of the right side (slot 10)
+```
+
+5. Finally, to follow the stability rules, we should reinforce the base by placing b31 blocks on both sides of the b31 block we initially placed.
+
+```
+ab_drop('b31', 7)  # Place a b31 block on the left side of the base (slot 7)
+ab_drop('b31', 11)  # Place a b31 block on the right side of the base (slot 11)
+```
+
+By following these steps and using the ab_drop() function, you should be able to generate a stable structure that resembles the character "V" while meeting all the hard constraints.

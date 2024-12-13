@@ -1,0 +1,4 @@
+ab_drop('b13', 9)   # Place the vertical part of 'P' in the center
+ab_drop('b31', 9)   # Place the horizontal part of 'P' on top of the vertical part
+ab_drop('b11', 10)  # Place the top part of 'P'
+ab_drop('b31', 10)  # Place the middle part of 'P'

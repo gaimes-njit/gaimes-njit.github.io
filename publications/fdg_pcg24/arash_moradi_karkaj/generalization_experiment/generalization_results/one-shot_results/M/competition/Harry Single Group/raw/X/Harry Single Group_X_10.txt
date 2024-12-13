@@ -1,0 +1,17 @@
+To generate the structure resembling the letter "X" using the ab_drop() function, we can follow these steps:
+
+1. Place the first b31 brick diagonally from the bottom-left corner to the top-right corner of the field:
+   ab_drop('b31', 2)  # First row of the "X"
+   ab_drop('b31', 3)  # Second row of the "X"
+   ab_drop('b31', 4)  # Third row of the "X"
+   ab_drop('b31', 5)  # Fourth row of the "X"
+   ab_drop('b31', 6)  # Fifth row of the "X"
+
+2. Place the second b31 brick diagonally from the bottom-right corner to the top-left corner of the field:
+   ab_drop('b31', 14)  # First row of the "X"
+   ab_drop('b31', 13)  # Second row of the "X"
+   ab_drop('b31', 12)  # Third row of the "X"
+   ab_drop('b31', 11)  # Fourth row of the "X"
+   ab_drop('b31', 10)  # Fifth row of the "X"
+
+This will form a shape resembling the letter "X" with stability, avoiding boundary collisions.

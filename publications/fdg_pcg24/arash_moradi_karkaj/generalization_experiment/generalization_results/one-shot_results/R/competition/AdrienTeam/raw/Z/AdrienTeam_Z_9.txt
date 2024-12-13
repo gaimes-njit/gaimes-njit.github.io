@@ -1,0 +1,25 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Drop b31 block at slot 1
+ab_drop('b31', 1)
+
+# Drop b11 block at slot 0
+ab_drop('b11', 0)
+
+# Drop b11 block at slot 2
+ab_drop('b11', 2)
+
+# Drop b13 block at slot 2
+ab_drop('b13', 2)
+
+# Drop b11 block at slot 0
+ab_drop('b11', 0)
+
+# Drop b11 block at slot 1
+ab_drop('b11', 1)
+
+# Drop b11 block at slot 2
+ab_drop('b11', 2)
+```

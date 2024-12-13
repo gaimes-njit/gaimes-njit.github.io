@@ -1,0 +1,10 @@
+To generate the letter "W" using the given block types, we can follow these steps:
+
+1. Place the first vertical block at position (1, 1) using the command `ab_drop('b13', 1)`.
+2. Place the first horizontal block at position (2, 1) using the command `ab_drop('b31', 2)`.
+3. Place the second vertical block at position (5, 1) using the command `ab_drop('b13', 5)`.
+4. Place the second horizontal block at position (6, 2) using the command `ab_drop('b31', 6)`.
+5. Place the third vertical block at position (9, 2) using the command `ab_drop('b13', 9)`.
+6. Place the third horizontal block at position (10, 3) using the command `ab_drop('b31', 10)`.
+
+Following these steps will construct the letter "W" within the allowed space boundaries.

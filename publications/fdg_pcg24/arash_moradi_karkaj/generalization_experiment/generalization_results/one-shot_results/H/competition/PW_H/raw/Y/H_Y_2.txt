@@ -1,0 +1,27 @@
+To generate the uppercase letter "Y", we can follow these steps:
+
+1. Start by placing two vertical straight blocks (b13) at positions 1 and 3 along the width:
+```plaintext
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```
+
+2. Next, place a horizontal straight block (b31) at position 2 along the width:
+```plaintext
+ab_drop('b31', 2)
+```
+
+3. Finally, place two more vertical straight blocks (b13) at positions 1 and 3 along the width:
+```plaintext
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```
+
+The complete stream of commands to generate the letter "Y" is as follows:
+```plaintext
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```

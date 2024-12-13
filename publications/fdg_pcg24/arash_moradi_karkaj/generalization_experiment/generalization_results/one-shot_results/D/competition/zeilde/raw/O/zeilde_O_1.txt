@@ -1,0 +1,45 @@
+Step 1: Draw the letter "O" with asterisks.
+```
+*****
+*   *
+*   *
+*   *
+*****
+```
+
+Step 2: Line-by-line, verbally list the asterisks and spaces generated in each row.
+- Row 1: "*****"
+- Row 2: "*   *"
+- Row 3: "*   *"
+- Row 4: "*   *"
+- Row 5: "*****"
+
+Step 3: Asterisks are now x and spaces are each y. Repeat step #2 with the new rules.
+- Row 1: "xxxxx"
+- Row 2: "x  yx"
+- Row 3: "x  yx"
+- Row 4: "x  yx"
+- Row 5: "xxxxx"
+
+Step 4: For each row, write out each x and y. Each must be listed side-by-side.
+- Row 1: "xxxxx"
+- Row 2: "xxyxx"
+- Row 3: "xxyxx"
+- Row 4: "xxyxx"
+- Row 5: "xxxxx"
+
+Step 5: For each row, indicate the position of each variable.
+- Row 1: "x-1; x-2; x-3; x-4; x-5"
+- Row 2: "x-1; x-2; y-3; x-4; x-5"
+- Row 3: "x-1; x-2; y-3; x-4; x-5"
+- Row 4: "x-1; x-2; y-3; x-4; x-5"
+- Row 5: "x-1; x-2; x-3; x-4; x-5"
+
+Step 6: Line-by-line, return a sequence of `ab_drop` function calls.
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

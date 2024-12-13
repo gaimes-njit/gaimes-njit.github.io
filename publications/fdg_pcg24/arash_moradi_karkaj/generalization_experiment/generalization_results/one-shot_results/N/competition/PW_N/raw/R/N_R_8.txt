@@ -1,0 +1,29 @@
+To generate the uppercase English letter "R", we need to construct the following shape:
+
+```
+-----
+|   |
+|   |
+|   |
+|   |
+-----
+-----            
+|   |        
+|   |        
+|   |     
+|   |
+-----
+```
+
+To create this shape, we can use the following commands:
+
+```
+ab_drop('b31', 1)  # Creates the vertical line on the left
+ab_drop('b13', 2)  # Creates the top horizontal line
+ab_drop('b11', 2)  # Creates the top-right corner
+ab_drop('b31', 4)  # Creates the bottom horizontal line
+ab_drop('b13', 5)  # Creates the bottom-right corner
+ab_drop('b11', 5)  # Creates the bottom-right corner
+```
+
+Combining these commands will generate the uppercase English letter "R".

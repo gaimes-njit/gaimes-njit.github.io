@@ -1,0 +1,45 @@
+To generate a stable structure that looks like the character "Q" using `ab_drop()` function and meet all the constraints, we need to follow the block-stacking technique.
+
+The first step is to drop the blocks representing the bottom part of the structure, which are the b31 blocks. We can start by dropping the blocks from the leftmost slot (slot 0) and move towards the right until we reach a stable position.
+
+Here is the code that generates the stable structure:
+
+```python
+# initialize the structure as an empty WxH grid
+W = 20
+H = 16
+structure = [[' '] * W for _ in range(H)]
+
+# Drop b31 blocks
+def drop_b31_blocks():
+    for x in range(W):
+        if x == 0:
+            ab_drop('b31', 0)
+        else:
+            ab_drop('b31', x)
+```
+
+Next, we need to drop the blocks representing the curved part of the "Q" character, which are the b11 and b13 blocks. We can drop these blocks on top of the b31 blocks to form the shape of the "Q" character.
+
+Here is the code that generates the stable structure:
+
+```python
+# Drop b11 and b13 blocks to form the shape of the "Q" character
+def drop_curved_blocks():
+    for x in range(W):
+        if x == 0 or x == W-1:
+            ab_drop('b11', x)
+        elif x >= 3 and x <= 5:
+            ab_drop('b13', x)
+        elif x >= 14 and x <= 16:
+            ab_drop('b13', x)
+```
+
+Finally, we can call the `drop_b31_blocks()` and `drop_curved_blocks()` functions to generate the stable structure:
+
+```python
+drop_b31_blocks()
+drop_curved_blocks()
+```
+
+The resulting structure will be stable and will look like the character "Q" while satisfying all the given constraints.

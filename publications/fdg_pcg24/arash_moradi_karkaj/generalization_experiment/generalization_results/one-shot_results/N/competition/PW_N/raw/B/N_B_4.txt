@@ -1,0 +1,12 @@
+To create the capital letter "B" using the given block types, we need to place the blocks in a specific pattern. Here is the sequence of ab_drop() commands to generate the letter "B":
+
+```
+ab_drop('b13', 1)   // Place a vertical block at position 1
+ab_drop('b13', 2)   // Place a vertical block at position 2
+ab_drop('b13', 3)   // Place a vertical block at position 3
+ab_drop('b31', 1)   // Place a horizontal block at position 1
+ab_drop('b13', 4)   // Place a vertical block at position 4
+ab_drop('b11', 4)   // Place a square block at position 4
+```
+
+By executing the above commands in the given order, the blocks will form the shape of the letter "B" within the allowed space boundaries.

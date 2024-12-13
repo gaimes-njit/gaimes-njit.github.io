@@ -1,0 +1,53 @@
+1. B with asterisks:
+*****
+*     *
+*     *
+******
+*     *
+*     *
+*     *
+
+2. Asterisks and spaces generated in each row:
+Row 1: 5 asterisks
+Row 2: 1 asterisk, 5 spaces, 1 asterisk
+Row 3: 1 asterisk, 5 spaces, 1 asterisk
+Row 4: 6 asterisks
+Row 5: 1 asterisk, 5 spaces, 1 asterisk
+Row 6: 1 asterisk, 5 spaces, 1 asterisk
+Row 7: 1 asterisk, 5 spaces, 1 asterisk
+
+3. Using x for asterisks and y for spaces:
+Row 1: xxxxx
+Row 2: xyyyyx
+Row 3: xyyyyx
+Row 4: xxxxxx
+Row 5: xyyyyx
+Row 6: xyyyyx
+Row 7: xyyyyx
+
+4. Writing out each x and y side-by-side:
+Row 1: x-1; x-2; x-3; x-4; x-5
+Row 2: x-1; y-2; y-3; y-4; y-5; y-6; x-7
+Row 3: x-1; y-2; y-3; y-4; y-5; y-6; x-7
+Row 4: x-1; x-2; x-3; x-4; x-5; x-6
+Row 5: x-1; y-2; y-3; y-4; y-5; y-6; x-7
+Row 6: x-1; y-2; y-3; y-4; y-5; y-6; x-7
+Row 7: x-1; y-2; y-3; y-4; y-5; y-6; x-7
+
+5. Position of each variable:
+Row 1: x-1; x-2; x-3; x-4; x-5
+Row 2: x-1; y-2; y-3; y-4; y-5; y-6; x-7
+Row 3: x-1; y-2; y-3; y-4; y-5; y-6; x-7
+Row 4: x-1; x-2; x-3; x-4; x-5; x-6
+Row 5: x-1; y-2; y-3; y-4; y-5; y-6; x-7
+Row 6: x-1; y-2; y-3; y-4; y-5; y-6; x-7
+Row 7: x-1; y-2; y-3; y-4; y-5; y-6; x-7
+
+6. Function calls for each row:
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)

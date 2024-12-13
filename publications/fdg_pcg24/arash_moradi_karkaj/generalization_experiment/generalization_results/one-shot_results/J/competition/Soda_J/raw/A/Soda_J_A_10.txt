@@ -1,0 +1,29 @@
+To create a structure that looks like the capital letter "A" in the Tetris game, we can follow these steps:
+
+1. Create the base of the letter "A":
+```
+ab_drop("b31", 9)
+```
+This will create a horizontal block at the bottom of the grid.
+
+2. Add the top-left slanted line of the letter "A":
+```
+ab_drop("b13", 6)
+```
+This will create a vertical block on the left side of the base.
+
+3. Add the top-right slanted line of the letter "A":
+```
+ab_drop("b13", 12)
+```
+This will create a vertical block on the right side of the base.
+
+By following these steps, we will create a structure in the level that resembles the capital letter "A". The blocks will be placed in a bottom-to-top fashion and will form the desired shape.
+
+Complete Implementation:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 6)
+ab_drop("b13", 12)
+```

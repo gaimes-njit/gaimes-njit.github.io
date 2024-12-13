@@ -1,0 +1,14 @@
+To generate a structure that looks like the letter "D", we can use the following sequence of `ab_drop` function calls:
+```
+ab_drop('c', 'right')
+ab_drop('b', 'down')
+ab_drop('ab', 'down')
+ab_drop('bb', 'up')
+ab_drop('cb', 'up')
+ab_drop('bb', 'down')
+ab_drop('ab', 'down')
+ab_drop('bb', 'up')
+ab_drop('cb', 'up')
+```
+
+This sequence of `ab_drop` function calls will create a structure resembling the letter "D" in the database.

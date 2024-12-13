@@ -1,0 +1,50 @@
+```python
+# Function to drop bricks and check stability
+def ab_drop(x, y):
+    if x == 'b31':
+        for i in range(y-1, y+2):
+            # Check if any cells are already occupied
+            if field[0][i] == 1 or field[1][i] == 1 or field[2][i] == 1:
+                return
+        # Place the brick
+        for i in range(y-1, y+2):
+            field[0][i] = 1
+        return
+ 
+    if x == 'b13':
+        # Check if any cells are already occupied
+        if field[0][y] == 1 or field[0][y+1] == 1 or field[0][y+2] == 1:
+            return
+        # Place the brick
+        for i in range(y, y+3):
+            field[0][i] = 1
+        return
+ 
+    if x == 'b11':
+        # Check if cell is already occupied
+        if field[0][y] == 1:
+            return
+        # Place the brick
+        field[0][y] = 1
+        return
+ 
+ 
+# Initialize the field
+field = [[0] * 20 for _ in range(16)]
+ 
+# Generate the "K" shape
+ab_drop('b31', 5)
+ab_drop('b13', 5)
+ab_drop('b11', 4)
+ab_drop('b13', 7)
+ab_drop('b11', 8)
+ab_drop('b31', 9)
+ab_drop('b13', 9)
+ab_drop('b11', 10)
+
+# Display the field
+for row in field:
+    print(row)
+```
+
+This code will generate a shape resembling the letter "K" on the specified field, satisfying the important notes mentioned. The result of the field will be printed at the end, where 1 represents occupied cells and 0 represents empty cells.

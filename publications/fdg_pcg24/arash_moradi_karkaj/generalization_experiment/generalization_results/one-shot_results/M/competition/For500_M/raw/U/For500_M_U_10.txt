@@ -1,0 +1,3 @@
+ab_drop('b13', 7)  # Create the left vertical line of the 'U'
+ab_drop('b13', 11)  # Create the right vertical line of the 'U'
+ab_drop('b31', 9)  # Create the horizontal line of the 'U'

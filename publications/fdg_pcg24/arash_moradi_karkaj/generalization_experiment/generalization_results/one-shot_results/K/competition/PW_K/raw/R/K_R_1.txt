@@ -1,0 +1,53 @@
+To generate the uppercase English letter "R", we can follow these steps:
+
+1. Place two square blocks (b11) starting from position (4,1) and (6,1):
+   ```
+   Stream of commands
+   ab_drop('b11',4)
+   ab_drop('b11',6)
+   ```
+
+2. Place a horizontal straight block (b31) starting from position (5,1):
+   ```
+   Stream of commands
+   ab_drop('b31',5)
+   ```
+
+3. Place two square blocks (b11) starting from position (4,2) and (5,2):
+   ```
+   Stream of commands
+   ab_drop('b11',4)
+   ab_drop('b11',5)
+   ```
+
+4. Place a horizontal straight block (b31) starting from position (5,2):
+   ```
+   Stream of commands
+   ab_drop('b31',5)
+   ```
+
+5. Place a vertical straight block (b13) starting from position (5,4):
+   ```
+   Stream of commands
+   ab_drop('b13',5)
+   ```
+
+6. Place a horizontal straight block (b31) starting from position (6,3):
+   ```
+   Stream of commands
+   ab_drop('b31',6)
+   ```
+
+7. Place a horizontal straight block (b31) starting from position (6,5):
+   ```
+   Stream of commands
+   ab_drop('b31',6)
+   ```
+
+8. Place a square block (b11) starting from position (6,4):
+   ```
+   Stream of commands
+   ab_drop('b11',6)
+   ```
+
+The generated commands will successfully construct the uppercase English letter "R" within the given environment and gravity rules.

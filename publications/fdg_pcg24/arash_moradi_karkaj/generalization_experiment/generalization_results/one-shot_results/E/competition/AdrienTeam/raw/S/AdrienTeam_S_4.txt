@@ -1,0 +1,44 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Drop vertical block at the leftmost slot
+ab_drop('b13', 0)
+
+# Drop horizontal block at the second slot
+ab_drop('b11', 1)
+ab_drop('b11', 0)
+
+# Drop horizontal block at the fourth slot
+ab_drop('b11', 3)
+ab_drop('b11', 2)
+
+# Drop vertical block at the fifth slot
+ab_drop('b13', 4)
+
+# Drop horizontal block at the seventh slot
+ab_drop('b11', 6)
+ab_drop('b11', 5)
+
+# Drop horizontal block at the ninth slot
+ab_drop('b11', 8)
+ab_drop('b11', 7)
+
+# Drop vertical block at the eleventh slot
+ab_drop('b13', 10)
+
+# Drop horizontal block at the thirteenth slot
+ab_drop('b11', 12)
+ab_drop('b11', 11)
+
+# Drop horizontal block at the fifteenth slot
+ab_drop('b11', 14)
+ab_drop('b11', 13)
+
+# Drop vertical block at the eighteenth slot
+ab_drop('b13', 17)
+
+# Drop horizontal block at the twentieth slot
+ab_drop('b11', 19)
+ab_drop('b11', 18)
+```

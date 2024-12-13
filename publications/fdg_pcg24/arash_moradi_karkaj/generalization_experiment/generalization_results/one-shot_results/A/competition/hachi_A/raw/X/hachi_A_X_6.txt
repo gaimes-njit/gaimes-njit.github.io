@@ -1,0 +1,5 @@
+ab_drop('b11', 1)  # Top left corner
+ab_drop('b11', 3)  # Top right corner
+ab_drop('b31', 2)  # Middle bar
+ab_drop('b11', 1)  # Bottom left corner
+ab_drop('b11', 3)  # Bottom right corner

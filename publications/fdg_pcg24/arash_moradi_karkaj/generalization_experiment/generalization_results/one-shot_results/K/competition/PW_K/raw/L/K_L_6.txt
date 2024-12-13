@@ -1,0 +1,11 @@
+To generate the uppercase English letter "L," you can use the following commands:
+
+```
+ab_drop('b11',1)
+ab_drop('b11',3)
+ab_drop('b13',3)
+ab_drop('b11',1)
+ab_drop('b11',2)
+```
+
+This sequence of commands will construct the letter "L" by stacking the blocks in the specified positions while maintaining stability according to the gravity rules.

@@ -1,0 +1,70 @@
+To achieve a structure that looks like the letter "N", we need to build it in a bottom-to-top fashion. We will start by placing the base blocks and then add the upper blocks.
+
+1. Place the base blocks:
+   - Place a row block at the center of the grid: `ab_drop("b31", 7)`
+   - Place a column block at the center of the grid, one position to the right: `ab_drop("b13", 8)`
+   - Place a row block at the center of the grid, two positions to the right: `ab_drop("b31", 9)`
+
+2. Place the upper blocks:
+   - Place a row block at the top-left corner of the grid, one position to the right: `ab_drop("b31", 0)`
+   - Place a column block at the top-left corner of the grid, two positions to the right: `ab_drop("b13", 1)`
+   - Place a row block at the top-left corner of the grid, three positions to the right: `ab_drop("b31", 2)`
+
+3. Adjust the positions of the upper blocks:
+   - Move the row block at the top-left corner one position to the right: `ab_drop("b31", 1)`
+   - Move the column block at the top-left corner two positions to the right: `ab_drop("b13", 2)`
+   - Move the row block at the top-left corner three positions to the right: `ab_drop("b31", 3)`
+
+4. Adjust the positions of the upper blocks again:
+   - Move the row block at the top-left corner one position to the right: `ab_drop("b31", 2)`
+   - Move the column block at the top-left corner two positions to the right: `ab_drop("b13", 3)`
+   - Move the row block at the top-left corner three positions to the right: `ab_drop("b31", 4)`
+
+5. Adjust the positions of the upper blocks once more:
+   - Move the row block at the top-left corner one position to the right: `ab_drop("b31", 3)`
+   - Move the column block at the top-left corner two positions to the right: `ab_drop("b13", 4)`
+   - Move the row block at the top-left corner three positions to the right: `ab_drop("b31", 5)`
+
+6. Adjust the positions of the upper blocks:
+   - Move the row block at the top-left corner one position to the right: `ab_drop("b31", 4)`
+   - Move the column block at the top-left corner two positions to the right: `ab_drop("b13", 5)`
+   - Move the row block at the top-left corner three positions to the right: `ab_drop("b31", 6)`
+
+7. Adjust the positions of the upper blocks:
+   - Move the row block at the top-left corner one position to the right: `ab_drop("b31", 5)`
+   - Move the column block at the top-left corner two positions to the right: `ab_drop("b13", 6)`
+   - Move the row block at the top-left corner three positions to the right: `ab_drop("b31", 7)`
+
+The complete implementation, ensuring both stability and similarity, is as follows:
+
+```
+ab_drop("b31", 7)
+ab_drop("b13", 8)
+ab_drop("b31", 9)
+
+ab_drop("b31", 0)
+ab_drop("b13", 1)
+ab_drop("b31", 2)
+
+ab_drop("b31", 1)
+ab_drop("b13", 2)
+ab_drop("b31", 3)
+
+ab_drop("b31", 2)
+ab_drop("b13", 3)
+ab_drop("b31", 4)
+
+ab_drop("b31", 3)
+ab_drop("b13", 4)
+ab_drop("b31", 5)
+
+ab_drop("b31", 4)
+ab_drop("b13", 5)
+ab_drop("b31", 6)
+
+ab_drop("b31", 5)
+ab_drop("b13", 6)
+ab_drop("b31", 7)
+```
+
+This implementation will generate a structure resembling the letter "N" in the level.

@@ -1,0 +1,18 @@
+To create the letter "B" in the level, we will break it down into three blocks: a row block, a column block, and another row block.
+
+Here is the step-by-step implementation to create the letter "B":
+
+1. Dropping the first row block (b31), centered at x_position=3:
+ab_drop("b31", 3)
+
+2. Dropping the column block (b13), centered at x_position=4:
+ab_drop("b13", 4)
+
+3. Dropping the second row block (b31), centered at x_position=5:
+ab_drop("b31", 5)
+
+The complete implementation:
+
+ab_drop("b31", 3)
+ab_drop("b13", 4)
+ab_drop("b31", 5)

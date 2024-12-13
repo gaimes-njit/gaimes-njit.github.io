@@ -1,0 +1,36 @@
+```
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the first horizontal block
+ab_drop('b11', 9)
+
+# Drop the second horizontal block
+ab_drop('b11', 10)
+
+# Drop the vertical block in the middle
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+
+# Drop the bottom horizontal block
+ab_drop('b11', 9)
+
+# Drop the top horizontal block
+ab_drop('b11', 9)
+
+# Drop the blocks to form the vertical lines of the 'H'
+ab_drop('b11', 9)
+ab_drop('b11', 11)
+
+# Drop the horizontal block in the middle
+ab_drop('b11', 10)
+
+# Drop the blocks to form the horizontal line of the 'H'
+ab_drop('b11', 9)
+ab_drop('b11', 11)
+
+# Drop the blocks to form the base of the 'H'
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+```

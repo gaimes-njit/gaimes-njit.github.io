@@ -1,0 +1,15 @@
+To generate the uppercase letter "Y", we can follow the following steps:
+
+1. Start by creating the left vertical stem of the letter. Use the ab_drop('b13', 1) command to place a vertical straight block at position 1.
+2. Create the right vertical stem of the letter. Use the ab_drop('b13', 3) command to place a vertical straight block at position 3.
+3. Create the diagonal middle part of the letter. Use the ab_drop('b31', 2) command to place a horizontal straight block at position 2, connecting the two vertical stems.
+
+Here is the complete stream of commands to generate the uppercase letter "Y":
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+```
+
+Executing these commands will construct the letter "Y" within the specified boundaries and gravity rules.

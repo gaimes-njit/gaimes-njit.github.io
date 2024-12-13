@@ -1,0 +1,12 @@
+To create a structure that looks like the letter "U" in the level, we can use a combination of square blocks (b11) and column blocks (b13). 
+
+First, we'll place the base of the "U" shape using column blocks. Then, we'll add the sides of the "U" shape using square blocks. Here is the complete implementation:
+
+```python
+ab_drop("b13", 5)  # Place column block on the left side
+ab_drop("b13", 14)  # Place column block on the right side
+ab_drop("b11", 5)  # Place square block on the left side
+ab_drop("b11", 14)  # Place square block on the right side
+```
+
+This implementation follows the bottom-to-top fashion and ensures stability by placing the blocks in a balanced manner. It also generates a structure that closely resembles the target letter "U".

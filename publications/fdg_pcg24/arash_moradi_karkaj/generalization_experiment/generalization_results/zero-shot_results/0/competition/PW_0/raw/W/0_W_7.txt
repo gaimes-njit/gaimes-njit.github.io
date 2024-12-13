@@ -1,0 +1,14 @@
+To construct the uppercase letter "W" using the given block types, we will need to use a combination of the square block, horizontal straight block, and vertical straight block. Here is the stream of commands to generate the letter "W":
+
+```
+ab_drop('b31', 1)  # Place a horizontal straight block at position 1
+ab_drop('b13', 4)  # Place a vertical straight block at position 4
+ab_drop('b31', 5)  # Place a horizontal straight block at position 5
+ab_drop('b11', 8)  # Place a square block at position 8
+ab_drop('b13', 9)  # Place a vertical straight block at position 9
+ab_drop('b31', 10)  # Place a horizontal straight block at position 10
+ab_drop('b13', 13)  # Place a vertical straight block at position 13
+ab_drop('b31', 14)  # Place a horizontal straight block at position 14
+```
+
+These commands will construct the letter "W" within the allowed space boundaries while adhering to the 2D gravity rules.

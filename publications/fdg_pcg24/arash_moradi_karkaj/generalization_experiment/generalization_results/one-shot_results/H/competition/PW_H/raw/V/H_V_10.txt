@@ -1,0 +1,9 @@
+To generate the uppercase English letter "V", you can use the following stream of commands:
+
+``` 
+ab_drop('b13',1)             # Place first vertical straight block on position 1
+ab_drop('b13',3)             # Place second vertical straight block on position 3
+ab_drop('b31',2)             # Place horizontal straight block in the middle
+```
+
+By following these commands in sequence, you will be able to construct the letter "V" within the allowed space and gravity rules.

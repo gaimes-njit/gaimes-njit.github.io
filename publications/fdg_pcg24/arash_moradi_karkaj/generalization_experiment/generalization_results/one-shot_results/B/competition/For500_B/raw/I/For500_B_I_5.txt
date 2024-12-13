@@ -1,0 +1,9 @@
+ab_drop('b31',9) # drop 'b31' block with center at index 9
+ab_drop('b11',9) # drop 'b11' block with center at index 9
+ab_drop('b11',8) # drop 'b11' block with center at index 8
+ab_drop('b11',10) # drop 'b11' block with center at index 10
+ab_drop('b31',9) # drop 'b31' block with center at index 9
+ab_drop('b11',9) # drop 'b11' block with center at index 9
+ab_drop('b11',8) # drop 'b11' block with center at index 8
+ab_drop('b11',10) # drop 'b11' block with center at index 10
+ab_drop('b31',9) # drop 'b31' block with center at index 9

@@ -1,0 +1,21 @@
+4. Solution
+
+To create a structure that looks like the letter "D" using the ab drop() function, we need to strategically drop blocks in the correct slots and layers to form the desired shape. Here is a step-by-step guide to achieving this:
+
+Step 1: Start by dropping a b13 block at layer 15 with its center at slot 6. This block will form the curved part of the "D".
+
+ab drop(b13, 15, 6)
+
+Step 2: Next, drop a b31 block at layer 14 with its center at slot 6. This block will form the straight vertical part of the "D".
+
+ab drop(b31, 14, 6)
+
+Step 3: Continue by dropping a b11 block at layer 13 with its center at slot 6. This block will form the circular part of the "D".
+
+ab drop(b11, 13, 6)
+
+Step 4: Finally, drop another b31 block at layer 12 with its center at slot 6. This block will complete the straight part of the "D".
+
+ab drop(b31, 12, 6)
+
+By following these steps and strategically dropping blocks in the correct slots and layers, you can create a stable structure that resembles the letter "D" using the ab drop() function.

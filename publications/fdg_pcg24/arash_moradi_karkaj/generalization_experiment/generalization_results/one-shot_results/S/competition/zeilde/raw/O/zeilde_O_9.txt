@@ -1,0 +1,87 @@
+1. Here is the letter "O" drawn with asterisks:
+```
+  ****  
+ *    * 
+*      *
+*      *
+*      *
+ *    * 
+  ****  
+```
+2. Line-by-line, we can list the asterisks and spaces generated in each row:
+- Row 1: 2 asterisks, 4 spaces
+- Row 2: 1 asterisk, 1 space, 4 asterisks, 1 space, 1 asterisk
+- Row 3: 1 asterisk, 3 spaces, 2 asterisks, 3 spaces, 1 asterisk
+- Row 4: 1 asterisk, 3 spaces, 2 asterisks, 3 spaces, 1 asterisk
+- Row 5: 1 asterisk, 3 spaces, 2 asterisks, 3 spaces, 1 asterisk
+- Row 6: 1 asterisk, 1 space, 4 asterisks, 1 space, 1 asterisk
+- Row 7: 2 asterisks, 4 spaces
+
+3. Now we will represent asterisks with "x" and spaces with "y". Let's repeat step #2 with the new rules:
+- Row 1: 2x, 4y
+- Row 2: 1x, 1y, 4x, 1y, 1x
+- Row 3: 1x, 3y, 2x, 3y, 1x
+- Row 4: 1x, 3y, 2x, 3y, 1x
+- Row 5: 1x, 3y, 2x, 3y, 1x
+- Row 6: 1x, 1y, 4x, 1y, 1x
+- Row 7: 2x, 4y
+
+4. For each row, we can write out each x and y side-by-side:
+- Row 1: xx, yyyy
+- Row 2: x, y, xxxx, y, x
+- Row 3: x, yyy, xx, yyy, x
+- Row 4: x, yyy, xx, yyy, x
+- Row 5: x, yyy, xx, yyy, x
+- Row 6: x, y, xxxx, y, x
+- Row 7: xx, yyyy
+
+5. Now let's indicate the position of each variable:
+- Row 1: x-1, x-2, y-3, y-4, y-5, y-6
+- Row 2: x-1, y-2, x-3, x-4, x-5, x-6, y-7, x-8, y-9, x-10, x-11
+- Row 3: x-1, y-2, y-3, y-4, x-5, x-6, y-7, y-8, y-9, x-10, x-11
+- Row 4: x-1, y-2, y-3, y-4, x-5, x-6, y-7, y-8, y-9, x-10, x-11
+- Row 5: x-1, y-2, y-3, y-4, x-5, x-6, y-7, y-8, y-9, x-10, x-11
+- Row 6: x-1, y-2, x-3, x-4, x-5, x-6, y-7, x-8, y-9, x-10, x-11
+- Row 7: x-1, x-2, y-3, y-4, y-5, y-6
+
+6. Now we will return a sequence of `ab_drop` function calls for each row:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 11)
+ab_drop("b11", 12)
+ab_drop("b11", 13)
+ab_drop("b11", 14)
+ab_drop("b11", 15)
+ab_drop("b11", 16)
+ab_drop("b11", 17)
+ab_drop("b11", 18)
+ab_drop("b11", 19)
+ab_drop("b11", 20)
+ab_drop("b11", 21)
+ab_drop("b11", 22)
+ab_drop("b11", 23)
+ab_drop("b11", 24)
+ab_drop("b11", 25)
+ab_drop("b11", 26)
+ab_drop("b11", 27)
+ab_drop("b11", 28)
+ab_drop("b11", 29)
+ab_drop("b11", 30)
+ab_drop("b11", 31)
+ab_drop("b11", 32)
+ab_drop("b11", 33)
+ab_drop("b11", 34)
+ab_drop("b11", 35)
+ab_drop("b11", 36)
+ab_drop("b11", 37)
+```
+Please note that the function call sequence may vary based on the actual position of the variables in your implementation.

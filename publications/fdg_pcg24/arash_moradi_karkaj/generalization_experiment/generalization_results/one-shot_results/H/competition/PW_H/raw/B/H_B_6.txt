@@ -1,0 +1,11 @@
+To create the uppercase letter "B" using the given block types and rules, you can use the following stream of commands:
+
+```
+ab_drop('b13', 1)  // Place the first vertical block at position 1
+ab_drop('b13', 3)  // Place the second vertical block at position 3
+ab_drop('b31', 2)  // Place the horizontal block at position 2
+ab_drop('b13', 1)  // Place the third vertical block at position 1
+ab_drop('b13', 3)  // Place the fourth vertical block at position 3
+```
+
+The above commands will generate the uppercase letter "B" within the defined environment.

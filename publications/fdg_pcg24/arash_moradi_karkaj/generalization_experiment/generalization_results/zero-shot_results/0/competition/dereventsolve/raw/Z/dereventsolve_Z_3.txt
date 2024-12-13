@@ -1,0 +1,23 @@
+To generate a structure that looks like the letter "Z", we can represent it using a combination of characters and spaces. Here is an example of how to create the letter "Z" using the `ab_drop` function calls:
+
+```
+ab_drop(0, 0);      // Drop 'a' at position (0, 0)
+ab_drop(0, 1);      // Drop 'b' at position (0, 1)
+ab_drop(0, 2);      // Drop ' ' (empty space) at position (0, 2)
+ab_drop(0, 3);      // Drop ' ' (empty space) at position (0, 3)
+
+ab_drop(1, 2);      // Drop 'a' at position (1, 2)
+ab_drop(2, 1);      // Drop 'b' at position (2, 1)
+ab_drop(3, 0);      // Drop ' ' (empty space) at position (3, 0)
+ab_drop(3, 1);      // Drop ' ' (empty space) at position (3, 1)
+ab_drop(3, 2);      // Drop ' ' (empty space) at position (3, 2)
+ab_drop(3, 3);      // Drop ' ' (empty space) at position (3, 3)
+ab_drop(3, 3);      // Drop ' ' (empty space) at position (3, 3)
+ab_drop(3, 4);      // Drop ' ' (empty space) at position (3, 4)
+
+ab_drop(2, 4);      // Drop 'a' at position (2, 4)
+ab_drop(1, 3);      // Drop 'b' at position (1, 3)
+ab_drop(0, 4);      // Drop ' ' (empty space) at position (0, 4)
+```
+
+The above `ab_drop` function calls will generate a structure that visually resembles the letter "Z".

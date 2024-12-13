@@ -1,0 +1,18 @@
+To generate a structure that looks like the capital letter "V", we can use the following sequence of ab_drop() calls:
+
+1. Place the bottom left block of the "V":
+   ab_drop("b13", 4)
+
+2. Place the bottom right block of the "V":
+   ab_drop("b13", 14)
+
+3. Place the middle block of the "V":
+   ab_drop("b13", 9)
+
+By dropping the blocks in this order, we ensure that the bottom blocks are placed first and the upper blocks are placed on top of them, creating a stable structure. The resulting structure will have the shape of the capital letter "V".
+
+Complete Implementation:
+
+ab_drop("b13", 4)
+ab_drop("b13", 14)
+ab_drop("b13", 9)

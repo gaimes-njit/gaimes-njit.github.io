@@ -1,0 +1,4 @@
+ab_drop('b31', 9)  # Place the top horizontal part of the L
+ab_drop('b11', 8)  # Place the bottom left vertical part of the L
+ab_drop('b11', 10)  # Place the bottom right vertical part of the L
+ab_drop('b31', 9)  # Place the bottom horizontal part of the L

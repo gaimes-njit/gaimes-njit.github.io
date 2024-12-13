@@ -1,0 +1,57 @@
+To generate the structure resembling the letter "I" with the given constraints, we will start from the bottom layer (layer 0) and work our way up to the top layer (layer 15). We will use the `ab_drop()` function to drop the blocks vertically and ensure that they do not extend beyond the map boundaries.
+
+Here is the code to generate the structure:
+
+```
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Bottom Layer
+ab_drop('b31', 9)
+
+# Second Layer
+ab_drop('b11', 9)
+
+# Third Layer
+ab_drop('b13', 9)
+ab_drop('b11', 7)
+ab_drop('b11', 11)
+
+# Fourth Layer
+ab_drop('b11', 9)
+
+# Fifth Layer
+ab_drop('b11', 9)
+
+# Sixth Layer
+ab_drop('b11', 9)
+
+# Seventh Layer
+ab_drop('b11', 9)
+
+# Eighth Layer
+ab_drop('b11', 9)
+
+# Ninth Layer
+ab_drop('b11', 9)
+
+# Tenth Layer
+ab_drop('b11', 9)
+
+# Eleventh Layer
+ab_drop('b11', 9)
+
+# Twelfth Layer
+ab_drop('b11', 9)
+
+# Thirteenth Layer
+ab_drop('b11', 9)
+
+# Fourteenth Layer
+ab_drop('b11', 9)
+
+# Top Layer
+ab_drop('b11', 9)
+```
+
+The above code sequence of `ab_drop()` inputs will generate a structure resembling the letter "I" that satisfies all the given constraints.

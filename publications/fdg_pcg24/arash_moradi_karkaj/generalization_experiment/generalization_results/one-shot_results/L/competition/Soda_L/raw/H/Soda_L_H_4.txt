@@ -1,0 +1,17 @@
+To create the letter "H" in the level, we can use two column blocks and one row block. The first column block will form the left vertical line, the row block will be the middle line, and the second column block will form the right vertical line. Here is the complete implementation:
+
+```
+# Drop the first column block on the left
+ab_drop("b13", 2)
+ab_drop("b13", 3)
+ab_drop("b13", 4)
+
+# Drop the row block on top of the first column blocks
+ab_drop("b31", 3)
+
+# Drop the second column block on the right
+ab_drop("b13", 7)
+ab_drop("b13", 8)
+ab_drop("b13", 9)
+```
+This implementation will create the letter "H" in the level, with the left vertical line formed by the first column blocks, the middle line formed by the row block, and the right vertical line formed by the second column blocks.

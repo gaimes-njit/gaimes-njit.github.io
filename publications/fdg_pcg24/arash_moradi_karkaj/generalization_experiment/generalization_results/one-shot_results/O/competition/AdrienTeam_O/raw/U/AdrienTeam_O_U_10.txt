@@ -1,0 +1,8 @@
+The `ab_drop()` calls to create a stable structure resembling "U" while adhering to the given constraints are as follows:
+
+```
+ab_drop('b13', 0)
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b13', 3)
+```

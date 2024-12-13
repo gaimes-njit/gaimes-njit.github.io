@@ -1,0 +1,59 @@
+To create the uppercase English letter "O" using the given block types and environment, you can follow these steps:
+
+1. Place two b13 blocks vertically at positions (9, 1) and (9, 13) to form the two sides of the letter "O". Use the ab_drop() command to place each block:
+
+```
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+```
+
+2. Place two b31 blocks horizontally at positions (1, 4) and (13, 4) to form the top and bottom parts of the letter "O":
+
+```
+ab_drop("b31", 1)
+ab_drop("b31", 13)
+```
+
+3. Place a b11 block at position (5, 4) to fill the gap in the top part of the letter "O":
+
+```
+ab_drop("b11", 5)
+```
+
+4. Place a b11 block at position (11, 4) to fill the gap in the bottom part of the letter "O":
+
+```
+ab_drop("b11", 11)
+```
+
+5. Place a b11 block at position (5, 10) to fill the gap in the left side of the letter "O":
+
+```
+ab_drop("b11", 5)
+```
+
+6. Place a b11 block at position (11, 10) to fill the gap in the right side of the letter "O":
+
+```
+ab_drop("b11", 11)
+```
+
+7. Finally, place a b11 block at position (9, 4) to fill the middle part of the letter "O":
+
+```
+ab_drop("b11", 9)
+```
+
+The complete stream of commands to create the uppercase English letter "O" is:
+
+```
+ab_drop("b13", 9)
+ab_drop("b13", 9)
+ab_drop("b31", 1)
+ab_drop("b31", 13)
+ab_drop("b11", 5)
+ab_drop("b11", 11)
+ab_drop("b11", 5)
+ab_drop("b11", 11)
+ab_drop("b11", 9)
+```

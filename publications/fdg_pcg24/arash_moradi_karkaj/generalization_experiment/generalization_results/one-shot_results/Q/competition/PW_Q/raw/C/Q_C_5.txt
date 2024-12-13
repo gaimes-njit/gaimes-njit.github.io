@@ -1,0 +1,17 @@
+To generate the capital letter "C", we can use the following stream of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+ab_drop('b13', 4)
+ab_drop('b13', 4)
+ab_drop('b31', 1)
+```
+
+Explanation:
+1. We start by placing a horizontal straight block (b31) at position 1 to form the top part of the letter "C".
+2. Next, we place a vertical straight block (b13) at position 4 to form the vertical stroke of the letter "C".
+3. We repeat step 2 three times to extend the vertical stroke downwards.
+4. Finally, we place another horizontal straight block (b31) at position 1 to complete the bottom part of the letter "C".
+
+Note: The numbers in ab_drop() represent the index positions in the grid.

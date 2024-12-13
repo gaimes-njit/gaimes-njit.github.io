@@ -1,0 +1,33 @@
+To generate the uppercase letter "D" using the given block types and command, we can follow these steps:
+
+1. Start by placing a b31 block at position 1:  
+   `ab_drop('b31',1)`
+
+2. Place a b13 block at position 3, just below the b31 block:  
+   `ab_drop('b13',3)`
+
+3. Place a b13 block at position 3, below the previous b13 block:  
+   `ab_drop('b13',3)`
+
+4. Place a b31 block at position 4, to the right of the previous b13 block:  
+   `ab_drop('b31',4)`
+
+5. Place a b13 block at position 6, just below the b31 block:  
+   `ab_drop('b13',6)`
+
+6. Place a b13 block at position 6, below the previous b13 block:  
+   `ab_drop('b13',6)`
+
+7. Place a b31 block at position 7, to the right of the previous b13 block:  
+   `ab_drop('b31',7)`
+
+To summarize, the stream of commands to generate the letter "D" is:
+```
+ab_drop('b31',1)
+ab_drop('b13',3)
+ab_drop('b13',3)
+ab_drop('b31',4)
+ab_drop('b13',6)
+ab_drop('b13',6)
+ab_drop('b31',7)
+```

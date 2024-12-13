@@ -1,0 +1,35 @@
+To create the capital letter "K", we need to stack and place the blocks in the following order:
+
+1. Place the first vertical straight block (b13) at position 1 along the width.
+```
+ab_drop('b13', 1)
+```
+
+2. Place the second vertical straight block (b13) at position 3 along the width.
+```
+ab_drop('b13', 3)
+```
+
+3. Place the horizontal straight block (b31) at position 2 along the width.
+```
+ab_drop('b31', 2)
+```
+
+4. Place the third vertical straight block (b13) at position 1 along the width.
+```
+ab_drop('b13', 1)
+```
+
+5. Place the fourth vertical straight block (b13) at position 3 along the width.
+```
+ab_drop('b13', 3)
+```
+
+So, the complete stream of commands to create the capital letter "K" would be:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```

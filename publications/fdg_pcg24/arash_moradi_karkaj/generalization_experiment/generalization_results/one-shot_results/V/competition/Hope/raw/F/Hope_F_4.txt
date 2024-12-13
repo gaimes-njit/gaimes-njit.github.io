@@ -1,0 +1,11 @@
+To create the structure exactly like "F" inside a 20*16 box using the given block types and ab_drop('blocktype', x position) command, we can follow these steps:
+
+Step 1: Place the first vertical block (b31) at position (0, 0) with the command ab_drop('b31', 0).
+
+Step 2: Place the horizontal block (b13) above the vertical block at position (1, 1) with the command ab_drop('b13', 1).
+
+Step 3: Place the second vertical block (b31) beside the horizontal block at position (4, 1) with the command ab_drop('b31', 4).
+
+Step 4: Place the third vertical block (b31) beside the horizontal block at position (1, 4) with the command ab_drop('b31', 1).
+
+This arrangement will form the letter "F" inside the 20*16 box.

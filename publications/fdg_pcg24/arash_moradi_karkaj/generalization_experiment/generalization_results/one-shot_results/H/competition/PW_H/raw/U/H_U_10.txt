@@ -1,0 +1,18 @@
+To generate the uppercase letter "U" using the ab_drop() command and the Block Types in the defined environment, we need to create three blocks:
+
+1. The left vertical line of the "U":
+   ab_drop('b13', 1) - Place a b13 block at position 1 along the width.
+
+2. The right vertical line of the "U":
+   ab_drop('b13', 3) - Place a b13 block at position 3 along the width.
+
+3. The horizontal line connecting the left and right vertical lines of the "U":
+   ab_drop('b31', 2) - Place a b31 block at position 2 along the width.
+
+In summary, the stream of commands to generate the uppercase letter "U" would be:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+```

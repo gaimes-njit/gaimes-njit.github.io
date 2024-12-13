@@ -1,0 +1,48 @@
+To generate a structure that resembles the character "Q" while meeting all hard constraints, we can follow these steps:
+
+Step 1: Initialize the structure as an empty grid
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Place the base block (b11) at the bottom of the structure
+```python
+ab_drop('b11', 9)
+```
+
+Step 3: Place the vertical block (b13) on top of the base block to form the left side of the "Q"
+```python
+ab_drop('b13', 7)
+```
+
+Step 4: Place the horizontal block (b31) on top of the vertical block to form the top part of the "Q"
+```python
+ab_drop('b31', 9)
+```
+
+Step 5: Place the vertical block (b13) on top of the horizontal block to complete the left side of the "Q"
+```python
+ab_drop('b13', 7)
+```
+
+Step 6: Place the base block (b11) to the right of the previous block to form the bottom right part of the "Q"
+```python
+ab_drop('b11', 17)
+```
+
+Step 7: Place the vertical block (b13) on top of the base block to complete the right side of the "Q"
+```python
+ab_drop('b13', 15)
+```
+
+Step 8: Place the horizontal block (b31) on top of the vertical block to form the top right part of the "Q"
+```python
+ab_drop('b31', 17)
+```
+
+Step 9: Place the vertical block (b13) on top of the horizontal block to complete the right side of the "Q"
+```python
+ab_drop('b13', 15)
+```
+
+By following these steps, we can generate a stable structure that resembles the character "Q" while meeting all hard constraints. The specific slot positions and order of dropping the blocks may vary depending on the implementation of the ab_drop() function and the desired layout of the structure.

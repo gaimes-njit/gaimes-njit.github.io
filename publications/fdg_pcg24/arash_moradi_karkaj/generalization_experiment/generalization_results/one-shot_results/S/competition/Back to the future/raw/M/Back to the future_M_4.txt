@@ -1,0 +1,76 @@
+To generate a stable structure that looks like the uppercase character "M" and meets all the hard constraints, we need to strategically place the blocks in a way that ensures stability and resembles the desired shape. We will use the `ab_drop()` function to drop the blocks into the structure.
+
+Here is a step-by-step approach to generating the structure:
+
+1. Start with an initialized empty structure:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. First, drop a b31 block in the center of the structure to form the center of the "M":
+```
+ab_drop('b31', 9)
+```
+
+3. Next, drop a b13 block on both sides of the center block to form the two outer vertical lines of the "M":
+```
+ab_drop('b13', 6)
+ab_drop('b13', 12)
+```
+
+4. To complete the top part of the "M", drop a b11 block above each vertical line at the top:
+```
+ab_drop('b11', 6)
+ab_drop('b11', 12)
+```
+
+5. Now, we need to create the downward strokes of the "M" using b31 and b11 blocks. Drop a b31 block above the center block, but one slot to the left or right to maintain stability:
+```
+ab_drop('b31', 7)
+```
+
+6. Drop a b11 block above each b31 block to complete the downward strokes of the "M":
+```
+ab_drop('b11', 7)
+ab_drop('b11', 13)
+```
+
+7. Finally, we need to ensure stability for the lower part of the "M". Drop a b31 block on top of each b11 block in the center line:
+```
+ab_drop('b31', 7)
+ab_drop('b31', 13)
+```
+
+After following these steps, the `structure` will contain a stable structure that resembles the uppercase character "M". It is important to note that stability checks should be performed before each call to `ab_drop()` to ensure the entire structure remains stable throughout the generation process.
+
+Here is the Python code that implements the above steps:
+```python
+W = 20
+H = 16
+
+def ab_drop(x, y):
+    drop_pos = (H-1, y)
+    
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+            
+    structure[drop_pos[0]][drop_pos[1]] = x
+    return drop_pos
+
+structure = [[' ']*W for _ in range(H)]
+
+ab_drop('b31', 9)
+ab_drop('b13', 6)
+ab_drop('b13', 12)
+ab_drop('b11', 6)
+ab_drop('b11', 12)
+ab_drop('b31', 7)
+ab_drop('b11', 7)
+ab_drop('b11', 13)
+ab_drop('b31', 7)
+ab_drop('b31', 13)
+```
+
+By following the above steps, you will generate a stable structure that resembles the uppercase character "M". Remember to perform stability checks before each call to `ab_drop()` to ensure the structure remains stable.

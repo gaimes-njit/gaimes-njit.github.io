@@ -1,0 +1,20 @@
+Here is the code to generate the structure resembling "C" using the `ab_drop()` function:
+
+```
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the 'C' shape
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b31', 0)
+ab_drop('b13', 2)
+ab_drop('b13', 0)
+
+```
+
+This sequence of `ab_drop()` calls will create a stable structure resembling the letter "C".

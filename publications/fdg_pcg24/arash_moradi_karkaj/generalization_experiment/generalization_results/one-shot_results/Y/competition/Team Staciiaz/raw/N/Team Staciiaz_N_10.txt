@@ -1,0 +1,24 @@
+To generate a stable structure that looks like the character "N" using the `ab_drop()` function, we need to follow these steps:
+
+1. Initialize the structure as an empty grid:
+   - W = 20
+   - H = 16
+   - structure = [[' '] * W for _ in range(H)]
+
+2. Drop the first block 'b31' at slot 1 using `ab_drop('b31', 1)`.
+   - The center of the block will be aligned with slot 1.
+   - The block will fall to the highest empty position and occupy 3 slots horizontally.
+
+3. Drop the second block 'b13' at slot 6 using `ab_drop('b13', 6)`.
+   - The center of the block will be aligned with slot 6.
+   - The block will fall to the highest empty position and occupy 3 slots vertically.
+
+4. Drop the third block 'b31' at slot 11 using `ab_drop('b31', 11)`.
+   - The center of the block will be aligned with slot 11.
+   - The block will fall to the highest empty position and occupy 3 slots horizontally.
+
+5. The resulting structure will resemble the character "N" and meet the stability constraint since the blocks are placed properly and the weight distribution is balanced.
+
+The `ab_drop()` function takes care of the constraints related to block placement and stability. The stability constraint ensures that each block is dropped at a suitable slot to maintain the stability of the structure. The no boundary intrusion constraint is met by choosing slot positions that do not intrude on the map's boundary.
+
+Note: The exact slot positions may vary depending on the initial state of the structure and previously dropped blocks, but the overall strategy remains the same.

@@ -1,0 +1,12 @@
+To create the uppercase letter "X", we can use the following set of ab_drop() commands:
+
+```
+ab_drop('b13', 2)  # Place a vertical straight block in the center of the grid
+ab_drop('b13', 1)  # Place a vertical straight block to the left of the center
+ab_drop('b13', 3)  # Place a vertical straight block to the right of the center
+ab_drop('b31', 2)  # Place a horizontal straight block above the center
+ab_drop('b13', 1)  # Place a vertical straight block to the left of the center
+ab_drop('b13', 3)  # Place a vertical straight block to the right of the center
+```
+
+This set of commands will construct the uppercase letter "X" accurately and maintain stability with the gravity rules within the allowed space boundaries.

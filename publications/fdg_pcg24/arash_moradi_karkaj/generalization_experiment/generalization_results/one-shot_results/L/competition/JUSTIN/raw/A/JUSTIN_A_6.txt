@@ -1,0 +1,12 @@
+```
+# To generate the stable structure of an "A", we can use the following ab_drop() function calls:
+
+# Bottom horizontal block
+ab_drop('b31', 9)
+
+# Second row vertical block
+ab_drop('b13', 9)
+
+# Top horizontal block
+ab_drop('b31', 9)
+```

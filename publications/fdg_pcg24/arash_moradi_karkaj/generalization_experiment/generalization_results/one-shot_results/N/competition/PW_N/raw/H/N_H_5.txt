@@ -1,0 +1,13 @@
+To construct the uppercase letter "H," you can follow the commands below:
+
+``` 
+ab_drop('b13', 1)   // Place a vertical straight block at position 1
+ab_drop('b13', 2)   // Place a vertical straight block at position 2
+ab_drop('b13', 3)   // Place a vertical straight block at position 3
+ab_drop('b31', 2)   // Place a horizontal straight block at position 2
+ab_drop('b11', 2)   // Place a square block at position 2
+ab_drop('b13', 4)   // Place a vertical straight block at position 4
+ab_drop('b13', 5)   // Place a vertical straight block at position 5
+```
+
+These commands will create the uppercase letter "H" by stacking the block types in the described environment, while maintaining stability and adhering to the gravity rules.

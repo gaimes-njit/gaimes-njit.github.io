@@ -1,0 +1,19 @@
+To generate the uppercase letter "Z" using the given block types and the Tetris-like environment, you can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b11', 4)
+ab_drop('b31', 2)
+ab_drop('b13', 4)
+ab_drop('b31', 3)
+```
+
+Here's a breakdown of the commands:
+
+1. Place a horizontal straight block ('b31') at position 1.
+2. Place a 1x1 square block ('b11') at position 4.
+3. Place another horizontal straight block ('b31') at position 2.
+4. Place a vertical straight block ('b13') at position 4.
+5. Finally, place the last horizontal straight block ('b31') at position 3.
+
+By following these commands, you can construct the letter "Z" within the allowed space boundaries while maintaining structural stability with respect to the gravity rules.

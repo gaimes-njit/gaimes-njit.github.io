@@ -1,0 +1,12 @@
+To create a "V" shape using the ab_drop('blocktype',x position) command, you can follow these steps:
+
+1. Drop the first b13 block at position (0, 0):
+   - ab_drop('b13', 0)
+
+2. Drop the second b11 block at position (1, 1):
+   - ab_drop('b11', 1)
+
+3. Drop the third b13 block at position (2, 0):
+   - ab_drop('b13', 2)
+
+The resulting structure will form a "V" shape inside the 20*16 box.

@@ -1,0 +1,29 @@
+To generate a stable structure that resembles the character "T", we can follow these steps:
+
+1. Initialize the structure grid using the provided code:
+   `structure = [[' ']*W for _ in range(H)]`
+
+2. Place the base blocks (b11 or b13) on the bottom layer (layer 0) to create a solid base. This ensures stability and prevents overhangs.
+   - For the character "T", we can use a b11 block in the center and two b11 blocks on either side, forming a horizontal line.
+   - Example:
+     ```
+     ab_drop('b11', 9)  # Place the center b11 block at slot 9
+     ab_drop('b11', 8)  # Place the left b11 block at slot 8
+     ab_drop('b11', 10) # Place the right b11 block at slot 10
+     ```
+
+3. Place the vertical block (b13) on top of the base blocks to form the vertical line of the "T" character.
+   - For the character "T", we can place a b13 block centered above the previously placed b11 block.
+   - Example:
+     ```
+     ab_drop('b13', 9)  # Place the b13 block above the center b11 block at slot 9
+     ```
+
+4. Finally, place the horizontal block (b31) on top of the vertical block to complete the "T" structure.
+   - For the character "T", we can place a b31 block centered above the previously placed b13 block.
+   - Example:
+     ```
+     ab_drop('b31', 9)  # Place the b31 block above the b13 block at slot 9
+     ```
+
+By following these steps, the ab_drop() function can be used to put suitable blocks and generate a stable structure resembling the character "T".

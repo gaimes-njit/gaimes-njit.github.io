@@ -1,0 +1,12 @@
+To create the letter "K" in the given environment using the mentioned command and block types, follow the stream of commands below:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```
+
+This sequence of commands will create the letter "K" by stacking the blocks in the correct positions according to the gravity rules.

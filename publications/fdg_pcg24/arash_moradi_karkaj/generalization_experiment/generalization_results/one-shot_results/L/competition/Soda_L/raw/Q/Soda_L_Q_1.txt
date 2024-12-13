@@ -1,0 +1,23 @@
+To generate the capital letter "Q" in the level, we can follow these steps:
+
+1. Place the base block:
+```
+ab_drop("b13", 9)
+```
+
+2. Place the left vertical bar:
+```
+ab_drop("b31", 10)
+```
+
+3. Place the top horizontal bar:
+```
+ab_drop("b13", 9)
+```
+
+4. Place the right vertical bar:
+```
+ab_drop("b31", 8)
+```
+
+With these steps, we have constructed the letter "Q" in the level. The blocks are placed in a bottom-to-top fashion to ensure stability.

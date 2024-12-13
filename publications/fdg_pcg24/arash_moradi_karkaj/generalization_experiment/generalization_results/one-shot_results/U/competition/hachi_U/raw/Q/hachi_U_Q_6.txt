@@ -1,0 +1,14 @@
+To create the letter "Q" structure, you can use the following code:
+
+```
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+ab_drop('b11', 5)
+ab_drop('b11', 5)
+ab_drop('b11', 5)
+ab_drop('b11', 5)
+ab_drop('b13', 4)
+```
+
+This code will drop the blocks in a strategic manner to form the letter "Q" shape while ensuring stability and minimizing boundary intrusion.

@@ -1,0 +1,36 @@
+Here are the ab_drop() commands to generate the uppercase English letter "L":
+
+``` 
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 0)
+ab_drop('b13', 0)
+ab_drop('b13', 0)
+ab_drop('b13', 0)
+ab_drop('b13', 0)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+```
+
+The letter "L" is constructed by stacking the b31 block type 10 times in a vertical column, starting from the bottom. Then, the b13 block type is stacked 6 times in a horizontal row at the bottom of the column. Finally, the b31 block type is stacked 8 times in a vertical column on top of the b13 blocks.

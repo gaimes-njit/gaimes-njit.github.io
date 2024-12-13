@@ -1,0 +1,21 @@
+To generate a stable structure resembling the uppercase character "J" and meeting all the hard constraints, the following steps can be taken:
+
+1. Initialize the structure as an empty WxH grid using the provided code snippet.
+
+2. Start building the structure from the bottom (layer 0) to the top (layer 15) by calling the `ab_drop()` function for each block type.
+
+3. To ensure stability, follow the stability constraint and drop the blocks in a way that ensures proper weight distribution and prevents structural collapse. For example, if a b31 block is dropped at [3,4-6], make sure that [2,5] has a structure to support it. 
+
+4. To satisfy the "no boundary intrusion" constraint, avoid placing blocks in a way that intrudes on the boundary of the map (slots 0 and 19). This means the blocks should not be dropped at the extreme left or right slots.
+
+5. To meet the "overall shape" constraint, aim for a structure that resembles the uppercase letter "J" or similar letters such as 'T', 'U', or 'I'. This can be achieved by strategically placing the blocks in a manner that creates the desired shape. 
+
+6. Ensure that the generated structure is diverse and not always the same by considering various dropping positions and orders. Randomize the order of the block types and try different slot positions for each block to create a diverse structure.
+
+7. Before each call to `ab_drop()`, perform a stability check to ensure that the structure is stable and can remain stable during each drop without any accidents. This can be done by checking if the block below the current drop position has a supporting structure.
+
+8. Always list the coordinates of the `ab_drop()` function to keep track of the positions where blocks are dropped.
+
+9. Use accurate slot coordinates (y values) in the `ab_drop()` function instead of including formulas with W to ensure precise placement of the blocks.
+
+By following these steps and considering the stability, boundary intrusion, overall shape, and diversity constraints, it is possible to generate a stable structure resembling the uppercase character "J".

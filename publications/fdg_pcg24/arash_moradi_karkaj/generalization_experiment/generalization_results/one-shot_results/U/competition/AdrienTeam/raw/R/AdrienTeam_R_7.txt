@@ -1,0 +1,70 @@
+To construct the structure resembling "R" using the `ab_drop()` function, we need to carefully plan the order and position at which the blocks are dropped. Here is the code to achieve this:
+
+```python
+# Step 1: Initialize the map
+structure = [[' ']*20 for _ in range(16)]
+
+# Step 2: Drop the blocks to construct "R"
+# Drop the first block (b31) in the middle of the map
+ab_drop('b31', 9)
+
+# Drop the second block (b13) above the first block, slightly to the left
+ab_drop('b13', 8)
+
+# Drop the third block (b11) above the first block, slightly to the right
+ab_drop('b11', 11)
+
+# Drop the fourth block (b11) above the second block, slightly to the left
+ab_drop('b11', 7)
+
+# Drop the fifth block (b11) above the third block, slightly to the right
+ab_drop('b11', 12)
+
+# Drop the sixth block (b11) above the fourth block, slightly to the left
+ab_drop('b11', 6)
+
+# Drop the seventh block (b11) above the fifth block, slightly to the right
+ab_drop('b11', 13)
+
+# Drop the eighth block (b11) above the sixth block, slightly to the left
+ab_drop('b11', 5)
+
+# Drop the ninth block (b11) above the seventh block, slightly to the right
+ab_drop('b11', 14)
+
+# Drop the tenth block (b11) above the eighth block, slightly to the left
+ab_drop('b11', 4)
+
+# Drop the eleventh block (b11) above the ninth block, slightly to the right
+ab_drop('b11', 15)
+
+# Drop the twelfth block (b11) above the tenth block, slightly to the left
+ab_drop('b11', 3)
+
+# Drop the thirteenth block (b11) above the eleventh block, slightly to the right
+ab_drop('b11', 16)
+
+# Drop the fourteenth block (b11) above the twelfth block, slightly to the left
+ab_drop('b11', 2)
+
+# Drop the fifteenth block (b11) above the thirteenth block, slightly to the right
+ab_drop('b11', 17)
+
+# Drop the sixteenth block (b11) above the fourteenth block, slightly to the left
+ab_drop('b11', 1)
+
+# Drop the seventeenth block (b11) above the fifteenth block, slightly to the right
+ab_drop('b11', 18)
+
+# Drop the eighteenth block (b11) above the sixteenth block, slightly to the left
+ab_drop('b11', 0)
+
+# Drop the nineteenth block (b11) above the seventeenth block, slightly to the right
+ab_drop('b11', 19)
+
+# Step 3: Print the final structure
+for row in structure:
+    print(''.join(row))
+```
+
+This code will initialize a map, drop the blocks in the specified order and positions to form the structure "R", and finally print the resulting structure. Adjust the slots (y-coordinates) as needed to ensure that the blocks align properly to resemble the letter "R".

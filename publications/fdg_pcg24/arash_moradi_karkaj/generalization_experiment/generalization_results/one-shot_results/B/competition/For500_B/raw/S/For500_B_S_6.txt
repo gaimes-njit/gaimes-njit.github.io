@@ -1,0 +1,4 @@
+ab_drop('b31', 9)  # Place the top horizontal part of the "S" shape
+ab_drop('b11', 8)  # Place the left vertical part of the "S" shape
+ab_drop('b11', 10)  # Place the right vertical part of the "S" shape
+ab_drop('b31', 9)  # Place the bottom horizontal part of the "S" shape

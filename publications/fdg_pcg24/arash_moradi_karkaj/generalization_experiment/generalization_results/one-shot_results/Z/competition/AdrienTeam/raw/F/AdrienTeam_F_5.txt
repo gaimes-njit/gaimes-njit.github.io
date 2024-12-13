@@ -1,0 +1,33 @@
+```
+structure = [[' ']*20 for _ in range(16)] # Map initialization
+
+# Bottom horizontal block
+ab_drop('b31', 1) 
+
+# Top horizontal block
+ab_drop('b31', 2)
+
+# Left vertical block
+ab_drop('b13', 2)
+
+# Right vertical block
+ab_drop('b13', 4)
+
+# Top right horizontal block
+ab_drop('b31', 4)
+
+# Bottom right vertical block
+ab_drop('b11', 4)
+
+# Top left horizontal block
+ab_drop('b31', 1)
+
+# Bottom left vertical block
+ab_drop('b11', 2)
+
+# Top right vertical block
+ab_drop('b11', 6)
+
+# Top right horizontal block
+ab_drop('b31', 6)
+```

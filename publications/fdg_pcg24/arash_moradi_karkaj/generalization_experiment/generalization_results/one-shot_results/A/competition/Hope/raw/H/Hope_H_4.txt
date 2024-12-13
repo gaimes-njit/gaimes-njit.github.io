@@ -1,0 +1,21 @@
+To create the structure of "H" inside a 20*16 box, you can use the following commands:
+
+1. Drop b31 block at position (0, 6):
+   ab_drop('b31', 0)
+
+2. Drop b31 block at position (0, 9):
+   ab_drop('b31', 0)
+
+3. Drop b13 block at position (9, 6):
+   ab_drop('b13', 9)
+
+4. Drop b13 block at position (9, 9):
+   ab_drop('b13', 9)
+
+5. Drop b31 block at position (16, 6):
+   ab_drop('b31', 16)
+
+6. Drop b31 block at position (16, 9):
+   ab_drop('b31', 16)
+
+This will create an "H" structure with the desired dimensions inside the 20*16 box.

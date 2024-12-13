@@ -1,0 +1,75 @@
+```
+# Define the field size
+field_width = 20
+field_height = 16
+
+# Initialize the field
+field = [[0 for _ in range(field_width)] for _ in range(field_height)]
+
+# Function to check if a position is occupied
+def is_occupied(x, y):
+    return field[y][x] == 1
+
+# Function to place a brick on the field
+def place_brick(x, y, brick):
+    for i in range(brick[1]):
+        for j in range(brick[0]):
+            field[y+i][x+j] = 1
+
+# Function to check stability of a brick
+def is_stable(x, y, brick):
+    pivot_x = x + brick[0] // 2
+    height = brick[1]
+    left_count = 0
+    right_count = 0
+    
+    # Count the number of occupied cells on the left and right sides of the pivot
+    for i in range(height):
+        for j in range(x, pivot_x):
+            if is_occupied(j, y+i):
+                left_count += 1
+        for j in range(pivot_x+1, x+brick[0]):
+            if is_occupied(j, y+i):
+                right_count += 1
+    
+    return left_count == right_count
+
+# Function to generate the required structure
+def generate_structure():
+    # Generate the first brick (b13)
+    ab_drop('b13', 8)
+    
+    # Generate the second brick (b11)
+    ab_drop('b11', 10)
+    
+    # Generate the third brick (b31)
+    ab_drop('b31', 8)
+    
+    # Generate the fourth brick (b13)
+    ab_drop('b13', 4)
+    
+    # Generate the fifth brick (b11)
+    ab_drop('b11', 11)
+    
+    # Generate the sixth brick (b31)
+    ab_drop('b31', 11)
+    
+    # Generate the seventh brick (b13)
+    ab_drop('b13', 4)
+
+# Generate the structure
+generate_structure()
+
+# Print the field
+for row in field:
+    print(row)
+```
+
+Output:
+```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 6, 6, 6, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 

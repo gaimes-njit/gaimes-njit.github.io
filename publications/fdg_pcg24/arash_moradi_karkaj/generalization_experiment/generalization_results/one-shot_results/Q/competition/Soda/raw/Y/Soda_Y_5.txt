@@ -1,0 +1,15 @@
+To generate a structure in the shape of a capital "Y" in the Tetris game, we can break down the structure into three blocks: two column blocks and one row block. 
+
+First, we can start by placing the row block in the middle of the grid. Since the width of the grid is 20 columns, the x_position for the row block will be 9 to center it. 
+
+Next, we can place one column block on the left side of the row block. To do this, we can use a block_type of "b13" and set the x_position to 7 to place it just to the left of the row block. 
+
+Finally, we can place the other column block on the right side of the row block. Using a block_type of "b13" again, we can set the x_position to 11 to place it just to the right of the row block. 
+
+This implementation will create a stable structure in the shape of a capital "Y". Below is the complete implementation:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 7)
+ab_drop("b13", 11)
+```

@@ -1,0 +1,14 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Bottom layer
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+
+# Middle layer
+ab_drop('b11', 0)
+
+# Top layer
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+```

@@ -1,0 +1,16 @@
+To build the "T" character in a bottom-to-top fashion, we can use the following steps:
+
+1. Place the base of the "T" using the 'b13' block type at the center of the grid.
+2. Place the vertical part of the "T" using the 'b31' block type at the center of the grid.
+
+Here's the complete implementation:
+
+```python
+# Step 1: Place the base
+ab_drop("b13", 9)
+
+# Step 2: Place the vertical part
+ab_drop("b31", 9)
+```
+
+This implementation will create a stable structure that resembles the capital letter "T".

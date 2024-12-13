@@ -1,0 +1,24 @@
+To create the uppercase English letter "K", we can use the following stream of commands using the block types mentioned:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 4)
+ab_drop('b11', 5)
+ab_drop('b11', 6)
+ab_drop('b11', 7)
+ab_drop('b31', 2)
+ab_drop('b13', 2)
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+```
+
+Explanation:
+- First, we start by placing a horizontal straight block ('b31') at position 1 to create the top stroke of the letter "K".
+- Then, we place a vertical straight block ('b13') at position 1 to create the right stem of the letter "K".
+- Next, we place five 1x1 square blocks ('b11') consecutively from positions 2 to 6 to create the diagonal stroke of the letter "K".
+- Finally, we place another horizontal straight block ('b31') at position 2 and another vertical straight block ('b13') at position 2 to complete the left stem of the letter "K".
+
+By following these commands, we will be able to generate the uppercase English letter "K" within the defined environment and gravity rules.

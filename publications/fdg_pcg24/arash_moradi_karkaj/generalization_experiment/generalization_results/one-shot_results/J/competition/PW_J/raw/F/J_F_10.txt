@@ -1,0 +1,20 @@
+To generate the uppercase letter "F", you can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b13', 2)
+```
+
+Explanation:
+
+1. `ab_drop('b31', 1)` - This command places a horizontal straight block (b31) at position 1 along the width. This forms the top horizontal line of the letter "F".
+
+2. `ab_drop('b11', 1)` - This command places a square block (b11) at position 1 along the width. This forms the top-left vertical line of the letter "F".
+
+3. `ab_drop('b11', 2)` - This command places another square block (b11) at position 2 along the width. This forms the bottom-left vertical line of the letter "F".
+
+4. `ab_drop('b13', 2)` - This command places a vertical straight block (b13) at position 2 along the width. This forms the middle horizontal line of the letter "F".
+
+By following these commands, you will generate a capital English letter "F" within the allowed space and according to the gravity rules.

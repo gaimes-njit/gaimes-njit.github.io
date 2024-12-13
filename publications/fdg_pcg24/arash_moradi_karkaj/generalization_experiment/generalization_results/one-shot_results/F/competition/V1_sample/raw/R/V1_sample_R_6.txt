@@ -1,0 +1,9 @@
+```python
+from am.building import ab
+
+ab.drop('b11', y=9, H=15)  # Bottom right of R
+ab.drop('b13', y=9, H=12)  # Right vertical leg of R
+ab.drop('b31', y=10, H=10)  # Right horizontal leg of R
+ab.drop('b13', y=8, H=10)   # Left vertical leg of R
+ab.drop('b11', y=9, H=7)    # Top right of R
+```

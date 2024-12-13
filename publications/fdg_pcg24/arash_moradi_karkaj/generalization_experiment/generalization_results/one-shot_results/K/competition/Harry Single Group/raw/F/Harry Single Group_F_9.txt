@@ -1,0 +1,96 @@
+```python
+
+# Initialize the field
+field = []
+for _ in range(16):
+    field.append([' ']*20)
+
+def print_field():
+    for row in reversed(field):
+        print(''.join(row))
+
+# Function to check stability of bricks
+def check_stability(x, y):
+    if x == 0 or x == 19:
+        return True
+    if field[y+1][x-1] != ' ' and field[y+1][x+1] != ' ':
+        return True
+    return False
+
+# Function to place a brick on the field
+def place_brick(x, y, brick_width, brick_height):
+    for row in range(y, y+brick_height):
+        for col in range(x, x+brick_width):
+            field[row][col] = 'X'
+
+# Function to drop a brick and handle stability check
+def ab_drop(brick_type, x_position):
+    if brick_type == 'b31':
+        x = x_position - 1
+        y = 15
+        if x < 0 or x+2 > 19:
+            return
+        while y >= 0:
+            if field[y][x] != ' ' or field[y][x+1] != ' ' or field[y][x+2] != ' ':
+                break
+            y -= 1
+        y += 1
+        place_brick(x, y, 3, 1)
+        if not check_stability(x, y):
+            # Remove the brick if unstable
+            place_brick(x, y, 3, 1)
+
+    elif brick_type == 'b13':
+        x = x_position
+        y = 15
+        if x < 0 or x > 19:
+            return
+        while y-2 >= 0:
+            if field[y][x] != ' ' or field[y-1][x] != ' ' or field[y-2][x] != ' ':
+                break
+            y -= 1
+        y += 1
+        place_brick(x, y, 1, 3)
+        if not check_stability(x, y):
+            # Remove the brick if unstable
+            place_brick(x, y, 1, 3)
+
+    elif brick_type == 'b11':
+        x = x_position
+        y = 15
+        if x < 0 or x > 19:
+            return
+        while y >= 0:
+            if field[y][x] != ' ':
+                break
+            y -= 1
+        y += 1
+        place_brick(x, y, 1, 1)
+        if not check_stability(x, y):
+            # Remove the brick if unstable
+            place_brick(x, y, 1, 1)
+
+# Start generating the required structure
+
+# Place the first b31 brick
+ab_drop('b31', 8)
+
+# Place the second b31 brick
+ab_drop('b31', 5)
+
+# Place the third b31 brick
+ab_drop('b31', 2)
+
+# Place the b13 brick
+ab_drop('b13', 4)
+
+# Place the b11 bricks
+ab_drop('b11', 7)
+ab_drop('b11', 10)
+
+# Print the final field
+print_field()
+
+```
+
+The generated structure resembles the letter "F".

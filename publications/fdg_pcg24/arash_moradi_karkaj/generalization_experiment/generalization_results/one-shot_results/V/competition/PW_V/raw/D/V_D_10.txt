@@ -1,0 +1,17 @@
+To generate the uppercase letter "D", we can follow these steps:
+
+1. Place a b13 block at position (1, 1) using the ab_drop(3, 1) command.
+2. Place a b31 block at position (4, 1) using the ab_drop(31, 4) command.
+3. Place a b13 block at position (5, 1) using the ab_drop(3, 5) command.
+4. Place a b11 block at position (4, 2) using the ab_drop(1, 4) command.
+
+These commands will create the letter "D" in the grid. Here is the stream of commands:
+
+```
+ab_drop(3, 1)
+ab_drop(31, 4)
+ab_drop(3, 5)
+ab_drop(1, 4)
+```
+
+Please place the blocks in the same order and positions mentioned above to successfully generate the letter "D".

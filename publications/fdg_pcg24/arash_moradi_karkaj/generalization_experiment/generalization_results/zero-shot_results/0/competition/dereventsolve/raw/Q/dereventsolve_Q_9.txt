@@ -1,0 +1,25 @@
+```
+# Get the structure of the letter "Q" using `ab_drop` function calls
+
+# Step 1: Start with `ab_drop`
+ab_drop()
+
+# Step 2: Create the left vertical line of the letter "Q"
+ab_drop()
+ab_drop()
+ab_drop()
+ab_drop()
+
+# Step 3: Create the horizontal line of the letter "Q"
+ab_drop()
+
+# Step 4: Create the right vertical line of the letter "Q"
+ab_drop()
+ab_drop()
+ab_drop()
+ab_drop()
+
+# Step 5: Return the sequence of `ab_drop` function calls
+"ab_drop(), ab_drop(), ab_drop(), ab_drop(), ab_drop(), ab_drop(), ab_drop(), ab_drop(), ab_drop(), ab_drop()"
+
+```

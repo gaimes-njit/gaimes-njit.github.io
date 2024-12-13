@@ -1,0 +1,58 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the first layer of the "U"
+ab_drop('b31', 1)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+
+# Drop the second layer of the "U"
+ab_drop('b11', 1)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+
+# Drop the third layer of the "U"
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+
+# Drop the fourth layer of the "U"
+ab_drop('b31', 1)
+
+# Drop the fifth layer of the "U"
+ab_drop('b31', 1)
+
+# Drop the sixth layer of the "U"
+ab_drop('b31', 1)
+
+# Drop the seventh layer of the "U"
+ab_drop('b31', 1)
+
+# Drop the eighth layer of the "U"
+ab_drop('b31', 1)
+
+# Drop the ninth layer of the "U"
+ab_drop('b31', 1)
+
+# Drop the tenth layer of the "U"
+ab_drop('b31', 1)
+
+# Drop the eleventh layer of the "U"
+ab_drop('b31', 1)
+
+# Drop the twelfth layer of the "U"
+ab_drop('b31', 1)
+
+# Drop the thirteenth layer of the "U"
+ab_drop('b31', 1)
+
+# Drop the fourteenth layer of the "U"
+ab_drop('b31', 1)
+
+# Drop the fifteenth layer of the "U"
+ab_drop('b31', 1)
+
+# Drop the sixteenth layer of the "U"
+ab_drop('b31', 1)
+```

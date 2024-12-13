@@ -1,0 +1,4 @@
+ab_drop('b11', 9)  # Drop the top of the 'Y'
+ab_drop('b13', 9)  # Drop the stem of the 'Y'
+ab_drop('b11', 7)  # Drop the left arm of the 'Y'
+ab_drop('b11', 11)  # Drop the right arm of the 'Y'

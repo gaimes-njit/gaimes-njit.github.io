@@ -1,0 +1,14 @@
+To create a structure that resembles the capital letter "T" on the 2D grid, we can follow these steps:
+
+Step 1: Place the base of the "T" using the "b31" block type.
+Start by placing the "b31" block at the center of the grid, which is at x_position=9.
+
+ab_drop("b31", 9)
+
+Step 2: Place the vertical part of the "T" using the "b13" block type.
+Next, place the "b13" block vertically on top of the base. The center of the block should align with the center of the base.
+To achieve this, we need to place the "b13" block at x_position=9.
+
+ab_drop("b13", 9)
+
+After executing the above code blocks, the structure will resemble the capital letter "T" in the top-down orientation.

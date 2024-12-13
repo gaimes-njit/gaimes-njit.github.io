@@ -1,0 +1,31 @@
+To generate a stable structure that looks like the uppercase character "Y" and meets all the hard constraints, follow these steps:
+
+1. Initialize the structure as an empty grid.
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start by dropping the vertical block (b13) at the center slot.
+```python
+center_slot = W // 2
+ab_drop('b13', center_slot)
+```
+
+3. Next, drop the horizontal block (b31) above the vertical block, ensuring stability.
+```python
+ab_drop('b31', center_slot)
+```
+
+4. Drop the square block (b11) at the top of the structure, slightly to the right.
+```python
+top_slot = center_slot + 1
+ab_drop('b11', top_slot)
+```
+
+5. To complete the upper part of the "Y", drop two additional square blocks above the previous block, forming an inverted "V" shape.
+```python
+ab_drop('b11', top_slot - 1)
+ab_drop('b11', top_slot + 1)
+```
+
+By following these steps and ensuring stability at each drop, you will generate a stable structure that looks like the uppercase character "Y" and meets all the hard constraints.

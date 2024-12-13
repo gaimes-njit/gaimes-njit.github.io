@@ -1,0 +1,15 @@
+To generate the uppercase English letter "B", we will need to use the following block types and positions:
+
+1. Place a b31 block at position (1, 1) to create the top horizontal line of the letter B.
+2. Place a b13 block at position (1, 4) to create the vertical line of the letter B.
+3. Place a b31 block at position (1, 7) to create the middle horizontal line of the letter B.
+4. Place a b13 block at position (1, 10) to create the bottom vertical line of the letter B.
+
+Here is the stream of commands to generate the uppercase English letter "B":
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+ab_drop('b31', 7)
+ab_drop('b13', 10)
+```

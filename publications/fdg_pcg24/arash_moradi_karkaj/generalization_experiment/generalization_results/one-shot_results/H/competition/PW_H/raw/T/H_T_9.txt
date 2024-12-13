@@ -1,0 +1,14 @@
+To generate the uppercase English letter "T", you can use the following stream of commands:
+
+```
+ab_drop('b13',1)
+ab_drop('b31',2)
+ab_drop('b13',3)
+```
+
+Explanation of commands:
+- The first command `ab_drop('b13',1)` places a vertical straight block at position 1 along the width, creating the left side of the letter "T".
+- The second command `ab_drop('b31',2)` places a horizontal straight block at position 2 along the width, connecting the left and right sides of the letter "T".
+- The third command `ab_drop('b13',3)` places another vertical straight block at position 3 along the width, creating the right side of the letter "T".
+
+By executing these commands in the given environment, you will successfully generate the uppercase English letter "T" while adhering to the stacking and gravity rules.

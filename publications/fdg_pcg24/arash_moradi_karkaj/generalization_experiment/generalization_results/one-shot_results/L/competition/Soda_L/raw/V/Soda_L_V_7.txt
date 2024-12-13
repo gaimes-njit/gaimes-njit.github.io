@@ -1,0 +1,14 @@
+To create the letter V, we can break it down into three blocks: a top bar, a middle block, and a bottom bar. We will start by placing the bottom bar first, then the middle block, and finally the top bar.
+
+```python
+# Place the bottom bar
+ab_drop("b13", 9)
+
+# Place the middle block
+ab_drop("b31", 9)
+
+# Place the top bar
+ab_drop("b13", 10)
+```
+
+This sequence of ab_drop() calls will generate a structure that resembles the letter V. To ensure stability, we place the blocks from bottom to top and ensure they are balanced.

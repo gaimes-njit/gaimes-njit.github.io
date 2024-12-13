@@ -1,0 +1,9 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Drop blocks to construct the 'H' structure
+ab_drop('b13', 5)   # Drop vertical block to create left side of 'H'
+ab_drop('b11', 5)   # Drop horizontal block to create middle part of 'H'
+ab_drop('b13', 10)  # Drop vertical block to create right side of 'H'
+```

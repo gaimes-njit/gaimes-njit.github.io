@@ -1,0 +1,20 @@
+Here is an example solution to build the structure resembling "Z" using the `ab_drop()` function and following the given constraints:
+
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Building the left vertical part of the "Z"
+ab_drop('b13',1)
+ab_drop('b11',1)
+ab_drop('b11',1)
+
+# Building the bottom horizontal part of the "Z"
+ab_drop('b31',0)
+
+# Building the right vertical part of the "Z"
+ab_drop('b11',18)
+ab_drop('b11',18)
+ab_drop('b13',19)
+```
+
+Note: The exact positioning of the blocks in the structure might vary depending on the specific starting conditions and gravity in the game.

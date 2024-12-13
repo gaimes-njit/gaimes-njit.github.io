@@ -1,0 +1,56 @@
+Here are the steps to draw the letter "T" with asterisks and generate the corresponding sequence of `ab_drop` function calls:
+
+1. Draw the letter "T" with asterisks:
+```
+  *****
+   ***
+   ***
+   ***
+   ***
+```
+
+2. Line-by-line, verbally list the asterisks and spaces generated in each row of the drawing:
+   - Row 1: 5 asterisks
+   - Row 2: 3 spaces, 3 asterisks
+   - Row 3: 3 spaces, 3 asterisks
+   - Row 4: 3 spaces, 3 asterisks
+   - Row 5: 3 spaces, 3 asterisks
+
+3. Replace asterisks with "x" and spaces with "y":
+   - Row 1: xxxxx
+   - Row 2: yyyxxx
+   - Row 3: yyyxxx
+   - Row 4: yyyxxx
+   - Row 5: yyyxxx
+
+4. Write out each "x" and "y" for each row side-by-side:
+   - Row 1: x x x x x
+   - Row 2: y y y x x x
+   - Row 3: y y y x x x
+   - Row 4: y y y x x x
+   - Row 5: y y y x x x
+
+5. Indicate the position of each variable for each row:
+   - Row 1: x-1; x-2; x-3; x-4; x-5
+   - Row 2: y-1; y-2; y-3; x-4; x-5; x-6
+   - Row 3: y-1; y-2; y-3; x-4; x-5; x-6
+   - Row 4: y-1; y-2; y-3; x-4; x-5; x-6
+   - Row 5: y-1; y-2; y-3; x-4; x-5; x-6
+
+6. Return a sequence of `ab_drop` function calls for each row:
+```python
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```
+
+Therefore, the sequence of `ab_drop` function calls for drawing the letter "T" with asterisks is:
+```python
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

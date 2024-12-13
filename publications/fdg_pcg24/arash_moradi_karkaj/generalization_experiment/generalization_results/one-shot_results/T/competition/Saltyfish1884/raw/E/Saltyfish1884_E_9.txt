@@ -1,0 +1,58 @@
+To generate a stable structure that resembles the character "E", we can follow the steps below:
+
+Step 1: Create the initial empty structure.
+
+```python
+W = 20
+H = 16
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Define the necessary block placements to form the character "E".
+
+```python
+blocks = [
+    (0, 0, 'b11'),
+    (1, 0, 'b11'),
+    (2, 0, 'b11'),
+    (0, 1, 'b11'),
+    (0, 2, 'b11'),
+    (1, 2, 'b11'),
+    (2, 2, 'b11'),
+    (0, 3, 'b11'),
+    (0, 4, 'b11'),
+    (1, 4, 'b11'),
+    (2, 4, 'b11'),
+    (0, 5, 'b11'),
+    (0, 6, 'b11'),
+    (1, 6, 'b11'),
+    (2, 6, 'b11'),
+    (0, 7, 'b11'),
+    (2, 1, 'b31'),
+    (1, 3, 'b13'),
+    (1, 5, 'b13')
+]
+```
+
+Step 3: Drop the blocks according to their placements and check for stability.
+
+```python
+def drop_blocks():
+    for block in blocks:
+        x, y, block_type = block
+        ab_drop(block_type, y)
+        
+drop_blocks()
+```
+
+Step 4: Print the resulting structure.
+
+```python
+def print_structure():
+    for row in structure:
+        print(''.join(row))
+
+print_structure()
+```
+
+This will display the resulting structure that resembles the character "E" while satisfying all hard constraints.

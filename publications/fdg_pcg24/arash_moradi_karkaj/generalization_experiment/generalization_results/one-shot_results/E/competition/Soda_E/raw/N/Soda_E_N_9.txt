@@ -1,0 +1,18 @@
+# The first step is to create the two vertical bars of the letter N.
+# We will start from the middle and place one bar on the left and one on the right.
+
+## Left vertical bar
+ab_drop("b13", 8)
+ab_drop("b13", 6)
+
+## Right vertical bar
+ab_drop("b13", 12)
+ab_drop("b13", 14)
+
+# Next, we will add the horizontal bar of the letter N.
+# We will place it in the middle, spanning across the two vertical bars.
+
+## Horizontal bar
+ab_drop("b31", 8)
+ab_drop("b11", 7)
+ab_drop("b11", 9)

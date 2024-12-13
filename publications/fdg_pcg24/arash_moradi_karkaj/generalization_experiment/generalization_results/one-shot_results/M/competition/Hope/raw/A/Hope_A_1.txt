@@ -1,0 +1,13 @@
+To create the structure "A" inside a 20x16 box, you can use the following sequence of ab_drop commands:
+
+ab_drop('b11', 4)
+ab_drop('b11', 6)
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+ab_drop('b13', 5)
+ab_drop('b13', 6)
+ab_drop('b13', 7)
+ab_drop('b31', 5)
+ab_drop('b31', 9)
+
+This sequence will drop the respective blocks at the specified x positions to form the letter "A" shape inside the 20x16 box.

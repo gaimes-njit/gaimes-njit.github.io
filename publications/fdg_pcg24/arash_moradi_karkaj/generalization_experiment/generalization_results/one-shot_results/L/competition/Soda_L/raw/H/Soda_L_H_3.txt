@@ -1,0 +1,18 @@
+To create the letter "H" in the level, we can break it down into three blocks: one vertical pipe and two horizontal bars. We will build the structure from bottom to top.
+
+Here is the complete implementation to create the letter "H":
+
+```
+# Place the first horizontal bar
+ab_drop("b13", 6)
+
+# Place the vertical pipe on top of the first horizontal bar
+ab_drop("b31", 6)
+
+# Place the second horizontal bar on top of the vertical pipe
+ab_drop("b13", 6)
+```
+
+This implementation starts by placing the first horizontal bar at x_position=6. Then, the vertical pipe is placed on top of the first horizontal bar, also at x_position=6. Finally, the second horizontal bar is placed on top of the vertical pipe at x_position=6.
+
+This implementation ensures that the structure is stable and resembles the letter "H" when viewed from the top.

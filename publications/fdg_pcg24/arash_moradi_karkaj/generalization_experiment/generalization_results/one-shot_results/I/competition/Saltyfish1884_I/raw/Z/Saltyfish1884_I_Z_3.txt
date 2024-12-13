@@ -1,0 +1,44 @@
+To generate a stable structure that resembles the character "Z" while meeting all hard constraints, we can follow the step-by-step process:
+
+Step 1: Initialize the structure as an empty grid
+```python
+structure = [[' ']*20 for _ in range(16)]
+```
+
+Step 2: Place the base blocks to create a solid base
+```python
+ab_drop('b31', 0)
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+```
+
+Step 3: Place the vertical block on top of the base blocks
+```python
+ab_drop('b13', 1)
+```
+
+Step 4: Place the horizontal block on the top left of the vertical block
+```python
+ab_drop('b31', 0)
+```
+
+Step 5: Place the horizontal block on the top right of the vertical block
+```python
+ab_drop('b31', 2)
+```
+
+The final structure will resemble the character "Z".
+
+The complete Python code to generate the structure is:
+```python
+structure = [[' ']*20 for _ in range(16)]
+
+ab_drop('b31', 0)
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+
+ab_drop('b13', 1)
+
+ab_drop('b31', 0)
+ab_drop('b31', 2)
+```

@@ -1,0 +1,18 @@
+The code to generate the "X" structure using the `ab_drop()` function while adhering to the constraints is as follows:
+
+```
+# Initialize the map
+W = 20
+H = 16
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the blocks to construct the "X" structure
+ab_drop('b31', 1)   # Bottom-left part of the "X"
+ab_drop('b13', 0)   # Top-left part of the "X"
+
+# Rotate the "L" to obtain the mirror image for the top-right part of the "X"
+ab_drop('b31', 18)  # Bottom-right part of the "X"
+ab_drop('b13', 19)  # Top-right part of the "X"
+```
+
+This code follows the given constraints and uses the `ab_drop()` function to drop blocks vertically to construct the "X" shape.

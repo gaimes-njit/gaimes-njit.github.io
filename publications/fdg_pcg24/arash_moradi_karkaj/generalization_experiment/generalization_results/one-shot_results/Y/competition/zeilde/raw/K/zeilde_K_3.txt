@@ -1,0 +1,99 @@
+1. Drawing the letter "K" with asterisks:
+```
+****
+**
+**
+**
+**
+**
+**
+****
+**
+**
+**
+**
+**
+****
+```
+
+2. List of asterisks and spaces generated in each row:
+Row 1: 4 asterisks
+Row 2: 2 asterisks
+Row 3: 2 asterisks
+Row 4: 2 asterisks
+Row 5: 2 asterisks
+Row 6: 2 asterisks
+Row 7: 2 asterisks
+Row 8: 4 asterisks
+Row 9: 2 asterisks
+Row 10: 2 asterisks
+Row 11: 2 asterisks
+Row 12: 2 asterisks
+Row 13: 2 asterisks
+Row 14: 4 asterisks
+
+3. Asterisks are now "x" and spaces are "y":
+Row 1: 4x
+Row 2: 2x
+Row 3: 2x
+Row 4: 2x
+Row 5: 2x
+Row 6: 2x
+Row 7: 2x
+Row 8: 4x
+Row 9: 2x
+Row 10: 2x
+Row 11: 2x
+Row 12: 2x
+Row 13: 2x
+Row 14: 4x
+
+4. Each x and y listed side-by-side:
+Row 1: 4x
+Row 2: 2x
+Row 3: 2x
+Row 4: 2x
+Row 5: 2x
+Row 6: 2x
+Row 7: 2x
+Row 8: 4x
+Row 9: 2x
+Row 10: 2x
+Row 11: 2x
+Row 12: 2x
+Row 13: 2x
+Row 14: 4x
+
+5. Position of each variable:
+Row 1: x-1, x-2, x-3, x-4
+Row 2: x-1, x-2
+Row 3: x-1, x-2
+Row 4: x-1, x-2
+Row 5: x-1, x-2
+Row 6: x-1, x-2
+Row 7: x-1, x-2
+Row 8: x-1, x-2, x-3, x-4
+Row 9: x-1, x-2
+Row 10: x-1, x-2
+Row 11: x-1, x-2
+Row 12: x-1, x-2
+Row 13: x-1, x-2
+Row 14: x-1, x-2, x-3, x-4
+
+6. Sequence of `ab_drop` function calls:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 11)
+ab_drop("b11", 12)
+ab_drop("b11", 13)
+ab_drop("b11", 14)
+```

@@ -1,0 +1,11 @@
+User: Generate a structure that looks like the letter "G".
+Assistant:
+```
+ab_drop("b31", 5)
+ab_drop("b11", 4)
+ab_drop("b31", 5)
+ab_drop("b13", 7)
+ab_drop("b13", 4)
+ab_drop("b13", 5)
+ab_drop("b11", 6)
+```

@@ -1,0 +1,6 @@
+```
+ab_drop('b11', 0) # Drop the first block at slot 0
+ab_drop('b11', 1) # Drop the second block next to the first block
+ab_drop('b11', 2) # Drop the third block next to the second block
+ab_drop('b31', 2) # Extend the third block to the right
+```

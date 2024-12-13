@@ -1,0 +1,28 @@
+To generate a stable structure that looks like the uppercase character "O" using the ab_drop() function, we can follow these steps:
+
+1. Initialize the structure as an empty grid using the provided code:
+   ```python
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. We will start building the structure layer by layer, from the bottom to the top.
+
+3. First, drop a b13 block in the center of the bottom layer (layer 0) using the ab_drop() function. This will provide a stable base for the structure.
+   ```python
+   ab_drop('b13', W//2)
+   ```
+
+4. To ensure stability and meet the hard constraint of the structure not collapsing or descending, we need to add supporting structures for the b13 block. Drop two b31 blocks on both sides of the b13 block, one slot away from the b13 block's edges. These b31 blocks will provide stable support for the b13 block.
+   ```python
+   ab_drop('b31', W//2 - 2)  # Left support
+   ab_drop('b31', W//2 + 2)  # Right support
+   ```
+
+5. Now, to build the upper part of the structure, drop another b13 block above the existing b13 block, aligned with the previous b13 block's center. This will create the circular shape of the uppercase "O".
+   ```python
+   ab_drop('b13', W//2)
+   ```
+
+6. Finally, to complete the structure and make it more diverse, you can add more blocks of different types (b11, b31, or b13) in any pattern you like. Ensure stability and meet the hard constraints while being creative in generating the content.
+
+By following these steps and making sure to meet the hard constraints of stability and the soft constraint of not intruding on the boundary, you can generate a stable structure that looks like the uppercase letter "O".

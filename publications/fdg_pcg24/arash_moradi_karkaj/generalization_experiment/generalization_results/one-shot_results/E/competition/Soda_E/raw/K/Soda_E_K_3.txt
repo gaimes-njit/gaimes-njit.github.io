@@ -1,0 +1,37 @@
+First, let's start by creating the two vertical bars for the "K" character. We will use the block type "b31" for both bars.
+
+```
+ab_drop("b31", 5)
+ab_drop("b31", 15)
+```
+
+Next, let's add the top horizontal bar to complete the "K" character. We will use the block types "b13" and "b11" for this.
+
+```
+ab_drop("b13", 4)
+ab_drop("b11", 5)
+ab_drop("b13", 10)
+ab_drop("b11", 11)
+ab_drop("b13", 16)
+```
+
+Lastly, let's add the bottom diagonal bar of the "K" character using two "b11" blocks.
+
+```
+ab_drop("b11", 6)
+ab_drop("b11", 15)
+```
+
+The complete implementation will look like this:
+
+```
+ab_drop("b31", 5)
+ab_drop("b31", 15)
+ab_drop("b13", 4)
+ab_drop("b11", 5)
+ab_drop("b13", 10)
+ab_drop("b11", 11)
+ab_drop("b13", 16)
+ab_drop("b11", 6)
+ab_drop("b11", 15)
+```

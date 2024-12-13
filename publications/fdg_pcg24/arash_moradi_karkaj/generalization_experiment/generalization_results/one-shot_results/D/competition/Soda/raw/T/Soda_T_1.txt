@@ -1,0 +1,17 @@
+To create a structure in the shape of a capital letter "T", we need to first create a base using the row block ("b31"), and then stack a column block ("b13") on top of the base at the center position. Here is the step-by-step implementation:
+
+Step 1: Create the base of the "T" shape using the row block ("b31").
+```
+ab_drop("b31", 8)
+```
+
+Step 2: Stack a column block ("b13") on top of the base at the center position.
+```
+ab_drop("b13", 8)
+```
+
+Combined implementation:
+```
+ab_drop("b31", 8)
+ab_drop("b13", 8)
+```

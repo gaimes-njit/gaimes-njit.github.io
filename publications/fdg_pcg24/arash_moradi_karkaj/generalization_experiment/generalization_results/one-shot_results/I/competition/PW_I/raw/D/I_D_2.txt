@@ -1,0 +1,16 @@
+To generate the uppercase English letter "D", we can use the following set of ab_drop() commands:
+
+``` 
+ab_drop('b31',1) ab_drop('b13',1) ab_drop('b31',4) ab_drop('b13',4) ab_drop('b13',1) ab_drop('b11',2) ab_drop('b11',3) ab_drop('b11',4)
+```
+
+Explanation:
+
+- First, we start by dropping a horizontal straight block (b31) at position 1.
+- Then, we drop a vertical straight block (b13) at position 1 to create the straight edge of the letter "D".
+- Next, we drop another horizontal straight block (b31) at position 4 to complete the top half of the letter "D".
+- After that, we drop a vertical straight block (b13) at position 4 to create the straight edge of the letter "D" on the right side.
+- Then, we drop another vertical straight block (b13) at position 1 to create the curved part of the letter "D".
+- Finally, we drop three 1x1 square blocks (b11) at positions 2, 3, and 4 to fill in the circular part of the letter "D".
+
+By following these instructions, the shapes will stack up correctly according to the 2D gravity rules and form the uppercase English letter "D".

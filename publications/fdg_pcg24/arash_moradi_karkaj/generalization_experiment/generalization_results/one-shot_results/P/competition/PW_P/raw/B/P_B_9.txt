@@ -1,0 +1,14 @@
+To generate the uppercase letter "B", you can use the following stream of ab_drop() commands:
+
+```
+ab_drop('b13',1)   # Place the first vertical straight block at position 1
+ab_drop('b13',2)   # Place the second vertical straight block at position 2
+ab_drop('b31',2)   # Place the horizontal straight block at position 2
+ab_drop('b31',2)   # Place the horizontal straight block at position 2 again (for the middle part of 'B')
+ab_drop('b11',1)   # Place the 1x1 square block at position 1 (for the curved part of 'B')
+ab_drop('b11',3)   # Place the 1x1 square block at position 3 (for the curved part of 'B')
+ab_drop('b31',2)   # Place the horizontal straight block at position 2 (for the bottom part of 'B')
+ab_drop('b31',2)   # Place the horizontal straight block at position 2 again (for the bottom part of 'B')
+```
+
+This series of commands will construct the uppercase letter "B" in the given Tetris-like environment while maintaining structural stability with respect to the gravity rules.

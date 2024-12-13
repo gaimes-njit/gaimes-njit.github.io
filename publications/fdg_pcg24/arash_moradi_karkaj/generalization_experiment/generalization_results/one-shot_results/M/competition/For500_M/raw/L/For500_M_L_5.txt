@@ -1,0 +1,5 @@
+ab_drop('b13',0) # Place the vertical block on the leftmost slot 
+ab_drop('b13',4) # Place another vertical block to the right of the previous one
+ab_drop('b13',4) # Place one more vertical block on top of the previous two
+ab_drop('b31',7) # Place a horizontal block on top of the vertical blocks
+ab_drop('b11',7) # Place a square block on top of the horizontal block

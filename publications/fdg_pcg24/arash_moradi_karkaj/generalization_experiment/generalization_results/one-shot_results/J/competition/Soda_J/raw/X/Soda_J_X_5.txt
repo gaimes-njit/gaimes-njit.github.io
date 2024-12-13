@@ -1,0 +1,17 @@
+To build the letter "X" in the level, we can break it down into three blocks: two diagonal blocks for the slanting lines, and one horizontal block for the middle part. Here is the step-by-step implementation:
+
+1. Place the first diagonal block:
+ab_drop("b13", 4) 
+
+2. Place the second diagonal block:
+ab_drop("b13", 14) 
+
+3. Place the horizontal block:
+ab_drop("b31", 9) 
+
+Complete implementation:
+```python
+ab_drop("b13", 4)
+ab_drop("b13", 14)
+ab_drop("b31", 9)
+```

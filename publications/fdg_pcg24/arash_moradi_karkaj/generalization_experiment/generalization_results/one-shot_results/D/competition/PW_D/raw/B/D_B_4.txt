@@ -1,0 +1,15 @@
+To generate the uppercase letter "B", you need to place the blocks in a specific order. Here is the stream of ab_drop() commands that you can use:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b11', 3)
+ab_drop('b13', 3)
+ab_drop('b13', 2)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+```
+
+These commands will stack the blocks in the correct positions to form the letter "B" within the allowed space boundaries.

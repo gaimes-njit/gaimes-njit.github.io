@@ -1,0 +1,10 @@
+# First, we will drop the b31 block to form the base of the letter "J" at layer 0:
+ab_drop('b31', 9)
+
+# Next, we will drop the b13 block to form the vertical line of the letter "J" starting at layer 1:
+ab_drop('b13', 9)
+
+# Finally, we will drop the b11 block to form the curved top of the letter "J" starting at layer 4:
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 10)

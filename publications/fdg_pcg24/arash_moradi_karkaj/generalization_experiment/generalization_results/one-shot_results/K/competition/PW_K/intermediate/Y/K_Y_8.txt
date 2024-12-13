@@ -1,0 +1,12 @@
+To generate the uppercase English letter "Y", we will need to use a combination of block types b11, b31, and b13. 
+
+Here is a possible sequence of ab_drop() commands to construct the letter "Y":
+
+ab_drop('b31', 1)  # Place the horizontal straight block at the first position
+ab_drop('b31', 2)  # Place the horizontal straight block at the second position
+ab_drop('b31', 3)  # Place the horizontal straight block at the third position
+ab_drop('b11', 2)  # Place the square block above the middle position of the horizontal straight blocks
+ab_drop('b13', 2)  # Place the vertical straight block next to the square block
+ab_drop('b13', 4)  # Place the vertical straight block next to the other side of the square block
+
+The sequence of commands should resemble the uppercase English letter "Y" in the defined environment.

@@ -1,0 +1,103 @@
+To create the uppercase letter "U" using the given block types and command, you need to follow these steps:
+
+1. Drop a horizontal straight block (b31) at position 1:
+```
+ab_drop('b31', 1)
+```
+
+2. Drop a vertical straight block (b13) at position 2:
+```
+ab_drop('b13', 2)
+```
+
+3. Drop a vertical straight block (b13) at position 3:
+```
+ab_drop('b13', 3)
+```
+
+4. Drop a horizontal straight block (b31) at position 4:
+```
+ab_drop('b31', 4)
+```
+
+5. Drop a horizontal straight block (b31) at position 5:
+```
+ab_drop('b31', 5)
+```
+
+6. Drop a vertical straight block (b13) at position 6:
+```
+ab_drop('b13', 6)
+```
+
+7. Drop a vertical straight block (b13) at position 7:
+```
+ab_drop('b13', 7)
+```
+
+8. Drop a horizontal straight block (b31) at position 8:
+```
+ab_drop('b31', 8)
+```
+
+9. Drop a horizontal straight block (b31) at position 9:
+```
+ab_drop('b31', 9)
+```
+
+10. Drop a vertical straight block (b13) at position 10:
+```
+ab_drop('b13', 10)
+```
+
+11. Drop a vertical straight block (b13) at position 11:
+```
+ab_drop('b13', 11)
+```
+
+12. Drop a horizontal straight block (b31) at position 12:
+```
+ab_drop('b31', 12)
+```
+
+13. Drop a horizontal straight block (b31) at position 13:
+```
+ab_drop('b31', 13)
+```
+
+14. Drop a vertical straight block (b13) at position 14:
+```
+ab_drop('b13', 14)
+```
+
+15. Drop a vertical straight block (b13) at position 15:
+```
+ab_drop('b13', 15)
+```
+
+16. Drop a horizontal straight block (b31) at position 16:
+```
+ab_drop('b31', 16)
+```
+
+17. Drop a horizontal straight block (b31) at position 17:
+```
+ab_drop('b31', 17)
+```
+
+18. Drop a vertical straight block (b13) at position 18:
+```
+ab_drop('b13', 18)
+```
+
+19. Drop a vertical straight block (b13) at position 19:
+```
+ab_drop('b13', 19)
+```
+
+20. Drop a horizontal straight block (b31) at position 20:
+```
+ab_drop('b31', 20)
+```
+
+By following these steps and executing the ab_drop commands consecutively, you will be able to generate the uppercase English letter "U" in the defined environment.

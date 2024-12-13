@@ -1,0 +1,25 @@
+First, let's start by building the base of the "D" shape. We will use a row block "b31" at the bottom of the grid. To center it, we will place it at x_position=9.
+
+```python
+ab_drop("b31", 9)
+```
+
+Next, we will add the vertical pipe of the "D" shape. We will use a column block "b13" and place it above the base block. To center it, we will place it at x_position=9.
+
+```python
+ab_drop("b13", 9)
+```
+
+Finally, we will add the diagonal stroke of the "D" shape. We will use a square block "b11" and place it above the vertical pipe. To center it, we will place it at x_position=9.
+
+```python
+ab_drop("b11", 9)
+```
+
+Putting it all together, the complete implementation to generate a structure that looks like a capital "D" is as follows:
+
+```python
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+ab_drop("b11", 9)
+```

@@ -1,0 +1,11 @@
+To create the uppercase letter "I", we can use the following sequence of commands:
+
+```
+ab_drop('b31', 1)   # Place the horizontal straight block on the left side
+ab_drop('b11', 2)   # Place a single square block on top
+ab_drop('b31', 3)   # Place the horizontal straight block on the right side
+ab_drop('b11', 4)   # Place another single square block on top
+ab_drop('b31', 5)   # Place the horizontal straight block on the right side again
+```
+
+This sequence of commands will create the uppercase letter "I" using the given block types in the defined environment.

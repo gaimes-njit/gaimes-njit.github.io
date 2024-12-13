@@ -1,0 +1,15 @@
+# Step 1: Create the base of the letter 'Y'
+ab_drop('b31', 9)
+ab_drop('b31', 9)
+ab_drop('b31', 9)
+
+# Step 2: Create the left arm of the letter 'Y'
+ab_drop('b13', 6)
+ab_drop('b13', 6)
+
+# Step 3: Create the right arm of the letter 'Y'
+ab_drop('b13', 12)
+ab_drop('b13', 12)
+
+# Step 4: Create the top part of the letter 'Y'
+ab_drop('b11', 9)

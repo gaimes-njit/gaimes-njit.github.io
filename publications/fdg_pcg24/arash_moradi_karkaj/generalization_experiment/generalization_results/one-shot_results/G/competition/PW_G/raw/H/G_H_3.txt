@@ -1,0 +1,13 @@
+To generate the uppercase letter "H" using the given block types and command, you can follow the following series of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 3)
+```
+
+These commands will construct the letter "H" by stacking the blocks in the specified positions and maintaining stability with the gravity rules.

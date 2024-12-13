@@ -1,0 +1,27 @@
+```
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the blocks to construct the 'H'
+ab_drop('b11', 8)  # Drop a square block at slot 8 in layer 0 (bottom layer)
+ab_drop('b13', 8)  # Drop a vertical block at slot 8 in layer 1
+ab_drop('b31', 8)  # Drop a horizontal block at slot 8 in layer 2
+ab_drop('b13', 8)  # Drop a vertical block at slot 8 in layer 3
+ab_drop('b11', 6)  # Drop a square block at slot 6 in layer 4
+ab_drop('b13', 6)  # Drop a vertical block at slot 6 in layer 5
+ab_drop('b31', 6)  # Drop a horizontal block at slot 6 in layer 6
+ab_drop('b13', 6)  # Drop a vertical block at slot 6 in layer 7
+ab_drop('b11', 7)  # Drop a square block at slot 7 in layer 8
+ab_drop('b11', 9)  # Drop a square block at slot 9 in layer 8
+ab_drop('b11', 6)  # Drop a square block at slot 6 in layer 9
+ab_drop('b11', 10)  # Drop a square block at slot 10 in layer 9
+ab_drop('b11', 7)  # Drop a square block at slot 7 in layer 10
+ab_drop('b11', 9)  # Drop a square block at slot 9 in layer 10
+ab_drop('b11', 6)  # Drop a square block at slot 6 in layer 11
+ab_drop('b11', 10)  # Drop a square block at slot 10 in layer 11
+ab_drop('b11', 7)  # Drop a square block at slot 7 in layer 12
+ab_drop('b11', 9)  # Drop a square block at slot 9 in layer 12
+ab_drop('b11', 6)  # Drop a square block at slot 6 in layer 13
+ab_drop('b13', 6)  # Drop a vertical block at slot 6 in layer 14
+ab_drop('b31', 6)  # Drop a horizontal block at slot 6 in layer 15
+```

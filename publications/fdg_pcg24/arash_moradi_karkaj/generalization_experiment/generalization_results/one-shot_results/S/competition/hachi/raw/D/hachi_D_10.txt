@@ -1,0 +1,21 @@
+Example Solution:
+
+```python
+ab_drop('b31', 9)
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b13', 8)
+ab_drop('b11', 11)
+ab_drop('b11', 11)
+```
+
+Explanation:
+
+This solution uses a combination of `b31`, `b11`, and `b13` blocks to construct a stable structure resembling the letter "D". The blocks are strategically placed to maintain stability and minimize boundary intrusion.
+
+- The first `b31` block is dropped at `x_position` 9, creating the straight left side of the letter "D".
+- Three `b11` blocks are then dropped one on top of the other at `x_position` 9 to form the top curve of the letter "D".
+- Another `b11` block is dropped at `x_position` 10 to create the connecting line between the top and bottom curves of the letter "D".
+- A `b13` block is dropped at `x_position` 8 to form the bottom curve of the letter "D".
+- Finally, two `b11` blocks are dropped one on top of the other at `x_position` 11 to complete the bottom curve of the letter "D".

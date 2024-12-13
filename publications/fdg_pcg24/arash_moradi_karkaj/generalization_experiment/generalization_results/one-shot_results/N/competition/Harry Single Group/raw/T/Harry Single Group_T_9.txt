@@ -1,0 +1,28 @@
+To form the shape resembling the letter "T" using the available bricks and following the important notes, we can break down the task into smaller steps.
+
+Step 1: Place the b11 brick on the ground
+- Execute the function `ab_drop('b11', 9)` to place the b11 brick on the ground at x_position 9.
+
+Step 2: Place the b31 brick vertically above the b11 brick
+- Execute the function `ab_drop('b31', 9)` to place the b31 brick starting at x_position 9.
+- The b31 brick will land above the b11 brick, occupying cells (9, 1), (10, 1), and (11, 1).
+
+Step 3: Place the b13 brick horizontally above the b31 and b11 bricks
+- Execute the function `ab_drop('b13', 10)` to place the middle cell of the b13 brick at x_position 10.
+- The b13 brick will land horizontally above the b31 and b11 bricks, occupying cells (10, 2), (10, 3), and (10, 4).
+
+The final structure will resemble the letter "T" with the b11 brick on the ground, the b31 brick above it, and the b13 brick above the b31 and b11 bricks.
+
+```
+# Map initialization
+field = [[0] * 20 for _ in range(16)]
+
+# Step 1: Place the b11 brick on the ground
+ab_drop('b11', 9)
+
+# Step 2: Place the b31 brick vertically above the b11 brick
+ab_drop('b31', 9)
+
+# Step 3: Place the b13 brick horizontally above the b31 and b11 bricks
+ab_drop('b13', 10)
+```

@@ -1,0 +1,23 @@
+Here is an example solution to generate the structure resembling "Q":
+
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the horizontal block to form the base of "Q"
+ab_drop('b31', 8)
+
+# Drop the vertical block to form the left part of "Q"
+ab_drop('b13', 6)
+
+# Drop the vertical block to form the right part of "Q"
+ab_drop('b13', 10)
+
+# Drop the horizontal block to connect the left and right parts of "Q" in the middle
+ab_drop('b11', 7)
+ab_drop('b11', 9)
+
+# Drop the horizontal block to form the top of "Q"
+ab_drop('b31', 8)
+```
+
+This solution follows the given constraints by not extending beyond the map boundaries, aligning the blocks' centers with the specified slots, and using the correct order and orientation of the `ab_drop()` inputs. The blocks are dropped from the bottom layer (layer 0) to the top layer (layer 15) to create the desired shape.

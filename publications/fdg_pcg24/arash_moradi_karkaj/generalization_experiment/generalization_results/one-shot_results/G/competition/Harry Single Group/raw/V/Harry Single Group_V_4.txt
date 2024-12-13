@@ -1,0 +1,81 @@
+To generate a shape resembling the letter "V" using the given function ab_drop(), we need to place bricks in a specific pattern. Here's one possible solution:
+
+```
+# map initialization
+brick_map = [[0] * 20 for _ in range(16)]
+
+# function to check stability
+def check_stability(x, y):
+  # if there is a brick below
+  if y > 0 and brick_map[y-1][x] == 1:
+    # check number of occupied cells on left and right sides of pivot
+    left_count = 0
+    right_count = 0
+
+    # count occupied cells on left side
+    for i in range(x-1, -1, -1):
+      if brick_map[y-1][i] == 1:
+        left_count += 1
+      else:
+        break
+
+    # count occupied cells on right side
+    for i in range(x+1, 20):
+      if brick_map[y-1][i] == 1:
+        right_count += 1
+      else:
+        break
+
+    # if left and right counts differ by more than 1, unstable
+    if abs(left_count - right_count) > 1:
+      return False
+
+  return True
+
+# function to place brick on field
+def place_brick(x, y, brick_type):
+  if brick_type == 'b31':
+    if y >= 0 and y < 16 and x >= 1 and x < 19 and brick_map[y][x] == 0 and brick_map[y][x-1] == 0 and brick_map[y][x+1] == 0:
+      # check stability before placing
+      if check_stability(x, y):
+        # place brick
+        brick_map[y][x] = 1
+        brick_map[y][x-1] = 1
+        brick_map[y][x+1] = 1
+        return True
+
+  if brick_type == 'b13':
+    if y >= 0 and y < 14 and x >= 0 and x < 20 and brick_map[y][x] == 0 and brick_map[y+1][x] == 0 and brick_map[y+2][x] == 0:
+      # check stability before placing
+      if check_stability(x, y):
+        # place brick
+        brick_map[y][x] = 1
+        brick_map[y+1][x] = 1
+        brick_map[y+2][x] = 1
+        return True
+
+  if brick_type == 'b11':
+    if y >= 0 and y < 15 and x >= 0 and x < 20 and brick_map[y][x] == 0:
+      # check stability before placing
+      if check_stability(x, y):
+        # place brick
+        brick_map[y][x] = 1
+        return True
+
+  return False
+
+# generate shape resembling the letter "V"
+ab_drop('b31', 7)
+ab_drop('b13', 6)
+ab_drop('b11', 8)
+ab_drop('b31', 8)
+ab_drop('b13', 9)
+ab_drop('b11', 10)
+ab_drop('b31', 10)
+
+# print the final brick map
+for row in brick_map:
+  print(row)
+```
+
+This solution places the bricks in the required pattern while ensuring stability and avoiding boundary collisions. The final brick map will be printed at the end to show the shape resembling the letter "V".

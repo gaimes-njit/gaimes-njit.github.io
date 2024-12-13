@@ -1,0 +1,70 @@
+To create the shape resembling the letter "R" using the available props and conditions, we need to carefully place the bricks in a stable and boundary collision-free manner. Here is the code to generate the structure:
+
+```
+# Map initialization
+MAP = [[0]*20 for _ in range(16)]
+
+# Helper function to check if a cell is occupied
+def is_occupied(x, y):
+    return MAP[y][x] == 1
+
+# Helper function to check the stability of a brick
+def is_stable(x, y, width, height):
+    for i in range(width):
+        left_count = 0
+        right_count = 0
+        for j in range(height):
+            if is_occupied(x + i, y + j - 1):
+                left_count += 1
+            if is_occupied(x + i + 1, y + j - 1):
+                right_count += 1
+        if left_count != right_count:
+            return False
+    return True
+
+# Function to drop a brick and update the map
+def ab_drop(x, y):
+    if x == 'b31':
+        width = 3
+        height = 1
+    elif x == 'b13':
+        width = 1
+        height = 3
+    elif x == 'b11':
+        width = 1
+        height = 1
+    else:
+        return
+    
+    x_pos = y - width//2
+    y_pos = 15 - height
+    
+    # Check for boundary collision
+    if x_pos < 0 or x_pos + width > 20 or y_pos < 0:
+        return
+
+    # Check if any cell is occupied in the current position
+    for i in range(width):
+        for j in range(height):
+            if is_occupied(x_pos + i, y_pos + j):
+                return
+
+    # Check stability before placing the brick
+    if not is_stable(x_pos, y_pos, width, height):
+        return
+    
+    # Place the brick on the map
+    for i in range(width):
+        for j in range(height):
+            MAP[y_pos + j][x_pos + i] = 1
+
+# Generate the required structure
+ab_drop('b13', 3)  # Place the vertical brick at x_position = 3
+ab_drop('b11', 3)  # Place the square brick at x_position = 3
+ab_drop('b31', 7)  # Place the horizontal brick at x_position = 7
+ab_drop('b13', 9)  # Place the vertical brick at x_position = 9
+ab_drop('b11', 9)  # Place the square brick at x_position = 9
+ab_drop('b13', 11) # Place the vertical brick at x_position = 11
+```
+
+This code will generate the shape resembling the letter "R" using the provided bricks and ensuring stability and avoiding boundary collisions.

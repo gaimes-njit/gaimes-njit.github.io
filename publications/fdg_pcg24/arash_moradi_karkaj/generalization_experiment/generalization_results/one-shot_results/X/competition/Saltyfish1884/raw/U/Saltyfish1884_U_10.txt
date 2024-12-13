@@ -1,0 +1,41 @@
+To generate a stable structure that resembles the character "U" while meeting all hard constraints, we can follow these steps:
+
+Step 1: Initialize the structure grid
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Place the base of the "U" shape
+```python
+# Drop a b31 block at the center-bottom of the structure
+ab_drop('b31', 10)  # slot 10 is the center of the map (W=20)
+```
+
+Step 3: Place the vertical part of the "U" shape
+```python
+# Drop two consecutive b13 blocks on top of the base
+ab_drop('b13', 10)  # slot 10 aligns with the previous block (center of b31)
+ab_drop('b13', 10)  # slot 10 aligns with the previous block (center of b31)
+```
+
+Step 4: Place the horizontal part of the "U" shape
+```python
+# Drop a b31 block on top of the vertical part
+ab_drop('b31', 10)  # slot 10 aligns with the previous blocks (center of b13 on top)
+```
+
+Step 5: Place the blocks adjacent to the horizontal part to complete the "U" shape
+```python
+# Drop two b11 blocks on each side of the horizontal part
+ab_drop('b11', 7)   # slot 7 aligns with the left end of the horizontal part
+ab_drop('b11', 13)  # slot 13 aligns with the right end of the horizontal part
+```
+
+Step 6: Print the final structure
+```python
+# Print the structure grid
+for row in structure:
+    print(' '.join(row))
+```
+
+Note: The above steps outline the general strategy to achieve the desired structure. However, depending on the starting state of the structure and the order in which the blocks are dropped, there may be slight variations in the final result.

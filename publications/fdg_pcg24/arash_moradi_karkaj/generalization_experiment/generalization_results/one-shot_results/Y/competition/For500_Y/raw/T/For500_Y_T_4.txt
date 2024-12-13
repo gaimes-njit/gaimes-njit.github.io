@@ -1,0 +1,12 @@
+ab_drop('b31', 7) # Drop a horizontal block at the center of the bottom layer
+ab_drop('b11', 5) # Drop a square block to the left of the horizontal block
+ab_drop('b11', 9) # Drop a square block to the right of the horizontal block
+ab_drop('b13', 7) # Drop a vertical block at the center of the bottom layer
+ab_drop('b13', 7) # Drop another vertical block at the center of the bottom layer
+ab_drop('b11', 5) # Drop a square block to the left of the vertical blocks
+ab_drop('b31', 7) # Drop a horizontal block on top of the vertical blocks
+ab_drop('b11', 10) # Drop a square block to the right of the horizontal block
+ab_drop('b11', 4) # Drop a square block to the left of the horizontal block
+ab_drop('b11', 8) # Drop a square block to the right of the horizontal block
+ab_drop('b13', 7) # Drop a vertical block on top of the horizontal blocks
+ab_drop('b13', 7) # Drop another vertical block on top of the horizontal blocks

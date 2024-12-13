@@ -1,0 +1,31 @@
+Here is the code to generate the structure of the "R" character:
+
+```python
+# Map dimensions
+W = 20
+H = 16
+
+# Initialize the structure
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the blocks to form the "R" shape
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+
+# Print the structure
+for row in structure:
+    print(' '.join(row))
+```
+
+The output of this code will resemble the "R" character:
+
+```
+. . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . .
+. . . . .

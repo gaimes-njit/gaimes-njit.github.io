@@ -1,0 +1,33 @@
+To generate a structure that looks like a capital "Q", we can break it down into smaller blocks and assemble them in a bottom-to-top fashion. Here's the step-by-step implementation of how to build the "Q" structure:
+
+Step 1: Start with the bottom straight bar of the "Q".
+```
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+```
+
+Step 2: Place the top horizontal bar of the "Q".
+```
+ab_drop("b13", 7)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b13", 9)
+```
+
+Step 3: Add the small square block in the bottom right of the "Q".
+```
+ab_drop("b11", 9)
+```
+
+Complete Implementation:
+```
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+ab_drop("b13", 7)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b13", 9)
+ab_drop("b11", 9)
+```

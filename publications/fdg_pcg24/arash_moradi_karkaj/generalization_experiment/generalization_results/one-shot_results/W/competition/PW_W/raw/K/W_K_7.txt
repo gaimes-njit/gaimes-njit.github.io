@@ -1,0 +1,18 @@
+To generate the uppercase letter K, we need to position the blocks in the following order:
+
+1. Place a vertical straight block ('b13') at position (1, 1).
+2. Place a 1x1 square block ('b11') at position (2, 1).
+3. Place a 1x1 square block ('b11') at position (3, 1).
+4. Place a 1x1 square block ('b11') at position (3, 2).
+5. Place a 1x1 square block ('b11') at position (4, 2).
+6. Place a vertical straight block ('b13') at position (5, 3).
+
+Here is the stream of commands to generate the letter K:
+```
+ab_drop('b13',1)
+ab_drop('b11',2)
+ab_drop('b11',3)
+ab_drop('b11',3)
+ab_drop('b11',4)
+ab_drop('b13',5)
+```

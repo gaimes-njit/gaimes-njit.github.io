@@ -1,0 +1,40 @@
+```
+# Step 1: Initialize the structure
+structure = [[' ']*W for _ in range(H)]
+
+# Step 2: Drop the first block (bottom layer)
+ab_drop('b31', 3)
+
+# Step 3: Drop the second block (bottom layer)
+ab_drop('b31', 8)
+
+# Step 4: Drop the third block (bottom layer)
+ab_drop('b31', 13)
+
+# Step 5: Drop the fourth block (second layer)
+ab_drop('b31', 4)
+
+# Step 6: Drop the fifth block (second layer)
+ab_drop('b31', 9)
+
+# Step 7: Drop the sixth block (second layer)
+ab_drop('b31', 12)
+
+# Step 8: Drop the seventh block (third layer)
+ab_drop('b31', 6)
+
+# Step 9: Drop the eighth block (third layer)
+ab_drop('b31', 10)
+
+# Step 10: Drop the ninth block (fourth layer)
+ab_drop('b11', 6)
+
+# Step 11: Drop the tenth block (fourth layer)
+ab_drop('b11', 12)
+
+# Step 12: Drop the eleventh block (fifth layer)
+ab_drop('b11', 9)
+
+# Step 13: Drop the twelfth block (top layer)
+ab_drop('b11', 9)
+```

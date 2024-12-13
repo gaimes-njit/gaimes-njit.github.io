@@ -1,0 +1,13 @@
+To generate the uppercase letter "Q", the following stream of commands can be used:
+
+```
+ab_drop('b31', 1)  # Place first part of the Q horizontally
+ab_drop('b13', 4)  # Place second part of the Q vertically
+ab_drop('b13', 5)  # Place third part of the Q vertically
+ab_drop('b31', 7)  # Place fourth part of the Q horizontally
+ab_drop('b13', 7)  # Place fifth part of the Q vertically
+ab_drop('b13', 8)  # Place sixth part of the Q vertically
+ab_drop('b13', 9)  # Place seventh part of the Q vertically
+```
+
+This sequence of commands will create the uppercase letter "Q" within the defined environment and gravity rules.

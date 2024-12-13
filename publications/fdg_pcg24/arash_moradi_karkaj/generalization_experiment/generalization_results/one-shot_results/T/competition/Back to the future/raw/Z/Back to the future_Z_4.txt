@@ -1,0 +1,42 @@
+To generate a stable structure that looks like the uppercase character "Z" and meets all the hard constraints, you can follow these steps:
+
+1. Initialize the structure as an empty WxH grid:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Define a function `is_stable()` to check the stability of the current structure:
+```python
+def is_stable():
+    for i in range(H-1):
+        for j in range(W):
+            if structure[i][j] != ' ' and (structure[i+1][j] == ' ' or structure[i+1][j-1] == ' ' or structure[i+1][j+1] == ' '):
+                return False
+    return True
+```
+
+3. Use `ab_drop()` function to drop blocks and build the structure:
+```python
+# Drop the first b31 block
+ab_drop('b31', 9)
+
+# Drop the second b31 block
+ab_drop('b31', 8)
+
+# Drop the b13 block to connect the two b31 blocks
+ab_drop('b13', 7)
+
+# Check stability and drop additional blocks if needed
+while not is_stable():
+    # Drop additional blocks to provide stability
+    ab_drop('b11', 8)
+    ab_drop('b11', 9)
+
+# Print the final structure
+for row in structure:
+    print ''.join(row)
+```
+
+This approach builds the structure from bottom to top, using `ab_drop()` function to drop blocks and checking stability after each drop. More blocks can be added if the structure is not stable.
+
+Note: The exact coordinates for `ab_drop()` may vary depending on the specific requirements and desired outcome for the "Z" structure. The example above provides a general approach to building a stable "Z" structure.

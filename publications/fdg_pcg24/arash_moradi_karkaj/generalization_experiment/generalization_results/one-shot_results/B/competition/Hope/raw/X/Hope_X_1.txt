@@ -1,0 +1,37 @@
+To create a structure like "X" inside a 20*16 box block using ab_drop('blocktype',x position) commands, you can follow these steps:
+
+1. Start by dropping a b11 block at position (0, 0) using ab_drop('b11', 0).
+2. Drop a b11 block at position (0, 1) using ab_drop('b11', 1).
+3. Drop a b11 block at position (0, 2) using ab_drop('b11', 2).
+4. Drop a b11 block at position (0, 3) using ab_drop('b11', 3).
+5. Drop a b11 block at position (0, 4) using ab_drop('b11', 4).
+6. Drop a b11 block at position (0, 5) using ab_drop('b11', 5).
+7. Drop a b11 block at position (0, 6) using ab_drop('b11', 6).
+8. Drop a b11 block at position (0, 7) using ab_drop('b11', 7).
+9. Drop a b11 block at position (0, 8) using ab_drop('b11', 8).
+10. Drop a b11 block at position (0, 9) using ab_drop('b11', 9).
+11. Drop a b11 block at position (0, 10) using ab_drop('b11', 10).
+12. Drop a b11 block at position (0, 11) using ab_drop('b11', 11).
+13. Drop a b11 block at position (0, 12) using ab_drop('b11', 12).
+14. Drop a b11 block at position (0, 13) using ab_drop('b11', 13).
+15. Drop a b11 block at position (0, 14) using ab_drop('b11', 14).
+16. Drop a b11 block at position (0, 15) using ab_drop('b11', 15).
+
+17. Drop a b31 block at position (1, 0) using ab_drop('b31', 1).
+18. Drop a b31 block at position (1, 1) using ab_drop('b31', 1).
+19. Drop a b31 block at position (1, 2) using ab_drop('b31', 1).
+20. Drop a b31 block at position (1, 3) using ab_drop('b31', 1).
+21. Drop a b31 block at position (1, 4) using ab_drop('b31', 1).
+22. Drop a b31 block at position (1, 5) using ab_drop('b31', 1).
+23. Drop a b31 block at position (1, 6) using ab_drop('b31', 1).
+24. Drop a b31 block at position (1, 7) using ab_drop('b31', 1).
+25. Drop a b31 block at position (1, 8) using ab_drop('b31', 1).
+26. Drop a b31 block at position (1, 9) using ab_drop('b31', 1).
+27. Drop a b31 block at position (1, 10) using ab_drop('b31', 1).
+28. Drop a b31 block at position (1, 11) using ab_drop('b31', 1).
+29. Drop a b31 block at position (1, 12) using ab_drop('b31', 1).
+30. Drop a b31 block at position (1, 13) using ab_drop('b31', 1).
+31. Drop a b31 block at position (1, 14) using ab_drop('b31', 1).
+32. Drop a b31 block at position (1, 15) using ab_drop('b31', 1).
+
+This will create an "X" structure inside the 20*16 box block.

@@ -1,0 +1,24 @@
+To generate a structure that looks like the capital letter "W", we can divide it into three parts: the left diagonal, the middle vertical bar, and the right diagonal. 
+
+To create the left diagonal, we can use two column blocks ("b13"). We will stack them in a bottom-to-top fashion to form a diagonal shape. 
+
+To create the middle vertical bar, we can use a row block ("b31"). We will drop it in the center of the grid.
+
+To create the right diagonal, we will follow a similar approach as the left diagonal but in a mirrored manner. We will stack two column blocks ("b13") in a bottom-to-top fashion again.
+
+Here's the complete implementation:
+
+```
+# The left diagonal of W
+ab_drop("b13", 2)
+ab_drop("b13", 4)
+
+# The middle vertical bar of W
+ab_drop("b31", 9)
+
+# The right diagonal of W
+ab_drop("b13", 15)
+ab_drop("b13", 17)
+```
+
+By following these steps, we have generated a structure that looks like the capital letter "W" in the level.

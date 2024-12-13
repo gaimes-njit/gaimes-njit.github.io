@@ -1,0 +1,35 @@
+To generate a stable structure that looks like the character "M" and meets all the constraints, we can use the `ab_drop()` function to iteratively drop blocks in a specific order. Here's the step-by-step approach:
+
+Step 1: Initialize the structure as an empty grid with size WxH.
+```
+W = 20
+H = 16
+structure = [[' '] * W for _ in range(H)]
+```
+
+Step 2: Start by dropping the first b31 block near the center of the structure. Since the "M" shape has two diagonals, we can start with a horizontal block to form the middle part.
+```
+ab_drop('b31', W // 2 - 1)
+```
+
+Step 3: Drop two b11 blocks on top of the ends of the previous b31 block to complete the middle part.
+```
+ab_drop('b11', W // 2 - 2)
+ab_drop('b11', W // 2)
+```
+
+Step 4: Drop two b13 blocks on top of the b31 block, aligning them with the previously dropped b11 blocks. This forms the left and right diagonal parts of the "M".
+```
+ab_drop('b13', W // 2 - 2)
+ab_drop('b13', W // 2 + 1)
+```
+
+Step 5: Drop two more b11 blocks above the diagonals to complete the top part of the "M".
+```
+ab_drop('b11', W // 2 - 3)
+ab_drop('b11', W // 2 + 2)
+```
+
+The final structure will resemble the character "M" and meet all the constraints.
+
+Note: The order and position of dropping the blocks is crucial to ensure stability and avoid boundary intrusion.

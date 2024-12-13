@@ -1,0 +1,22 @@
+```
+# Initialize the structure
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the first block (vertical block) at slot 10
+ab_drop('b13', 10)
+
+# Drop the second block (horizontal block) at slot 11 and slot 12
+ab_drop('b11', 11)
+ab_drop('b11', 12)
+
+# Drop the third block (vertical block) at slot 12
+ab_drop('b13', 12)
+
+# Drop the fourth block (horizontal block) at slot 10 and slot 9
+ab_drop('b11', 10)
+ab_drop('b11', 9)
+
+# Drop the fifth block (horizontal block) at slot 8 and slot 7
+ab_drop('b11', 8)
+ab_drop('b11', 7)
+```

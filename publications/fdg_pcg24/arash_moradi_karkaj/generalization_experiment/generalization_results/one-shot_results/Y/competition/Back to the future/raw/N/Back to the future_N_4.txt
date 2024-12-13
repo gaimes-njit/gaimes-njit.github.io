@@ -1,0 +1,26 @@
+To use the `ab_drop()` function to generate a stable structure that looks like the uppercase character "N" and meets all the hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty grid of size WxH using the provided code:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the first block, which is a b31 block, at a suitable slot using the `ab_drop()` function. We need to ensure that the structure is stable before dropping the block. Let's say we drop it at slot 4:
+```python
+ab_drop('b31', 4)
+```
+This will update the structure accordingly.
+
+3. Drop the second block, which is a b13 block, at the same slot as the previous block. Again, ensure stability before dropping. This will create the middle part of the "N". Let's drop it at slot 4 again:
+```python
+ab_drop('b13', 4)
+```
+Update the structure accordingly.
+
+4. Drop the third block, which is also a b31 block, at a suitable slot to complete the right side of the "N". Ensure stability before dropping. Let's drop it at slot 6:
+```python
+ab_drop('b31', 6)
+```
+Update the structure accordingly.
+
+With these steps, we have generated a stable structure that looks like the uppercase character "N" and meets the hard constraints. The final structure will be stored in the `structure` variable.

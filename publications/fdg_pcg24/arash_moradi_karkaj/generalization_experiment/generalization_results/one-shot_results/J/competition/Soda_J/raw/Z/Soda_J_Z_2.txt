@@ -1,0 +1,25 @@
+The first step is to create the bottom part of the "Z" shape using a column block "b13". This block will be placed at x_position = 0. 
+
+```python
+ab_drop("b13", 0)
+```
+
+Next, we need to create the top part of the "Z" shape using a row block "b31". This block will be placed at x_position = 1.
+
+```python
+ab_drop("b31", 1)
+```
+
+Finally, we need to create the middle part of the "Z" shape using another column block "b13". This block will be placed at x_position = 2.
+
+```python
+ab_drop("b13", 2)
+```
+
+Combining all three ab_drop() calls, the complete implementation to generate a structure that looks like a capital "Z" (TARGET) is:
+
+```python
+ab_drop("b13", 0)
+ab_drop("b31", 1)
+ab_drop("b13", 2)
+```

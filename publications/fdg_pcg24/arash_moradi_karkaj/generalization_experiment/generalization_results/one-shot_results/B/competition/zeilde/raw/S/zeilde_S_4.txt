@@ -1,0 +1,43 @@
+Step #1:
+```
+*****
+**
+****
+   **
+*****
+```
+
+Step #2:
+Row 1: 5 asterisks, 0 spaces
+Row 2: 2 asterisks, 3 spaces
+Row 3: 4 asterisks, 0 spaces
+Row 4: 3 spaces, 2 asterisks
+Row 5: 5 asterisks, 0 spaces
+
+Step #3:
+Row 1: 5x, 0y
+Row 2: 2x, 3y
+Row 3: 4x, 0y
+Row 4: 3y, 2x
+Row 5: 5x, 0y
+
+Step #4:
+Row 1: "xxxxx"
+Row 2: "xxyyy"
+Row 3: "xxxxx"
+Row 4: "yyxxx"
+Row 5: "xxxxx"
+
+Step #5:
+Row 1: "x-1; x-2; x-3; x-4; x-5"
+Row 2: "x-1; x-2; y-3; y-4; y-5"
+Row 3: "x-1; x-2; x-3; x-4; x-5"
+Row 4: "y-1; y-2; x-3; x-4; x-5"
+Row 5: "x-1; x-2; x-3; x-4; x-5"
+
+Step #6:
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)

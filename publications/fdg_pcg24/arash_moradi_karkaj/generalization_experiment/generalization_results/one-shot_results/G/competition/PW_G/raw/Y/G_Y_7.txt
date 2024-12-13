@@ -1,0 +1,37 @@
+To generate the uppercase letter "Y" using the given block types and environment, you can follow these steps:
+
+1. Start by placing the horizontal block type "b31" at position 2:
+```
+ab_drop('b31', 2)
+```
+
+2. Place the vertical block type "b13" at position 1:
+```
+ab_drop('b13', 1)
+```
+
+3. Place another vertical block type "b13" at position 2:
+```
+ab_drop('b13', 2)
+```
+
+4. Place two square block types "b11" at position 4:
+```
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+```
+
+5. Finish by placing the horizontal block type "b31" at position 2:
+```
+ab_drop('b31', 2)
+```
+
+The complete stream of commands to generate the letter "Y" would be:
+```
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b31', 2)
+```

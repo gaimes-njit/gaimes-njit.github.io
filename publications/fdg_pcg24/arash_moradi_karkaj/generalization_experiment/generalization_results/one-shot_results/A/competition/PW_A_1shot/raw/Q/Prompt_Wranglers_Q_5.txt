@@ -1,0 +1,12 @@
+To generate the uppercase English letter "Q", you can use the following sequence of `ab_drop()` commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b13', 2)
+```
+
+In this sequence, we start by placing two vertical straight blocks at positions 1 and 3. Then, we place a horizontal straight block on top of them at position 2. Next, we place two more vertical straight blocks at positions 1 and 3, forming the base of the letter "Q". Finally, we place another vertical straight block at position 2 to complete the letter shape.

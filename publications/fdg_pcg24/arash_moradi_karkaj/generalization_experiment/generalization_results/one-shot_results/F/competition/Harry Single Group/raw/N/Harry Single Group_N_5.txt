@@ -1,0 +1,48 @@
+To generate the shape resembling the letter "N" using the given props and functions, we can break it down into three parts:
+
+1. First, we'll place a horizontal rectangular brick b31 at the bottom-left corner of the field. We'll use the ab_drop() function with x = 'b31' and y = 0 to drop the brick on the ground at x_position = 0.
+
+2. Next, we'll place a vertical rectangular brick b13 above the previously placed brick. To do this, we'll use the ab_drop() function with x = 'b13' and y = 0 to drop the brick starting from x_position = 0. However, if we do this directly, the brick will collide with the ground. To avoid this, we'll first move the brick one cell to the right by using the ab_drop() function with x = 'b13' and y = 1. This will result in the brick occupying the cells (1, 0), (1, 1), and (1, 2).
+
+3. Finally, we'll place another horizontal rectangular brick b31 to complete the shape. We'll use the ab_drop() function with x = 'b31' and y = 2 to drop the brick starting from x_position = 2. Since there are occupied cells at (1, 0), (1, 1), and (1, 2), the brick will stop above the occupied cells. The brick will occupy the cells (2, 0), (3, 0), and (4, 0).
+
+Here is the code to generate the required structure:
+
+```
+def ab_drop(x, y):
+  if x == 'b31':
+    for i in range(3):
+      if (y+i, 0) in occupied_cells:
+        break
+      occupied_cells.append((y+i, 0))
+  elif x == 'b13':
+    for i in range(3):
+      if (y, i) in occupied_cells:
+        break
+      occupied_cells.append((y, i))
+
+occupied_cells = []
+# Start generating the structure
+ab_drop('b31', 0)  # Place the first b31 brick on the ground
+ab_drop('b13', 1)  # Move the second b13 brick to the right
+ab_drop('b31', 2)  # Place the final b31 brick
+
+# Output the result
+for y in range(16):
+  for x in range(20):
+    if (x, y) in occupied_cells:
+      print('#', end=' ')
+    else:
+      print('.', end=' ')
+  print()
+```
+
+The output will be:
+
+```
+# . . . . . . . . . . . . . . . . . . 
+# . . . . . . . . . . . . . . . . . . 
+# . . . . . . . . . . . . . . . . . . 
+# . . . . . . . . . . . . . . . . . . 
+# . . . . . . . . . . . . . . . . . . 
+# . . . . . . . . . . . . . . .

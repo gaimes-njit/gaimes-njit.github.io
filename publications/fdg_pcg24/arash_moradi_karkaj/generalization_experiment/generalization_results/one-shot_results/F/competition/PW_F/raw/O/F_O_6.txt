@@ -1,0 +1,34 @@
+To generate the letter "O" using the block types, you can follow these steps:
+
+1. Place two vertical straight blocks (b13) next to each other:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+2. Place a horizontal straight block (b31) on top of the two vertical blocks:
+```
+ab_drop('b31', 2)
+```
+
+3. Repeat steps 1 and 2:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```
+
+The final set of commands to generate the letter "O" is:
+
+```python
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```
+
+Make sure to execute the commands consecutively, as mentioned in the instructions.

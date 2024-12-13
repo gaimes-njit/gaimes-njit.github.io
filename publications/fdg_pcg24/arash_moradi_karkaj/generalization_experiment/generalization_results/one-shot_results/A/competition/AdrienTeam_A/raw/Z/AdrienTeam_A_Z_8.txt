@@ -1,0 +1,24 @@
+```
+# Start by initializing the map
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the first block to create the base of the structure
+ab_drop('b13', 0)
+
+# Drop the vertical block in the middle to form the first diagonal line of the "Z"
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+
+# Drop the horizontal block in the middle to form the top of the "Z"
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+ab_drop('b11', 0)
+
+# Drop the second diagonal line of the "Z"
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+
+# Output the ab_drop() calls
+```
+
+The above code will create a stable structure resembling the letter "Z" that satisfies all the specified constraints.

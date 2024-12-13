@@ -1,0 +1,26 @@
+```
+# Initialize the structure
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the base of the "Y" shape
+ab_drop('b11', 9)
+
+# Drop the left vertical part of the "Y" shape
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+
+# Drop the horizontal part of the "Y" shape
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the right vertical part of the "Y" shape
+ab_drop('b11', 11)
+ab_drop('b11', 11)
+ab_drop('b11', 11)
+
+# Display the final structure
+for row in structure:
+    print(' '.join(row))
+```

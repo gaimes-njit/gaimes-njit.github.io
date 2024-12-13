@@ -1,0 +1,22 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the first block horizontally to form the top part of 'N'
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the second block vertically to form the middle part of 'N'
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+
+# Drop the third block horizontally to form the bottom part of 'N'
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the fourth block vertically to form the middle part of 'N'
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+```

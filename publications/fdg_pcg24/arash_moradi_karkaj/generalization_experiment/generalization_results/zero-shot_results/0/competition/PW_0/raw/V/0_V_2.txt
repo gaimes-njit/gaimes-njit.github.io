@@ -1,0 +1,23 @@
+To create the uppercase letter "V" using the given block types and gravity rules, follow the instructions below:
+
+```
+// Place the first vertical block of the letter "V"
+ab_drop('b13', 1)
+
+// Place the first horizontal block of the letter "V"
+ab_drop('b31', 2)
+
+// Place the second vertical block of the letter "V"
+ab_drop('b13', 4)
+
+// Place the second horizontal block of the letter "V"
+ab_drop('b31', 5)
+
+// Place the third vertical block of the letter "V"
+ab_drop('b13', 7)
+
+// Place the third horizontal block of the letter "V"
+ab_drop('b31', 8)
+```
+
+Make sure to follow the order of the commands to accurately recreate the uppercase letter "V" and ensure the blocks are stable according to the gravity rules.

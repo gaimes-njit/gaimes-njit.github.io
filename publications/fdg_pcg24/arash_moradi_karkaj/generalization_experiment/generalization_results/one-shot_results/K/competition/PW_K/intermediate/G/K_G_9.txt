@@ -1,0 +1,10 @@
+ab_drop('b31', 1)  # place the horizontal block on the left, at position 1
+ab_drop('b31', 3)  # place another horizontal block to the right, at position 3
+ab_drop('b31', 2)  # place one more horizontal block in the middle, at position 2
+ab_drop('b13', 2)  # place a vertical block below the middle horizontal block, at position 2
+ab_drop('b13', 2)  # place another vertical block below the first one, at position 2
+ab_drop('b13', 2)  # place one more vertical block below the second one, at position 2
+ab_drop('b11', 1)  # place a square block on the top left corner, at position 1
+ab_drop('b11', 3)  # place another square block on the top right corner, at position 3
+ab_drop('b11', 1)  # place one more square block on the bottom left corner, at position 1
+ab_drop('b11', 3)  # place another square block on the bottom right corner, at position 3

@@ -1,0 +1,25 @@
+To generate the uppercase letter "P", we can follow these steps:
+
+1. Place a horizontal straight block (b31) at position 1.
+```
+ab_drop('b31', 1)
+```
+
+2. Place a vertical straight block (b13) at position 0 and position 2.
+```
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+```
+
+3. Place another horizontal straight block (b31) at position 1.
+```
+ab_drop('b31', 1)
+```
+
+The complete stream of commands to generate the letter "P" would be:
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```

@@ -1,0 +1,9 @@
+To generate the uppercase letter Z, you can use the following stream of commands:
+
+```ab_drop('b31', 1)```
+```ab_drop('b13', 1)```
+```ab_drop('b31', 3)```
+```ab_drop('b13', 3)```
+```ab_drop('b31', 5)```
+
+This sequence of commands will create the letter Z in the defined environment.

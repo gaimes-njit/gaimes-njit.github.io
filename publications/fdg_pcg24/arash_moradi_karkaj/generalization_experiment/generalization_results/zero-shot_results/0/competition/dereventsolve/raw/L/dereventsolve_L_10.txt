@@ -1,0 +1,30 @@
+```
+# Database: key-value pairs
+database = {
+    "A": "ab_drop",
+    "B": "ab",
+    "C": "ab_don't_drop",
+    "D": "ab",
+    "E": "ab_drop",
+    "F": "ab"
+}
+
+def find_letter(letter):
+    sequence = ""
+    if letter in database:
+        value = database[letter]
+        for char in value:
+            if char == "a":
+                sequence += "ab_drop"
+            elif char == "b":
+                sequence += "ab"
+    return sequence
+
+letter_L_sequence = find_letter("L")
+print(letter_L_sequence)
+```
+
+Output:
+```
+ab_dropab
+```

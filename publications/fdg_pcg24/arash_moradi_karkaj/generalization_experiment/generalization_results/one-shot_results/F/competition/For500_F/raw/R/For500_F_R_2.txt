@@ -1,0 +1,5 @@
+ab_drop('b31', 10) # create the left leg of 'R'
+ab_drop('b13', 8) # create the vertical line of 'R'
+ab_drop('b31', 10) # create the right leg of 'R'
+ab_drop('b11', 10) # add the base of 'R'
+ab_drop('b31', 10) # add stability

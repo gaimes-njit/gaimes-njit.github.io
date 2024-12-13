@@ -1,0 +1,19 @@
+To create the uppercase letter "V", we can use the following sequence of ab_drop() commands:
+
+```python
+ab_drop("b31", 1)
+ab_drop("b31", 2)
+ab_drop("b31", 3)
+ab_drop("b13", 2)
+ab_drop("b13", 2)
+ab_drop("b13", 2)
+ab_drop("b13", 2)
+```
+
+Explanation:
+
+1. The first three commands (`ab_drop("b31", 1)`, `ab_drop("b31", 2)`, `ab_drop("b31", 3)`) create the left slanted part of the letter "V" using the horizontal straight block (`b31`).
+
+2. The next four commands (`ab_drop("b13", 2)`, `ab_drop("b13", 2)`, `ab_drop("b13", 2)`, `ab_drop("b13", 2)`) create the right slanted part of the letter "V" using the vertical straight block (`b13`).
+
+Note: The commands should be executed consecutively, starting from the top-left corner of the grid.

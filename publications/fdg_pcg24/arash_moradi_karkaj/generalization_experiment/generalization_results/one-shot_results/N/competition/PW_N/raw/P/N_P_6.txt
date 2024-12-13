@@ -1,0 +1,11 @@
+To generate the uppercase letter "P", we can use the following commands:
+
+```
+ab_drop('b31', 1)  // Place a horizontal straight block at position 1
+ab_drop('b13', 2)  // Place a vertical straight block at position 2
+ab_drop('b13', 3)  // Place another vertical straight block at position 3
+ab_drop('b13', 4)  // Place another vertical straight block at position 4
+ab_drop('b11', 4)  // Place a square block at position 4
+```
+
+This sequence of commands will create the letter "P" using the given block types and the defined environment. The blocks will stack on top of each other according to the gravity rules, and the resulting shape will resemble the uppercase letter "P".

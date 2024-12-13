@@ -1,0 +1,26 @@
+To create the letter 'B' in the level, we can break it down into several blocks and drop them in a specific order. The steps to create the letter 'B' are as follows:
+
+1. Place the base of the letter 'B' using two column blocks:
+   - Drop a column block ("b13") at position 9.
+   - Drop another column block ("b13") at position 10.
+
+2. Place the top right curve of the letter 'B' using a row block:
+   - Drop a row block ("b31") at position 9.
+
+3. Place the bottom right curve of the letter 'B' using a row block:
+   - Drop a row block ("b31") at position 9.
+
+4. Place the center connector of the letter 'B' using a square block:
+   - Drop a square block ("b11") at position 11.
+
+With these steps, the letter 'B' can be constructed in the level. The complete implementation is as follows:
+
+```python
+ab_drop("b13", 9)
+ab_drop("b13", 10)
+ab_drop("b31", 9)
+ab_drop("b31", 9)
+ab_drop("b11", 11)
+```
+
+This implementation follows the bottom-to-top construction approach and ensures that the blocks are dropped in the correct positions to create a stable and visually similar structure to the letter 'B'.

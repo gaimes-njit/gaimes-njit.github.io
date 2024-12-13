@@ -1,0 +1,34 @@
+To generate a stable structure that looks like the character "B" and meets all the given constraints, we can follow these steps:
+
+1. Initialize the structure as an empty WxH grid using the provided code:
+```
+W = 20
+H = 16
+structure = [[' '] * W for _ in range(H)]
+```
+
+2. Start by dropping the first block, which is a square block (b11), at position 10 (centered in the middle) using the `ab_drop()` function:
+```
+ab_drop('b11', 10)
+```
+This will place the block on the bottom layer in the center.
+
+3. Next, drop a horizontal block (b31) at position 10, aligned with the previous block, to create the first vertical part of the character "B":
+```
+ab_drop('b31', 10)
+```
+This will place the block above the previous block, extending it vertically.
+
+4. Now, drop another square block (b11) at position 7, slightly to the left of the previous block, to create the upper part of the character "B":
+```
+ab_drop('b11', 7)
+```
+This block will be placed above the previous blocks, extending the vertical part of the "B".
+
+5. Finally, drop another horizontal block (b31) at position 10, aligned with the previous blocks, to complete the character "B":
+```
+ab_drop('b31', 10)
+```
+This block will be placed above the previous blocks, extending the vertical part of the "B" even further.
+
+By following these steps and carefully choosing the drop positions, we can create a stable structure that looks like the character "B" and meets all the given constraints. The final structure will be stored in the `structure` variable.

@@ -1,0 +1,21 @@
+ab_drop('b13', 0)  # Place first vertical block on the left edge
+ab_drop('b11', 2)  # Place small block next to the vertical block
+
+ab_drop('b13', 3)  # Place second vertical block next to the first one
+ab_drop('b11', 5)  # Place small block next to the second vertical block
+
+ab_drop('b13', 7)  # Place third vertical block next to the second one
+ab_drop('b11', 9)  # Place small block next to the third vertical block
+
+ab_drop('b13', 11)  # Place fourth vertical block next to the third one
+ab_drop('b11', 13)  # Place small block next to the fourth vertical block
+
+ab_drop('b13', 15)  # Place fifth vertical block next to the fourth one
+ab_drop('b11', 17)  # Place small block next to the fifth vertical block
+
+ab_drop('b31', 8)  # Place horizontal block on top of the second and third vertical blocks, supported by the small block
+
+ab_drop('b11', 8)  # Place small block on top of the horizontal block
+
+ab_drop('b11', 1)  # Place small block on top of the first vertical block
+ab_drop('b11', 18)  # Place small block on top of the fifth vertical block

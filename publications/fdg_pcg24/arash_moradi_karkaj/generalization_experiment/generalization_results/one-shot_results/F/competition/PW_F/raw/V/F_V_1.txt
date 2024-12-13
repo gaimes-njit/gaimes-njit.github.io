@@ -1,0 +1,21 @@
+To create the uppercase letter "V" using the given block types and commands, we can follow the following sequence:
+
+1. Place two vertical straight blocks (b13) at positions 1 and 2:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+2. Place a horizontal straight block (b31) at position 2:
+```
+ab_drop('b31', 2)
+```
+
+3. Repeat steps 1 and 2:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```
+
+The final result should be the uppercase letter "V" formed by the blocks in the grid.

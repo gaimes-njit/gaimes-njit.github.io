@@ -1,0 +1,9 @@
+ab_drop('b13', 10)  # Place the vertical block in the center of the map
+ab_drop('b31', 9)   # Place the horizontal block above the vertical block
+ab_drop('b11', 8)   # Place the square block to the left of the horizontal block
+ab_drop('b11', 10)  # Place another square block to the right of the horizontal block
+ab_drop('b31', 9)   # Place another horizontal block above the previous one
+ab_drop('b11', 8)   # Place another square block to the left of the second horizontal block
+ab_drop('b11', 10)  # Place another square block to the right of the second horizontal block
+ab_drop('b31', 9)   # Place another horizontal block above the previous one
+# Repeat the previous steps until the desired structure is achieved

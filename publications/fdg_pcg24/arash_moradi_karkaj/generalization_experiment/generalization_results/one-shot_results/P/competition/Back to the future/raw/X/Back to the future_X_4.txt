@@ -1,0 +1,23 @@
+To generate a stable structure that looks like the uppercase character "X" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the structure as an empty grid using the provided `structure` variable.
+
+2. Start by dropping a b13 block at the center slot (y = 9) using `ab_drop('b13', 9)`.
+
+3. Drop a b11 block at the slot to the left of the previous block (y = 8) using `ab_drop('b11', 8)`.
+
+4. Drop a b11 block at the slot to the right of the previous block (y = 10) using `ab_drop('b11', 10)`.
+
+5. Drop a b13 block at the center slot of the layer above the previous blocks (y = 9) using `ab_drop('b13', 9)`.
+
+6. Drop a b11 block at the slot below the previous b13 block (y = 9) using `ab_drop('b11', 9)`.
+
+7. Drop a b31 block at the center slot of the layer above the previous blocks (y = 9) using `ab_drop('b31', 9)`.
+
+8. Drop a b11 block at the slot to the left of the previous block (y = 8) using `ab_drop('b11', 8)`.
+
+9. Drop a b11 block at the slot to the right of the previous block (y = 10) using `ab_drop('b11', 10)`.
+
+10. Drop a b31 block at the center slot of the layer above the previous blocks (y = 9) using `ab_drop('b31', 9)`.
+
+By following these steps, the `ab_drop()` function will drop the blocks in the correct positions to form a stable structure that resembles the uppercase character "X" while satisfying the hard constraints. The stability of the structure is ensured by checking the previous blocks' positions before each drop. The specific coordinates of each `ab_drop()` call are listed in steps 2 to 10.

@@ -1,0 +1,13 @@
+To create the structure of the letter "S" using ab_drop, we can use the following commands:
+
+ab_drop('b31', 2)
+ab_drop('b31', 5)
+ab_drop('b31', 8)
+ab_drop('b13', 5)
+ab_drop('b13', 14)
+ab_drop('b13', 11)
+ab_drop('b31', 14)
+ab_drop('b31', 17)
+ab_drop('b31', 20)
+
+This will create an "S" shape inside a 20x16 box.

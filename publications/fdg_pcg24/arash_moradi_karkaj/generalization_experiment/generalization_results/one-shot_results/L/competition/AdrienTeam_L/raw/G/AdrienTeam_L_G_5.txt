@@ -1,0 +1,16 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Constructing the base of the "G"
+ab_drop('b31', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b11', 4)
+ab_drop('b31', 6)
+
+# Constructing the vertical line of the "G"
+ab_drop('b13', 8)
+ab_drop('b11', 8)
+ab_drop('b31', 8)
+ab_drop('b11', 12)
+```

@@ -1,0 +1,13 @@
+To generate the uppercase English letter "G", you can use the following commands:
+
+```
+ab_drop('b31', 1)    # Top horizontal line
+ab_drop('b13', 1)    # Vertical line on the left
+ab_drop('b11', 4)    # Dot in the middle
+ab_drop('b31', 2)    # Middle horizontal line
+ab_drop('b13', 1)    # Vertical line on the right
+ab_drop('b31', 3)    # Bottom horizontal line
+ab_drop('b13', 1)    # Bottom vertical line
+```
+
+This sequence of commands will construct the letter "G" in the Tetris-like environment, following the stacking and stability rules.

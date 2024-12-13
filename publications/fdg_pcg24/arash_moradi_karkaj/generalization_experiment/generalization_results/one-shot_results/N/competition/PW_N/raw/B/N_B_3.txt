@@ -1,0 +1,35 @@
+To generate the letter "B" using the given block types and environment, we can follow these steps:
+
+1. Drop two vertical straight blocks (b13) at positions 2 and 3 along the width:
+```py
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+```
+This will create the two vertical sides of the letter "B".
+
+2. Drop a horizontal straight block (b31) at position 3 along the width, aligning it with the top of the two vertical blocks:
+```py
+ab_drop('b31', 3)
+```
+This will create the top part of the letter "B".
+
+3. Drop another vertical straight block (b13) at position 5 along the width, aligning it with the right side of the top block:
+```py
+ab_drop('b13', 5)
+```
+This will create the right side of the letter "B".
+
+4. Finally, drop a square block (b11) at position 5 along the width, aligning it with the bottom of the right side block:
+```py
+ab_drop('b11', 5)
+```
+This will complete the letter "B".
+
+Putting it all together, the stream of commands to generate the letter "B" would be:
+```py
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b31', 3)
+ab_drop('b13', 5)
+ab_drop('b11', 5)
+```

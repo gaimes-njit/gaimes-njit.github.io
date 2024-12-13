@@ -1,0 +1,4 @@
+ab_drop('b13', 0) # Place the left vertical block
+ab_drop('b31', 1) # Place the horizontal block below the left vertical block
+ab_drop('b31', 18) # Place the horizontal block below the right vertical block
+ab_drop('b13', 19) # Place the right vertical block

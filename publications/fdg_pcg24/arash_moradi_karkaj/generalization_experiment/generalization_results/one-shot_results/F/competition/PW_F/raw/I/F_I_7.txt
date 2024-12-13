@@ -1,0 +1,7 @@
+To create the uppercase letter "I", we need to stack two vertical straight blocks (b13) on top of each other and then place a horizontal straight block (b31) on top of them. Here are the commands to create the letter "I":
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+```

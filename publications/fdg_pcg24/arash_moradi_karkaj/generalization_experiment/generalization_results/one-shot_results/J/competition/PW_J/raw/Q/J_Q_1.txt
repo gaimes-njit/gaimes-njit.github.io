@@ -1,0 +1,12 @@
+To create the letter "Q" using the given block types, here is the stream of ab_drop() commands:
+
+```
+ab_drop('b13', 1) // Place vertical straight block at position 1
+ab_drop('b31', 4) // Place horizontal straight block at position 4
+ab_drop('b13', 5) // Place vertical straight block at position 5
+ab_drop('b11', 1) // Place square block at position 1
+ab_drop('b11', 4) // Place square block at position 4
+ab_drop('b11', 5) // Place square block at position 5
+```
+
+This sequence of commands will create the uppercase English letter "Q" with the given block types in the defined environment.

@@ -1,0 +1,43 @@
+To generate the shape resembling the letter "R" using the available functions and props, we need to plan our moves and ensure stability and boundary collisions.
+
+First, let's initialize the map with empty cells:
+
+```
+map = [[0] * 20 for _ in range(16)]
+```
+
+Next, we will start by placing a b31 brick on the ground at x_position = 2:
+
+```
+ab_drop('b31', 2)
+```
+
+This will occupy the cells (1, 0), (2, 0), and (3, 0).
+
+To maintain stability, we need to place a b13 brick vertically on top of the b31 brick. To achieve this, we will drop a b13 brick at x_position = 2:
+
+```
+ab_drop('b13', 2)
+```
+
+This will occupy the cells (2, 1), (2, 2), and (2, 3).
+
+Now, we have the first part of the letter "R" shape.
+
+To complete the shape, we will place a b31 brick horizontally on top of the b13 brick. We can drop the b31 brick at x_position = 1:
+
+```
+ab_drop('b31', 1)
+```
+
+This will occupy the cells (0, 3), (1, 3), and (2, 3).
+
+Lastly, we need to add a small b11 brick to close the shape. We can drop the b11 brick at x_position = 2:
+
+```
+ab_drop('b11', 2)
+```
+
+This will occupy the cell (2, 4).
+
+Now, we have successfully generated the shape resembling the letter "R" using the available functions and props while ensuring stability and avoiding boundary collisions.

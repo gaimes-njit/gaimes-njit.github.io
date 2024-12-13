@@ -1,0 +1,21 @@
+To create the letter "N" in the Tetris-like environment using the ab_drop() command and the block types provided, you would need to follow these steps:
+
+1. Start by placing a vertical block (b13) at position 1:
+   ab_drop('b13', 1)
+
+2. Place a horizontal block (b31) at position 4:
+   ab_drop('b31', 4)
+
+3. Place a vertical block (b13) at position 7:
+   ab_drop('b13', 7)
+
+4. Place a horizontal block (b31) at position 10:
+   ab_drop('b31', 10)
+
+5. Place a vertical block (b13) at position 13:
+   ab_drop('b13', 13)
+
+6. Place a horizontal block (b31) at position 16:
+   ab_drop('b31', 16)
+
+This sequence of commands will construct the uppercase letter "N" within the boundaries of the Tetris-like environment, following the gravity rules. You can adjust the positions of the blocks as needed to achieve the desired outcome.

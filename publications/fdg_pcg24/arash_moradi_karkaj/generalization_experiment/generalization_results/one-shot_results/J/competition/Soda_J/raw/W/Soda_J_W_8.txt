@@ -1,0 +1,26 @@
+To generate a structure in the level that looks like the capital letter "W", we can follow the steps below:
+
+1. Drop the base of the letter "W":
+   - Drop a row block ("b31") at x_position=7.
+   - Drop a row block ("b31") at x_position=8.
+   - Drop a row block ("b31") at x_position=9.
+
+2. Drop the middle part of the letter "W":
+   - Drop a column block ("b13") at x_position=7.
+   - Drop a column block ("b13") at x_position=9.
+
+3. Drop the top part of the letter "W":
+   - Drop a row block ("b31") at x_position=6.
+   - Drop a row block ("b31") at x_position=8.
+   - Drop a row block ("b31") at x_position=10.
+
+Here is the complete implementation:
+
+ab_drop("b31", 7)
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+ab_drop("b13", 7)
+ab_drop("b13", 9)
+ab_drop("b31", 6)
+ab_drop("b31", 8)
+ab_drop("b31", 10)

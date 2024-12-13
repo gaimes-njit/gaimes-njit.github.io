@@ -1,0 +1,9 @@
+```python
+from aerial_boost import ab
+
+ab.drop("b13", layer=15, slot=9)
+ab.drop("b31", layer=14, slot=7)
+ab.drop("b31", layer=13, slot=5)
+ab.drop("b11", layer=12, slot=5)
+ab.drop("b11", layer=12, slot=9)
+```

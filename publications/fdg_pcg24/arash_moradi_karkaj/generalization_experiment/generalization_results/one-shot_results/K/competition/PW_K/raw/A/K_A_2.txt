@@ -1,0 +1,14 @@
+To create the uppercase letter "A", the following commands can be used:
+
+```
+ab_drop('b31', 1)  # Place the horizontal straight block at position 1
+ab_drop('b13', 2)  # Place the vertical straight block at position 2
+ab_drop('b13', 3)  # Place the vertical straight block at position 3
+ab_drop('b31', 4)  # Place the horizontal straight block at position 4
+ab_drop('b11', 2)  # Place the 1x1 square block at position 2
+ab_drop('b11', 3)  # Place the 1x1 square block at position 3
+ab_drop('b11', 4)  # Place the 1x1 square block at position 4
+ab_drop('b11', 5)  # Place the 1x1 square block at position 5
+```
+
+This will create the letter "A" in the Tetris-like environment.

@@ -1,0 +1,21 @@
+To create a shape resembling the letter "O" using the available props, we can start by placing a b31 brick horizontally on the ground. This will form the bottom part of the letter "O".
+
+```python
+ab_drop('b31', 4)  # Placing a b31 brick at x_position 4
+```
+
+Next, we'll place a b13 brick vertically on the left and right sides of the previously placed b31 brick. This will form the sides of the letter "O".
+
+```python
+ab_drop('b13', 3)  # Placing a b13 brick at x_position 3
+ab_drop('b13', 7)  # Placing a b13 brick at x_position 7
+```
+
+Finally, we'll place a b13 brick vertically on top of each b13 brick. This will complete the shape resembling the letter "O".
+
+```python
+ab_drop('b13', 3)  # Placing a b13 brick at x_position 3
+ab_drop('b13', 7)  # Placing a b13 brick at x_position 7
+```
+
+Note: The code above assumes that the field is initially empty. If there are any pre-existing bricks or obstacles in the field, the code may need to be adjusted to avoid collisions and ensure stability.

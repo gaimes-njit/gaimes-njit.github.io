@@ -1,0 +1,8 @@
+ab drop(b13, H, y-1) // Drop the vertical block at the top layer, centered at slot y
+ab drop(b11, H-3, y) // Drop the square block 3 layers below, centered at slot y
+ab drop(b31, H-7, y) // Drop the horizontal block 7 layers below, centered at slot y
+
+// Repeat the above steps on both sides of the vertical block to form the "Y" structure. 
+ab drop(b13, H, y-1) 
+ab drop(b11, H-3, y-2) 
+ab drop(b31, H-7, y-2)

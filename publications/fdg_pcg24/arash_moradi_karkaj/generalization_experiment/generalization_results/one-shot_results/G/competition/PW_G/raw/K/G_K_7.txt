@@ -1,0 +1,11 @@
+To generate the uppercase English letter "K", we can use a combination of the block types b31, b13, and b11. Here is the stream of ab_drop() commands to construct the letter "K":
+
+```
+ab_drop('b31', 1)   # First block - horizontal straight block at position 1
+ab_drop('b13', 1)   # Second block - vertical straight block at position 1
+ab_drop('b13', 2)   # Third block - vertical straight block at position 2
+ab_drop('b11', 3)   # Fourth block - square block at position 3
+ab_drop('b31', 2)   # Fifth block - horizontal straight block at position 2
+```
+
+By executing these commands consecutively, the blocks will stack on top of each other to form the letter "K" within the allowed space boundaries.

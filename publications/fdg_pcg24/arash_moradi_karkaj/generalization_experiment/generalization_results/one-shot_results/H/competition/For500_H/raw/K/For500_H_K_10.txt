@@ -1,0 +1,6 @@
+ab_drop('b11', 5)  # drop bottom part of the vertical line of the K
+ab_drop('b11', 7)  # drop top part of the vertical line of the K
+ab_drop('b11', 9)  # drop top part of the horizontal line of the K
+ab_drop('b31', 4)  # drop bottom part of the horizontal line of the K
+ab_drop('b31', 6)  # drop center part of the horizontal line of the K
+ab_drop('b31', 8)  # drop top part of the horizontal line of the K

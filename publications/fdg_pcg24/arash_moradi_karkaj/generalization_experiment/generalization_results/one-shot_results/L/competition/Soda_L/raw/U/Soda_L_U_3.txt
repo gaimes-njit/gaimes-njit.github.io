@@ -1,0 +1,24 @@
+To generate a structure that looks like a capital "U" (TARGET), we can use the following steps:
+
+Step 1: Place the left vertical bar of the "U" shape
+```python
+ab_drop("b31", 6)
+```
+
+Step 2: Place the bottom horizontal bar of the "U" shape
+```python
+ab_drop("b13", 5)
+```
+
+Step 3: Place the right vertical bar of the "U" shape
+```python
+ab_drop("b31", 14)
+```
+
+With these three steps, the completed code implementation to generate a structure that looks like a capital "U" (TARGET) would be:
+
+```python
+ab_drop("b31", 6)
+ab_drop("b13", 5)
+ab_drop("b31", 14)
+```

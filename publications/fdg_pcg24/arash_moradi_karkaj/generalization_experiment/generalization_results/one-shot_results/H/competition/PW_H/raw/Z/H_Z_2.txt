@@ -1,0 +1,16 @@
+To generate the uppercase letter "Z" using the block types mentioned, you can use the following commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b11', 1)
+ab_drop('b31', 2)
+ab_drop('b11', 2)
+ab_drop('b31', 3)
+ab_drop('b11', 3)
+ab_drop('b31', 4)
+ab_drop('b11', 4)
+ab_drop('b13', 3)
+ab_drop('b13', 4)
+```
+
+These commands will create the letter "Z" in the 20x16 grid by stacking and positioning the blocks according to the gravity rules.

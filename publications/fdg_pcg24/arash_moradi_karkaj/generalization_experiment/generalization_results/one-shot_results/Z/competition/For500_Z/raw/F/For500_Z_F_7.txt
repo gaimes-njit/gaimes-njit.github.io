@@ -1,0 +1,18 @@
+# Solution
+To generate a structure resembling the capital letter "F" using the `ab_drop()` function, we need to carefully plan the dropping positions and orders of the blocks. Here is the sequence of ab_drop() function calls that will generate the desired structure:
+
+```
+# Drop the base
+ab_drop('b31', 10)
+
+# Drop the two vertical bars of the "F"
+ab_drop('b13', 10)
+ab_drop('b13', 14)
+
+# Drop the horizontal bar of the "F"
+ab_drop('b31', 10)
+```
+
+By dropping the blocks in this order and at these positions, we will be able to construct a stable structure that resembles the capital letter "F".
+
+Note: The prompt requires the solution to not use any loops or recursion. Therefore, we cannot use a loop to iterate over the above sequence of ab_drop() calls. Instead, we need to manually write each ab_drop() call in the correct order.

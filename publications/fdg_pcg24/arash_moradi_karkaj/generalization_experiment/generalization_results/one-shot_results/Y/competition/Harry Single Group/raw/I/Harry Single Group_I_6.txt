@@ -1,0 +1,71 @@
+```python
+# map initialization
+field = [[0 for _ in range(20)] for _ in range(16)]
+
+# function to check stability
+def is_stable(brick):
+    # get the pivot point
+    pivot_x = brick[0][0]
+    pivot_y = brick[0][1]
+
+    # count occupied cells on left and right sides of the pivot
+    left_count = 0
+    right_count = 0
+
+    for cell in brick:
+        if cell[0] < pivot_x:
+            left_count += 1
+        elif cell[0] > pivot_x:
+            right_count += 1
+
+    # check stability based on occupied cells count
+    if left_count != right_count:
+        return False
+    return True
+
+# function to check boundary collisions
+def check_boundary(brick):
+    for cell in brick:
+        if cell[0] < 0 or cell[0] >= 20 or cell[1] < 0 or cell[1] >= 16:
+            return False
+    return True
+
+# function to place bricks on the field
+def place_brick(brick):
+    for cell in brick:
+        x = cell[0]
+        y = cell[1]
+        field[y][x] = 1
+
+# function to drop bricks using ab_drop(x, y)
+def ab_drop(x, y):
+    if x == 'b31':
+        brick = [(y-1, 15), (y, 15), (y+1, 15)]
+        if check_boundary(brick) and is_stable(brick):
+            place_brick(brick)
+    elif x == 'b13':
+        brick = [(y, 15), (y, 14), (y, 13)]
+        if check_boundary(brick) and is_stable(brick):
+            place_brick(brick)
+    elif x == 'b11':
+        brick = [(y, 15)]
+        if check_boundary(brick) and is_stable(brick):
+            place_brick(brick)
+
+# generate the required structure
+ab_drop('b13', 8)  # place the first b13 brick on the ground at x_position 8
+ab_drop('b31', 7)  # place the second b31 brick above the b13 brick at x_position 7
+
+# print the field to see the resulting structure
+for row in field:
+    print(row)
+```
+
+The resulting structure with the letter "I" shape will be:
+```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0

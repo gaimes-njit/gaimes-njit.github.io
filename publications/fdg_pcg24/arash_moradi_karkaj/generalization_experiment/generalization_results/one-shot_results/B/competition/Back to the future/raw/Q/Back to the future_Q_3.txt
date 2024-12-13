@@ -1,0 +1,57 @@
+To generate a stable structure that looks like the uppercase character "Q" and meets all the hard constraints, we can use the `ab_drop()` function to drop blocks in a strategic manner. Here is a possible approach:
+
+1. Initialize the structure as an empty grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop a b31 block at the center slot of the bottom layer (layer 0) to create a stable base:
+```
+ab_drop('b31', W//2)
+```
+
+3. Drop a b13 block on top of the base, slightly offset to the right:
+```
+ab_drop('b13', W//2 + 1)
+```
+
+4. Drop a b11 block on top of the b13 block, aligned with the center slot:
+```
+ab_drop('b11', W//2)
+```
+
+5. Drop a b31 block on top of the b11 block, offset to the left:
+```
+ab_drop('b31', W//2 - 1)
+```
+
+6. Drop a b13 block on top of the b31 block, slightly offset to the right:
+```
+ab_drop('b13', W//2)
+```
+
+7. Drop a b11 block on top of the b13 block, aligned with the center slot:
+```
+ab_drop('b11', W//2)
+```
+
+8. Repeat steps 5-7 to create the second "loop" of the "Q" shape.
+
+9. Check the stability of the structure after each drop to ensure that it remains stable.
+
+10. Finally, verify that the overall shape is similar to the uppercase letter "Q" and meets the diversity constraint.
+
+Note: The specific slot positions and offsets may vary depending on the desired shape of the "Q" and the stability of the structure. Experimentation and fine-tuning may be required to find the optimal solution.
+
+For stability checks, you can use the following code after each drop:
+
+```python
+def check_stability(layer, slot):
+    # Check if the block at the given layer and slot has stable support
+    if structure[layer-1][slot] != ' ' or structure[layer-1][slot-1] != ' ' or structure[layer-1][slot+1] != ' ':
+        return True
+    else:
+        return False
+```
+
+Using this function, you can ensure that each drop has stable support before proceeding to the next drop.

@@ -1,0 +1,9 @@
+```
+ab_drop('b11', 9)  # drop the middle vertical block of 'X'
+ab_drop('b11', 8)  # drop the top-right block of 'X'
+ab_drop('b11', 10) # drop the top-left block of 'X'
+ab_drop('b11', 7)  # drop the bottom-right block of 'X'
+ab_drop('b11', 11) # drop the bottom-left block of 'X'
+ab_drop('b31', 9)  # drop the horizontal block at the middle of 'X'
+ab_drop('b13', 9)  # drop the vertical block at the middle of 'X'
+```

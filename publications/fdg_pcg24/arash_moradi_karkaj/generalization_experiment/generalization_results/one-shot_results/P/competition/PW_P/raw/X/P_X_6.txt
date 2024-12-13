@@ -1,0 +1,14 @@
+To generate the letter "X" using the given block types and rules, I would use the following stream of commands:
+
+```
+ab_drop('b11', 1)     # Place a 1x1 block at position 1
+ab_drop('b31', 3)     # Place a horizontal straight block at position 3
+ab_drop('b13', 6)     # Place a vertical straight block at position 6
+ab_drop('b31', 9)     # Place a horizontal straight block at position 9
+ab_drop('b11', 11)    # Place a 1x1 block at position 11
+ab_drop('b31', 13)    # Place a horizontal straight block at position 13
+ab_drop('b13', 16)    # Place a vertical straight block at position 16
+ab_drop('b11', 19)    # Place a 1x1 block at position 19
+```
+
+These commands will stack the blocks in the shape of the letter "X" within the allowed grid space, following the gravity rules.

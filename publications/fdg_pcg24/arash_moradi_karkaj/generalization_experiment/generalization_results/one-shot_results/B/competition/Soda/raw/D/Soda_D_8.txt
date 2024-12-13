@@ -1,0 +1,23 @@
+To build the capital letter "D" in the level using the ab_drop() function, we can break it down into three blocks: a row block, a column block, and a square block. Here is the step-by-step implementation:
+
+Step 1: Add the row block at the bottom in the center.
+```
+ab_drop("b31", 9)
+```
+
+Step 2: Add the column block on top of the row block, slightly offset to the left.
+```
+ab_drop("b13", 8)
+```
+
+Step 3: Add the square block on top of the column block, slightly offset to the left.
+```
+ab_drop("b11", 7)
+```
+
+Here is the complete implementation:
+```
+ab_drop("b31", 9)
+ab_drop("b13", 8)
+ab_drop("b11", 7)
+```

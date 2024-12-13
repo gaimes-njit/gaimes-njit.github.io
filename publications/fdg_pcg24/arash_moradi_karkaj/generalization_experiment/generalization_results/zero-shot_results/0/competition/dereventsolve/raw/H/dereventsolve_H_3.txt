@@ -1,0 +1,13 @@
+To generate a structure that looks like the letter "H" using the key-value pairs in the database, we can use the following sequence of `ab_drop` function calls:
+
+```
+ab_drop("left_top")
+ab_drop("left_middle")
+ab_drop("left_bottom")
+ab_drop("middle")
+ab_drop("right_top")
+ab_drop("right_middle")
+ab_drop("right_bottom")
+```
+
+This sequence will drop the required key-value pairs from the database and create a structure that resembles the letter "H".

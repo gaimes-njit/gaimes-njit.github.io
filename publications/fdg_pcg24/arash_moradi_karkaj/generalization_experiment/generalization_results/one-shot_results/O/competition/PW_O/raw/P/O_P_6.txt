@@ -1,0 +1,7 @@
+```
+ab_drop('b13', 1)  # Place the vertical line on the left side
+ab_drop('b31', 2)  # Place the horizontal line below the vertical line
+ab_drop('b13', 5)  # Place the vertical line on the right side
+ab_drop('b31', 2)  # Place the horizontal line above the vertical line
+```
+This sequence of commands will generate the letter 'P' in the given environment.

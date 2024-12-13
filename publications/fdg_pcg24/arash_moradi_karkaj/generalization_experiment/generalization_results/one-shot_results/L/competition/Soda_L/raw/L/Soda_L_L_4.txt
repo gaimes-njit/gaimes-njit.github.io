@@ -1,0 +1,11 @@
+To create the letter "L" in the level, we can use the following sequence of ab_drop() calls:
+
+```
+# Create the vertical left part of the L
+ab_drop("b31", 10)
+
+# Create the bottom bar of the L
+ab_drop("b13", 9)
+```
+
+This sequence of ab_drop() calls will create the letter "L" in the level.

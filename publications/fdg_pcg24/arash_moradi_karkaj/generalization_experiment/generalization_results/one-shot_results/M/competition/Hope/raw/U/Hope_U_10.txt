@@ -1,0 +1,12 @@
+To create a structure exactly like "U" inside a 20*16 box, you can use the following ab_drop() commands:
+
+ab_drop('b31', 1)
+ab_drop('b31', 4)
+ab_drop('b13', 1)
+ab_drop('b13', 4)
+ab_drop('b13', 7)
+ab_drop('b13', 10)
+ab_drop('b13', 13)
+ab_drop('b31', 16)
+
+This will create the structure of "U" inside the 20*16 box, using the given block types and positions.

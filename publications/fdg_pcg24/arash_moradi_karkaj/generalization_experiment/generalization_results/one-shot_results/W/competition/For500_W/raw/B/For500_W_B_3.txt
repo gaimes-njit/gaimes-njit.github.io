@@ -1,0 +1,4 @@
+ab_drop('b31', 8)  # Create the top horizontal line of the B
+ab_drop('b13', 6)  # Create the vertical line of the B's left side
+ab_drop('b13', 8)  # Create the vertical line of the B's right side
+ab_drop('b31', 9)  # Create the bottom horizontal line of the B

@@ -1,0 +1,13 @@
+To generate the uppercase letter "Y", you can use the following stream of commands:
+
+```
+ab_drop('b31', 3)
+ab_drop('b13', 3)
+ab_drop('b31', 6)
+ab_drop('b31', 9)
+ab_drop('b31', 6)
+ab_drop('b31', 12)
+ab_drop('b31', 15)
+```
+
+These commands will construct the letter "Y" within the allowed space boundaries in the Tetris-like environment.

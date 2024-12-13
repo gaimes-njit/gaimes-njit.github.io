@@ -1,0 +1,49 @@
+1. The letter "E" can be drawn with asterisks as follows:
+```
+*****
+*
+*****
+*
+*****
+```
+
+2. Listing the asterisks and spaces generated in each row:
+- Row 1: 5 asterisks
+- Row 2: 1 asterisk
+- Row 3: 5 asterisks
+- Row 4: 1 asterisk
+- Row 5: 5 asterisks
+
+3. Replacing asterisks with "x" and spaces with "y":
+```
+xxxxx
+y
+xxxxx
+y
+xxxxx
+```
+
+4. Writing out each "x" and "y" side-by-side for each row:
+- Row 1: xxxxx
+- Row 2: y
+- Row 3: xxxxx
+- Row 4: y
+- Row 5: xxxxx
+
+5. Indicating the position of each variable:
+- Row 1: x-1; x-2; x-3; x-4; x-5
+- Row 2: y-1
+- Row 3: x-1; x-2; x-3; x-4; x-5
+- Row 4: y-1
+- Row 5: x-1; x-2; x-3; x-4; x-5
+
+6. Returning a sequence of `ab_drop` function calls for each row:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```
+
+Note: The "ab_drop" function and its inputs are assumed to be defined elsewhere as they are not provided in the question.

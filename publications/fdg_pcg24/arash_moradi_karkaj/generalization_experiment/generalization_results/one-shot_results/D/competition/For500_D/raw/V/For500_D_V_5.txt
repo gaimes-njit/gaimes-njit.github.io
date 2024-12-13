@@ -1,0 +1,12 @@
+ab_drop('b13', 9)  # Drop a vertical block in the center
+ab_drop('b11', 8)  # Drop a square block on the left
+ab_drop('b11', 10)  # Drop a square block on the right
+ab_drop('b13', 7)  # Drop a vertical block on the left
+ab_drop('b13', 11)  # Drop a vertical block on the right
+ab_drop('b13', 6)  # Drop a vertical block on the left
+ab_drop('b13', 12)  # Drop a vertical block on the right
+ab_drop('b31', 5)  # Drop a horizontal block on the left
+ab_drop('b31', 13)  # Drop a horizontal block on the right
+ab_drop('b13', 8)  # Drop a vertical block on top of the left square block
+ab_drop('b13', 10)  # Drop a vertical block on top of the right square block
+ab_drop('b31', 9)  # Drop a horizontal block on top of the vertical blocks

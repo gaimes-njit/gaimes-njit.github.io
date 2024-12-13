@@ -1,0 +1,7 @@
+```
+ab_drop(b11, 1)  //Place bottom-left corner of D
+ab_drop(b31, 1)  //Place bottom side of D
+ab_drop(b13, 4)  //Place right side of D
+ab_drop(b31, 1)  //Place top side of D
+ab_drop(b11, 1)  //Place top-right corner of D
+```

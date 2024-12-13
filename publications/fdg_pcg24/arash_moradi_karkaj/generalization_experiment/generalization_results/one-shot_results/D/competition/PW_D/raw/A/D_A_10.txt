@@ -1,0 +1,9 @@
+To generate the uppercase letter "A", we will need to use the block types b31 and b13. Here is the sequence of ab_drop() commands to create the letter "A":
+
+```python
+ab_drop('b13', 1)  # Place a vertical straight block at position 1
+ab_drop('b13', 0)  # Place another vertical straight block at position 0
+ab_drop('b31', 1)  # Place a horizontal straight block at position 1
+```
+
+This sequence of commands will create the letter "A" in the Tetris-like environment, following the gravity rules and staying within the allowed space boundaries.

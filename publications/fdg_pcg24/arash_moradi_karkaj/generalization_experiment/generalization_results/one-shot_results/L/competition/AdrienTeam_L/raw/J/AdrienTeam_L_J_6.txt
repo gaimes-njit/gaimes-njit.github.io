@@ -1,0 +1,72 @@
+```python
+structure = [[' ']*20 for _ in range(16)]
+
+# Bottom horizontal block
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Vertical block
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+
+# Top horizontal block
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Small horizontal block
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+
+# Small vertical block
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+
+# Bottom horizontal block
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Top horizontal block
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Small vertical block
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+
+# Bottom horizontal block
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Top horizontal block
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+
+# Vertical block
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+
+# Bottom horizontal block
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Small vertical block
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+
+# Top vertical block
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+
+# Top horizontal block
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Small vertical block
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+
+```

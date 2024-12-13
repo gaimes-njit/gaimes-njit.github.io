@@ -1,0 +1,25 @@
+To generate a stable structure that looks like the character "B" using the `ab_drop()` function, we need to carefully determine the dropping position and order of the blocks. Here's a step-by-step approach to meet the constraints:
+
+1. Initialize the structure grid:
+```
+W = 20
+H = 16
+structure = [[' '] * W for _ in range(H)]
+```
+
+2. Start by selecting the bottom horizontal block (b31) to form the bottom part of the character "B". Drop it at slot 0:
+```
+ab_drop('b31', 0)
+```
+
+3. Next, select the vertical block (b13) to form the middle part of the character "B". Drop it at slot 0, aligned with the center of the bottom block:
+```
+ab_drop('b13', 0)
+```
+
+4. Finally, select the top horizontal block (b31) to form the top part of the character "B". Drop it at slot 0, aligned with the center of the middle block:
+```
+ab_drop('b31', 0)
+```
+
+By following this sequence of block dropping, we can generate a stable structure that resembles the character "B".

@@ -1,0 +1,21 @@
+To generate the uppercase English letter "S", we can use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 3)
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b13', 4)
+ab_drop('b31', 4)
+ab_drop('b13', 5)
+ab_drop('b31', 5)
+ab_drop('b13', 6)
+ab_drop('b31', 6)
+ab_drop('b31', 7)
+ab_drop('b13', 7)
+```
+
+This sequence of commands will create the uppercase letter "S" in the defined environment with stacking and stability according to the gravity rules.

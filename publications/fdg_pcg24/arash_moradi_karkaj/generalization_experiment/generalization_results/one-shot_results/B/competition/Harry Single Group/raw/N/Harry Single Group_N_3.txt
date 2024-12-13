@@ -1,0 +1,32 @@
+To form the shape resembling the letter "N" using the given bricks, we can follow these steps:
+
+1. Initialize the field: We need to create a 2D grid with dimensions 20x16 to represent the field. Each cell can be empty or occupied by a brick.
+
+2. Place the first brick (b13): We can drop a b13 brick starting from the x_position = 0 using the ab_drop('b13', x_position) function. This will occupy the cells (0, 0), (0, 1), and (0, 2).
+
+3. Place the second brick (b11): We can drop a b11 brick starting from the x_position = 2. This will occupy the cell (2, 0).
+
+4. Place the third brick (b31): We can drop a b31 brick starting from the x_position = 6. This will occupy the cells (5, 3), (6, 3), and (7, 3).
+
+5. Place the fourth brick (b31): Next, we drop another b31 brick starting from the x_position = 12. This will occupy the cells (11, 6), (12, 6), and (13, 6).
+
+Here is the Python code to generate the required structure:
+
+```python
+# Step 1: Initialize the field
+field = [[False] * 20 for _ in range(16)]
+
+# Step 2: Place the first brick (b13)
+ab_drop('b13', 0)
+
+# Step 3: Place the second brick (b11)
+ab_drop('b11', 2)
+
+# Step 4: Place the third brick (b31)
+ab_drop('b31', 6)
+
+# Step 5: Place the fourth brick (b31)
+ab_drop('b31', 12)
+```
+
+By following these steps, we have formed the shape resembling the letter "N" using the given bricks.

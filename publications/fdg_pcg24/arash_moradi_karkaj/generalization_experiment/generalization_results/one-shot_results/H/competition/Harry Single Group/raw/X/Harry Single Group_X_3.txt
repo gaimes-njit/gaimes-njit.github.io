@@ -1,0 +1,54 @@
+To generate the shape resembling the letter "X", we can start by placing two b13 bricks vertically, with their pivot points at the center of the field. This will create the diagonal lines of the "X". Then, we can place two b31 bricks horizontally, intersecting at the center of the field, to complete the shape.
+
+Here is the code to generate the "X" shape:
+
+```python
+# map initialization
+field = [[0 for _ in range(20)] for _ in range(16)]
+
+# helper function to check if a cell is occupied
+def check_occupied(x, y):
+    if x < 0 or x >= 20 or y < 0 or y >= 16:
+        return True
+    return field[y][x] == 1
+
+# helper function to place a brick on the field
+def place_brick(x, y, brick):
+    if brick == 'b31':
+        for i in range(3):
+            field[y][x+i] = 1
+    elif brick == 'b13':
+        for i in range(3):
+            field[y+i][x] = 1
+    elif brick == 'b11':
+        field[y][x] = 1
+
+# function to drop and place a brick on the field
+def ab_drop(brick_type, x_pos):
+    if brick_type == 'b31':
+        for i in range(16):
+            if check_occupied(x_pos, i) or check_occupied(x_pos+1, i) or check_occupied(x_pos+2, i):
+                place_brick(x_pos, i-1, brick_type)
+                return
+        place_brick(x_pos, 15, brick_type)
+    elif brick_type == 'b13':
+        for i in range(16):
+            if check_occupied(x_pos, i) or check_occupied(x_pos, i+1) or check_occupied(x_pos, i+2):
+                place_brick(x_pos, i-1, brick_type)
+                return
+        place_brick(x_pos, 15, brick_type)
+    elif brick_type == 'b11':
+        for i in range(16):
+            if check_occupied(x_pos, i):
+                place_brick(x_pos, i-1, brick_type)
+                return
+        place_brick(x_pos, 15, brick_type)
+
+# place the bricks to form the "X" shape
+ab_drop('b13', 9)
+ab_drop('b13', 10)
+ab_drop('b31', 8)
+ab_drop('b31', 11)
+```
+
+Please note that the code provided above is just an example implementation and may not be the most optimized solution. There could be other ways to generate the "X" shape while maintaining stability and avoiding collisions with the boundaries.

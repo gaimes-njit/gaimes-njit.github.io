@@ -1,0 +1,28 @@
+To generate a stable structure that resembles the character "Q" while meeting all hard constraints, we need to carefully consider the dropping position and order of the blocks.
+
+1. Start by initializing the structure as an empty WxH grid using the code snippet provided:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. First, we need to place a b31 block on a solid base to prevent overhangs. We can achieve this by dropping a b11 block first at the center of slot 9. This will serve as the base for the b31 block.
+```
+ab_drop('b11', 9)
+```
+
+3. Next, we can drop the b31 block above the base. To minimize the risk of collapsing, we can drop it as low as possible, which is at layer 1. We align the block's center with slot 9 to maintain stability.
+```
+ab_drop('b31', 9)
+```
+
+4. Now, we can place the two top parts of the "Q" character, which are represented by b13 blocks. We drop the first b13 block at layer 2 and align its center with slot 10.
+```
+ab_drop('b13', 10)
+```
+
+5. Finally, we drop the second b13 block at layer 2 and align its center with slot 8 to complete the "Q" character.
+```
+ab_drop('b13', 8)
+```
+
+The resulting structure will resemble the character "Q" and meet all the given hard constraints.

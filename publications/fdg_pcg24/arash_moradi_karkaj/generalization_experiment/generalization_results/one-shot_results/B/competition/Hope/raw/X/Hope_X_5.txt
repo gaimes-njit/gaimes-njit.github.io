@@ -1,0 +1,16 @@
+To create the structure in the shape of an "X" inside a 20*16 box block, you can use the following sequence of ab_drop commands:
+
+1. Drop a b13 block at position (0, 0): ab_drop('b13', 0)
+2. Drop a b13 block at position (2, 0): ab_drop('b13', 2)
+3. Drop a b13 block at position (4, 0): ab_drop('b13', 4)
+4. Drop a b11 block at position (1, 1): ab_drop('b11', 1)
+5. Drop a b11 block at position (3, 1): ab_drop('b11', 3)
+6. Drop a b11 block at position (0, 4): ab_drop('b11', 0)
+7. Drop a b11 block at position (4, 4): ab_drop('b11', 4)
+8. Drop a b11 block at position (1, 5): ab_drop('b11', 1)
+9. Drop a b11 block at position (3, 5): ab_drop('b11', 3)
+10. Drop a b13 block at position (0, 10): ab_drop('b13', 0)
+11. Drop a b13 block at position (2, 10): ab_drop('b13', 2)
+12. Drop a b13 block at position (4, 10): ab_drop('b13', 4)
+
+Note: The positions mentioned above are in terms of (x, y) coordinates, where (0, 0) is the top left corner of the box block.

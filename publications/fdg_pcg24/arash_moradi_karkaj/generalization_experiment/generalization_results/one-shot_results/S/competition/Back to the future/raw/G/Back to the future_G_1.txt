@@ -1,0 +1,48 @@
+To generate a stable structure that looks like the uppercase character "G" and meets all the hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty grid using the provided map initialization code.
+
+2. Start by vertically dropping a b11 block at a suitable slot near the left boundary. Choose a slot that provides stable support for the subsequent blocks.
+
+3. Call the ab_drop() function to vertically drop a b31 block centered on the slot below the b11 block. This will create the vertical part of the "G".
+
+4. Drop another b11 block below the b31 block to complete the horizontal part of the "G".
+
+5. Call the ab_drop() function to vertically drop a b13 block next to the b31 block, overlapping the bottom part of the "G" to create the middle part of the "G".
+
+6. Finally, drop another b11 block at the top-right corner of the structure to create the top part of the "G".
+
+Make sure to perform stability checks before each call to the ab_drop() function to ensure the entire structure remains stable. Adjust the slot positions and order of block drops as necessary to meet the hard constraints and create a stable structure. Keep in mind the soft constraint of not intruding on the boundary of the map.
+
+Here is an example code snippet to generate the "G" structure:
+
+```python
+# Define the function to drop blocks and perform stability checks
+def ab_drop(x, y):
+    # Stability checks and block dropping logic here
+    ...
+
+# Initialize the structure as an empty grid
+structure = [[' ']*W for _ in range(H)]
+
+# Step 1: Drop b11 block
+ab_drop('b11', 3)
+
+# Step 2: Drop b31 block
+ab_drop('b31', 3)
+
+# Step 3: Drop b11 block
+ab_drop('b11', 3)
+
+# Step 4: Drop b13 block
+ab_drop('b13', 4)
+
+# Step 5: Drop b11 block
+ab_drop('b11', 19)
+
+# Display the final structure
+for row in structure:
+    print(''.join(row))
+```
+
+The resulting structure would be stable and resemble the uppercase character "G" when displayed. Adjust the slot positions and order of block drops as needed to meet the constraints and create a stable structure that resembles the desired character.

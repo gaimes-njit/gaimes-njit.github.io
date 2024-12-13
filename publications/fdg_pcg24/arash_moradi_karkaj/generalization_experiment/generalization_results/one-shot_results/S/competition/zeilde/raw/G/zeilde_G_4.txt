@@ -1,0 +1,94 @@
+1. Drawing the letter "G" with asterisks:
+```
+*****
+*     
+*     
+*  ***
+*   * 
+*   * 
+***** 
+```
+2. Asterisks and spaces in each row of the drawing:
+- 1st row: 5 asterisks
+- 2nd row: 1 asterisk, 4 spaces
+- 3rd row: 1 asterisk, 4 spaces
+- 4th row: 1 asterisk, 2 spaces, 3 asterisks
+- 5th row: 1 asterisk, 3 spaces, 1 asterisk
+- 6th row: 1 asterisk, 3 spaces, 1 asterisk
+- 7th row: 5 asterisks
+
+3. Asterisks are now represented as "x" and spaces as "y":
+- 1st row: xxxxx
+- 2nd row: xyxxx
+- 3rd row: xyxxx
+- 4th row: xyxx
+- 5th row: xyx
+- 6th row: xyx
+- 7th row: xxxxx
+
+4. Listing each x and y for each row:
+- 1st row: 5x
+- 2nd row: 1x, 4y
+- 3rd row: 1x, 4y
+- 4th row: 1x, 2y, 3x
+- 5th row: 1x, 3y, 1x
+- 6th row: 1x, 3y, 1x
+- 7th row: 5x
+
+5. Position of each variable for each row:
+- 1st row: x-1; x-2; x-3; x-4; x-5
+- 2nd row: x-1; y-2; y-3; y-4; y-5
+- 3rd row: x-1; y-2; y-3; y-4; y-5
+- 4th row: x-1; y-2; y-3; x-4; x-5
+- 5th row: x-1; y-2; y-3; x-4; y-5
+- 6th row: x-1; y-2; y-3; x-4; y-5
+- 7th row: x-1; x-2; x-3; x-4; x-5
+
+6. `ab_drop` function calls for each row:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

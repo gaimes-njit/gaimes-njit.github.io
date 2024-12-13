@@ -1,0 +1,25 @@
+The first step is to create the base of the "D" shape. We will use a row block (b31) to create the bottom part of the letter.
+
+```
+ab_drop("b31", 2)
+```
+
+Next, we will create the curved part of the "D" shape using a column block (b13). We will place it at the rightmost column of the base.
+
+```
+ab_drop("b13", 19)
+```
+
+Finally, we will create the top part of the "D" shape using a row block (b31). We will place it one row above the curved part.
+
+```
+ab_drop("b31", 2)
+```
+
+The complete implementation is as follows:
+
+```
+ab_drop("b31", 2)
+ab_drop("b13", 19)
+ab_drop("b31", 2)
+```

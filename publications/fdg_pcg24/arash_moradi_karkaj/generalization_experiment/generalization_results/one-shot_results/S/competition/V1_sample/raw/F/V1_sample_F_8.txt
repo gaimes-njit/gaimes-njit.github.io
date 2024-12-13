@@ -1,0 +1,11 @@
+4. Implementation
+
+To create the "F" structure using the ‘ab drop()’ function, follow these steps:
+
+- Start by dropping a b11 block at layer 15 and slot 2 (representing the top horizontal part of the "F").
+- Next, drop a b13 block at layer 14 and slot 2 (representing the vertical part of the "F").
+- Drop another b11 block at layer 13 and slot 2.
+- Drop a b31 block at layer 12 and slot 1 (representing the bottom horizontal part of the "F").
+- Finally, drop a b11 block at layer 11 and slot 2 to complete the "F" structure.
+
+By following these steps and carefully choosing the slots and layers for each block, you can create a stable structure that looks like the letter "F" using the ‘ab drop()’ function.

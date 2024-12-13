@@ -1,0 +1,17 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Construct the base of the "P"
+ab_drop('b31', 9)
+
+# Construct the vertical part of the "P"
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+
+# Construct the horizontal part of the "P"
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Final "P" structure
+```

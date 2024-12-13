@@ -1,0 +1,8 @@
+ab_drop('b31', 0)  # Place a 'b31' block at slot 0 (leftmost column)
+ab_drop('b31', 18)  # Place a 'b31' block at slot 18 (rightmost column)
+ab_drop('b13', 9)  # Place a 'b13' block at slot 9 (center column)
+ab_drop('b31', 0)  # Place a 'b31' block at slot 0 (leftmost column)
+ab_drop('b13', 8)  # Place a 'b13' block at slot 8 (left column of the center)
+ab_drop('b13', 10)  # Place a 'b13' block at slot 10 (right column of the center)
+ab_drop('b31', 9)  # Place a 'b31' block at slot 9 (center column)
+ab_drop('b11', 7)  # Place a 'b11' block at slot 7 (left column of the center)

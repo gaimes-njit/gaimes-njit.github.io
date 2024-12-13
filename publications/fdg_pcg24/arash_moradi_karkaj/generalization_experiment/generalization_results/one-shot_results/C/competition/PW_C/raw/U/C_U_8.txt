@@ -1,0 +1,19 @@
+To create the uppercase letter "U" using the given block types, the following stream of ab_drop() commands can be used:
+
+```
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 4)
+ab_drop('b13', 5)
+ab_drop('b31', 5)
+```
+
+Explanation:
+1. Start by placing a horizontal straight block ('b31') at position 2. This will serve as the foundation for the letter "U".
+2. Place two vertical straight blocks ('b13') to the left of the foundation. These blocks will form the left side of the letter "U".
+3. Place another horizontal straight block ('b31') on top of the foundation, aligned with the previous one. This will form the top part of the letter "U".
+4. Finally, place two vertical straight blocks ('b13') to the right of the foundation, aligned with the left side blocks. These blocks will form the right side of the letter "U".
+
+By following these commands, the uppercase letter "U" will be accurately represented within the allowed space boundaries, while ensuring structural stability with regard to the gravity rules.

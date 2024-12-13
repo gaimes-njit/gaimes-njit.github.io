@@ -1,0 +1,12 @@
+```python
+ab_drop('b11', 2)
+ab_drop('b11', 4)
+ab_drop('b11', 2)
+ab_drop('b11', 4)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 4)
+ab_drop('b11', 3)
+```
+
+Note: The numbers may vary as it depends on how the function `ab_drop` is implemented.

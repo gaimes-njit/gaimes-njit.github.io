@@ -1,0 +1,39 @@
+To generate a stable structure that looks like the uppercase character "Q" using the `ab_drop()` function and meeting all the hard constraints, follow these steps:
+
+1. Initialize the structure as an empty WxH grid using the provided code:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start building the structure from the bottom layer (layer 0) to the top layer (layer 15).
+
+3. Drop the bottom horizontal block (b31) at the center slot (y=W//2) using `ab_drop('b31', W//2)`.
+
+4. Drop the vertical block (b13) at the center slot of the layer above (y=W//2) using `ab_drop('b13', W//2)`.
+
+5. Repeat step 4 to drop two more vertical blocks, creating a vertical column.
+
+6. Drop the top horizontal block (b31) at the center slot of the layer above (y=W//2) using `ab_drop('b31', W//2)`.
+
+7. Drop the top square block (b11) at the slot to the left of the middle slot (y=W//2-1) using `ab_drop('b11', W//2-1)`.
+
+8. Drop the top square block (b11) at the slot to the right of the middle slot (y=W//2+1) using `ab_drop('b11', W//2+1)`.
+
+9. The structure now resembles the uppercase character "Q" and meets all the hard constraints.
+
+Here's the code to implement the steps described above:
+
+```python
+def build_Q_structure():
+    ab_drop('b31', W//2) # drop bottom horizontal block
+    ab_drop('b13', W//2) # drop first vertical block
+    ab_drop('b13', W//2) # drop second vertical block
+    ab_drop('b13', W//2) # drop third vertical block
+    ab_drop('b31', W//2) # drop top horizontal block
+    ab_drop('b11', W//2-1) # drop top left square block
+    ab_drop('b11', W//2+1) # drop top right square block
+
+build_Q_structure()
+```
+
+Please note that this solution assumes that the `ab_drop()` function has been implemented correctly and the provided environment and constraints are accurate.

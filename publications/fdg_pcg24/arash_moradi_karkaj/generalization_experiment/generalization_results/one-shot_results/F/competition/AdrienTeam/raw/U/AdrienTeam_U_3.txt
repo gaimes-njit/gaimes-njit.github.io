@@ -1,0 +1,26 @@
+```
+# Map initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the base of the "U"
+ab_drop('b31', 9)
+
+# Drop the left column of the "U"
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+
+# Drop the right column of the "U"
+ab_drop('b13', 17)
+ab_drop('b13', 16)
+
+# Drop the horizontal block on top of the left column
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+
+# Drop the horizontal block on top of the right column
+ab_drop('b11', 17)
+ab_drop('b11', 16)
+
+# Drop the top block of the "U"
+ab_drop('b31', 9)
+```

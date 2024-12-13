@@ -1,0 +1,62 @@
+To generate a stable structure that looks like the character "E", we need to use the ab_drop() function to drop blocks in a specific order and position. We will follow the constraints of stability and no boundary intrusion.
+
+Here is the step-by-step process to create the E structure:
+
+1. Define the block types:
+   - b11: A 1x1 square block.
+   - b31: A 3x1 horizontal block.
+   - b13: A 1x3 vertical block.
+
+2. Initialize the structure grid using the provided code:
+   ```python
+   W = 20
+   H = 16
+   structure = [[' '] * W for _ in range(H)]
+   ```
+
+3. Drop the b31 horizontal block at the bottom layer (layer 0) and center it at slot 2:
+   ```python
+   ab_drop('b31', 2)
+   ```
+
+4. Drop the b31 horizontal block at the bottom layer (layer 0) and center it at slot 8:
+   ```python
+   ab_drop('b31', 8)
+   ```
+
+5. Drop the b31 horizontal block at the bottom layer (layer 0) and center it at slot 14:
+   ```python
+   ab_drop('b31', 14)
+   ```
+
+6. Drop the b13 vertical block at layer 1 and center it at slot 2:
+   ```python
+   ab_drop('b13', 2)
+   ```
+
+7. Drop the b13 vertical block at layer 7 and center it at slot 2:
+   ```python
+   ab_drop('b13', 2)
+   ```
+
+8. Drop the b13 vertical block at layer 13 and center it at slot 2:
+   ```python
+   ab_drop('b13', 2)
+   ```
+
+9. Drop the b31 horizontal block at the bottom layer (layer 0) and center it at slot 8:
+   ```python
+   ab_drop('b31', 8)
+   ```
+
+10. Drop the b31 horizontal block at the bottom layer (layer 0) and center it at slot 14:
+   ```python
+   ab_drop('b31', 14)
+   ```
+
+11. Drop the b31 horizontal block at the bottom layer (layer 0) and center it at slot 2:
+   ```python
+   ab_drop('b31', 2)
+   ```
+
+By following this sequence of block drops, we can create a stable structure that looks like the character "E" without boundary intrusion.

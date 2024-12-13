@@ -1,0 +1,10 @@
+To create the capital "O" shape, we can start by dropping two row blocks horizontally, and then drop two column blocks vertically to complete the shape.
+
+```python
+ab_drop("b31", 8)
+ab_drop("b31", 11)
+ab_drop("b13", 7)
+ab_drop("b13", 12)
+```
+
+This will create the desired capital "O" shape in the level.

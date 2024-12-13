@@ -1,0 +1,14 @@
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+```
+
+Explanation:
+1. Place two vertical straight blocks at positions 1 and 3 to form the base of the letter 'I'.
+2. Place a horizontal straight block on top of the two vertical blocks at position 2 to form the middle section of the letter 'I'.
+3. Place two vertical straight blocks at positions 1 and 3 above the middle section to form the top section of the letter 'I'.
+4. Place a horizontal straight block on top of the two vertical blocks at position 2 to complete the letter 'I'.

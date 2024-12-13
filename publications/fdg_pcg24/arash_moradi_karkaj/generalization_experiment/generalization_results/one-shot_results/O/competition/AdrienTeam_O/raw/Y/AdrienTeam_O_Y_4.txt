@@ -1,0 +1,9 @@
+The structure of "Y" can be created using the following `ab_drop()` function calls:
+
+```
+ab_drop('b13', 9)
+ab_drop('b31', 9)
+ab_drop('b13', 7)
+ab_drop('b13', 10)
+ab_drop('b31', 9)
+```

@@ -1,0 +1,31 @@
+```python
+def ab_drop():
+    print("ab_drop")
+
+database = {
+    "K": [
+        [1, 1, 1, 1, 1, 1, 1],
+        [1, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 1],
+        [1, 1, 1, 1, 1, 1, 0],
+        [1, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 1],
+        [1, 1, 1, 1, 1, 1, 1]
+    ]
+}
+
+letter = database["K"]
+
+for row in letter:
+    for value in row:
+        if value == 1:
+            ab_drop()
+        else:
+            print(" ", end="")
+    print()
+```
+
+The above code will create the structure that looks like the letter "K" using the `ab_drop()` function calls.

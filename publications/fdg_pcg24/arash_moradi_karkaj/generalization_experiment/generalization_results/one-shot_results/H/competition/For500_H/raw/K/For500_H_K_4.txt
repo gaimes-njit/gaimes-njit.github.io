@@ -1,0 +1,5 @@
+ab_drop('b13', 7)  # Place the vertical stem of the 'K' at index 7 horizontally
+ab_drop('b11', 5)  # Place the left arm of the 'K' at index 5 horizontally
+ab_drop('b11', 9)  # Place the right arm of the 'K' at index 9 horizontally
+ab_drop('b11', 7)  # Place the middle part of the 'K' at index 7 horizontally
+ab_drop('b11', 9)  # Place the top part of the 'K' at index 9 horizontally

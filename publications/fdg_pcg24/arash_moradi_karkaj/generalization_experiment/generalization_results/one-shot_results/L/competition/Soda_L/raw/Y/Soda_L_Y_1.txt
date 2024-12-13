@@ -1,0 +1,24 @@
+To generate a structure that looks like the capital letter "Y" in the Tetris game, we can start by creating the base of the letter and then adding the two arms.
+
+1. Building the base of the "Y":
+   - Drop a column block ("b13") centered at x_position = 9.
+   - Drop a square block ("b11") centered at x_position = 10.
+   - Drop a column block ("b13") centered at x_position = 11.
+
+2. Adding the left arm of the "Y":
+   - Drop a row block ("b31") centered at x_position = 9.
+
+3. Adding the right arm of the "Y":
+   - Drop a row block ("b31") centered at x_position = 11.
+
+Here is the complete implementation:
+
+```
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+ab_drop("b13", 11)
+ab_drop("b31", 9)
+ab_drop("b31", 11)
+```
+
+This implementation creates a structure that resembles the capital letter "Y" and ensures stability by following the bottom-to-top approach for block stacking.

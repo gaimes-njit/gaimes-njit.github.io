@@ -1,0 +1,35 @@
+To construct the structure resembling the letter "K", we can follow these steps:
+
+1. Initialize the map:
+   ```python
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. Drop the blocks to form the letter "K":
+   ```python
+   ab_drop('b11', 0)     # Drop a vertical block at slot 0 in the bottom layer
+   ab_drop('b11', 1)     # Drop a vertical block at slot 1 in the bottom layer
+   ab_drop('b11', 2)     # Drop a vertical block at slot 2 in the bottom layer
+   ab_drop('b11', 2)     # Drop a vertical block at slot 2 in the next layer
+   ab_drop('b11', 1)     # Drop a vertical block at slot 1 in the next layer
+   ab_drop('b11', 0)     # Drop a vertical block at slot 0 in the next layer
+   ab_drop('b11', 2)     # Drop a vertical block at slot 2 in the next layer
+   ab_drop('b11', 2)     # Drop a vertical block at slot 2 in the next layer
+   ab_drop('b11', 1)     # Drop a vertical block at slot 1 in the next layer
+   ab_drop('b31', 0)     # Drop a horizontal block at slot 0 in the next layer
+   ```
+
+Now, let's combine the `ab_drop()` calls in a code block:
+
+```python
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+ab_drop('b31', 0)
+```

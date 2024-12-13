@@ -1,0 +1,36 @@
+The starting structure of size WxH is given as a 20x16 grid initialized with empty spaces:
+
+```
+structure = [[' ']*20 for _ in range(16)]
+```
+
+To create the structure resembling "S" while adhering to the constraints, the following ab_drop() calls can be utilized:
+
+```
+ab_drop('b31', 2)
+ab_drop('b31', 17)
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+ab_drop('b11', 11)
+ab_drop('b31', 12)
+```
+
+Explanation:
+
+- The first `ab_drop('b31', 2)` call drops a horizontal block at slot 2 on layer 0. This block acts as the base of the "S" structure.
+- The second `ab_drop('b31', 17)` call drops another horizontal block at slot 17 on layer 0, adjacent to the first base block.
+- The next three `ab_drop('b11', 9)` calls drop three vertical blocks at slot 9 on layers 0, 2, and 3 respectively. These vertical blocks form the right side of the "S" structure.
+- The `ab_drop('b31', 12)` call drops a horizontal block at slot 12 on layer 3, connecting the two vertical blocks and completing the right side of the "S" structure.
+
+And that's it! The structure resembling the "S" shape has been formed by following the given constraints.
+
+The code block with the ab_drop() calls for the "S" structure is as follows:
+
+```
+ab_drop('b31', 2)
+ab_drop('b31', 17)
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+ab_drop('b11', 11)
+ab_drop('b31', 12)
+```

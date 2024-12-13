@@ -1,0 +1,13 @@
+To create the letter "J" in the level, we need to drop three blocks in a specific order. 
+
+The first block is a vertical column block "b13". We will drop this block in the center of the grid.
+
+The second block is a horizontal row block "b31". We will drop this block so that it is positioned just above the top of the vertical column block.
+
+The third block is another vertical column block "b13" that is rotated 180 degrees. We will drop this block so that it is positioned just above the horizontal row block.
+
+Here is the complete implementation:
+
+ab_drop("b13", 9)  
+ab_drop("b31", 9)  
+ab_drop("b13", 9)

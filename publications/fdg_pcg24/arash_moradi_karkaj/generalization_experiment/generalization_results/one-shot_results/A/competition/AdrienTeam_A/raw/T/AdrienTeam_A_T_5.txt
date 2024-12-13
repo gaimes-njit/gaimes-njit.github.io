@@ -1,0 +1,16 @@
+To build a structure resembling "T" and satisfy the constraints, we can use the `ab_drop()` function with the following inputs:
+
+```
+ab_drop('b11', 9)
+ab_drop('b31', 9)
+ab_drop('b11', 9)
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+```
+
+Explanation:
+1. Drop a single block ('b11') at slot 9, creating the vertical stem of the "T".
+2. Drop a horizontal block ('b31') at slot 9 to form the horizontal bar of the "T".
+3. Place two additional blocks ('b11') at slots 8 and 10 to complete the horizontal bar of the "T".
+
+This sequence of `ab_drop()` calls will create a stable structure resembling the letter "T" with the blocks aligned correctly and without violating any of the given constraints.

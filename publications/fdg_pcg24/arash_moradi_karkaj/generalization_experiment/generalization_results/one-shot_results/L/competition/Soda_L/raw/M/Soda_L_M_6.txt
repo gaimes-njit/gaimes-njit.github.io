@@ -1,0 +1,14 @@
+Here's the code to generate a structure that looks like the letter 'M' in the level:
+
+```
+# Place the left vertical line of the 'M'
+ab_drop("b31", 7)
+# Place the top bar of the 'M'
+ab_drop("b13", 6)
+# Place the inverted 'V' of the 'M'
+ab_drop("b13", 8)
+# Place the bottom bar of the 'M'
+ab_drop("b13", 7)
+```
+
+This code will create a stable structure that resembles the letter 'M'.

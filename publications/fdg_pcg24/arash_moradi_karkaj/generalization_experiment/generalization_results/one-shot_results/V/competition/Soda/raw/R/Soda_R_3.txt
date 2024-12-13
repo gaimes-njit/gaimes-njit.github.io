@@ -1,0 +1,29 @@
+To build the capital letter "R" using the block-stacking technique, we can break it down into several blocks: a row block (b31) for the base, a column block (b13) for the vertical stroke, and another column block (b13) for the diagonal stroke.
+
+Here is the step-by-step implementation:
+
+Step 1:
+Place the row block (b31) at the bottom of the grid, centered at position 10.
+```
+ab_drop("b31", 10)
+```
+
+Step 2:
+Place the first column block (b13) for the vertical stroke, centered at position 7.
+```
+ab_drop("b13", 7)
+```
+
+Step 3:
+Place the second column block (b13) for the diagonal stroke, centered at position 12.
+```
+ab_drop("b13", 12)
+```
+
+The complete implementation is as follows:
+
+```
+ab_drop("b31", 10)
+ab_drop("b13", 7)
+ab_drop("b13", 12)
+```

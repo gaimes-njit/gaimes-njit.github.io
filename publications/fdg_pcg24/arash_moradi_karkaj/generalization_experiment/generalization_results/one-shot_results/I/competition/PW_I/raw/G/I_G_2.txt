@@ -1,0 +1,26 @@
+To generate the uppercase English letter "G", we can use the following stream of commands:
+
+```
+ab_drop('b31', 1)    # Place the horizontal straight block at position 1
+ab_drop('b11', 1)    # Place the square block at position 1
+ab_drop('b31', 2)    # Place the horizontal straight block at position 2
+ab_drop('b11', 2)    # Place the square block at position 2
+ab_drop('b13', 2)    # Place the vertical straight block at position 2
+ab_drop('b11', 3)    # Place the square block at position 3
+ab_drop('b13', 3)    # Place the vertical straight block at position 3
+ab_drop('b11', 4)    # Place the square block at position 4
+ab_drop('b31', 4)    # Place the horizontal straight block at position 4
+ab_drop('b11', 5)    # Place the square block at position 5
+ab_drop('b31', 5)    # Place the horizontal straight block at position 5
+ab_drop('b11', 6)    # Place the square block at position 6
+ab_drop('b31', 6)    # Place the horizontal straight block at position 6
+ab_drop('b11', 7)    # Place the square block at position 7
+ab_drop('b31', 7)    # Place the horizontal straight block at position 7
+ab_drop('b31', 8)    # Place the horizontal straight block at position 8
+ab_drop('b13', 8)    # Place the vertical straight block at position 8
+ab_drop('b11', 8)    # Place the square block at position 8
+ab_drop('b31', 9)    # Place the horizontal straight block at position 9
+ab_drop('b31', 10)   # Place the horizontal straight block at position 10
+```
+
+This stream of commands will generate the uppercase English letter "G" in the defined environment with stacking and stability.

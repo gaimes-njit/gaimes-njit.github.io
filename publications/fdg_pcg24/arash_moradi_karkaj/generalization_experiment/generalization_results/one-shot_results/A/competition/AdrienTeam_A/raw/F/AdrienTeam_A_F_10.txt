@@ -1,0 +1,34 @@
+To build the "F" structure, we can follow these steps:
+
+1. Initialize the structure:
+   ```
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. Drop the first block to create the vertical line of "F":
+   ```
+   ab_drop('b13', 2)
+   ab_drop('b11', 2)
+   ab_drop('b11', 2)
+   ```
+
+3. Drop the second block to create the horizontal line of "F":
+   ```
+   ab_drop('b31', 1)
+   ab_drop('b11', 1)
+   ```
+
+Putting it all together, the code for generating the "F" structure would look like this:
+
+```python
+structure = [[' ']*W for _ in range(H)]
+
+ab_drop('b13', 2)
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+
+ab_drop('b31', 1)
+ab_drop('b11', 1)
+```
+
+This will create a stable structure resembling the letter "F" with the given constraints.

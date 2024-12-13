@@ -1,0 +1,29 @@
+The first step is to create the vertical pipes for the legs of the "V" shape. We can achieve this by dropping two "b31" blocks at the same x_position, with a vertical distance of 5 between them. This will create two vertical pipes that look like the legs of the "V" shape.
+
+```
+ab_drop("b31", 7)
+ab_drop("b31", 7)
+```
+
+Next, we need to create the bottom bar of the "V" shape. This can be done by dropping a "b13" block at the center of the bottom row.
+
+```
+ab_drop("b13", 9)
+```
+
+Finally, we need to create the top part of the "V" shape. This can be achieved by dropping two "b11" blocks at the same x_position, with a vertical distance of 4 between them. This will create the top part of the "V" shape.
+
+```
+ab_drop("b11", 7)
+ab_drop("b11", 7)
+```
+
+The complete implementation is as follows:
+
+```
+ab_drop("b31", 7)
+ab_drop("b31", 7)
+ab_drop("b13", 9)
+ab_drop("b11", 7)
+ab_drop("b11", 7)
+```

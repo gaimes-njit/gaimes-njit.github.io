@@ -1,0 +1,30 @@
+To generate a stable structure that looks like the uppercase character "P", we can follow the steps below:
+
+1. Initialize the structure as an empty grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Begin by dropping a b31 block in the middle of the bottom layer to form the vertical line of the "P":
+```
+ab_drop('b31', 9)
+```
+This will place a b31 block at coordinate (15, 9).
+
+3. Next, drop a b13 block on top of the vertical line to form the top part of the "P":
+```
+ab_drop('b13', 9)
+```
+This will place a b13 block at coordinate (12, 9).
+
+4. To complete the horizontal line of the "P", drop another b31 block on top of the vertical line, offset to the right:
+```
+ab_drop('b31', 11)
+```
+This will place a b31 block at coordinate (14, 11).
+
+5. Check the stability of the structure after each drop to ensure it remains stable.
+
+6. Finally, verify that the generated structure resembles the uppercase letter "P" and is diverse in its arrangement.
+
+Please note that the specific coordinates mentioned above may vary depending on the stability of the structure during each drop. It is essential to perform stability checks before each block drop to maintain the stability of the entire structure.

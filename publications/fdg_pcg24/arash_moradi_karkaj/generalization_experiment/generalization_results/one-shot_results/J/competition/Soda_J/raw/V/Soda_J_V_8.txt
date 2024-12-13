@@ -1,0 +1,28 @@
+To create a structure in the shape of the letter "V", we can break it down into three parts: the top part, the middle part, and the bottom part. Each part will consist of different block types and will be dropped at different positions.
+
+Here's the step-by-step implementation for creating the letter "V":
+
+1. Drop the bottom bar of the letter "V":
+```
+ab_drop("b31", 8)
+```
+
+2. Drop the left part of the letter "V":
+```
+ab_drop("b13", 7)
+```
+
+3. Drop the right part of the letter "V":
+```
+ab_drop("b13", 9)
+```
+
+Now, combining these steps, here's the complete implementation for creating the letter "V":
+
+```
+ab_drop("b31", 8)
+ab_drop("b13", 7)
+ab_drop("b13", 9)
+```
+
+This implementation ensures the best stability and similarity to the letter "V".

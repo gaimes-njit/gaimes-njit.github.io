@@ -1,0 +1,25 @@
+To form the shape resembling the letter "P" using the given props and functions, we need to carefully place the bricks on the field while ensuring stability and avoiding boundary collisions. Based on the provided definitions, we can devise a strategy to generate the required structure.
+
+Let's break down the steps:
+
+1. Initialize the field as an empty map of cells with a width of 20 and a height of 16.
+2. Use the ab_drop() function to place the bricks and form the "P" shape:
+   2.1. Place a b13 brick at position (8, 0).
+   2.2. Place a b31 brick at position (9, 3).
+
+Note: The numbering of positions above represents the x-axis positions of the middle cells of the bricks.
+
+Here's the code to generate the required structure:
+
+```python
+# Step 1: Initialize the field as an empty map
+field = [[0] * 20 for _ in range(16)]
+
+# Step 2.1: Place a b13 brick at position (8, 0)
+ab_drop('b13', 8)
+
+# Step 2.2: Place a b31 brick at position (9, 3)
+ab_drop('b31', 9)
+```
+
+By executing the above code, the cells occupied by the bricks will correspond to the shape resembling the letter "P" on the field.

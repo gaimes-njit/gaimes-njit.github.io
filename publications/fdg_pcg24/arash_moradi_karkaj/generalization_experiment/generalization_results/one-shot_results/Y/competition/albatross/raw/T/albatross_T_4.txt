@@ -1,0 +1,12 @@
+To construct a level for Science Birds that resembles the letter "T" while satisfying all the constraints, the following code sequence using the `ab_drop()` function can be used:
+
+ab_drop('b31', 9)
+ab_drop('b13', 9)
+ab_drop('b11', 9)
+
+Explanation:
+- The first `ab_drop('b31', 9)` drops a horizontal block ('b31') centered at slot 9 to form the crossbar of the "T".
+- The second `ab_drop('b13', 9)` drops a vertical block ('b13') centered at slot 9 to form the stem of the "T".
+- The third `ab_drop('b11', 9)` drops a square block ('b11') centered at slot 9 to complete the top of the "T".
+
+This code sequence ensures that the structure represents the letter "T" while maintaining stability under gravity and satisfying all the constraints of the Science Birds game.

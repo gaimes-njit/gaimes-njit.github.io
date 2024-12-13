@@ -1,0 +1,6 @@
+ab_drop('b13', 7) # Drop a vertical block at column 7
+ab_drop('b31', 9) # Drop a horizontal block at column 9
+ab_drop('b31', 10) # Drop a horizontal block at column 10
+ab_drop('b31', 11) # Drop a horizontal block at column 11
+ab_drop('b13', 7) # Drop a vertical block at column 7
+ab_drop('b13', 7) # Drop a vertical block at column 7

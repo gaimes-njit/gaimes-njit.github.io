@@ -1,0 +1,14 @@
+Here is a sequence of `ab_drop` function calls to generate a structure that looks like the letter "S" using the given database:
+
+```
+ab_drop('a')
+ab_drop('a')
+ab_drop('a')
+ab_drop('a')
+ab_drop('a')
+ab_drop('a')
+ab_drop('a')
+ab_drop('b')
+ab_drop('b')
+ab_drop('b')
+```

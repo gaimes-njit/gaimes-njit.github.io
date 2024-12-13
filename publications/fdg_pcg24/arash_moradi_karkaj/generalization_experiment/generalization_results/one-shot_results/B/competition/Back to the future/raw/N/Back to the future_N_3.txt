@@ -1,0 +1,30 @@
+To generate a stable structure that looks like the uppercase character "N" using the `ab_drop()` function, we can follow the steps below:
+
+1. Initialize the structure as an empty grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Determine the position and order of block drops using the block-stacking problem techniques. Place the blocks in a way that ensures stability and meets the constraints.
+
+3. Call the `ab_drop()` function to drop each block onto the structure. Make sure to check stability before each drop to ensure the entire structure remains stable.
+
+4. Repeat steps 2 and 3 until the entire structure is built.
+
+Here is a step-by-step guide to help you visualize the process:
+
+Step 1: Drop the b31 block at the bottom-right corner of the structure.
+```
+ab_drop('b31', W-1)
+```
+
+The structure will look like this:
+```
+[[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'b31', 'b31', 'b31', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'b31', 'b31', 'b31', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'b31', 'b31', 'b31', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ ...
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',

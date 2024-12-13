@@ -1,0 +1,5 @@
+ab_drop('b31', 0) # Create the left side of the letter "B"
+ab_drop('b11', 1) # Fill the empty space next to the left side of the letter "B"
+ab_drop('b31', 2) # Create the middle part of the letter "B"
+ab_drop('b11', 5) # Fill the empty space next to the middle part of the letter "B"
+ab_drop('b31', 6) # Create the right side of the letter "B"

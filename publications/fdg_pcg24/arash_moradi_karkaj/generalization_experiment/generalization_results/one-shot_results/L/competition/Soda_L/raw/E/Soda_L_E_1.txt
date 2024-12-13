@@ -1,0 +1,25 @@
+The first step is to create the vertical bar of the letter "E". This can be done by placing a column block "b13" at the desired x-position.
+
+```
+ab_drop("b13", 4)
+```
+
+Next, we need to create the horizontal bar of the letter "E". This can be done by placing a row block "b31" on top of the vertical bar. The horizontal bar needs to be centered, so we can use the same x-position as before and decrease the y-position by 1 to align it properly.
+
+```
+ab_drop("b31", 4)
+```
+
+Finally, we need to create the bottom bar of the letter "E". This can be done by placing a row block "b31" below the vertical bar. Again, we can use the same x-position as before and decrease the y-position by 2 to align it properly.
+
+```
+ab_drop("b31", 4)
+```
+
+Putting it all together, the complete implementation to create the letter "E" would be:
+
+```
+ab_drop("b13", 4)
+ab_drop("b31", 4)
+ab_drop("b31", 4)
+```

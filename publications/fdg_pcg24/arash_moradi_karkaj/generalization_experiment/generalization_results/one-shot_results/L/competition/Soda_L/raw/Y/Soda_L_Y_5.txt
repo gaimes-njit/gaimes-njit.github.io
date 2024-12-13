@@ -1,0 +1,18 @@
+To create the letter Y with stable blocks, we can break it down into three blocks: two diagonal bars and a horizontal bar connecting them. We can drop each block in a specific order to ensure stability.
+
+Here is the implementation to create the letter Y:
+
+```python
+# Drop the blocks to create the diagonal bar on the left
+ab_drop("b13", 8)
+ab_drop("b13", 10)
+
+# Drop the block to create the horizontal bar connecting the diagonal bars
+ab_drop("b31", 9)
+
+# Drop the blocks to create the diagonal bar on the right
+ab_drop("b13", 14)
+ab_drop("b13", 16)
+```
+
+This implementation creates a stable structure that resembles the letter Y.

@@ -1,0 +1,37 @@
+To create a stable structure resembling "P" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the structure grid:
+
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the first block horizontally to create the top part of the "P" shape:
+
+```python
+ab_drop('b11', W//2)
+```
+
+3. Drop the second block vertically to create the stem of the "P" shape:
+
+```python
+ab_drop('b13', W//2)
+```
+
+4. Drop the third block horizontally to complete the bottom part of the "P" shape:
+
+```python
+ab_drop('b11', W//2 + 1)
+```
+
+Combining these steps, the code block for generating the structure resembling "P" is:
+
+```python
+structure = [[' ']*W for _ in range(H)]
+
+ab_drop('b11', W//2)
+ab_drop('b13', W//2)
+ab_drop('b11', W//2 + 1)
+```
+
+Note: Ensure that the `W` and `H` values are correctly set to 20 and 16, respectively, to match the given constraints.

@@ -1,0 +1,51 @@
+To form a shape resembling the letter "Y", we can start by placing the vertical rectangular brick (b13) first at an appropriate x_position. Let's use x_position = 5 for this example. We will also need to specify the type of brick as 'b13' and give it as input to the function ab_drop(). This will place the b13 brick on the field.
+
+Next, we can place the horizontal rectangular brick (b31) starting from an x_position that aligns with the middle cell of the b13 brick. In this case, let's use x_position = 6. Again, we need to give the type of brick as 'b31' and input it into the ab_drop() function. This will place the b31 brick on the field.
+
+Here is the code:
+
+```
+# Initialize the field
+field = [[0] * 20 for _ in range(16)]
+
+# Function to check stability of bricks
+def check_stability():
+    for y in range(15, 0, -1):
+        for x in range(19):
+            if field[y][x] == 1:
+                if (x > 0 and field[y][x-1] != 1) or (x < 19 and field[y][x+1] != 1):
+                    return False
+    return True
+
+# Function to place bricks on the field
+def ab_drop(x, y):
+    if x == 'b13':
+        # Check if the b13 brick can be placed at the specified x_position
+        if y < 0 or y+2 > 19 or field[0][y] == 1 or field[0][y+1] == 1 or field[0][y+2] == 1:
+            return False
+        # Place the b13 brick on the field
+        field[0][y] = 1
+        field[1][y] = 1
+        field[2][y] = 1
+    elif x == 'b31':
+        # Check if the b31 brick can be placed at the specified x_position
+        if y-1 < 0 or y+1 > 19 or field[3][y-1] == 1 or field[3][y] == 1 or field[3][y+1] == 1:
+            return False
+        # Place the b31 brick on the field
+        field[3][y-1] = 1
+        field[3][y] = 1
+        field[3][y+1] = 1
+    else:
+        return False
+    return True
+
+# Drop the b13 brick at x_position = 5
+ab_drop('b13', 5)
+
+# Drop the b31 brick at x_position = 6
+ab_drop('b31', 6)
+```
+
+This code will generate a shape resembling the letter "Y" with the b13 brick forming the stem and the b31 brick forming the branches. The stability of the structure is also ensured by checking the number of occupied cells on each side of the pivot.
+
+Please note that this is just an example code and the input values and coordinates might need adjustment based on the specific requirements or constraints of your game.

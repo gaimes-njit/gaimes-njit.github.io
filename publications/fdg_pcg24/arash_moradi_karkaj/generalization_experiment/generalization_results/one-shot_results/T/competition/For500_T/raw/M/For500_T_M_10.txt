@@ -1,0 +1,27 @@
+ab_drop('b11', 9)  # Place the first block at the center
+ab_drop('b11', 8)  # Place the second block next to the first one
+ab_drop('b11', 10)  # Place the third block next to the first one
+
+ab_drop('b31', 7)  # Place the fourth block one unit to the left of the center
+ab_drop('b31', 11)  # Place the fifth block one unit to the right of the center
+
+ab_drop('b11', 7)  # Place the sixth block one unit to the left of the fourth block
+ab_drop('b11', 12)  # Place the seventh block one unit to the right of the fifth block
+
+ab_drop('b11', 6)  # Place the eighth block one unit to the left of the sixth block
+ab_drop('b11', 13)  # Place the ninth block one unit to the right of the seventh block
+
+ab_drop('b11', 5)  # Place the tenth block one unit to the left of the eighth block
+ab_drop('b11', 14)  # Place the eleventh block one unit to the right of the ninth block
+
+ab_drop('b13', 6)  # Place the twelfth block below the eighth block
+ab_drop('b13', 13)  # Place the thirteenth block below the ninth block
+
+ab_drop('b13', 5)  # Place the fourteenth block below the tenth block
+ab_drop('b13', 14)  # Place the fifteenth block below the eleventh block
+
+ab_drop('b13', 7)  # Place the sixteenth block below the sixth block
+ab_drop('b13', 12)  # Place the seventeenth block below the seventh block
+
+ab_drop('b13', 9)  # Place the eighteenth block below the first block
+ab_drop('b31', 9)  # Place the nineteenth block below the second and third blocks

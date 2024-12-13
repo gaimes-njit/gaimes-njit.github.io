@@ -1,0 +1,8 @@
+Here is a sequence of `ab_drop` function calls that will generate a structure resembling the letter "W" from the given database:
+
+```
+ab_drop("top_left")
+ab_drop("top_middle")
+ab_drop("bottom_middle")
+ab_drop("bottom_right")
+```

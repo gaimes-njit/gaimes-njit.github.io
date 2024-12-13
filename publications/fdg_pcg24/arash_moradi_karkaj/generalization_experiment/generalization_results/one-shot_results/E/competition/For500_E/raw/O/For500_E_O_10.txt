@@ -1,0 +1,10 @@
+ab_drop('b13', 9)  # Create vertical line of 'O'
+ab_drop('b13', 8)
+ab_drop('b13', 9)
+ab_drop('b13', 8)
+ab_drop('b13', 9)
+ab_drop('b13', 8)
+ab_drop('b13', 9)
+ab_drop('b31', 9)  # Connect the vertical line to form 'O' shape
+ab_drop('b31', 10)
+ab_drop('b31', 9)

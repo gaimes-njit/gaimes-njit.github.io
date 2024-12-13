@@ -1,0 +1,67 @@
+To generate a stable structure that looks like the uppercase character "Y" using the `ab_drop()` function, we can follow these steps:
+
+1. Start by initializing the structure as an empty grid:
+
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Begin by dropping the b31 block in the middle of the structure at the bottom layer:
+
+```
+ab_drop('b31', 9)
+```
+
+Coordinate: (15, 9)
+
+3. Drop the supporting b11 blocks on top of the b31 block, one on each side:
+
+```
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+```
+
+Coordinates: (14, 8) and (14, 10)
+
+4. Drop the b13 block above the b31 block and aligned with its center:
+
+```
+ab_drop('b13', 9)
+```
+
+Coordinate: (13, 9)
+
+5. To create the upper part of the "Y", drop the b31 block above the b13 block and aligned with its center:
+
+```
+ab_drop('b31', 9)
+```
+
+Coordinate: (12, 9)
+
+6. Drop the supporting b11 blocks on top of the b31 block, one on each side:
+
+```
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+```
+
+Coordinates: (11, 8) and (11, 10)
+
+7. Now, we need to create the base of the "Y". Drop a b11 block on the bottom layer, aligned with the center of the existing structure:
+
+```
+ab_drop('b11', 9)
+```
+
+Coordinate: (15, 9)
+
+8. Finally, drop the supporting b11 block on top of the existing block to stabilize the base:
+
+```
+ab_drop('b11', 9)
+```
+
+Coordinate: (14, 9)
+
+After following these steps, the structure should resemble the uppercase character "Y" and meet all the hard constraints.

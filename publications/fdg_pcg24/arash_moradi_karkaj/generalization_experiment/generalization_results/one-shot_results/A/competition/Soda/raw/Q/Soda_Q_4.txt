@@ -1,0 +1,37 @@
+To generate a structure in the level that looks like a capital character "Q" (TARGET), we can break it down into smaller blocks and stack them in a bottom-to-top fashion. Here is the step-by-step implementation:
+
+Step 1: Build the base of the "Q" shape using a row block (b31).
+```
+ab_drop("b31", 8)
+```
+
+Step 2: Add the vertical bar of the "Q" shape using a column block (b13).
+```
+ab_drop("b13", 8)
+```
+
+Step 3: Add the curved part of the "Q" shape using two row blocks (b31).
+```
+ab_drop("b31", 7)
+ab_drop("b31", 9)
+```
+
+Step 4: Add the middle bar of the "Q" shape using a column block (b13).
+```
+ab_drop("b13", 9)
+```
+
+Step 5: Add the top bar of the "Q" shape using a row block (b31).
+```
+ab_drop("b31", 8)
+```
+
+Complete Implementation:
+```
+ab_drop("b31", 8)
+ab_drop("b13", 8)
+ab_drop("b31", 7)
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+ab_drop("b31", 8)
+```

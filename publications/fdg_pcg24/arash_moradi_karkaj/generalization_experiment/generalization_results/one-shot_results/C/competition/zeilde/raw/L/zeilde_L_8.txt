@@ -1,0 +1,53 @@
+Here are the steps for drawing the letter "L" with asterisks and generating the corresponding `ab_drop` function calls:
+
+1. Drawing the letter "L" with asterisks:
+
+```
+*****
+    *
+    *
+    *
+    *
+```
+
+2. Listing the asterisks and spaces in each row:
+
+- Row 1: 5 asterisks
+- Row 2: 4 spaces, 1 asterisk
+- Row 3: 4 spaces, 1 asterisk
+- Row 4: 4 spaces, 1 asterisk
+- Row 5: 4 spaces, 1 asterisk
+
+3. Using "x" for asterisks and "y" for spaces:
+
+- Row 1: xxxxx
+- Row 2: yyyyx
+- Row 3: yyyyx
+- Row 4: yyyyx
+- Row 5: yyyyx
+
+4. Writing out each "x" and "y" side-by-side for each row:
+
+- Row 1: x x x x x
+- Row 2: y y y y x
+- Row 3: y y y y x
+- Row 4: y y y y x
+- Row 5: y y y y x
+
+5. Indicating the position of each variable for each row:
+
+- Row 1: x-1 x-2 x-3 x-4 x-5
+- Row 2: y-1 y-2 y-3 y-4 x-5
+- Row 3: y-1 y-2 y-3 y-4 x-5
+- Row 4: y-1 y-2 y-3 y-4 x-5
+- Row 5: y-1 y-2 y-3 y-4 x-5
+
+6. Returning the sequence of `ab_drop` function calls:
+
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

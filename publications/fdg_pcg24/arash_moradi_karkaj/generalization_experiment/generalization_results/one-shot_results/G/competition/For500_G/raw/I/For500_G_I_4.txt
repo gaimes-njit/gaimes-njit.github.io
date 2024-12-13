@@ -1,0 +1,8 @@
+ab_drop('b31', 10) # Drop horizontal block at center to create the top crossbar of the "I"
+ab_drop('b11', 10) # Drop square block on top of the horizontal block to complete the top crossbar of the "I"
+ab_drop('b31', 9) # Drop horizontal block to the left of the top crossbar to create the vertical line of the "I"
+ab_drop('b31', 11) # Drop horizontal block to the right of the top crossbar to create the vertical line of the "I"
+ab_drop('b13', 9) # Drop vertical block on top of the left vertical line to stabilize the structure
+ab_drop('b13', 11) # Drop vertical block on top of the right vertical line to stabilize the structure
+ab_drop('b13', 9) # Drop vertical block on top of the previous vertical block to stabilize the structure
+ab_drop('b13', 11) # Drop vertical block on top of the previous vertical block to stabilize the structure

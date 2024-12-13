@@ -1,0 +1,22 @@
+To build the letter M using the bottom-to-top approach, we can break it down into three parts: the left slant, the middle vertical bar, and the right slant. 
+
+Here is the complete implementation:
+
+```
+# Step 1: Place the left slant of the M
+ab_drop("b31", 5)  # Place the bottom block of the left slant
+ab_drop("b31", 6)  # Place the middle block of the left slant
+ab_drop("b31", 7)  # Place the top block of the left slant
+
+# Step 2: Place the middle vertical bar of the M
+ab_drop("b13", 8)  # Place the bottom block of the vertical bar
+ab_drop("b13", 9)  # Place the middle block of the vertical bar
+ab_drop("b13", 10)  # Place the top block of the vertical bar
+
+# Step 3: Place the right slant of the M
+ab_drop("b31", 11)  # Place the bottom block of the right slant
+ab_drop("b31", 12)  # Place the middle block of the right slant
+ab_drop("b31", 13)  # Place the top block of the right slant
+```
+
+This implementation uses the `ab_drop()` function to drop the blocks in the specified positions, starting from the bottom and working upwards. Each block is positioned such that it creates the desired shape of the letter M. The final structure should resemble the letter M and be stable, meeting the constraints of the problem.

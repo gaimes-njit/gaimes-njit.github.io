@@ -1,0 +1,6 @@
+ab_drop('b31', 10) # create the top of the Y shape
+ab_drop('b11', 11) # add a block to the center of the top of the Y shape
+ab_drop('b13', 8) # create the left leg of the Y shape
+ab_drop('b11', 11) # add a block to the center of the left leg of the Y shape
+ab_drop('b31', 11) # create the bottom of the Y shape
+ab_drop('b13', 8) # add a block to the center of the bottom of the Y shape

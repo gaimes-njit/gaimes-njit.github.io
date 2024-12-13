@@ -1,0 +1,37 @@
+The first step is to create the base of the "O" shape. We can achieve this by dropping a row block (b31) at the bottom center of the grid. Since the width (W) is 20, the center position will be at x_position 9.
+
+```
+ab_drop("b31", 9)
+```
+
+The next step is to add the left and right sides of the "O" shape. We can achieve this by dropping column blocks (b13) on both sides of the base. 
+
+```
+# Left side
+ab_drop("b13", 7)
+ab_drop("b13", 10)
+
+# Right side
+ab_drop("b13", 12)
+ab_drop("b13", 15)
+```
+
+Finally, we can add the top of the "O" shape by dropping a row block (b31) at the top center of the grid. Since the height (H) is 16, the top center position will be at x_position 9.
+
+```
+ab_drop("b31", 9)
+```
+
+The complete implementation is as follows:
+
+```
+ab_drop("b31", 9)
+
+ab_drop("b13", 7)
+ab_drop("b13", 10)
+
+ab_drop("b13", 12)
+ab_drop("b13", 15)
+
+ab_drop("b31", 9)
+```

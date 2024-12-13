@@ -1,0 +1,19 @@
+To create the letter E, we can use the following ab_drop commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b13', 1)
+```
+
+Explanation:
+- First, we create the top horizontal line of the letter E using the b31 block type at position 1.
+- Then, we create the vertical line of the letter E using two b13 block types at positions 0 and 2.
+- After that, we create the bottom horizontal line of the letter E using the b31 block type at position 1.
+- Lastly, we create the middle horizontal line of the letter E using the b13 block type at position 1.
+
+Note: The commands should be executed consecutively and in the given order to accurately create the letter E.

@@ -1,0 +1,34 @@
+To generate a stable structure that looks like the uppercase character "U" and meets all the hard constraints, you can follow these steps:
+
+1. Initialize the structure as an empty WxH grid using the given code:
+   ```
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. Drop the b31 block at the bottom layer (layer 0) and align its center with slot 9 using the ab_drop() function:
+   ```
+   ab_drop('b31', 9)
+   ```
+   This will ensure stability for the structure.
+
+3. Drop the b13 block just above the b31 block, aligning its center with slot 9:
+   ```
+   ab_drop('b13', 9)
+   ```
+   This will create the vertical part of the "U" shape.
+
+4. Drop the b31 block at the top layer (layer 15), aligning its center with slot 1:
+   ```
+   ab_drop('b31', 1)
+   ```
+   This will create the horizontal part of the "U" shape.
+
+5. Repeat steps 2 and 3, dropping the b13 block just above the b31 block and aligning its center with slot 1.
+
+6. Drop the b31 block at the top layer (layer 15), aligning its center with slot 17.
+
+7. Repeat steps 2 and 3, dropping the b13 block just above the b31 block and aligning its center with slot 17.
+
+8. At this point, the stable structure will resemble the uppercase character "U". You can make the structure more diverse by adding additional blocks in various positions and order, while ensuring stability and similarity to the "U" shape.
+
+Note: The specific positions and order of the blocks may vary depending on how you choose to add additional blocks to meet the constraints and create a stable structure that resembles the "U" shape.

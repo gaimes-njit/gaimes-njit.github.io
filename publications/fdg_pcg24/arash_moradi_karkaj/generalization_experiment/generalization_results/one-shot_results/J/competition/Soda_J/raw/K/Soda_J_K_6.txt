@@ -1,0 +1,28 @@
+To create the shape of the letter "K" in the level, we can break it down into three blocks - a vertical bar, a diagonal bar, and a horizontal bar. 
+
+Here is how we can create the letter "K" using the `ab_drop()` function:
+
+1. Create the vertical bar of the "K":
+```
+ab_drop("b31", 8)
+```
+
+2. Create the diagonal bar of the "K":
+```
+ab_drop("b13", 9)
+```
+
+3. Create the horizontal bar of the "K":
+```
+ab_drop("b31", 9)
+```
+
+By dropping the blocks in this order, we ensure that each block is balanced and well-supported, leading to a stable structure. The resulting structure will resemble the letter "K".
+
+Complete Implementation:
+
+```
+ab_drop("b31", 8)
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+```

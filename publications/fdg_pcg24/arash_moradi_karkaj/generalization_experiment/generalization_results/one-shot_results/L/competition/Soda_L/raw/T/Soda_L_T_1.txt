@@ -1,0 +1,16 @@
+To generate a structure that looks like the capital letter "T," we can start by creating the vertical bar and then adding the horizontal bar on top of it. Here's the code to achieve this:
+
+```
+# Create the vertical bar
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+
+# Create the horizontal bar
+ab_drop("b31", 7)
+ab_drop("b13", 6)
+ab_drop("b13", 8)
+```
+
+This code places the blocks one by one, from the bottom to the top, following the bottom-to-top fashion as required. We first create the vertical bar by using a 3x1 block (`b31`) positioned at (`9,0`) and then place a horizontal bar on top of it by adding three 1x3 blocks (`b13`) at (`6,1`), (`7,1`), and (`8,1`).
+
+The structure formed by this code resembles the letter "T".

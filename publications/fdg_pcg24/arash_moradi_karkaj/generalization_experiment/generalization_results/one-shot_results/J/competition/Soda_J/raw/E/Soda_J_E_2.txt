@@ -1,0 +1,18 @@
+In order to create a stable structure that resembles the capital letter "E", we can break it down into three blocks: two vertical bars and one horizontal bar. Here is the step-by-step implementation:
+
+1. Place the first vertical bar on the left side:
+```
+ab_drop("b13", 2)
+```
+
+2. Place the horizontal bar on top of the vertical bar:
+```
+ab_drop("b31", 2)
+```
+
+3. Place the second vertical bar on the right side:
+```
+ab_drop("b13", 18)
+```
+
+By following these steps, we will have a stable structure in the shape of the letter "E" that resembles the TARGET character.

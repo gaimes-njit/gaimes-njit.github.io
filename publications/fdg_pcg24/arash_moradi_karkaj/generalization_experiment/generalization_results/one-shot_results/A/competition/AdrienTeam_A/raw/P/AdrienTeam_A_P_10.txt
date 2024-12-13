@@ -1,0 +1,9 @@
+Here is the code for generating the structure resembling "P" while adhering to the given constraints:
+
+```
+ab_drop('b13', 10)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+ab_drop('b31', 9)
+```

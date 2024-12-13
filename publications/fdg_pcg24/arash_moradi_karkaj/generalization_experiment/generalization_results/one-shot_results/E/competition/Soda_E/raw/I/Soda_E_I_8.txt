@@ -1,0 +1,19 @@
+First, let's build the base of the letter "I" using two row blocks. The top row block will be placed at x_position=9 and the bottom row block at x_position=10.
+
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+
+Next, we need to build the middle part of the letter "I" using a column block. The column block will be placed at x_position=10.
+
+ab_drop("b13", 10)
+
+Finally, we need to build the top of the letter "I" using a row block. The row block will be placed at x_position=9.
+
+ab_drop("b31", 9)
+
+Here is the complete implementation:
+
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b13", 10)
+ab_drop("b31", 9)

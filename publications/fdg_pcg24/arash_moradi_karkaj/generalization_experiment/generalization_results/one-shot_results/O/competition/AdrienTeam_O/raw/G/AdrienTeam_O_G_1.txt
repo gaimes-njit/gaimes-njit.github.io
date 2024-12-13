@@ -1,0 +1,37 @@
+To create a stable structure resembling the letter "G", we can follow these steps:
+
+1. First, initialize the structure:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the initial block in the first slot of the bottom layer to serve as the base:
+```python
+ab_drop('b31', 0)
+```
+
+3. Drop the second block in the second slot of the bottom layer to connect with the base and form the upper part of the "G":
+```python
+ab_drop('b11', 1)
+```
+
+4. Drop the third block in the second slot of the second layer to form the vertical part of the "G":
+```python
+ab_drop('b13', 1)
+```
+
+5. Drop the final block in the second slot of the third layer to complete the horizontal part of the "G":
+```python
+ab_drop('b31', 1)
+```
+
+Putting it all together, the code block would look like this:
+```python
+structure = [[' ']*W for _ in range(H)]
+ab_drop('b31', 0)
+ab_drop('b11', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+```
+
+This sequence of `ab_drop()` calls will create a stable structure resembling the letter "G" that satisfies all the specified constraints.

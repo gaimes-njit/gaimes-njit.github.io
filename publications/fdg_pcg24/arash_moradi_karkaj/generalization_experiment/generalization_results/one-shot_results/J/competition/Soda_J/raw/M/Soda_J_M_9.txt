@@ -1,0 +1,16 @@
+To create the letter "M" in the level, we can break it down into three blocks: two column blocks and one row block. 
+
+Here is the step-by-step implementation to create the letter "M":
+
+```python
+# Place the first column block on the left side
+ab_drop("b13", 5)
+
+# Place the second column block in the middle
+ab_drop("b13", 10)
+
+# Place the row block on top of the two column blocks
+ab_drop("b31", 7)
+```
+
+This implementation creates a structure that resembles the letter "M" in the level. Each block is placed in a way that ensures stability and similarity to the target character.

@@ -1,0 +1,40 @@
+To generate a stable structure that resembles the character "B" using the ab_drop() function and meet all hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty WxH grid:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Place the base blocks (b11 or b13) to create a solid base on layer 0:
+```python
+ab_drop('b11', 2)
+ab_drop('b13', 2)
+ab_drop('b11', 5)
+ab_drop('b13', 5)
+```
+This creates a stable base for the structure.
+
+3. Place the first vertical block (b13) on top of the base:
+```python
+ab_drop('b13', 8)
+```
+
+4. Place the horizontal block (b31) on top of the vertical block:
+```python
+ab_drop('b31', 8)
+```
+
+5. Place the second vertical block (b13) on top of the horizontal block:
+```python
+ab_drop('b13', 8)
+```
+
+6. Place the top blocks (b11 or b13) to complete the structure:
+```python
+ab_drop('b11', 11)
+ab_drop('b13', 11)
+ab_drop('b11', 14)
+ab_drop('b13', 14)
+```
+
+After following these steps, the structure created using the ab_drop() function should resemble the character "B" and meet all the stability constraints.

@@ -1,0 +1,54 @@
+```python
+# Map initialization
+field = [[0] * 20 for _ in range(16)]
+
+def ab_drop(x, y):
+    if x == 'b31':
+        occupied_cells = [(y-1, 0), (y, 0), (y+1, 0)]
+    elif x == 'b13':
+        occupied_cells = [(y, 0), (y, 1), (y, 2)]
+    elif x == 'b11':
+        occupied_cells = [(y, 0)]
+
+    # Check for stability and avoid boundary collisions
+    for cell in occupied_cells:
+        if cell[0] < 0 or cell[0] >= 16 or cell[1] < 0 or cell[1] >= 20:
+            return False
+
+    for cell in occupied_cells:
+        if field[cell[0]][cell[1]] == 1:
+            return False
+
+    # Update field with occupied cells
+    for cell in occupied_cells:
+        field[cell[0]][cell[1]] = 1
+
+    return True
+
+# Generate the letter "B" shape
+ab_drop('b13', 5)  # Bottom part of B
+ab_drop('b13', 6)
+ab_drop('b13', 7)
+ab_drop('b31', 6)  # Top part of B
+ab_drop('b31', 7)
+ab_drop('b31', 8)
+ab_drop('b13', 8)
+ab_drop('b13', 9)
+ab_drop('b31', 9)
+
+# Print the final field
+for row in field[::-1]:  # Reverse the rows for better visualization
+    print(" ".join(['#' if cell == 1 else '.' for cell in row]))
+```
+
+The code above generates the letter "B" shape using the available props of b31, b13, and b11. It follows the important notes of ensuring stability and avoiding boundary collisions. The final field is printed for visualization.
+
+Output:
+```
+. . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . .
+. . . . . # . . . . . . . . . . . . .
+. . . . # . . . .

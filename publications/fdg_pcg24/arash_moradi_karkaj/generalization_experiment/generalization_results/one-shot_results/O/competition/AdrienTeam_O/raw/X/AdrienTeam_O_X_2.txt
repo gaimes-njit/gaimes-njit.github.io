@@ -1,0 +1,29 @@
+Here is a solution to construct a structure resembling an "X" while satisfying all the given constraints:
+
+```
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop blocks to create the structure
+ab_drop('b11', 9)
+ab_drop('b11', 8)
+ab_drop('b31', 9)
+ab_drop('b11', 7)
+ab_drop('b13', 6)
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b13', 10)
+ab_drop('b11', 8)
+ab_drop('b31', 9)
+ab_drop('b11', 10)
+ab_drop('b11', 8)
+ab_drop('b13', 9)
+ab_drop('b11', 7)
+ab_drop('b11', 6)
+ab_drop('b31', 7)
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+
+```
+
+This solution constructs an "X" shape from bottom to top, starting with the base and gradually building upwards. The order and position of the blocks have been determined to ensure stability and meet the given constraints.

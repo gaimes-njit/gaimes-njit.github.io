@@ -1,0 +1,4 @@
+ab_drop('b31', 10) # create the vertical part of the 'Q'
+ab_drop('b13', 10) # complete the vertical part
+ab_drop('b11', 9) # create the top part of the 'Q'
+ab_drop('b11', 11) # create the bottom part of the 'Q'

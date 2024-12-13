@@ -1,0 +1,14 @@
+To generate a structure that looks like the capital letter "P", we can break it down into two blocks: a vertical pillar and a horizontal bar.
+
+1. Drop the vertical pillar:
+   ab_drop("b13", 6)
+
+2. Drop the horizontal bar:
+   ab_drop("b31", 4)
+
+Here is the complete implementation:
+
+```
+ab_drop("b13", 6)
+ab_drop("b31", 4)
+```

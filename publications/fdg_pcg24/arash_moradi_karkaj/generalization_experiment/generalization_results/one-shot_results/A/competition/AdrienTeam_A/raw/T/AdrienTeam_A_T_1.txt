@@ -1,0 +1,16 @@
+The solution to create a stable structure resembling "T" using the `ab_drop()` function is as follows:
+
+```
+ab_drop('b13', 9)
+ab_drop('b11', 8)
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+ab_drop('b31', 9)
+```
+
+Explanation:
+- The first block dropped is 'b13' (vertical block with a width of 1 unit and a height of 3 units) at slot 9, representing the vertical line of the "T".
+- The next three blocks dropped are 'b11' (square block with a width and height of 1 unit) at slots 8, 9, and 10, representing the horizontal line of the "T".
+- Finally, the last block dropped is 'b31' (horizontal block with a width of 3 units and a height of 1 unit) at slot 9, connecting the vertical and horizontal lines.
+
+The resulting structure will resemble the letter "T" and satisfy all the specified constraints.

@@ -1,0 +1,35 @@
+First, we need to create the top and bottom horizontal bars of the letter "I". 
+
+Since the orientation is top-down, we can use the "b31" block type to represent each horizontal bar.
+
+Here is the code to create the top horizontal bar:
+
+```
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 11)
+ab_drop("b31", 12)
+```
+
+Next, let's create the bottom horizontal bar:
+
+```
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 11)
+ab_drop("b31", 12)
+```
+
+Now, we need to create the vertical bar in between the horizontal bars. We can use the "b13" block type to represent the vertical bar.
+
+```
+ab_drop("b13", 10)
+ab_drop("b13", 10)
+ab_drop("b13", 10)
+```
+
+Finally, let's ENFORCE the stability by adding the gravity constraint. 
+
+```
+# I is already stable and doesn't require additional blocks for stability.
+```

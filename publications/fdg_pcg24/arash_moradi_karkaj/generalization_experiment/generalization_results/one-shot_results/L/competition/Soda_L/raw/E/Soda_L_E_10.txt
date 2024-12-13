@@ -1,0 +1,25 @@
+First, we need to create the vertical left part of the letter E. We can achieve this by dropping a "b31" block at x_position=0. 
+
+```
+ab_drop("b31", 0)
+```
+
+Next, we need to create the horizontal middle part of the letter E. We can achieve this by dropping a "b13" block at x_position=1. 
+
+```
+ab_drop("b13", 1)
+```
+
+Finally, we need to create the vertical right part of the letter E. We can achieve this by dropping another "b31" block at x_position=2. 
+
+```
+ab_drop("b31", 2)
+```
+
+The complete implementation that ensures stability and similarity is as follows:
+
+```
+ab_drop("b31", 0)
+ab_drop("b13", 1)
+ab_drop("b31", 2)
+```

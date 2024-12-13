@@ -1,0 +1,6 @@
+ab_drop('b11', 9)  # Drop a b11 block at slot 9
+ab_drop('b11', 10)  # Drop a b11 block at slot 10
+ab_drop('b13', 8)  # Drop a b13 block at slot 8
+ab_drop('b11', 10)  # Drop a b11 block at slot 10
+ab_drop('b31', 9)  # Drop a b31 block at slot 9
+ab_drop('b13', 8)  # Drop a b13 block at slot 8

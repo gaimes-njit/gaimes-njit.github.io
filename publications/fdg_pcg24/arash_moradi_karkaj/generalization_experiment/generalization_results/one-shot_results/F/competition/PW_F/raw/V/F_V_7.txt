@@ -1,0 +1,11 @@
+To create the uppercase letter "V", we can use the following set of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+ab_drop('b13', 6)
+ab_drop('b13', 7)
+```

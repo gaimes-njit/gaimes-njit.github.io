@@ -1,0 +1,41 @@
+To create the letter "E" in the level, we can break it down into three horizontal bars. Using the hints provided, we will use the lying-down orientation for the letter "E". 
+
+First, we will create the top horizontal bar of the letter "E":
+
+```
+ab_drop("b13", 11)
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+```
+
+Next, we will create the middle horizontal bar of the letter "E":
+
+```
+ab_drop("b13", 11)
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+```
+
+Finally, we will create the bottom horizontal bar of the letter "E":
+
+```
+ab_drop("b31", 10)
+ab_drop("b11", 9)
+ab_drop("b13", 8)
+```
+
+Putting it all together, the complete implementation to create the letter "E" in the level is as follows:
+
+```
+ab_drop("b13", 11)
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+
+ab_drop("b13", 11)
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+
+ab_drop("b31", 10)
+ab_drop("b11", 9)
+ab_drop("b13", 8)
+```

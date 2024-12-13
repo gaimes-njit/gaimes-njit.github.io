@@ -1,0 +1,22 @@
+To create a structure that looks like the letter "K", we will first create the vertical pipe, then the top horizontal bar, and finally the bottom horizontal bar. 
+
+Here is the code to create the "K" structure:
+
+```python
+# Drop the vertical pipe
+ab_drop("b13", 9)
+ab_drop("b13", 10)
+ab_drop("b13", 11)
+
+# Drop the top horizontal bar
+ab_drop("b31", 8)
+ab_drop("b11", 9)
+ab_drop("b31", 10)
+
+# Drop the bottom horizontal bar
+ab_drop("b31", 8)
+ab_drop("b11", 9)
+ab_drop("b31", 10)
+```
+
+This code will create a structure that looks like the letter "K" when viewed in top-down orientation. Please note that the horizontal bars are dropped at the same y-coordinate to ensure stability.

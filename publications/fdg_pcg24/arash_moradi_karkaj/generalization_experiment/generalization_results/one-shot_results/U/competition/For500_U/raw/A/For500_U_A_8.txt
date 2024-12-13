@@ -1,0 +1,5 @@
+ab_drop('b13', 9)    # drop the first vertical block at slot 9
+ab_drop('b31', 8)    # drop the horizontal block above the vertical block, centered at slot 8
+ab_drop('b31', 10)   # drop the horizontal block above the vertical block, centered at slot 10
+ab_drop('b13', 8)    # drop the second vertical block above the horizontal blocks, centered at slot 8
+ab_drop('b13', 10)   # drop the third vertical block above the horizontal blocks, centered at slot 10

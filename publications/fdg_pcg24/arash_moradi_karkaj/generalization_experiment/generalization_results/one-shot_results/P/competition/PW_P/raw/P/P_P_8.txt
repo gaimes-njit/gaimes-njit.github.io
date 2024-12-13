@@ -1,0 +1,13 @@
+Here is a stream of commands that will construct the uppercase English letter "P" using the given block types in the defined environment:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b11', 1)
+ab_drop('b11', 3)
+ab_drop('b31', 2)
+ab_drop('b31', 2)
+```
+
+These commands will first create the vertical stem of the letter "P" using two 'b13' blocks. Then, a 'b31' block will be placed horizontally to form the top of the letter. Finally, two 'b11' blocks will fill in the gaps in the top of the letter.

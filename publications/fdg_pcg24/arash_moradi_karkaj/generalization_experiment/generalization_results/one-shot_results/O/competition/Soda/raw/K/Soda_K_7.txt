@@ -1,0 +1,11 @@
+To create a structure that looks like a capital "K" in the level, we can break it down into three blocks: two "b13" blocks for the vertical lines of the "K" and one "b31" block for the horizontal line. 
+
+First, we will drop the two vertical lines at positions x=7 and x=13. Then we will drop the horizontal line at position x=9.
+
+Complete implementation:
+
+```
+ab_drop("b13", 7)
+ab_drop("b13", 13)
+ab_drop("b31", 9)
+```

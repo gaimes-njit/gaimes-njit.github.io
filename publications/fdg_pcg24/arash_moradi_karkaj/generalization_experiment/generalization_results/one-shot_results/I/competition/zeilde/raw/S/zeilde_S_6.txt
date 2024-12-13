@@ -1,0 +1,45 @@
+1. Drawing of the letter "S" with asterisks:
+```
+*****
+*
+*****
+    *
+*****
+```
+
+2. List of asterisks and spaces in each row:
+Row 1: 5x
+Row 2: 1x
+Row 3: 5x
+Row 4: 4x
+Row 5: 1x
+
+3. List using new variables:
+Row 1: 5x
+Row 2: 1x
+Row 3: 5x
+Row 4: 4x
+Row 5: 1x
+
+4. Sequence of x and y for each row:
+Row 1: xxxxx
+Row 2: x
+Row 3: xxxxx
+Row 4: xxxx
+Row 5: x
+
+5. Position of each variable in each row:
+Row 1: x-1; x-2; x-3; x-4; x-5
+Row 2: x-1
+Row 3: x-1; x-2; x-3; x-4; x-5
+Row 4: x-1; x-2; x-3; x-4
+Row 5: x-1
+
+6. Sequence of ab_drop function calls:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

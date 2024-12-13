@@ -1,0 +1,20 @@
+To build the structure that looks like the capital letter "Z", we need to first create the two vertical columns of the letter and then connect them with a horizontal block. We can achieve this using the following series of ab_drop() calls:
+
+```python
+# Create the first vertical column of the letter Z
+ab_drop("b31", 1)
+ab_drop("b31", 2)
+ab_drop("b31", 3)
+
+# Create the second vertical column of the letter Z
+ab_drop("b31", 6)
+ab_drop("b31", 7)
+ab_drop("b31", 8)
+
+# Create the horizontal block to connect the columns
+ab_drop("b13", 4)
+ab_drop("b11", 5)
+ab_drop("b13", 9)
+```
+
+This code will generate a structure in the level grid that resembles the letter "Z". The blocks are dropped in a bottom-to-top fashion to ensure stability, and the order and positions of the blocks are crucial for achieving the desired result.

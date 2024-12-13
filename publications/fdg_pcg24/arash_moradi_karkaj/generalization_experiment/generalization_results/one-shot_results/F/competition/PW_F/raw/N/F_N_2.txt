@@ -1,0 +1,24 @@
+To generate the uppercase letter "N" using the mentioned block types, you can follow the following stream of `ab_drop()` commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b13', 5)
+ab_drop('b13', 6)
+ab_drop('b31', 6)
+```
+
+Explanation:
+- First, we drop a horizontal straight block (`b31`) at position 1.
+- Then, we drop a vertical straight block (`b13`) at position 2.
+- Next, we drop another vertical straight block (`b13`) at position 3.
+- After that, we drop another horizontal straight block (`b31`) at position 3, overlapping the previous vertical blocks to form the left side of the "N".
+- Then, we drop another horizontal straight block (`b31`) at position 4, extending the left side of the "N".
+- Next, we drop another vertical straight block (`b13`) at position 5, forming the diagonal middle part of the "N".
+- Then, we drop another vertical straight block (`b13`) at position 6, completing the right side of the "N".
+- Finally, we drop another horizontal straight block (`b31`) at position 6 to extend the right side of the "N".
+
+By following these commands, you will generate the uppercase letter "N" within the defined boundaries and gravity rules.

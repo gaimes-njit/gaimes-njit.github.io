@@ -1,0 +1,32 @@
+To generate the uppercase English letter "G", you can use the following stream of ab_drop() commands:
+
+```
+ab_drop('b11', 4)
+ab_drop('b31', 3)
+ab_drop('b31', 3)
+ab_drop('b31', 3)
+ab_drop('b13', 6)
+ab_drop('b13', 6)
+ab_drop('b13', 6)
+ab_drop('b13', 6)
+ab_drop('b31', 9)
+ab_drop('b31', 9)
+ab_drop('b31', 9)
+ab_drop('b31', 9)
+ab_drop('b13', 11)
+ab_drop('b13', 11)
+ab_drop('b13', 11)
+ab_drop('b13', 11)
+ab_drop('b13', 11)
+ab_drop('b13', 11)
+ab_drop('b13', 11)
+ab_drop('b13', 11)
+ab_drop('b13', 11)
+ab_drop('b13', 11)
+ab_drop('b31', 14)
+ab_drop('b31', 14)
+ab_drop('b31', 14)
+ab_drop('b31', 14)
+```
+
+These commands will construct the letter "G" by stacking the blocks according to the specified rules.

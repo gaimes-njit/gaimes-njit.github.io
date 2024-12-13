@@ -1,0 +1,12 @@
+To form the shape resembling the letter "L", we need to stack a b13 brick vertically on top of a b31 brick. Here is the solution:
+
+```
+ab_drop('b31', 8)
+ab_drop('b13', 8)
+```
+
+Explanation:
+1. The first `ab_drop('b31', 8)` generates a b31 brick starting from the x_position 8. The brick will descend until it reaches the ground or encounters an occupied cell. The cells (7, 0), (8, 0), and (9, 0) will be occupied by the b31 brick.
+2. The second `ab_drop('b13', 8)` generates a b13 brick starting from the x_position 8. The brick will descend until it reaches the ground or encounters an occupied cell. Since the ground in this case is already occupied by the b31 brick, the b13 brick will stop above it. The cells (8, 1), (8, 2), and (8, 3) will be occupied by the b13 brick.
+
+The resulting structure will resemble the letter "L" with the b31 brick forming the vertical part and the b13 brick forming the horizontal part on top. The structure will be stable since there are 3 occupied cells on both sides of the pivot point. The occupied cells will not exceed the boundaries of the field.

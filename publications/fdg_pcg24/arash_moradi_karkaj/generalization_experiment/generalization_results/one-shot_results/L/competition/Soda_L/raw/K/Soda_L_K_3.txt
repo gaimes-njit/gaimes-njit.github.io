@@ -1,0 +1,32 @@
+To build the capital letter "K" in the level, we can break it down into three blocks: the vertical stroke, the horizontal stroke, and the diagonal stroke.
+
+First, we will place the vertical stroke:
+
+```
+# Place the vertical stroke
+ab_drop("b31", 7)
+```
+
+Next, we will place the horizontal stroke, which will be supported by the vertical stroke:
+
+```
+# Place the horizontal stroke
+ab_drop("b13", 6)
+```
+
+Finally, we will place the diagonal stroke, which will be supported by the vertical and horizontal strokes:
+
+```
+# Place the diagonal stroke
+ab_drop("b13", 5)
+```
+
+With these three blocks in place, we should have a stable structure that resembles the capital letter "K".
+
+Complete implementation:
+
+```
+ab_drop("b31", 7)
+ab_drop("b13", 6)
+ab_drop("b13", 5)
+```

@@ -1,0 +1,22 @@
+To create a structure that looks like the capital letter "R", we can break it down into two blocks: a vertical pipe and a slanted bar.
+
+First, we will create the vertical pipe block. We need to place it at the center position in the grid, so we will use the ab_drop() function with the block_type "b13" and x_position 10.
+
+```python
+ab_drop("b13", 10)
+```
+
+Next, we will create the slanted bar block. We need to place it to the right of the vertical pipe block, so we will use the ab_drop() function with the block_type "b31" and x_position 12.
+
+```python
+ab_drop("b31", 12)
+```
+
+By dropping these two blocks in the specified positions, we will create a structure that looks like the capital letter "R".
+
+The complete implementation is as follows:
+
+```python
+ab_drop("b13", 10)
+ab_drop("b31", 12)
+```

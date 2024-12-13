@@ -1,0 +1,51 @@
+To generate a stable structure that resembles the character "L" while meeting all hard constraints, we can follow the following step-by-step approach:
+
+Step 1: Import the required functions and initialize the structure.
+```python
+from random import randint
+
+W = 20  # Width of the map
+H = 16  # Height of the map
+
+structure = [[' '] * W for _ in range(H)]  # Initialize the structure as an empty grid
+```
+
+Step 2: Add the base blocks to provide stability to the structure.
+```python
+for i in range(W):
+    ab_drop('b11', i)
+ab_drop('b31', W//2)
+```
+
+Step 3: Determine the dropping positions for the remaining blocks.
+```python
+drop_positions = [
+    (H - 6, 4), (H - 6, 5), (H - 6, 6),
+    (H - 5, 4), (H - 5, 5), (H - 5, 6),
+    (H - 4, 4), (H - 4, 5), (H - 4, 6),
+    (H - 3, 4)
+]
+```
+
+Step 4: Randomly arrange the dropping positions to avoid a predictable pattern.
+```python
+for _ in range(10):
+    i, j = randint(0, len(drop_positions)-1), randint(0, len(drop_positions)-1)
+    drop_positions[i], drop_positions[j] = drop_positions[j], drop_positions[i]
+```
+
+Step 5: Drop the blocks in the desired structure shape.
+```python
+for drop_pos in drop_positions:
+    ab_drop('b11', drop_pos[1])
+    ab_drop('b13', drop_pos[1])
+    ab_drop('b13', drop_pos[1] + 1)
+```
+
+Step 6: Display the final structure.
+```python
+for row in structure:
+    print(' '.join(row))
+```
+
+The above code will generate a new structure resembling the character "L" while satisfying the stability and boundary intrusion constraints. The specific structure may vary each time the code is run due to the random arrangement of dropping positions.

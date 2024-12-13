@@ -1,0 +1,30 @@
+To generate the uppercase English letter "E", we can follow the following steps:
+
+1. Start by placing a horizontal straight block (b31) at position 1:
+```
+ab_drop('b31', 1)
+```
+
+2. Place a vertical straight block (b13) at positions 0 and 2:
+```
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+```
+
+3. Place another horizontal straight block (b31) at position 1, just above the previous one:
+```
+ab_drop('b31', 1)
+```
+
+4. Place a vertical straight block (b13) at positions 0 and 2, just above the previous ones:
+```
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+```
+
+5. Place a horizontal straight block (b31) at position 1, just above the previous ones:
+```
+ab_drop('b31', 1)
+```
+
+This sequence of commands will create the uppercase English letter "E" in the Tetris-like environment. The blocks are stacked in a stable manner, following the rules of gravity and fitting within the allowed space boundaries.

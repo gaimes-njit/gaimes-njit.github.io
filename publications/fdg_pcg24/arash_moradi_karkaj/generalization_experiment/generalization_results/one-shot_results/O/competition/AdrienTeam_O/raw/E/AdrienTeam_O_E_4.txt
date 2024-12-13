@@ -1,0 +1,35 @@
+To construct the structure resembling an "E", we can follow these steps:
+
+1. Initialize the map:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the first block at the center of the bottom layer (layer 0):
+```
+ab_drop('b31', 9)
+```
+
+3. Drop the second block, which forms the vertical line of the "E", at the center of the second layer (layer 1):
+```
+ab_drop('b13', 9)
+```
+
+4. Drop the third block, which forms the horizontal line of the "E", at the center of the fourth layer (layer 3):
+```
+ab_drop('b31', 9)
+```
+
+5. Drop the fourth block, which forms the top horizontal line of the "E", at the center of the fifth layer (layer 4):
+```
+ab_drop('b31', 9)
+```
+
+By following these steps, we can construct a structure resembling the letter "E" while adhering to the given constraints. The complete code block for the `ab_drop()` calls is as follows:
+
+```python
+ab_drop('b31', 9)
+ab_drop('b13', 9)
+ab_drop('b31', 9)
+ab_drop('b31', 9)
+```

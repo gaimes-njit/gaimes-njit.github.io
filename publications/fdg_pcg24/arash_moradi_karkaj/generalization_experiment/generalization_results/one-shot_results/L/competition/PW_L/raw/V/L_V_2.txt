@@ -1,0 +1,15 @@
+Here is the solution to generate the uppercase English letter "V":
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 3)
+ab_drop('b31', 5)
+ab_drop('b13', 7)
+ab_drop('b31', 9)
+ab_drop('b13', 11)
+ab_drop('b31', 13)
+ab_drop('b13', 15)
+ab_drop('b31', 17)
+```
+
+This solution places blocks of type `b31` and `b13` in a strategic way to form the letter "V" within the allowed space boundaries. Each block is placed one by one consecutively in the order specified above.

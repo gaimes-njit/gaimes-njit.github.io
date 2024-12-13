@@ -1,0 +1,8 @@
+```
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the blocks to create the L structure
+ab_drop('b31',1)
+ab_drop('b13',0)
+```

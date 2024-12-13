@@ -1,0 +1,14 @@
+```
+Find the letter "E" in the database:
+- database.get("E")
+Return the required sequence of `ab_drop` function calls:
+- ab_drop(9,9)
+- ab_drop(9,7)
+- ab_drop(9,5)
+- ab_drop(9,3)
+- ab_drop(9,1)
+- ab_drop(7,5)
+- ab_drop(5,3)
+- ab_drop(3,1)
+- ab_drop(9,1)
+```

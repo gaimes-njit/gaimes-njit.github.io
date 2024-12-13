@@ -1,0 +1,27 @@
+To generate the letter "K", we need to use a combination of block types b13 and b31. Here is a stream of commands that will generate the capital letter "K":
+
+```
+ab_drop('b13',1)
+ab_drop('b13',1)
+ab_drop('b13',1)
+ab_drop('b13',1)
+ab_drop('b13',1)
+ab_drop('b13',1)
+ab_drop('b31',1)
+ab_drop('b31',1)
+ab_drop('b13',2)
+ab_drop('b31',2)
+ab_drop('b31',2)
+ab_drop('b13',3)
+ab_drop('b31',3)
+ab_drop('b31',3)
+ab_drop('b13',4)
+ab_drop('b31',4)
+ab_drop('b31',4)
+ab_drop('b13',5)
+ab_drop('b13',5)
+ab_drop('b13',5)
+ab_drop('b13',5)
+```
+
+These commands will create the letter "K" in the given 2D gravity environment.

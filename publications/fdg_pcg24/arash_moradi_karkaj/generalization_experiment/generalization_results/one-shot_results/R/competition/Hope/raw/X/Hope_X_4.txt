@@ -1,0 +1,19 @@
+To create the structure exactly like "X" inside a 20*16 box, we need to place the blocks in the following positions:
+
+1. Place the top-left block (b11) at position (0, 0). Use `ab_drop('b11', 0)`.
+
+2. Place the top-right block (b11) at position (19, 0). Use `ab_drop('b11', 19)`.
+
+3. Place the bottom-left block (b11) at position (0, 15). Use `ab_drop('b11', 0)`.
+
+4. Place the bottom-right block (b11) at position (19, 15). Use `ab_drop('b11', 19)`.
+
+5. Place the top-left diagonal block (b13) at position (1, 1). Use `ab_drop('b13', 1)`.
+
+6. Place the top-right diagonal block (b13) at position (18, 1). Use `ab_drop('b13', 18)`.
+
+7. Place the bottom-left diagonal block (b13) at position (1, 14). Use `ab_drop('b13', 1)`.
+
+8. Place the bottom-right diagonal block (b13) at position (18, 14). Use `ab_drop('b13', 18)`.
+
+Now, the structure should look like an "X" inside a 20*16 box.

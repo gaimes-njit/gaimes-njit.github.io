@@ -1,0 +1,14 @@
+Assistant:
+```
+ab_drop("b11", 4)
+ab_drop("b31", 5)
+ab_drop("b11", 3)
+ab_drop("b13", 4)
+ab_drop("b13", 6)
+ab_drop("b13", 7)
+ab_drop("b31", 6)
+ab_drop("b31", 7)
+ab_drop("b11", 7)
+ab_drop("b11", 4)
+ab_drop("b11", 3)
+```

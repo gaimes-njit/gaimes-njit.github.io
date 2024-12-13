@@ -1,0 +1,23 @@
+```python
+# Assuming the database is a dictionary called "database"
+
+# Find the letter "Q" in the database
+required_letter = database['Q']
+
+# Define the ab_drop function
+def ab_drop():
+    return 'ab_drop'
+
+# Return a sequence of ab_drop function calls to create the letter "Q"
+sequence = ''
+for line in required_letter:
+    for char in line:
+        if char == '#':
+            sequence += 'ab_drop() +' '\n'
+        else:
+            sequence += ' ' + '\n'
+
+sequence
+```
+
+The result will be a sequence of `ab_drop` function calls in order to create the structure that looks like the letter "Q".

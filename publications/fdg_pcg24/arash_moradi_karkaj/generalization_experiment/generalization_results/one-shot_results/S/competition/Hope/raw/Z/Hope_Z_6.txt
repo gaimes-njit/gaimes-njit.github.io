@@ -1,0 +1,22 @@
+To create the structure of the letter "Z" using only `ab_drop('blocktype',x position)`, we can follow these steps:
+
+1. Place the first vertical block (3*1) at position (0,0):
+   - ab_drop('b31', 0)
+
+2. Place the second horizontal block (1*1) at position (0,2):
+   - ab_drop('b11', 2)
+
+3. Place the final vertical block (3*1) at position (0,3):
+   - ab_drop('b31', 3)
+  
+This will result in the following structure:
+
+```
+   ########
+   #
+   #
+      #
+      #
+   ########
+```
+Note: "#" represents the blocks in the structure.

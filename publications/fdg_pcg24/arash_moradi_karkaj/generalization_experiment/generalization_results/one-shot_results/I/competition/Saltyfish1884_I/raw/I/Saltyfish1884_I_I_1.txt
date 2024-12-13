@@ -1,0 +1,23 @@
+To generate a stable structure that resembles the character "I" using the ab_drop() function, we need to carefully consider the constraints and decide on the dropping position and order of the blocks.
+
+Here is a step-by-step approach to achieve this:
+
+Step 1: Initialize the structure as an empty grid.
+
+structure = [[' ']*W for _ in range(H)]
+
+Step 2: Start by placing a b31 block on the base to act as the stable foundation.
+
+ab_drop('b31', 9)
+
+Step 3: Place a b13 block on top of the b31 block to create the vertical part of the "I".
+
+ab_drop('b13', 9)
+
+Step 4: Place another b31 block on top of the b13 block to complete the structure.
+
+ab_drop('b31', 9)
+
+The final structure would resemble the character "I" with a stable and balanced arrangement of the blocks.
+
+Note: The slot number for all the ab_drop() function calls is 9, which is the central slot in the width of the map (W/2). This ensures that the blocks are aligned properly and create a symmetric structure.

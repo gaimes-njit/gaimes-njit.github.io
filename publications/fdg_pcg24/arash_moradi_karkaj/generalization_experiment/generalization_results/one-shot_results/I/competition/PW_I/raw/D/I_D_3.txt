@@ -1,0 +1,16 @@
+To generate the uppercase letter "D", we need to stack the following blocks:
+
+1. Two vertical straight blocks (b13) to form the two vertical lines of the letter.
+2. One horizontal straight block (b31) to form the top line of the letter.
+3. One 1x1 square block (b11) to complete the letter shape.
+
+The ab_drop() commands to generate the letter "D" are as follows:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b11', 1)
+```
+
+Please note that these commands should be executed consecutively starting from the X position 1, as mentioned in the instructions.

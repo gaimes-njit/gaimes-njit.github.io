@@ -1,0 +1,31 @@
+The block-stacking problem involves finding the best sequence of moves to stack blocks on top of each other. In this case, we want to create a structure resembling the letter "O" using the `ab_drop()` function. We can use the provided information and constraints to guide our approach. 
+
+To create the "O" shape, we need to strategically place the blocks one by one in a specific order. Here is the sequence of `ab_drop()` inputs that will create a stable structure resembling the letter "O":
+
+```
+# Drop the first horizontal block
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the first vertical block
+ab_drop('b11', 9)
+ab_drop('b11', 11)
+
+# Drop the second horizontal block
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+
+# Drop the second vertical block
+ab_drop('b11', 8)
+ab_drop('b11', 11)
+
+# Drop the third horizontal block
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the third vertical block
+ab_drop('b11', 9)
+ab_drop('b11', 11)
+```
+
+By following this sequence, we ensure that the blocks are placed in the correct order and position to form the letter "O" while satisfying the given constraints.

@@ -1,0 +1,64 @@
+The first step is to create the horizontal bars of the letter "O". 
+
+```
+# The top horizontal bar of O
+ab_drop("b31", 8)
+ab_drop("b11", 9)
+ab_drop("b31", 10)
+
+# The bottom horizontal bar of O
+ab_drop("b31", 8)
+ab_drop("b11", 9)
+ab_drop("b31", 10)
+```
+
+Next, we need to create the vertical bars of the letter "O".
+
+```
+# The left vertical bar of O
+ab_drop("b13", 7)
+ab_drop("b11", 8)
+ab_drop("b13", 9)
+
+# The right vertical bar of O
+ab_drop("b13", 11)
+ab_drop("b11", 12)
+ab_drop("b13", 13)
+```
+
+Finally, we need to create the diagonal bars of the letter "O".
+
+```
+# The top-left to bottom-right diagonal bar of O
+ab_drop("b13", 7)
+ab_drop("b11", 9)
+ab_drop("b13", 11)
+
+# The top-right to bottom-left diagonal bar of O
+ab_drop("b13", 11)
+ab_drop("b11", 9)
+ab_drop("b13", 7)
+```
+
+The complete implementation would be:
+
+```
+ab_drop("b31", 8)
+ab_drop("b11", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 8)
+ab_drop("b11", 9)
+ab_drop("b31", 10)
+ab_drop("b13", 7)
+ab_drop("b11", 8)
+ab_drop("b13", 9)
+ab_drop("b13", 11)
+ab_drop("b11", 12)
+ab_drop("b13", 13)
+ab_drop("b13", 7)
+ab_drop("b11", 9)
+ab_drop("b13", 11)
+ab_drop("b13", 11)
+ab_drop("b11", 9)
+ab_drop("b13", 7)
+```

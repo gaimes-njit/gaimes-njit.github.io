@@ -1,0 +1,17 @@
+To generate the "N" shape using the available props and the ab_drop() function, we can break down the shape into two parts: the vertical stroke and the horizontal stroke.
+
+1. Vertical Stroke:
+To create the vertical stroke of the "N" shape, we can use two b13 bricks stacked vertically. We will place the bottom b13 brick starting from x_position 5, and the top b13 brick starting from x_position 9. This will ensure stability as the number of occupied cells on both sides of the pivot will be the same.
+```python
+ab_drop('b13', 5)
+ab_drop('b13', 9)
+```
+
+2. Horizontal Stroke:
+To create the horizontal stroke of the "N" shape, we will use a combination of b11 and b31 bricks. We will place the b11 brick first horizontally, and then place the b31 brick vertically adjacent to it. We will start by placing the b11 brick at x_position 5, and then the b31 brick starting from x_position 4.
+```python
+ab_drop('b11', 5)
+ab_drop('b31', 4)
+```
+
+By generating the vertical and horizontal strokes, we will form the shape resembling the letter "N" on the field.

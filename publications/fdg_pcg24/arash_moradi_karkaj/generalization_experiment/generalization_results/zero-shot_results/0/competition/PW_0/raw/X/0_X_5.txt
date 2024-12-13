@@ -1,0 +1,27 @@
+To generate an uppercase letter "X" using the given block types in the defined environment, we can follow these steps:
+
+Step 1: Placement of first block (b31)
+``` 
+ab_drop(31,1) 
+```
+The first block (b31) is a horizontal straight block with a width of 3 units. We place it at position 1 along the width.
+
+Step 2: Placement of second block (b13)
+``` 
+ab_drop(13,3) 
+```
+The second block (b13) is a vertical straight block with a height of 3 units. We place it at position 3 along the width.
+
+Step 3: Placement of third block (b31)
+``` 
+ab_drop(31,7) 
+```
+The third block (b31) is again a horizontal straight block with a width of 3 units. We place it at position 7 along the width.
+
+Step 4: Placement of fourth block (b13)
+``` 
+ab_drop(13,9) 
+```
+The fourth block (b13) is again a vertical straight block with a height of 3 units. We place it at position 9 along the width.
+
+With these steps, we have constructed the uppercase letter "X" using the given block types in the defined environment.

@@ -1,0 +1,7 @@
+ab_drop("b11", 2)  # Add the top-right part of the letter "P"
+ab_drop("b11", 2)  # Add the middle-right part of the letter "P"
+ab_drop("b11", 1)  # Add the middle part of the letter "P"
+ab_drop("b11", 2)  # Add the bottom-right part of the letter "P"
+ab_drop("b11", 2)  # Add the bottom-middle part of the letter "P"
+ab_drop("b11", 1)  # Add the bottom-left part of the letter "P"
+ab_drop("b31", 1)  # Add the bottom part of the letter "P"

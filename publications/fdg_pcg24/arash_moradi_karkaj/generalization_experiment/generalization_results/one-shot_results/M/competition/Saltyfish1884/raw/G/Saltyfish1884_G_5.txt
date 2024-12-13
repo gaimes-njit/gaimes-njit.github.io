@@ -1,0 +1,30 @@
+To generate a stable structure that resembles the character "G", we need to follow the given constraints and use the ab_drop() function appropriately. Here's how we can approach it step by step:
+
+1. Initialize the structure as an empty grid:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the b13 block to create the middle part of the "G" shape:
+```python
+ab_drop('b13', 9)
+```
+
+3. Drop the b11 blocks to create the left and right parts of the "G" shape:
+```python
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+ab_drop('b11', 11)
+```
+
+4. Drop the b31 block to create the horizontal part of the "G" shape:
+```python
+ab_drop('b31', 9)
+```
+
+5. Drop the b13 block to create the bottom part of the "G" shape:
+```python
+ab_drop('b13', 9)
+```
+
+6. The resulting structure will resemble the character "G" while meeting all the hard constraints.

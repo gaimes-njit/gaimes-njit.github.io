@@ -1,0 +1,55 @@
+To make the structure exactly like "O" inside a 20*16 box, you can use the ab_drop() function as follows:
+
+1. Drop the b11 (1*1 block) at position (3, 3):
+ab_drop('b11', 3)
+
+2. Drop the b11 (1*1 block) at position (3, 12):
+ab_drop('b11', 3)
+
+3. Drop the b11 (1*1 block) at position (16, 3):
+ab_drop('b11', 16)
+
+4. Drop the b11 (1*1 block) at position (16, 12):
+ab_drop('b11', 16)
+
+5. Drop the b13 (1*3 block) at position (3, 4):
+ab_drop('b13', 3)
+ab_drop('b13', 3)
+ab_drop('b13', 3)
+
+6. Drop the b13 (1*3 block) at position (16, 4):
+ab_drop('b13', 16)
+ab_drop('b13', 16)
+ab_drop('b13', 16)
+
+7. Drop the b13 (1*3 block) at position (3, 11):
+ab_drop('b13', 3)
+ab_drop('b13', 3)
+ab_drop('b13', 3)
+
+8. Drop the b13 (1*3 block) at position (16, 11):
+ab_drop('b13', 16)
+ab_drop('b13', 16)
+ab_drop('b13', 16)
+
+9. Drop the b31 (3*1 block) at position (4, 3):
+ab_drop('b31', 4)
+ab_drop('b31', 4)
+ab_drop('b31', 4)
+
+10. Drop the b31 (3*1 block) at position (4, 12):
+ab_drop('b31', 4)
+ab_drop('b31', 4)
+ab_drop('b31', 4)
+
+11. Drop the b31 (3*1 block) at position (15, 3):
+ab_drop('b31', 15)
+ab_drop('b31', 15)
+ab_drop('b31', 15)
+
+12. Drop the b31 (3*1 block) at position (15, 12):
+ab_drop('b31', 15)
+ab_drop('b31', 15)
+ab_drop('b31', 15)
+
+This sequence of commands will create the structure exactly like "O" inside the 20*16 box.

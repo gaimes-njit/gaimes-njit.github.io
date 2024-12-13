@@ -1,0 +1,12 @@
+To create the structure of the letter "N" using the block types provided, you can use the following sequence of `ab_drop` commands:
+
+1. Drop a b31 block at position (0, 0):
+ab_drop('b31', 0)
+
+2. Drop a b13 block at position (4, 0):
+ab_drop('b13', 4)
+
+3. Drop a b31 block at position (8, 0):
+ab_drop('b31', 8)
+
+This should create a structure exactly like the letter "N" inside a 20*16 box, where each block is represented by its block type and position.

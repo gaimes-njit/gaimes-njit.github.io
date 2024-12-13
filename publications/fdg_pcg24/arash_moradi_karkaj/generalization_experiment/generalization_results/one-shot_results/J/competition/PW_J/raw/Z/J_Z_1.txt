@@ -1,0 +1,7 @@
+To generate the uppercase English letter "Z", we need to start by placing the horizontal straight block (b31) at position 1. Then, we'll place the vertical straight block (b13) at position 2.
+
+Here are the consecutive ab_drop() commands to generate the letter "Z":
+```
+ab_drop('b31',1)
+ab_drop('b13',2)
+```

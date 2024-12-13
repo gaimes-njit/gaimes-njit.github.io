@@ -1,0 +1,40 @@
+To generate a stable structure that looks like the uppercase "T" using the `ab_drop()` function, we need to strategically place the blocks b11, b13, and b31 to form the desired shape while satisfying the hard constraints. The following steps outline a possible approach:
+
+1. Start by initializing the structure as an empty grid using the provided map initialization code.
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Place the base support for the b31 horizontal block. This support is necessary to ensure stability.
+```
+ab_drop('b11', 9)  # Coordinate (15, 9)
+```
+
+3. Drop the b31 block on top of the base support.
+```
+ab_drop('b31', 9)  # Coordinate (14, 9)
+```
+
+4. Place supports for the b13 vertical blocks. These supports provide stability for the vertical blocks.
+```
+ab_drop('b11', 8)  # Coordinate (13, 8)
+ab_drop('b11', 10)  # Coordinate (13, 10)
+```
+
+5. Drop the b13 blocks on top of the supports.
+```
+ab_drop('b13', 8)  # Coordinate (12, 8)
+ab_drop('b13', 10)  # Coordinate (12, 10)
+```
+
+6. Place the top support for the b31 horizontal block.
+```
+ab_drop('b11', 9)  # Coordinate (11, 9)
+```
+
+7. Drop the final b31 block on top of the supports to complete the structure.
+```
+ab_drop('b31', 9)  # Coordinate (10, 9)
+```
+
+After following these steps, the structure will resemble the uppercase letter "T" and satisfy the hard constraints of stability and boundary intrusion.

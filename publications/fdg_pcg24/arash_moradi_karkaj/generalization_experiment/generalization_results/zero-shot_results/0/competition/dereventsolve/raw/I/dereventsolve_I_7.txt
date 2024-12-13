@@ -1,0 +1,11 @@
+To generate a structure that looks like the letter "I", we can use the following sequence of `ab_drop` function calls:
+
+```
+ab_drop(1,1)
+ab_drop(1,2)
+ab_drop(1,3)
+ab_drop(1,4)
+ab_drop(1,5)
+```
+
+This sequence will create the vertical line of the letter "I" by dropping the bricks one by one from the first column.

@@ -1,0 +1,17 @@
+To generate the uppercase letter "W" using the given block types and environment, you can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 3)
+ab_drop('b13', 5)
+ab_drop('b31', 7)
+ab_drop('b31', 9)
+ab_drop('b13', 11)
+ab_drop('b13', 13)
+ab_drop('b31', 15)
+ab_drop('b31', 17)
+```
+
+This sequence of commands will first place a horizontal straight block ('b31') at position 1 to start the left side of the "W". Then, two vertical straight blocks ('b13') will be placed at positions 3 and 5 to form the left diagonal of the "W". Next, another horizontal straight block ('b31') will be placed at position 7 to connect the two diagonals. Two more horizontal straight blocks ('b31') will be placed at positions 9 and 17 to create the middle and right side of the "W". Finally, two more vertical straight blocks ('b13') will be placed at positions 11 and 13 to complete the right diagonal of the "W".
+
+Please note that the command ab_drop(x, y) might need to be adjusted based on the actual implementation of the environment and block types.

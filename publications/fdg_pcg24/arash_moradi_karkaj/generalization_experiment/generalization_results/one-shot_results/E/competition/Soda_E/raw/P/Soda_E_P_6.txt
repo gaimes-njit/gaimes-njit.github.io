@@ -1,0 +1,24 @@
+To create a structure that looks like the letter "P", we can follow the hints and create the structure in a bottom-to-top fashion using the ab_drop() function. 
+
+Here's the code to generate the "P" structure:
+
+```
+# The center vertical bar of P
+ab_drop("b31", 9)
+
+ab_drop("b11", 10)
+
+# The top horizontal bar of P
+ab_drop("b13", 8)
+
+ab_drop("b13", 10)
+
+ab_drop("b11", 11)
+
+# The bottom horizontal bar of P
+ab_drop("b13", 8)
+
+ab_drop("b31", 10)
+```
+
+This code will drop the blocks in a specific order and position to create a structure that resembles the letter "P" when viewed from the top down. The blocks are dropped from bottom to top and are well-supported, ensuring stability.

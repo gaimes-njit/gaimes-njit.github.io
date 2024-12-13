@@ -1,0 +1,16 @@
+To create the capital letter "T", we need to first build a horizontal bar and then place a vertical bar on top of it. 
+Here is the code to achieve that:
+
+First, we build the horizontal bar:
+```
+# Place the base block
+ab_drop("b13", 7)
+```
+
+Next, we place the vertical bar on top of the horizontal bar to complete the "T" shape:
+```
+# Place the vertical bar
+ab_drop("b31", 7)
+```
+
+This code block will create a stable structure that resembles the capital letter "T".

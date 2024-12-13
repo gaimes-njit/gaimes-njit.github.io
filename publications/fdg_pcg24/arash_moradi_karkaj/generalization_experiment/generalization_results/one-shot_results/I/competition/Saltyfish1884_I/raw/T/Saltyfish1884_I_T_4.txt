@@ -1,0 +1,20 @@
+To generate a structure that resembles the character "T", we can follow these steps:
+
+1. Place the b31 block on the base: 
+   - Use the ab_drop() function to drop a b31 block at slot 9.
+   
+2. Place the b13 block on top of the b31 block: 
+   - Use the ab_drop() function to drop a b13 block at slot 9.
+
+3. Place the second b31 block on top of the b13 block: 
+   - Use the ab_drop() function to drop a b31 block at slot 9.
+
+The resulting code to generate the "T" structure would be:
+
+```python
+ab_drop('b31', 9)
+ab_drop('b13', 9)
+ab_drop('b31', 9)
+```
+
+By executing this code, the blocks will be placed in a stable manner, meeting all the hard constraints, and forming a structure that resembles the character "T".

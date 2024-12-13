@@ -1,0 +1,12 @@
+To construct the letter "X" using the given block types, you can follow the following set of commands:
+
+```
+ab_drop('b31', 1)  # Place the horizontal block as the foundation
+ab_drop('b13', 1)  # Place the first vertical block on the left side
+ab_drop('b13', 2)  # Place the second vertical block on the left side
+ab_drop('b31', 2)  # Place the horizontal block on top
+ab_drop('b13', 1)  # Place the first vertical block on the right side
+ab_drop('b13', 2)  # Place the second vertical block on the right side
+```
+
+This sequence of commands will create the letter "X" in the specified environment.

@@ -1,0 +1,21 @@
+To generate a structure that resembles the character "P" while meeting all hard constraints, we can follow the following steps:
+
+1. Initialize the structure: Use the provided code to initialize an empty WxH grid called "structure".
+
+2. Determine the dropping position and order: Since the stability of the structure is crucial, we need to carefully determine the dropping position and order of the blocks. We can start by identifying the blocks required to form the shape of the letter "P" and prioritize their placement based on stability rules. 
+
+3. Determine the shape of the structure: To form the letter "P", we need two b31 blocks for the vertical line and one b13 block for the horizontal line. 
+
+4. Place the b31 blocks: To ensure stability, we should place the b31 blocks on a solid base (b11 or b13 blocks). We can start by placing one b31 block on the base layer (layer 0). The slot number of this block's center should be chosen such that it aligns with the center of the structure. Use the ab_drop() function to drop the block at the chosen slot.
+
+5. Place the b13 block: Next, we can place the b13 block vertically, aligned with the top of the b31 blocks. The dropping position of the b13 block should be chosen such that it aligns with the center of the structure. Again, use the ab_drop() function to drop the block at the chosen slot.
+
+6. Place the remaining b31 block: Finally, we can place the remaining b31 block horizontally, aligned with the bottom of the b13 block. The dropping position of this block should be chosen such that it aligns with the center of the structure. Use the ab_drop() function to drop the block at the chosen slot.
+
+7. Verify stability: After placing all the blocks, check if the resulting structure is stable and does not collapse. If any stability rules are violated, adjust the placement of the blocks until stability is achieved.
+
+8. Check for boundary intrusion: Ensure that none of the blocks intrude on the map's boundaries (W and H). If any block violates this constraint, adjust its placement or consider resizing the structure to accommodate the blocks without intruding on the boundaries.
+
+9. Print the final structure: Once all the blocks are placed and the structure is stable, print the final structure to verify that it resembles the character "P".
+
+You can refer to the provided ab_drop() function to implement the dropping of blocks and modify it as needed to suit the placement of different block types.

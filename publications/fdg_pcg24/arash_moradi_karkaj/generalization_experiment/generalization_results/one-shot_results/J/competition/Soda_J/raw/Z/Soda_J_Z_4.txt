@@ -1,0 +1,18 @@
+To generate a structure in the level that looks like a capital "Z", we can break it down into three blocks: a row block, a column block, and another row block. Here is the step-by-step implementation:
+
+1. Place the first row block (b31) at the center of the grid:
+    ab_drop("b31", 9)
+
+2. Place the column block (b13) at the same x position, one row above the previous block:
+    ab_drop("b13", 9)
+
+3. Place the second row block (b31) at the same x position, one row above the previous block:
+    ab_drop("b31", 9)
+
+The complete implementation is as follows:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+```

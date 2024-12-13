@@ -1,0 +1,47 @@
+To create the structure exactly like "E" inside a 20*16 box area, we can use the following ab_drop commands:
+
+1. Place the upper horizontal line of the "E":
+   - ab_drop('b11', 0)  # Place the leftmost block at position (0,0)
+   - ab_drop('b11', 1)  # Place the second block at position (0,1)
+   - ab_drop('b11', 2)  # Place the third block at position (0,2)
+   - ab_drop('b11', 3)  # Place the fourth block at position (0,3)
+   - ab_drop('b11', 4)  # Place the fifth block at position (0,4)
+   - ab_drop('b11', 5)  # Place the sixth block at position (0,5)
+   - ab_drop('b11', 6)  # Place the seventh block at position (0,6)
+   - ab_drop('b11', 7)  # Place the eighth block at position (0,7)
+   - ab_drop('b11', 8)  # Place the ninth block at position (0,8)
+   - ab_drop('b13', 9)  # Place the tenth, eleventh, and twelfth block horizontally at position (0,9), (0,10), (0,11)
+   - ab_drop('b11', 12) # Place the thirteenth block at position (0,12)
+   - ab_drop('b11', 13) # Place the fourteenth block at position (0,13)
+   - ab_drop('b11', 14) # Place the fifteenth block at position (0,14)
+   - ab_drop('b11', 15) # Place the sixteenth block at position (0,15)
+  
+2. Place the middle horizontal line of the "E":
+   - ab_drop('b11', 0)  # Place the leftmost block at position (1,0)
+   - ab_drop('b11', 8)  # Place the second block at position (1,8)
+   - ab_drop('b11', 12) # Place the third block at position (1,12)
+   - ab_drop('b13', 9)  # Place the fourth, fifth, and sixth block horizontally at position (1,9), (1,10), (1,11)
+
+3. Place the lower horizontal line of the "E":
+   - ab_drop('b11', 0)  # Place the leftmost block at position (2,0)
+   - ab_drop('b11', 8)  # Place the second block at position (2,8)
+   - ab_drop('b11', 12) # Place the third block at position (2,12)
+   - ab_drop('b13', 9)  # Place the fourth, fifth, and sixth block horizontally at position (2,9), (2,10), (2,11)
+   - ab_drop('b11', 0)  # Place the seventh block at position (2,0)
+   - ab_drop('b11', 8)  # Place the eighth block at position (2,8)
+   - ab_drop('b11', 12) # Place the ninth block at position (2,12)
+   - ab_drop('b13', 9)  # Place the tenth, eleventh, and twelfth block horizontally at position (2,9), (2,10), (2,11)
+   - ab_drop('b11', 0)  # Place the thirteenth block at position (2,0)
+   - ab_drop('b11', 8)  # Place the fourteenth block at position (2,8)
+   - ab_drop('b11', 12) # Place the fifteenth block at position (2,12)
+   - ab_drop('b13', 9)  # Place the sixteenth, seventeenth, and eighteenth block horizontally at position (2,9), (2,10), (2,11)
+   - ab_drop('b11', 0)  # Place the nineteenth block at position (2,0)
+   - ab_drop('b11', 8)  # Place the twentieth block at position (2,8)
+   - ab_drop('b11', 12) # Place the twenty-first block at position (2,12)
+   - ab_drop('b13', 9)  # Place the twenty-second, twenty-third, and twenty-fourth block horizontally at position (2,9), (2,10), (2,11)
+   - ab_drop('b11', 0)  # Place the twenty-fifth block at position (2,0)
+   - ab_drop('b11', 8)  # Place the twenty-sixth block at position (2,8)
+   - ab_drop('b11', 12) # Place the twenty-seventh block at position (2,12)
+   - ab_drop('b13', 9)  # Place the twenty-eighth, twenty-ninth, and thirtieth block horizontally at position (2,9), (2,10), (2,11)
+   
+Note: The above commands assume that the current position of the ab_drop command is located at (0,0). If the current position is different, adjust the x position values accordingly.

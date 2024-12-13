@@ -1,0 +1,15 @@
+To generate the uppercase English letter "L", we can use the following commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 2)
+```
+
+Explanation:
+- The first four commands (`ab_drop('b13', 1)`) place four vertical straight blocks with a width of 1 unit and a height of 3 units. These blocks form the vertical part of the letter "L".
+- The fifth command (`ab_drop('b31', 2)`) places a horizontal straight block with a width of 3 units and a height of 1 unit. This block completes the horizontal part of the letter "L".
+
+Overall, these commands will generate the uppercase English letter "L" in the given Tetris-like environment.

@@ -1,0 +1,15 @@
+To generate uppercase English letter "N", we need to construct three block types: b31, b13, and b31. The blocks should be placed in the following sequence:
+
+1. Start by placing a horizontal straight block (b31) at position 1: `ab_drop('b31', 1)`
+2. Place a vertical straight block (b13) to the right of the horizontal block at position 2: `ab_drop('b13', 2)`
+3. Place another vertical straight block (b13) to the right of the previous block at position 3: `ab_drop('b13', 3)`
+4. Finally, place another horizontal straight block (b31) to the right of the previous blocks at position 4: `ab_drop('b31', 4)`
+
+The complete sequence of commands to generate the uppercase English letter "N" is as follows:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b31', 4)
+```

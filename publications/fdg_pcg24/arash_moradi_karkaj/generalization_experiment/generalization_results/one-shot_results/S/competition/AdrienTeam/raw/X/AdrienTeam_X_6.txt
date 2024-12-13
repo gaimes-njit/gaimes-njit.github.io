@@ -1,0 +1,11 @@
+The structure of "X" can be generated using the following `ab_drop()` calls:
+
+```
+ab_drop('b31', 0)
+ab_drop('b13', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 16)
+ab_drop('b11', 17)
+ab_drop('b13', 18)
+```

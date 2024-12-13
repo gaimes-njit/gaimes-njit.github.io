@@ -1,0 +1,19 @@
+# Structure Initialization
+
+structure = [[' ']*20 for _ in range(16)]
+
+# Generate the capital English letter 'X'
+
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+ab_drop('b31', 9)
+ab_drop('b11', 8)
+ab_drop('b11', 11)
+ab_drop('b13', 12)
+ab_drop('b31', 9)
+ab_drop('b31', 9)
+ab_drop('b31', 9)
+ab_drop('b13', 12)
+ab_drop('b31', 9)
+ab_drop('b11', 8)
+ab_drop('b11', 11)

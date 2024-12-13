@@ -1,0 +1,40 @@
+1. Drawing the letter "A" with asterisks:
+```
+  ***
+ *   *
+ *   *
+ *****
+ *   *
+ *   *
+```
+
+2. Listing the asterisks and spaces generated in each row:
+Row 1: 3 asterisks, 3 spaces
+Row 2: 1 asterisk, 1 space, 3 asterisks, 1 space, 1 asterisk
+Row 3: 1 asterisk, 1 space, 3 asterisks, 1 space, 1 asterisk
+Row 4: 5 asterisks
+Row 5: 1 asterisk, 1 space, 3 asterisks, 1 space, 1 asterisk
+Row 6: 1 asterisk, 1 space, 3 asterisks, 1 space, 1 asterisk
+
+3. Representing asterisks as "x" and spaces as "y":
+Row 1: xxxyyy
+Row 2: xyxxyyx
+Row 3: xyxxyyx
+Row 4: xxxxx
+Row 5: xyxxyyx
+Row 6: xyxxyyx
+
+4. Side-by-side representation of asterisks and spaces:
+Row 1: xxxyyy
+Row 2: x-1; y-1; x-3; y-1; x-1;
+Row 3: x-1; y-1; x-3; y-1; x-1;
+Row 4: xxxxx
+Row 5: x-1; y-1; x-3; y-1; x-1;
+Row 6: x-1; y-1; x-3; y-1; x-1;
+
+5. Sequence of "ab_drop" function calls:
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)

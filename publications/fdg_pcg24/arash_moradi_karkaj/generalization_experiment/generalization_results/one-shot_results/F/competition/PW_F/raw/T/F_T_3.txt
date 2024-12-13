@@ -1,0 +1,16 @@
+To create the uppercase letter "T", you can use the following stream of commands:
+
+```
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b31',2)
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b31',2)
+```
+
+Explanation:
+- The first two commands `ab_drop('b13',1)` and `ab_drop('b13',2)` create the vertical stem of the letter "T".
+- The third command `ab_drop('b31',2)` creates the horizontal crossbar of the letter "T".
+- The next two commands `ab_drop('b13',1)` and `ab_drop('b13',2)` reinforce the vertical stem of the letter "T".
+- Finally, the last command `ab_drop('b31',2)` reinforces the horizontal crossbar of the letter "T".

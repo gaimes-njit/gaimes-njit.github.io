@@ -1,0 +1,33 @@
+To generate the uppercase letter "X" using the given block types and the defined environment, we can follow these steps:
+
+1. Start by placing a horizontal straight block (b31) at position 1:
+   ```
+   ab_drop('b31', 1)
+   ```
+
+2. Next, place a vertical straight block (b13) at position 0, slightly to the left of the previous block:
+   ```
+   ab_drop('b13', 0)
+   ```
+
+3. Place another vertical straight block (b13) at position 2, slightly to the right of the previous block:
+   ```
+   ab_drop('b13', 2)
+   ```
+
+4. Now, place a horizontal straight block (b31) at position 1, above the previous blocks:
+   ```
+   ab_drop('b31', 1)
+   ```
+
+5. Finally, place a vertical straight block (b13) at position 0, slightly to the left of the previous block:
+   ```
+   ab_drop('b13', 0)
+   ```
+
+6. Place one last vertical straight block (b13) at position 2, slightly to the right of the previous block:
+   ```
+   ab_drop('b13', 2)
+   ```
+
+The above set of commands will generate the capital letter "X" in the Tetris-like environment while maintaining stacking and stability.

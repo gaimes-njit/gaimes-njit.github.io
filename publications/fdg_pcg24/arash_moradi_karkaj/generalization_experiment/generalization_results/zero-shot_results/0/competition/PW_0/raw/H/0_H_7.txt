@@ -1,0 +1,30 @@
+To create an uppercase letter "H" using the given block types and following the gravity rules, you can use the following set of commands:
+
+```
+ab_drop(b11,1)
+ab_drop(b11,5)
+ab_drop(b11,9)
+ab_drop(b11,13)
+ab_drop(b31,2)
+ab_drop(b31,3)
+ab_drop(b31,4)
+ab_drop(b31,5)
+ab_drop(b31,6)
+ab_drop(b31,7)
+ab_drop(b31,8)
+ab_drop(b13,4)
+ab_drop(b13,5)
+ab_drop(b13,6)
+```
+
+Explanation:
+1. Place a 1x1 square block in the first column at height 1 (ab_drop(b11,1)).
+2. Place a 1x1 square block in the fifth column at height 1 (ab_drop(b11,5)).
+3. Place a 1x1 square block in the ninth column at height 1 (ab_drop(b11,9)).
+4. Place a 1x1 square block in the thirteenth column at height 1 (ab_drop(b11,13)).
+5. Place a horizontal straight block in the second column starting from height 1 (ab_drop(b31,2)).
+6. Repeat step 5 until the eighth column to create the top bar of the "H".
+7. Place a vertical straight block in the fourth column starting from height 1 (ab_drop(b13,4)).
+8. Repeat step 7 until the sixth column to create the vertical line of the "H".
+
+This set of commands will construct the uppercase letter "H" in the Tetris-like environment while maintaining structural stability with regard to the gravity rules.

@@ -1,0 +1,18 @@
+```
+Function call sequence: (assume A-F are different keys in the database)
+
+ab_drop(A)
+ab_drop(B)
+ab_drop(C)
+ab_drop(B)
+ab_drop(A)
+ab_drop(C)
+ab_drop(B)
+ab_drop(C)
+ab_drop(D)
+ab_drop(C)
+ab_drop(E)
+ab_drop(C)
+ab_drop(F)
+ab_drop(C)
+```

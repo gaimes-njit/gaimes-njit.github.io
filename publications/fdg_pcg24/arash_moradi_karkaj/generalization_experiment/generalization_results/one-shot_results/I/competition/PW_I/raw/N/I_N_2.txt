@@ -1,0 +1,11 @@
+To create the uppercase English letter "N" using the given block types and gravity rules, the following stream of `ab_drop()` commands can be used:
+
+```
+ab_drop('b13',1)        # Place vertical straight block at position 1
+ab_drop('b31',1)        # Place horizontal straight block at position 1
+ab_drop('b13',3)        # Place vertical straight block at position 3
+ab_drop('b31',4)        # Place horizontal straight block at position 4
+ab_drop('b13',5)        # Place vertical straight block at position 5
+```
+
+This sequence of commands will create the letter "N" in the defined environment while maintaining stacking and stability with the gravity rules.

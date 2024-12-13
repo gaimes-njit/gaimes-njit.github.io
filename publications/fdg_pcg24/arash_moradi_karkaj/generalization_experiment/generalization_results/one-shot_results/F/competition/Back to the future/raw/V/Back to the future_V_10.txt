@@ -1,0 +1,90 @@
+To generate a stable structure that looks like the uppercase character "V" and meets all the hard constraints, we can follow a step-by-step approach:
+
+1. Determine the appropriate dropping positions and order by analyzing the stability of the structure.
+2. Use `ab_drop()` function to drop the blocks at the determined positions and update the structure accordingly.
+3. Repeat steps 1 and 2 until the entire structure is built.
+4. Perform stability checks before each call to `ab_drop()` to ensure the structure remains stable.
+5. Ensure that the structure resembles the uppercase character "V" by arranging the blocks in a similar shape.
+6. Consider the soft constraint of not intruding on the boundary of the map while placing the blocks.
+7. Generate diverse structures by varying the dropping positions and order.
+
+Here is a possible implementation:
+
+```python
+import random
+
+# Constants
+W = 20  # Number of slots
+H = 16  # Number of layers
+
+# Initialize the structure as an empty grid
+structure = [[' ']*W for _ in range(H)]
+
+def check_stability(x, y):
+    # Check if the structure will remain stable after dropping block x at slot y
+    if x == 'b11':
+        # Check stability for a square block
+        if structure[H-2][y] != ' ':
+            return True
+    elif x == 'b31':
+        # Check stability for a horizontal block
+        if structure[H-2][y] != ' ' and structure[H-2][y-1] != ' ' and structure[H-2][y+1] != ' ':
+            return True
+    elif x == 'b13':
+        # Check stability for a vertical block
+        if structure[H-4][y] != ' ' and structure[H-3][y] != ' ':
+            return True
+    return False
+
+def ab_drop(x, y):
+    # Drop block x with its center aligned at slot y
+    drop_pos = (H-1, y)
+    
+    # Move the block down until it lands on the base or another block
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    
+    # Place the block on the structure
+    structure[drop_pos[0]][drop_pos[1]] = x
+    return drop_pos
+
+def generate_structure():
+    # Drop the first block at a random slot
+    x = random.choice(['b11', 'b31', 'b13'])
+    y = random.randint(2, 17)  # Avoid boundary intrusion
+    ab_drop(x, y)
+    positions = [(x, y)]
+    
+    while True:
+        # Check stability and determine the dropping position for the next block
+        new_x = random.choice(['b11', 'b31', 'b13'])
+        new_y = random.randint(2, 17)  # Avoid boundary intrusion
+        
+        if check_stability(new_x, new_y):
+            ab_drop(new_x, new_y)
+            positions.append((new_x, new_y))
+            
+            # Check if the structure is complete
+            if len(positions) >= 5:
+                # Check if the structure resembles the uppercase "V"
+                if positions[2][1] == positions[3][1] == positions[4][1] and positions[2][0] == 'b31':
+                    break
+        
+    return positions
+
+# Generate a stable structure
+positions = generate_structure()
+
+# Print the structure
+for layer in structure:
+    print(' '.join(layer))
+
+# Print the coordinates of each dropped block
+print("Dropped blocks' coordinates:")
+for i, (x, y) in enumerate(positions):
+    print(f"{i+1}. ({x}, {y})")
+```
+
+This implementation randomly selects dropping positions while ensuring stability and avoiding boundary intrusion. It also checks if the generated structure resembles the uppercase "V" by checking the positions of specific blocks. The program then prints the final structure and the coordinates of each dropped block.

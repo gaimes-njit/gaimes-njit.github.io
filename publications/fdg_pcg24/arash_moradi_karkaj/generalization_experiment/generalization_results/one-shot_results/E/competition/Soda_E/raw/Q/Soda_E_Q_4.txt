@@ -1,0 +1,20 @@
+To create the letter "Q" using blocks in the Tetris game, we can divide it into three parts: the upper horizontal bar, the vertical bar, and the bottom horizontal bar. 
+We can start by creating the upper horizontal bar, which is a row block "b31". We want to position it at the center of the grid, so we can drop it at x_position=9.
+
+```
+ab_drop("b31", 9)
+```
+
+Next, we need to create the vertical bar, which is a column block "b13". We can drop it on the right side of the upper horizontal bar, at x_position=12.
+
+```
+ab_drop("b13", 12)
+```
+
+Finally, we create the bottom horizontal bar, which is another row block "b31". We can drop it on the right side of the vertical bar, at x_position=12.
+
+```
+ab_drop("b31", 12)
+```
+
+Following these steps will generate a structure in the level that resembles the capital letter "Q".

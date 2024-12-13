@@ -1,0 +1,28 @@
+To generate a stable structure that looks like the character "Z", we can use the `ab_drop()` function to drop the blocks in a strategic manner. Here is a step-by-step guide to achieve this goal while satisfying the given constraints:
+
+1. Initialize the structure as an empty grid:
+```py
+W = 20
+H = 16
+structure = [[' '] * W for _ in range(H)]
+```
+
+2. Drop the first block ('b31') at the center of slot 0:
+```py
+ab_drop('b31', 0)
+```
+This will create the bottom horizontal line of the character "Z".
+
+3. Drop the second block ('b13') at the center of slot 1:
+```py
+ab_drop('b13', 1)
+```
+This will create the vertical line of the character "Z".
+
+4. Drop the third block ('b31') at the center of slot 2:
+```py
+ab_drop('b31', 2)
+```
+This will create the top horizontal line of the character "Z".
+
+By following these steps, we can generate a stable structure that looks like the character "Z" while satisfying the stability and no boundary intrusion constraints.

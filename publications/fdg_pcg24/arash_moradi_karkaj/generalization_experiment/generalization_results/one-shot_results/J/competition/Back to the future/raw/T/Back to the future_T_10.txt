@@ -1,0 +1,46 @@
+To generate a stable structure that looks like the uppercase character "T" and meets all the hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty WxH grid using the provided code.
+2. Start by dropping a b31 block at the center slot (Slot 10) using the `ab_drop()` function.
+3. Check the stability of the structure after each drop using the stability check algorithm.
+4. If the structure is stable, proceed to the next step. Otherwise, adjust the drop positions to ensure stability.
+5. Drop a b11 block on top of the b31 block at Slot 10 using the `ab_drop()` function.
+6. Check the stability of the structure after the second drop.
+7. Drop a b13 block on top of the b11 block at Slot 10 using the `ab_drop()` function.
+8. Check the stability of the structure after the third drop.
+9. The structure now resembles the uppercase character "T" and meets the hard constraints.
+
+Here is an example implementation in Python:
+
+```python
+W = 20
+H = 16
+
+structure = [[' ']*W for _ in range(H)]
+
+def ab_drop(x, y):
+    drop_pos = (H-1, y)
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    structure[drop_pos[0]][drop_pos[1]] = x
+
+# Drop a b31 block at Slot 10
+ab_drop('b31', 10)
+
+# Drop a b11 block on top of the b31 block at Slot 10
+ab_drop('b11', 10)
+
+# Drop a b13 block on top of the b11 block at Slot 10
+ab_drop('b13', 10)
+
+# Check the stability of the structure after each drop
+# Implement the stability check algorithm here
+
+# Print the final structure
+for row in structure:
+    print(' '.join(row))
+```
+
+This implementation assumes that the stability check algorithm is already implemented. The stability check algorithm should iterate through the structure from bottom to top and check if each block has proper support from the blocks below it. If any block is not supported properly, the algorithm should return False. If all blocks are properly supported, the algorithm should return True.

@@ -1,0 +1,45 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Bottom horizontal block
+ab_drop('b11', 7)
+
+# Right vertical block
+ab_drop('b11', 8)
+ab_drop('b11', 8)
+
+# Middle horizontal block
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+
+# Right diagonal block
+ab_drop('b31', 10)
+
+# Top horizontal block
+ab_drop('b11', 11)
+ab_drop('b11', 11)
+ab_drop('b11', 11)
+
+# Left diagonal block
+ab_drop('b31', 12)
+
+# Top horizontal block
+ab_drop('b11', 13)
+ab_drop('b11', 13)
+ab_drop('b11', 13)
+
+# Left vertical block
+ab_drop('b11', 14)
+ab_drop('b11', 14)
+
+# Top horizontal block
+ab_drop('b11', 15)
+ab_drop('b11', 15)
+ab_drop('b11', 15)
+
+# Fill remaining space with empty blocks
+for slot in range(16, 20):
+    for layer in range(H):
+        ab_drop('b11', slot)
+```

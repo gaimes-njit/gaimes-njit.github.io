@@ -1,0 +1,15 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the horizontal block at the bottom layer (layer 0), aligning its center with slot 1
+ab_drop('b31', 1)
+
+# Drop the vertical block at layer 1, aligning its center with slot 0
+ab_drop('b13', 0)
+
+# Drop the vertical block at layer 2, aligning its center with slot 0
+ab_drop('b13', 0)
+
+# Drop the horizontal block at layer 3, aligning its center with slot 1
+ab_drop('b31', 1)
+```

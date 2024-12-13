@@ -1,0 +1,23 @@
+```
+def ab_drop(n):
+    if n == 0:
+        return ""
+    return "a" + ab_drop(n-1) + "b"
+
+# Database in the form of key-value pairs
+database = {
+    "A": ab_drop(7),
+    "B": ab_drop(6),
+    "C": ab_drop(5),
+    "D": ab_drop(4),
+    "E": ab_drop(3),
+    "F": ab_drop(2),
+    "G": ab_drop(1),
+    "H": ab_drop(0),
+}
+
+# Find and return the letter "V"
+sequence = database["A"] + database["D"] + database["E"] + database["D"] + database["G"]
+
+sequence
+```

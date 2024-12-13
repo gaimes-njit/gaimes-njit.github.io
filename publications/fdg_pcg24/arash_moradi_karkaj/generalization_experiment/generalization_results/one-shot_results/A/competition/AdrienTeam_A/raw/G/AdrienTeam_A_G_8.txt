@@ -1,0 +1,38 @@
+To construct a stable structure resembling "G" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the structure with an empty grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the first block ('b31') at slot 0 to create the vertical part of the "G":
+```
+ab_drop('b31', 0)
+```
+
+3. Drop two blocks ('b11') at slot 0 and slot 2 to create the horizontal part of the "G":
+```
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+```
+
+4. Drop two blocks ('b11') at slot 0 and slot 2 to create the lower part of the "G":
+```
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+```
+
+5. Drop a block ('b31') at slot 1 to complete the structure of the "G":
+```
+ab_drop('b31', 1)
+```
+
+Overall, the sequence of `ab_drop()` calls to create the "G" structure would be:
+```
+ab_drop('b31', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b31', 1)
+```

@@ -1,0 +1,37 @@
+First, we need to create the bottom bar of the 'U' shape. We can achieve this by dropping a row block ('b31') at the center position (x_position = 9).
+
+```
+ab_drop("b31", 9)
+ab_drop("b31", 7)
+ab_drop("b31", 10)
+```
+
+Next, we need to create the vertical lines of the 'U'. We can achieve this by dropping two column blocks ('b13') on both sides of the bottom bar.
+```
+ab_drop("b13", 8)
+ab_drop("b13", 10)
+ab_drop("b13", 6)
+ab_drop("b13", 11)
+```
+
+Finally, we need to create the horizontal line of the 'U'. We can achieve this by dropping a row block ('b31') on top of the vertical lines.
+```
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+```
+
+The complete implementation to create the 'U' shape in the level is as follows:
+
+```python
+ab_drop("b31", 9)
+ab_drop("b31", 7)
+ab_drop("b31", 10)
+ab_drop("b13", 8)
+ab_drop("b13", 10)
+ab_drop("b13", 6)
+ab_drop("b13", 11)
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+```

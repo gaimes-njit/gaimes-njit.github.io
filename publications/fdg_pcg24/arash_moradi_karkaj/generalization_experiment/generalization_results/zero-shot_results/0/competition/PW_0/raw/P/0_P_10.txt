@@ -1,0 +1,15 @@
+To create the capital letter "P" using the given block types and the defined environment, you can follow the steps below:
+
+1. Start by placing a b31 block at position (1,1) to form the vertical stem of the letter "P". Use the command `ab_drop(b31,1)`.
+
+2. Place another b31 block at position (4,1) to form the horizontal top part of the letter "P". Use the command `ab_drop(b31,4)`.
+
+3. Lastly, place a b13 block at position (2,3) to form the vertical bottom part of the letter "P". Use the command `ab_drop(b13,2)`.
+
+The complete stream of commands would look like this:
+
+```
+ab_drop(b31,1)
+ab_drop(b31,4)
+ab_drop(b13,2)
+```

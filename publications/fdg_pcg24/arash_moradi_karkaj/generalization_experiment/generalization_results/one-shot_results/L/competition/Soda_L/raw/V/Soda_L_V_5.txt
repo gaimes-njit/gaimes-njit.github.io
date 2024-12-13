@@ -1,0 +1,9 @@
+To create the letter V using the given ab_drop() function, we can break it down into three different blocks: two diagonal blocks (b11) and one base block (b31). Here is the code to generate the letter V:
+
+```
+ab_drop("b11", 9)
+ab_drop("b31", 9)
+ab_drop("b11", 11)
+```
+
+This code will drop the two diagonal blocks at positions (9, 0) and (11, 0), and then drop the base block at position (9, 1). This arrangement will create a stable structure that resembles the letter V.

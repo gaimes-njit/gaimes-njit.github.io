@@ -1,0 +1,33 @@
+First, let's initialize the structure with an empty grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+Next, we can start building the "R" shape from the bottom layer (layer 0) to the top layer (layer 15). Use the `ab_drop()` function to drop blocks vertically.
+
+To create the bottom part of the "R" shape, we can drop a horizontal block with a width of 2 units and a height of 1 unit:
+```
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+```
+
+To create the vertical part of the "R" shape, we can drop a vertical block with a width of 1 unit and a height of 2 units:
+```
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+```
+
+Finally, to create the top part of the "R" shape, we can drop a horizontal block with a width of 2 units and a height of 1 unit:
+```
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+```
+
+Here is the final code block with all the `ab_drop()` calls:
+```
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+```

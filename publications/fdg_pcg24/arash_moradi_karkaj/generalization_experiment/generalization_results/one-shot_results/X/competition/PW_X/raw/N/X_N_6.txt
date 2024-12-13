@@ -1,0 +1,11 @@
+Based on the given instructions, here is a stream of commands that generates the uppercase English letter "N":
+
+```
+ab_drop('b31',1)
+ab_drop('b13',4)
+ab_drop('b13',7)
+ab_drop('b31',11)
+ab_drop('b31',14)
+```
+
+This sequence of commands constructs the letter "N" by placing blocks in the specified positions within the allowed space. It starts with a horizontal block at the first position, followed by two vertical blocks at positions 4 and 7, and ends with two horizontal blocks at positions 11 and 14.

@@ -1,0 +1,21 @@
+Instructions
+Your task is to use the provided ab_drop(x,y) command to construct the uppercase English letter "X" in a Tetris-like environment with 2D gravity rules. The allowed space is a grid of 20W (indexed 1-19) and 16H (indexed 1-15), and you should start constructing the shapes from the X position 1. The three block types you can use are:
+
+1. b11: 1x1 square block with no orientation.
+2. b31: horizontal straight block with a width of 3 units and a height of 1 unit.
+3. b13: vertical straight block with a width of 1 unit and a height of 3 units.
+
+To construct the letter "X," you will need to strategically place the blocks in the correct positions and sequence. The final shape should resemble the uppercase letter "X" and follow the gravity rules. Be mindful of the height boundary, as exceeding it will result in an invalid shape.
+
+Your solution should include a stream of ab_drop() commands consecutively included between three backticks (```).
+
+Example solution for the letter "X":
+```
+ab_drop('b11', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b11', 3)
+```
+
+This solution starts with a square block ('b11') at position (1,1). Then, a vertical straight block ('b13') is placed at position (2,1) to form the left side of the "X." Next, a horizontal straight block ('b31') is placed at position (1,2) to connect the two sides of the "X." Another vertical straight block ('b13') is added at position (2,2) to complete the right side of the "X." Finally, a square block ('b11') is placed at position (3,1) to reinforce the center of the "X."

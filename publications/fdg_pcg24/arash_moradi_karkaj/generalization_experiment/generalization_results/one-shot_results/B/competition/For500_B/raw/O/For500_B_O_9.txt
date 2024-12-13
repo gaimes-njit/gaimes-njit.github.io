@@ -1,0 +1,10 @@
+ab_drop('b31', 9)  # Place a horizontal block in the middle
+ab_drop('b11', 9)  # Place a small block on top of the horizontal block
+ab_drop('b11', 10)  # Place a small block on the right side of the previous block
+ab_drop('b31', 9)  # Place another horizontal block in the middle
+ab_drop('b11', 9)  # Place another small block on top of the second horizontal block
+ab_drop('b11', 10)  # Place another small block on the right side of the previous block
+ab_drop('b31', 9)  # Place another horizontal block in the middle
+ab_drop('b11', 8)  # Place a small block on the left side of the previous block
+ab_drop('b11', 10)  # Place another small block on the right side of the previous block
+ab_drop('b31', 9)  # Place another horizontal block in the middle

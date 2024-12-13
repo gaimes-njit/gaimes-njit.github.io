@@ -1,0 +1,15 @@
+To generate the uppercase letter "I", the following stream of commands can be used:
+
+``` 
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+```
+This sequence of commands will create a vertical line with a height of 10 units, which represents the letter "I" in the grid.

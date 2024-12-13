@@ -1,0 +1,21 @@
+To create a structure like "P" using the ab_drop('blocktype',x position) command, we can break down the structure into smaller block patterns and position them accordingly. Here is the sequence of ab_drop commands to achieve the desired structure:
+
+- Drop a b13 block starting at (0, 0):
+ab_drop('b13', 0)
+
+- Drop a b31 block starting at (0, 0):
+ab_drop('b31', 4)
+
+- Drop a b11 block starting at (0, 4):
+ab_drop('b11', 8)
+
+- Drop a b13 block starting at (0, 4):
+ab_drop('b13', 12)
+
+- Drop a b11 block starting at (0, 8):
+ab_drop('b11', 16)
+
+- Drop a b31 block starting at (0, 8):
+ab_drop('b31', 20)
+
+This will create a structure exactly like "P" inside a 20*16 box.

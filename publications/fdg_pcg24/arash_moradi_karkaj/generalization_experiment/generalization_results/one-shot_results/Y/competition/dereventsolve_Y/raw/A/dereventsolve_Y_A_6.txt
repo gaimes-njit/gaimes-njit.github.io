@@ -1,0 +1,12 @@
+```
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b12", 5)
+ab_drop("b13", 5)
+ab_drop("b11", 5)
+ab_drop("b21", 4)
+ab_drop("b22", 4)
+ab_drop("b31", 5)
+ab_drop("b32", 5)
+ab_drop("b31", 5)
+```

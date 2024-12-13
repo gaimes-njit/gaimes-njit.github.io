@@ -1,0 +1,39 @@
+First, let's drop the bottom horizontal bar of the Z shape:
+
+```
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+ab_drop("b31", 7)
+```
+
+Next, let's drop the top horizontal bar of the Z shape:
+
+```
+ab_drop("b31", 11)
+ab_drop("b11", 10)
+ab_drop("b31", 9)
+```
+
+Finally, let's drop the vertical bar of the Z shape:
+
+```
+ab_drop("b13", 11)
+ab_drop("b11", 10)
+ab_drop("b13", 9)
+```
+
+The complete implementation is as follows:
+
+```
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+ab_drop("b31", 7)
+
+ab_drop("b31", 11)
+ab_drop("b11", 10)
+ab_drop("b31", 9)
+
+ab_drop("b13", 11)
+ab_drop("b11", 10)
+ab_drop("b13", 9)
+```

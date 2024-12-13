@@ -1,0 +1,12 @@
+To generate the uppercase letter 'H', you need to use the block types 'b31' and 'b13' in the defined environment. Here is the stream of commands to construct the letter 'H':
+
+```
+ab_drop('b31', 1)
+ab_drop('b31', 3)
+ab_drop('b13', 2)
+ab_drop('b31', 5)
+ab_drop('b31', 7)
+ab_drop('b13', 6)
+```
+
+This set of commands will place the blocks in the correct positions to form the letter 'H' within the allowed space boundaries.

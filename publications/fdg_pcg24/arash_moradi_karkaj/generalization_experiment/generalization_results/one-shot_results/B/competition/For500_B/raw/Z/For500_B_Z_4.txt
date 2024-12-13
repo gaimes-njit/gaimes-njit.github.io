@@ -1,0 +1,4 @@
+ab_drop('b31', 9)  # To create top horizontal line of Z
+ab_drop('b11', 8)  # To create left vertical line of Z
+ab_drop('b11', 10)  # To create right vertical line of Z
+ab_drop('b31', 9)  # To create bottom horizontal line of Z

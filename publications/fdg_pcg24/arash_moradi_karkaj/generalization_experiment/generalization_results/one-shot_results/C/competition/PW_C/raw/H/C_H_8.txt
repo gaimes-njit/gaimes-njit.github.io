@@ -1,0 +1,10 @@
+To generate the uppercase English letter "H", you can use the following commands:
+
+```
+ab_drop('b31', 1)   # Place a horizontal block to serve as the left vertical line of the letter
+ab_drop('b13', 2)   # Place a vertical block on top of the left line
+ab_drop('b13', 3)   # Place another vertical block below the left line
+ab_drop('b31', 4)   # Place a horizontal block to serve as the right vertical line of the letter
+```
+
+This sequence of commands will create the letter "H" in the Tetris-like environment while following the gravity rules.

@@ -1,0 +1,23 @@
+To create the letter "X" using the given block types, we can follow the following steps:
+
+1. Place a 1x1 block ('b11') at position (1, 4).
+2. Place a 1x1 block ('b11') at position (1, 6).
+3. Place a horizontal straight block ('b31') at position (1, 5).
+4. Place a 1x1 block ('b11') at position (1, 4).
+5. Place a 1x1 block ('b11') at position (1, 5).
+6. Place a horizontal straight block ('b31') at position (1, 5).
+7. Place a 1x1 block ('b11') at position (1, 4).
+8. Place a 1x1 block ('b11') at position (1, 6).
+
+The stream of ab_drop() commands would be:
+
+```
+ab_drop('b11',4)
+ab_drop('b11',6)
+ab_drop('b31',5)
+ab_drop('b11',4)
+ab_drop('b11',5)
+ab_drop('b31',5)
+ab_drop('b11',4)
+ab_drop('b11',6)
+```

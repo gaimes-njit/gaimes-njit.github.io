@@ -1,0 +1,47 @@
+To form a shape resembling the letter "O" using the available props and the ab_drop() function, we can follow these steps:
+
+1. Initialize the field with a width of 20 and a height of 16.
+
+2. Use the ab_drop() function to place bricks on the field to form the outer circle of the "O" shape. 
+
+- Start by placing a b31 brick vertically on the ground at x_position = 8. This will occupy cells (7, 0), (8, 0), and (9, 0).
+```
+ab_drop('b31', 8)
+```
+
+- Next, place two b13 bricks horizontally at y = 1 to form the top and bottom halves of the circle. For the top half, place the first b13 brick at x_position = 7, occupying cells (7, 1), (7, 2), and (7, 3). For the bottom half, place the second b13 brick at x_position = 9, occupying cells (9, 1), (9, 2), and (9, 3).
+```
+ab_drop('b13', 7)
+ab_drop('b13', 9)
+```
+
+3. Use the ab_drop() function to place bricks on the field to form the inner circle of the "O" shape.
+
+- Start by placing a b31 brick vertically on the ground at x_position = 8. This will occupy cells (7, 4), (8, 4), and (9, 4).
+```
+ab_drop('b31', 8)
+```
+
+- Next, place two b13 bricks horizontally at y = 5 to form the top and bottom halves of the inner circle. For the top half, place the first b13 brick at x_position = 7, occupying cells (7, 5), (7, 6), and (7, 7). For the bottom half, place the second b13 brick at x_position = 9, occupying cells (9, 5), (9, 6), and (9, 7).
+```
+ab_drop('b13', 7)
+ab_drop('b13', 9)
+```
+
+4. The "O" shape resembling structure has been formed, ensuring stability and avoiding boundary collisions.
+
+The final code would look like this:
+```python
+# Map initialization
+field = [[0 for _ in range(20)] for _ in range(16)]
+
+# Place bricks to form the outer circle
+ab_drop('b31', 8)
+ab_drop('b13', 7)
+ab_drop('b13', 9)
+
+# Place bricks to form the inner circle
+ab_drop('b31', 8)
+ab_drop('b13', 7)
+ab_drop('b13', 9)
+```

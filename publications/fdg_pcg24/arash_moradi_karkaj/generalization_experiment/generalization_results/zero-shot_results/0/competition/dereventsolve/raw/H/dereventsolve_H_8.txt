@@ -1,0 +1,41 @@
+```
+def ab_drop_left(prev_key, prev_value, curr_key, curr_value):
+    #Handle left drop from previous key to current key
+
+def ab_drop_right(prev_key, prev_value, curr_key, curr_value):
+    #Handle right drop from previous key to current key
+
+def generate_h(database):
+    result = []
+    keys = sorted(database.keys())
+    for i in range(1, len(keys)-1):
+        prev_key = keys[i-1]
+        prev_value = database[prev_key]
+
+        curr_key = keys[i]
+        curr_value = database[curr_key]
+
+        next_key = keys[i+1]
+        next_value = database[next_key]
+      
+        if curr_key.startswith('left_') and next_key.startswith('right_'):
+            ab_drop_left(prev_key, prev_value, curr_key, curr_value)
+            ab_drop_right(curr_key, curr_value, next_key, next_value)
+  
+    return result
+
+database = {
+    "left_top": "something",
+    "left_middle": "something",
+    "left_bottom": "something",
+    "center_top": "something",
+    "center_bottom": "something",
+    "right_top": "something",
+    "right_middle": "something",
+    "right_bottom": "something"
+}
+
+h_structure = generate_h(database)
+print(h_structure)
+```
+The `ab_drop_left()` and `ab_drop_right()` functions are placeholders where you can implement the actual "ab_drop" logic for your specific use case. The code above assumes that the database contains keys in a specific order to form the letter "H". You may need to modify the code if the database structure or key ordering is different.

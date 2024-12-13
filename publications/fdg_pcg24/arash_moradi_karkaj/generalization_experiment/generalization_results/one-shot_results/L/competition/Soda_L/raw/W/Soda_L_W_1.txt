@@ -1,0 +1,20 @@
+To generate the capital letter "W", we can break it down into three blocks and drop them in a specific order. Here is the complete implementation to achieve the best stability and similarity:
+
+```
+# The left bottom stroke of "W"
+ab_drop("b13", 1)
+ab_drop("b11", 0)
+ab_drop("b31", 2)
+
+# The right bottom stroke of "W"
+ab_drop("b31", 7)
+ab_drop("b11", 8)
+ab_drop("b13", 9)
+
+# The middle stroke of "W"
+ab_drop("b11", 5)
+ab_drop("b31", 6)
+ab_drop("b11", 4)
+```
+
+This implementation drops the blocks in a bottom-to-top fashion, ensuring stability. It also follows the specific order and positions needed to create the letter "W".

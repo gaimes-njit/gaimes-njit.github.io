@@ -1,0 +1,25 @@
+To generate a structure in the level that looks like the capital character "O" (TARGET), we can start by dropping a row block ("b31") at the center of the bottom row. This will form the base of the "O" shape.
+
+```
+ab_drop("b31", 9)
+```
+
+Next, we can drop a column block ("b13") on top of the row block, centered at the same position. This will create the vertical stroke of the "O" shape.
+
+```
+ab_drop("b13", 9)
+```
+
+Finally, we can drop another row block ("b31") on top of the column block, centered at the same position. This will complete the "O" shape.
+
+```
+ab_drop("b31", 9)
+```
+
+The full implementation to generate the "O" shape in the level is as follows:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+```

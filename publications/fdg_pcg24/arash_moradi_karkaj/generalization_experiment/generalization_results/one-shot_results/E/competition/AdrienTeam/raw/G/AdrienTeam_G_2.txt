@@ -1,0 +1,49 @@
+```
+structure = [[' ']*W for _ in range(H)] # Map Initialization
+
+# Drop the first block horizontally to create the base of "G"
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Drop the second block vertically to create the vertical part of "G"
+ab_drop('b13', 10)
+
+# Drop the third block horizontally to create the horizontal part of "G"
+ab_drop('b31', 9)
+ab_drop('b11', 10)
+ab_drop('b31', 11)
+
+# Drop the fourth block vertically to create the bottom part of the horizontal part of "G"
+ab_drop('b13', 11)
+
+# Drop the fifth block horizontally to create the top part of the horizontal part of "G"
+ab_drop('b31', 10)
+
+# Drop the sixth block vertically to create the top part of "G"
+ab_drop('b13', 10)
+ab_drop('b11', 11)
+
+# Drop the seventh block horizontally to create the bottom part of the vertical part of "G"
+ab_drop('b31', 10)
+
+# Drop the eighth block vertically to create the bottom part of the vertical part of "G"
+ab_drop('b13', 9)
+ab_drop('b11', 10)
+
+# Drop the ninth block horizontally to create the top part of the vertical part of "G"
+ab_drop('b31', 9)
+
+# Drop the tenth block vertically to create the middle part of "G"
+ab_drop('b13', 10)
+
+# Drop the eleventh block horizontally to create the bottom part of the middle part of "G"
+ab_drop('b31', 10)
+
+# Drop the twelfth block vertically to create the bottom part of the middle part of "G"
+ab_drop('b13', 9)
+ab_drop('b11', 10)
+
+# Drop the thirteenth block horizontally to create the top part of the middle part of "G"
+ab_drop('b31', 9)
+
+structure 

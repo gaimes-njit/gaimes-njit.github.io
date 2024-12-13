@@ -1,0 +1,41 @@
+To generate the letter "R" using the block types given, we can follow these steps:
+
+1. Place the first horizontal straight block (b31) at position 2:
+```
+ab_drop('b31', 2)
+```
+
+2. Place the first vertical straight block (b13) at position 1:
+```
+ab_drop('b13', 1)
+```
+
+3. Place the second vertical straight block (b13) at position 2:
+```
+ab_drop('b13', 2)
+```
+
+4. Place the first square block (b11) at position 4:
+```
+ab_drop('b11', 4)
+```
+
+5. Place the second square block (b11) at position 4:
+```
+ab_drop('b11', 4)
+```
+
+6. Place the second horizontal straight block (b31) at position 2:
+```
+ab_drop('b31', 2)
+```
+
+So the complete stream of commands to generate the letter "R" would be:
+```
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b31', 2)
+```

@@ -1,0 +1,20 @@
+To create the capital letter "H", we can follow these steps:
+
+1. Place the two vertical bars of the letter "H":
+```
+ab_drop("b31", 5)  # Place the left vertical bar
+ab_drop("b31", 9)  # Place the right vertical bar
+```
+
+2. Place the horizontal bar of the letter "H":
+```
+ab_drop("b13", 6)  # Place the horizontal bar
+```
+
+Complete Implementation:
+
+```
+ab_drop("b31", 5)  # Place the left vertical bar
+ab_drop("b31", 9)  # Place the right vertical bar
+ab_drop("b13", 6)  # Place the horizontal bar
+```

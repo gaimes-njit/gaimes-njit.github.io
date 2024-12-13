@@ -1,0 +1,51 @@
+To generate the uppercase English letter "O", we can use the block types as follows:
+
+1. Start by placing a horizontal straight block (b31) at position 1: `ab_drop('b31',1)`.
+2. Place a vertical straight block (b13) at position 5: `ab_drop('b13',5)`.
+3. Place another vertical straight block (b13) at position 6: `ab_drop('b13',6)`.
+4. Place a horizontal straight block (b31) at position 10: `ab_drop('b31',10)`.
+5. Place a vertical straight block (b13) at position 4: `ab_drop('b13',4)`.
+6. Place a vertical straight block (b13) at position 7: `ab_drop('b13',7)`.
+7. Place a horizontal straight block (b31) at position 15: `ab_drop('b31',15)`.
+8. Place a vertical straight block (b13) at position 8: `ab_drop('b13',8)`.
+9. Place a vertical straight block (b13) at position 12: `ab_drop('b13',12)`.
+10. Place a horizontal straight block (b31) at position 19: `ab_drop('b31',19)`.
+11. Place a vertical straight block (b13) at position 9: `ab_drop('b13',9)`.
+12. Place a vertical straight block (b13) at position 11: `ab_drop('b13',11)`.
+13. Place a horizontal straight block (b31) at position 5: `ab_drop('b31',5)`.
+14. Place a vertical straight block (b13) at position 8: `ab_drop('b13',8)`.
+15. Place a vertical straight block (b13) at position 12: `ab_drop('b13',12)`.
+16. Place a horizontal straight block (b31) at position 15: `ab_drop('b31',15)`.
+17. Place a vertical straight block (b13) at position 4: `ab_drop('b13',4)`.
+18. Place a vertical straight block (b13) at position 7: `ab_drop('b13',7)`.
+19. Place a horizontal straight block (b31) at position 10: `ab_drop('b31',10)`.
+20. Place a vertical straight block (b13) at position 5: `ab_drop('b13',5)`.
+21. Place a vertical straight block (b13) at position 6: `ab_drop('b13',6)`.
+22. Place a horizontal straight block (b31) at position 1: `ab_drop('b31',1)`.
+
+So the stream of commands to generate the uppercase English letter "O" is as follows:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',5)
+ab_drop('b13',6)
+ab_drop('b31',10)
+ab_drop('b13',4)
+ab_drop('b13',7)
+ab_drop('b31',15)
+ab_drop('b13',8)
+ab_drop('b13',12)
+ab_drop('b31',19)
+ab_drop('b13',9)
+ab_drop('b13',11)
+ab_drop('b31',5)
+ab_drop('b13',8)
+ab_drop('b13',12)
+ab_drop('b31',15)
+ab_drop('b13',4)
+ab_drop('b13',7)
+ab_drop('b31',10)
+ab_drop('b13',5)
+ab_drop('b13',6)
+ab_drop('b31',1)
+```

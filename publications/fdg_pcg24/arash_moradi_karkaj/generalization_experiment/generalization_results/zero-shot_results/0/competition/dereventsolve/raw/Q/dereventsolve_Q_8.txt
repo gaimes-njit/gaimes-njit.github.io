@@ -1,0 +1,149 @@
+```python
+def ab_drop():
+    return 'ab_drop'
+
+database = {
+    'A': {
+        'top': 'ab_drop ab_drop',
+        'middle': 'ab_drop    ab_drop',
+        'bottom': 'ab_drop       ab_drop',
+    },
+    'B': {
+        'top': 'ab_drop ab_drop',
+        'middle': 'ab_drop    ab_drop',
+        'bottom': 'ab_drop       ab_drop',
+    },
+    'C': {
+        'top': '         ab_drop',
+        'middle': 'ab_drop    ',
+        'bottom': '         ab_drop',
+    },
+    'D': {
+        'top': 'ab_drop ab_drop',
+        'middle': 'ab_drop    ab_drop',
+        'bottom': 'ab_drop       ab_drop',
+    },
+    'E': {
+        'top': 'ab_drop    ',
+        'middle': 'ab_drop   ',
+        'bottom': 'ab_drop       ',
+    },
+    'F': {
+        'top': 'ab_drop    ',
+        'middle': 'ab_drop   ',
+        'bottom': 'ab_drop       ',
+    },
+    'G': {
+        'top': '         ab_drop',
+        'middle': 'ab_drop    ab_drop',
+        'bottom': '         ab_drop',
+    },
+    'H': {
+        'top': 'ab_drop       ab_drop',
+        'middle': 'ab_drop    ab_drop',
+        'bottom': 'ab_drop       ab_drop',
+    },
+    'I': {
+        'top': 'ab_drop',
+        'middle': '   ',
+        'bottom': 'ab_drop',
+    },
+    'J': {
+        'top': '           ab_drop',
+        'middle': '           ',
+        'bottom': 'ab_drop ab_drop',
+    },
+    'K': {
+        'top': 'ab_drop    ab_drop',
+        'middle': 'ab_drop ',
+        'bottom': 'ab_drop    ab_drop',
+    },
+    'L': {
+        'top': 'ab_drop       ',
+        'middle': 'ab_drop   ',
+        'bottom': 'ab_drop       ab_drop',
+    },
+    'M': {
+        'top': 'ab_drop       ab_drop',
+        'middle': 'ab_drop ab_drop   ab_drop',
+        'bottom': 'ab_drop       ab_drop',
+    },
+    'N': {
+        'top': 'ab_drop       ab_drop',
+        'middle': 'ab_drop ab_drop   ab_drop',
+        'bottom': 'ab_drop       ab_drop',
+    },
+    'O': {
+        'top': '         ab_drop',
+        'middle': 'ab_drop    ab_drop',
+        'bottom': '         ab_drop',
+    },
+    'P': {
+        'top': 'ab_drop       ab_drop',
+        'middle': 'ab_drop    ab_drop',
+        'bottom': 'ab_drop       ',
+    },
+    'Q': {
+        'top': '         ab_drop',
+        'middle': 'ab_drop    ab_drop',
+        'bottom': '         ab_drop       ab_drop',
+    },
+    'R': {
+        'top': 'ab_drop       ab_drop',
+        'middle': 'ab_drop    ab_drop',
+        'bottom': 'ab_drop    ab_drop',
+    },
+    'S': {
+        'top': '         ab_drop',
+        'middle': 'ab_drop       ',
+        'bottom': '         ab_drop',
+    },
+    'T': {
+        'top': 'ab_drop',
+        'middle': '   ',
+        'bottom': 'ab_drop',
+    },
+    'U': {
+        'top': 'ab_drop       ab_drop',
+        'middle': '          ',
+        'bottom': 'ab_drop ab_drop',
+    },
+    'V': {
+        'top': 'ab_drop       ab_drop',
+        'middle': '          ',
+        'bottom': '   ab_drop',
+    },
+    'W': {
+        'top': 'ab_drop       ab_drop',
+        'middle': 'ab_drop ab_drop ab_drop',
+        'bottom': 'ab_drop       ab_drop',
+    },
+    'X': {
+        'top': 'ab_drop       ab_drop',
+        'middle': '   ab_drop',
+        'bottom': 'ab_drop       ab_drop',
+    },
+    'Y': {
+        'top': 'ab_drop       ab_drop',
+        'middle': '   ab_drop',
+        'bottom': '   ab_drop',
+    },
+    'Z': {
+        'top': 'ab_drop',
+        'middle': '    ab_drop',
+        'bottom': '       ab_drop',
+    },
+}
+
+result = ''
+
+letter = 'Q'
+if letter in database:
+    result += database[letter]['top']
+    result += '\n'
+    result += database[letter]['middle']
+    result += '\n'
+    result += database[letter]['bottom']
+
+print(result)
+```

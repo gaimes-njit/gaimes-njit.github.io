@@ -1,0 +1,14 @@
+To construct the uppercase English letter "L," we can use the following commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+Explanation:
+- The first command `ab_drop('b31', 1)` places the horizontal straight block at position 1.
+- The second command `ab_drop('b13', 1)` places the vertical straight block at position 1.
+- The third command `ab_drop('b13', 2)` places another vertical straight block at position 2.
+
+By following these commands, you can successfully generate the uppercase English letter "L" in the defined environment.

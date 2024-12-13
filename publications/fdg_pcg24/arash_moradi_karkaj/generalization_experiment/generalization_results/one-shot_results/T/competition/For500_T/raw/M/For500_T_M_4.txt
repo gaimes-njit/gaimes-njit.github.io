@@ -1,0 +1,4 @@
+ab_drop('b31', 9)  # Place the first part of the 'M' at the center
+ab_drop('b13', 9)  # Add the vertical part of the 'M'
+ab_drop('b11', 7)  # Add the left slant of the 'M'
+ab_drop('b11', 11)  # Add the right slant of the 'M'

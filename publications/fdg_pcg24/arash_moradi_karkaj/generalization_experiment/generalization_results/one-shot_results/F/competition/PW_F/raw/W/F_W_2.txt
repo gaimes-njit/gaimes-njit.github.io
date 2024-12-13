@@ -1,0 +1,16 @@
+To generate the uppercase letter "W", we can break it down into three parts: two diagonal lines and a horizontal line connecting them.
+
+Here are the commands to generate the letter "W":
+```
+ab_drop('b31', 1)  // Place the first block of the first diagonal line
+ab_drop('b13', 4)  // Place the second block of the first diagonal line
+ab_drop('b31', 7)  // Place the third block of the first diagonal line
+
+ab_drop('b31', 10)  // Place the first block of the horizontal line
+
+ab_drop('b31', 13)  // Place the first block of the second diagonal line
+ab_drop('b13', 16)  // Place the second block of the second diagonal line
+ab_drop('b31', 19)  // Place the third block of the second diagonal line
+```
+
+This sequence of commands will construct the letter "W" in the given environment.

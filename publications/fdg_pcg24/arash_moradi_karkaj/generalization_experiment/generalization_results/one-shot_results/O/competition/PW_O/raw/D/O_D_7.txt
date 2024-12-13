@@ -1,0 +1,20 @@
+```
+ab_drop('b31',1)  // Place the horizontal block at the first position along the width
+ab_drop('b11',4)  // Place the square block at the fourth position along the width
+ab_drop('b13',4)  // Place the vertical block at the fourth position along the width
+
+ab_drop('b11',2)  // Place the square block at the second position along the width
+ab_drop('b11',3)  // Place the square block at the third position along the width
+ab_drop('b11',5)  // Place the square block at the fifth position along the width
+
+ab_drop('b11',6)  // Place the square block at the sixth position along the width
+
+ab_drop('b13',6)  // Place the vertical block at the sixth position along the width
+
+ab_drop('b11',7)  // Place the square block at the seventh position along the width
+ab_drop('b11',8)  // Place the square block at the eighth position along the width
+ab_drop('b11',9)  // Place the square block at the ninth position along the width
+
+ab_drop('b31',10)  // Place the horizontal block at the tenth position along the width
+ab_drop('b11',13)  // Place the square block at the thirteenth position along the width
+```

@@ -1,0 +1,18 @@
+Here is an example of using the 'ab drop()' function to generate a stable structure resembling the letter "O":
+
+1. Drop a vertical block b13 from layer 15 at slot 10:
+ab drop(b13, 15, 10)
+
+2. Drop a horizontal block b31 from layer 12 at slot 10:
+ab drop(b31, 12, 10)
+
+3. Drop a vertical block b13 from layer 9 at slot 10:
+ab drop(b13, 9, 10)
+
+4. Drop a horizontal block b31 from layer 6 at slot 10:
+ab drop(b31, 6, 10)
+
+5. Drop a vertical block b13 from layer 3 at slot 10:
+ab drop(b13, 3, 10)
+
+This sequence of commands will create a stable structure resembling the letter "O" when viewed from the top. Adjust the slot and layer values as needed to fine-tune the appearance of the structure.

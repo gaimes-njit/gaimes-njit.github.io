@@ -1,0 +1,77 @@
+To generate a stable structure resembling the character "O" while meeting all hard constraints, we can follow these steps:
+
+Step 1: Initialize the structure as an empty grid.
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Place the base of the structure using two b11 blocks aligned in the middle.
+```python
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+```
+
+Step 3: Place two b31 blocks on top of the base blocks to form the sides of the structure.
+```python
+ab_drop('b31', 8)
+ab_drop('b31', 11)
+```
+
+Step 4: Place two b31 blocks on top of the previous blocks to form the top and bottom of the structure.
+```python
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+```
+
+Step 5: Place two b13 blocks on top of the previous blocks to form the left and right sides of the structure.
+```python
+ab_drop('b13', 9)
+ab_drop('b13', 10)
+```
+
+Step 6: The resulting structure will resemble the character "O" and meet all hard constraints.
+
+Here's the complete code for generating the structure:
+```python
+W = 20  # Width of the map
+H = 16  # Height of the map
+
+# Function to drop a block vertically
+def ab_drop(x, y):
+    # Initialize the drop position at the top of the map
+    drop_pos = (H-1, y)
+    
+    # Drop the block from the top and move it down until it lands on the base or another block
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    
+    # Place the block on the structure
+    structure[drop_pos[0]][drop_pos[1]] = x
+
+# Initialize the structure as an empty grid
+structure = [[' ']*W for _ in range(H)]
+
+# Place the base of the structure
+ab_drop('b11', 9)
+ab_drop('b11', 10)
+
+# Place the sides of the structure
+ab_drop('b31', 8)
+ab_drop('b31', 11)
+
+# Place the top and bottom of the structure
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+
+# Place the left and right sides of the structure
+ab_drop('b13', 9)
+ab_drop('b13', 10)
+
+# Print the resulting structure
+for row in structure:
+    print(' '.join(row))
+```
+
+This will generate a stable structure resembling the character "O" while satisfying all the hard constraints.

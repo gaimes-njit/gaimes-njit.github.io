@@ -1,0 +1,23 @@
+To create the structure of 'H' inside a 20*16 box using the ab_drop() command, you can follow these steps:
+
+1. Drop two b13 blocks at x positions 5 and 15. This will create the vertical lines of the 'H'.
+   - ab_drop('b13', 5)
+   - ab_drop('b13', 15)
+
+2. Drop a b31 block at x position 8. This will create the horizontal line of the 'H'.
+   - ab_drop('b31', 8)
+
+The resulting structure will look like the letter 'H' inside the 20*16 box:
+
+```
+               |
+               |
+               |
+               |
+    _______    |
+               |
+               |
+               |
+```
+
+Note: '#' symbol represents empty space in the box.

@@ -1,0 +1,988 @@
+{
+  "count": 7,
+  "similarityRate": 0.004603305432933017,
+  "trials": [
+    {
+      "id": "Soda_P_1.png",
+      "label": "P",
+      "similarity": 0.0014303618809208274
+    },
+    {
+      "id": "Soda_P_10.png",
+      "label": "P",
+      "similarity": 0.0037771675270050764
+    },
+    {
+      "id": "Soda_P_2.png",
+      "label": "P",
+      "similarity": 0.01076605636626482
+    },
+    {
+      "id": "Soda_P_3.png",
+      "label": "P",
+      "similarity": 0.004918048623949289
+    },
+    {
+      "id": "Soda_P_4.png",
+      "label": "P",
+      "similarity": 5.004555350751616e-05
+    },
+    {
+      "id": "Soda_P_6.png",
+      "label": "P",
+      "similarity": 0.009851096197962761
+    },
+    {
+      "id": "Soda_P_8.png",
+      "label": "P",
+      "similarity": 0.0014303618809208274
+    }
+  ],
+  "similarities": [
+    {
+      "id": "Soda_P_1.png",
+      "raws": [
+        {
+          "id": "Soda_P_1.png",
+          "label": "A",
+          "softmax_prob": 0.0005742295761592686
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "B",
+          "softmax_prob": 0.0007067598053254187
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "C",
+          "softmax_prob": 0.0006453515961766243
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "D",
+          "softmax_prob": 0.0010133656905964017
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "E",
+          "softmax_prob": 0.0005237018340267241
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "F",
+          "softmax_prob": 0.0013840271858498454
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "G",
+          "softmax_prob": 0.0012059060391038656
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "H",
+          "softmax_prob": 0.0013498715125024319
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "I",
+          "softmax_prob": 0.5795029997825623
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "J",
+          "softmax_prob": 0.014114398509263992
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "K",
+          "softmax_prob": 0.0010822467738762498
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "L",
+          "softmax_prob": 0.38439008593559265
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "M",
+          "softmax_prob": 0.0006520735914818943
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "N",
+          "softmax_prob": 0.0005186584312468767
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "O",
+          "softmax_prob": 0.0003924044140148908
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "P",
+          "softmax_prob": 0.0014303618809208274
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "Q",
+          "softmax_prob": 0.000428302533691749
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "R",
+          "softmax_prob": 0.0005256131407804787
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "S",
+          "softmax_prob": 0.0028739203698933125
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "T",
+          "softmax_prob": 0.0008159969584085047
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "U",
+          "softmax_prob": 0.000540774897672236
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "V",
+          "softmax_prob": 0.0009412766667082906
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "W",
+          "softmax_prob": 0.0005710008554160595
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "X",
+          "softmax_prob": 0.0007762708119116724
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "Y",
+          "softmax_prob": 0.000981603399850428
+        },
+        {
+          "id": "Soda_P_1.png",
+          "label": "Z",
+          "softmax_prob": 0.002058809855952859
+        }
+      ]
+    },
+    {
+      "id": "Soda_P_10.png",
+      "raws": [
+        {
+          "id": "Soda_P_10.png",
+          "label": "A",
+          "softmax_prob": 0.0006168206455186009
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "B",
+          "softmax_prob": 0.0004658888792619109
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "C",
+          "softmax_prob": 0.0014459291705861688
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "D",
+          "softmax_prob": 0.0009170533739961684
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "E",
+          "softmax_prob": 0.001957093132659793
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "F",
+          "softmax_prob": 0.006555525586009026
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "G",
+          "softmax_prob": 0.003305146936327219
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "H",
+          "softmax_prob": 0.8445609211921692
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "I",
+          "softmax_prob": 0.008230195380747318
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "J",
+          "softmax_prob": 0.010705950669944286
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "K",
+          "softmax_prob": 0.002217261353507638
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "L",
+          "softmax_prob": 0.00731747318059206
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "M",
+          "softmax_prob": 0.016939936205744743
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "N",
+          "softmax_prob": 0.0009993609273806214
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "O",
+          "softmax_prob": 0.0010448546381667256
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "P",
+          "softmax_prob": 0.0037771675270050764
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "Q",
+          "softmax_prob": 0.0009552050614729524
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "R",
+          "softmax_prob": 0.0007307524792850018
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "S",
+          "softmax_prob": 0.0017762993229553103
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "T",
+          "softmax_prob": 0.0007749483338557184
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "U",
+          "softmax_prob": 0.006941678002476692
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "V",
+          "softmax_prob": 0.0012281498638913035
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "W",
+          "softmax_prob": 0.07209311425685883
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "X",
+          "softmax_prob": 0.0005709553370252252
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "Y",
+          "softmax_prob": 0.0031993472948670387
+        },
+        {
+          "id": "Soda_P_10.png",
+          "label": "Z",
+          "softmax_prob": 0.0006729509914293885
+        }
+      ]
+    },
+    {
+      "id": "Soda_P_2.png",
+      "raws": [
+        {
+          "id": "Soda_P_2.png",
+          "label": "A",
+          "softmax_prob": 0.0060773263685405254
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "B",
+          "softmax_prob": 0.001363497693091631
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "C",
+          "softmax_prob": 0.01178266853094101
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "D",
+          "softmax_prob": 0.006812409497797489
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "E",
+          "softmax_prob": 0.006910310592502356
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "F",
+          "softmax_prob": 0.01072322204709053
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "G",
+          "softmax_prob": 0.08642354607582092
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "H",
+          "softmax_prob": 0.2919408679008484
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "I",
+          "softmax_prob": 0.12083043158054352
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "J",
+          "softmax_prob": 0.026427078992128372
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "K",
+          "softmax_prob": 0.006148084532469511
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "L",
+          "softmax_prob": 0.3086019456386566
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "M",
+          "softmax_prob": 0.02789708413183689
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "N",
+          "softmax_prob": 0.0050860303454101086
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "O",
+          "softmax_prob": 0.0019814111292362213
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "P",
+          "softmax_prob": 0.01076605636626482
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "Q",
+          "softmax_prob": 0.005095784552395344
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "R",
+          "softmax_prob": 0.0015530899399891496
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "S",
+          "softmax_prob": 0.01568712666630745
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "T",
+          "softmax_prob": 0.002829908626154065
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "U",
+          "softmax_prob": 0.005389174912124872
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "V",
+          "softmax_prob": 0.002478822134435177
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "W",
+          "softmax_prob": 0.02689437009394169
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "X",
+          "softmax_prob": 0.005166579503566027
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "Y",
+          "softmax_prob": 0.0021805709693580866
+        },
+        {
+          "id": "Soda_P_2.png",
+          "label": "Z",
+          "softmax_prob": 0.0029526047874242067
+        }
+      ]
+    },
+    {
+      "id": "Soda_P_3.png",
+      "raws": [
+        {
+          "id": "Soda_P_3.png",
+          "label": "A",
+          "softmax_prob": 0.0006784098222851753
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "B",
+          "softmax_prob": 0.0007807372603565454
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "C",
+          "softmax_prob": 0.0008832825697027147
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "D",
+          "softmax_prob": 0.0007654995424672961
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "E",
+          "softmax_prob": 0.004291357472538948
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "F",
+          "softmax_prob": 0.0037089174147695303
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "G",
+          "softmax_prob": 0.0013193275080993772
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "H",
+          "softmax_prob": 0.02003651298582554
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "I",
+          "softmax_prob": 0.8388727903366089
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "J",
+          "softmax_prob": 0.004986697807908058
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "K",
+          "softmax_prob": 0.004596130456775427
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "L",
+          "softmax_prob": 0.031234221532940865
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "M",
+          "softmax_prob": 0.0008381957886740565
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "N",
+          "softmax_prob": 0.00042503364966250956
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "O",
+          "softmax_prob": 0.0006744212587364018
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "P",
+          "softmax_prob": 0.004918048623949289
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "Q",
+          "softmax_prob": 0.003009918611496687
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "R",
+          "softmax_prob": 0.0005830034497193992
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "S",
+          "softmax_prob": 0.006716485135257244
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "T",
+          "softmax_prob": 0.0016914823791012168
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "U",
+          "softmax_prob": 0.0008106178720481694
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "V",
+          "softmax_prob": 0.0007178273517638445
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "W",
+          "softmax_prob": 0.0016845633508637547
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "X",
+          "softmax_prob": 0.004409180488437414
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "Y",
+          "softmax_prob": 0.0592670775949955
+        },
+        {
+          "id": "Soda_P_3.png",
+          "label": "Z",
+          "softmax_prob": 0.002100300043821335
+        }
+      ]
+    },
+    {
+      "id": "Soda_P_4.png",
+      "raws": [
+        {
+          "id": "Soda_P_4.png",
+          "label": "A",
+          "softmax_prob": 4.646501474780962e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "B",
+          "softmax_prob": 7.320158329093829e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "C",
+          "softmax_prob": 4.43050594185479e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "D",
+          "softmax_prob": 4.682220969698392e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "E",
+          "softmax_prob": 7.608022860949859e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "F",
+          "softmax_prob": 0.00015166547382250428
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "G",
+          "softmax_prob": 3.7961021007504314e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "H",
+          "softmax_prob": 5.993170998408459e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "I",
+          "softmax_prob": 0.9981606602668762
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "J",
+          "softmax_prob": 0.0001774323172867298
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "K",
+          "softmax_prob": 5.5136541050160304e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "L",
+          "softmax_prob": 6.621150532737374e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "M",
+          "softmax_prob": 4.474189336178824e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "N",
+          "softmax_prob": 4.404013088787906e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "O",
+          "softmax_prob": 5.451169636216946e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "P",
+          "softmax_prob": 5.004555350751616e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "Q",
+          "softmax_prob": 4.0578517655376345e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "R",
+          "softmax_prob": 4.6376342652365565e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "S",
+          "softmax_prob": 0.00011571369395824149
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "T",
+          "softmax_prob": 0.00012007376790279523
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "U",
+          "softmax_prob": 3.4457396395737305e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "V",
+          "softmax_prob": 6.529685924760997e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "W",
+          "softmax_prob": 5.458962914417498e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "X",
+          "softmax_prob": 6.655609467998147e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "Y",
+          "softmax_prob": 6.430739449569955e-05
+        },
+        {
+          "id": "Soda_P_4.png",
+          "label": "Z",
+          "softmax_prob": 0.00020298683375585824
+        }
+      ]
+    },
+    {
+      "id": "Soda_P_6.png",
+      "raws": [
+        {
+          "id": "Soda_P_6.png",
+          "label": "A",
+          "softmax_prob": 0.009836969897150993
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "B",
+          "softmax_prob": 0.008379964157938957
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "C",
+          "softmax_prob": 0.012888471595942974
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "D",
+          "softmax_prob": 0.01717963255941868
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "E",
+          "softmax_prob": 0.006519251503050327
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "F",
+          "softmax_prob": 0.01870829239487648
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "G",
+          "softmax_prob": 0.010351156815886497
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "H",
+          "softmax_prob": 0.011395234614610672
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "I",
+          "softmax_prob": 0.21228183805942535
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "J",
+          "softmax_prob": 0.018123643472790718
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "K",
+          "softmax_prob": 0.013583814725279808
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "L",
+          "softmax_prob": 0.4491634964942932
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "M",
+          "softmax_prob": 0.007596897426992655
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "N",
+          "softmax_prob": 0.005463884677737951
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "O",
+          "softmax_prob": 0.014388254843652248
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "P",
+          "softmax_prob": 0.009851096197962761
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "Q",
+          "softmax_prob": 0.005826123524457216
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "R",
+          "softmax_prob": 0.004838862456381321
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "S",
+          "softmax_prob": 0.020348992198705673
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "T",
+          "softmax_prob": 0.02726513147354126
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "U",
+          "softmax_prob": 0.006790469866245985
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "V",
+          "softmax_prob": 0.010791405104100704
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "W",
+          "softmax_prob": 0.007075062487274408
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "X",
+          "softmax_prob": 0.020111141726374626
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "Y",
+          "softmax_prob": 0.05606803670525551
+        },
+        {
+          "id": "Soda_P_6.png",
+          "label": "Z",
+          "softmax_prob": 0.015172860585153103
+        }
+      ]
+    },
+    {
+      "id": "Soda_P_8.png",
+      "raws": [
+        {
+          "id": "Soda_P_8.png",
+          "label": "A",
+          "softmax_prob": 0.0005742295761592686
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "B",
+          "softmax_prob": 0.0007067598053254187
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "C",
+          "softmax_prob": 0.0006453515961766243
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "D",
+          "softmax_prob": 0.0010133656905964017
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "E",
+          "softmax_prob": 0.0005237018340267241
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "F",
+          "softmax_prob": 0.0013840271858498454
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "G",
+          "softmax_prob": 0.0012059060391038656
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "H",
+          "softmax_prob": 0.0013498715125024319
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "I",
+          "softmax_prob": 0.5795029997825623
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "J",
+          "softmax_prob": 0.014114398509263992
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "K",
+          "softmax_prob": 0.0010822467738762498
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "L",
+          "softmax_prob": 0.38439008593559265
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "M",
+          "softmax_prob": 0.0006520735914818943
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "N",
+          "softmax_prob": 0.0005186584312468767
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "O",
+          "softmax_prob": 0.0003924044140148908
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "P",
+          "softmax_prob": 0.0014303618809208274
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "Q",
+          "softmax_prob": 0.000428302533691749
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "R",
+          "softmax_prob": 0.0005256131407804787
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "S",
+          "softmax_prob": 0.0028739203698933125
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "T",
+          "softmax_prob": 0.0008159969584085047
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "U",
+          "softmax_prob": 0.000540774897672236
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "V",
+          "softmax_prob": 0.0009412766667082906
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "W",
+          "softmax_prob": 0.0005710008554160595
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "X",
+          "softmax_prob": 0.0007762708119116724
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "Y",
+          "softmax_prob": 0.000981603399850428
+        },
+        {
+          "id": "Soda_P_8.png",
+          "label": "Z",
+          "softmax_prob": 0.002058809855952859
+        }
+      ]
+    }
+  ]
+}

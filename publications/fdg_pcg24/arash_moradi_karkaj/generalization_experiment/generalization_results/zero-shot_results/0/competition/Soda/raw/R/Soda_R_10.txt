@@ -1,0 +1,26 @@
+To create a structure that looks like the letter "R" in Tetris, we can break it down into smaller parts and build it from the bottom up. Here's a step-by-step implementation using the ab_drop() function:
+
+Step 1: Build the base of the letter "R" using a row block (b31).
+```python
+ab_drop("b31", 9)
+```
+
+Step 2: Add the middle vertical part of the letter "R" using a column block (b13).
+```python
+ab_drop("b13", 10)
+```
+
+Step 3: Add the top horizontal part of the letter "R" using a row block (b31).
+```python
+ab_drop("b31", 9)
+ab_drop("b31", 8)
+```
+
+Overall, the complete implementation to create a structure that looks like the letter "R" in Tetris would be:
+
+```python
+ab_drop("b31", 9)
+ab_drop("b13", 10)
+ab_drop("b31", 9)
+ab_drop("b31", 8)
+```

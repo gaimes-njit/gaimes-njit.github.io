@@ -1,0 +1,25 @@
+Example:
+
+```python
+ab_drop(b31, 7)
+ab_drop(b13, 7)
+ab_drop(b11, 8)
+ab_drop(b13, 13)
+ab_drop(b31, 14)
+ab_drop(b13, 14)
+ab_drop(b11, 15)
+```
+
+Explanation:
+
+In this example, we use the `ab_drop()` function to create a stable structure representing the capital letter "B". We strategically place blocks in the following order:
+
+1. Drop the block `b31` at `x_position` 7 to form the top horizontal segment of the letter "B".
+2. Drop the block `b13` at `x_position` 7 to form the left vertical segment of the letter "B".
+3. Drop the block `b11` at `x_position` 8 to form the middle segment of the letter "B".
+4. Drop the block `b13` at `x_position` 13 to form the right vertical segment of the letter "B".
+5. Drop the block `b31` at `x_position` 14 to form the bottom horizontal segment of the letter "B".
+6. Drop the block `b13` at `x_position` 14 to complete the right vertical segment of the letter "B".
+7. Drop the block `b11` at `x_position` 15 to complete the middle segment of the letter "B".
+
+The resulting structure forms a stable and aesthetically pleasing representation of the capital letter "B".

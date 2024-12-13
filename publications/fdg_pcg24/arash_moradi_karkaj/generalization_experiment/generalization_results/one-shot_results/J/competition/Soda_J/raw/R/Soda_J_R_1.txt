@@ -1,0 +1,29 @@
+The first step is to create the base of the capital letter "R". 
+
+To create the base, we will use a row block (b31) and position it in the bottom center of the grid.
+
+```
+ab_drop("b31", 9)
+```
+
+Now, let's create the vertical line of the "R". We will use a column block (b13) and position it to the right of the base.
+
+```
+ab_drop("b13", 10)
+```
+
+Finally, let's create the top diagonal line of the "R". We will use a row block (b31) and position it above the vertical line, slightly to the left.
+
+```
+ab_drop("b31", 9)
+```
+
+The complete implementation is as follows:
+
+```python
+ab_drop("b31", 9)
+ab_drop("b13", 10)
+ab_drop("b31", 9)
+```
+
+This implementation ensures the best stability and similarity to the capital letter "R".

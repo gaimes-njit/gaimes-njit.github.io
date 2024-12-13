@@ -1,0 +1,12 @@
+Using the ab_drop('blocktype', x position) command, we can create the structure like "V" inside a 20*16 box as follows:
+
+1. Drop a b11 block at position (0, 0) using the command: ab_drop('b11', 0)
+2. Drop a b11 block at position (4, 1) using the command: ab_drop('b11', 4)
+3. Drop a b11 block at position (8, 2) using the command: ab_drop('b11', 8)
+4. Drop a b11 block at position (12, 3) using the command: ab_drop('b11', 12)
+5. Drop a b13 block at position (2, 4) using the command: ab_drop('b13', 2)
+6. Drop a b13 block at position (10, 4) using the command: ab_drop('b13', 10)
+7. Drop a b31 block at position (6, 6) using the command: ab_drop('b31', 6)
+8. Drop a b31 block at position (4, 14) using the command: ab_drop('b31', 4)
+
+This will create a structure resembling the letter "V" inside the 20*16 box.

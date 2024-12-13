@@ -1,0 +1,17 @@
+To form the shape resembling the letter "L" using the available bricks, we can follow these steps:
+
+1. Initialize the field map as a 2D array of size 20x16, representing the 320 cells of the field. Set all cells to be initially empty.
+
+2. Place the b11 brick at the top right corner of the field, at position (18, 15). This will ensure that the structure does not exceed the boundaries of the field.
+
+3. Drop the b31 brick at position (18, 12) using the ab_drop('b31', 18) function. This will occupy cells (16, 12), (17, 12), and (18, 12).
+
+4. Drop the b13 brick at position (14, 9) using the ab_drop('b13', 14) function. This will occupy cells (14, 9), (14, 8), and (14, 7).
+
+5. Drop the b31 brick at position (9, 5) using the ab_drop('b31', 9) function. This will occupy cells (9, 5), (10, 5), and (11, 5).
+
+6. Drop the b13 brick at position (6, 5) using the ab_drop('b13', 6) function. This will occupy cells (6, 5), (6, 4), and (6, 3).
+
+7. Drop the b31 brick at position (1, 1) using the ab_drop('b31', 1) function. This will occupy cells (1, 1), (2, 1), and (3, 1).
+
+By following these steps, we will successfully form the shape resembling the letter "L" using the given bricks and satisfying the stability and boundary collision rules.

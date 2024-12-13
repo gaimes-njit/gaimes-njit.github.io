@@ -1,0 +1,20 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Bottom horizontal block
+ab_drop('b31', 9)
+
+# Vertical blocks at the end
+ab_drop('b11', 0)
+ab_drop('b11', 19)
+
+# Top horizontal block
+ab_drop('b31', 9)
+
+# Center vertical block
+ab_drop('b11', 9)
+
+# Top horizontal block extension
+ab_drop('b11', 10)
+ab_drop('b11', 8)
+```

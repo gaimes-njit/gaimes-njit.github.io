@@ -1,0 +1,12 @@
+To create a stable structure resembling "O", we can use the following sequence of `ab_drop()` calls:
+
+```
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+```
+
+This sequence starts from the bottom layer (layer 0) and builds upwards. The first `ab_drop()` call drops a horizontal block (`b31`) centered at slot 9, creating the base of the "O" structure. The next `ab_drop()` call drops another horizontal block on top of the previous one, centered at slot 10. This forms the second layer of the "O". The next two `ab_drop()` calls repeat the same process, creating two more layers. 
+
+Note: The provided sequence satisfies all the given constraints, including no boundary intrusion and the y-coordinate corresponding to the block's center.

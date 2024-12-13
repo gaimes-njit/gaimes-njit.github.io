@@ -1,0 +1,28 @@
+To create the structure exactly like "L" inside a 20*16 box, you can use the following ab_drop commands:
+
+1. Place the top horizontal block of the "L" (b31) starting at position (0,0):
+   ab_drop('b31', 0)
+
+2. Place the vertical part of the "L" (b13) starting at position (0,2):
+   ab_drop('b13', 2)
+
+Here is the visual representation of the structure:
+
+xxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxx
+xxxxX  xxxxxxxxxxxxx
+xxxxX  xxxxxxxxxxxxx
+xxxxX  xxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxx
+
+(Note: 'x' represents empty space and 'X' represents a block)

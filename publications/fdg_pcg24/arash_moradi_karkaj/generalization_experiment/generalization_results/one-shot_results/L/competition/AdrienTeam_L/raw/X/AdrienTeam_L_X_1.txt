@@ -1,0 +1,38 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Bottom left part of the 'X'
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b11', 2)
+
+# Bottom right part of the 'X'
+ab_drop('b31', 17)
+ab_drop('b13', 18)
+ab_drop('b11', 16)
+
+# Top part of the 'X'
+ab_drop('b11', 8)
+ab_drop('b11', 7)
+ab_drop('b11', 9)
+
+# Center part of the 'X'
+ab_drop('b11', 5)
+ab_drop('b11', 6)
+ab_drop('b11', 10)
+
+# Top left part of the 'X'
+ab_drop('b11', 4)
+ab_drop('b11', 3)
+
+# Top right part of the 'X'
+ab_drop('b11', 12)
+ab_drop('b11', 13)
+
+# Constraints:
+# The blocks do not extend beyond the map boundaries (no boundary intrusion)
+# The y-coordinate corresponds to the block's center
+# Avoid using ab_drop('b31',0)
+# Aim for a realistic and proportional shape for the "X"
+```

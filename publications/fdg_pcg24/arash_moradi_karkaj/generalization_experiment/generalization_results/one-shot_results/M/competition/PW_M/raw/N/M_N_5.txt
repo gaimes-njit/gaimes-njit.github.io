@@ -1,0 +1,28 @@
+To create the uppercase English letter "N", we can break it down into multiple steps.
+
+Step 1: Create the vertical bar
+We will start by creating the vertical bar on the left side of the letter "N". We will use the b13 block type to create a vertical straight block with a width of 1 unit and a height of 3 units. The vertical bar should start at position 1 and end at position 3.
+
+```
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b13',3)
+```
+
+Step 2: Create the diagonal lines
+Next, we will create the diagonal lines that form the main shape of the letter "N". We will use the b31 block type to create horizontal straight blocks with a width of 3 units and a height of 1 unit. The first diagonal line should start at position 1 and end at position 4, and the second diagonal line should start at position 4 and end at position 7.
+
+```
+ab_drop('b31',1)
+ab_drop('b31',2)
+ab_drop('b31',3)
+ab_drop('b31',4)
+ab_drop('b31',5)
+ab_drop('b31',6)
+ab_drop('b31',7)
+```
+
+Step 3: Check stability
+After creating the letter "N", it's important to check its stability based on the gravity rules. Make sure that all blocks are properly stacked and there are no invalid shapes that exceed the height boundary.
+
+```

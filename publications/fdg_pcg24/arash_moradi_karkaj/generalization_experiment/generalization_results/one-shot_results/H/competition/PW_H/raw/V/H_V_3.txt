@@ -1,0 +1,12 @@
+To generate the uppercase letter "V", we can use the following set of ab_drop() commands:
+
+```
+ab_drop('b31', 1) 
+ab_drop('b13', 2)
+ab_drop('b31', 3)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+```
+
+This set of commands will construct a stable "V" shape using the block types and gravity rules specified in the environment.

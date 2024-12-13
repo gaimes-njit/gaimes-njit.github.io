@@ -1,0 +1,6 @@
+ab_drop("b31", 10) # Place the upper part of the vertical stroke of the "N"
+ab_drop("b11", 9) # Place the middle part of the vertical stroke of the "N"
+ab_drop("b13", 8) # Place the lower part of the vertical stroke of the "N"
+ab_drop("b11", 11) # Place the middle part of the diagonal stroke of the "N"
+ab_drop("b31", 11) # Place the upper part of the diagonal stroke of the "N"
+ab_drop("b13", 11) # Place the lower part of the diagonal stroke of the "N"

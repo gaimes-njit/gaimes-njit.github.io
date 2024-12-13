@@ -1,0 +1,16 @@
+First, let's initialize the map by creating an empty 2D array with a size of 20x16:
+
+map = [[0] * 20 for _ in range(16)]
+
+Now, let's start by placing the b31 brick on the ground at x_position 8:
+
+ab_drop('b31', 8)
+
+This will occupy cells (7, 0), (8, 0), and (9, 0). Our map now looks like this:
+
+[[0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+[0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 

@@ -1,0 +1,35 @@
+First, let's initialize the field:
+
+```python
+field = [[0 for _ in range(20)] for _ in range(16)]
+```
+
+To form the letter "H", we can start by placing a b31 brick at the bottom:
+
+```python
+ab_drop('b31', 8)
+```
+
+We can then place a b11 brick on top of the b31 brick to form the vertical part of the "H":
+
+```python
+ab_drop('b11', 8)
+```
+
+Finally, we'll place another b31 brick next to the previous one to form the horizontal part of the "H":
+
+```python
+ab_drop('b31', 11)
+```
+
+The final code would look like this:
+
+```python
+field = [[0 for _ in range(20)] for _ in range(16)]
+
+ab_drop('b31', 8)
+ab_drop('b11', 8)
+ab_drop('b31', 11)
+```
+
+This code will generate the required "H" shape, satisfying the stability and boundary collision conditions.

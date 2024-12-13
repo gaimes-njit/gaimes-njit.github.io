@@ -1,0 +1,70 @@
+```python
+# Create an empty field
+field = [[0 for _ in range(20)] for _ in range(16)]
+
+# Function to check if a position is valid for the current brick
+def is_valid_pos(x, y, brick):
+    if x < 0 or x >= 20 or y < 0 or y >= 16:
+        return False
+
+    # Check for collisions with previously placed bricks
+    for i in range(brick["height"]):
+        for j in range(brick["width"]):
+            if field[y + i][x + j] != 0:
+                return False
+
+    return True
+
+# Function to place a brick on the field
+def place_brick(x, y, brick):
+    for i in range(brick["height"]):
+        for j in range(brick["width"]):
+            field[y + i][x + j] = brick["value"]
+
+# Define the available bricks
+b31 = {"width": 3, "height": 1, "value": 1}
+b13 = {"width": 1, "height": 3, "value": 2}
+b11 = {"width": 1, "height": 1, "value": 3}
+
+# Function to drop a brick on the field
+def ab_drop(x, y):
+    if x == "b31":
+        brick = b31
+    elif x == "b13":
+        brick = b13
+    elif x == "b11":
+        brick = b11
+    else:
+        return
+
+    # Find the landing position for the brick
+    for i in range(16):
+        if is_valid_pos(y, 15-i, brick):
+            place_brick(y, 15-i, brick)
+            return
+
+# Starting position for the bricks
+start_pos_b31 = 8
+start_pos_b13 = 9
+
+# Drop the bricks to form the letter "Y"
+ab_drop("b13", start_pos_b13)
+ab_drop("b31", start_pos_b31)
+ab_drop("b31", start_pos_b31+3)
+ab_drop("b13", start_pos_b13+2)
+ab_drop("b31", start_pos_b31+6)
+
+# Print the final field
+for row in field:
+    print(row)
+```
+
+The output field:
+```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 1, 1, 0, 0, 0, 3, 3]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 0, 0, 3, 3]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0

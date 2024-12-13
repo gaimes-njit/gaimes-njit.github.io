@@ -1,0 +1,39 @@
+To generate a stable structure that resembles the character "U" while meeting all hard constraints, we can follow these steps:
+
+Step 1: Initialize the structure as an empty grid:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Drop the b31 block to form the bottom part of the structure:
+```python
+ab_drop('b31', 9)  # Drop the b31 block centered at slot 9
+```
+
+Step 3: Drop the b13 blocks to form the left and right sides of the structure:
+```python
+ab_drop('b13', 2)  # Drop the first b13 block centered at slot 2
+ab_drop('b13', 16)  # Drop the second b13 block centered at slot 16
+```
+
+Step 4: Drop the b31 block on top of the previous b31 block to form the top part of the structure:
+```python
+ab_drop('b31', 9)  # Drop the b31 block centered at slot 9, on top of the previous b31 block
+```
+
+Step 5: Adjust the structure to meet the stability constraint:
+```python
+# Move the b13 blocks one layer higher to reduce the risk of collapsing
+structure[1][2] = ' '  # Remove the first b13 block from layer 1 and slot 2
+structure[1][16] = ' '  # Remove the second b13 block from layer 1 and slot 16
+structure[0][2] = 'b13'  # Place the first b13 block on layer 0 and slot 2
+structure[0][16] = 'b13'  # Place the second b13 block on layer 0 and slot 16
+```
+
+Step 6: Print the final structure:
+```python
+for row in structure:
+    print(' '.join(row))
+```
+
+The above steps ensure that a stable structure resembling the character "U" is generated while meeting all the given requirements.

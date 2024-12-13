@@ -1,0 +1,13 @@
+There are different ways to generate the letter "W" using the given block types and gravity rules. Here is one possible solution:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',4)
+ab_drop('b31',7)
+ab_drop('b13',10)
+ab_drop('b11',13)
+ab_drop('b13',14)
+ab_drop('b31',17)
+```
+
+This sequence of commands will construct the letter "W" in the grid, using the block types "b31" and "b13" where necessary.

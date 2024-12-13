@@ -1,0 +1,38 @@
+1. The letter "U" with asterisks can be drawn like this:
+
+*****
+*     *
+*     *
+*     *
+ ***** 
+
+2. Line-by-line, the asterisks and spaces generated in each row are as follows:
+- Row 1: 5 asterisks
+- Row 2: 1 asterisk, 5 spaces, 1 asterisk
+- Row 3: 1 asterisk, 5 spaces, 1 asterisk
+- Row 4: 1 asterisk, 5 spaces, 1 asterisk
+- Row 5: 5 asterisks
+
+3. Using 'x' for asterisks and 'y' for spaces, the representation becomes:
+- Row 1: xxxxx
+- Row 2: xyyyyx
+- Row 3: xyyyyx
+- Row 4: xyyyyx
+- Row 5: xxxxx
+
+4. Writing out each 'x' and 'y' side-by-side for each row:
+- Row 1: "xxxxx"
+- Row 2: "xxyyyyx"
+- Row 3: "xxyyyyx"
+- Row 4: "xxyyyyx"
+- Row 5: "xxxxx"
+
+5. Indicating the position of each variable in each row:
+- Row 1: "x-1; x-2; x-3; x-4; x-5"
+- Row 2: "x-1; x-2; y-3; y-4; y-5; y-6; x-7"
+- Row 3: "x-1; x-2; y-3; y-4; y-5; y-6; x-7"
+- Row 4: "x-1; x-2; y-3; y-4; y-5; y-6; x-7"
+- Row 5: "x-1; x-2; x-3; x-4; x-5"
+
+6. The sequence of `ab_drop` function calls for each row becomes:
+ab_drop("b11", 1) ab_drop("b11", 2) ab_drop("b11", 3) ab_drop("b11", 4) ab_drop("b11", 5)

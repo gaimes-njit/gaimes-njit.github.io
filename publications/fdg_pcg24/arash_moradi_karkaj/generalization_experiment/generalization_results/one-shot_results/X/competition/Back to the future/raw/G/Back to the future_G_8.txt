@@ -1,0 +1,12 @@
+To generate a stable structure that looks like the uppercase character "G", we can follow these steps:
+
+1. Initialize the structure as an empty grid: `structure = [[' ']*W for _ in range(H)]`.
+2. Drop the base block (b31) at position (7, 9): `ab_drop('b31', 9)`.
+3. Drop the vertical block (b13) at position (12, 9): `ab_drop('b13', 9)`.
+4. Drop the horizontal block (b31) at position (12, 6): `ab_drop('b31', 6)`.
+5. Drop the vertical block (b13) at position (12, 3): `ab_drop('b13', 3)`.
+6. Drop the horizontal block (b31) at position (7, 3): `ab_drop('b31', 3)`.
+7. Drop the square block (b11) at position (4, 3): `ab_drop('b11', 3)`.
+8. Drop the square block (b11) at position (4, 9): `ab_drop('b11', 9)`.
+
+The resulting structure will resemble the uppercase character "G" and meet all the hard constraints. The stability and boundary intrusion constraints are satisfied by carefully placing the blocks in a stable manner.

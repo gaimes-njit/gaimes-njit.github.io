@@ -1,0 +1,35 @@
+```
+# Initialize the structure
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the blocks to create the "R" structure
+ab_drop('b31', 0)
+ab_drop('b13', 2)
+ab_drop('b13', 1)
+ab_drop('b31', 0)
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b11', 1)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b11', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+```
+The above code will generate the structure resembling the letter "R" using the `ab_drop()` function while adhering to the given constraints.

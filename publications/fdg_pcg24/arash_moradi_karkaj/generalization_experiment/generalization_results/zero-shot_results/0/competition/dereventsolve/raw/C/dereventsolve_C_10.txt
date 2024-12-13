@@ -1,0 +1,32 @@
+```
+def ab_drop_c():
+  return []
+
+def find_c(database):
+  c_structure = []
+
+  for key, value in database.items():
+    if value == 'C':
+      c_structure.append(key)
+
+  return c_structure
+
+database = {
+  'a': 'A',
+  'b': 'B',
+  'c': 'C',
+  'd': 'D',
+  'e': 'E',
+  'f': 'F',
+  'g': 'G',
+  'h': 'H',
+  'i': 'I',
+  'j': 'J',
+}
+
+c_structure = find_c(database)
+ab_drop_c_calls = [f"ab_drop_{key}()" for key in c_structure]
+ab_drop_c_calls
+```
+
+The `find_c` function searches the database for the value 'C' and stores the corresponding keys in a list called `c_structure`. Then, we generate a list of `ab_drop` function calls by iterating over `c_structure` and appending the key values to the function calls. The final result is stored in the variable `ab_drop_c_calls`.

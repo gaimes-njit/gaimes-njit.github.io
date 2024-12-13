@@ -1,0 +1,27 @@
+To build the letter Y, we will break it down into three blocks: the top bar, the vertical pipe, and the bottom bar. We will stack them in the bottom-to-top order.
+
+1. For the bottom bar:
+We will use the column block "b13" and place it at x_position=9.
+```
+ab_drop("b13", 9)
+```
+
+2. For the vertical pipe:
+We will use the row block "b31" and place it at x_position=9.
+```
+ab_drop("b31", 9)
+```
+
+3. For the top bar:
+We will use the column block "b13" and place it at x_position=9.
+```
+ab_drop("b13", 9)
+```
+
+Here is the complete implementation (contains no indentation and only ab_drop() calls):
+
+```
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+```

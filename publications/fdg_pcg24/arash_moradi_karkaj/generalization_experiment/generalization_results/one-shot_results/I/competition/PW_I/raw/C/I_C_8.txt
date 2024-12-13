@@ -1,0 +1,15 @@
+To generate the uppercase English letter "C", you can use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b31',1)  # Place horizontal straight block at position 1
+ab_drop('b13',1)  # Place vertical straight block at position 1
+ab_drop('b11',2)  # Place square block at position 2
+ab_drop('b11',2)  # Place square block at position 2
+ab_drop('b11',3)  # Place square block at position 3
+ab_drop('b11',4)  # Place square block at position 4
+ab_drop('b11',4)  # Place square block at position 4
+ab_drop('b13',1)  # Place vertical straight block at position 1
+ab_drop('b31',1)  # Place horizontal straight block at position 1
+```
+
+This sequence of commands will create the letter "C" within the given boundaries of the grid.

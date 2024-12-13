@@ -1,0 +1,21 @@
+To generate the uppercase letter "Z", we can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 4)
+ab_drop('b11', 4)
+ab_drop('b31', 7)
+ab_drop('b13', 7)
+```
+
+Explanation:
+
+1. Place a horizontal straight block (`b31`) at position 1. This forms the top part of the letter "Z".
+2. Place a vertical straight block (`b13`) at position 2. This connects the top and bottom parts of the letter "Z".
+3. Place another horizontal straight block (`b31`) at position 4. This forms the bottom part of the letter "Z".
+4. Place a 1x1 square block (`b11`) at position 4. This completes the middle part of the letter "Z".
+5. Place another horizontal straight block (`b31`) at position 7. This extends the bottom part of the letter "Z".
+6. Place a vertical straight block (`b13`) at position 7. This connects the bottom part of the letter "Z" to the ground.
+
+By following these commands, you will be able to generate the uppercase letter "Z" within the defined environment while adhering to the gravity rules.

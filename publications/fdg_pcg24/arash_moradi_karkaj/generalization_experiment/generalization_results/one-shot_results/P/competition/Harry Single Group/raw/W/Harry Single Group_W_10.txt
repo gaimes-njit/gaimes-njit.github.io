@@ -1,0 +1,69 @@
+To create a structure resembling the letter "W" using the available props, we can break it down into three parts: the two outer branches and the middle section. 
+
+First, let's generate the two outer branches of the "W". We can start by placing a b31 brick horizontally at the bottom of the field, slightly offset from the left edge. We'll use an x_position of 2 for the first branch and 14 for the second branch. 
+
+Next, we'll place a b13 brick vertically on top of each b31 brick. We'll use an x_position of 2 for the first branch and 14 for the second branch. 
+
+Finally, we'll place a b13 brick vertically in the middle of the field, between the two branches. We'll use an x_position of 8 for the middle section.
+
+Here's the code to generate the structure:
+
+```python
+# Map initialization
+field = [[0 for _ in range(20)] for _ in range(16)]
+
+# Function to check if a cell is occupied
+def is_occupied(x, y):
+    if field[y][x] == 1:
+        return True
+    return False
+
+# Function to update the field with a brick
+def update_field(x, y, brick):
+    if brick == 'b31':
+        field[y][x-1] = 1
+        field[y][x] = 1
+        field[y][x+1] = 1
+    elif brick == 'b13':
+        field[y-2][x] = 1
+        field[y-1][x] = 1
+        field[y][x] = 1
+    elif brick == 'b11':
+        field[y][x] = 1
+
+# Function to drop a brick and update the field
+def ab_drop(brick, x_position):
+    if brick == 'b31':
+        y = 15
+        while not (is_occupied(x_position-1, y) or is_occupied(x_position, y) or is_occupied(x_position+1, y)):
+            y -= 1
+            if y < 0:
+                y = 0
+                break
+        update_field(x_position, y, 'b31')
+    elif brick == 'b13':
+        y = 15
+        while not (is_occupied(x_position, y-2) or is_occupied(x_position, y-1) or is_occupied(x_position, y)):
+            y -= 1
+            if y < 0:
+                y = 0
+                break
+        update_field(x_position, y, 'b13')
+    elif brick == 'b11':
+        y = 15
+        while not is_occupied(x_position, y):
+            y -= 1
+            if y < 0:
+                y = 0
+                break
+        update_field(x_position, y, 'b11')
+
+# Generate the "W" structure
+ab_drop('b31', 2)
+ab_drop('b13', 2)
+ab_drop('b31', 14)
+ab_drop('b13', 14)
+ab_drop('b13', 8)
+```
+
+After executing this code, the field will be updated with the occupied cells representing the structure resembling the letter "W".

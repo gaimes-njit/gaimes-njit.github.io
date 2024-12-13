@@ -1,0 +1,12 @@
+To generate a structure that looks like the letter "M", we can use the following sequence of `ab_drop` function calls:
+
+```
+ab_drop("left", "top")
+ab_drop("left", "middle")
+ab_drop("left", "bottom")
+ab_drop("right", "top")
+ab_drop("right", "middle")
+ab_drop("right", "bottom")
+```
+
+This sequence will create a structure that resembles the letter "M" by dropping points on the left and right sides in three sections: "top", "middle", and "bottom".

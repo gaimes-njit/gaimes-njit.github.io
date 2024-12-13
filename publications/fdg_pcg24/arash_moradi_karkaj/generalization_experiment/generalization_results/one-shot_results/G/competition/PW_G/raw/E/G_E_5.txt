@@ -1,0 +1,12 @@
+To create the uppercase English letter "E" using the provided block types and commands, we can follow the following steps:
+
+```
+ab_drop('b31', 2)  # Place the first horizontal block at position 2
+ab_drop('b13', 1)  # Place the first vertical block at position 1
+ab_drop('b13', 2)  # Place the second vertical block at position 2
+ab_drop('b11', 4)  # Place the first square block at position 4
+ab_drop('b11', 4)  # Place the second square block at position 4
+ab_drop('b31', 2)  # Place the second horizontal block at position 2
+```
+
+These commands will create the letter "E" in the Tetris-like environment with 2D gravity rules.

@@ -1,0 +1,35 @@
+To generate the uppercase English letter "U," we can follow these steps:
+
+1. Place two vertical straight blocks (b13) side by side at the beginning of the grid:
+   ```
+   ab_drop('b13', 1)
+   ab_drop('b13', 2)
+   ```
+
+2. Place a horizontal straight block (b31) on top of the two vertical blocks, aligning its middle unit with the middle unit of the two vertical blocks:
+   ```
+   ab_drop('b31', 2)
+   ```
+
+3. Place two 1x1 square blocks (b11) on each side of the horizontal block, just below the vertical blocks:
+   ```
+   ab_drop('b11', 1)
+   ab_drop('b11', 3)
+   ```
+
+4. Place two more horizontal straight blocks (b31) on top of the previous horizontal block, just below the top boundary of the grid:
+   ```
+   ab_drop('b31', 2)
+   ab_drop('b31', 2)
+   ```
+
+Overall, the stream of commands to generate the uppercase "U" would be:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b11', 1)
+ab_drop('b11', 3)
+ab_drop('b31', 2)
+ab_drop('b31', 2)
+```

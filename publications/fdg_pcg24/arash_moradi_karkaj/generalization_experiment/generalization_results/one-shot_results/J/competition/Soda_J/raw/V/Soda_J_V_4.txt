@@ -1,0 +1,12 @@
+To create the capital letter "V" using the ab_drop() function, we can break it down into three blocks: two diagonal blocks and one square block. 
+
+Here is the implementation:
+
+1. Drop the first diagonal block on the left side:
+ab_drop("b31", 5)
+
+2. Drop the square block just above the first diagonal block:
+ab_drop("b11", 6)
+
+3. Drop the second diagonal block on the right side:
+ab_drop("b31", 7)

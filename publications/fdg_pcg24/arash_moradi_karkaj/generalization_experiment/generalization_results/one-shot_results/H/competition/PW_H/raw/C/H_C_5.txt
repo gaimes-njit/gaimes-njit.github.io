@@ -1,0 +1,9 @@
+To generate the uppercase English letter "C", we can use the following commands:
+
+```
+ab_drop('b13', 1)  # Place the vertical straight block on the left side
+ab_drop('b31', 2)  # Place the horizontal straight block in the middle
+ab_drop('b13', 4)  # Place the vertical straight block on the right side
+```
+
+This will create a shape that resembles the letter "C" within the allowed space boundaries.

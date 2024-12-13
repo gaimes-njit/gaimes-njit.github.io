@@ -1,0 +1,47 @@
+To generate the shape resembling the letter "M", we can break it down into three parts - the two diagonal legs and the middle column. 
+
+First, we need to initialize the map. Since the field has a width of 20 and a height of 16, we can create a 2D array with dimensions 20x16 to represent the cells in the field.
+
+```python
+map = [[0 for _ in range(20)] for _ in range(16)]
+```
+
+Next, we can start generating the shape. Let's start with the left diagonal leg. 
+
+We can place a b13 brick at x_position = 7 to form the left diagonal leg. This will occupy the cells (7, 0), (7, 1), and (7, 2).
+
+```python
+ab_drop('b13', 7)
+```
+
+Now, let's move on to the right diagonal leg. 
+
+We can place a b13 brick at x_position = 12 to form the right diagonal leg. This will occupy the cells (12, 0), (12, 1), and (12, 2).
+
+```python
+ab_drop('b13', 12)
+```
+
+Finally, let's generate the middle column. 
+
+We can place a b31 brick at x_position = 10 to form the middle column. This will occupy the cells (9, 3), (10, 3), and (11, 3).
+
+```python
+ab_drop('b31', 10)
+```
+
+After executing these steps, the cells in the map representing the generated structure will be occupied. The final map will look like this:
+
+```
+    0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+   --------------------------------------------------
+0 | 0 0 0 0 0 0 0 1 0 0  0  0  0  0  0  0  0  0  0  0  
+1 | 0 0 0 0 0 0 0 1 0 0  0  0  0  0  0  0  0  0  0  0  
+2 | 0 0 0 0 0 0 0 1 0 0  0  0  0  0  0  0  0  0  0  0  
+3 | 0 0 0 0 0 0 0 1 0 0  1  1  1  0  0  0  0  0  0  0  
+4 | 0 0 0 0 0 0 0 1 0 0  0  0  0  0  0  0  0  0  0  0  
+5 | 0 0 0 0 0 0 0 1 0 0  0  0  0  0  0  0  0  0  0  0  
+6 | 0 0 0 0 0 0 0 1 0 0  0  0  0  0  0  0  0  0  0  0  
+7 | 0 0 0 0 0 0 0 0 0 0  0  0  0  0  0  0  0  0  0  0  
+8 | 0 0 0 0 0 0 0 0 0 0  0  0  0  0  0  0  0  0  0  0  
+9 | 0 0 0 0 0 0 0 0 0 0  0  0  0  0  0  0  0  0  

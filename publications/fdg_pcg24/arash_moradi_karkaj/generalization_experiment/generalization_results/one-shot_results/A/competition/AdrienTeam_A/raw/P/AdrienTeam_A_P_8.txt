@@ -1,0 +1,11 @@
+Here is a possible solution to generate the structure resembling "P" using the given constraints:
+
+```
+ab_drop('b31', 1)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+ab_drop('b13', 0)
+```
+
+This solution starts by dropping a horizontal block (`b31`) in slot 1 to form the vertical part of the "P". Then, three individual blocks (`b11`) are dropped in slots 0 and 2 to complete the top part of the "P". Finally, a vertical block (`b13`) is dropped in slot 0 to form the bottom part of the "P".

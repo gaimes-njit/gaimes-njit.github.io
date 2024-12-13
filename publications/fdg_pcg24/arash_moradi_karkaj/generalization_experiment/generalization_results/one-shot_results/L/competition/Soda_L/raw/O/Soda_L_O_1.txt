@@ -1,0 +1,29 @@
+To build the capital letter "O" in the level, we can use two row blocks and two column blocks. Here's the code to construct the letter "O" in the level:
+
+```
+# Bottom row block
+ab_drop("b31", 7)
+# Top row block
+ab_drop("b31", 7)
+# Left column block
+ab_drop("b13", 4)
+# Right column block
+ab_drop("b13", 12)
+```
+
+This code places the bottom row block first, followed by the top row block, then the left column block, and finally the right column block. This order ensures stability as the blocks are built from the bottom up.
+
+However, this structure may not look exactly like the letter "O" due to the limitations of the Tetris blocks. To achieve better similarity, we can slightly adjust the positions of the blocks. Here's an updated code that improves the similarity:
+
+```
+# Bottom row block
+ab_drop("b31", 6)
+# Top row block
+ab_drop("b31", 6)
+# Left column block
+ab_drop("b13", 3)
+# Right column block
+ab_drop("b13", 13)
+```
+
+By adjusting the positions of the blocks, the resulting structure will more closely resemble the letter "O".

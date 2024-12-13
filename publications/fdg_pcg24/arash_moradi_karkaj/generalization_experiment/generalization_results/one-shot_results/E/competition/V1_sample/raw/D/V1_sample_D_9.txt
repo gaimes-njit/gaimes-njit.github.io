@@ -1,0 +1,21 @@
+Here is an example code snippet using the ab drop() function to generate a stable structure resembling the letter "D":
+
+```python
+ab drop(b11, H-1, 2)
+ab drop(b11, H-2, 2)
+ab drop(b11, H-3, 2)
+ab drop(b11, H-4, 2)
+ab drop(b11, H-5, 2)
+
+ab drop(b31, H-6, 1)
+
+ab drop(b13, H-7, 1)
+ab drop(b13, H-9, 1)
+ab drop(b13, H-11, 1)
+
+ab drop(b11, H-12, 2)
+ab drop(b11, H-13, 2)
+ab drop(b11, H-14, 2)
+```
+
+In this code, we first drop 5 square blocks (b11) on layers H-1 to H-5 with their centers at slot 2 to form the vertical part of the letter "D". Next, we drop a horizontal block (b31) on layer H-6 at slot 1 to create the curved part of the letter "D". After that, we drop three vertical blocks (b13) on layers H-7, H-9, and H-11 at slot 1 to complete the curve of the letter "D". Finally, we drop 3 more square blocks on layers H-12 to H-14 with their centers at slot 2 to finish the structure.

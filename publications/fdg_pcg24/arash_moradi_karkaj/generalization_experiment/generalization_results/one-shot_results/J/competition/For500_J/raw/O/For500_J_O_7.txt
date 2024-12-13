@@ -1,0 +1,6 @@
+ab_drop('b11', 9) # Place a single unit block at slot 9
+ab_drop('b11', 10) # Place a single unit block at slot 10
+ab_drop('b11', 8) # Place a single unit block at slot 8
+ab_drop('b11', 11) # Place a single unit block at slot 11
+ab_drop('b13', 10) # Place a vertical block at slot 10
+ab_drop('b31', 10) # Place a horizontal block at slot 10

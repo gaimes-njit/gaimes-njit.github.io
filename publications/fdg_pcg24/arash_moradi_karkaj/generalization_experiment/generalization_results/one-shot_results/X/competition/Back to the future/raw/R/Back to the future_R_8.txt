@@ -1,0 +1,21 @@
+To generate a stable structure that looks like the uppercase character "R" while meeting all the hard constraints, you can follow these steps:
+
+1. Initialize the structure as an empty grid using the given function `structure = [[' ']*W for _ in range(H)]`.
+
+2. Start by dropping the b31 block at the center of the structure using `ab_drop('b31', W//2)`. This will create the vertical part of the "R".
+
+3. To create the horizontal part of the "R", drop b11 blocks starting from the top left corner and moving towards the bottom right corner. Use the `ab_drop('b11', y)` function, where y is the slot number.
+
+   - Drop a b11 block at slot 0 on the top layer.
+   - Drop a b11 block at slot 1 on the second layer.
+   - Drop a b11 block at slot 2 on the third layer.
+   - Repeat this process until reaching the bottom right corner.
+
+4. To create the diagonal part of the "R", drop b13 blocks diagonally starting from the bottom left corner and moving towards the top right corner. Use the `ab_drop('b13', y)` function, where y is the slot number.
+
+   - Drop a b13 block at slot 3 on the bottom layer.
+   - Drop a b13 block at slot 4 on the second layer.
+   - Drop a b13 block at slot 5 on the third layer.
+   - Repeat this process until reaching the top right corner.
+
+By following these steps and considering the stability constraints, you can generate a stable structure that looks like the uppercase character "R". Remember to perform stability checks before each `ab_drop()` call to ensure the structure remains stable throughout the generation process.

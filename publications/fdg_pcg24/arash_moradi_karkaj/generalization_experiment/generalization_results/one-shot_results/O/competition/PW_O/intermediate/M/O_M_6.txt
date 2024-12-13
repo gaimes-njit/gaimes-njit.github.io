@@ -1,0 +1,17 @@
+```
+ab_drop(b31, 2)
+ab_drop(b31, 4)
+ab_drop(b31, 6)
+ab_drop(b31, 8)
+ab_drop(b31, 10)
+ab_drop(b31, 12)
+ab_drop(b11, 3)
+ab_drop(b11, 5)
+ab_drop(b11, 7)
+ab_drop(b11, 9)
+ab_drop(b11, 11)
+ab_drop(b11, 13)
+ab_drop(b13, 1)
+ab_drop(b13, 15)
+```
+Explanation: To generate the letter 'M', we need to stack the horizontal straight blocks (b31) above each other to form the two outer vertical lines of the letter. Then, we stack the single square blocks (b11) in between the horizontal blocks to form the middle vertical line of the letter. Finally, we place the vertical straight blocks (b13) at the beginning and end of the letter to complete the shape.

@@ -1,0 +1,33 @@
+To generate a structure in the level that looks like the capital letter "G", we can break it down into smaller components and then assemble them together.
+
+1. Place the top horizontal bar of "G":
+```
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+```
+
+2. Place the middle horizontal bar of "G":
+```
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+ab_drop("b13", 10)
+ab_drop("b11", 11)
+```
+
+3. Place the bottom horizontal bar of "G":
+```
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+```
+
+Complete Implementation:
+```
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+ab_drop("b13", 10)
+ab_drop("b11", 11)
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+```

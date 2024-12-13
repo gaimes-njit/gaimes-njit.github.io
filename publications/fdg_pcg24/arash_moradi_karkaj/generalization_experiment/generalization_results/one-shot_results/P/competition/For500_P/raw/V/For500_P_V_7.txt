@@ -1,0 +1,9 @@
+ab_drop('b13', 9)  # Drop a vertical block at index 9
+ab_drop('b13', 8)  # Drop a vertical block at index 8
+ab_drop('b31', 9)  # Drop a horizontal block at index 9
+ab_drop('b31', 8)  # Drop a horizontal block at index 8
+ab_drop('b31', 7)  # Drop a horizontal block at index 7
+ab_drop('b31', 10)  # Drop a horizontal block at index 10
+ab_drop('b11', 8)  # Drop a square block at index 8
+ab_drop('b11', 9)  # Drop a square block at index 9
+ab_drop('b11', 10)  # Drop a square block at index 10

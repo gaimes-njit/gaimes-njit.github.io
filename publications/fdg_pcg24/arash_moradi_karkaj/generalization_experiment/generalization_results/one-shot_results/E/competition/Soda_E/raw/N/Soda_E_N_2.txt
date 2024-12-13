@@ -1,0 +1,36 @@
+# Step 1: Create the left vertical bar of the letter "N"
+
+ab_drop("b13", 0)
+ab_drop("b13", 1)
+ab_drop("b13", 2)
+
+# Step 2: Create the right vertical bar of the letter "N"
+
+ab_drop("b13", 5)
+ab_drop("b13", 6)
+ab_drop("b13", 7)
+
+# Step 3: Create the diagonal bar of the letter "N"
+# Start from the bottom and work our way up
+
+ab_drop("b11", 9)
+
+ab_drop("b11", 10)
+
+ab_drop("b11", 11)
+
+ab_drop("b11", 12)
+
+ab_drop("b11", 13)
+
+ab_drop("b11", 14)
+
+ab_drop("b11", 15)
+
+ab_drop("b11", 16)
+
+ab_drop("b11", 17)
+
+ab_drop("b11", 18)
+
+ab_drop("b11", 19)

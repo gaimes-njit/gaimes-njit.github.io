@@ -1,0 +1,17 @@
+To generate the uppercase letter "F" using the given block types and environment, you can follow these steps:
+
+1. Start by placing a b31 block at position (1, 1) using the ab_drop(31, 1) command.
+2. Place another b31 block at position (1, 2) using the ab_drop(31, 2) command.
+3. Place a b13 block at position (4, 2) using the ab_drop(13, 4) command.
+4. Place a b11 block at position (4, 3) using the ab_drop(11, 4) command.
+5. Place a b31 block at position (1, 4) using the ab_drop(31, 1) command.
+
+The stream of ab_drop commands to generate the letter "F" would be:
+
+```
+ab_drop(31, 1)
+ab_drop(31, 2)
+ab_drop(13, 4)
+ab_drop(11, 4)
+ab_drop(31, 1)
+```

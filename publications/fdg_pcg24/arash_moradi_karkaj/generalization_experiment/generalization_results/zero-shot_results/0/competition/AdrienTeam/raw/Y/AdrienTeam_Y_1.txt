@@ -1,0 +1,44 @@
+To create a stable structure resembling "Y" while adhering to the given constraints, we can follow these steps:
+
+1. Initialize the structure grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the first block, which will be a vertical block ('b13'). Then drop two horizontal blocks ('b11') on each side of the vertical block to form the arms of the "Y":
+```
+ab_drop('b13', 10)  # Drop the vertical block at slot 10
+ab_drop('b11', 9)   # Drop the first horizontal block for the left arm at slot 9
+ab_drop('b11', 11)  # Drop the second horizontal block for the right arm at slot 11
+```
+
+3. Create the diagonal part of the "Y" by dropping two horizontal blocks ('b11') above the vertical block, offset by one slot on each side:
+```
+ab_drop('b11', 8)   # Drop the first horizontal block for the diagonal at slot 8
+ab_drop('b11', 12)  # Drop the second horizontal block for the diagonal at slot 12
+```
+
+4. Extend the arms of the "Y" downwards by dropping a vertical block ('b13') below each horizontal block in the arms:
+```
+ab_drop('b13', 9)   # Drop the vertical block below the left arm at slot 9
+ab_drop('b13', 11)  # Drop the vertical block below the right arm at slot 11
+```
+
+5. Finally, drop a horizontal block ('b11') below the diagonal part to complete the base of the "Y":
+```
+ab_drop('b11', 10)  # Drop the horizontal block for the base below the diagonal at slot 10
+```
+
+The complete solution is as follows:
+
+```
+structure = [[' ']*W for _ in range(H)]
+ab_drop('b13', 10)
+ab_drop('b11', 9)
+ab_drop('b11', 11)
+ab_drop('b11', 8)
+ab_drop('b11', 12)
+ab_drop('b13', 9)
+ab_drop('b13', 11)
+ab_drop('b11', 10)
+```

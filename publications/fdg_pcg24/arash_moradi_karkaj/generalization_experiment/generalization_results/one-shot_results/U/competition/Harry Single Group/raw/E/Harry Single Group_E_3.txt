@@ -1,0 +1,37 @@
+To form the shape resembling the letter "E" using the available props and the ab_drop() function, we can follow these steps:
+
+1. Initialize the map as a 2D array with dimensions 20x16 to represent the field. Each cell can be initialized as empty.
+
+2. Drop a b31 brick at x_position = 5 using the ab_drop() function. This will occupy the cells (4, 0), (5, 0), and (6, 0).
+
+3. Drop a b31 brick at x_position = 5 again using the ab_drop() function. This will occupy the cells (4, 1), (5, 1), and (6, 1).
+
+4. Drop a b11 brick at x_position = 5 using the ab_drop() function. This will occupy the cell (5, 2).
+
+5. Drop a b31 brick at x_position = 5 using the ab_drop() function. This will occupy the cells (4, 3), (5, 3), and (6, 3).
+
+6. Drop a b31 brick at x_position = 5 again using the ab_drop() function. This will occupy the cells (4, 4), (5, 4), and (6, 4).
+
+7. Drop a b11 brick at x_position = 5 using the ab_drop() function. This will occupy the cell (5, 5).
+
+8. Drop a b11 brick at x_position = 5 using the ab_drop() function. This will occupy the cell (5, 6).
+
+9. Drop a b31 brick at x_position = 5 using the ab_drop() function. This will occupy the cells (4, 7), (5, 7), and (6, 7).
+
+10. Drop a b31 brick at x_position = 5 again using the ab_drop() function. This will occupy the cells (4, 8), (5, 8), and (6, 8).
+
+11. Drop a b11 brick at x_position = 5 using the ab_drop() function. This will occupy the cell (5, 9).
+
+12. Drop a b11 brick at x_position = 5 using the ab_drop() function. This will occupy the cell (5, 10).
+
+13. Drop a b31 brick at x_position = 5 using the ab_drop() function. This will occupy the cells (4, 11), (5, 11), and (6, 11).
+
+14. Drop a b31 brick at x_position = 5 again using the ab_drop() function. This will occupy the cells (4, 12), (5, 12), and (6, 12).
+
+15. Drop a b11 brick at x_position = 5 using the ab_drop() function. This will occupy the cell (5, 13).
+
+16. Drop a b11 brick at x_position = 5 using the ab_drop() function. This will occupy the cell (5, 14).
+
+17. Drop a b31 brick at x_position = 5 using the ab_drop() function. This will occupy the cells (4, 15), (5, 15), and (6, 15).
+
+After these steps, the cells in the field will be occupied as mentioned, forming a shape resembling the letter "E" while satisfying the stability and boundary collision requirements.

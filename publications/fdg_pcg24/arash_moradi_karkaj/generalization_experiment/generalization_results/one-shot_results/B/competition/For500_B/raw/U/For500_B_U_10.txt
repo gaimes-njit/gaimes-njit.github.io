@@ -1,0 +1,8 @@
+ab_drop('b11', 9) # First drop a b11 block to start building the structure
+ab_drop('b11', 9) # Drop another b11 block to stabilize the structure
+ab_drop('b31', 7) # Drop a b31 block to create the left side of the U shape
+ab_drop('b13', 7) # Drop a b13 block on top of the previous block to create the left side of the U shape
+ab_drop('b13', 7) # Drop another b13 block on top of the previous block to create the left side of the U shape
+ab_drop('b31', 11) # Drop a b31 block to create the right side of the U shape
+ab_drop('b13', 11) # Drop a b13 block on top of the previous block to create the right side of the U shape
+ab_drop('b13', 11) # Drop another b13 block on top of the previous block to create the right side of the U shape

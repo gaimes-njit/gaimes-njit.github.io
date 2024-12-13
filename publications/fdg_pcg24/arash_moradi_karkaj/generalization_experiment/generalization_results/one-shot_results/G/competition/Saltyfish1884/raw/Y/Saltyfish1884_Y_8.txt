@@ -1,0 +1,46 @@
+To generate a stable structure that resembles the character "Y" while meeting all the hard constraints, we will follow these steps:
+
+1. Initialize the structure as an empty grid:
+
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Place the base of the structure:
+
+```
+ab_drop('b11', 9)
+```
+
+3. Place the vertical part of the "Y" shape:
+
+```
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+ab_drop('b13', 9)
+```
+
+4. Place the horizontal part of the "Y" shape:
+
+```
+ab_drop('b31', 8)
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+```
+
+5. Place the blocks to ensure stability:
+
+```
+ab_drop('b11', 8)
+ab_drop('b11', 10)
+```
+
+6. The final structure will resemble the character "Y":
+
+```
+[[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '

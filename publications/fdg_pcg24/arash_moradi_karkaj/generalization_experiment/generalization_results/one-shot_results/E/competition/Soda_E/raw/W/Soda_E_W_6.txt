@@ -1,0 +1,41 @@
+# Initial Structure
+To start building the "W" shape, we need to create a stable base. We can achieve this by placing two row blocks ("b31") side by side at the bottom of the grid.
+
+```
+ab_drop("b31", 6)
+ab_drop("b31", 8)
+```
+
+# First W Shape
+To create the first "W" shape, we can place a column block ("b13") in the center of the grid and two row blocks ("b31") next to it, forming a triangular shape.
+
+```
+ab_drop("b13", 10)
+ab_drop("b31", 9)
+ab_drop("b31", 11)
+```
+
+# Second W Shape
+To create the second "W" shape, we can place a column block ("b13") above the first "W" shape, with its pivot aligned with the center row of the first "W" shape. Two row blocks ("b31") are placed on both sides of the column block.
+
+```
+ab_drop("b13", 10)
+ab_drop("b31", 9)
+ab_drop("b31", 11)
+```
+
+# Complete Implementation
+Here is the complete implementation to generate a structure that looks like a capital "W":
+
+```
+ab_drop("b31", 6)
+ab_drop("b31", 8)
+ab_drop("b13", 10)
+ab_drop("b31", 9)
+ab_drop("b31", 11)
+ab_drop("b13", 10)
+ab_drop("b31", 9)
+ab_drop("b31", 11)
+```
+
+This implementation creates a stable structure that resembles the letter "W".

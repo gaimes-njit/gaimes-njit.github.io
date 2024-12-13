@@ -1,0 +1,10 @@
+To create the uppercase English letter "L", we can use the following stream of commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 3)
+```
+
+This will place three vertical straight blocks (b13) at width position 1 and then a horizontal straight block (b31) at width position 3, forming the letter "L" shape.

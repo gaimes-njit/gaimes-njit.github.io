@@ -1,0 +1,11 @@
+First, I will create the base block of the "C" by dropping a row block "b31" at the bottom of the grid:
+
+ab_drop("b31", 9)
+
+Next, I will create the vertical bar of the "C" by dropping a column block "b13" on top of the base block:
+
+ab_drop("b13", 9)
+
+Finally, I will create the top horizontal bar of the "C" by dropping a row block "b31" on top of the vertical bar:
+
+ab_drop("b31", 9)

@@ -1,0 +1,34 @@
+1. Here is the drawing of the letter "H" with asterisks:
+```
+*     *
+*     *
+******
+*     *
+*     *
+```
+2. Line-by-line, verbally listing the asterisks and spaces generated in each row:
+- Row 1: 1 asterisk, 5 spaces, 1 asterisk
+- Row 2: 1 asterisk, 5 spaces, 1 asterisk
+- Row 3: 6 asterisks
+- Row 4: 1 asterisk, 5 spaces, 1 asterisk
+- Row 5: 1 asterisk, 5 spaces, 1 asterisk
+3. The asterisks are now referred to as "x" and the spaces as "y". Repeat step #2 with the new rules:
+- Row 1: 1x, 5y, 1x
+- Row 2: 1x, 5y, 1x
+- Row 3: 6x
+- Row 4: 1x, 5y, 1x
+- Row 5: 1x, 5y, 1x
+4. For each row, writing out each x and y side-by-side:
+- Row 1: xyyyyyx
+- Row 2: xyyyyyx
+- Row 3: xxxxxxx
+- Row 4: xyyyyyx
+- Row 5: xyyyyyx
+5. For each row, indicating the position of each variable:
+- Row 1: x-1; y-2; x-3; y-4; y-5; y-6; y-7; x-8
+- Row 2: x-1; y-2; x-3; y-4; y-5; y-6; y-7; x-8
+- Row 3: x-1; x-2; x-3; x-4; x-5; x-6; x-7
+- Row 4: x-1; y-2; x-3; y-4; y-5; y-6; y-7; x-8
+- Row 5: x-1; y-2; x-3; y-4; y-5; y-6; y-7; x-8
+6. For each row, returning the sequence of `ab_drop` function calls:
+ab_drop("b11", 1)ab_drop("b11", 2)ab_drop("b11", 3)ab_drop("b11", 4)ab_drop("b11", 5)ab_drop("b11", 6)ab_drop("b11", 7)ab_drop("b11", 8)ab_drop("b11", 9)ab_drop("b11", 10)ab_drop("b11", 11)ab_drop("b11", 12)ab_drop("b11", 13)ab_drop("b11", 14)ab_drop("b11", 15)ab_drop("b11", 16)ab_drop("b11", 17)ab_drop("b11", 18)ab_drop("b11", 19)

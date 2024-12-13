@@ -1,0 +1,12 @@
+To create the structure "R" inside a 20*16 box, you can use the following ab_drop commands:
+
+1. Place the vertical line of the "R":
+- ab_drop('b31', 2)  # Vertical line top
+- ab_drop('b31', 3)  # Vertical line middle
+- ab_drop('b31', 4)  # Vertical line bottom
+
+2. Place the horizontal line of the "R":
+- ab_drop('b13', 2)  # Horizontal line top
+- ab_drop('b31', 5)  # Horizontal line bottom
+
+Note: Adjust the x positions according to the starting position you desire.

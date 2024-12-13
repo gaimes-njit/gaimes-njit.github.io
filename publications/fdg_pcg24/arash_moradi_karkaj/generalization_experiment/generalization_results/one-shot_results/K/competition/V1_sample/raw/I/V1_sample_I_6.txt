@@ -1,0 +1,27 @@
+4. Steps to generate the "I" structure:
+
+Step 1: Drop a b13 block from layer H at slot 9.
+ab drop("b13", H, 9)
+
+Step 2: Drop a b13 block from layer H at slot 10.
+ab drop("b13", H, 10)
+
+Step 3: Drop a b13 block from layer H at slot 11.
+ab drop("b13", H, 11)
+
+Step 4: Drop a b31 block from layer H-3 at slot 9.
+ab drop("b31", H-3, 9)
+
+Step 5: Drop a b31 block from layer H-6 at slot 9.
+ab drop("b31", H-6, 9)
+
+Step 6: Drop a b31 block from layer H-9 at slot 9.
+ab drop("b31", H-9, 9)
+
+Step 7: Drop a b31 block from layer H-12 at slot 9.
+ab drop("b31", H-12, 9)
+
+Step 8: Drop a b11 block from layer H-15 at slot 9.
+ab drop("b11", H-15, 9)
+
+After following these steps, the "I" structure should be successfully generated using the ‘ab drop()’ function. Adjusting the slot and layer positions accordingly will help in creating a stable and accurate representation of the "I" structure.

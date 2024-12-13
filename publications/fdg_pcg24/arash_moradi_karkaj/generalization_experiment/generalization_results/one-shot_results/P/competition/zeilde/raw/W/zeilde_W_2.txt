@@ -1,0 +1,52 @@
+1. Drawing "W" with asterisks:
+```
+*     *     *
+*     *     *
+*  *  *  *
+* * * * *
+*     *
+```
+2. List of asterisks and spaces generated in each row:
+- Row 1: 1 asterisk, 5 spaces, 1 asterisk, 5 spaces, 1 asterisk
+- Row 2: 1 asterisk, 5 spaces, 1 asterisk, 5 spaces, 1 asterisk
+- Row 3: 1 asterisk, 1 space, 1 asterisk, 1 space, 1 asterisk, 1 space, 1 asterisk
+- Row 4: 1 asterisk, 1 space, 1 asterisk, 1 space, 1 asterisk, 1 space, 1 asterisk, 1 space, 1 asterisk
+- Row 5: 1 asterisk, 5 spaces, 1 asterisk
+
+3. Replacing asterisks with "x" and spaces with "y":
+- Row 1: 1x, 5y, 1x, 5y, 1x
+- Row 2: 1x, 5y, 1x, 5y, 1x
+- Row 3: 1x, 1y, 1x, 1y, 1x, 1y, 1x
+- Row 4: 1x, 1y, 1x, 1y, 1x, 1y, 1x, 1y, 1x
+- Row 5: 1x, 5y, 1x
+
+4. Writing out each x and y for each row:
+- Row 1: xyyyyxyyyyx
+- Row 2: xyyyyxyyyyx
+- Row 3: xyx\yx\yx\yx
+- Row 4: xyx\yx\yx\yx\yx
+- Row 5: xyyyyxyyyyx
+
+5. Indicating the position of each variable:
+- Row 1: x-1; y-2; y-3; y-4; y-5; y-6; x-7; y-8; y-9; y-10; y-11; x-12
+- Row 2: x-1; y-2; y-3; y-4; y-5; y-6; x-7; y-8; y-9; y-10; y-11; x-12
+- Row 3: x-1; y-2; x-3; y-4; x-5; y-6; x-7; y-8; x-9; y-10; x-11
+- Row 4: x-1; y-2; x-3; y-4; x-5; y-6; x-7; y-8; x-9; y-10; x-11; y-12; x-13
+- Row 5: x-1; y-2; y-3; y-4; y-5; y-6; x-7; y-8; y-9; y-10; y-11; x-12
+
+6. Sequence of `ab_drop` function calls:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 11)
+ab_drop("b11", 12)
+ab_drop("b11", 13)
+```

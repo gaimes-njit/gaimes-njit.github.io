@@ -1,0 +1,31 @@
+Here is a stream of ab_drop() commands to generate the uppercase English letter "B":
+
+```
+ab_drop('b11', 3)
+ab_drop('b31', 2)
+ab_drop('b11', 3)
+ab_drop('b31', 2)
+ab_drop('b11', 3)
+ab_drop('b31', 2)
+ab_drop('b11', 3)
+ab_drop('b31', 2)
+ab_drop('b11', 3)
+ab_drop('b13', 4)
+ab_drop('b11', 5)
+ab_drop('b31', 4)
+ab_drop('b11', 5)
+ab_drop('b31', 4)
+ab_drop('b11', 5)
+ab_drop('b31', 4)
+ab_drop('b11', 5)
+ab_drop('b13', 6)
+ab_drop('b11', 7)
+ab_drop('b31', 6)
+ab_drop('b11', 7)
+ab_drop('b31', 6)
+ab_drop('b11', 7)
+ab_drop('b31', 6)
+ab_drop('b11', 7)
+ab_drop('b13', 8)
+```
+Note: The indentation of the ab_drop() commands in the response is for better readability and is not necessary in the actual stream of commands.

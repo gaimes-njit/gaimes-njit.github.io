@@ -1,0 +1,28 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Bottom horizontal block
+ab_drop('b31', 8)
+
+# Middle horizontal block
+ab_drop('b31', 8)
+
+# Top horizontal block
+ab_drop('b31', 8)
+
+# Vertical block
+ab_drop('b13', 9)
+
+# Top vertical block
+ab_drop('b13', 9)
+
+# Vertical block
+ab_drop('b13', 9)
+
+# Top vertical block
+ab_drop('b13', 9)
+
+# Vertical block
+ab_drop('b13', 9)
+```

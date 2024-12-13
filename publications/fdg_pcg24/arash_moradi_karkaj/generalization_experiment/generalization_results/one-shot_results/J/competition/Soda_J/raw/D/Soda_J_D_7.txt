@@ -1,0 +1,16 @@
+To create the letter D, we can follow the same approach as for creating the letter E. We need to create a lying-down letter D in order to have a stable structure. 
+
+Here is the implementation to create the letter D in a stable manner:
+
+```
+# The base of the letter D
+ab_drop("b31", 7)
+
+# The vertical part of the letter D
+ab_drop("b13", 7)
+
+# The top part of the letter D
+ab_drop("b31", 8)
+```
+
+This implementation of the ab_drop() function will create the letter D in a stable manner and maximize the similarity with the target character.

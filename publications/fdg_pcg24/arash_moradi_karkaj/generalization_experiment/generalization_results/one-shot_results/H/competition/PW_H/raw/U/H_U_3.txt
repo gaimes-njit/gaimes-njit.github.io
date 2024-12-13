@@ -1,0 +1,22 @@
+To generate the uppercase letter "U" using the given block types and commands, you can follow the following steps:
+
+1. Place the left vertical part of the letter "U":
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b13', 5)
+```
+
+2. Place the horizontal part of the letter "U" connecting the left and right vertical parts:
+```
+ab_drop('b31', 2)
+```
+
+3. Place the right vertical part of the letter "U":
+```
+ab_drop('b13', 1)
+ab_drop('b13', 3)
+ab_drop('b13', 5)
+```
+
+This sequence of commands will generate the uppercase letter "U" in the Tetris-like environment.

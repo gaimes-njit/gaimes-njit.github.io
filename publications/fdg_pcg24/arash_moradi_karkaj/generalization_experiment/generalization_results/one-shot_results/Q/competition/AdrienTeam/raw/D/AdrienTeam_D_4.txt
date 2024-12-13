@@ -1,0 +1,31 @@
+The first step in building the structure resembling "D" is to initialize the map using the provided code. We will start building from the bottom layer (layer 0) to the top layer (layer 15):
+
+```
+structure = [[' ']*20 for _ in range(16)]
+```
+
+To create the shape of "D", we will use a combination of blocks `b31`, `b11`, and `b13`. We will drop the blocks vertically using the `ab_drop()` function.
+
+Here is the code to generate the structure resembling "D":
+
+```
+ab_drop('b11', 9)  # Drop a block on slot 9 (center) at layer 0
+ab_drop('b11', 9)  # Drop a block on slot 9 (center) at layer 1
+ab_drop('b11', 9)  # Drop a block on slot 9 (center) at layer 2
+ab_drop('b11', 9)  # Drop a block on slot 9 (center) at layer 3
+ab_drop('b11', 9)  # Drop a block on slot 9 (center) at layer 4
+ab_drop('b11', 9)  # Drop a block on slot 9 (center) at layer 5
+ab_drop('b31', 8)  # Drop a block on slot 8 (center) at layer 6
+ab_drop('b31', 8)  # Drop a block on slot 8 (center) at layer 7
+ab_drop('b31', 8)  # Drop a block on slot 8 (center) at layer 8
+ab_drop('b31', 8)  # Drop a block on slot 8 (center) at layer 9
+ab_drop('b31', 8)  # Drop a block on slot 8 (center) at layer 10
+ab_drop('b31', 8)  # Drop a block on slot 8 (center) at layer 11
+ab_drop('b31', 8)  # Drop a block on slot 8 (center) at layer 12
+ab_drop('b31', 8)  # Drop a block on slot 8 (center) at layer 13
+ab_drop('b31', 8)  # Drop a block on slot 8 (center) at layer 14
+ab_drop('b31', 8)  # Drop a block on slot 8 (center) at layer 15
+ab_drop('b11', 9)  # Drop a block on slot 9 (center) at layer 15
+```
+
+This will generate a stable structure resembling "D" while satisfying all the given constraints.

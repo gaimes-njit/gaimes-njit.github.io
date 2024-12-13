@@ -1,0 +1,42 @@
+To generate the letter "U" shape using the available props and the ab_drop(x, y) function, we can follow these steps:
+
+1. Initialize the map to represent the field with all cells empty.
+
+```
+map = []
+for i in range(16):
+    row = [' '] * 20
+    map.append(row)
+```
+
+2. Start by placing the horizontal brick (b31) at the bottom of the field. We can choose any x_position between 0 and 16 to ensure it doesn't exceed the boundaries.
+
+```
+ab_drop('b31', 5)
+```
+
+This places the b31 brick starting at x_position = 5, occupying cells (4, 0), (5, 0), and (6, 0).
+
+3. Place the vertical bricks (b13) on both sides of the horizontal brick to form the sides of the "U" shape. We can choose any x_position between 0 and 2 and between 15 and 17 to ensure they don't exceed the boundaries.
+
+```
+ab_drop('b13', 0)
+ab_drop('b13', 16)
+```
+
+This places the b13 bricks starting at x_position = 0 and 16, occupying cells (0, 0), (0, 1), (0, 2) and (16, 0), (16, 1), (16, 2) respectively.
+
+4. Check for stability and adjust if necessary:
+
+Since the bricks are placed vertically, each vertical brick is stable because it has an equal number of occupied cells on both sides of the pivot point (contact with the horizontal brick).
+
+5. Print the resulting "U" shape:
+
+```
+for row in map:
+    print(' '.join(row))
+```
+
+This will print the field with the "U" shape formed by the bricks.
+
+Note: The above steps assume that the ab_drop() function correctly handles the placement and collision detection of the bricks.

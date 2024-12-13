@@ -1,0 +1,44 @@
+To generate a stable structure that looks like the uppercase character "N" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the structure as an empty WxH grid:
+
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the b31 block at the bottom-left corner of the structure (slots 0-2, layer 0):
+
+```python
+ab_drop('b31', 1)
+```
+The `ab_drop()` function will drop the b31 block at layer 0, slot 1, resulting in the following structure:
+```
+[[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', 'b31', 'b31', 'b31', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ ...
+]
+```
+
+3. Drop the b11 block above the b31 block:
+
+```python
+ab_drop('b11', 1)
+```
+The `ab_drop()` function will drop the b11 block at the top of the b31 block, resulting in the following structure:
+```
+[[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', 'b31', 'b31', 'b31', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ [' ', 'b11', 'b11', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+ ...
+]
+```
+
+4. Drop the b31 block to the right of the previous b31 block:
+
+```python
+ab_drop('b31', 4)
+```
+The `ab_drop()` function will drop the b31 block to the right of the previous b31 block, resulting in the following structure:
+```
+[[' ', ' ', ' ', ' ', ' ',

@@ -1,0 +1,21 @@
+To generate the uppercase English letter "M", we will build it layer by layer. Here are the commands to achieve that:
+
+```python
+ab_drop('b31', 1)  # Bottom layer
+ab_drop('b31', 2)
+ab_drop('b13', 0)  # Middle layer
+ab_drop('b13', 2)
+ab_drop('b11', 1)  # Top layer
+ab_drop('b31', 8)  # Bottom layer
+ab_drop('b31', 9)
+ab_drop('b13', 7)  # Middle layer
+ab_drop('b13', 9)
+ab_drop('b11', 8)  # Top layer
+ab_drop('b31', 15)  # Bottom layer
+ab_drop('b31', 16)
+ab_drop('b13', 14)  # Middle layer
+ab_drop('b13', 16)
+ab_drop('b11', 15)  # Top layer
+```
+
+By executing these commands consecutively, you will be able to construct the letter "M" in the Tetris-like environment.

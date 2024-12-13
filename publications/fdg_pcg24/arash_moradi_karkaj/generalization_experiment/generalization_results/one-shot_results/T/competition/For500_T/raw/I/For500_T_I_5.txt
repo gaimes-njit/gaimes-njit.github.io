@@ -1,0 +1,4 @@
+ab_drop('b13', 9)  # Drop the top vertical block in the center
+ab_drop('b31', 8)  # Drop the horizontal block one position to the left of the center vertical block
+ab_drop('b31', 9)  # Drop the horizontal block in the center
+ab_drop('b31', 10)  # Drop the horizontal block one position to the right of the center vertical block

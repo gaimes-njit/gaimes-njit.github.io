@@ -1,0 +1,26 @@
+To generate a structure that looks like the letter "R" in the level, we can follow these steps:
+
+1. Create the vertical left part of the letter "R":
+   ab_drop("b31", 3)    # Creates a vertical pipe at x_position=3
+   ab_drop("b13", 4)    # Creates the bottom bar at x_position=4
+
+2. Create the diagonal line of the letter "R":
+   ab_drop("b11", 6)    # Creates the top-left block at x_position=6
+   ab_drop("b11", 7)    # Creates the middle-left block at x_position=7
+   ab_drop("b11", 8)    # Creates the bottom-left block at x_position=8
+
+3. Create the horizontal line of the letter "R":
+   ab_drop("b31", 8)    # Creates the top-right line at x_position=8
+   ab_drop("b13", 7)    # Creates the bottom-right bar at x_position=7
+
+Here is the complete implementation:
+
+```
+ab_drop("b31", 3)
+ab_drop("b13", 4)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b11", 8)
+ab_drop("b31", 8)
+ab_drop("b13", 7)
+```

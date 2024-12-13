@@ -1,0 +1,27 @@
+To generate the uppercase English letter "N" using the given command and block types, follow the steps below:
+
+1. Place the foundation of the letter by using the horizontal straight block (b31) at position 2:
+```
+ab_drop('b31', 2)
+```
+
+2. Place two vertical straight blocks (b13) on the left side of the foundation at positions 1 and 2:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+3. Place the top part of the letter by using the horizontal straight block (b31) at position 2:
+```
+ab_drop('b31', 2)
+```
+
+By following these steps, the uppercase English letter "N" will be generated in the Tetris-like environment.
+
+Final Solution:
+```
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```

@@ -1,0 +1,10 @@
+
+
+4. Method
+To create a stable structure that looks like the letter "Y", we will first drop a vertical block (b13) at the top center of the map (slot 10, layer 15). This will represent the stem of the letter "Y".
+
+Next, we will drop two horizontal blocks (b31) at layers 14 and 13, centered at slot 10. These blocks will represent the branches of the letter "Y".
+
+Finally, we will drop a square block (b11) at layer 12 and slot 9 to complete the top part of the letter "Y".
+
+By following these steps and using the ‘ab drop()’ function in the correct order and position, we can generate a stable structure that resembles the letter "Y" on the map.

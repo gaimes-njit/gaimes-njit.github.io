@@ -1,0 +1,27 @@
+To create a structure that looks like the capital letter "T", we need to drop blocks in a specific order and position. The stability of the blocks is also important, so we need to ensure that each block is well-supported.
+
+First, let's start by creating the base of the "T" shape. We will use a row block (b31) and place it in the center of the grid at x_position=9.
+
+```
+ab_drop("b31", 9)
+```
+
+Next, we will create the vertical bar of the "T". We will use a column block (b13) and place it at the top of the base, centered around the middle column. To do this, we will use x_position=9.
+
+```
+ab_drop("b13", 9)
+```
+
+Finally, we will create the horizontal bar of the "T". We will use a row block (b31) and place it on top of the vertical bar, centered around the middle row. To do this, we will use x_position=9.
+
+```
+ab_drop("b31", 9)
+```
+
+The complete implementation, without errors, is as follows:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+```

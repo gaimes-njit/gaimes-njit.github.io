@@ -1,0 +1,15 @@
+To create the capital letter "K" using the given block types, we can follow these steps:
+
+1. Place a b31 block at position (1, 1) to create the left vertical stroke of the "K" shape.
+2. Place a b13 block at position (4, 1) to create the horizontal stroke of the "K" shape.
+3. Place a b13 block at position (4, 4) to create the right vertical stroke of the "K" shape.
+
+The stream of commands to achieve this is as follows:
+
+```
+ab_drop(31, 1)
+ab_drop(13, 4)
+ab_drop(13, 4)
+```
+
+Make sure to execute these commands consecutively, one by one. The resulting shape will resemble the capital letter "K" within the allowed space boundaries of the grid.

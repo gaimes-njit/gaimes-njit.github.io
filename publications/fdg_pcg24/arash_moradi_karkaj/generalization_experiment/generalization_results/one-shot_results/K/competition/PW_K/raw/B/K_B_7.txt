@@ -1,0 +1,31 @@
+To generate the uppercase letter "B", we can break it down into four block types:
+
+1. The first block type is `b11`, which represents a 1x1 square block. We will use this block to create the top and bottom horizontal bars of the letter "B".
+
+2. The second block type is `b31`, which represents a horizontal straight block with a width of 3 units and a height of 1 unit. We will use this block to create the middle horizontal bar of the letter "B".
+
+3. The third block type is `b13`, which represents a vertical straight block with a width of 1 unit and a height of 3 units. We will use this block to create the two vertical bars of the letter "B".
+
+4. The fourth block type is an empty space represented by `b00`. We will use this to leave gaps in between the blocks where necessary.
+
+To generate the letter "B" using the `ab_drop()` command, follow the steps below:
+
+1. Start by placing a `b11` block at position `(4, 1)` using the command `ab_drop('b11', 4)`.
+
+2. Place another `b11` block at position `(6, 1)` using the command `ab_drop('b11', 6)`.
+
+3. Create the middle horizontal bar by placing a `b31` block at position `(5, 1)` using the command `ab_drop('b31', 5)`.
+
+4. Create the two vertical bars by placing a `b13` block at position `(4, 2)` using the command `ab_drop('b13', 4)`.
+
+5. Place another `b13` block at position `(4, 4)` to complete the vertical bars.
+
+The final stream of commands to generate the letter "B" would be:
+
+```
+ab_drop('b11', 4)
+ab_drop('b11', 6)
+ab_drop('b31', 5)
+ab_drop('b13', 4)
+ab_drop('b13', 4)
+```

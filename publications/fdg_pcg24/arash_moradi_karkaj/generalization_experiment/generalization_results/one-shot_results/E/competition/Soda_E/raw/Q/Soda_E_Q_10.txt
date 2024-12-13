@@ -1,0 +1,35 @@
+To create the shape of the letter "Q", we will need to drop multiple blocks in a specific order and position. We will start by building the outer outline of the letter, then fill in the inner parts. Here is the step-by-step implementation:
+
+1. Drop the top horizontal bar of "Q":
+```
+ab_drop("b13", 7)
+ab_drop("b13", 12)
+```
+
+2. Drop the left vertical bar of "Q":
+```
+ab_drop("b31", 10)
+ab_drop("b31", 9)
+ab_drop("b31", 8)
+```
+
+3. Drop the bottom horizontal bar of "Q":
+```
+ab_drop("b13", 7)
+ab_drop("b13", 12)
+```
+
+4. Drop the right vertical bar of "Q":
+```
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+ab_drop("b31", 12)
+```
+
+5. Fill in the inner part of "Q":
+```
+ab_drop("b11", 9)
+ab_drop("b11", 10)
+```
+
+By following these steps, we will create a structure that resembles the letter "Q". The blocks are dropped in a bottom-to-top fashion, ensuring stability, and the final structure will match the target shape.

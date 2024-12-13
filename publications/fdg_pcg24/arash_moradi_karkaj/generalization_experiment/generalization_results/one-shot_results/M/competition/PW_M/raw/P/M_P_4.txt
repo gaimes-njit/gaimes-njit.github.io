@@ -1,0 +1,31 @@
+To generate the uppercase English letter "P", we need to follow these steps:
+
+1. Start by dropping two vertical foundations using the 'b13' block type:
+```
+ab_drop('b13',1)
+ab_drop('b13',3)
+```
+
+2. Drop two horizontal blocks on top of the vertical foundations to create the top horizontal line of the letter 'P':
+```
+ab_drop('b31',1)
+ab_drop('b31',2)
+```
+
+3. Drop a vertical block next to the vertical foundations and the horizontal line to complete the vertical line of the letter 'P':
+```
+ab_drop('b13',4)
+ab_drop('b13',5)
+```
+
+4. The letter 'P' is now complete.
+
+Here is the final stream of commands to generate the uppercase English letter "P":
+```
+ab_drop('b13',1)
+ab_drop('b13',3)
+ab_drop('b31',1)
+ab_drop('b31',2)
+ab_drop('b13',4)
+ab_drop('b13',5)
+```

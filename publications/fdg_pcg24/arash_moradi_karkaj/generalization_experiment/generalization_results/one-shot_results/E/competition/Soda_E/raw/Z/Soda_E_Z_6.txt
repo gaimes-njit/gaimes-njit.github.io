@@ -1,0 +1,37 @@
+To generate a structure in the shape of the letter Z, we can break it down into three blocks: a vertical pipe, a diagonal bar, and a horizontal bar. We will start from the bottom and work our way up.
+
+First, we will drop the vertical pipe at the leftmost position:
+```
+ab_drop("b31", 0)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+```
+
+Next, we will drop the diagonal bar at the center position:
+```
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+ab_drop("b13", 11)
+```
+
+Finally, we will drop the horizontal bar at the rightmost position:
+```
+ab_drop("b31", 19)
+ab_drop("b11", 18)
+ab_drop("b11", 17)
+```
+
+The complete implementation is as follows:
+```
+ab_drop("b31", 0)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+ab_drop("b13", 11)
+
+ab_drop("b31", 19)
+ab_drop("b11", 18)
+ab_drop("b11", 17)
+```

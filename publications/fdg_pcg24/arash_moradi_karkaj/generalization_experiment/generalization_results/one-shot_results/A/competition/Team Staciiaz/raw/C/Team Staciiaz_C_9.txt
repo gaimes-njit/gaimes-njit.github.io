@@ -1,0 +1,27 @@
+To use the ```ab_drop()``` function to generate a stable structure that looks like the character "C", we can follow the following steps:
+
+1. First, let's initialize the structure grid with empty spaces:
+```python
+W = 20
+H = 16
+structure = [[' '] * W for _ in range(H)]
+```
+
+2. Next, we'll start by dropping the base of the "C" shape. We'll use the `ab_drop()` function to drop a `b31` block (3x1) at the center of the base layer (layer 0):
+```python
+ab_drop('b31', W // 2)
+```
+
+3. After dropping the base, we'll need to drop the curved part of the "C" shape. We'll use the `ab_drop()` function to drop a `b13` block (1x3) above the base, slightly to the left:
+```python
+ab_drop('b13', W // 2 - 1)
+```
+
+4. Finally, we'll drop another `b13` block (1x3) above the base, slightly to the right:
+```python
+ab_drop('b13', W // 2 + 1)
+```
+
+After following these steps, the `structure` grid will represent a stable structure that looks like the character "C". The final structure will meet the stability constraint and will not intrude on the boundary of the map.
+
+Note: The order and position of the block drops are crucial to ensure stability, as specified in the block-stacking problem.

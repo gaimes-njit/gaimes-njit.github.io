@@ -1,0 +1,22 @@
+To generate the uppercase letter "W", we can break it down into three blocks: two inclined lines and one straight line in the middle. Here's how we can achieve it:
+
+1. Place the first inclined line using horizontal straight blocks (b31) at positions 1 and 2:
+```
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+```
+
+2. Place the second inclined line using vertical straight blocks (b13) at positions 3 and 4:
+```
+ab_drop('b13', 3)
+ab_drop('b13', 4)
+```
+
+3. Place the straight line in the middle using horizontal straight blocks (b31) at positions 5, 6, and 7:
+```
+ab_drop('b31', 5)
+ab_drop('b31', 6)
+ab_drop('b31', 7)
+```
+
+By following these commands, you will generate the uppercase letter "W" in the specified environment.

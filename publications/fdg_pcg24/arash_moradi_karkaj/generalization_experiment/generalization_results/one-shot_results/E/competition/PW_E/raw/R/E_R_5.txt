@@ -1,0 +1,11 @@
+To generate the uppercase English letter "R", the following ab_drop commands can be used:
+
+```
+ab_drop('b31', 1)  // Create the vertical line of the letter
+ab_drop('b13', 1)  // Create the first diagonal line of the letter
+ab_drop('b31', 2)  // Create the horizontal line of the letter
+ab_drop('b13', 2)  // Create the second diagonal line of the letter
+ab_drop('b11', 2)  // Create the bottom left corner of the letter
+```
+
+This sequence of commands will generate the uppercase letter "R" in the specified environment.

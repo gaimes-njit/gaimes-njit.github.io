@@ -1,0 +1,31 @@
+To generate a stable structure that resembles the character "Q", we need to carefully consider the constraints and plan our block placements step by step. Here is a suggested approach:
+
+1. Start by initializing the structure as an empty WxH grid using the provided code snippet:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Based on the stability constraint, we need to ensure that each block is placed on a solid base (b11 or b13 blocks). 
+
+3. To create the circular shape of the letter "Q", we can use a combination of b31 and b13 blocks.
+
+4. Begin by placing a b31 block on the base (layer 0) in a suitable slot to form the base of the circular shape. For example:
+```python
+ab_drop('b31', 5)  # Adjust the slot number as needed
+```
+
+5. Drop a b13 block on top of the previously placed b31 block to create the vertical part of the "Q". For example:
+```python
+ab_drop('b13', 5)  # Align the slot number with the previous block
+```
+
+6. Finally, drop another b31 block on top of the existing structure to complete the shape of the "Q". For example:
+```python
+ab_drop('b31', 5)  # Align the slot number with the previous block
+```
+
+7. With each block drop, the ab_drop() function will handle the precise placement and ensure stability. Adjust the slot numbers as needed to achieve the desired shape of the "Q".
+
+8. Test and repeat the process as necessary until the desired structure is achieved.
+
+Note: The example provided in part 6 is for generating the letter "I". You will need to modify the code according to the specific shape and structure you want to generate, which is the letter "Q" in this case.

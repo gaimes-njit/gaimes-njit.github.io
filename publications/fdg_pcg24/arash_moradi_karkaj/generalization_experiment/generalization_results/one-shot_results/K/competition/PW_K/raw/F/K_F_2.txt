@@ -1,0 +1,10 @@
+To generate the uppercase letter "F" in the given environment, we can use the following stream of commands:
+
+```python
+ab_drop('b31',1)   # Place the horizontal block at position 1
+ab_drop('b11',2)   # Place the first vertical block at position 2
+ab_drop('b11',3)   # Place the second vertical block at position 3
+ab_drop('b11',1)   # Place the third vertical block at position 1
+```
+
+This sequence of commands will create the uppercase letter "F" in the Tetris-like environment.

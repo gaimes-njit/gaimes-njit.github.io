@@ -1,0 +1,23 @@
+The structure "W" can be created inside a 20*16 box using the following sequence of ab_drop commands:
+
+ab_drop('b13', 0)  # First Line
+ab_drop('b13', 2)
+ab_drop('b13', 4)
+ab_drop('b13', 6)
+ab_drop('b13', 8)
+ab_drop('b13', 14)  # Second Line
+ab_drop('b13', 16)
+ab_drop('b13', 18)
+ab_drop('b13', 20)
+ab_drop('b31', 10)  # Middle Line
+ab_drop('b31', 12)
+ab_drop('b31', 14)  # Fourth Line
+ab_drop('b13', 8)
+ab_drop('b13', 10)
+ab_drop('b13', 12)
+ab_drop('b13', 14)  # Fifth Line
+ab_drop('b13', 16)
+ab_drop('b13', 18)
+ab_drop('b13', 20)
+
+This sequence of commands will create the structure "W" with the specified blocktypes inside a 20*16 box, where the area starts counting from 0,0.

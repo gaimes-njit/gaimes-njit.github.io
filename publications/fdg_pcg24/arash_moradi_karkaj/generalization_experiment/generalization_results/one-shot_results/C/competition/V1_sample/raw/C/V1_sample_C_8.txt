@@ -1,0 +1,21 @@
+To create a stable structure resembling the letter "C" using the 'ab drop()' function, follow these steps:
+
+1. Start by dropping a b13 block at slot 7 in layer 15 using the 'ab drop()' function. This block represents the top curve of the letter "C".
+
+ab drop(b13, 15, 7)
+
+2. Next, drop a b13 block at slot 7 in layer 14 to connect the top curve to the lower curve of the letter "C".
+
+ab drop(b13, 14, 7)
+
+3. Now, drop a b13 block at slot 8 in layer 14 to extend the lower curve of the letter "C".
+
+ab drop(b13, 14, 8)
+
+4. Finally, drop a b31 block at slots 6, 7, and 8 in layer 14 to complete the base of the letter "C".
+
+ab drop(b31, 14, 6)
+ab drop(b31, 14, 7)
+ab drop(b31, 14, 8)
+
+By following these steps and dropping the blocks in the specified positions and order, you will create a stable structure that resembles the letter "C" using the 'ab drop()' function.

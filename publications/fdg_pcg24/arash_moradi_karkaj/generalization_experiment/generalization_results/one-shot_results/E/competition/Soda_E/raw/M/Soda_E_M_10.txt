@@ -1,0 +1,41 @@
+First, let's start with the baseline implementation of the letter "M". We will build it using the natural orientation (top-down).
+
+```
+# The left side of the M
+ab_drop("b13", 6)
+ab_drop("b11", 7)
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+ab_drop("b13", 10)
+
+# The right side of the M
+ab_drop("b13", 12)
+ab_drop("b11", 13)
+ab_drop("b13", 14)
+ab_drop("b11", 15)
+ab_drop("b13", 16)
+```
+
+This will create a stable "M" structure in the level.
+
+However, this implementation can be improved to achieve a better similarity score by considering the flipping technique mentioned in the hints section. So, let's try to achieve the same "M" structure using the flipped orientation.
+
+```
+# The top horizontal bar of the M
+ab_drop("b13", 6)
+ab_drop("b11", 7)
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+ab_drop("b13", 10)
+
+# The bottom horizontal bar of the M
+ab_drop("b13", 6)
+ab_drop("b11", 7)
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+ab_drop("b13", 10)
+```
+
+This implementation will also create a stable "M" structure in the level.
+
+Now, we have two different implementations that result in the same "M" structure. We can choose either one based on stability and similarity.

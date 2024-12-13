@@ -1,0 +1,6 @@
+ab_drop('b31',5) # bottom left part of 'Q'
+ab_drop('b31',8) # bottom mid part of 'Q'
+ab_drop('b31',11) # bottom right part of 'Q'
+ab_drop('b31',9) # top part of 'Q'
+ab_drop('b13',8) # left side of 'Q'
+ab_drop('b13',10) # right side of 'Q'

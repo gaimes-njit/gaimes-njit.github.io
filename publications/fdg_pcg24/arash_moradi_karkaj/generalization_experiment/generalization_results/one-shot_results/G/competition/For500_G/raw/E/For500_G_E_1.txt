@@ -1,0 +1,6 @@
+ab_drop('b11', 10)    # Drop b11 at index 10, creating the middle horizontal line of the letter E
+ab_drop('b11', 11)    # Drop b11 at index 11, creating the middle vertical line of the letter E
+ab_drop('b13', 8)     # Drop b13 at index 8, creating the top horizontal line of the letter E
+ab_drop('b11', 11)    # Drop b11 at index 11, creating the bottom vertical line of the letter E
+ab_drop('b31', 11)    # Drop b31 at index 11, creating the bottom horizontal line of the letter E
+ab_drop('b13', 8)     # Drop b13 at index 8, completing the letter E

@@ -1,0 +1,41 @@
+To create the uppercase letter "P" using the mentioned block types, you can follow the following steps:
+
+1. Build the vertical line of the letter:
+   - Place a vertical block ('b13') at position 1: `ab_drop('b13', 1)`
+   - Place another vertical block ('b13') at position 2: `ab_drop('b13', 2)`
+   - Place another vertical block ('b13') at position 3: `ab_drop('b13', 3)`
+   - Place another vertical block ('b13') at position 4: `ab_drop('b13', 4)`
+
+2. Build the horizontal line of the letter:
+   - Place a horizontal block ('b31') at position 1: `ab_drop('b31', 1)`
+   - Place another horizontal block ('b31') at position 2: `ab_drop('b31', 2)`
+   - Place another horizontal block ('b31') at position 3: `ab_drop('b31', 3)`
+
+3. Build the bottom part of the letter:
+   - Place a vertical block ('b13') at position 1: `ab_drop('b13', 1)`
+   - Place another vertical block ('b13') at position 2: `ab_drop('b13', 2)`
+   - Place another vertical block ('b13') at position 3: `ab_drop('b13', 3)`
+
+4. Build the top part of the letter:
+   - Place a horizontal block ('b31') at position 1: `ab_drop('b31', 1)`
+   - Place another horizontal block ('b31') at position 2: `ab_drop('b31', 2)`
+   - Place another horizontal block ('b31') at position 3: `ab_drop('b31', 3)`
+
+Overall, the commands will be:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b13', 4)
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b31', 1)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+```
+
+Make sure to follow the instructions and maintain the stability of the shape within the provided boundaries.

@@ -1,0 +1,21 @@
+To create the "M" structure using the `ab drop()` function, follow these steps:
+
+1. First, drop a b13 block centered at slot 5 from layer 15:
+```ab drop('b13', 5, 15)```
+
+2. Next, drop a b13 block centered at slot 6 from layer 14:
+```ab drop('b13', 6, 14)```
+
+3. After that, drop a b13 block centered at slot 7 from layer 13:
+```ab drop('b13', 7, 13)```
+
+4. Now, drop a b31 block centered at slot 6 from layer 13:
+```ab drop('b31', 6, 13)```
+
+5. Drop another b13 block centered at slot 8 from layer 13:
+```ab drop('b13', 8, 13)```
+
+6. Lastly, drop a b13 block centered at slot 9 from layer 14:
+```ab drop('b13', 9, 14)```
+
+By following these steps, you should be able to create a stable structure that resembles the letter "M" using the `ab drop()` function. Adjust the slot positions and block types as needed to achieve the desired result.

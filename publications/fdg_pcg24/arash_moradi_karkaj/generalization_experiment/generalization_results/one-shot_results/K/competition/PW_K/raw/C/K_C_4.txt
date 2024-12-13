@@ -1,0 +1,12 @@
+To generate the uppercase letter "C" using the given block types and environment, we can follow the following set of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 4)
+ab_drop('b31', 4)
+ab_drop('b13', 1)
+ab_drop('b13', 4)
+```
+
+This set of commands will stack the blocks in a way that resembles the letter "C" within the allowed space and follows the gravity rules.

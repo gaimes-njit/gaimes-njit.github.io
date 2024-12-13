@@ -1,0 +1,23 @@
+First, let's create the left vertical part of the letter M. We can use block "b31" and place it at the leftmost position (x_position = 0).
+
+```
+ab_drop("b31", 0)
+```
+
+Next, let's create the right vertical part of the letter M. Again, we can use block "b31" and place it at the rightmost position (x_position = 19).
+
+```
+ab_drop("b31", 19)
+```
+
+Now, let's create the middle part of the letter M. We can use block "b13" and place it at the center position (x_position = 9).
+
+```
+ab_drop("b13", 9)
+```
+
+Finally, let's create the base of the letter M. Again, we can use block "b13" and place it at the center position (x_position = 9).
+
+```
+ab_drop("b13", 9)
+```

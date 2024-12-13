@@ -1,0 +1,19 @@
+To create a structure that looks like the capital letter "I", we can start by placing a row block at the center of the grid. This will serve as the base of the "I".
+
+```
+ab_drop("b31", 9)
+```
+
+Next, we can place a column block on top of the base row block to form the vertical part of the "I".
+
+```
+ab_drop("b13", 9)
+```
+
+Finally, we can place another row block on top of the vertical part to complete the "I".
+
+```
+ab_drop("b31", 9)
+```
+
+By following these steps, we can create a structure in the level that resembles the capital letter "I".

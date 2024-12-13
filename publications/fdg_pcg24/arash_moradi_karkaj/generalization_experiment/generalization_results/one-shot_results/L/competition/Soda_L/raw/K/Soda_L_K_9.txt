@@ -1,0 +1,19 @@
+To build the capital letter "K" in a bottom-to-top fashion, we can break it down into three blocks: two corner blocks and one middle block. We will start by building the base of the "K" and then add the corner blocks on top. 
+
+Here's the code for building the "K" structure:
+
+```
+# Base block
+ab_drop("b13", 7) 
+# Left corner block
+ab_drop("b31", 2) 
+# Right corner block
+ab_drop("b31", 12) 
+```
+
+Explanation:
+1. We start by dropping a column block ("b13") on the 7th column. This forms the base of the "K".
+2. Next, we drop a row block ("b31") on the 2nd column to create the left corner of the "K".
+3. Finally, we drop another row block ("b31") on the 12th column to create the right corner of the "K".
+
+This code will create a stable structure that resembles the letter "K" in the level.

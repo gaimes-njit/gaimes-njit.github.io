@@ -1,0 +1,43 @@
+To generate a stable structure that resembles the character "W" using the ab_drop() function, we need to carefully determine the dropping positions and order of the blocks. Here is a step-by-step approach:
+
+Step 1: Initialize the structure as an empty grid.
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Start by dropping the first b31 block at a suitable slot on the base.
+```
+ab_drop('b31', 1)
+```
+
+Step 3: Drop a b13 block right above the previous b31 block, aligned with its center.
+```
+ab_drop('b13', 1)
+```
+
+Step 4: Drop the second b31 block right above the previous b13 block, aligned with its center.
+```
+ab_drop('b31', 1)
+```
+
+Step 5: Drop another b13 block right above the previous b31 block, aligned with its center.
+```
+ab_drop('b13', 1)
+```
+
+Step 6: Drop a b31 block right above the previous b13 block, aligned with its center.
+```
+ab_drop('b31', 1)
+```
+
+Step 7: Drop another b13 block right above the previous b31 block, aligned with its center.
+```
+ab_drop('b13', 1)
+```
+
+Step 8: Drop the last b31 block right above the previous b13 block, aligned with its center.
+```
+ab_drop('b31', 1)
+```
+
+After executing these steps, the resulting structure will resemble the character "W" while meeting the stability and boundary intrusion constraints.

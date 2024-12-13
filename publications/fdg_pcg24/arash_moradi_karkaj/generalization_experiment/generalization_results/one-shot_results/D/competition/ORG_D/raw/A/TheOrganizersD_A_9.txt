@@ -1,0 +1,11 @@
+```python
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+```
+Explanation: The output is formatted within a code block, showing the input given by the user. Each line represents a call to the function `ab_drop()` with the specified arguments. The number `1` is the second argument passed to the function in each call.

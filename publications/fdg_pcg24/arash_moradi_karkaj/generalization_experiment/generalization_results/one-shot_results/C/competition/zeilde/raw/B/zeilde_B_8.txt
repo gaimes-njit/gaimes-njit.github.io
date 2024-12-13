@@ -1,0 +1,86 @@
+1. Drawing the letter "B" with asterisks:
+```
+*****
+*    *
+*    *
+*****
+*    *
+*    *
+*****
+```
+
+2. Listing the asterisks and spaces generated in each row:
+Row 1: 5 asterisks
+Row 2: 1 asterisk, 4 spaces, 1 asterisk
+Row 3: 1 asterisk, 4 spaces, 1 asterisk
+Row 4: 5 asterisks
+Row 5: 1 asterisk, 4 spaces, 1 asterisk
+Row 6: 1 asterisk, 4 spaces, 1 asterisk
+Row 7: 5 asterisks
+
+3. Replacing asterisks with "x" and spaces with "y":
+Row 1: 5x
+Row 2: 1x, 4y, 1x
+Row 3: 1x, 4y, 1x
+Row 4: 5x
+Row 5: 1x, 4y, 1x
+Row 6: 1x, 4y, 1x
+Row 7: 5x
+
+4. Writing out each "x" and "y" side-by-side:
+Row 1: xxxxx
+Row 2: xyyyyx
+Row 3: xyyyyx
+Row 4: xxxxx
+Row 5: xyyyyx
+Row 6: xyyyyx
+Row 7: xxxxx
+
+5. Indicating the position of each variable:
+Row 1: x-1, x-2, x-3, x-4, x-5
+Row 2: x-1, y-2, y-3, y-4, y-5, x-6
+Row 3: x-1, y-2, y-3, y-4, y-5, x-6
+Row 4: x-1, x-2, x-3, x-4, x-5
+Row 5: x-1, y-2, y-3, y-4, y-5, x-6
+Row 6: x-1, y-2, y-3, y-4, y-5, x-6
+Row 7: x-1, x-2, x-3, x-4, x-5
+
+6. Return sequence of `ab_drop` function calls:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+```

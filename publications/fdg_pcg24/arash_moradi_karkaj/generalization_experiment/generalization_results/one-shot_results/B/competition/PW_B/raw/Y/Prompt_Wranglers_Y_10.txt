@@ -1,0 +1,35 @@
+To generate uppercase letter "Y":
+
+Always start from the bottom to build a stable foundation:
+
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+
+Next, add the middle part of the letter:
+
+ab_drop('b31', 1)
+
+Finally, add the top part of the letter:
+
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+
+The final stream of commands would be:
+
+```
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+```

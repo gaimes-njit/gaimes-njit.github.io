@@ -1,0 +1,23 @@
+To create the structure of the letter "U" inside a 20*16 box, you can use the following sequence of `ab_drop` commands:
+
+1. Drop a b13 block at position (0, 0).
+   ```python
+   ab_drop('b13', 0)
+   ```
+
+2. Drop a b31 block at position (0, 4).
+   ```python
+   ab_drop('b31', 0)
+   ```
+
+3. Drop a b31 block at position (0, 12).
+   ```python
+   ab_drop('b31', 0)
+   ```
+
+4. Drop a b13 block at position (0, 15).
+   ```python
+   ab_drop('b13', 0)
+   ```
+
+This sequence of commands will create a perfect "U" shape inside the 20*16 box.

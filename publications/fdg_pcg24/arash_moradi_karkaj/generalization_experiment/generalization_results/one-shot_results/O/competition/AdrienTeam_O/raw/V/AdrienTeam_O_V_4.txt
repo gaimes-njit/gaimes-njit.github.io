@@ -1,0 +1,24 @@
+Here is one way to use the `ab_drop()` function to create a stable structure resembling "V" while satisfying the given constraints:
+
+```
+structure = [[' ']*20 for _ in range(16)]
+
+# Place the horizontal block at the bottom of the structure
+ab_drop('b31', 9)
+
+# Drop the vertical blocks to create the two sides of the "V"
+ab_drop('b13', 8)
+ab_drop('b13', 10)
+
+# Place the horizontal block at the top of the structure
+ab_drop('b31', 9)
+```
+
+In this structure, the blocks are dropped in the following order:
+
+1. Horizontal block at the bottom (using `ab_drop('b31', 9)`)
+2. Vertical block on the left side (using `ab_drop('b13', 8)`)
+3. Vertical block on the right side (using `ab_drop('b13', 10)`)
+4. Horizontal block at the top (using `ab_drop('b31', 9)`)
+
+These `ab_drop()` calls create a stable "V"-shaped structure while adhering to the given constraints.

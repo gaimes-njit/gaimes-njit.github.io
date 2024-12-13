@@ -1,0 +1,11 @@
+To create the capital letter "L" using the ab_drop() function, we need to stack two blocks: a vertical pipe and a bottom bar. Both blocks should be placed in a bottom-to-top fashion to ensure stability. Here is the complete implementation:
+
+```python
+# Place the vertical pipe (bottom bar)
+ab_drop("b31", 9)
+
+# Place the bottom bar
+ab_drop("b13", 8)
+```
+
+By following these steps, we can create the capital letter "L" in a stable and balanced manner.

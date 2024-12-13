@@ -1,0 +1,10 @@
+To generate the uppercase letter "X", we can start by creating the two diagonal lines that form the letter. We will use the b31 block type for this.
+
+Here is the sequence of ab_drop() commands to create the letter "X":
+
+```
+ab_drop('b31',1)  # Place the first diagonal line starting from the left
+ab_drop('b31',5)  # Place the second diagonal line starting from the right
+```
+
+After executing these commands, you should have a stable structure that resembles the letter "X" within the allowed space boundaries.

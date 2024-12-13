@@ -1,0 +1,24 @@
+To create the structure exactly like "V" inside a 20x16 box, you can use the following commands:
+
+Step 1: Place the first block (b11) at position (0, 0)
+ab_drop('b11', 0)
+
+Step 2: Place the second block (b13) at position (2, 0)
+ab_drop('b13', 2)
+
+Step 3: Place the third block (b13) at position (4, 0)
+ab_drop('b13', 4)
+
+Step 4: Place the fourth block (b31) at position (6, 0)
+ab_drop('b31', 6)
+
+Step 5: Place the fifth block (b31) at position (14, 0)
+ab_drop('b31', 14)
+
+Step 6: Place the sixth block (b13) at position (16, 0)
+ab_drop('b13', 16)
+
+Step 7: Place the seventh block (b13) at position (18, 0)
+ab_drop('b13', 18)
+
+This will create a structure resembling the letter "V" inside the 20x16 box.

@@ -1,0 +1,26 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the first block
+ab_drop('b13', 1)
+
+# Build the left vertical part of the 'N'
+ab_drop('b11', 0)
+ab_drop('b11', 0)
+
+# Build the diagonal part of the 'N'
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+
+# Build the right vertical part of the 'N'
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+
+# Build the bottom horizontal part of the 'N'
+ab_drop('b11', 4)
+ab_drop('b11', 5)
+ab_drop('b11', 6)
+
+# Build the top horizontal part of the 'N'
+ab_drop('b31', 4)
+```

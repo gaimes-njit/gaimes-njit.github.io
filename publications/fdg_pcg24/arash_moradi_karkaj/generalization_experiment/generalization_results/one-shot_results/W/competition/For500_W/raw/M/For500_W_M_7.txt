@@ -1,0 +1,5 @@
+ab_drop('b31', 9)  # Place the first part of the middle spike
+ab_drop('b13', 11)  # Place the second part of the middle spike
+ab_drop('b11', 11)  # Place the connection between the spikes
+ab_drop('b31', 5)  # Place the left side of the M
+ab_drop('b31', 13)  # Place the right side of the M

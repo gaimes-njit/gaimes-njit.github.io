@@ -1,0 +1,12 @@
+To generate the letter "P", we can use the following stream of ab_drop() commands:
+
+```
+ab_drop('b13',1)   # Place a vertical straight block at position 1
+ab_drop('b13',2)   # Place a vertical straight block at position 2
+ab_drop('b31',2)   # Place a horizontal straight block at position 2
+ab_drop('b13',1)   # Place a vertical straight block at position 1 (repeated for stability)
+ab_drop('b13',2)   # Place a vertical straight block at position 2 (repeated for stability)
+ab_drop('b31',2)   # Place a horizontal straight block at position 2 (repeated for stability)
+```
+
+This sequence of commands will create the uppercase letter "P" within the defined environment, following the stacking and stability rules.

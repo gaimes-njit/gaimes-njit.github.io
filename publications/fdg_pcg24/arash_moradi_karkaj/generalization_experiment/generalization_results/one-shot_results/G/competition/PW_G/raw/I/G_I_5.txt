@@ -1,0 +1,18 @@
+To generate the uppercase English letter "I", we can use the following stream of `ab_drop()` commands:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',2)
+ab_drop('b13',2)
+ab_drop('b13',2)
+ab_drop('b31',1)
+```
+
+Explanation of the commands:
+1. `ab_drop('b31',1)`: This command places a horizontal (width=3, height=1) block at position 1, creating the top part of the letter "I".
+2. `ab_drop('b13',2)`: This command places a vertical (width=1, height=3) block at position 2, extending downwards from the top part of the letter "I".
+3. `ab_drop('b13',2)`: This command places another vertical block at position 2, continuing the downward extension of the letter "I".
+4. `ab_drop('b13',2)`: This command places one more vertical block at position 2, completing the vertical line of the letter "I".
+5. `ab_drop('b31',1)`: This command places another horizontal block at position 1, creating the bottom part of the letter "I" and connecting it to the vertical line.
+
+By following these commands, you will be able to generate the uppercase English letter "I" within the defined environment and gravity rules.

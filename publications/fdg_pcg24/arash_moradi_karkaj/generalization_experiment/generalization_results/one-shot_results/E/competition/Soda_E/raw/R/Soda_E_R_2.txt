@@ -1,0 +1,50 @@
+# Steps to build the letter R:
+
+1. Build the left vertical stem of the R:
+   - ab_drop("b31", 6)
+   - ab_drop("b11", 5)
+   - ab_drop("b11", 7)
+   - ab_drop("b31", 6)
+
+2. Build the top horizontal bar of the R:
+   - ab_drop("b11", 4)
+   - ab_drop("b11", 5)
+   - ab_drop("b11", 6)
+   - ab_drop("b31", 4)
+   - ab_drop("b31", 5)
+   - ab_drop("b31", 6)
+
+3. Build the bottom horizontal bar of the R:
+   - ab_drop("b11", 4)
+   - ab_drop("b11", 5)
+   - ab_drop("b11", 6)
+   - ab_drop("b31", 4)
+   - ab_drop("b31", 5)
+   - ab_drop("b31", 6)
+
+4. Build the diagonal leg of the R:
+   - ab_drop("b13", 8)
+   - ab_drop("b11", 9)
+   - ab_drop("b13", 10)
+
+Complete Implementation:
+
+ab_drop("b31", 6)
+ab_drop("b11", 5)
+ab_drop("b11", 7)
+ab_drop("b31", 6)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b31", 4)
+ab_drop("b31", 5)
+ab_drop("b31", 6)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+ab_drop("b11", 6)
+ab_drop("b31", 4)
+ab_drop("b31", 5)
+ab_drop("b31", 6)
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+ab_drop("b13", 10)

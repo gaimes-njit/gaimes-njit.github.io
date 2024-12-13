@@ -1,0 +1,6 @@
+ab drop(b11, H, y) // drop a square block centered at slot y from the top layer H
+ab drop(b13, H-3, y) // drop a vertical block centered at slot y from layer H-3
+ab drop(b31, H-6, y-1) // drop a horizontal block centered at slot y-1 from layer H-6
+ab drop(b31, H-9, y-2) // drop a horizontal block centered at slot y-2 from layer H-9
+ab drop(b31, H-12, y-3) // drop a horizontal block centered at slot y-3 from layer H-12
+ab drop(b31, H-15, y-4) // drop a horizontal block centered at slot y-4 from layer H-15

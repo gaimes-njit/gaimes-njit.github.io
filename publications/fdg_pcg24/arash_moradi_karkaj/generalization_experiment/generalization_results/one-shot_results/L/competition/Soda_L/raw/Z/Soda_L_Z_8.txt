@@ -1,0 +1,26 @@
+To generate a structure in the level that looks like the capital letter "Z", we can use the following steps:
+
+1. Place the base of the "Z" structure, which is a row block (b31), at x_position=0:
+```
+ab_drop("b31", 0)
+```
+
+2. Place the vertical part of the "Z" structure, which is a column block (b13), at x_position=1:
+```
+ab_drop("b13", 1)
+```
+
+3. Place the top part of the "Z" structure, which is a row block (b31), at x_position=2:
+```
+ab_drop("b31", 2)
+```
+
+By following these steps, we can build a structure in the level that resembles the capital letter "Z". The blocks will be placed in a bottom-to-top fashion to ensure stability.
+
+The complete implementation is as follows:
+
+```
+ab_drop("b31", 0)
+ab_drop("b13", 1)
+ab_drop("b31", 2)
+```

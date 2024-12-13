@@ -1,0 +1,40 @@
+To generate a stable structure resembling the character "Q" while meeting all hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty grid using the provided code:
+   ```
+   W = 20
+   H = 16
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. Place the b31 block on the solid base (b11 or b13 blocks) to prevent overhangs and ensure stability. We can place it at the bottom-left corner of the structure as follows:
+   ```
+   ab_drop('b31', 1)
+   ```
+
+3. Place a b13 block above the b31 block to continue building the shape of the "Q". We can place it at slot 1 in the same layer as the b31 block:
+   ```
+   ab_drop('b13', 1)
+   ```
+
+4. Place another b31 block above the b13 block to complete the left side of the "Q". We can place it at slot 0 in the same layer as the b13 block:
+   ```
+   ab_drop('b31', 0)
+   ```
+
+5. Place a b11 block above the b31 block to connect the left side of the "Q" with the top side. We can place it at slot 0 in the layer above the b31 block:
+   ```
+   ab_drop('b11', 0)
+   ```
+
+6. Place a b31 block to the right of the b11 block to create the top side of the "Q". We can place it at slot 2 in the same layer as the b11 block:
+   ```
+   ab_drop('b31', 2)
+   ```
+
+7. Finally, place a b13 block to connect the top side of the "Q" with the bottom side. We can place it at slot 1 in the layer above the b31 block:
+   ```
+   ab_drop('b13', 1)
+   ```
+
+After following these steps, the structure should resemble the character "Q" while meeting all hard constraints of stability. You can visualize the resulting structure by printing the `structure` variable.

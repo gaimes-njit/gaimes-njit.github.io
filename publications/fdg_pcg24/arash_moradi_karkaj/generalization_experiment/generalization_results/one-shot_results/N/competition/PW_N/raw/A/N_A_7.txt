@@ -1,0 +1,26 @@
+To generate the uppercase letter "A," follow the instructions below:
+
+1. Place two vertical straight blocks (b13) starting at position 2 and 3 along the width.
+   - `ab_drop('b13', 2)`
+   - `ab_drop('b13', 3)`
+
+2. Place a horizontal straight block (b31) starting at position 3 along the width.
+   - `ab_drop('b31', 3)`
+
+3. Place two vertical straight blocks (b13) starting at position 5 and 6 along the width.
+   - `ab_drop('b13', 5)`
+   - `ab_drop('b13', 6)`
+
+4. Place a square block (b11) starting at position 5 along the width.
+   - `ab_drop('b11', 5)`
+
+The stream of commands to generate the letter "A" would be as follows:
+
+```
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b31', 3)
+ab_drop('b13', 5)
+ab_drop('b13', 6)
+ab_drop('b11', 5)
+```

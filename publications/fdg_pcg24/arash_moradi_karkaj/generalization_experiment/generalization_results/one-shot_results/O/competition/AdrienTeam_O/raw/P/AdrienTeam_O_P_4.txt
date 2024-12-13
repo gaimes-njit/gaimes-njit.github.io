@@ -1,0 +1,19 @@
+```
+# Initialize the structure grid
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the first block to form the vertical line of 'P' (b13)
+ab_drop('b13', 1)
+
+# Drop the second block to form the horizontal line of 'P' (b31)
+ab_drop('b31', 1)
+
+# Drop the third block to form the vertical line of 'P' (b13)
+ab_drop('b13', 2)
+
+# Drop the fourth block to form the bottom part of the vertical line of 'P' (b31)
+ab_drop('b31', 1)
+
+# Drop the fifth block to form the top part of the vertical line of 'P' (b11)
+ab_drop('b11', 1)
+```

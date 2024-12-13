@@ -1,0 +1,63 @@
+```
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the first block at the bottom layer (layer 0)
+ab_drop('b13', 9)
+
+# Drop the second block at the bottom layer (layer 0)
+ab_drop('b11', 8)
+
+# Drop the third block at the bottom layer (layer 0)
+ab_drop('b11', 10)
+
+# Drop the fourth block at layer 1
+ab_drop('b11', 9)
+
+# Drop the fifth block at layer 2
+ab_drop('b13', 9)
+
+# Drop the sixth block at layer 3
+ab_drop('b13', 9)
+
+# Drop the seventh block at layer 4
+ab_drop('b31', 9)
+
+# Drop the eighth block at layer 5
+ab_drop('b31', 9)
+
+# Drop the ninth block at layer 6
+ab_drop('b31', 9)
+
+# Drop the tenth block at layer 7
+ab_drop('b31', 9)
+
+# Drop the eleventh block at layer 8
+ab_drop('b11', 8)
+
+# Drop the twelfth block at layer 8
+ab_drop('b11', 10)
+
+# Drop the thirteenth block at layer 9
+ab_drop('b13', 9)
+
+# Drop the fourteenth block at layer 10
+ab_drop('b13', 9)
+
+# Drop the fifteenth block at layer 11
+ab_drop('b11', 9)
+
+# Drop the sixteenth block at layer 12
+ab_drop('b13', 9)
+
+# Drop the seventeenth block at layer 13
+ab_drop('b13', 9)
+
+# Drop the eighteenth block at layer 14
+ab_drop('b11', 8)
+
+# Drop the nineteenth block at layer 14
+ab_drop('b11', 10)
+
+# Drop the twentieth block at the top layer (layer 15)
+ab_drop('b13', 9)
+```

@@ -1,0 +1,17 @@
+To create the uppercase letter "X" using the given block types, you can follow the following steps:
+
+1. Place a horizontal block (b31) at position 5.
+2. Place a square block (b11) at position 7.
+3. Place another horizontal block (b31) at position 5.
+4. Place another horizontal block (b31) at position 6.
+5. Place another square block (b11) at position 7.
+
+The commands to achieve this are as follows:
+
+```
+ab_drop('b31',5)
+ab_drop('b11',7)
+ab_drop('b31',5)
+ab_drop('b31',6)
+ab_drop('b11',7)
+```

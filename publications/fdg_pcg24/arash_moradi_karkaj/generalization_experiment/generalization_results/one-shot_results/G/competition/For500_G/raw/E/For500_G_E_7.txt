@@ -1,0 +1,6 @@
+ab_drop('b31', 10)  # Drop the top horizontal line of the letter "E"
+ab_drop('b11', 11)  # Drop the middle vertical line of the letter "E"
+ab_drop('b13', 8)   # Drop the bottom horizontal line of the letter "E"
+ab_drop('b11', 11)  # Drop the bottom vertical line of the letter "E"
+ab_drop('b31', 11)  # Drop the middle horizontal line of the letter "E"
+ab_drop('b13', 8)   # Drop the top horizontal line of the letter "E"

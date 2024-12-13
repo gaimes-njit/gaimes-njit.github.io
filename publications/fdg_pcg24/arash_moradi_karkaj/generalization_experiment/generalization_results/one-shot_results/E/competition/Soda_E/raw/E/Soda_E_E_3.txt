@@ -1,0 +1,23 @@
+To build the letter "E" in a bottom-to-top fashion, we can start by constructing the bottom horizontal bar, followed by the middle horizontal bar, and then the top horizontal bar. Each bar will be built using the given block types and drop positions. Here is the complete implementation:
+
+```
+# Bottom horizontal bar of E
+ab_drop("b31", 8)
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+ab_drop("b13", 11)
+
+# Middle horizontal bar of E
+ab_drop("b31", 8)
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+ab_drop("b13", 11)
+
+# Top horizontal bar of E
+ab_drop("b31", 8)
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+ab_drop("b13", 11)
+```
+
+This implementation will create a stable structure that resembles the letter "E" in the level.

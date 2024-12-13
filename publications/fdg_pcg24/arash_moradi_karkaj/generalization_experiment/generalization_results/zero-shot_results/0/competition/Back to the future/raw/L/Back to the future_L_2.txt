@@ -1,0 +1,62 @@
+To generate a stable structure that looks like the uppercase character "L" and meets all the hard constraints, we will use the `ab_drop()` function to strategically drop the blocks and ensure stability. Here is a step-by-step approach:
+
+1. Initialize the structure as an empty grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Place the first block (b31) in the bottom left slot to serve as the base:
+```
+ab_drop('b31', 1)  # Drop b31 block in slot 1
+```
+The structure after this step:
+```
+structure = [[' ',' ',' ',' '],
+             ['b31','b31','b31',' '],
+             [' ',' ',' ',' '],
+             ...
+             [' ',' ',' ',' ']]
+```
+
+3. Place the second block (b13) on top of the base block to form the vertical part of the "L":
+```
+ab_drop('b13', 0)  # Drop b13 block in slot 0
+```
+The structure after this step:
+```
+structure = [[' ',' ',' ',' '],
+             ['b13','b31','b31',' '],
+             ['b13',' ',' ',' '],
+             ...
+             [' ',' ',' ',' ']]
+```
+
+4. Place the third block (b31) on top of the vertical part of the "L" to complete the horizontal part:
+```
+ab_drop('b31', 0)  # Drop b31 block in slot 0
+```
+The structure after this step:
+```
+structure = [[' ',' ',' ',' '],
+             ['b31','b31','b31',' '],
+             ['b13','b31','b31',' '],
+             ...
+             [' ',' ',' ',' ']]
+```
+
+5. Place the fourth block (b11) on top of the horizontal part to finalize the structure:
+```
+ab_drop('b11', 1)  # Drop b11 block in slot 1
+```
+The structure after this step:
+```
+structure = [[' ',' ',' ',' '],
+             ['b31','b31','b31',' '],
+             ['b13','b31','b31',' '],
+             ['b11','b31','b31',' '],
+             ['b11','b11',' ',' '],
+             ...
+             [' ',' ',' ',' ']]
+```
+
+By following these steps and utilizing the `ab_drop()` function, we can generate a stable structure that looks like the uppercase character "L" while satisfying all the hard constraints.

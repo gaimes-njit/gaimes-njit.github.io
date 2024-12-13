@@ -1,0 +1,16 @@
+```
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the first block (b31) to create the horizontal line at the bottom
+ab_drop('b31', 0)   # This creates a horizontal block at the bottom
+
+# Drop the second block (b11) to create the vertical line on the right
+ab_drop('b11', 19)   # This creates a vertical block on the right
+
+# Drop the third block (b13) to create the diagonal line from the bottom-left to the top-right
+ab_drop('b13', 4)   # This creates a diagonal block from the bottom-left to the top-right
+
+# Drop the final block (b11) to complete the diagonal line on the top
+ab_drop('b11', 15)   # This creates a vertical block to complete the diagonal line on the top
+```

@@ -1,0 +1,17 @@
+```python
+# Define the structure of the "Z"
+structure = [
+    ['b31', 'b11'],
+    ['b13', 'b31']
+]
+
+# Define the starting position
+y = 7  # Slot 7
+
+# Drop blocks to form the "Z" structure
+for layer in range(2):
+    for row in range(3):
+        for col in range(len(structure[layer])):
+            block = structure[layer][col]
+            ab.drop(block, y + col, layer)
+```

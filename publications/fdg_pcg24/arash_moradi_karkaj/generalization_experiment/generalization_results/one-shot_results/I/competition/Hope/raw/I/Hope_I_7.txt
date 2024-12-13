@@ -1,0 +1,18 @@
+To create the structure "I" inside a 20*16 block, we can use the `ab_drop` command with different block types and positions. Here's how we can do it:
+
+1. Place the first vertical block (3*1) at position (9, 0):
+   `ab_drop('b31', 9)`
+
+2. Place the second vertical block (3*1) just below the first one at position (9, 1):
+   `ab_drop('b31', 9)`
+
+3. Place the third vertical block (3*1) just below the second one at position (9, 2):
+   `ab_drop('b31', 9)`
+
+4. Place the fourth vertical block (3*1) just below the third one at position (9, 3):
+   `ab_drop('b31', 9)`
+
+5. Place the fifth vertical block (3*1) just below the fourth one at position (9, 4):
+   `ab_drop('b31', 9)`
+
+By following these steps, we create a vertical structure resembling the letter "I" inside the 20*16 block.

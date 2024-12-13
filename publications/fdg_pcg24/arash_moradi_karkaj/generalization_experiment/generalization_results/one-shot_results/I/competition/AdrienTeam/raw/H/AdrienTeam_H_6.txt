@@ -1,0 +1,29 @@
+```
+# Map Initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Vertical Blocks
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+
+# Horizontal Blocks
+ab_drop('b11', 4)
+ab_drop('b11', 5)
+
+# Vertical Blocks
+ab_drop('b11', 7)
+ab_drop('b11', 7)
+ab_drop('b11', 7)
+
+# Map Completion
+ab_drop('b13', 1)
+ab_drop('b13', 4)
+ab_drop('b13', 7)
+
+# Top Horizontal Block
+ab_drop('b11', 3)
+ab_drop('b11', 6)
+```
+
+The code above generates the structure resembling "H" by dropping the blocks in the specified order and positions. It satisfies all the given constraints, including no boundary intrusion, aligning the y-coordinate with the block's center, and avoiding the prohibited `ab_drop('b31', 0)` input.

@@ -1,0 +1,20 @@
+To create a structure resembling "Q", we need to follow the given constraints and drop the blocks in a specific order and position. Here is a possible solution:
+
+```
+# Initialize the structure
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the blocks to create "Q"
+ab_drop('b31', 7)
+ab_drop('b13', 6)
+ab_drop('b13', 6)
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+ab_drop('b11', 10)
+
+# Print the structure
+for row in structure:
+    print(row)
+```
+
+This solution aligns the blocks to create a structure resembling the letter "Q" using the three available block types. The blocks are dropped in a specific order and position to satisfy the given constraints. The resulting structure is printed at the end.

@@ -1,0 +1,53 @@
+To generate the structure resembling the capital letter "K" using the `ab_drop()` function, follow the steps below:
+
+1. Initialize the structure as an empty WxH grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Place the first 'b31' block:
+```
+ab_drop('b31', 9)
+```
+This block starts at the 9th slot, centered at slot 10.
+
+3. Place the second 'b11' block on top of the previous block:
+```
+ab_drop('b11', 9)
+```
+This block is placed on top of the center of the previous block, on the 9th slot.
+
+4. Place the first 'b13' block on the left side of the previous blocks:
+```
+ab_drop('b13', 7)
+```
+This block is placed on the 7th slot.
+
+5. Place the second 'b11' block on top of the previous block:
+```
+ab_drop('b11', 9)
+```
+This block is placed on top of the center of the previous block, on the 9th slot.
+
+6. Place the third 'b31' block on the right side of the previous blocks:
+```
+ab_drop('b31', 9)
+```
+This block starts at the 9th slot, centered at slot 10.
+
+7. Place the third 'b13' block on the left side of the previous blocks:
+```
+ab_drop('b13', 7)
+```
+This block is placed on the 7th slot.
+
+The resulting code using the `ab_drop()` function is as follows:
+
+```
+ab_drop('b31', 9)
+ab_drop('b11', 9)
+ab_drop('b13', 7)
+ab_drop('b11', 9)
+ab_drop('b31', 9)
+ab_drop('b13', 7)
+```

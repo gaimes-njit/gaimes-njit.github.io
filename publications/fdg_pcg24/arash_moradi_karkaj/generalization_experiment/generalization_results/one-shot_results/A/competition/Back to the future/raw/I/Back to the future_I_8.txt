@@ -1,0 +1,102 @@
+To generate a stable structure that looks like the uppercase character "I" and meets all the hard constraints, we can follow the given instructions and use the `ab_drop()` function.
+
+Here is a step-by-step approach to build the structure:
+
+1. Initialize the structure as an empty WxH grid using the given code:
+   ```
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. Start by dropping the base block (b31) at the center slot (y = W//2) using the `ab_drop()` function:
+   ```
+   ab_drop('b31', W//2)
+   ```
+
+3. Iterate from layer 1 to layer 15:
+   ```
+   for layer in range(1, H):
+   ```
+
+4. For each layer, check if the layer is divisible by 4:
+   ```
+   if layer % 4 == 0:
+   ```
+
+5. If the layer is divisible by 4, drop a vertical block (b13) at the center slot using the `ab_drop()` function:
+   ```
+   ab_drop('b13', W//2)
+   ```
+
+6. If the layer is not divisible by 4, drop a square block (b11) at the center slot using the `ab_drop()` function:
+   ```
+   ab_drop('b11', W//2)
+   ```
+
+7. Adjust the slots for the next layer:
+   ```
+   if layer % 4 == 0:
+       slots = [W//2 - 1, W//2 + 1]
+   else:
+       slots = [W//2]
+   ```
+
+8. For each slot in the slots list, drop a horizontal block (b31) at the slot using the `ab_drop()` function:
+   ```
+   for slot in slots:
+       ab_drop('b31', slot)
+   ```
+
+9. After completing the loop, the structure should resemble the uppercase character "I" while satisfying all the hard constraints.
+
+Here is the complete code for generating the structure:
+
+```python
+W = 20  # Width of the map
+H = 16  # Height of the map
+
+# initialize the structure as an empty WxH grid
+structure = [[' ']*W for _ in range(H)]
+
+def ab_drop(x, y):
+    # x is the block type, y is the slot number from 0 to W-1 where the block center is aligned
+    
+    # initialize the drop position at the top of the map
+    drop_pos = (H-1, y)
+    
+    # drop the block from the top and move it down until it lands on the base or another block
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    
+    # place the block on the structure
+    structure[drop_pos[0]][drop_pos[1]] = x
+
+# Drop the base block
+ab_drop('b31', W//2)
+
+# Build the structure
+for layer in range(1, H):
+    if layer % 4 == 0:
+        # Drop a vertical block
+        ab_drop('b13', W//2)
+    else:
+        # Drop a square block
+        ab_drop('b11', W//2)
+    
+    if layer % 4 == 0:
+        # Adjust the slots for the next layer
+        slots = [W//2 - 1, W//2 + 1]
+    else:
+        slots = [W//2]
+    
+    # Drop horizontal blocks
+    for slot in slots:
+        ab_drop('b31', slot)
+
+# Print the final structure
+for row in structure:
+    print(''.join(row))
+```
+
+This code will generate a stable structure that resembles the uppercase character "I" while meeting all the hard constraints.

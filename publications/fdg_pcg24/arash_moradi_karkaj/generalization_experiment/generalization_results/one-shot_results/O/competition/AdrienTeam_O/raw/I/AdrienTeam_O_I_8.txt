@@ -1,0 +1,24 @@
+```
+# Initialize the map
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the base of the 'I'
+ab_drop('b31', 0)
+
+# Build the first part of the 'I'
+ab_drop('b13', 0)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+
+# Build the middle part of the 'I'
+ab_drop('b31', 1)
+
+# Build the top part of the 'I'
+ab_drop('b13', 0)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+
+# Drop the last 'I' block
+ab_drop('b31', 0)
+
+```

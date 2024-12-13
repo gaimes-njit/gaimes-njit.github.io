@@ -1,0 +1,45 @@
+1. Drawing the letter "L" with asterisks:
+```
+*****
+*
+*
+*
+*
+```
+
+2. Verbal listing of asterisks and spaces in each row:
+- Row 1: 5 asterisks
+- Row 2: 1 asterisk, 4 spaces
+- Row 3: 1 asterisk, 4 spaces
+- Row 4: 1 asterisk, 4 spaces
+- Row 5: 1 asterisk, 4 spaces
+
+3. Asterisks represented as "x" and spaces represented as "y":
+- Row 1: xxxxx
+- Row 2: xyyyy
+- Row 3: xyyyy
+- Row 4: xyyyy
+- Row 5: xyyyy
+
+4. Writing out each "x" and "y" side-by-side:
+- Row 1: x-1; x-2; x-3; x-4; x-5
+- Row 2: x-1; y-2; y-3; y-4; y-5
+- Row 3: x-1; y-2; y-3; y-4; y-5
+- Row 4: x-1; y-2; y-3; y-4; y-5
+- Row 5: x-1; y-2; y-3; y-4; y-5
+
+5. Indicating the position of each variable:
+- Row 1: x-1; x-2; x-3; x-4; x-5
+- Row 2: x-1; y-2; y-3; y-4; y-5
+- Row 3: x-1; y-2; y-3; y-4; y-5
+- Row 4: x-1; y-2; y-3; y-4; y-5
+- Row 5: x-1; y-2; y-3; y-4; y-5
+
+6. Sequence of `ab_drop` function calls:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

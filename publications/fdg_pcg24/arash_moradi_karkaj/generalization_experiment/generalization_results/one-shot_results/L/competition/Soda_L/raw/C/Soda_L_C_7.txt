@@ -1,0 +1,19 @@
+To generate a structure in the level that looks like the capital letter "C," we can follow the hints provided and create the formation in a bottom-to-top fashion. 
+
+1. First, we need to create the base of the "C" shape. We can use the row block "b31" to create a horizontal line. Since the character "C" has a width of 2 cells, we need to drop the row block at x_position=9 to cover cells (8,0), (9,0), and (10,0).
+
+ab_drop("b31", 9)
+
+2. Next, we need to create the vertical line on the left side of the "C." We can use the column block "b13" to accomplish this. We will drop the column block at x_position=6, covering cells (6,1), (6,2), and (6,3).
+
+ab_drop("b13", 6)
+
+3. Finally, we need to create the curved part of the "C." We can use another column block "b13" but drop it at x_position=12, covering cells (12,1), (12,2), and (12,3).
+
+ab_drop("b13", 12)
+
+Putting it all together, the complete implementation to generate a structure in the level that looks like the capital letter "C" is as follows:
+
+ab_drop("b31", 9)
+ab_drop("b13", 6)
+ab_drop("b13", 12)

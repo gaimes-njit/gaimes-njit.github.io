@@ -1,0 +1,59 @@
+Step 1: Draw the letter "F" with asterisks
+
+```
+*****
+*
+*
+****
+*
+*
+*
+```
+
+Step 2: List the asterisks and spaces generated in each row
+
+```
+*****
+*    
+*    
+****
+*    
+*    
+*    
+```
+
+Step 3: Replace asterisks with "x" and spaces with "y"
+
+```
+xxxxx
+y    
+y    
+xxxxx
+y    
+y    
+y    
+```
+
+Step 4: Write out each x and y for each row
+
+```
+5x, 1y
+1x, 4y
+1x, 4y
+5x, 1y
+1x, 4y
+1x, 4y
+1x, 4y
+```
+
+Step 5: Indicate the position of each variable
+
+```
+x-1; x-2; x-3; x-4; x-5; y-1; y-2; y-3; y-4; x-1; x-2; x-3; x-4; y-1; y-2; y-3; y-4; x-1; x-2; x-3; x-4; x-5; y-1; y-2; y-3; y-4; x-1; x-2; x-3; x-4; x-5; y-1; y-2; y-3; y-4; x-1; x-2; x-3; x-4; y-1; y-2; y-3; y-4; x-1; x-2; x-3; x-4; y-1; y-2; y-3; y-4;
+```
+
+Step 6: Return a sequence of `ab_drop` function calls
+
+```
+ab_drop("b11", 5)ab_drop("b11", 1)ab_drop("b11", 1)ab_drop("b11", 5)ab_drop("b11", 1)ab_drop("b11", 1)ab_drop("b11", 1)
+```

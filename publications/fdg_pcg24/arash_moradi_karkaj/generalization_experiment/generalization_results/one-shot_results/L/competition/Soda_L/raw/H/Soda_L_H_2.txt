@@ -1,0 +1,27 @@
+First, let's start by creating the horizontal top bar of the letter "H" using the block type "b13". We will center it at x_position=9:
+
+```
+ab_drop("b13", 9)
+```
+
+Next, let's create the vertical left and right bars of the letter "H" using the block type "b31". We will center the left bar at x_position=8 and the right bar at x_position=10:
+
+```
+ab_drop("b31", 8)
+ab_drop("b31", 10)
+```
+
+Now, let's create the horizontal bottom bar of the letter "H" using the block type "b13". We will center it at x_position=9:
+
+```
+ab_drop("b13", 9)
+```
+
+In total, the implementation looks like this:
+
+```
+ab_drop("b13", 9)
+ab_drop("b31", 8)
+ab_drop("b31", 10)
+ab_drop("b13", 9)
+```

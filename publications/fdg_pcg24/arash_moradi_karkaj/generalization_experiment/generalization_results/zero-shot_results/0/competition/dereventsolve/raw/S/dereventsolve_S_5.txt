@@ -1,0 +1,25 @@
+To generate a structure that looks like the letter "S", we can use the following sequence of `ab_drop` function calls:
+
+```
+ab_drop H 4 2
+ab_drop T 4 2
+ab_drop V 8 4
+ab_drop U 8 4
+ab_drop W 8 4
+ab_drop X 8 4
+ab_drop T 12 2
+ab_drop U 12 2
+ab_drop V 12 2
+ab_drop H 16 2
+ab_drop W 16 4
+ab_drop T 20 2
+ab_drop V 24 4
+ab_drop U 24 4
+ab_drop X 24 4
+ab_drop T 28 2
+ab_drop U 28 2
+ab_drop V 28 2
+ab_drop H 32 2
+```
+
+This sequence of `ab_drop` function calls will create a structure that resembles the letter "S" with the given key-value pairs.

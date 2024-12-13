@@ -1,0 +1,25 @@
+To build a structure that looks like a capital G, we can start by placing a row block (b31) at the bottom to create the base. We will place it at position 8 since the G has a width of 6 cells.
+
+```
+ab_drop("b31", 8)
+```
+
+Next, we will place a column block (b13) on the left side of the base. We will place it at position 5 since the G has a height of 3 cells.
+
+```
+ab_drop("b13", 5)
+```
+
+Lastly, we will place another column block (b13) on the right side of the base, aligned with the previous block.
+
+```
+ab_drop("b13", 11)
+```
+
+This will create a structure that looks like a capital G, following the bottom-to-top stacking technique. The complete implementation is as follows:
+
+```python
+ab_drop("b31", 8)
+ab_drop("b13", 5)
+ab_drop("b13", 11)
+```

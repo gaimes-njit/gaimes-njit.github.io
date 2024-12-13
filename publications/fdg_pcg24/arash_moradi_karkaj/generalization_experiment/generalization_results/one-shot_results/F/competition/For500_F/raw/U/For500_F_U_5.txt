@@ -1,0 +1,24 @@
+ab_drop('b13', 0)  # Drop the first vertical block on the left side
+ab_drop('b13', 18)  # Drop the second vertical block on the right side
+ab_drop('b31', 18)  # Drop the horizontal block on top of the second vertical block
+ab_drop('b11', 18)  # Drop the square block on top of the horizontal block
+ab_drop('b31', 18)  # Drop the horizontal block on top of the square block
+ab_drop('b11', 18)  # Drop the square block on top of the horizontal block
+ab_drop('b31', 18)  # Drop the horizontal block on top of the square block
+ab_drop('b31', 10)  # Drop the horizontal block in the middle section
+ab_drop('b11', 10)  # Drop the square block on top of the horizontal block
+ab_drop('b31', 10)  # Drop the horizontal block on top of the square block
+ab_drop('b11', 10)  # Drop the square block on top of the horizontal block
+ab_drop('b31', 10)  # Drop the horizontal block on top of the square block
+ab_drop('b31', 2)  # Drop the horizontal block on the left side
+ab_drop('b11', 2)  # Drop the square block on top of the horizontal block
+ab_drop('b31', 2)  # Drop the horizontal block on top of the square block
+ab_drop('b11', 2)  # Drop the square block on top of the horizontal block
+ab_drop('b31', 2)  # Drop the horizontal block on top of the square block
+ab_drop('b31', 9)  # Drop the horizontal block in the middle section
+ab_drop('b11', 9)  # Drop the square block on top of the horizontal block
+ab_drop('b31', 9)  # Drop the horizontal block on top of the square block
+ab_drop('b11', 9)  # Drop the square block on top of the horizontal block
+ab_drop('b31', 9)  # Drop the horizontal block on top of the square block
+ab_drop('b31', 17)  # Drop the horizontal block on the right side
+ab_drop('b31', 5)  # Drop the horizontal block on the left side

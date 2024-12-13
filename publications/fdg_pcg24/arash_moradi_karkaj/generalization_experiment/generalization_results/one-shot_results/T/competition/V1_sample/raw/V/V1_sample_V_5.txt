@@ -1,0 +1,5 @@
+ab drop(0, 0, b13) // Place the bottom block on the left-most slot
+ab drop(19, 0, b13) // Place the bottom block on the right-most slot
+ab drop(9, 1, b31) // Place the middle horizontal block at the center
+ab drop(9, 2, b31) // Place the second horizontal block above the first one
+ab drop(9, 3, b11) // Place the top block at the center to form a stable "V" structure.

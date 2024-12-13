@@ -1,0 +1,16 @@
+To create the structure of "S" using the `ab_drop` function, we can use the following commands:
+
+1. `ab_drop('b13', 0)`: This will drop a 1x3 block at position (0, 0).
+2. `ab_drop('b13', 2)`: This will drop a 1x3 block at position (2, 0).
+3. `ab_drop('b13', 4)`: This will drop a 1x3 block at position (4, 0).
+4. `ab_drop('b11', 1)`: This will drop a 1x1 block at position (1, 1).
+5. `ab_drop('b11', 3)`: This will drop a 1x1 block at position (3, 1).
+6. `ab_drop('b11', 5)`: This will drop a 1x1 block at position (5, 1).
+7. `ab_drop('b11', 1)`: This will drop a 1x1 block at position (1, 2).
+8. `ab_drop('b11', 3)`: This will drop a 1x1 block at position (3, 2).
+9. `ab_drop('b11', 5)`: This will drop a 1x1 block at position (5, 2).
+10. `ab_drop('b13', 0)`: This will drop a 1x3 block at position (0, 3).
+11. `ab_drop('b13', 2)`: This will drop a 1x3 block at position (2, 3).
+12. `ab_drop('b13', 4)`: This will drop a 1x3 block at position (4, 3).
+
+This sequence of commands will create an "S" shaped structure within a 20x16 box, starting from position (0, 0).

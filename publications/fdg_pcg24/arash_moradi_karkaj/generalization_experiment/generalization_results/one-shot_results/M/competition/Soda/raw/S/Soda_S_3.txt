@@ -1,0 +1,31 @@
+To create the capital letter "S" in the level, we can break it down into two parts: the top half and the bottom half. 
+
+First, let's build the top half of the "S". We can use two blocks, one "b13" column block and one "b31" row block. We will drop the column block first, followed by the row block.
+
+```
+ab_drop("b13", 7)
+ab_drop("b31", 7)
+```
+
+Next, let's build the bottom half of the "S". We can again use two blocks, one "b31" row block and one "b13" column block. We will drop the row block first, followed by the column block.
+
+```
+ab_drop("b31", 12)
+ab_drop("b13", 10)
+```
+
+Finally, to ensure the stability of the structure, we will add an additional "b11" square block at the bottom-left corner.
+
+```
+ab_drop("b11", 0)
+```
+
+Here is the complete implementation:
+
+```
+ab_drop("b13", 7)
+ab_drop("b31", 7)
+ab_drop("b31", 12)
+ab_drop("b13", 10)
+ab_drop("b11", 0)
+```

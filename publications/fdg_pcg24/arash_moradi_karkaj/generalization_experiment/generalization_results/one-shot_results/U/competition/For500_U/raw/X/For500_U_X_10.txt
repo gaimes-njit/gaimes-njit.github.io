@@ -1,0 +1,5 @@
+ab_drop('b31', 9)  # First block of the left arm of the 'X'
+ab_drop('b13', 8)  # Second block of the left arm of the 'X'
+ab_drop('b13', 10)  # Second block of the right arm of the 'X'
+
+# Note: The function calls can be placed in any order as long as the positioning is correct.

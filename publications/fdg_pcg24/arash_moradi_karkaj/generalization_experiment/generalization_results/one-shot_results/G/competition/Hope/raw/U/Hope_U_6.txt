@@ -1,0 +1,7 @@
+To create a structure exactly like "U" inside a 20*16 block, we can use the following commands:
+
+ab_drop('b13', 0)  # Create the left vertical line of the "U"
+ab_drop('b31', 1)  # Create the top horizontal line of the "U"
+ab_drop('b13', 4)  # Create the right vertical line of the "U"
+
+This will result in a "U" shape structure inside the 20*16 block.

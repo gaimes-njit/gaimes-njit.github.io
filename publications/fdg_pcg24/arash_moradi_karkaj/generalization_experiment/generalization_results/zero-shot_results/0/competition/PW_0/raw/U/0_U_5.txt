@@ -1,0 +1,12 @@
+To create the uppercase letter "U" using the given block types in the Tetris-like environment, the following set of ab_drop() commands can be used:
+
+```
+ab_drop("b13",1) # Place block b13 at position 1 (top left corner)
+ab_drop("b31",1) # Place block b31 at position 1 (below b13)
+ab_drop("b31",5) # Place block b31 at position 5 (next to previous b31)
+ab_drop("b13",7) # Place block b13 at position 7 (below b31 on the right side)
+ab_drop("b11",7) # Place block b11 at position 7 (below previous b13)
+ab_drop("b11",1) # Place block b11 at position 1 (on the left side of previous b11)
+```
+
+This set of commands will create the letter "U" shape within the allowed space boundaries, following the 2D gravity rules similar to the Angry Birds game.

@@ -1,0 +1,10 @@
+To generate the uppercase English letter "F", we can use the following commands:
+
+```plaintext
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+```
+
+This will create the letter "F" in the Tetris-like environment.

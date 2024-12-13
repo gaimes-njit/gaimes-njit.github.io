@@ -1,0 +1,16 @@
+To generate the uppercase English letter "Y", you can use the following stream of commands:
+
+```
+ab_drop('b31',3)
+ab_drop('b13',4)
+ab_drop('b31',5)
+ab_drop('b13',6)
+ab_drop('b31',7)
+ab_drop('b11',4)
+ab_drop('b11',5)
+ab_drop('b11',6)
+ab_drop('b11',7)
+ab_drop('b11',8)
+```
+
+This sequence of commands will place the blocks in the correct positions to form the letter "Y" within the allowed space.

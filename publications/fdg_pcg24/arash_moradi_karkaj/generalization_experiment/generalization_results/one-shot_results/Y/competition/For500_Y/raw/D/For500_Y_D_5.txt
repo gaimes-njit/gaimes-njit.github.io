@@ -1,0 +1,5 @@
+ab_drop('b13', 0)  # Build the left vertical line of the 'D'
+ab_drop('b11', 0)  # Place the bottom left corner of the 'D'
+ab_drop('b31', 1)  # Place the bottom horizontal line of the 'D'
+ab_drop('b11', 0)  # Place the top left corner of the 'D'
+ab_drop('b13', 2)  # Build the right vertical line of the 'D'

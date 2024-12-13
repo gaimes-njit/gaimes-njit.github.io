@@ -1,0 +1,17 @@
+To generate a stable structure that resembles the character "I" in Tetris using the ab_drop() function, we need to carefully consider the constraints and the required shape of the structure.
+
+First, let's consider the stability constraint. A b31 block must be placed on a solid base (b11 or b13 blocks) to prevent overhangs. To meet this constraint, we should start by placing a b11 block on the base (Layer 0) at the center slot (Slot 10).
+
+Next, we should place a b31 block on top of the b11 block at Slot 10. This will create the vertical part of the "I" character.
+
+Finally, we need to add another b31 block on top of the previously placed b31 block at Slot 10. This will complete the "I" character.
+
+Here is the code to generate a stable structure that resembles the character "I":
+
+```python
+ab_drop('b11', 10)  # Place b11 block on the base at Slot 10
+ab_drop('b31', 10)  # Place b31 block on top of b11 block at Slot 10
+ab_drop('b31', 10)  # Place another b31 block on top of previous b31 block at Slot 10
+```
+
+This code will generate a stable structure in the shape of the character "I" while satisfying all the hard constraints.

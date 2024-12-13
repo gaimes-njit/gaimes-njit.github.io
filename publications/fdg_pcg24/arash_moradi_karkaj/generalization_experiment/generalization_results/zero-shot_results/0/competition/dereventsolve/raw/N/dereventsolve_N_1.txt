@@ -1,0 +1,10 @@
+To generate a structure that looks like the letter "N" using the given key-value pairs database, the following `ab_drop` function calls can be used:
+
+```
+ab_drop(7)
+ab_drop(1)
+ab_drop(4)
+ab_drop(7)
+ab_drop(0)
+ab_drop(6)
+```

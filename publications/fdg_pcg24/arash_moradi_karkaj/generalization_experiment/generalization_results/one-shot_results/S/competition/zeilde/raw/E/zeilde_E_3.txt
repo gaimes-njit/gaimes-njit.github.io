@@ -1,0 +1,45 @@
+1. The letter "E" with asterisks:
+```
+*****
+*
+*****
+*
+*****
+```
+
+2. Verbal list of asterisks and spaces in each row:
+- First row: 5 asterisks, 0 spaces
+- Second row: 1 asterisk, 0 spaces
+- Third row: 5 asterisks, 0 spaces
+- Fourth row: 1 asterisk, 0 spaces
+- Fifth row: 5 asterisks, 0 spaces
+
+3. Using "x" for asterisks and "y" for spaces:
+- First row: "xxxxx"
+- Second row: "x"
+- Third row: "xxxxx"
+- Fourth row: "x"
+- Fifth row: "xxxxx"
+
+4. Listing x and y side-by-side:
+- First row: "5x"
+- Second row: "1x"
+- Third row: "5x"
+- Fourth row: "1x"
+- Fifth row: "5x"
+
+5. Position of each variable:
+- First row: x-1, x-2, x-3, x-4, x-5
+- Second row: x-1
+- Third row: x-1, x-2, x-3, x-4, x-5
+- Fourth row: x-1
+- Fifth row: x-1, x-2, x-3, x-4, x-5
+
+6. Sequence of `ab_drop` function calls:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

@@ -1,0 +1,19 @@
+Here is an example solution to construct the structure resembling "R" while satisfying the given constraints:
+
+```
+# Map initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Dropping blocks
+ab_drop('b31', 1)
+ab_drop('b11', 0)
+ab_drop('b31', 2)
+ab_drop('b11', 2)
+ab_drop('b11', 0)
+ab_drop('b11', 2)
+ab_drop('b11', 0)
+ab_drop('b13', 3)
+ab_drop('b11', 1)
+```
+
+This solution uses the `ab_drop()` function to drop blocks in the desired positions and order to form the structure resembling "R".

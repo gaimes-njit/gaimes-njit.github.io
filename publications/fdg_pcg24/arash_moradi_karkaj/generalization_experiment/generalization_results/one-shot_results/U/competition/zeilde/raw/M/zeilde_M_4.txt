@@ -1,0 +1,52 @@
+Steps:
+1. Draw the letter "M" with asterisks:
+```
+*       *
+**     **
+* *   * *
+*  * *  *
+*   *   *
+*       *
+*       *
+```
+
+2. Line-by-line, list the asterisks and spaces in each row:
+Row 1: 1 asterisk, 7 spaces. (1x, 7y)
+Row 2: 2 asterisks, 5 spaces. (2x, 5y)
+Row 3: 1 asterisk, 1 space, 3 asterisks, 1 space, 1 asterisk. (1x, 1y, 3x, 1y, 1x)
+Row 4: 1 asterisk, 1 space, 1 asterisk, 1 space, 1 asterisk. (1x, 1y, 1x, 1y, 1x)
+Row 5: 1 asterisk, 3 spaces, 1 asterisk. (1x, 3y, 1x)
+Row 6: 1 asterisk, 7 spaces. (1x, 7y)
+Row 7: 1 asterisk, 7 spaces. (1x, 7y)
+
+3. Replace asterisks with "x" and spaces with "y" in each row:
+Row 1: 1x, 7y
+Row 2: 2x, 5y
+Row 3: 1x, 1y, 3x, 1y, 1x
+Row 4: 1x, 1y, 1x, 1y, 1x
+Row 5: 1x, 3y, 1x
+Row 6: 1x, 7y
+Row 7: 1x, 7y
+
+4. Write out each x and y for each row side-by-side:
+Row 1: xyyyyyyy
+Row 2: xxyyyyy
+Row 3: xyxxxyx
+Row 4: xyxyxyx
+Row 5: xyyyx
+Row 6: xyyyyyyy
+Row 7: xyyyyyyy
+
+5. Indicate the position of each variable in each row:
+Row 1: x-1y-234567
+Row 2: xx-12y-34567
+Row 3: xy-1x-23y-45x
+Row 4: xy-1x-2y-34x-5
+Row 5: x-1y-2345x
+Row 6: x-1y-234567
+Row 7: x-1y-234567
+
+6. Return a sequence of `ab_drop` function calls with "b11" as the first variable and the number as the second variable for each row, without separating the rows:
+```
+ab_drop("b11", 1)ab_drop("b11", 2)ab_drop("b11", 3)ab_drop("b11", 4)ab_drop("b11", 5)ab_drop("b11", 6)ab_drop("b11", 7)
+```

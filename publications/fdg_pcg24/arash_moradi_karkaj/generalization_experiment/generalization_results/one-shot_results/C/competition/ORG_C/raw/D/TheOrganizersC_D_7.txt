@@ -1,0 +1,19 @@
+```python
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b4', 1)
+```
+
+Input:
+"ABC"
+
+Output:
+```python
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b2', 1)
+ab_drop('b3', 1)
+ab_drop('b4', 1)
+```

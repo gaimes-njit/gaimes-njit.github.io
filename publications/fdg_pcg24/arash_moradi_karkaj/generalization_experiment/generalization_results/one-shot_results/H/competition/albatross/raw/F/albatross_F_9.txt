@@ -1,0 +1,9 @@
+# First, let's place the base of the 'F' shape by dropping a b31 block at slot 9
+ab_drop('b31', 9)
+
+# Next, let's drop the vertical part of the 'F' shape by dropping a b13 block at slot 9
+ab_drop('b13', 9)
+
+# Finally, let's drop the horizontal part of the 'F' shape by dropping two b31 blocks at slots 7 and 11
+ab_drop('b31', 7)
+ab_drop('b31', 11)

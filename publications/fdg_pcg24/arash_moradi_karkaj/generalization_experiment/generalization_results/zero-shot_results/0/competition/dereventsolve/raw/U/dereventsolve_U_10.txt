@@ -1,0 +1,17 @@
+```
+# Given database
+database = {
+    'A': [['b', 'i'], ['b', 'o']],
+    'B': [['bi', 'bo'], ['bi', 'bo']],
+    'C': [['bi', 'o'], ['bi', 'bo']]
+}
+
+def ab_drop(letter):
+    return letter[0][1] + letter[1][1]
+
+# Required letter: U
+u_structure = ab_drop(database['C']) + ab_drop(database['B']) + ab_drop(database['A'])
+u_structure
+```
+
+The `u_structure` variable will contain the sequence of `ab_drop` function calls required to generate a structure that looks like the letter "U".

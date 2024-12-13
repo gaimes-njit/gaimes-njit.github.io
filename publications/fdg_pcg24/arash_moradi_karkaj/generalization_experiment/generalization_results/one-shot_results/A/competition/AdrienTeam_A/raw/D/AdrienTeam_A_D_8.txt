@@ -1,0 +1,36 @@
+To generate a stable structure resembling the letter "D", we can follow these steps:
+
+1. Initialize the structure using the following code:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. To start building the base of the "D", we can drop a horizontal block ('b31') centered at slot 9. This represents the bottom part of the "D". The `ab_drop()` call will be:
+```python
+ab_drop('b31', 9)
+```
+
+3. Next, we need to drop two vertical blocks ('b13') on top of the horizontal block, one at slot 8 and the other at slot 10. These blocks represent the vertical lines of the "D". The `ab_drop()` calls will be:
+```python
+ab_drop('b13', 8)
+ab_drop('b13', 10)
+```
+
+4. To complete the top part of the "D", we can drop a horizontal block ('b31') centered at slot 9, above the vertical blocks. The `ab_drop()` call will be:
+```python
+ab_drop('b31', 9)
+```
+
+5. Finally, we can drop a vertical block ('b13') at slot 9, above the horizontal block. This represents the slanted line of the "D". The `ab_drop()` call will be:
+```python
+ab_drop('b13', 9)
+```
+
+The complete set of `ab_drop()` inputs to generate the "D" structure will be:
+```python
+ab_drop('b31', 9)
+ab_drop('b13', 8)
+ab_drop('b13', 10)
+ab_drop('b31', 9)
+ab_drop('b13', 9)
+```

@@ -1,0 +1,46 @@
+1. Here is the drawing of the letter "Q" with asterisks:
+```
+*****
+*   *
+*   *
+*   *
+*****
+  *
+```
+
+2. Line-by-line list of asterisks and spaces generated in each row:
+- 1st Row: 5 asterisks
+- 2nd Row: 1 asterisk, 3 spaces, 1 asterisk
+- 3rd Row: 1 asterisk, 3 spaces, 1 asterisk
+- 4th Row: 1 asterisk, 3 spaces, 1 asterisk
+- 5th Row: 5 asterisks
+- 6th Row: 2 spaces, 1 asterisk
+
+3. Using "x" for asterisks and "y" for spaces, the new representation becomes:
+- 1st Row: 5x
+- 2nd Row: 1x, 3y, 1x
+- 3rd Row: 1x, 3y, 1x
+- 4th Row: 1x, 3y, 1x
+- 5th Row: 5x
+- 6th Row: 2y, 1x
+
+4. Writing out each x and y for each row:
+- 1st Row: xxxxx
+- 2nd Row: xyyyx
+- 3rd Row: xyyyx
+- 4th Row: xyyyx
+- 5th Row: xxxxx
+- 6th Row: yyyx
+
+5. Indicating the position of each variable:
+- 1st Row: x-1; x-2; x-3; x-4; x-5
+- 2nd Row: x-1; y-2; y-3; y-4; x-5
+- 3rd Row: x-1; y-2; y-3; y-4; x-5
+- 4th Row: x-1; y-2; y-3; y-4; x-5
+- 5th Row: x-1; x-2; x-3; x-4; x-5
+- 6th Row: y-1; y-2; y-3; x-4
+
+6. Sequence of `ab_drop` function calls for each row:
+```
+ab_drop("b11", 1)ab_drop("b11", 2)ab_drop("b11", 3)ab_drop("b11", 4)ab_drop("b11", 5)ab_drop("b11", 2)ab_drop("b11", 3)ab_drop("b11", 3)ab_drop("b11", 3)ab_drop("b11", 3)ab_drop("b11", 1)ab_drop("b11", 2)ab_drop("b11", 3)ab_drop("b11", 4)ab_drop("b11", 5)ab_drop("b11", 2)ab_drop("b11", 3)ab_drop("b11", 3)ab_drop("b11", 3)ab_drop("b11", 3)
+```

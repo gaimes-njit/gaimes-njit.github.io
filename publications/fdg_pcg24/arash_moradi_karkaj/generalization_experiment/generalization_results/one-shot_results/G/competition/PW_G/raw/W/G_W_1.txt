@@ -1,0 +1,23 @@
+To create the uppercase letter "W", we can break it down into smaller blocks and place them in the grid using the ab_drop() command. Here is the sequence of commands to generate the letter "W":
+
+```plaintext
+ab_drop('b31',1)
+ab_drop('b13',2)
+ab_drop('b13',5)
+ab_drop('b31',8)
+ab_drop('b13',11)
+ab_drop('b13',14)
+ab_drop('b31',17)
+```
+
+Let's break down the commands:
+
+1. `ab_drop('b31',1)` - This command places a horizontal block of width 3 units at position 1.
+2. `ab_drop('b13',2)` - This command places a vertical block of height 3 units at position 2.
+3. `ab_drop('b13',5)` - This command places another vertical block of height 3 units at position 5.
+4. `ab_drop('b31',8)` - This command places another horizontal block of width 3 units at position 8.
+5. `ab_drop('b13',11)` - This command places a vertical block of height 3 units at position 11.
+6. `ab_drop('b13',14)` - This command places another vertical block of height 3 units at position 14.
+7. `ab_drop('b31',17)` - This command places the last horizontal block of width 3 units at position 17.
+
+By placing these blocks in the specified positions, we can create the letter "W" within the defined grid.

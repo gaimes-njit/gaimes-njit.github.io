@@ -1,0 +1,21 @@
+```
+# Command to generate letter "O"
+
+# Drop the top horizontal block
+ab_drop('b31', 1)
+
+# Drop the left vertical block
+ab_drop('b13', 2)
+
+# Drop the right vertical block
+ab_drop('b13', 4)
+
+# Drop the bottom horizontal block
+ab_drop('b31', 3)
+
+# Drop the middle horizontal block
+ab_drop('b31', 2)
+
+# Drop the middle vertical block
+ab_drop('b13', 3)
+```

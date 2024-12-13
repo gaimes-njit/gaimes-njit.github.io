@@ -1,0 +1,20 @@
+To generate the uppercase letter "W" using the mentioned command and Block Types, you can follow these steps:
+
+1. Place the first block (b31) at position 1: ab_drop('b31', 1)
+2. Place the second block (b13) at position 4: ab_drop('b13', 4)
+3. Place the third block (b31) at position 7: ab_drop('b31', 7)
+4. Place the fourth block (b13) at position 10: ab_drop('b13', 10)
+5. Place the fifth block (b31) at position 13: ab_drop('b31', 13)
+6. Place the sixth block (b13) at position 16: ab_drop('b13', 16)
+
+The stream of commands will look like this:
+```
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+ab_drop('b31', 7)
+ab_drop('b13', 10)
+ab_drop('b31', 13)
+ab_drop('b13', 16)
+```
+
+This sequence of commands will generate the uppercase letter "W" in the Tetris-like environment.

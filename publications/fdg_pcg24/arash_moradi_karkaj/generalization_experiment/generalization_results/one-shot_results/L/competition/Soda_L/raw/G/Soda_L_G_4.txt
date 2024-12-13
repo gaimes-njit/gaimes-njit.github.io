@@ -1,0 +1,33 @@
+The first step is to create the middle bar of the capital letter "G". We can do this by dropping a row block at the center of the grid.
+
+```python
+ab_drop("b31", 9)
+```
+
+Next, we need to create the top portion of the "G". We can do this by dropping a column block to the left of the middle bar, and a row block on top of it.
+
+```python
+# Vertical left part
+ab_drop("b13", 8)
+# Top bar
+ab_drop("b31", 9)
+```
+
+Finally, we need to create the bottom portion of the "G". We can do this by dropping a column block to the right of the middle bar, and a row block on top of it.
+
+```python
+# Vertical right part
+ab_drop("b13", 10)
+# Bottom bar
+ab_drop("b31", 9)
+```
+
+The complete implementation to generate a structure that looks like a capital "G" is as follows:
+
+```python
+ab_drop("b31", 9)
+ab_drop("b13", 8)
+ab_drop("b31", 9)
+ab_drop("b13", 10)
+ab_drop("b31", 9)
+```

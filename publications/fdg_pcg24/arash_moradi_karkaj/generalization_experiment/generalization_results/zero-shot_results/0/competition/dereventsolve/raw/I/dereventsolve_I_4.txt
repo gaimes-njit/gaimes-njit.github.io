@@ -1,0 +1,20 @@
+```python
+def find_letter_I(database):
+    sequence = []
+    # Find the 'I' letter in the database
+    if 'I' in database:
+        sequence.append(database['I'])
+    return sequence
+```
+
+Usage example:
+```python
+database = {'I': 'ab_drop()'}
+sequence = find_letter_I(database)
+print(sequence)
+```
+
+Output:
+```
+['ab_drop()']
+```

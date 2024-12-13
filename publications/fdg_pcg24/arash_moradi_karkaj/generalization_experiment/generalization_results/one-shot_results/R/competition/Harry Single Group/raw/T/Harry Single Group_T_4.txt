@@ -1,0 +1,48 @@
+First, let's initialize the field:
+```python
+field = [[0] * 20 for _ in range(16)]
+```
+
+Next, we need to define a helper function to check the stability of the bricks:
+```python
+def is_stable(brick):
+    x_position = brick[1]
+    # Get the y-coordinate of the brick's pivot point
+    pivot_y = max(brick[0][0][1], brick[0][1][1], brick[0][2][1])
+    # Check the number of occupied cells on the left and right sides of the pivot
+    left_cells = sum(1 for i in range(x_position) if field[pivot_y][i] == 1)
+    right_cells = sum(1 for i in range(x_position+1, x_position+3) if field[pivot_y][i] == 1)
+    return left_cells == right_cells
+```
+
+Now let's start generating the structure:
+```python
+# Generate the vertical brick b13 at x_position 5
+ab_drop('b13', 5)
+# Check stability
+if not is_stable(([(5, 2), (5, 1), (5, 0)], 5)):
+    # If not stable, undo the previous drop
+    for i in range(3):
+        field[2-i][5] = 0
+
+# Generate the horizontal brick b31 at x_position 6
+ab_drop('b31', 6)
+# Check stability
+if not is_stable(([(6, 3), (7, 3), (8, 3)], 7)):
+    # If not stable, undo the previous drop
+    for i in range(3):
+        field[3][6+i] = 0
+
+# Print the final structure
+for row in field:
+    print(row)
+```
+
+The final structure will resemble the letter "T":
+```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 

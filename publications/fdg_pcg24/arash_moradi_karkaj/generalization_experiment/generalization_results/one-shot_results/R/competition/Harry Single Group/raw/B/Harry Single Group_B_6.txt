@@ -1,0 +1,54 @@
+To form the shape resembling the letter "B" using the available props and the ab_drop() function while satisfying the given important notes, we can follow these steps:
+
+1. Initialize the field with all cells empty.
+2. Use the ab_drop() function to place the bricks on the field.
+
+```python
+# Initializing the field
+field = [[0 for _ in range(20)] for _ in range(16)]
+
+# Function to check if a cell is occupied
+def is_occupied(x, y):
+    return field[y][x] != 0
+
+# Function to place a brick on the field
+def place_brick(x, y, brick_type):
+    if brick_type == 'b31':
+        # Check for stability
+        if is_occupied(x-1, y) and is_occupied(x+2, y):
+            return
+        # Check for boundary collisions
+        if x-1 < 0 or x+2 >= 20:
+            return
+        # Place the brick
+        field[y][x-1] = 1
+        field[y][x] = 1
+        field[y][x+1] = 1
+    elif brick_type == 'b13':
+        # Check for stability
+        if is_occupied(x, y-1) or is_occupied(x, y+2):
+            return
+        # Check for boundary collisions
+        if y+2 >= 16:
+            return
+        # Place the brick
+        field[y][x] = 1
+        field[y+1][x] = 1
+        field[y+2][x] = 1
+    elif brick_type == 'b11':
+        # Check for boundary collisions
+        if y >= 16:
+            return
+        # Place the brick
+        field[y][x] = 1
+
+# Generating the required structure
+ab_drop('b13', 7)
+ab_drop('b13', 5)
+ab_drop('b31', 5)
+ab_drop('b13', 10)
+ab_drop('b13', 12)
+ab_drop('b31', 12)
+```
+
+After executing the above code, the cells occupied by the bricks will form a shape resembling the letter "B" on the field.

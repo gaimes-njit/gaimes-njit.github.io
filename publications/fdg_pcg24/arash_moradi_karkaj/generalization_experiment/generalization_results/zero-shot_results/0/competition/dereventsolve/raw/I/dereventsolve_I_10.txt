@@ -1,0 +1,21 @@
+```python
+def ab_drop():
+    return "ab_drop\n"
+
+def generate_structure(database):
+    if 'I' in database:
+        return database['I']
+    else:
+        return 'I not found in database'
+
+database = {
+    'I': [
+        ab_drop(),
+        ab_drop(),
+        ab_drop()
+    ]
+}
+
+result = generate_structure(database)
+print(result)
+```

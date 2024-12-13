@@ -1,0 +1,79 @@
+To generate a stable structure that looks like the uppercase character "N" and meets all the hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start building the structure from the bottom layer (layer 0) upwards.
+
+3. Create a function to check the stability of the structure after each block drop. This function will check if the block being dropped has stable support below it. If not, it will adjust the drop position until a stable position is found.
+
+```python
+def is_stable(drop_pos, block_width):
+    stable = True
+    
+    for i in range(drop_pos[0]+1, H):
+        for j in range(drop_pos[1]-block_width//2, drop_pos[1]+block_width//2+1):
+            if structure[i][j] == ' ':
+                stable = False
+                break
+        if not stable:
+            break
+    
+    return stable
+```
+
+4. Use the `ab_drop()` function to drop the blocks in a specific order and position that resembles the "N" shape. Adjust the drop positions based on the stability check.
+
+```python
+def build_N_structure():
+    # Drop the first vertical block (b13) in the leftmost slot (slot 0)
+    ab_drop("b13", 0)
+    
+    # Drop the horizontal block (b31) on top of the vertical block at slot 1
+    ab_drop("b31", 1)
+    
+    # Drop the second vertical block (b13) on top of the horizontal block at slot 2
+    ab_drop("b13", 2)
+```
+
+5. Call the `is_stable()` function after each block drop to ensure stability.
+
+```python
+def ab_drop(x, y):
+    # initialize the drop position at the top of the map
+    drop_pos = (H-1, y)
+    
+    # drop the block from the top and move it down until it lands on the base or another block
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    
+    # check stability before placing the block
+    if is_stable(drop_pos, len(x)):
+        # place the block on the structure
+        structure[drop_pos[0]][drop_pos[1]] = x
+        return drop_pos
+    else:
+        # adjust drop position until a stable position is found
+        while not is_stable(drop_pos, len(x)):
+            drop_pos = (drop_pos[0]+1, drop_pos[1])
+        
+        # place the block on the structure
+        structure[drop_pos[0]][drop_pos[1]] = x
+        return drop_pos
+```
+
+6. Continue building the structure by adding more blocks in the appropriate positions to complete the "N" shape.
+
+7. Finally, print the resulting structure to see if it resembles the uppercase letter "N".
+
+```python
+def print_structure():
+    for row in structure:
+        print(' '.join(row))
+```
+
+With these steps and functions in place, you can generate a stable structure that looks like the uppercase character "N". The specific positions and order of block drops can be adjusted to meet the constraints and create a diverse set of structures.

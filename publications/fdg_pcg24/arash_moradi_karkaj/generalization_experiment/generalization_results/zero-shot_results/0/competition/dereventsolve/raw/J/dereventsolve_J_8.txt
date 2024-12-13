@@ -1,0 +1,15 @@
+To generate a structure that looks like the letter "J", we can use the following sequence of `ab_drop` function calls:
+
+```
+ab_drop('a')
+ab_drop('a')
+ab_drop('a')
+ab_drop('a')
+ab_drop('a')
+ab_drop('a')
+ab_drop('a')
+ab_drop('b')
+ab_drop('b')
+```
+
+This sequence will generate a structure that resembles the letter "J" when executed.

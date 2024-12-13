@@ -1,0 +1,26 @@
+To create the capital letter "A", we can break it down into three parts: the two legs and the crossbar. 
+
+First, we will create the two legs of the letter "A" using the "b31" block type. We will start from the bottom and move upwards. 
+
+```
+# Left leg of A
+ab_drop("b31", 6)
+ab_drop("b31", 7)
+ab_drop("b31", 8)
+
+# Right leg of A
+ab_drop("b31", 12)
+ab_drop("b31", 13)
+ab_drop("b31", 14)
+```
+
+Next, we will create the crossbar of the letter "A" using the "b13" block type. We will place it on top of the two legs. 
+
+```
+# Crossbar of A
+ab_drop("b13", 9)
+ab_drop("b13", 10)
+ab_drop("b13", 11)
+```
+
+By following these steps, we will have successfully created the capital letter "A" in the level.

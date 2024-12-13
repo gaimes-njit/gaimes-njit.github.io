@@ -1,0 +1,25 @@
+To generate the uppercase letter "H", follow these steps:
+
+1. Start by creating the two vertical sides of the letter:
+   ``` 
+   ab_drop('b13', 0)
+   ab_drop('b13', 2)
+   ```
+
+2. Next, place a horizontal block on top of the two vertical sides to create the crossbar of the letter:
+   ```
+   ab_drop('b31', 0)
+   ```
+
+3. Finally, add another horizontal block below the crossbar to complete the letter:
+   ```
+   ab_drop('b31', 0)
+   ```
+
+The final stream of commands to generate the letter "H" would be:
+```
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 0)
+ab_drop('b31', 0)
+```

@@ -1,0 +1,10 @@
+To generate the uppercase letter "L" using the provided block types and environment, you can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+ab_drop('b13', 4)
+ab_drop('b11', 4)
+```
+
+This sequence will place the blocks in a way that forms the letter "L" in the grid, starting from the X position 1.

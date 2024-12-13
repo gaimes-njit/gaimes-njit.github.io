@@ -1,0 +1,84 @@
+```python
+# Given database in the form of key-value pairs
+database = {
+    "a": [
+        "0: ab_drop",
+        "1: ab_drop",
+        "2: ab_drop",
+        "3: ab_drop",
+        "4: ab_drop"
+    ],
+    "b": [
+        "address: ab_drop",
+        "bold: ab_drop",
+        "charset: ab_drop",
+        "class: ab_drop",
+        "clear: ab_drop"
+    ],
+    "c": [
+        "color: ab_drop",
+        "column-gap: ab_drop",
+        "clip: ab_drop",
+        "content: ab_drop",
+        "counter-increment: ab_drop"
+    ],
+    "d": [
+        "display: ab_drop",
+        "direction: ab_drop",
+        "divisor: ab_drop",
+        "data-day: ab_drop",
+        "data-width: ab_drop"
+    ],
+    "e": [
+        "empty-cells: ab_drop",
+        "expand: ab_drop",
+        "exclude-result-prefixes: ab_drop",
+        "enctype: ab_drop",
+        "equality: ab_drop"
+    ],
+    "f": [
+        "font: ab_drop",
+        "font-family: ab_drop",
+        "font-style: ab_drop",
+        "font-variant: ab_drop",
+        "font-weight: ab_drop"
+    ],
+    "g": [
+        "grid: ab_drop",
+        "grid-gap: ab_drop",
+        "grid-template-columns: ab_drop",
+        "grid-template-rows: ab_drop",
+        "grid-template-areas: ab_drop"
+    ],
+    "h": [
+        "height: ab_drop",
+        "help: ab_drop",
+        "hid: ab_drop",
+        "href: ab_drop",
+        "hreflang: ab_drop"
+    ]
+}
+
+# Function to search for the letter in the database and return sequence of ab_drop function calls
+def find_letter(letter):
+    if letter in database:
+        return database[letter]
+    else:
+        return []
+
+# Find the required letter 'H' in the database
+letter_H = find_letter("h")
+
+# Return sequence of ab_drop function calls for 'H'
+for call in letter_H:
+    print(call)
+```
+
+Output:
+```
+height: ab_drop
+help: ab_drop
+hid: ab_drop
+href: ab_drop
+hreflang: ab_drop
+```

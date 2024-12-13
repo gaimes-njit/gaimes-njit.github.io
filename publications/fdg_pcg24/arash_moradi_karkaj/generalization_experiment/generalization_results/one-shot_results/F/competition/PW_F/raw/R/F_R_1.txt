@@ -1,0 +1,29 @@
+To create the uppercase letter "R" using the mentioned block types, we need to follow these steps:
+
+1. Place two vertical straight blocks (b13) next to each other at the leftmost position (x=1) on the grid to form the vertical stroke of the letter "R":
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+```
+
+2. Place a horizontal straight block (b31) starting from the second horizontal position (y=2) to form the top horizontal stroke of the letter "R":
+```
+ab_drop('b31', 2)
+```
+
+3. Repeat steps 1 and 2 to create the lower part of the letter "R":
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```
+
+The final stream of commands to generate the uppercase letter "R" would be:
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```

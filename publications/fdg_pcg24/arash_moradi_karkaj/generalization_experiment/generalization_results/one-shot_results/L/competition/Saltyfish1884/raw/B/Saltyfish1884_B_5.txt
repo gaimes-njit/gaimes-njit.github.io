@@ -1,0 +1,45 @@
+To generate a stable structure that resembles the character "B" while meeting all hard constraints, we can follow these steps:
+
+Step 1: Initialize the structure as an empty grid.
+
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Drop a b31 block on the base to serve as the starting point of the character "B". This block should be placed at the leftmost available slot on the base.
+
+```python
+ab_drop('b31', 0)
+```
+
+Step 3: Drop a b11 block on top of the b31 block to form the left vertical bar of the "B".
+
+```python
+ab_drop('b11', 0)
+```
+
+Step 4: Drop another b11 block above and slightly to the right of the previous block to form the top-left curve of the "B".
+
+```python
+ab_drop('b11', 1)
+```
+
+Step 5: Drop a b13 block next to the previous block to form the horizontal top part of the "B".
+
+```python
+ab_drop('b13', 2)
+```
+
+Step 6: Drop a b11 block below the previous block to form the bottom-left curve of the "B".
+
+```python
+ab_drop('b11', 2)
+```
+
+Step 7: Drop another b13 block next to the previous block to complete the horizontal bottom part of the "B".
+
+```python
+ab_drop('b13', 3)
+```
+
+The above steps will generate a stable structure that resembles the character "B". Note that the slot numbers and block types used may vary depending on the specific implementation of the ab_drop() function and the desired position of the structure.

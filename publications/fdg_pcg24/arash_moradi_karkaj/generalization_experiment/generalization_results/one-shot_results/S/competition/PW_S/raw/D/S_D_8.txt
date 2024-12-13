@@ -1,0 +1,19 @@
+This command will place a horizontal straight block of width 3 units at position 5 on the grid.
+
+``` python
+ab_drop('b31', 5)
+```
+
+Similarly, to generate the letter D, we can use a combination of block types. Here is the sequence of commands to generate the letter D:
+
+``` python
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+ab_drop('b13', 7)
+ab_drop('b13', 10)
+ab_drop('b31', 14)
+ab_drop('b13', 17)
+ab_drop('b13', 20)
+```
+
+This sequence of commands will place blocks in the shape of the letter D on the grid while obeying the gravity rules.

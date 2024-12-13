@@ -1,0 +1,39 @@
+To generate a stable structure that looks like the uppercase character "C" and meets all the hard constraints, we can follow the steps below:
+
+1. Initialize the structure as an empty WxH grid using the given map initialization code:
+
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start by dropping a b31 block at the bottom layer and the center slot (slot 9) to form the base of the "C" shape. Use the `ab_drop()` function and update the structure accordingly.
+
+```python
+ab_drop("b31", 9)
+```
+
+3. Next, drop a b13 block at the layer 14 (one layer above the base) and the leftmost slot (slot 0) to create the vertical stroke of the "C". Again, use the `ab_drop()` function and update the structure.
+
+```python
+ab_drop("b13", 0)
+```
+
+4. To complete the "C" shape, drop another b31 block at layer 11 (three layers above the base) and the rightmost slot (slot 18). 
+
+```python
+ab_drop("b31", 18)
+```
+
+5. At this point, the basic structure of the "C" shape is formed. However, as mentioned in constraint 5.4, we need to add additional support to ensure stability. Drop a b11 block at layer 13 and the center slot (slot 9), which is under the right end of the upper b31 block.
+
+```python
+ab_drop("b11", 9)
+```
+
+6. Finally, drop a b11 block at layer 12 and the center slot (slot 9), which is under the left end of the upper b31 block.
+
+```python
+ab_drop("b11", 9)
+```
+
+After following these steps, the structure should resemble the uppercase character "C" and meet all the hard constraints. Remember to update the structure after each block drop to keep track of the current state.

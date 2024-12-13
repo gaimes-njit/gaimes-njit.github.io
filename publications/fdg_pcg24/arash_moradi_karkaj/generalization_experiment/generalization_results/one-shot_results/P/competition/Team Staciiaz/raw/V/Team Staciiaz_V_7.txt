@@ -1,0 +1,11 @@
+To generate a stable structure that looks like the character "V" and meets all the constraints, the following steps can be taken using the `ab_drop()` function:
+
+1. Initialize the structure as an empty WxH grid using `W = 20` and `H = 16`.
+
+2. Drop a b13 block at the center slot of the bottom layer (layer 0) using `ab_drop('b13', 10)`.
+
+3. Drop a b31 block at the center slot of the layer above the bottom layer (layer 1) using `ab_drop('b31', 10)`.
+
+4. Drop another b13 block at the center slot of the layer above the previous block (layer 2) using `ab_drop('b13', 10)`.
+
+By following these steps, a stable structure in the shape of the character "V" can be generated, satisfying both the stability constraint and the no boundary intrusion constraint.

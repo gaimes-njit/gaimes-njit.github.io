@@ -1,0 +1,10 @@
+To create a structure in the shape of the capital letter "I" using the ab_drop() function, we need to drop four column blocks vertically and center them at specific slots. The slot positions can be determined based on the width (W) of the grid. 
+
+Here is the complete implementation:
+
+ab_drop("b13", 9)  # Drop the first column block in the center at x_position=9
+ab_drop("b13", 10)  # Drop the second column block in the center at x_position=10
+ab_drop("b13", 11)  # Drop the third column block in the center at x_position=11
+ab_drop("b13", 12)  # Drop the fourth column block in the center at x_position=12
+
+This implementation ensures that the blocks are dropped in a bottom-to-top fashion, creating a structure that looks like the letter "I" when the level reaches structural stability.

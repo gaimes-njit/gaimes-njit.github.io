@@ -1,0 +1,8 @@
+To generate the uppercase English letter "L", you can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+```

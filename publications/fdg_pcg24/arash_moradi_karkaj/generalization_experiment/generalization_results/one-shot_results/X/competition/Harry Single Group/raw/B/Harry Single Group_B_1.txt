@@ -1,0 +1,30 @@
+To form the shape resembling the letter "B", we need to place bricks in the following pattern:
+
+1. Place a b31 brick horizontally at position (6, 0). This brick will occupy the cells (5, 0), (6, 0), and (7, 0).
+
+2. Place a b13 brick vertically at position (5, 1). This brick will occupy the cells (5, 1), (5, 2), and (5, 3).
+
+3. Place a b11 brick at position (8, 0). This brick will occupy the cell (8, 0).
+
+```python
+# Map initialization
+field = [[0 for _ in range(20)] for _ in range(16)]
+
+# Function to check if a cell is occupied by a brick
+def is_occupied(x, y):
+    return field[y][x] == 1
+
+# Function to place a brick on the field
+def place_brick(x, y, width, height):
+    for i in range(width):
+        for j in range(height):
+            field[y+j][x+i] = 1
+
+
+# Place the bricks to form the letter "B"
+ab_drop('b31', 6)
+ab_drop('b13', 5)
+place_brick(8, 0, 1, 1)
+```
+
+This code will place the bricks on the field and form a shape resembling the letter "B" while satisfying the important notes mentioned in the description.

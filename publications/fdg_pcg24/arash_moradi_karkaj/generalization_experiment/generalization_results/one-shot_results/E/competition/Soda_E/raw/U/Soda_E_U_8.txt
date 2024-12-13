@@ -1,0 +1,17 @@
+To generate the letter "U" on the 2D grid, we can use the following ab_drop() calls to create the structure:
+
+```
+# Step 1: Create the base of the "U"
+ab_drop("b31", 7)   # Bottom bar of "U"
+ab_drop("b31", 12)  # Bottom bar of "U"
+
+# Step 2: Create the sides of the "U"
+ab_drop("b13", 4)   # Left side of "U"
+ab_drop("b13", 15)  # Right side of "U"
+
+# Step 3: Create the top of the "U"
+ab_drop("b31", 7)   # Top bar of "U"
+ab_drop("b31", 12)  # Top bar of "U"
+```
+
+By following these steps, we can build the "U" structure on the 2D grid.

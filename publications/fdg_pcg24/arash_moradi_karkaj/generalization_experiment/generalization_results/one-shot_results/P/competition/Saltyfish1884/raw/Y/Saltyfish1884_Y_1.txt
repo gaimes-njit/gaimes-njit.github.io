@@ -1,0 +1,56 @@
+To generate a stable structure that resembles the character "Y" while meeting all hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Place the base blocks (b11) at the bottom of the structure to create a solid base.
+
+3. Place a vertical block (b13) on the left side of the structure at a suitable slot to create the left side of the "Y".
+
+4. Place a horizontal block (b31) on top of the vertical block to connect the left and right sides of the "Y".
+
+5. Place another vertical block on the right side of the structure at a suitable slot to create the right side of the "Y".
+
+6. Use the `ab_drop()` function to drop each block in the structure. The dropping position and order are crucial to ensure stability and prevent boundary intrusion. Adjust the slot number (y) in the `ab_drop()` function to align the block centers correctly.
+
+Here's an example of how the structure can be formed, assuming W = 20 and H = 16:
+
+```
+structure = [[' ']*20 for _ in range(16)]
+
+# Place base blocks
+structure[0][9] = 'b11'
+structure[0][10] = 'b11'
+
+# Place left-side vertical block
+structure[1][8] = 'b13'
+structure[2][8] = 'b13'
+structure[3][8] = 'b13'
+
+# Place horizontal block on top
+structure[3][9] = 'b31'
+structure[3][10] = 'b31'
+structure[3][11] = 'b31'
+
+# Place right-side vertical block
+structure[1][12] = 'b13'
+structure[2][12] = 'b13'
+structure[3][12] = 'b13'
+
+# Drop each block in the structure
+ab_drop('b11', 9) # Drop base blocks
+ab_drop('b11', 10)
+ab_drop('b13', 8) # Drop left-side vertical block
+ab_drop('b13', 8)
+ab_drop('b13', 8)
+ab_drop('b31', 10) # Drop horizontal block
+ab_drop('b31', 11)
+ab_drop('b31', 12)
+ab_drop('b13', 12) # Drop right-side vertical block
+ab_drop('b13', 12)
+ab_drop('b13', 12)
+```
+
+This will create a stable structure resembling the character "Y" while meeting the stability and boundary intrusion constraints. Note that the slot numbers and block positions may need to be adjusted to achieve the desired structure.

@@ -1,0 +1,9 @@
+ab_drop('b13', 17)  # Place vertical block at position 17
+ab_drop('b13', 1)   # Place vertical block at position 1
+ab_drop('b11', 0)   # Place square block at position 0
+ab_drop('b11', 19)  # Place square block at position 19
+ab_drop('b13', 2)   # Place vertical block at position 2
+ab_drop('b13', 18)  # Place vertical block at position 18
+ab_drop('b13', 3)   # Place vertical block at position 3
+ab_drop('b13', 17)  # Place vertical block at position 17
+ab_drop('b31', 9)   # Place horizontal block at position 9

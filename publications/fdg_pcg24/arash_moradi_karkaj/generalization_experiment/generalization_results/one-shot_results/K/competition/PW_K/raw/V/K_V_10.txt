@@ -1,0 +1,22 @@
+To generate the uppercase English letter "V" using the given block types and environment, you can follow these steps:
+
+1. Place the first vertical straight block (b13) at position 4 along the width.
+2. Place the second vertical straight block (b13) at position 6 along the width.
+3. Place the horizontal straight block (b31) at position 5 along the width.
+4. Place the first vertical straight block (b13) at position 4 along the width.
+5. Place the second vertical straight block (b13) at position 5 along the width.
+6. Place the horizontal straight block (b31) at position 5 along the width.
+7. Place the first vertical straight block (b13) at position 4 along the width.
+8. Place the second vertical straight block (b13) at position 6 along the width.
+
+Here is the stream of commands to generate the letter "V":
+```
+ab_drop('b13',4)
+ab_drop('b13',6)
+ab_drop('b31',5)
+ab_drop('b13',4)
+ab_drop('b13',5)
+ab_drop('b31',5)
+ab_drop('b13',4)
+ab_drop('b13',6)
+```

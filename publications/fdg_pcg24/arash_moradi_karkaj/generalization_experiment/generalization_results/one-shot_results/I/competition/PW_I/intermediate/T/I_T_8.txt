@@ -1,0 +1,8 @@
+To create the uppercase English letter "T", you can use the following stream of ab_drop() commands:
+
+ab_drop('b31',1)  # Place the horizontal block at position 1 along the width
+ab_drop('b13',2)  # Place the vertical block at position 2 along the width
+ab_drop('b11',2)  # Place the square block at position 2 along the width
+ab_drop('b31',2)  # Place the horizontal block at position 2 along the width
+
+This will form the shape of the letter "T" within the allowed space and maintain stability according to the gravity rules.

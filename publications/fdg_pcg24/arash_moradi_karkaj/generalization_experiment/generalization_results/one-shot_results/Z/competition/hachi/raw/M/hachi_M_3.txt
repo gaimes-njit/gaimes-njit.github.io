@@ -1,0 +1,13 @@
+Example:
+
+ab_drop("b13", 6)
+ab_drop("b31", 7)
+ab_drop("b13", 8)
+ab_drop("b31", 9)
+ab_drop("b13", 10)
+ab_drop("b11", 10)
+ab_drop("b13", 11)
+ab_drop("b31", 12)
+ab_drop("b13", 13)
+ab_drop("b31", 14)
+ab_drop("b13", 15)

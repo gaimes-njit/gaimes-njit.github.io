@@ -1,0 +1,11 @@
+For the uppercase English letter "T", the stream of commands to create it would be:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',2)
+ab_drop('b11',2)
+ab_drop('b11',1)
+ab_drop('b11',3)
+```
+
+This will create the letter "T" using the block types "b31", "b13", and "b11" in the defined grid.

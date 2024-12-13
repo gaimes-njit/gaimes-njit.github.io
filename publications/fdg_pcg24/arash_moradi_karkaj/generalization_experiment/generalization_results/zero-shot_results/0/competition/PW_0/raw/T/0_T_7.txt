@@ -1,0 +1,21 @@
+To create the uppercase English letter "T" in the defined environment using the given block types, you can follow these steps:
+
+1. Drop a b31 block at position (1, 8). This will serve as the horizontal part of the "T".
+
+```
+ab_drop("b31", 1)
+```
+
+2. Drop a b13 block at position (2, 9). This will serve as the vertical part of the "T".
+
+```
+ab_drop("b13", 2)
+```
+
+3. Drop another b31 block at position (2, 9). This will overlap the previous block, creating the intersection of the "T".
+
+```
+ab_drop("b31", 2)
+```
+
+These commands will create the uppercase English letter "T" within the allowed space and follow the gravity rules.

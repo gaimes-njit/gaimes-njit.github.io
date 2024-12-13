@@ -1,0 +1,16 @@
+To generate the uppercase English letter "J", you can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```
+
+The first command `ab_drop('b31', 1)` places a horizontal straight block starting from position 1, making the top part of the "J".
+
+The second command `ab_drop('b13', 0)` places a vertical straight block starting from position 0, making the left part of the "J".
+
+The third command `ab_drop('b13', 2)` places another vertical straight block starting from position 2, making the right part of the "J".
+
+The final command `ab_drop('b31', 1)` places another horizontal straight block starting from position 1, completing the bottom part of the "J".

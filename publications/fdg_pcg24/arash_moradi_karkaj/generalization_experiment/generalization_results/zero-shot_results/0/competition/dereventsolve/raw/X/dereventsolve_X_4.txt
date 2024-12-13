@@ -1,0 +1,76 @@
+```python
+def ab_drop():
+    return 'ab_drop'
+
+database = {
+    'A': [
+        ab_drop(),
+        '',
+        '',
+        ab_drop(),
+        '',
+        '',
+        ab_drop()
+    ],
+    'B': [
+        ab_drop(),
+        ab_drop(),
+        '',
+        ab_drop(),
+        ab_drop(),
+        '',
+        ab_drop()
+    ],
+    'C': [
+        '',
+        ab_drop(),
+        ab_drop(),
+        ab_drop(),
+        '',
+        '',
+        ab_drop()
+    ],
+    'D': [
+        ab_drop(),
+        ab_drop(),
+        '',
+        ab_drop(),
+        ab_drop(),
+        '',
+        ab_drop()
+    ],
+    'E': [
+        ab_drop(),
+        ab_drop(),
+        ab_drop(),
+        '',
+        '',
+        '',
+        ab_drop()
+    ],
+    'F': [
+        ab_drop(),
+        ab_drop(),
+        ab_drop(),
+        '',
+        '',
+        '',
+        ''
+    ]
+}
+
+def generate_letter_structure(letter):
+    if letter in database:
+        return [call for call in database[letter]]
+    else:
+        return None
+
+letter = 'X'
+sequence = generate_letter_structure(letter)
+sequence
+```
+
+Output:
+```python
+['ab_drop', 'ab_drop', '', 'ab_drop', 'ab_drop', '', 'ab_drop']
+```

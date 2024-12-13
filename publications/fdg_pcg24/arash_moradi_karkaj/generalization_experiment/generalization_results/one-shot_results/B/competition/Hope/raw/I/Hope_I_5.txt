@@ -1,0 +1,12 @@
+To create the letter "I" inside the 20*16 box, we can use the following ab_drop commands:
+
+1. Place the first vertical block:
+ab_drop('b13', 9)
+
+2. Place the horizontal block:
+ab_drop('b31', 8)
+
+3. Place the second vertical block:
+ab_drop('b13', 9)
+
+The resulting structure will look like the letter "I" inside the 20*16 box. The coordinates are based on a 0-based index, where the top-left corner is (0, 0).

@@ -1,0 +1,12 @@
+To generate the uppercase letter "L", we can use the following stream of commands:
+
+```
+ab_drop('b31',1)   // Place a horizontal straight block at position 1
+ab_drop('b13',4)   // Place a vertical straight block at position 4
+ab_drop('b11',4)   // Place a square block at position 4
+ab_drop('b11',5)   // Place a square block at position 5
+ab_drop('b11',6)   // Place a square block at position 6
+ab_drop('b11',7)   // Place a square block at position 7
+```
+
+By executing these commands consecutively, you will be able to construct the uppercase letter "L" within the allowed space boundaries and following the gravity rules.

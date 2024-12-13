@@ -1,0 +1,16 @@
+To generate the uppercase English letter "P", you can use the following commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+ab_drop('b13', 2)
+```
+
+Explanation:
+- The first command `ab_drop('b31', 1)` places a horizontal straight block starting from position 1.
+- The next three commands `ab_drop('b11', 1)`, `ab_drop('b11', 2)`, and `ab_drop('b11', 3)` place three square blocks right next to each other, forming the top part of the letter "P".
+- The last command `ab_drop('b13', 2)` places a vertical straight block in the middle of the three square blocks, completing the letter "P".
+
+Please note that these commands assume the grid is empty before executing them. Adjust the position indices accordingly if there are existing blocks in the grid.

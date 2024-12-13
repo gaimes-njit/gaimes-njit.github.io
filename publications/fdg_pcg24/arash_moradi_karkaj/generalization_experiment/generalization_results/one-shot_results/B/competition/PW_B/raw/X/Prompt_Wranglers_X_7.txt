@@ -1,0 +1,10 @@
+This is an example of how to generate the uppercase English letter "X":
+
+ab_drop('b13', 1)  # Place a vertical block at position 1
+ab_drop('b31', 0)  # Place a horizontal block at position 0
+ab_drop('b13', 2)  # Place a vertical block at position 2
+ab_drop('b11', 1)  # Place a square block on top of the previous blocks to stabilize the structure
+ab_drop('b31', 0)  # Place a horizontal block at position 0
+ab_drop('b13', 2)  # Place a vertical block at position 2
+ab_drop('b13', 1)  # Place a vertical block at position 1
+ab_drop('b31', 1)  # Place a horizontal block on top of the previous blocks to complete the letter "X" structure

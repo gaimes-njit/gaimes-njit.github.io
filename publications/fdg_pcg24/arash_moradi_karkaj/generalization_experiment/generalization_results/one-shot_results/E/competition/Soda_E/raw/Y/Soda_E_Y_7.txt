@@ -1,0 +1,33 @@
+In order to generate a structure that looks like the letter Y in a bottom-to-top fashion, we can break it down into three parts: the top arm, the bottom arm, and the stem.
+
+First, let's start by creating the top arm of the Y. We can use the b13 block to create a vertical column and then add a square block on top of it to form the arm. We will place the top arm at the center of the grid, which is x_position = 10.
+
+```
+ab_drop("b13", 10)
+ab_drop("b11", 10)
+```
+
+Next, let's create the bottom arm of the Y. This will also be a vertical column with a square block on top. We will place the bottom arm slightly to the left of the center, at x_position = 9.
+
+```
+ab_drop("b13", 9)
+ab_drop("b11", 9)
+```
+
+Finally, let's create the stem of the Y. We will use the b31 block to create a horizontal row and place it at the bottom of the grid, at y = 0.
+
+```
+ab_drop("b31", 7)
+```
+
+Here is the complete implementation:
+
+```
+ab_drop("b13", 10)
+ab_drop("b11", 10)
+
+ab_drop("b13", 9)
+ab_drop("b11", 9)
+
+ab_drop("b31", 7)
+```

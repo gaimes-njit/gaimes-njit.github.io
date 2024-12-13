@@ -1,0 +1,4 @@
+ab_drop('b31', 9)  # Place a horizontal block on the bottom layer, center pivot at slot 9
+ab_drop('b13', 8)  # Place a vertical block on the bottom layer, center pivot at slot 8
+ab_drop('b13', 9)  # Place a vertical block on the bottom layer, center pivot at slot 9
+ab_drop('b31', 11)  # Place a horizontal block on the bottom layer, center pivot at slot 11

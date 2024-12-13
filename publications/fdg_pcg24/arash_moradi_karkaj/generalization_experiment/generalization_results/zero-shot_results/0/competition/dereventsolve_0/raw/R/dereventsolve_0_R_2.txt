@@ -1,0 +1,9 @@
+```
+ab_drop("R", 1, 2)
+ab_drop("R", 3, 2)
+ab_drop("R", 3, 1)
+ab_drop("R", 1, 1)
+ab_drop("R", 2, 2)
+ab_drop("R", 2, 3)
+ab_drop("R", 1, 3)
+```

@@ -1,0 +1,27 @@
+Here is a possible stream of commands to generate the uppercase letter "E":
+
+```
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+```
+
+This stream of commands places the block types in the following positions:
+
+```
+ b13
+ b31
+ b31
+ b31
+ b13
+ b31
+ b31
+ b31
+```
+
+When these blocks are stacked together, they form the letter "E".

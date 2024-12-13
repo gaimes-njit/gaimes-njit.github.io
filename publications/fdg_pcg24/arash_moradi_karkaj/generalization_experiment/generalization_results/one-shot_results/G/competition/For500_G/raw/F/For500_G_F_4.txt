@@ -1,0 +1,6 @@
+ab_drop('b31', 10)  # Place the horizontal block at slot 10, resembling the top part of the 'F'
+ab_drop('b11', 11)  # Place the square block at slot 11, resembling the middle part of the 'F'
+ab_drop('b13', 8)   # Place the vertical block at slot 8, resembling the long vertical line of the 'F'
+ab_drop('b11', 11)  # Place another square block at slot 11, completing the middle part of the 'F'
+ab_drop('b31', 11)  # Place another horizontal block at slot 11, resembling the bottom part of the 'F'
+ab_drop('b13', 8)   # Place another vertical block at slot 8, adding another long vertical line to the 'F'

@@ -1,0 +1,37 @@
+To create a structure that looks like the letter "C" in the given 2D grid, we need to follow the approach mentioned in the hints. Here's the step-by-step implementation:
+
+Step 1: Create the vertical pipe of the "C"
+```
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+```
+
+Step 2: Create the top horizontal bar of the "C"
+```
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+ab_drop("b13", 10)
+```
+
+Step 3: Create the bottom horizontal bar of the "C"
+```
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+ab_drop("b13", 10)
+```
+
+Complete Implementation:
+```python
+ab_drop("b31", 9)
+ab_drop("b11", 8)
+ab_drop("b31", 9)
+ab_drop("b11", 10)
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+ab_drop("b13", 10)
+ab_drop("b13", 8)
+ab_drop("b11", 9)
+ab_drop("b13", 10)
+```

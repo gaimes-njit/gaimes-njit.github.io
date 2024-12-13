@@ -1,0 +1,18 @@
+To generate a stable structure that looks like the character "Y" and meets all the constraints, we can use the `ab_drop()` function to drop the blocks in a strategic manner. Here are the steps to follow:
+
+1. Start by dropping a b31 block at the center slot (slot 10) in the bottom layer (layer 0) to serve as the base of the "Y":
+   `ab_drop('b31', 10)`
+
+2. Next, drop a b11 block just above the center slot (slot 10) in the second layer (layer 1):
+   `ab_drop('b11', 10)`
+
+3. Now, drop a b13 block at the leftmost slot (slot 0) in the third layer (layer 2):
+   `ab_drop('b13', 0)`
+
+4. Repeat step 3 to drop another b13 block at the rightmost slot (slot 19) in the third layer (layer 2):
+   `ab_drop('b13', 19)`
+
+5. Finally, drop a b11 block just above the center slot (slot 10) in the fourth layer (layer 3):
+   `ab_drop('b11', 10)`
+
+After executing these steps, the `structure` grid will represent a stable structure that looks like the character "Y" and meets all the constraints. You can print the structure to see the result.

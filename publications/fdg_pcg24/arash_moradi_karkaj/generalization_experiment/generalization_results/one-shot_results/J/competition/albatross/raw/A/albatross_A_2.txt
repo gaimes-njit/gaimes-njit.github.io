@@ -1,0 +1,16 @@
+To construct a level for Science Birds that resembles the letter "A", we can use the `ab_drop()` function to drop blocks in a sequential manner. The following code sequence satisfies all the constraints:
+
+ab_drop('b31', 10)
+ab_drop('b13', 10)
+ab_drop('b11', 10)
+ab_drop('b11', 9)
+ab_drop('b11', 11)
+
+Explanation:
+- The first block being dropped is a B31 block at slot 10. This forms the base of the "A" shape.
+- The second block being dropped is a B13 block at slot 10. This forms the left side of the "A" shape.
+- The third block being dropped is a B11 block at slot 10. This forms the top of the "A" shape.
+- The fourth block being dropped is a B11 block at slot 9. This forms the top left part of the "A" shape.
+- The fifth block being dropped is a B11 block at slot 11. This forms the top right part of the "A" shape.
+
+The resulting structure will resemble the letter "A" and maintain stability under gravity, satisfying all the constraints of the Science Birds game.

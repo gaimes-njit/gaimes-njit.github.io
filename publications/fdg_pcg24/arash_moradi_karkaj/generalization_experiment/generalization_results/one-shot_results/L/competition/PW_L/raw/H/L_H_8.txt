@@ -1,0 +1,11 @@
+To generate the uppercase letter "H" using the given block types, you can use the following stream of commands:
+
+```
+ab_drop('b31',1)
+ab_drop('b13',1)
+ab_drop('b31',2)
+ab_drop('b13',2)
+ab_drop('b31',3)
+```
+
+This sequence of commands will first place a horizontal straight block (b31) at position 1, then a vertical straight block (b13) at position 1. Next, another horizontal straight block (b31) is placed at position 2, followed by another vertical straight block (b13) at position 2. Finally, the last horizontal straight block (b31) is placed at position 3, completing the formation of the letter "H" within the specified boundaries and gravity rules.

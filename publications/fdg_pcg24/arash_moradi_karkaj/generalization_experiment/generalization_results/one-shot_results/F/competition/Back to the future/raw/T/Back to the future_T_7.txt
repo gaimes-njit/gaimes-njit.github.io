@@ -1,0 +1,78 @@
+To generate a stable structure that looks like the uppercase character "T" and meets all the hard constraints, we can use the `ab_drop()` function to drop the blocks in a strategic manner. The following steps outline one possible approach to achieve this:
+
+1. Initialize the structure as an empty grid using the provided code:
+
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start by dropping the b31 block at the center slot of the bottom layer to form the base of the structure. This will provide stable support for the rest of the blocks:
+
+```python
+ab_drop('b31', 9)
+```
+Coordinates: (15, 9)
+
+3. Next, drop a b11 block at the center slot of the layer above the base:
+
+```python
+ab_drop('b11', 9)
+```
+Coordinates: (14, 9)
+
+4. Drop another b11 block at the center slot of the same layer, but one slot to the left:
+
+```python
+ab_drop('b11', 8)
+```
+Coordinates: (14, 8)
+
+5. Drop a b13 block at the center slot of the layer above, aligning it with the b11 blocks below:
+
+```python
+ab_drop('b13', 9)
+```
+Coordinates: (13, 9)
+
+6. Drop a b11 block at the slot to the right of the b13 block, aligning with the previously dropped b11 block:
+
+```python
+ab_drop('b11', 10)
+```
+Coordinates: (13, 10)
+
+7. Repeat steps 5 and 6 two more times to complete the vertical stem of the "T":
+
+```python
+ab_drop('b13', 9)
+```
+Coordinates: (12, 9)
+
+```python
+ab_drop('b11', 10)
+```
+Coordinates: (12, 10)
+
+```python
+ab_drop('b13', 9)
+```
+Coordinates: (11, 9)
+
+```python
+ab_drop('b11', 10)
+```
+Coordinates: (11, 10)
+
+8. Finally, drop two b31 blocks horizontally above the vertical stem of the "T" to form the top horizontal part:
+
+```python
+ab_drop('b31', 7)
+```
+Coordinates: (10, 7)
+
+```python
+ab_drop('b31', 11)
+```
+Coordinates: (10, 11)
+
+By following these steps, you can generate a stable structure resembling the uppercase letter "T" that meets the hard constraints.

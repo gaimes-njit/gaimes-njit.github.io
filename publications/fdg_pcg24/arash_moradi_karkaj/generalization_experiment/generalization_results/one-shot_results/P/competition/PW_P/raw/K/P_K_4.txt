@@ -1,0 +1,15 @@
+To generate the uppercase letter "K", we can use a combination of the block types b13 and b31. Here is the stream of commands to create the letter "K":
+
+```plaintext
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b31', 2)
+ab_drop('b31', 3)
+ab_drop('b13', 4)
+ab_drop('b31', 4)
+ab_drop('b13', 5)
+ab_drop('b13', 6)
+```
+
+This sequence of commands will first create the left vertical line of the "K" using three b13 blocks. Then, a horizontal line is created using two b31 blocks. Finally, the right vertical line is completed using two additional b13 blocks.

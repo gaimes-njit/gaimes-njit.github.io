@@ -1,0 +1,7 @@
+ab_drop('b13', 0)    # Drop a vertical block at the leftmost slot to form the left part of the letter 'Z'
+ab_drop('b11', 1)    # Drop a square block next to the vertical block to form the diagonal line of the 'Z'
+ab_drop('b11', 2)    # Drop another square block next to the previous one to complete the diagonal line of the 'Z'
+ab_drop('b31', 5)    # Drop a horizontal block to form the top bar of the 'Z'
+ab_drop('b11', 5)    # Drop a square block next to the horizontal block to connect it with the diagonal line of the 'Z'
+ab_drop('b31', 8)    # Drop another horizontal block to form the bottom bar of the 'Z'
+ab_drop('b11', 8)    # Drop a square block next to the horizontal block to connect it with the diagonal line of the 'Z'

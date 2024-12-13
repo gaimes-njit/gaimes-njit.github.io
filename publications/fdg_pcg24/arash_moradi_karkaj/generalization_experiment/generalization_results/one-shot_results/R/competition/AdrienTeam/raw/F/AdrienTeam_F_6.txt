@@ -1,0 +1,18 @@
+```
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# First, drop the horizontal block (b31) at the bottom left corner (slot 0)
+ab_drop('b31', 1)
+
+# Then, drop the vertical block (b13) at the bottom left corner (slot 1)
+ab_drop('b13', 1)
+ab_drop('b11', 1)
+
+# Drop the horizontal blocks (b11) to create the top horizontal line of the 'F'
+ab_drop('b11', 7)
+ab_drop('b11', 8)
+
+# Finally, drop the vertical block (b13) at the center (slot 7) to complete the 'F'
+ab_drop('b13', 7)
+```

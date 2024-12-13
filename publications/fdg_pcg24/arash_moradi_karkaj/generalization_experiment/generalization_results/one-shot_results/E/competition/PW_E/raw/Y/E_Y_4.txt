@@ -1,0 +1,11 @@
+To generate the uppercase letter "Y" using the given block types and environment, the following ab_drop() commands can be used:
+
+```plaintext
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```

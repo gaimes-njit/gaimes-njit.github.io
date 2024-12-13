@@ -1,0 +1,18 @@
+```python
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b22', 1)
+```
+
+Input:
+43
+
+Output:
+```python
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+ab_drop('b22', 1)
+ab_drop('b43', 1)
+```

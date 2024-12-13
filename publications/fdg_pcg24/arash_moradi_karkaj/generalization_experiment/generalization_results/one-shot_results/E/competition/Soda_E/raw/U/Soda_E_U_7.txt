@@ -1,0 +1,29 @@
+To create a structure that looks like the letter "U" in the level, we can use the ab_drop() function to strategically place the blocks. 
+
+First, we need to create the base of the "U" shape. We can use a row block "b31" and place it at the bottom of the level. 
+
+```python
+ab_drop("b31", 8)
+```
+
+Next, we need to create the side pillars of the "U" shape. We can use column blocks "b13" and place them on either side of the base. 
+
+```python
+ab_drop("b13", 5)
+ab_drop("b13", 11)
+```
+
+Finally, we need to create the top bar of the "U" shape. We can use a row block "b31" and place it at the top, connecting the two side pillars. 
+
+```python
+ab_drop("b31", 8)
+```
+
+By following these steps, the complete implementation to generate a "U" shape in the level would be as follows:
+
+```python
+ab_drop("b31", 8)
+ab_drop("b13", 5)
+ab_drop("b13", 11)
+ab_drop("b31", 8)
+```

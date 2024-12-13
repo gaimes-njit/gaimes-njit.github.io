@@ -1,0 +1,11 @@
+To generate a stable structure that looks like the character "E", we can follow these steps:
+
+1. Initialize the structure as an empty WxH grid using the provided `structure` variable.
+2. Start by dropping the b31 block at slot 2 using the `ab_drop()` function: `ab_drop('b31', 2)`.
+3. Drop the b31 block at slot 2 on the layer above the previous block: `ab_drop('b31', 2)`.
+4. Drop the b11 block at slot 2 on the layer above the previous block: `ab_drop('b11', 2)`.
+5. Drop the b11 block at slot 1 on the layer above the previous block: `ab_drop('b11', 1)`.
+6. Drop the b31 block at slot 2 on the layer above the previous block: `ab_drop('b31', 2)`.
+7. Drop the b11 block at slot 2 on the layer above the previous block: `ab_drop('b11', 2)`.
+
+This sequence of block drops will result in a stable structure that looks like the character "E" and satisfies all the constraints.

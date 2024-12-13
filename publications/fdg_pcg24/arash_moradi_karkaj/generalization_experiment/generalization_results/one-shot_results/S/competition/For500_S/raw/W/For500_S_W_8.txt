@@ -1,0 +1,7 @@
+ab_drop('b13', 9) # bottom part of left vertical line
+ab_drop('b13', 10)
+ab_drop('b13', 9) # top part of left vertical line
+ab_drop('b31', 9) # top part of middle horizontal line
+ab_drop('b13', 9) # bottom part of right vertical line
+ab_drop('b13', 10)
+ab_drop('b13', 9) # top part of right vertical line

@@ -1,0 +1,37 @@
+To generate the uppercase letter "Q", we can use the following sequence of commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b31', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b31', 3)
+ab_drop('b31', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b31', 2)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b13', 3)
+ab_drop('b31', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+```
+
+By following this sequence of commands, the letter "Q" will be constructed, taking into account the stacking and stability rules of the environment.

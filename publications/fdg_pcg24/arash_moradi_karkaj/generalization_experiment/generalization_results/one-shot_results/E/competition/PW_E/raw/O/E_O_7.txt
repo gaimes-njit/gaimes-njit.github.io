@@ -1,0 +1,12 @@
+To generate the uppercase English letter "O", you can use the following series of `ab_drop()` commands:
+
+```
+ab_drop('b31', 1) # Place a horizontal block at position 1
+ab_drop('b31', 17) # Place a horizontal block at position 17
+ab_drop('b13', 1) # Place a vertical block at position 1
+ab_drop('b13', 19) # Place a vertical block at position 19
+ab_drop('b31', 1) # Place a horizontal block at position 1
+ab_drop('b31', 17) # Place a horizontal block at position 17
+```
+
+This series of commands will create the letter "O" in the grid following the given gravity rules.

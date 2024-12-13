@@ -1,0 +1,16 @@
+To create the letter "L" in the top-down orientation, we need to drop two blocks: a vertical pipe and a bottom bar. Here is the code to achieve that:
+
+```python
+ab_drop("b13", 9)  # vertical pipe
+ab_drop("b31", 9)  # bottom bar
+```
+
+This will create a structure resembling the letter "L". However, the structure may not be stable, so we need to add additional support to make it stable. Here is an updated code that ensures stability:
+
+```python
+ab_drop("b13", 9)  # vertical pipe
+ab_drop("b13", 8)  # additional support for stability
+ab_drop("b31", 9)  # bottom bar
+```
+
+By adding an additional block, we provide support for the vertical pipe, making the structure stable.

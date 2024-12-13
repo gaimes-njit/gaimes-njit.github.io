@@ -1,0 +1,26 @@
+```
+# Step 1: Initialize the map structure
+W = 20  # Number of slots
+H = 16  # Number of layers
+structure = [[' ']*W for _ in range(H)]
+
+# Step 2: Initialize the bottom layer with the base
+for i in range(W):
+    ab_drop('b11', i)
+
+# Step 3: Drop the first vertical block to start the "V" shape
+ab_drop('b13', 5)
+
+# Step 4: Add the second vertical block to complete the "V" shape
+ab_drop('b13', 9)
+
+# Step 5: Add the horizontal block on top
+ab_drop('b31', 7)
+
+# Step 6: Add the top block to complete the "V" shape
+ab_drop('b11', 8)
+
+# Step 7: Print the final structure
+for row in structure:
+    print(''.join(row))
+```

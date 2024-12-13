@@ -1,0 +1,11 @@
+To generate the uppercase English letter "C", use the following commands:
+
+```python
+ab_drop('b31', 1)
+ab_drop('b31', 6)
+ab_drop('b31', 12)
+ab_drop('b13', 1)
+ab_drop('b13', 12)
+```
+
+This will create the shape of the letter "C" in the environment, following the given gravity rules.

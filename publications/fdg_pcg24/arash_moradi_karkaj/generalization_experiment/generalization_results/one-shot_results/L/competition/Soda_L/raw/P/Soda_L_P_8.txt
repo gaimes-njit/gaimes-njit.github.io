@@ -1,0 +1,18 @@
+To create the letter "P", we can use the following steps:
+
+1. Drop a row block "b31" at x_position = 1 to form the top part of the letter.
+2. Drop a column block "b13" at x_position = 0 to form the vertical line of the letter.
+3. Drop a column block "b13" at x_position = 2 to form the bottom part of the letter.
+
+Here is the complete implementation:
+
+```
+# Drop the top part of the letter "P"
+ab_drop("b31", 1)
+
+# Drop the vertical line of the letter "P"
+ab_drop("b13", 0)
+
+# Drop the bottom part of the letter "P"
+ab_drop("b13", 2)
+```

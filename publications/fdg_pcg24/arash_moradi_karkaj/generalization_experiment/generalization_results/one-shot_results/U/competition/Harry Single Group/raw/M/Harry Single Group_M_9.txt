@@ -1,0 +1,68 @@
+To form the letter "M" shape using the available bricks, we can break it down into three parts: the left side, the middle, and the right side. 
+
+For the left and right sides, we can use the b13 brick rotated 90 degrees clockwise to create the vertical lines. To ensure stability, we will place the bricks such that they are supported by the ground or the previously placed bricks. 
+
+For the middle part, we can use the b31 brick to create the horizontal line. We will need to shift the x_position parameter accordingly to align the bricks correctly.
+
+Here is the code to generate the "M" shape:
+
+```python
+# Map Initialization
+map = []
+for row in range(16):
+    map.append(['-' for _ in range(20)])
+
+# Function to check if a cell is occupied
+def is_occupied(x, y):
+    return map[y][x] != '-'
+
+# Function to place a brick on the map
+def place_brick(x, y, brick):
+    if brick == 'b31':
+        map[y][x-1] = '#'
+        map[y][x] = '#'
+        map[y][x+1] = '#'
+    elif brick == 'b13':
+        map[y][x] = '#'
+        map[y+1][x] = '#'
+        map[y+2][x] = '#'
+
+# Function to drop a brick and check for collisions or stability
+def ab_drop(brick, x_position):
+    x = x_position
+    y = 15
+
+    if brick == 'b31':
+        while y >= 0:
+            if is_occupied(x-1, y) or is_occupied(x, y) or is_occupied(x+1, y):
+                break
+            y -= 1
+        
+        place_brick(x, y+1, brick)
+        
+    elif brick == 'b13':
+        while y >= 2:
+            if is_occupied(x, y) or is_occupied(x, y-1) or is_occupied(x, y-2):
+                break
+            y -= 1
+        
+        place_brick(x, y+2, brick)
+
+
+# Generate the left side of the "M"
+ab_drop('b13', 4)
+ab_drop('b13', 8)
+
+# Generate the middle part of the "M"
+ab_drop('b31', 5)
+
+# Generate the right side of the "M"
+ab_drop('b13', 12)
+ab_drop('b13', 16)
+
+# Print the map
+for row in map:
+    print(' '.join(row))
+```
+
+This code will generate the "M" shape using the available bricks, satisfying the important notes of stability and avoiding boundary collisions. The generated "M" shape will be printed at the end.

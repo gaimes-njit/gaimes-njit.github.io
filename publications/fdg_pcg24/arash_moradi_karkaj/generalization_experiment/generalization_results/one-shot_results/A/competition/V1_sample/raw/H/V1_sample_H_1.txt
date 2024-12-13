@@ -1,0 +1,17 @@
+ab drop(b11, y=9, layer=15)
+
+ab drop(b11, y=10, layer=15)
+
+ab drop(b11, y=11, layer=15)
+
+ab drop(b13, y=10, layer=14)
+
+ab drop(b11, y=9, layer=13)
+
+ab drop(b11, y=10, layer=13)
+
+ab drop(b11, y=11, layer=13)
+
+ab drop(b31, y=10, layer=12)
+
+This sequence of commands will create a stable structure resembling the letter "H" with the given block types and dimensions. Each block is dropped from the specified layer and slot to achieve the desired shape.

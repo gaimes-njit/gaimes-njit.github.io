@@ -1,0 +1,31 @@
+```
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Step 1: Drop the bottom horizontal block (b31) at the center of the map
+ab_drop('b31', 9)
+
+# Step 2: Drop the left vertical block (b13) at slot 8
+ab_drop('b13', 8)
+
+# Step 3: Drop the right vertical block (b13) at slot 11
+ab_drop('b13', 11)
+
+# Step 4: Drop the top horizontal block (b31) at the center of the map
+ab_drop('b31', 9)
+
+# Step 5: Drop the top right corner block (b11) at slot 12
+ab_drop('b11', 12)
+
+# Step 6: Drop the top left corner block (b11) at slot 7
+ab_drop('b11', 7)
+
+# Step 7: Drop the middle block (b11) at slot 9
+ab_drop('b11', 9)
+
+# Step 8: Drop the bottom right corner block (b11) at slot 12
+ab_drop('b11', 12)
+
+# Step 9: Drop the bottom left corner block (b11) at slot 7
+ab_drop('b11', 7)
+```

@@ -1,0 +1,43 @@
+To form the letter "D" using the given props and the ab_drop() function, we can follow these steps:
+
+1. Initialize the field:
+```python
+field = [[0]*20 for _ in range(16)]
+```
+
+2. Drop the b31 brick to form the straight vertical part of the "D":
+```python
+ab_drop('b31', 5)
+```
+This will occupy the cells (5, 0), (6, 0), and (7, 0).
+
+3. Drop the b13 brick to form the curved part of the "D":
+```python
+ab_drop('b13', 5)
+```
+This will occupy the cells (5, 1), (5, 2), and (5, 3).
+
+The final structure representing the letter "D" will occupy the following cells:
+(5, 0), (6, 0), (7, 0), (5, 1), (5, 2), (5, 3).
+
+Here's the complete code:
+
+```python
+def ab_drop(x, y):
+    # Implementation of ab_drop function
+    
+# 1. Initialize the field
+field = [[0]*20 for _ in range(16)]
+
+# 2. Drop the b31 brick to form the straight vertical part of the "D"
+ab_drop('b31', 5)
+
+# 3. Drop the b13 brick to form the curved part of the "D"
+ab_drop('b13', 5)
+
+# Print the field to visualize the final structure
+for row in field:
+    print(row)
+```
+
+You can test and visualize the final structure by executing the code above.

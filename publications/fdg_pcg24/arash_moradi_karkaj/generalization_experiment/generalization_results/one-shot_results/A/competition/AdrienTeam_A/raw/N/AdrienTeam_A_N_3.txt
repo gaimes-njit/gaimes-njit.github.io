@@ -1,0 +1,22 @@
+To construct the structure resembling "N", we can follow the following sequence of `ab_drop()` calls:
+
+```python
+ab_drop('b11', 0)
+ab_drop('b11', 0)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+ab_drop('b13', 4)
+ab_drop('b13', 4)
+ab_drop('b13', 6)
+ab_drop('b13', 6)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 3)
+ab_drop('b31', 3)
+ab_drop('b31', 5)
+ab_drop('b31', 5)
+ab_drop('b31', 7)
+ab_drop('b31', 7)
+```
+
+This sequence of `ab_drop()` calls drops the blocks in a specific order to form the shape of "N". The blocks are dropped starting from the bottom layer (layer 0) and move upwards layer by layer. The blocks are positioned in a way that aligns the centers of the blocks with the specific slots to form the shape of "N".

@@ -1,0 +1,24 @@
+The goal is to generate a structure that looks like the letter U in a level with a width (W) of 20 columns and a height (H) of 16 rows.
+
+To create the letter U, we can break it down into three blocks - a row block for the top, a column block for the left side, and another column block for the right side.
+
+Here's the step-by-step implementation to create the letter U structure:
+
+1. Place the row block for the top:
+   ab_drop("b31", 9)
+
+2. Place the left column block:
+   ab_drop("b13", 5)
+
+3. Place the right column block:
+   ab_drop("b13", 13)
+
+Finally, put the complete implementation to create the U structure:
+
+```
+ab_drop("b31", 9)
+ab_drop("b13", 5)
+ab_drop("b13", 13)
+```
+
+This implementation ensures stability and generates a structure that resembles the letter U.

@@ -1,0 +1,29 @@
+First, let's start by creating the base of the "M" shape using two row blocks ("b31") stacked on top of each other. We'll position them at x = 7 and x = 12 to create a gap in the middle:
+
+```python
+ab_drop("b31", 7)
+ab_drop("b31", 12)
+```
+
+Next, let's add the two diagonal sides of the "M" shape using column blocks ("b13"). We'll position them at x = 4 and x = 15:
+
+```python
+ab_drop("b13", 4)
+ab_drop("b13", 15)
+```
+
+Finally, we'll add the middle part of the "M" shape using a row block ("b31"). We'll position it at x = 10:
+
+```python
+ab_drop("b31", 10)
+```
+
+Here is the complete implementation:
+
+```python
+ab_drop("b31", 7)
+ab_drop("b31", 12)
+ab_drop("b13", 4)
+ab_drop("b13", 15)
+ab_drop("b31", 10)
+```

@@ -1,0 +1,5 @@
+ab_drop('b31', 8)  # Place the first horizontal block at slot 8, which will be the top bar of the 'F'
+ab_drop('b13', 7)  # Place a vertical block at slot 7, which will be the left vertical bar of the 'F'
+ab_drop('b31', 7)  # Place a horizontal block at slot 7, which will be the middle bar of the 'F'
+ab_drop('b11', 7)  # Place a square block at slot 7, which will be the center of the 'F'
+ab_drop('b13', 9)  # Place a vertical block at slot 9, which will be the right vertical bar of the 'F'

@@ -1,0 +1,14 @@
+```python
+def ab_drop():
+    return None
+
+def generate_X():
+    return [ab_drop, ab_drop, ab_drop]
+
+result = generate_X()
+print(result)
+```
+Output:
+```
+[<function ab_drop at 0x...>, <function ab_drop at 0x...>, <function ab_drop at 0x...>]
+```

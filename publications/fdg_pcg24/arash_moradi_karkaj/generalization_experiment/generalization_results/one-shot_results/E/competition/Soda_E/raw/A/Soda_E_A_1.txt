@@ -1,0 +1,4 @@
+First, let's start by creating the horizontal bar of the "A" shape. We will drop a row block (b31) and a single block (b11) on top of it in the center of the grid.
+
+ab_drop("b31", 10)
+ab_drop("b11", 9)

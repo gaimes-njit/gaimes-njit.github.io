@@ -1,0 +1,12 @@
+To generate a structure that looks like the letter "N" in Tetris, we can break it down into three blocks - two vertical pipes and one horizontal bar. Here is the step-by-step implementation:
+
+Step 1: Drop the first vertical pipe
+ab_drop("b31", 8)
+
+Step 2: Drop the horizontal bar
+ab_drop("b13", 9)
+
+Step 3: Drop the second vertical pipe
+ab_drop("b31", 10)
+
+This implementation will create a structure in the level that resembles the letter "N".

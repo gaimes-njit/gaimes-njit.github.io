@@ -1,0 +1,16 @@
+```
+# Initialize the structure
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the bottom horizontal block
+ab_drop('b31', 9)
+
+# Drop the left vertical block
+ab_drop('b13', 8)
+
+# Drop the right vertical block
+ab_drop('b13', 10)
+
+# Drop the top horizontal block
+ab_drop('b31', 9)
+```

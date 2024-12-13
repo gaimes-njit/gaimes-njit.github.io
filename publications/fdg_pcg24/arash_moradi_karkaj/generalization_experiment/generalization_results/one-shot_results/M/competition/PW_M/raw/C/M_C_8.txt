@@ -1,0 +1,13 @@
+To create the uppercase English letter "C", you can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b11', 4)
+ab_drop('b11', 5)
+ab_drop('b11', 6)
+ab_drop('b13', 4)
+ab_drop('b31', 7)
+```
+
+This sequence of commands will construct the letter "C" within the defined environment and gravity rules.

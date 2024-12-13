@@ -1,0 +1,42 @@
+To generate a stable structure that looks like the uppercase character "W", you can follow these steps:
+
+1. Start by initializing the structure as an empty grid using the Map Initialization code provided:
+   ```
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. Place the first b31 block at the center slot of the bottom layer (layer 0) using the ab_drop() function:
+   ```
+   ab_drop('b31', (W // 2))
+   ```
+
+3. Place two b13 blocks on top of the b31 block in a W shape:
+   - First, place a b13 block on the left side of the structure, centered above the bottom layer:
+     ```
+     ab_drop('b13', (W // 2 - 2))
+     ```
+   - Next, place another b13 block on the right side of the structure, also centered above the bottom layer:
+     ```
+     ab_drop('b13', (W // 2 + 2))
+     ```
+
+4. Place a b11 block on top of the left b13 block to complete the left "leg" of the W shape:
+   ```
+   ab_drop('b11', (W // 2 - 2))
+   ```
+
+5. Repeat step 4 to place another b11 block on top of the right b13 block to complete the right "leg" of the W shape:
+   ```
+   ab_drop('b11', (W // 2 + 2))
+   ```
+
+6. Place a final b11 block on top of the center slot of the top layer (layer 15) to complete the center "peak" of the W shape:
+   ```
+   ab_drop('b11', (W // 2))
+   ```
+
+7. Verify the stability of the structure after each block placement to ensure that it remains stable and does not collapse. You can check the stability by examining the structure after each ab_drop() call and ensuring that the blocks are properly supported.
+
+8. Repeat steps 2-7 multiple times, using different slot positions for the b31 block and varying the order of block placement to generate diverse structures that resemble the uppercase letter "W".
+
+Remember to follow the provided constraints, especially the stability constraint, to ensure that the structure remains stable throughout the construction process.

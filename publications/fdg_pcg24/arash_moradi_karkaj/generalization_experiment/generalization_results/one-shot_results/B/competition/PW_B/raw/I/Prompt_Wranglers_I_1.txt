@@ -1,0 +1,28 @@
+To generate the uppercase English letter "I", we can follow these steps:
+
+1. Start by placing a horizontal straight block at the bottom of the grid:
+   ```
+   ab_drop('b31', 1)
+   ```
+
+2. Place a vertical straight block above the horizontal block:
+   ```
+   ab_drop('b13', 2)
+   ```
+
+3. Place another vertical straight block above the previous block:
+   ```
+   ab_drop('b13', 2)
+   ```
+
+4. Place one more vertical straight block above the previous block:
+   ```
+   ab_drop('b13', 2)
+   ```
+
+5. Place a horizontal straight block above the top of the vertical blocks:
+   ```
+   ab_drop('b31', 1)
+   ```
+
+After following these steps, the grid will resemble the uppercase English letter "I".

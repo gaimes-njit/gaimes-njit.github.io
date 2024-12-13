@@ -1,0 +1,6 @@
+ab_drop('b13', 7)    # drop a vertical block at slot 7 (center pivot)
+ab_drop('b13', 8)    # drop a vertical block at slot 8 (center pivot)
+ab_drop('b13', 9)    # drop a vertical block at slot 9 (center pivot)
+ab_drop('b31', 8)    # drop a horizontal block at slot 8 (center pivot)
+ab_drop('b11', 7)    # drop a square block at slot 7 (center pivot)
+ab_drop('b11', 9)    # drop a square block at slot 9 (center pivot)

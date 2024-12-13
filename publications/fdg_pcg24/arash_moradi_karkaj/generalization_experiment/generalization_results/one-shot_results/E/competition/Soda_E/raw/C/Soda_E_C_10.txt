@@ -1,0 +1,36 @@
+To create a structure that looks like a capital "C", we can start by creating the top curve of the letter. We will use the "b31" block type to create the curve.
+
+```
+# The top curve of C
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+ab_drop("b31", 12)
+```
+
+Next, we can create the vertical bar of the letter using the "b13" block type.
+
+```
+# The vertical bar of C
+ab_drop("b13", 7)
+ab_drop("b13", 8)
+ab_drop("b13", 9)
+ab_drop("b13", 10)
+ab_drop("b13", 11)
+ab_drop("b13", 12)
+ab_drop("b13", 13)
+```
+
+Finally, we can create the bottom curve of the letter using the "b31" block type.
+
+```
+# The bottom curve of C
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+ab_drop("b31", 12)
+```
+
+This complete implementation will generate a structure that resembles the capital letter "C" and is stable with respect to gravity.

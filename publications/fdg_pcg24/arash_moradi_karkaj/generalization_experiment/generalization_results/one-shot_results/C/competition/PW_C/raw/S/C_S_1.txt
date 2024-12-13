@@ -1,0 +1,15 @@
+To generate the uppercase English letter "S", we can use the following stream of ab_drop() commands:
+
+```python
+# Place the bottom horizontal block
+ab_drop('b31', 2)
+
+# Place the vertical blocks on the left side
+ab_drop('b13', 1)
+ab_drop('b13', 2)
+
+# Place the top horizontal block
+ab_drop('b31', 2)
+```
+
+This will create the letter "S" within the given environment and follow the gravity rules.

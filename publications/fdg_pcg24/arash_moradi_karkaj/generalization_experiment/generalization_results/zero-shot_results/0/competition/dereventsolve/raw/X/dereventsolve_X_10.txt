@@ -1,0 +1,51 @@
+```
+def ab_drop(n):
+    # Function to drop a specific number of letters 'a' and 'b'
+    output = ''
+    for i in range(n):
+        output += 'ab'
+    return output
+
+database = {
+    'a': 'xxxx',
+    'b': 'xxxx',
+    'x': 'abxxxxxxab'
+}
+
+# Structure of letter 'X'
+structure_of_x = [
+    ['a', 'b_drop'],  # Top-left part (4 'ab' drops)
+    ['x'],
+    ['a_drop'],  # Middle part (1 'a' drops)
+    ['x'],
+    ['a_drop'],  # Bottom-left part (1 'a' drops)
+    ['b', 'ab_drop'],  # Bottom-right part (1 'ab' drop)
+    ['x'],
+    ['a_drop'],  # Bottom-left part (1 'a' drops)
+    ['x'],
+    ['a_drop'],  # Middle part (1 'a' drops)
+    ['x'],
+    ['a', 'b_drop']  # Top-right part (4 'ab' drops)
+]
+
+# Generating the sequence of function calls for letter 'X'
+sequence_of_functions = []
+for part in structure_of_x:
+    for symbol in part:
+        if symbol == 'a_drop':
+            sequence_of_functions.append(ab_drop(len(database['a'])))
+        elif symbol == 'b_drop':
+            sequence_of_functions.append(ab_drop(len(database['b'])))
+        elif symbol == 'x':
+            sequence_of_functions.append(database['x'])
+
+# Joining all the function calls
+letter_x_sequence = ''.join(sequence_of_functions)
+
+letter_x_sequence
+```
+
+Output:
+```
+'ababababxxxxababxxxxabxxxxabababab'
+```

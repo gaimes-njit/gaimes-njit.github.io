@@ -1,0 +1,25 @@
+To generate the uppercase English letter "R" using the given block types and environment, you can follow the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 4)
+ab_drop('b11', 4)
+ab_drop('b13', 4)
+ab_drop('b31', 7)
+ab_drop('b11', 7)
+ab_drop('b13', 7)
+ab_drop('b31', 10)
+ab_drop('b11', 10)
+ab_drop('b13', 10)
+ab_drop('b31', 13)
+ab_drop('b11', 13)
+ab_drop('b13', 13)
+ab_drop('b31', 16)
+ab_drop('b11', 16)
+ab_drop('b13', 16)
+ab_drop('b31', 19)
+ab_drop('b11', 19)
+```
+
+Please note that the above commands assume you are starting from an empty grid and that the letter "R" should be constructed using the block types mentioned. Adjust the commands as needed if you have any existing blocks in the grid.

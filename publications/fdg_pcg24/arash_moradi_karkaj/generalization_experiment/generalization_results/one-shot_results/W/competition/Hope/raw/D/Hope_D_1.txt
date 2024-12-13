@@ -1,0 +1,37 @@
+To create the structure "D" using the ab_drop('blocktype', x position) command, we can break it down into three sections: the straight line, the half oval, and the straight line connecting them.
+
+Here is the code to create the "D" structure within a 20x16 box:
+
+```
+# Straight line
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+
+# Half oval
+ab_drop('b13', 11)
+ab_drop('b13', 12)
+ab_drop('b31', 14)
+ab_drop('b31', 15)
+
+# Straight line connecting the half oval
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+ab_drop('b31', 1)
+```
+
+This code will drop the specified blocktypes at the given x positions, creating the structure "D" inside the 20x16 box.

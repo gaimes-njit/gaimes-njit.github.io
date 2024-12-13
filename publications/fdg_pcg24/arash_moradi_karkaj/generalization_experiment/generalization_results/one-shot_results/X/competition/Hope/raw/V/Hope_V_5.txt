@@ -1,0 +1,13 @@
+To create a "V" shape inside a 20x16 box using the `ab_drop()` command, we need to strategically position and drop different block types at specific x positions. Here is the sequence of commands needed:
+
+1. Drop a 1x3 block (b13) at x position 8.
+2. Drop a 1x1 block (b11) at x position 7.
+3. Drop a 1x1 block (b11) at x position 9.
+4. Drop a 1x1 block (b11) at x position 6.
+5. Drop a 1x1 block (b11) at x position 10.
+6. Drop a 3x1 block (b31) at x position 5.
+7. Drop a 3x1 block (b31) at x position 11.
+8. Drop a 1x1 block (b11) at x position 4.
+9. Drop a 1x1 block (b11) at x position 12.
+
+The resulting structure will resemble a "V" shape inside the 20x16 box.

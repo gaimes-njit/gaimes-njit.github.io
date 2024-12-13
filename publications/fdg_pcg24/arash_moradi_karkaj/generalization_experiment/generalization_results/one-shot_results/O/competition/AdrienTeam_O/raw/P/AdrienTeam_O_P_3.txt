@@ -1,0 +1,23 @@
+To create a stable structure resembling "P" using the `ab_drop()` function, we need to drop the blocks in a specific order and position to meet all the given constraints. Here is the solution:
+
+```
+# Initialize the structure
+structure = [[' ']*W for _ in range(H)]
+
+# Drop the blocks to form the "P" structure
+# Drop the horizontal block to form the lower part of the "P"
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+ab_drop('b31', 11)
+
+# Drop the vertical block to form the stem of the "P"
+ab_drop('b13', 10)
+
+# Drop the horizontal block to form the upper part of the "P"
+ab_drop('b31', 9)
+ab_drop('b31', 10)
+ab_drop('b31', 11)
+
+```
+
+This solution starts by dropping three horizontal blocks ('b31') to form the lower part of the "P" shape. Then, a vertical block ('b13') is dropped to form the stem of the "P". Finally, three more horizontal blocks are dropped to form the upper part of the "P" shape. This solution satisfies all the constraints given in the problem.

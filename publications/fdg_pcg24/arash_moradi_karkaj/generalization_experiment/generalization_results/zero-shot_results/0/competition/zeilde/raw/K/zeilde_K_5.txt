@@ -1,0 +1,46 @@
+Steps:
+1. Drawing the letter "K" with asterisks:
+```
+*     *
+*   *
+* *   
+*   *
+*     *
+```
+
+2. List of asterisks and spaces in each row:
+Row 1: 1 asterisk, 5 spaces
+Row 2: 1 asterisk, 3 spaces, 1 asterisk
+Row 3: 1 asterisk, 1 space, 1 asterisk, 1 space, 1 asterisk
+Row 4: 1 asterisk, 3 spaces, 1 asterisk
+Row 5: 1 asterisk, 5 spaces
+
+3. Representing asterisks as x and spaces as y:
+Row 1: 1x, 5y
+Row 2: 1x, 3y, 1x
+Row 3: 1x, 1y, 1x, 1y, 1x
+Row 4: 1x, 3y, 1x
+Row 5: 1x, 5y
+
+4. Writing out each x and y for each row:
+Row 1: xyyyyy
+Row 2: xyyx
+Row 3: xyxyx
+Row 4: xyyx
+Row 5: xyyyyy
+
+5. Indicating the position of each variable:
+Row 1: x-1; y-2, y-3, y-4, y-5, y-6
+Row 2: x-1; y-2, y-3; x-4
+Row 3: x-1; y-2; x-3; y-4; x-5
+Row 4: x-1; y-2, y-3; x-4
+Row 5: x-1; y-2, y-3, y-4, y-5, y-6
+
+6. Returning a sequence of `ab_drop` function calls:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

@@ -1,0 +1,18 @@
+To generate a stable structure that looks like the letter "P", we can use the following sequence of 'ab drop()' commands:
+
+1. Drop a b13 block at layer 15 with center at slot 8.
+ab drop(b13, 8, 15)
+
+2. Drop a b13 block at layer 12 with center at slot 8.
+ab drop(b13, 8, 12)
+
+3. Drop a b31 block at layer 9 with left end at slot 6.
+ab drop(b31, 6, 9)
+
+4. Drop a b31 block at layer 6 with left end at slot 6.
+ab drop(b31, 6, 6)
+
+5. Drop a b13 block at layer 3 with center at slot 8.
+ab drop(b13, 8, 3)
+
+By following this sequence, we can create a stable structure that resembles the letter "P" with the given blocks and dimensions. Adjusting the slot positions and layer heights can help fine-tune the final structure.

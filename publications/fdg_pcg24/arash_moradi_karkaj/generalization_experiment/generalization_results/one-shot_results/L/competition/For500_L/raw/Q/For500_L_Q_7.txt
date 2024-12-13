@@ -1,0 +1,4 @@
+ab_drop('b31', 9)  # drop a horizontal block to create the upper part of the letter "Q"
+ab_drop('b11', 9)  # drop a square block to create the middle part of the letter "Q"
+ab_drop('b13', 9)  # drop a vertical block to create the tail of the letter "Q"
+ab_drop('b11', 10)  # drop a square block to create the loop of the letter "Q"

@@ -1,0 +1,13 @@
+Let's start by dropping a b13 block at layer 15 with its center at slot 10:
+
+ab drop(b13, 10, 15)
+
+Next, drop a b31 block at layer 12 with its center at slot 10. This will create the horizontal bar of the "H" shape:
+
+ab drop(b31, 10, 12)
+
+Finally, drop a b13 block at layer 9 with its center at slot 10. This will complete the vertical leg of the "H" shape:
+
+ab drop(b13, 10, 9)
+
+After following these steps, you should have successfully generated a stable structure that looks like the letter "H" using the 'ab drop()' function.

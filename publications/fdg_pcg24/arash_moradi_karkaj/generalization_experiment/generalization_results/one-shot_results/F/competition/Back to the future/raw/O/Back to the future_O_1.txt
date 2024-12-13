@@ -1,0 +1,25 @@
+To generate a stable structure that looks like the uppercase character "O" and meets all the hard constraints, we can follow the steps below:
+
+1. Start by initializing the structure as an empty grid using the provided Map Initialization code.
+
+2. First, we need to ensure stability before each block drop. This can be achieved by checking if the slot beneath the intended drop position is empty. If not, we need to find a stable support for the block. We can implement a function called `find_support()` to find a suitable support position for a given block drop position.
+
+3. Implement the `find_support()` function with the following steps:
+   - Initialize a support position variable as None.
+   - Iterate through the slots on either side of the intended drop position.
+   - Check if the slot in the layer above the intended drop position is empty.
+   - If the condition is met, assign the support position to the current slot and break the loop.
+   - If no suitable support is found, assign the drop position itself as the support.
+
+4. Now, implement the `ab_drop()` function using the provided code. Update it to call the `find_support()` function to ensure stability before each block drop. This will also ensure that the generated structure is diverse and not always the same.
+
+5. After implementing the `ab_drop()` function, we can start building the "O" structure. We'll achieve this in three steps:
+   - First, drop a b31 block at the center position on layer 2.
+   - Next, drop a b31 block below the previous block, centered at the same position but one layer lower.
+   - Finally, drop a b13 block below the two b31 blocks, centered at the same position.
+
+6. Repeat steps 5 for each letter of the "O" structure. Adjust the drop positions and order according to the shape of each letter.
+
+7. Test the code by calling the `ab_drop()` function multiple times to generate the entire "O" structure. Make sure to print the coordinates of each block drop for reference.
+
+By following these steps, we can utilize the `ab_drop()` function to generate a stable structure that meets all the hard constraints and resembles the uppercase letter "O".

@@ -1,0 +1,31 @@
+To generate the uppercase letter "X" using the provided block types, follow these steps:
+
+1. Start by placing the first vertical straight block (b13) at position 1:
+```
+ab_drop('b13',1)
+```
+
+2. Place the second vertical straight block (b13) at position 3:
+```
+ab_drop('b13',3)
+```
+
+3. Add the horizontal straight block (b31) at position 2 to form the middle part of the letter:
+```
+ab_drop('b31',2)
+```
+
+4. Finally, place the third vertical straight block (b13) at positions 1 and 3 to complete the upper part of the letter:
+```
+ab_drop('b13',1)
+ab_drop('b13',3)
+```
+
+Your final stream of commands will look like this:
+```
+ab_drop('b13',1)
+ab_drop('b13',3)
+ab_drop('b31',2)
+ab_drop('b13',1)
+ab_drop('b13',3)
+```

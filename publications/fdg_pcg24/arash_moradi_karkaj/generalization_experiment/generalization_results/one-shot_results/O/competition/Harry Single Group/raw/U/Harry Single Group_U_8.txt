@@ -1,0 +1,27 @@
+To generate the shape resembling the letter "U" using the given props and functions, we can follow these steps:
+
+1. Initialize the field by creating a 2D list of size 16x20, representing the field grid. Set all cells to 0 initially to indicate they are unoccupied.
+
+2. To create the horizontal base of the "U", we can use the b31 prop. Execute the ab_drop('b31', 3) function to drop the brick at x_position 3. This will occupy the cells (2, 0), (3, 0), and (4, 0).
+
+3. To create the vertical sides of the "U", we can use the b13 prop. Execute the ab_drop('b13', 2) function to drop the brick at x_position 2. This will occupy the cells (2, 1), (2, 2), and (2, 3). Repeat the same process for x_position 4, occupying the cells (4, 1), (4, 2), and (4, 3).
+
+4. At this point, the bricks are placed, but we need to ensure stability. Check the stability of the bricks by comparing the number of occupied cells on the left and right sides of the pivot point of each brick.
+
+5. The bottom brick, b31 at (2, 0), has 1 occupied cell on the left side and 1 on the right side of the pivot point. It is stable.
+
+6. The left brick, b13 at (2, 3), has 0 occupied cells on the left side and 0 on the right side of the pivot point. It is stable.
+
+7. The right brick, b13 at (4, 3), has 0 occupied cells on the left side and 0 on the right side of the pivot point. It is stable.
+
+8. The U shape is complete with stable bricks.
+
+Your final code to generate the "U" shape using ab_drop(x, y) function should look like this:
+
+```
+ab_drop('b31', 3)
+ab_drop('b13', 2)
+ab_drop('b13', 4)
+```
+
+This will generate the shape resembling the letter "U" with the provided bricks while satisfying the rules of stability and avoiding boundary collisions.

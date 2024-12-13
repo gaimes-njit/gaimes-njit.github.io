@@ -1,0 +1,35 @@
+'''
+1. Base of the W (b13 block)
+'''
+ab_drop("b13", 5)
+
+'''
+2. Upper left part of the W (b31 block)
+'''
+ab_drop("b31", 4)
+
+'''
+3. Upper right part of the W (b31 block)
+'''
+ab_drop("b31", 6)
+
+'''
+4. Middle left part of the W (b31 block)
+'''
+ab_drop("b31", 3)
+
+'''
+5. Middle right part of the W (b31 block)
+'''
+ab_drop("b31", 7)
+
+'''
+6. Top left part of the W (b11 block)
+'''
+ab_drop("b11", 2)
+
+'''
+7. Top right part of the W (b11 block)
+'''
+ab_drop("b11", 8)
+'''

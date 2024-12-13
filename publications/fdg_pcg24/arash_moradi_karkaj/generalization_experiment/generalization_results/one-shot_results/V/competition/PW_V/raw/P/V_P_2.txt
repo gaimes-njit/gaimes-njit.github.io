@@ -1,0 +1,17 @@
+The letter "P" can be generated using the following stream of commands:
+
+```
+ab_drop(b31,1)
+ab_drop(b31,1)
+ab_drop(b13,4)
+ab_drop(b13,4)
+ab_drop(b13,4)
+ab_drop(b31,7)
+ab_drop(b31,7)
+ab_drop(b11,10)
+ab_drop(b11,10)
+ab_drop(b11,10)
+ab_drop(b11,10)
+ab_drop(b11,10)
+ab_drop(b11,10)
+```

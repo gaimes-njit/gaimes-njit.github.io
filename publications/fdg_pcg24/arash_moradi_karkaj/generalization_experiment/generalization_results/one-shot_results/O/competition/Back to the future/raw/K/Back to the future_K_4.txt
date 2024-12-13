@@ -1,0 +1,35 @@
+To generate a stable structure that looks like the uppercase character "K" using the `ab_drop()` function and meet all the hard constraints, we can follow these steps:
+
+1. Begin by initializing the structure as an empty grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start by dropping the b31 block (horizontal block) in the middle of the structure at slot 9:
+```
+ab_drop('b31', 9)
+```
+This will drop the b31 block at the top of the structure and move it down until it lands on the base or another block.
+
+3. Next, drop the b13 block (vertical block) at slot 4 to the left of the b31 block:
+```
+ab_drop('b13', 4)
+```
+
+4. Drop another b13 block at slot 6 to the right of the b31 block:
+```
+ab_drop('b13', 6)
+```
+
+5. Finally, drop the b11 block (square block) at slot 5 between the two b13 blocks:
+```
+ab_drop('b11', 5)
+```
+
+The final structure will resemble the uppercase character "K". The coordinates of each ab_drop call are as follows:
+- ab_drop('b31', 9) - Coordinates: (15, 9)
+- ab_drop('b13', 4) - Coordinates: (14, 4)
+- ab_drop('b13', 6) - Coordinates: (14, 6)
+- ab_drop('b11', 5) - Coordinates: (13, 5)
+
+By following these steps, we ensure that the structure meets all the hard constraints, such as stability and the overall shape resembling the character "K". We also satisfy constraint 5.4 by providing stable support to the b31 block.

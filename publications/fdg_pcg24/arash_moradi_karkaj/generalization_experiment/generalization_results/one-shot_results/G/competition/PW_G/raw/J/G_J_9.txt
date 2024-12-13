@@ -1,0 +1,10 @@
+To generate the uppercase letter "J", we can use the following ab_drop() commands:
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b11', 3)
+ab_drop('b11', 3)
+ab_drop('b31', 2)
+```

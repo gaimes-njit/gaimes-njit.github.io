@@ -1,0 +1,9 @@
+To generate the uppercase English letter "N", we can use the following commands using the block types mentioned:
+
+```
+ab_drop("b31", 1)
+ab_drop("b13", 4)
+ab_drop("b31", 8)
+ab_drop("b31", 12)
+ab_drop("b13", 15)
+```

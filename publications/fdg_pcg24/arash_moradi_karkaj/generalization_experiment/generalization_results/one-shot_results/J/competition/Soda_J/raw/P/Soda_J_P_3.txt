@@ -1,0 +1,20 @@
+To generate a structure that looks like the capital character "P", we can break it down into three blocks: a vertical pipe, a horizontal bar at the top, and a horizontal bar at the bottom.
+
+Here's the step-by-step implementation:
+
+1. Drop the vertical pipe block (b13) at the center of the grid:
+ab_drop("b13", 10)
+
+2. Drop the horizontal bar block (b31) at the center of the grid, one row above the previously dropped block:
+ab_drop("b31", 10)
+
+3. Drop another horizontal bar block (b31) at the center of the grid, one row below the first block:
+ab_drop("b31", 10)
+
+This implementation will create a structure in the shape of "P" in the level.
+
+Complete implementation:
+
+ab_drop("b13", 10)
+ab_drop("b31", 10)
+ab_drop("b31", 10)

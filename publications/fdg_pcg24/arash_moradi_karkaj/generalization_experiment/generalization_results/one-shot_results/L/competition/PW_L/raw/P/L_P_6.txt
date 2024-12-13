@@ -1,0 +1,11 @@
+To create the letter "P" using the given block types, you can follow the following sequence of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b11', 1)
+ab_drop('b31', 1)
+ab_drop('b11', 4)
+ab_drop('b13', 4)
+```
+
+This sequence will create a stable "P" letter shape within the allowed space boundaries.

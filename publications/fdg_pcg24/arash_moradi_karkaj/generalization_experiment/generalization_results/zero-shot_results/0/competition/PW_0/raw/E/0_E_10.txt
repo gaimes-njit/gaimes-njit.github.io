@@ -1,0 +1,28 @@
+To create the letter "E", we can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+ab_drop('b11', 2)
+ab_drop('b31', 3)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b11', 4)
+ab_drop('b31', 5)
+ab_drop('b11', 6)
+ab_drop('b11', 6)
+ab_drop('b11', 6)
+ab_drop('b31', 7)
+ab_drop('b11', 8)
+ab_drop('b11', 8)
+ab_drop('b11', 8)
+```
+
+Explanation:
+- We start by placing a horizontal straight block (`b31`) at position 1.
+- Then, we place three 1x1 square blocks (`b11`) next to it at position 2.
+- We continue by placing another horizontal straight block at position 3, and three more 1x1 square blocks at position 4.
+- Finally, we repeat the same pattern one more time to complete the letter "E".
+
+The end result should be a capital letter "E" formed by the blocks in the Tetris-like environment.

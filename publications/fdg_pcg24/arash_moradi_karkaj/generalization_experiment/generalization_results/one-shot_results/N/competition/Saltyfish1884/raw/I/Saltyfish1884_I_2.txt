@@ -1,0 +1,44 @@
+To generate a stable structure that resembles the character "I" while meeting all hard constraints, we need to follow these steps:
+
+Step 1: Define the necessary variables and parameters.
+
+```
+W = 20  # Number of slots (width)
+H = 16  # Number of layers (height)
+
+# Initialize the structure as an empty grid
+structure = [[' ']*W for _ in range(H)]
+```
+
+Step 2: Place the base blocks (b11 or b13) to form the stable foundation.
+
+```
+# Place two b11 blocks on the base layer to form a solid base
+ab_drop('b11', 6)
+ab_drop('b11', 13)
+```
+
+Step 3: Place the central b31 block on top of the base blocks.
+
+```
+# Place a b31 block on top of the base blocks
+ab_drop('b31', 9)
+```
+
+Step 4: Place the upper b11 block to complete the structure.
+
+```
+# Place a b11 block on top of the central b31 block
+ab_drop('b11', 9)
+```
+
+Step 5: Finalize the structure by placing b11 blocks to connect the upper and lower parts.
+
+```
+# Place three b11 blocks to connect the upper and lower parts of the structure
+ab_drop('b11', 6)
+ab_drop('b11', 7)
+ab_drop('b11', 8)
+```
+
+This arrangement will generate a stable structure that resembles the character "I" while satisfying all hard constraints. You can further optimize the placement of blocks to minimize boundary intrusion if desired.

@@ -1,0 +1,14 @@
+To create a structure that looks like the letter "X", we can start by placing two row blocks (b31) in an "X" formation. The bottom row block will have its center pivot point at the 8th column, and the top row block will have its center pivot point at the 12th column. This will create the base of the "X".
+
+Then, we can place a column block (b13) on top of the bottom row block, centered at the 10th column. This will create the middle portion of the "X".
+
+Finally, we can place another row block (b31) on top of the column block, centered at the 10th column. This will complete the "X" structure.
+
+Here is the complete implementation:
+
+```
+ab_drop("b31", 8)
+ab_drop("b31", 12)
+ab_drop("b13", 10)
+ab_drop("b31", 10)
+```

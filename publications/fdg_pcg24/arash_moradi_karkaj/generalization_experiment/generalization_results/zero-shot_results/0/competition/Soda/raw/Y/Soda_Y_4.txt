@@ -1,0 +1,13 @@
+To generate a structure that looks like the capital letter "Y", we can break it down into two parts: a vertical pipe and two diagonal bars. 
+
+First, we'll create the vertical pipe by placing a "b13" block. We'll start from the leftmost column and place it at position 8, which will center it vertically. 
+
+Next, we'll create the diagonal bars by placing two "b11" blocks. We'll start from the top and place the first block at position 7, which will form the left diagonal bar. Then, we'll place the second block at position 9, which will form the right diagonal bar. 
+
+Here's the complete implementation:
+
+```
+ab_drop("b13", 8)  # Place the vertical pipe
+ab_drop("b11", 7)  # Place the left diagonal bar
+ab_drop("b11", 9)  # Place the right diagonal bar
+```

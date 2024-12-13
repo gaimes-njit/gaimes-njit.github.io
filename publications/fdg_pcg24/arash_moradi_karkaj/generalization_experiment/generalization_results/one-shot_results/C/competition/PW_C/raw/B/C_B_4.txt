@@ -1,0 +1,13 @@
+To generate uppercase letter "B", we can break it down into three parts: the vertical straight line on the left side, the horizontal straight line in the middle, and the double vertical lines on the right side.
+
+Here's the sequence of ab_drop() commands to create the letter "B":
+
+```
+ab_drop('b13', 1)    // Place the first vertical straight line on the left side
+ab_drop('b13', 2)    // Place the second vertical straight line on the left side
+ab_drop('b31', 2)    // Place the horizontal straight line in the middle
+ab_drop('b13', 3)    // Place the first vertical straight line on the right side
+ab_drop('b13', 4)    // Place the second vertical straight line on the right side
+```
+
+Once you execute these commands, you should see the letter "B" formed in the 2D gravity environment.

@@ -1,0 +1,17 @@
+To generate the uppercase letter "P" using the given block types and rules, you can follow these steps:
+
+1. Place a horizontal straight block (b31) at position (1, 5).
+2. Place a vertical straight block (b13) at position (2, 5).
+3. Place a vertical straight block (b13) at position (2, 6).
+4. Place a vertical straight block (b13) at position (2, 7).
+5. Place a horizontal straight block (b31) at position (3, 5).
+
+Here is the stream of commands to generate the letter "P":
+
+```
+ab_drop('b31', 5)
+ab_drop('b13', 5)
+ab_drop('b13', 6)
+ab_drop('b13', 7)
+ab_drop('b31', 5)
+```

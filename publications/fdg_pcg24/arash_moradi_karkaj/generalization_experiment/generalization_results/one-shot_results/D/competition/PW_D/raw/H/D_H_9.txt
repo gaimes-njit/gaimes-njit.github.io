@@ -1,0 +1,11 @@
+To generate the uppercase English letter "H", you can use the following sequence of ab_drop() commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b11', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+```
+
+This sequence of commands will place the blocks in the grid according to the rules specified, creating the shape of the letter "H".

@@ -1,0 +1,25 @@
+To generate the letter "B" using the given block types and gravity rules, you can follow these steps:
+
+1. Start by placing a horizontal straight block (b31) at position 1:
+   ```
+   ab_drop('b31', 1)
+   ```
+
+2. Next, place a vertical straight block (b13) at position 2, which will form the left side of the "B":
+   ```
+   ab_drop('b13', 2)
+   ```
+
+3. Finally, place two 1x1 square blocks (b11) at positions 2 and 3, which will form the top and bottom parts of the right side of the "B":
+   ```
+   ab_drop('b11', 2)
+   ab_drop('b11', 3)
+   ```
+
+The complete stream of commands to generate the letter "B" will be:
+```
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+```

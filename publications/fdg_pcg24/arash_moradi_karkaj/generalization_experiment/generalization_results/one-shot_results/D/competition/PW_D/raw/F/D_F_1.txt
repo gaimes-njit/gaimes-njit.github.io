@@ -1,0 +1,8 @@
+To generate the uppercase English letter "F", the stream of commands would be as follows:
+
+```
+ab_drop('b13',1)
+ab_drop('b13',0)
+ab_drop('b31',1)
+ab_drop('b13',2)
+```

@@ -1,0 +1,15 @@
+To create the capital character "G" in the level, we will first create the two horizontal bars of the letter, followed by the vertical bar.
+
+1. Create the top horizontal bar of "G":
+ab_drop("b13", 9)
+ab_drop("b13", 10)
+
+2. Create the middle horizontal bar of "G":
+ab_drop("b31", 8)
+ab_drop("b31", 9)
+ab_drop("b31", 10)
+
+3. Create the vertical bar of "G":
+ab_drop("b13", 8)
+ab_drop("b13", 9)
+ab_drop("b13", 10)

@@ -1,0 +1,67 @@
+To generate a stable structure that looks like the uppercase character "P" using the `ab_drop()` function, we can follow the following steps:
+
+1. Initialize the structure as an empty grid using the given code:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the b11 block at slot 1 and layer 0 to form the vertical line of the "P". This block will serve as the stable base for the rest of the structure.
+```
+ab_drop('b11', 1)
+```
+
+3. Drop the b31 block at slot 1 and layer 1 to form the top horizontal line of the "P". This block will be supported by the b11 block below it.
+```
+ab_drop('b31', 1)
+```
+
+4. Drop two b31 blocks at slots 0 and 2 and layer 2 to form the middle horizontal line of the "P". These blocks will be supported by the b31 block above them and the b11 block below them.
+```
+ab_drop('b31', 0)
+ab_drop('b31', 2)
+```
+
+5. Drop the b31 block at slot 1 and layer 3 to form the bottom horizontal line of the "P". This block will be supported by the b31 blocks above it and the b11 block below it.
+```
+ab_drop('b31', 1)
+```
+
+6. Drop the b31 block at slot 1 and layer 4 to form the top vertical line of the "P". This block will be supported by the b31 block below it.
+```
+ab_drop('b31', 1)
+```
+
+7. Drop the b13 block at slots 0 and 2 and layer 4 to form the middle vertical line of the "P". These blocks will be supported by the b31 blocks above them.
+```
+ab_drop('b13', 0)
+ab_drop('b13', 2)
+```
+
+8. Drop the b31 block at slots 0 and 2 and layer 7 to form the bottom vertical line of the "P". These blocks will be supported by the b31 blocks above them.
+```
+ab_drop('b31', 0)
+ab_drop('b31', 2)
+```
+
+9. Drop the b31 block at slot 0 and layer 10 to form the top horizontal line of the "P". This block will be supported by the b31 block below it.
+```
+ab_drop('b31', 0)
+```
+
+10. Drop the b31 block at slots 0 and 2 and layer 11 to form the middle horizontal line of the "P". These blocks will be supported by the b31 block above them.
+```
+ab_drop('b31', 0)
+ab_drop('b31', 2)
+```
+
+11. Drop the b31 block at slot 1 and layer 12 to form the bottom horizontal line of the "P". This block will be supported by the b31 blocks above it.
+```
+ab_drop('b31', 1)
+```
+
+12. Drop the b11 block at slot 1 and layer 15 to complete the structure of the "P". This block will be supported by the b31 blocks above it.
+```
+ab_drop('b11', 1)
+```
+
+After following these steps, the `structure` grid will represent a stable structure that looks like the uppercase character "P". The blocks will be dropped in a way that meets all the hard constraints and provides stable support for each other.

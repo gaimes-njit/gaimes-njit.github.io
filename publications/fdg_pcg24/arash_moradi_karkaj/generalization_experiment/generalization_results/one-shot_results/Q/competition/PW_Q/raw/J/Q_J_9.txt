@@ -1,0 +1,16 @@
+To generate the uppercase letter "J", we will need to use the following block types and their corresponding positions:
+
+- Block type b31 will be placed at position 1.
+- Block type b13 will be placed at position 4.
+- Block type b11 will be placed at positions 2 and 3.
+
+The stream of commands to generate the letter "J" is as follows:
+
+```
+ab_drop('b31',1)
+ab_drop('b11',2)
+ab_drop('b11',3)
+ab_drop('b13',4)
+```
+
+By executing these commands consecutively, the resulting shape will resemble the uppercase letter "J" within the allowed boundaries of the grid.

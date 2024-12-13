@@ -1,0 +1,18 @@
+To create the letter N in the level, we need to drop the blocks in a specific order and position to ensure stability. Here is the step-by-step approach to creating the letter N:
+
+1. Place the bottom bar of the N:
+   ab_drop("b13", 5)
+
+2. Place the left vertical part of the N:
+   ab_drop("b31", 7)
+
+3. Place the right vertical part of the N:
+   ab_drop("b31", 13)
+
+Here is the complete implementation:
+
+```
+ab_drop("b13", 5)
+ab_drop("b31", 7)
+ab_drop("b31", 13)
+```

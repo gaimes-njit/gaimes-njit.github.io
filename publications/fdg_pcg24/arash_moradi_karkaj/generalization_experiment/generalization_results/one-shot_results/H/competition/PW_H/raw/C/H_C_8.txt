@@ -1,0 +1,13 @@
+To create the uppercase letter "C", you can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 4)
+ab_drop('b13', 1)
+ab_drop('b31', 4)
+ab_drop('b31', 6)
+ab_drop('b13', 1)
+ab_drop('b13', 4)
+```
+
+This will result in a letter "C" shape formed by stacking and arranging the given block types within the allowed space boundaries.

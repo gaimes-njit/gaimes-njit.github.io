@@ -1,0 +1,16 @@
+```
+# Map Initialization
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop blocks to construct "T"
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+ab_drop('b11', 9)
+ab_drop('b13', 9)
+ab_drop('b11', 8)
+ab_drop('b31', 9)
+
+# Display the structure
+for layer in structure:
+    print(layer)
+```

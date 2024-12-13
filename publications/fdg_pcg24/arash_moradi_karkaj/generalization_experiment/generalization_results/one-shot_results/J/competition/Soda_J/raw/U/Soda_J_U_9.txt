@@ -1,0 +1,14 @@
+To create a structure that looks like the letter "U" in the top-down orientation, we can break it down into three blocks - two side blocks and one bottom block. Here is the complete implementation to generate the U structure:
+
+```python
+# Place the left side block
+ab_drop("b31", 6)
+
+# Place the right side block
+ab_drop("b31", 13)
+
+# Place the bottom block
+ab_drop("b13", 9)
+```
+
+This implementation follows the bottom-to-top approach, ensuring structural stability and similarity to the target character "U".

@@ -1,0 +1,15 @@
+To generate a stable structure that resembles the character "M", we can follow the following steps:
+
+Step 1: Initialize the structure as an empty grid.
+structure = [[' ']*20 for _ in range(16)]
+
+Step 2: Drop a b31 block at slot 6.
+ab_drop('b31', 6)
+
+Step 3: Drop a b13 block at slot 6.
+ab_drop('b13', 6)
+
+Step 4: Drop a b31 block at slot 6.
+ab_drop('b31', 6)
+
+Now, the structure should resemble the character "M" with stable placements of the blocks.

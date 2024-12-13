@@ -1,0 +1,68 @@
+Here is a step-by-step implementation to generate a structure in the level that looks like the letter "O" using the ab_drop() function:
+
+1. Place the base of the "O":
+```
+ab_drop("b13", 9)
+```
+
+2. Place the top bar of the "O":
+```
+ab_drop("b31", 9)
+```
+
+3. Place the right side of the "O":
+```
+ab_drop("b13", 12)
+ab_drop("b31", 12)
+ab_drop("b13", 12)
+```
+
+4. Place the left side of the "O":
+```
+ab_drop("b13", 6)
+ab_drop("b31", 6)
+ab_drop("b13", 6)
+```
+
+5. Place the top-right corner of the "O":
+```
+ab_drop("b11", 12)
+```
+
+6. Place the top-left corner of the "O":
+```
+ab_drop("b11", 6)
+```
+
+7. Place the bottom-right corner of the "O":
+```
+ab_drop("b11", 12)
+```
+
+8. Place the bottom-left corner of the "O":
+```
+ab_drop("b11", 6)
+```
+
+9. Place the middle of the "O":
+```
+ab_drop("b11", 9)
+```
+
+The complete implementation is as follows:
+
+```
+ab_drop("b13", 9)
+ab_drop("b31", 9)
+ab_drop("b13", 12)
+ab_drop("b31", 12)
+ab_drop("b13", 12)
+ab_drop("b13", 6)
+ab_drop("b31", 6)
+ab_drop("b13", 6)
+ab_drop("b11", 12)
+ab_drop("b11", 6)
+ab_drop("b11", 12)
+ab_drop("b11", 6)
+ab_drop("b11", 9)
+```

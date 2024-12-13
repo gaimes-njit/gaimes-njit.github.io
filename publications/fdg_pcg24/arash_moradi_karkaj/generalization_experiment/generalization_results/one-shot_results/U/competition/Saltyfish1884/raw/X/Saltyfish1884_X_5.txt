@@ -1,0 +1,47 @@
+To generate a stable structure that resembles the character "X" while meeting all hard constraints, we can follow these steps:
+
+1. Initialize the structure as an empty WxH grid using the provided code:
+```python
+W = 20
+H = 16
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start by placing the two b31 blocks on top of the base to form an "X" shape. This ensures stability and prevents overhangs:
+```python
+ab_drop("b31", 7)
+ab_drop("b31", 13)
+```
+
+3. Place two b13 blocks vertically above the b31 blocks to connect them and maintain stability:
+```python
+ab_drop("b13", 6)
+ab_drop("b13", 14)
+```
+
+4. Place two b11 blocks on the edges of the "X" shape to complete its structure:
+```python
+ab_drop("b11", 0)
+ab_drop("b11", 19)
+```
+
+5. The resulting structure should resemble the character "X" and meet the stability constraints.
+
+Here is the code that generates the structure:
+```python
+W = 20
+H = 16
+structure = [[' ']*W for _ in range(H)]
+
+ab_drop("b31", 7)
+ab_drop("b31", 13)
+ab_drop("b13", 6)
+ab_drop("b13", 14)
+ab_drop("b11", 0)
+ab_drop("b11", 19)
+
+for row in structure:
+    print(' '.join(row))
+```
+
+The resulting structure will resemble the character "X" and meet all the given constraints.

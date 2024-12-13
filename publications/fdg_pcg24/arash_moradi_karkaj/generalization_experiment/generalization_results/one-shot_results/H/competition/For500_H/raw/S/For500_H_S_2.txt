@@ -1,0 +1,16 @@
+ab_drop('b11', 9)
+ab_drop('b11', 8)
+ab_drop('b11', 7)
+
+# Build the bottom of the 'S' shape
+ab_drop('b11', 9)
+ab_drop('b31', 8)
+ab_drop('b11', 7)
+
+# Build the middle of the 'S' shape
+ab_drop('b11', 8)
+
+# Build the top of the 'S' shape
+ab_drop('b11', 9)
+ab_drop('b31', 8)
+ab_drop('b11', 7)

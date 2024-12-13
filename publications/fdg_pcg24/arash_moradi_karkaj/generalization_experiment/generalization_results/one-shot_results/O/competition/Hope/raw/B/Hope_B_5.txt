@@ -1,0 +1,36 @@
+To create the structure exactly like "B" using the ab_drop('blocktype',x position) command, we need to strategically drop blocks at specific x positions within the 20*16 box. Here is the sequence of commands to achieve the desired structure:
+
+1. Drop a b31 block at x position 0:
+   ab_drop('b31', 0)
+
+2. Drop a b31 block at x position 0 again:
+   ab_drop('b31', 0)
+
+3. Drop a b31 block at x position 0 again:
+   ab_drop('b31', 0)
+
+4. Drop a b13 block at x position 2:
+   ab_drop('b13', 2)
+
+5. Drop a b11 block at x position 4:
+   ab_drop('b11', 4)
+
+6. Drop a b11 block at x position 5:
+   ab_drop('b11', 5)
+
+7. Drop a b11 block at x position 6:
+   ab_drop('b11', 6)
+
+8. Drop a b13 block at x position 8:
+   ab_drop('b13', 8)
+
+9. Drop a b31 block at x position 10:
+   ab_drop('b31', 10)
+
+10. Drop a b31 block at x position 10 again:
+   ab_drop('b31', 10)
+
+11. Drop a b31 block at x position 10 again:
+   ab_drop('b31', 10)
+
+This sequence of commands will create the structure exactly like the letter "B" inside the 20*16 box.

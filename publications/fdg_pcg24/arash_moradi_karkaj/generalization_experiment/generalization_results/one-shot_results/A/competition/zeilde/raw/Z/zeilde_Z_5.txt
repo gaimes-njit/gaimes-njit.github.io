@@ -1,0 +1,42 @@
+Steps:
+
+1. Draw the letter "Z" with asterisks:
+```
+*****
+   *  
+  *   
+ *    
+*****
+```
+
+2. List the asterisks and spaces generated in each row:
+- Row 1: 5 asterisks, 0 spaces
+- Row 2: 3 spaces, 1 asterisk, 1 space
+- Row 3: 2 spaces, 1 asterisk, 2 spaces
+- Row 4: 1 space, 1 asterisk, 3 spaces
+- Row 5: 0 spaces, 5 asterisks
+
+3. Assign "x" to represent asterisks and "y" to represent spaces.
+
+4. Write out the sequence of x and y for each row:
+- Row 1: "xxxxx"
+- Row 2: "yyxyy"
+- Row 3: "yxyyy"
+- Row 4: "xyyyy"
+- Row 5: "xxxxx"
+
+5. Indicate the position of each variable in each row:
+- Row 1: x-1; x-2; x-3; x-4; x-5
+- Row 2: y-1; y-2; x-3; y-4; y-5
+- Row 3: y-1; x-2; y-3; y-4; y-5
+- Row 4: x-1; y-2; y-3; y-4; y-5
+- Row 5: x-1; x-2; x-3; x-4; x-5
+
+6. Convert the positions into `ab_drop` function calls:
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```

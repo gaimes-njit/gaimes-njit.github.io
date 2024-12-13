@@ -1,0 +1,36 @@
+To generate a stable structure that looks like the uppercase letter "B" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the structure grid using the provided code:
+   ```python
+   structure = [[' ']*W for _ in range(H)]
+   ```
+
+2. Start by dropping a b13 block at the center slot (y = W//2) using `ab_drop('b13', W//2)`. This will form the vertical line of the "B".
+
+3. To create the top straight line of the "B", drop a b31 block at the center slot of the layer above the b13 block:
+   ```python
+   ab_drop('b31', W//2)
+   ```
+
+4. To create the bottom straight line of the "B", drop another b31 block at the center slot of the layer below the b13 block:
+   ```python
+   ab_drop('b31', W//2)
+   ```
+
+5. To create the rounded part of the "B" at the bottom, drop a b11 block at the slot to the right (y = W//2 + 1) of the b13 block in the bottom layer:
+   ```python
+   ab_drop('b11', W//2 + 1)
+   ```
+
+6. Repeat step 5 to drop another b11 block at the slot to the left (y = W//2 - 1) of the b13 block in the bottom layer:
+   ```python
+   ab_drop('b11', W//2 - 1)
+   ```
+
+7. The stable structure that looks like the uppercase letter "B" has been generated. You can print the structure to verify the result:
+   ```python
+   for row in structure:
+       print(' '.join(row))
+   ```
+
+Note: The exact positioning of the blocks based on the constraints may require additional logic and checks to ensure stability and similarity to the letter "B". The above steps provide a basic outline to get started.

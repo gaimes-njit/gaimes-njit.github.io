@@ -1,0 +1,10 @@
+To generate the uppercase English letter "Y", we can use the following command sequence:
+
+ab_drop('b11', 4)  # Place a 1x1 block at position 4
+ab_drop('b11', 5)  # Place a 1x1 block at position 5
+ab_drop('b31', 5)  # Place a horizontal straight block at position 5
+ab_drop('b11', 4)  # Place a 1x1 block at position 4
+ab_drop('b11', 6)  # Place a 1x1 block at position 6
+ab_drop('b13', 7)  # Place a vertical straight block at position 7
+
+This sequence of commands will create a capital letter "Y" within the allowed space boundaries, while maintaining stability with respect to the gravity rules.

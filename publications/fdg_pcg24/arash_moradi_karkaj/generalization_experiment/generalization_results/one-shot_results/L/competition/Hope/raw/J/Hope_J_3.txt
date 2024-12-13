@@ -1,0 +1,23 @@
+To create a "J" shape using `ab_drop('blocktype', x position)`, you would need to drop the blocks in the following sequence:
+
+1. Drop a b13 block at position (0, 0)
+2. Drop a b11 block at position (1, 0)
+3. Drop a b11 block at position (2, 0)
+4. Drop a b31 block at position (2, 1)
+
+Here is the code to create the "J" shape:
+
+ab_drop('b13', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 2)
+ab_drop('b31', 2)
+
+The resulting structure would be:
+
+```
+bb 
+bx 
+bx 
+bx
+```
+where 'b' represents a block and 'x' represents an empty space. The structure fits within a 20x16 box starting from position (0, 0).

@@ -1,0 +1,10 @@
+# Step 1: Drop the base of the E structure
+ab_drop("b31", 9)
+
+# Step 2: Drop the vertical line of the E structure
+ab_drop("b13", 8)
+
+# Step 3: Drop the horizontal line of the E structure
+ab_drop("b13", 9)
+ab_drop("b11", 10)
+ab_drop("b11", 11)

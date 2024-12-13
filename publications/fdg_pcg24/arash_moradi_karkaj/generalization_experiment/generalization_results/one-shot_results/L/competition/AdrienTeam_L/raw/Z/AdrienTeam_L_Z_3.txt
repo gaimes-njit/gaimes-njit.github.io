@@ -1,0 +1,6 @@
+To build a structure resembling the letter "Z", we can start by dropping a vertical block (`b13`) at slot 0 and then drop a horizontal block (`b31`) at slot 1. Here is the solution:
+
+```
+ab_drop('b13', 0)
+ab_drop('b31', 1)
+```

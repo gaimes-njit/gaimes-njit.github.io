@@ -1,0 +1,8 @@
+To generate the "S" shape, we can break it down into two blocks: a top bar and a bottom bar. Here's the code to build the structure:
+
+```
+# Dropping the top bar
+ab_drop("b13", 9)
+# Dropping the bottom bar
+ab_drop("b13", 11)
+```

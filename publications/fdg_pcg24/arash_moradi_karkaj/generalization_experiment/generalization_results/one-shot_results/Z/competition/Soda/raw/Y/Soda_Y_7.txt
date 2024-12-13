@@ -1,0 +1,26 @@
+To generate a structure in the level that looks like a capital character "Y", we can break it down into three blocks - a vertical bar and two diagonal bars.
+
+1. Drop the vertical bar block at the center of the level.
+   - The vertical bar block has a size of 1 * 3, so we need to drop it at x_position = 9 to center it in the middle column.
+   - We can use the ab_drop("b13", 9) function to drop the block.
+
+```
+ab_drop("b13", 9)
+```
+
+2. Drop the diagonal bar blocks on both sides of the vertical bar.
+   - The diagonal bar blocks have a size of 1 * 1, so we can drop them at x_position = 8 and x_position = 10 to place them adjacent to the vertical bar.
+   - We can use the ab_drop("b11", 8) function to drop the left diagonal bar and ab_drop("b11", 10) function to drop the right diagonal bar.
+
+```
+ab_drop("b11", 8)
+ab_drop("b11", 10)
+```
+
+The complete implementation to generate a structure that looks like a capital character "Y" is:
+
+```
+ab_drop("b13", 9)
+ab_drop("b11", 8)
+ab_drop("b11", 10)
+```

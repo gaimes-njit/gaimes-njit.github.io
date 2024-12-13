@@ -1,0 +1,67 @@
+```
+# Map Initialization
+map = [[0]*20 for _ in range(16)]
+
+# Helper function to check if a given position is occupied
+def is_occupied(x, y):
+    if x < 0 or x >= 20 or y < 0 or y >= 16:
+        return False
+    return map[y][x] != 0
+
+# Helper function to place a brick on the field
+def place_brick(x_positions, y_positions):
+    for x, y in zip(x_positions, y_positions):
+        map[y][x] = 1
+
+# Function to drop and place a brick
+def ab_drop(x, y):
+    if x == 'b31':
+        # Drop a b31 brick
+        x_positions = [y-1, y, y+1]
+        y_positions = [15] * 3
+
+        # Find the lowest position for each cell
+        for i in range(3):
+            while not is_occupied(x_positions[i], y_positions[i]-1) and y_positions[i] > 0:
+                y_positions[i] -= 1
+        
+        # Check stability
+        if is_occupied(x_positions[1]-1, y_positions[1]) or is_occupied(x_positions[1]+1, y_positions[1]):
+            y_positions[1] += 1
+            
+        place_brick(x_positions, y_positions)
+    
+    elif x == 'b13':
+        # Drop a b13 brick
+        x_positions = [y] * 3
+        y_positions = [15, 14, 13]
+
+        # Find the lowest position for each cell
+        for i in range(3):
+            while not is_occupied(x_positions[i], y_positions[i]-1) and y_positions[i] > 0:
+                y_positions[i] -= 1
+        
+        # Check stability
+        if is_occupied(x_positions[0], y_positions[0]+1) or is_occupied(x_positions[0], y_positions[0]-1):
+            y_positions[0] += 1
+            
+        place_brick(x_positions, y_positions)
+    
+    elif x == 'b11':
+        # Drop a b11 brick
+        x_positions = [y]
+        y_positions = [15]
+
+        # Find the lowest position for the cell
+        while not is_occupied(x_positions[0], y_positions[0]-1) and y_positions[0] > 0:
+            y_positions[0] -= 1
+
+        place_brick(x_positions, y_positions)
+    
+    else:
+        print("Invalid brick type")
+
+# Generate the required structure
+ab_drop('b13', 5)
+ab_drop('b31', 6)
+```

@@ -1,0 +1,13 @@
+M: To generate the letter "M", you can use the following stream of commands:
+
+```
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 4)
+ab_drop('b13', 7)
+ab_drop('b31', 10)
+ab_drop('b13', 13)
+ab_drop('b31', 16)
+```
+
+These commands will construct the uppercase letter "M" within the allowed space and adhere to the gravity rules.

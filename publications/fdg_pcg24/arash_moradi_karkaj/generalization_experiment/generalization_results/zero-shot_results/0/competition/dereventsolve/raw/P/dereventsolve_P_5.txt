@@ -1,0 +1,43 @@
+```
+def ab_drop(n):
+    return ['ab_drop'] * n
+
+def generate_letter_P(database):
+    letter_P = database.get('letter_P')
+    if letter_P:
+        return letter_P
+    else:
+        return []
+
+generate_letter_P({
+    'letter_A': ab_drop(1),
+    'letter_B': ab_drop(2),
+    'letter_C': ab_drop(3),
+    'letter_D': ab_drop(4),
+    'letter_E': ab_drop(5),
+    'letter_F': ab_drop(6),
+    'letter_G': ab_drop(7),
+    'letter_H': ab_drop(8),
+    'letter_I': ab_drop(9),
+    'letter_J': ab_drop(10),
+    'letter_K': ab_drop(11),
+    'letter_L': ab_drop(12),
+    'letter_M': ab_drop(13),
+    'letter_N': ab_drop(14),
+    'letter_O': ab_drop(15),
+    'letter_P': ab_drop(16),
+    'letter_Q': ab_drop(17),
+    'letter_R': ab_drop(18),
+    'letter_S': ab_drop(19),
+    'letter_T': ab_drop(20),
+    'letter_U': ab_drop(21),
+    'letter_V': ab_drop(22),
+    'letter_W': ab_drop(23),
+    'letter_X': ab_drop(24),
+    'letter_Y': ab_drop(25),
+    'letter_Z': ab_drop(26)
+})
+```
+
+Output:
+```['ab_drop']*16```

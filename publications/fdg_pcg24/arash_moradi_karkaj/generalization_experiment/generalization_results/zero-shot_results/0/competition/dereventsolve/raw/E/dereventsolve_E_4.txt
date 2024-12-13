@@ -1,0 +1,15 @@
+To generate the structure that looks like the letter "E", we can use the following sequence of `ab_drop` function calls:
+
+```
+ab_drop("top_left")
+ab_drop("middle_left")
+ab_drop("bottom_left")
+ab_drop("top")
+ab_drop("middle")
+ab_drop("bottom")
+ab_drop("top_right")
+ab_drop("middle_right")
+ab_drop("bottom_right")
+```
+
+This sequence will create a structure similar to the letter "E".

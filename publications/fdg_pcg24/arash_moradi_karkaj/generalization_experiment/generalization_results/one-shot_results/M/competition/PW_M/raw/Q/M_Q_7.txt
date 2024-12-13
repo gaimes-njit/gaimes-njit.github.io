@@ -1,0 +1,18 @@
+Task:
+To generate the uppercase English letter "Q", we need to construct a shape that resembles the letter using the given block types and following the gravity rules.
+
+Solution:
+To construct the letter "Q", we can start by building the vertical part of the letter using the b13 block type. Then we can add the horizontal part of the letter using the b31 block type.
+
+Here is the stream of ab_drop() commands to generate the letter "Q":
+
+```
+ab_drop('b13',1)
+ab_drop('b13',3)
+ab_drop('b13',4)
+ab_drop('b13',6)
+ab_drop('b31',2)
+ab_drop('b31',5)
+```
+
+Please note that these commands should be executed consecutively one after the other to build the letter "Q" in the Tetris-like environment.

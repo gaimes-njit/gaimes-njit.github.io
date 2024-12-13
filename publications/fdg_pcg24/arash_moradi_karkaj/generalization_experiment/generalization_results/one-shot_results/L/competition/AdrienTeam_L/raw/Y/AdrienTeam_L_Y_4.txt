@@ -1,0 +1,19 @@
+The goal is to create a stable structure resembling the letter "Y" using the provided block types and the `ab_drop()` function. We will start building from the bottom layer (layer 0) to the top layer (layer 15).
+
+Here is the code to generate the "Y" structure:
+
+```
+# Map initialization
+structure = [[' ']*W for _ in range(H)]
+
+# Bottom part of Y
+ab_drop('b31', 1)  # Horizontal block spanning 3 slots, centered in slot 1
+ab_drop('b13', 0)  # Vertical block spanning 3 layers, aligned with slot 0
+
+# Top part of Y
+ab_drop('b11', 0)  # Single block centered in slot 0
+ab_drop('b11', 1)  # Single block centered in slot 1
+ab_drop('b11', 2)  # Single block centered in slot 2
+```
+
+This code will drop the blocks in the correct order and position to form the "Y" shape. Each `ab_drop()` function call represents the dropping of a block vertically using the specified block type and slot number. The blocks are placed in such a way that they satisfy the constraints of not extending beyond the map boundaries and aligning their centers with the specified slots.

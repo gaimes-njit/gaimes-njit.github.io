@@ -1,0 +1,4 @@
+ab_drop('b31', 8)  # Drop the first horizontal block to create the top of the letter N
+ab_drop('b13', 7)  # Drop the first vertical block to create the left side of the letter N
+ab_drop('b31', 12)  # Drop the second horizontal block to create the bottom of the letter N
+ab_drop('b13', 13)  # Drop the second vertical block to create the right side of the letter N

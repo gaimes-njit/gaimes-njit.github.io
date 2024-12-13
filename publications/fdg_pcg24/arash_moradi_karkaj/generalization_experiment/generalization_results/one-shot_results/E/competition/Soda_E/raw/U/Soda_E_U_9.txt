@@ -1,0 +1,26 @@
+To build the letter "U" in the level, we can follow these steps:
+
+1. Place the left vertical bar of the "U":
+```
+ab_drop("b31", 7)
+```
+
+2. Place the bottom horizontal bar of the "U" using two row blocks:
+```
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+```
+
+3. Place the right vertical bar of the "U":
+```
+ab_drop("b31", 14)
+```
+
+The complete implementation is as follows:
+
+```
+ab_drop("b31", 7)
+ab_drop("b31", 10)
+ab_drop("b31", 11)
+ab_drop("b31", 14)
+```

@@ -1,0 +1,35 @@
+To generate a stable structure that looks like the uppercase character "A" using the `ab_drop()` function, we can follow these steps:
+
+1. Initialize the structure as an empty grid using the `structure` list.
+
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start by dropping a b13 block in the center of the bottom layer (layer 0) to form the base of the structure. Use the `ab_drop()` function to drop the block.
+
+```
+ab_drop('b13', W//2)
+```
+(Note: The `W//2` gives the center slot of the structure.)
+
+3. Next, drop two b31 blocks on top of the base, aligned with the left and right slots of the base. These blocks will form the sides of the "A" structure.
+
+```
+ab_drop('b31', 0)
+ab_drop('b31', W-1)
+```
+
+4. Drop a b31 block on top of the previously dropped blocks, aligned with the center slot, to form the horizontal line of the "A" structure.
+
+```
+ab_drop('b31', W//2)
+```
+
+5. Finally, drop a b11 block on top of the horizontal line, aligned with the center slot, to complete the "A" structure.
+
+```
+ab_drop('b11', W//2)
+```
+
+After following these steps, the `structure` list will represent a stable structure that looks like the uppercase character "A".

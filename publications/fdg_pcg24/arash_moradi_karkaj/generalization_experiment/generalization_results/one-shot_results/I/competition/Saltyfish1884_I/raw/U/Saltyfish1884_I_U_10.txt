@@ -1,0 +1,27 @@
+To generate a stable structure that resembles the character "U", we need to carefully consider the constraints and plan the placement of the blocks step by step. 
+
+First, let's consider the stability constraint. We know that a b31 block must be placed on a solid base (b11 or b13 blocks) to prevent overhangs. Therefore, the first step is to create a solid base for the "U" shape. We can achieve this by dropping two b13 blocks side by side in the middle slots of the map (slots 8 and 9):
+
+ab_drop('b13', 8)
+ab_drop('b13', 9)
+
+Next, we need to place the top horizontal part of the "U" shape. Since the b13 blocks are already taking up the middle slots, we can place a b31 block on top of them to complete the horizontal part of the "U". We can drop the b31 block in slot 8:
+
+ab_drop('b31', 8)
+
+The next step is to add the vertical parts of the "U" shape. We can achieve this by dropping two b13 blocks in the left and right slots of the top horizontal b31 block. We can drop the b13 block in slot 7:
+
+ab_drop('b13', 7)
+
+and drop the b13 block in slot 10:
+
+ab_drop('b13', 10)
+
+Finally, we have created a stable structure that resembles the character "U" while meeting all the hard constraints. The final structure will look like this:
+
+structure = [[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+             [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+             [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+             [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+             [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+             [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '

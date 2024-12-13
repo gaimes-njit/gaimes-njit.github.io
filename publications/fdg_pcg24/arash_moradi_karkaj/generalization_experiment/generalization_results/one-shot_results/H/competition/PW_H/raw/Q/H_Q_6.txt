@@ -1,0 +1,18 @@
+To generate the uppercase letter "Q" using the provided block types and commands, the following stream of commands should be used:
+
+```
+ab_drop('b31', 1)  // Add horizontal straight block at position 1
+ab_drop('b13', 4)  // Add vertical straight block at position 4
+ab_drop('b31', 4)  // Add horizontal straight block at position 4
+ab_drop('b13', 6)  // Add vertical straight block at position 6
+ab_drop('b31', 6)  // Add horizontal straight block at position 6
+ab_drop('b31', 8)  // Add horizontal straight block at position 8
+ab_drop('b31', 10) // Add horizontal straight block at position 10
+ab_drop('b31', 12) // Add horizontal straight block at position 12
+ab_drop('b13', 13) // Add vertical straight block at position 13
+ab_drop('b31', 13) // Add horizontal straight block at position 13
+ab_drop('b31', 15) // Add horizontal straight block at position 15
+ab_drop('b31', 17) // Add horizontal straight block at position 17
+```
+
+This series of commands will construct the letter "Q" in the mentioned environment, ensuring stability and fitting within the allowed space boundaries.

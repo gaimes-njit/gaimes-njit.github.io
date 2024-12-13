@@ -1,0 +1,29 @@
+First, let's initialize the map:
+
+```python
+map = [[0 for _ in range(20)] for _ in range(16)]
+```
+
+Now, we can start placing bricks to form the letter "O". 
+
+We will start by placing the upper and lower parts of the "O" using two b31 bricks. Since the horizontal bricks are stable and the pivot is in the middle cell, we don't need to worry about stability.
+
+```python
+ab_drop('b31', 5)  # Placing the upper part of the "O"
+ab_drop('b31', 5)  # Placing the lower part of the "O"
+```
+
+Next, we need to place the left and right parts of the "O" using two b13 bricks. Again, since the vertical bricks are stable and the pivot is in the middle cell, we don't need to worry about stability.
+
+```python
+ab_drop('b13', 4)  # Placing the left part of the "O"
+ab_drop('b13', 8)  # Placing the right part of the "O"
+```
+
+Finally, let's place the square brick in the center of the "O" to complete the structure. Since the square brick is stable on its own, we don't need to worry about stability.
+
+```python
+ab_drop('b11', 6)  # Placing the square brick in the center of the "O"
+```
+
+The structure is now complete.

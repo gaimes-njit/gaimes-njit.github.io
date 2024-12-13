@@ -1,0 +1,17 @@
+To generate the uppercase letter "W", we can use the following set of ab_drop() commands:
+
+```python
+# First block of the "W"
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+
+# Second block of the "W"
+ab_drop('b31', 4)
+ab_drop('b13', 5)
+
+# Third block of the "W"
+ab_drop('b31', 7)
+ab_drop('b13', 8)
+```
+
+This set of commands will construct the letter "W" within the defined environment, following the gravity rules.

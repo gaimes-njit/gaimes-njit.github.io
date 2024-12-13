@@ -1,0 +1,37 @@
+To construct a stable structure resembling "C" while satisfying the given constraints, you can follow these steps:
+
+1. Initialize the empty map:
+
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Drop the first block to construct the vertical part of "C":
+
+```
+ab_drop('b13', 0)
+```
+
+3. Drop the second block to construct the horizontal part of "C":
+
+```
+ab_drop('b31', 1)
+```
+
+4. Drop the third block to complete the vertical part of "C":
+
+```
+ab_drop('b13', 0)
+```
+
+The complete code snippet would look like this:
+
+```
+structure = [[' ']*W for _ in range(H)]
+
+ab_drop('b13', 0)
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+```
+
+You can further adjust and optimize the position of the blocks, but this solution fulfills the given constraints and forms a structure resembling the letter "C".

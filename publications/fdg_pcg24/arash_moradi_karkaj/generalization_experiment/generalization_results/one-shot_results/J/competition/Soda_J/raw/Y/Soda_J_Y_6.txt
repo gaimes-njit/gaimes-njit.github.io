@@ -1,0 +1,12 @@
+First, let's start by building the base of the "Y" character. We will use a row block (b31) for this.
+
+ab_drop("b31", 9)
+
+Next, we will add the two arms of the "Y" character. We will use two column blocks (b13) for this. One arm will be placed to the left of the base, and the other arm will be placed to the right of the base.
+
+ab_drop("b13", 8)
+ab_drop("b13", 10)
+
+Finally, we will add the top of the "Y" character. We will use a row block (b31) for this.
+
+ab_drop("b31", 9)

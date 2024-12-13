@@ -1,0 +1,18 @@
+To generate the uppercase English letter "E", we can use the following stream of ab_drop() commands:
+
+```python
+ab_drop('b13', 1)   # Place b13 block at position 1
+ab_drop('b13', 2)   # Place b13 block at position 2
+ab_drop('b13', 3)   # Place b13 block at position 3
+ab_drop('b13', 1)   # Place b13 block at position 1
+ab_drop('b13', 2)   # Place b13 block at position 2
+ab_drop('b13', 3)   # Place b13 block at position 3
+ab_drop('b13', 1)   # Place b13 block at position 1
+ab_drop('b13', 2)   # Place b13 block at position 2
+ab_drop('b13', 3)   # Place b13 block at position 3
+ab_drop('b31', 1)   # Place b31 block at position 1
+ab_drop('b11', 1)   # Place b11 block at position 1
+ab_drop('b11', 3)   # Place b11 block at position 3
+```
+
+This sequence of commands will create an uppercase "E" by stacking and arranging the blocks according to the gravity rules.

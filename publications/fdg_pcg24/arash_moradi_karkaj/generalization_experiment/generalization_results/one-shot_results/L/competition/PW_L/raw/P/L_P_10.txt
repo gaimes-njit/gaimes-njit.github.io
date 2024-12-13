@@ -1,0 +1,11 @@
+```
+ab_drop('b31',1)  // Place the horizontal block at the leftmost position
+ab_drop('b13',1)  // Place the vertical block at the bottom position
+ab_drop('b11',2)  // Place the small square block above the vertical block
+ab_drop('b11',2)  // Place another small square block above the previous one
+ab_drop('b11',2)  // Place another small square block above the previous one
+ab_drop('b11',2)  // Place another small square block above the previous one
+ab_drop('b11',2)  // Place another small square block above the previous one
+```
+
+This sequence of commands will create the letter "P" in the defined environment.

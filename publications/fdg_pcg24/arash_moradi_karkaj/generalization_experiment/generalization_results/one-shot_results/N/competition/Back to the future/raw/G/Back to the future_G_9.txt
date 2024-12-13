@@ -1,0 +1,16 @@
+To generate a stable structure that looks like the uppercase character "G", we can follow the steps below:
+
+1. Initialize the structure as an empty grid using the provided code:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Place the base of the "G". Since the base is a horizontal block, we can drop a b31 block at the center slot by calling `ab_drop("b31", (W-1)//2)`. This will place the block at layer 14.
+
+3. Place the U-shaped part of the "G". We can drop two b13 blocks vertically aligned at the middle slot of the previous b31 block. Call `ab_drop("b13", (W-1)//2-1)` to drop the first block at layer 13, and then call `ab_drop("b13", (W-1)//2+1)` to drop the second block at layer 13.
+
+4. Place the top horizontal part of the "G". We can drop a b31 block horizontally aligned with the U-shaped part at layer 12. Call `ab_drop("b31", (W-1)//2)`.
+
+The final structure should resemble the uppercase character "G" and meet the stability constraint.
+
+Note: The code provided assumes that the `ab_drop()` function already handles checking for stability and updating the structure grid accordingly.

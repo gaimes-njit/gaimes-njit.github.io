@@ -1,0 +1,23 @@
+The following is a stream of ab_drop() commands that will generate the uppercase letter "M":
+
+```
+ab_drop("b31", 1)
+ab_drop("b13", 4)
+ab_drop("b31", 7)
+ab_drop("b13", 10)
+ab_drop("b31", 13)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 8)
+ab_drop("b11", 9)
+ab_drop("b11", 14)
+ab_drop("b11", 15)
+```
+
+Explanation:
+1. Place a horizontal straight block ("b31") at position 1.
+2. Place a vertical straight block ("b13") at position 4.
+3. Place another horizontal straight block ("b31") at position 7.
+4. Place another vertical straight block ("b13") at position 10.
+5. Place the final horizontal straight block ("b31") at position 13.
+6. Place small square blocks ("b11") at positions 2, 3, 8, 9, 14, and 15 to complete the letter "M".

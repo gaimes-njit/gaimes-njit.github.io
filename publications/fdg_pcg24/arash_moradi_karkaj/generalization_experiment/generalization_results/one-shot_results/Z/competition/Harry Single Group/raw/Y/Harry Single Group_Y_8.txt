@@ -1,0 +1,59 @@
+To form a shape resembling the letter "Y", we need to place bricks in the following pattern:
+
+b31:
+  ###
+b13:
+  #
+  #
+  #
+b31:
+    #
+    #
+  ###
+  
+To satisfy the stability requirement, we need to ensure that each brick is placed in such a way that the number of occupied cells on the left and right sides of the pivot is the same or differs by at most 1.
+
+Here's the code to generate the required structure:
+
+```python
+# Map initialization
+field = [[0 for _ in range(20)] for _ in range(16)]
+
+# Function to check if a given position is occupied
+def is_occupied(x, y):
+    if x < 0 or x >= 20 or y < 0 or y >= 16:
+        return True
+    return field[y][x] == 1
+
+# Function to place a brick on the field
+def place_brick(brick, x_position):
+    if brick == 'b31':
+        # Check if the brick can be placed
+        if (is_occupied(x_position - 1, 0) or is_occupied(x_position, 0) or is_occupied(x_position + 1, 0) or
+            is_occupied(x_position, 1)):
+            return
+        # Place the brick
+        field[0][x_position - 1] = 1
+        field[0][x_position] = 1
+        field[0][x_position + 1] = 1
+        field[1][x_position] = 1
+    elif brick == 'b13':
+        # Check if the brick can be placed
+        if (is_occupied(x_position, 0) or is_occupied(x_position, 1) or is_occupied(x_position, 2)):
+            return
+        # Place the brick
+        field[0][x_position] = 1
+        field[1][x_position] = 1
+        field[2][x_position] = 1
+    elif brick == 'b11':
+        # Check if the brick can be placed
+        if (is_occupied(x_position, 0)):
+            return
+        # Place the brick
+        field[0][x_position] = 1
+
+# Place the bricks to form the shape "Y"
+ab_drop('b31', 5)
+ab_drop('b13', 5)
+ab_drop('b31', 6)
+```

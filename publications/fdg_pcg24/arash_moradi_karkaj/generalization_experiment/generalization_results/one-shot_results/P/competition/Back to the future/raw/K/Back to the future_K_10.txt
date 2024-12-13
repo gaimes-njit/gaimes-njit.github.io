@@ -1,0 +1,35 @@
+To generate a stable structure that looks like the uppercase character "K" and meets all the hard constraints, we can follow these steps:
+
+1. Start by initializing the structure as an empty WxH grid using the provided code: structure = [[' ']*W for _ in range(H)]
+
+2. Use the ab_drop() function to drop the b31 block in the middle of the structure (slot 10).
+
+3. Check the stability of the structure after each drop to ensure that the current structure and the resulting structure are stable and do not collapse.
+
+4. Use the ab_drop() function to drop the b13 block above the b31 block, aligned with its center (slot 10).
+
+5. Check the stability of the structure after each drop to ensure that the current structure and the resulting structure are stable and do not collapse.
+
+6. Use the ab_drop() function to drop the b13 block above the previously dropped b13 block, aligned with its center (slot 10).
+
+7. Check the stability of the structure after each drop to ensure that the current structure and the resulting structure are stable and do not collapse.
+
+8. Use the ab_drop() function to drop the b11 block above the b31 block, aligned with its center (slot 10).
+
+9. Check the stability of the structure after each drop to ensure that the current structure and the resulting structure are stable and do not collapse.
+
+10. Use the ab_drop() function to drop the b11 block above the previously dropped b11 block, aligned with its center (slot 10).
+
+11. Check the stability of the structure after each drop to ensure that the current structure and the resulting structure are stable and do not collapse.
+
+12. Use the ab_drop() function to drop the b11 block to the left of the previously dropped b11 blocks, aligned with its center (slot 6).
+
+13. Check the stability of the structure after each drop to ensure that the current structure and the resulting structure are stable and do not collapse.
+
+14. Use the ab_drop() function to drop the b11 block to the right of the previously dropped b11 blocks, aligned with its center (slot 14).
+
+15. Check the stability of the structure after each drop to ensure that the current structure and the resulting structure are stable and do not collapse.
+
+16. The final structure should resemble the uppercase character "K" and meet all the hard constraints.
+
+Note: The specific coordinates and number of drops may vary depending on the stability of the structure and the constraints imposed by the block types. The steps above provide a general guideline to generate a stable structure resembling the uppercase character "K".

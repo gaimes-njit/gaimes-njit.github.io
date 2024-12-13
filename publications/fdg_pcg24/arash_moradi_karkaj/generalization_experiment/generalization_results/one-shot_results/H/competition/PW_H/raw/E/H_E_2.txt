@@ -1,0 +1,15 @@
+To generate the uppercase letter "E", we need to construct the letter in three parts: the top horizontal line, the vertical line in the middle, and the bottom horizontal line.
+
+Here is the stream of ab_drop() commands to generate the letter "E":
+
+```plaintext
+ab_drop('b31',1)                      // Place the first block of the top horizontal line
+ab_drop('b31',2)                      // Place the second block of the top horizontal line
+ab_drop('b31',3)                      // Place the third block of the top horizontal line
+ab_drop('b13',2)                      // Place the vertical block in the middle
+ab_drop('b31',1)                      // Place the first block of the bottom horizontal line
+ab_drop('b31',2)                      // Place the second block of the bottom horizontal line
+ab_drop('b31',3)                      // Place the third block of the bottom horizontal line
+```
+
+Please note that these commands should be executed consecutively, one after another, starting from the first command.

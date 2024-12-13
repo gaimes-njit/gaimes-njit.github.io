@@ -1,0 +1,26 @@
+To generate a stable structure that resembles the character "Y", we need to carefully place the blocks while considering the hard constraints of stability and the soft constraint of no boundary intrusion. We will use the ab_drop() function to put suitable blocks in the structure.
+
+Step 1: Define the structure
+Initialize the structure as an empty grid with the given dimensions:
+structure = [[' ']*W for _ in range(H)]
+
+Step 2: Determine the dropping position and order
+To create a stable structure, we need to drop blocks in a specific order and position. We can start by placing a b11 block at the center bottom of the structure as the base.
+
+Step 3: Determine the shape of the structure
+Since we are aiming to create a structure resembling the character "Y", the general shape should have a vertical line with two horizontal lines extending from it. We can achieve this by placing a b13 block on top of the base and two b31 blocks on either side of the vertical line, forming a Y shape.
+
+Step 4: Place the suitable blocks using ab_drop()
+Using the ab_drop() function, we can determine the dropping position and order for each block. Here's an example of how to place the blocks to form the Y shape:
+
+# Place the base block
+ab_drop('b11', 9)
+
+# Place the vertical block
+ab_drop('b13', 9)
+
+# Place the horizontal blocks
+ab_drop('b31', 6)
+ab_drop('b31', 13)
+
+This sequence of calls to ab_drop() will result in a stable structure resembling the character "Y". Make sure to adjust the dropping positions and order as needed to meet the hard constraints of stability and the soft constraint of no boundary intrusion.

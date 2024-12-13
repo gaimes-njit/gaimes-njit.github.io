@@ -1,0 +1,11 @@
+To generate the letter "X", we can use a combination of the block types b13 and b31. Here is a possible sequence of ab_drop() commands to create the letter "X":
+
+```
+ab_drop('b31',1)
+ab_drop('b13',1)
+ab_drop('b31',3)
+ab_drop('b31',2)
+ab_drop('b13',3)
+```
+
+This sequence starts by placing a horizontal block (b31) at position 1, followed by a vertical block (b13) at position 1. Then, three more horizontal blocks are placed at positions 3, 2, and 3 respectively, forming the shape of the letter "X".

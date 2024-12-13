@@ -1,0 +1,57 @@
+```python
+# Map Initialization
+map = [[0 for _ in range(20)] for _ in range(16)]
+
+# Helper Functions
+def check_collision(x, y):
+    """
+    Check if there is a collision at a given position (x, y) with the current map.
+    """
+    if x < 0 or x >= 20 or y < 0 or y >= 16:
+        return True
+    return map[y][x] != 0
+
+def apply_brick(x, y, brick):
+    """
+    Apply a brick to the current map at a given position (x, y).
+    """
+    if brick == 'b31':
+        for i in range(3):
+            map[y][x-1+i] = 1
+    elif brick == 'b13':
+        for i in range(3):
+            map[y+i][x] = 1
+    elif brick == 'b11':
+        map[y][x] = 1
+
+def is_stable():
+    """
+    Check if the current brick placements are stable.
+    """
+    for y in range(16):
+        for x in range(20):
+            if map[y][x] != 0:
+                if y == 0 or (map[y-1][x] == 0 and
+                              (x == 0 or map[y][x-1] == 0) and
+                              (x == 19 or map[y][x+1] == 0)):
+                    return False
+    return True
+
+# Generate the Required Structure
+# Step 1: Place b31 on the ground
+ab_drop('b31', 5)
+
+# Step 2: Place b13 above b31
+ab_drop('b13', 5)
+
+# Step 3: Place b31 on top of b13
+ab_drop('b31', 5)
+
+# Step 4: Check stability
+if not is_stable():
+    # Undo previous step if the structure is unstable
+    ab_drop('b31', 6)
+
+# Step 5: Place b11 at the top of the structure
+ab_drop('b11', 5)
+```

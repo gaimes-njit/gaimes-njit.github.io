@@ -1,0 +1,4 @@
+First, let's create the base of the "W" character using two row blocks ("b31") stacked one on top of the other, with a gap in the middle. We will position them at column 7 and column 12 respectively. This will create the two outer legs of the "W".
+
+ab_drop("b31", 7)
+ab_drop("b31", 12)

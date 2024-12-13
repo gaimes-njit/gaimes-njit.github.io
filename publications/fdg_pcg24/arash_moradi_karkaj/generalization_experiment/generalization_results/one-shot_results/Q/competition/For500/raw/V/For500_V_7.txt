@@ -1,0 +1,7 @@
+# Solution
+
+ab_drop('b11', 8)  # Drop a single block at slot 8
+ab_drop('b11', 9)  # Drop another single block at slot 9
+ab_drop('b31', 10)  # Drop a horizontal block at slot 10
+ab_drop('b13', 11)  # Drop a vertical block at slot 11
+ab_drop('b11', 14)  # Drop a single block at slot 14

@@ -1,0 +1,17 @@
+Here is an example code that uses the given information and the `ab_drop()` function to generate the structure of "H" while adhering to the constraints:
+
+```
+# Initialize the structure
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the blocks to create the "H" structure
+ab_drop('b13', 0)
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b31', 1)
+ab_drop('b13', 0)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+ab_drop('b11', 1)
+
+```

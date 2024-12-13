@@ -1,0 +1,19 @@
+To generate the uppercase English letter "P" using the given block types and environment, you can follow these steps:
+
+1. Start by placing a horizontal straight block (b31) at position 1.
+2. Place a vertical straight block (b13) at position 2.
+3. Place a vertical straight block (b13) at position 3.
+4. Place a 1x1 square block (b11) at position 2.
+5. Place a 1x1 square block (b11) at position 3.
+
+This sequence of commands will create the letter "P" within the defined environment while maintaining stability with the gravity rules. The ab_drop commands to generate the letter "P" are as follows:
+
+```plaintext
+ab_drop('b31', 1)
+ab_drop('b13', 2)
+ab_drop('b13', 3)
+ab_drop('b11', 2)
+ab_drop('b11', 3)
+```
+
+By executing these commands consecutively, you will be able to create the uppercase letter "P" using the given block types.

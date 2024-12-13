@@ -1,0 +1,18 @@
+To generate a structure in the shape of a capital "Q" using the ab_drop() function, we can break down the shape into smaller blocks and stack them in a bottom-to-top fashion. Here is the step-by-step implementation:
+
+1. Drop the base block (the circle part of the "Q") at position 9:
+ab_drop("b13", 9)
+
+2. Drop the vertical bar of the "Q" at position 10, and 3 rows above the base block:
+ab_drop("b31", 10)
+
+3. Drop the horizontal bar of the "Q" at position 9, and 4 rows above the base block:
+ab_drop("b13", 9)
+
+Here is the complete implementation:
+
+```
+ab_drop("b13", 9)
+ab_drop("b31", 10)
+ab_drop("b13", 9)
+```

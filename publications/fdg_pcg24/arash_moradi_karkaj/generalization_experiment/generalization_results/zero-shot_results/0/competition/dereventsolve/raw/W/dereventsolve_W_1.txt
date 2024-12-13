@@ -1,0 +1,35 @@
+```python
+def find_letter_W(database):
+    sequence = []
+    sequence.append(database['start'])
+    sequence.append(database['down'])
+    sequence.append(database['down'])
+    sequence.append(database['down'])
+    sequence.append(database['up'])
+    sequence.append(database['down'])
+    sequence.append(database['up'])
+    sequence.append(database['down'])
+    sequence.append(database['up'])
+    sequence.append(database['down'])
+    sequence.append(database['end'])
+    
+    return sequence
+
+letter_W_database = {
+    'start': 'ab_drop()',
+    'down': 'ab_drop()',
+    'up': 'ab_drop()',
+    'end': 'ab_drop()',
+}
+
+sequence_W = find_letter_W(letter_W_database)
+print(sequence_W)
+```
+
+Output:
+```
+['ab_drop()', 'ab_drop()', 'ab_drop()', 'ab_drop()', 'ab_drop()', 'ab_drop()', 'ab_drop()', 'ab_drop()', 'ab_drop()', 'ab_drop()', 'ab_drop()']
+```
+
+Explanation:
+The letter "W" is composed of two downward strokes and three upward strokes. By following the sequence of `ab_drop` function calls, we can construct the structure that looks like the letter "W". Each `ab_drop()` call corresponds to either moving downward or upward.

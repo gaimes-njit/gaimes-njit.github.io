@@ -1,0 +1,73 @@
+To generate a stable structure that resembles the uppercase character "O" using the `ab_drop()` function, we can follow these steps:
+
+1. Start by initializing the structure as an empty grid using the provided code:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. First, we need to create the outer ring of the "O" shape. To do this, we will use `ab_drop()` to drop vertical blocks (`b13`) at the leftmost and rightmost slots of the structure in layers 3 to 11. This will create the vertical sides of the "O" shape. The code to achieve this is as follows:
+```python
+for layer in range(3, 12):
+    ab_drop('b13', 0)  # drop left vertical block (b13)
+    ab_drop('b13', W-1)  # drop right vertical block (b13)
+```
+
+3. Next, we will create the horizontal part of the "O" shape. We can achieve this by using `ab_drop()` to drop horizontal blocks (`b31`) at the top slots of the structure in layers 2 and 12. This will create the top and bottom horizontal parts of the "O" shape. The code is as follows:
+```python
+ab_drop('b31', W//2)  # drop top horizontal block (b31) in layer 2
+ab_drop('b31', W//2)  # drop bottom horizontal block (b31) in layer 12
+```
+
+4. Now, we need to fill the remaining space inside the "O" shape while maintaining stability. We can do this by dropping square blocks (`b11`) in the remaining slots of the structure in layers 4 to 10. To ensure stability, we will check for support from the structure below before dropping each block. The code is as follows:
+```python
+for layer in range(4, 11):
+    for slot in range(1, W-1):
+        if structure[layer-1][slot] != ' ':
+            ab_drop('b11', slot)  # drop square block (b11)
+```
+
+5. Finally, observe the resulting structure and check if it resembles the uppercase letter "O". Make adjustments to the placement of blocks as necessary to improve the similarity.
+
+Here is a complete example of the code to generate the stable structure resembling the uppercase character "O":
+```python
+W = 20
+H = 16
+
+# Initialize the structure as an empty WxH grid
+structure = [[' ']*W for _ in range(H)]
+
+def ab_drop(x, y):
+    # x is the block type, y is the slot number from 0 to W-1 where the block center is aligned
+    
+    # initialize the drop position at the top of the map
+    drop_pos = (H-1, y)
+    
+    # drop the block from the top and move it down until it lands on the base or another block
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    
+    # place the block on the structure
+    structure[drop_pos[0]][drop_pos[1]] = x
+
+# Create the outer ring of the "O" shape
+for layer in range(3, 12):
+    ab_drop('b13', 0)  # drop left vertical block (b13)
+    ab_drop('b13', W-1)  # drop right vertical block (b13)
+
+# Create the top and bottom horizontal parts of the "O" shape
+ab_drop('b31', W//2)  # drop top horizontal block (b31) in layer 2
+ab_drop('b31', W//2)  # drop bottom horizontal block (b31) in layer 12
+
+# Fill the remaining space inside the "O" shape with square blocks
+for layer in range(4, 11):
+    for slot in range(1, W-1):
+        if structure[layer-1][slot] != ' ':
+            ab_drop('b11', slot)  # drop square block (b11)
+
+# Output the resulting structure
+for row in structure:
+    print(''.join(row))
+```
+Ensure to use test cases for multiple runs to check the diversity and to verify that the structure meets all the hard constraints.

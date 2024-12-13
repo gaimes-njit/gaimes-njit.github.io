@@ -1,0 +1,53 @@
+1. To draw the letter "D" with asterisks:
+
+```
+****
+*   *
+*   *
+*   *
+****
+```
+
+2. Line-by-line, verbally listing the asterisks and spaces generated in each row of the drawing:
+
+Row 1: 4 asterisks
+Row 2: 1 asterisk, 3 spaces, 1 asterisk
+Row 3: 1 asterisk, 3 spaces, 1 asterisk
+Row 4: 1 asterisk, 3 spaces, 1 asterisk
+Row 5: 4 asterisks
+
+3. Replacing asterisks with "x" and spaces with "y":
+
+Row 1: 4x
+Row 2: 1x, 3y, 1x
+Row 3: 1x, 3y, 1x
+Row 4: 1x, 3y, 1x
+Row 5: 4x
+
+4. Writing out each x and y for each row:
+
+Row 1: xxxxx
+Row 2: xyxyx
+Row 3: xyxyx
+Row 4: xyxyx
+Row 5: xxxxx
+
+5. Indicating the position of each variable:
+
+Row 1: x-1, x-2, x-3, x-4, x-5
+Row 2: x-1, y-2, x-3, y-4, x-5
+Row 3: x-1, y-2, x-3, y-4, x-5
+Row 4: x-1, y-2, x-3, y-4, x-5
+Row 5: x-1, x-2, x-3, x-4, x-5
+
+6. Returning a sequence of `ab_drop` function calls:
+
+```
+ab_drop("b11", 1)
+ab_drop("b11", 2)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+ab_drop("b11", 5)
+```
+
+As a result, you would draw the letter "D" with asterisks and indicate the position of each asterisk and space, and you would also generate the sequence of `ab_drop` function calls to recreate the visual representation of the letter "D".

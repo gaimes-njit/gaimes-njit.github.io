@@ -1,0 +1,20 @@
+To generate the uppercase letter "Q", we can follow the given instructions and use the block types to construct the shape.
+
+Here is the stream of ab_drop() commands to create the letter "Q":
+
+```
+ab_drop('b13', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 2)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+ab_drop('b31', 3)
+ab_drop('b31', 4)
+ab_drop('b31', 5)
+ab_drop('b31', 6)
+ab_drop('b13', 2)
+ab_drop('b13', 2)
+ab_drop('b31', 2)
+```
+
+By following these commands, you will stack and position the blocks to form the uppercase letter "Q" within the allowed space boundaries.

@@ -1,0 +1,66 @@
+To form a shape resembling the letter "D" using the available bricks, we need to place the bricks in a specific order to ensure stability and avoid boundary collisions. Here is one possible solution:
+
+```python
+# Initialize the field with 0s
+field = [[0] * 20 for _ in range(16)]
+
+# Function to check if a position is occupied
+def is_occupied(x, y):
+    if x < 0 or x >= 20 or y < 0 or y >= 16:
+        return True
+    return field[y][x] != 0
+
+# Function to place a brick on the field
+def place_brick(brick, x_position):
+    if brick == 'b31':
+        # Place the first row of the b31 brick
+        if not is_occupied(x_position-1, 0) and not is_occupied(x_position, 0) and not is_occupied(x_position+1, 0):
+            field[0][x_position-1] = 1
+            field[0][x_position] = 1
+            field[0][x_position+1] = 1
+        else:
+            return
+        # Place the second row of the b31 brick
+        if not is_occupied(x_position, 1):
+            field[1][x_position] = 1
+        else:
+            return
+        # Place the third row of the b31 brick
+        if not is_occupied(x_position, 2):
+            field[2][x_position] = 1
+        else:
+            return
+    elif brick == 'b13':
+        # Place the first column of the b13 brick
+        if not is_occupied(x_position, 0) and not is_occupied(x_position, 1) and not is_occupied(x_position, 2):
+            field[0][x_position] = 1
+            field[1][x_position] = 1
+            field[2][x_position] = 1
+        else:
+            return
+        # Place the second column of the b13 brick
+        if not is_occupied(x_position+1, 0):
+            field[0][x_position+1] = 1
+        else:
+            return
+        # Place the third column of the b13 brick
+        if not is_occupied(x_position+2, 0):
+            field[0][x_position+2] = 1
+        else:
+            return
+    elif brick == 'b11':
+        # Place the b11 brick
+        if not is_occupied(x_position, 0):
+            field[0][x_position] = 1
+        else:
+            return
+
+
+# Place the b13 brick
+ab_drop('b13', 7)
+place_brick('b13', 7)
+
+# Place the b31 brick
+ab_drop('b31', 6)
+place_brick('b31', 6)
+```

@@ -1,0 +1,6 @@
+ab_drop('b11', 9) # center b11 at slot 9 (most center)
+ab_drop('b11', 9) # center b11 at slot 9
+ab_drop('b11', 8) # center b11 at slot 8
+ab_drop('b31', 9) # center b31 at slot 9
+ab_drop('b13', 8) # center b13 at slot 8
+ab_drop('b13', 10) # center b13 at slot 10

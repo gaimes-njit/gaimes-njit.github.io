@@ -1,0 +1,6 @@
+# Solution:
+
+ab_drop('b13', 9)        # Place the vertical block at index 9
+ab_drop('b31', 9)        # Place the horizontal block at index 9
+
+# The resulting code consists of two instances of ab_drop function, which drop the required blocks to form the letter "O".

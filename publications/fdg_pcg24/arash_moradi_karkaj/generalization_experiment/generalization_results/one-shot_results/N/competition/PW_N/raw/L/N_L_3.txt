@@ -1,0 +1,19 @@
+To create the uppercase letter "L", you can use the following stream of commands:
+
+``` 
+ab_drop('b13',1)
+ab_drop('b13',2)
+ab_drop('b31',2)
+ab_drop('b13',4)
+ab_drop('b11',4)
+```
+
+Explanation:
+
+1. `ab_drop('b13',1)` - This command places a vertical straight block of width 1 unit and height 3 units at position 1 along the width.
+2. `ab_drop('b13',2)` - This command places another vertical straight block of width 1 unit and height 3 units at position 2. This block will stack on top of the previous one.
+3. `ab_drop('b31',2)` - This command places a horizontal straight block of width 3 units and height 1 unit at position 2. This block connects the two vertical blocks and forms the base of the "L" shape.
+4. `ab_drop('b13',4)` - This command places another vertical straight block of width 1 unit and height 3 units at position 4. This block will be placed on top of the horizontal block and forms the upright part of the "L" shape.
+5. `ab_drop('b11',4)` - This command places a square block of width 1 unit and height 1 unit at position 4. This block is placed on top of the previous vertical block and completes the "L" shape.
+
+By executing the above commands in order, you will stack the blocks in a way that resembles the uppercase letter "L".

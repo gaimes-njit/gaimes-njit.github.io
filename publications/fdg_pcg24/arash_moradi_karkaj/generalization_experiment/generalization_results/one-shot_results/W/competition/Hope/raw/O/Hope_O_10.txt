@@ -1,0 +1,31 @@
+To create a structure exactly like "O" inside a 20*16 box block, you can use the following sequence of ab_drop commands:
+
+1. Place the top-left block:
+   ab_drop('b11', 4)
+
+2. Place the top-right block:
+   ab_drop('b11', 15)
+
+3. Place the bottom-left block:
+   ab_drop('b11', 4)
+   ab_drop('b11', 14)
+
+4. Place the bottom-right block:
+   ab_drop('b11', 15)
+   ab_drop('b11', 14)
+
+5. Place the left vertical block:
+   ab_drop('b31', 4)
+
+6. Place the right vertical block:
+   ab_drop('b31', 16)
+
+7. Place the top horizontal block:
+   ab_drop('b13', 5)
+
+8. Place the bottom horizontal block:
+   ab_drop('b13', 5)
+   ab_drop('b13', 10)
+   ab_drop('b13', 15)
+
+This sequence of ab_drop commands will create the structure exactly like "O" inside a 20*16 box block.

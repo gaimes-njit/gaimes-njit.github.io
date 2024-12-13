@@ -1,0 +1,15 @@
+To generate uppercase English letter "K", you can follow these steps:
+
+1. Place two vertical straight blocks (b13) in the second and third positions along the width:
+```ab_drop('b13',2) ab_drop('b13',3)```
+
+2. Place a horizontal straight block (b31) in the third position along the width, on top of the previous blocks:
+```top ab_drop('b31',3)```
+
+3. Place a vertical straight block (b13) in the fifth position along the width, on the right side of the previous blocks:
+```side ab_drop('b13',5)```
+
+4. Finally, place a square block (b11) in the fifth position along the width, on top of the previous blocks:
+```ab_drop('b11',5)```
+
+This will create the uppercase English letter "K".

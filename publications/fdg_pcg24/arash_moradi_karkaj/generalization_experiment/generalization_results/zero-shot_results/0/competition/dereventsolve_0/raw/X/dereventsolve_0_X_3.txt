@@ -1,0 +1,12 @@
+```
+ab_drop('X', 0, 0)
+ab_drop('X', 1, 1)
+ab_drop('X', 2, 2)
+ab_drop('X', 3, 3)
+ab_drop('X', 4, 4)
+ab_drop('X', 0, 4)
+ab_drop('X', 1, 3)
+ab_drop('X', 2, 2)
+ab_drop('X', 3, 1)
+ab_drop('X', 4, 0)
+```

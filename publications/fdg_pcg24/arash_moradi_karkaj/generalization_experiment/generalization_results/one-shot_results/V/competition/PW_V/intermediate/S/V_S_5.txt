@@ -1,0 +1,28 @@
+To generate the uppercase letter "S" using the given block types and environment, we can follow these steps:
+
+1. Place b13 at position (1, 1) using the command `ab_drop(3, 1)`.
+2. Place b31 at position (4, 1) using the command `ab_drop(2, 4)`.
+3. Place b31 at position (1, 4) using the command `ab_drop(2, 1)`.
+4. Place b13 at position (4, 4) using the command `ab_drop(3, 4)`.
+5. Place b31 at position (7, 4) using the command `ab_drop(2, 7)`.
+6. Place b31 at position (1, 7) using the command `ab_drop(2, 1)`.
+7. Place b13 at position (4, 7) using the command `ab_drop(3, 4)`.
+8. Place b13 at position (1, 10) using the command `ab_drop(3, 1)`.
+9. Place b31 at position (4, 10) using the command `ab_drop(2, 4)`.
+10. Place b31 at position (1, 13) using the command `ab_drop(2, 1)`.
+11. Place b13 at position (4, 13) using the command `ab_drop(3, 4)`.
+
+Here is the stream of commands:
+```
+ab_drop(3, 1)
+ab_drop(2, 4)
+ab_drop(2, 1)
+ab_drop(3, 4)
+ab_drop(2, 7)
+ab_drop(2, 1)
+ab_drop(3, 4)
+ab_drop(3, 1)
+ab_drop(2, 4)
+ab_drop(2, 1)
+ab_drop(3, 4)
+```

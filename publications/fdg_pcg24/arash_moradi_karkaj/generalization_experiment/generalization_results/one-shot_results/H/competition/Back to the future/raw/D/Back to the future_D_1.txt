@@ -1,0 +1,42 @@
+To generate a stable structure that looks like the uppercase character "D", we can follow these steps:
+
+1. Initialize the empty structure grid:
+```
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Define helper function to check stability:
+```
+def is_stable(position):
+    # Check if the position and neighboring positions are supported
+    if structure[position[0]][position[1]] == ' ':
+        return True
+    elif position[0] == 0 or structure[position[0]-1][position[1]] != ' ':
+        return True
+    elif position[1] > 0 and position[1] < W-1 and (structure[position[0]-1][position[1]-1] != ' ' or structure[position[0]-1][position[1]+1] != ' '):
+        return True
+    else:
+        return False
+```
+
+3. Drop the base block (b31) at the bottom center of the structure:
+```
+ab_drop('b31', W//2)
+```
+
+4. Drop the vertical block (b13) above the base block to form the curved part of the "D":
+```
+ab_drop('b13', W//2-1)
+ab_drop('b13', W//2-2)
+```
+
+5. Drop the square block (b11) above the curved part to form the straight line of the "D":
+```
+ab_drop('b11', W//2-2)
+ab_drop('b11', W//2-3)
+ab_drop('b11', W//2-4)
+```
+
+6. Check the stability of the structure after each drop and adjust if necessary.
+
+This sequence of block drops will generate a stable structure that resembles the uppercase character "D". Note that the exact coordinates may vary depending on the size of the grid (W and H), but the general approach remains the same.

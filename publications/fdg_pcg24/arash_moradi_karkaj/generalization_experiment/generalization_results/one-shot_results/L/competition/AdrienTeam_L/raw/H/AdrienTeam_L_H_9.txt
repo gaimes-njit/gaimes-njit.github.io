@@ -1,0 +1,26 @@
+```
+# Initialize the structure
+structure = [[' ']*20 for _ in range(16)]
+
+# Drop the first block vertically
+ab_drop('b13', 7)
+
+# Drop the left leg of the 'H' horizontally
+ab_drop('b11', 6)
+ab_drop('b11', 8)
+
+# Drop the middle part of the 'H' horizontally
+ab_drop('b31', 7)
+
+# Drop the right leg of the 'H' horizontally
+ab_drop('b11', 12)
+ab_drop('b11', 14)
+
+# Drop the top horizontal bar of the 'H' horizontally
+ab_drop('b31', 6)
+ab_drop('b31', 8)
+
+# Print the structure
+for row in structure:
+    print(row)
+```

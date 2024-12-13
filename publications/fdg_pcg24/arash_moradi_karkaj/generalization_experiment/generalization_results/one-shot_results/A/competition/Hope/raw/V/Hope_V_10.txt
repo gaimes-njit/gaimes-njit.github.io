@@ -1,0 +1,9 @@
+To create the "V" structure inside a 20*16 box, you can use the following commands:
+
+ab_drop('b11', 4)
+ab_drop('b13', 5)
+ab_drop('b11', 6)
+ab_drop('b31', 7)
+ab_drop('b11', 8)
+ab_drop('b13', 9)
+ab_drop('b11', 10)

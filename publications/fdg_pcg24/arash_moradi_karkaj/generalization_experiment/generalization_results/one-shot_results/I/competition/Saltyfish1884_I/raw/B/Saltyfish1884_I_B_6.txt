@@ -1,0 +1,43 @@
+In order to generate a stable structure resembling the character "B" using the ab_drop() function, we can follow the following steps:
+
+1. Initialize the structure as an empty grid:
+```python
+structure = [[' ']*W for _ in range(H)]
+```
+
+2. Start by placing a b13 block at the bottom layer on slot 4:
+```python
+ab_drop('b13', 4)
+```
+
+3. Place a b11 block on top of the b13 block at slot 3:
+```python
+ab_drop('b11', 3)
+```
+
+4. Place a b31 block horizontally on top of the b13 block covering slots 4, 5, and 6:
+```python
+ab_drop('b31', 5)
+```
+
+5. Place a b13 block on top of the b31 block covering slot 4:
+```python
+ab_drop('b13', 4)
+```
+
+6. Place a b31 block horizontally on top of the b13 block covering slots 3, 4, and 5:
+```python
+ab_drop('b31', 4)
+```
+
+7. Place a b11 block on top of the b13 block at slot 3:
+```python
+ab_drop('b11', 3)
+```
+
+8. Finally, place a b31 block horizontally on top of the b13 block covering slots 5, 6, and 7:
+```python
+ab_drop('b31', 6)
+```
+
+The resulting structure should resemble the character "B" and meet all the stability constraints.

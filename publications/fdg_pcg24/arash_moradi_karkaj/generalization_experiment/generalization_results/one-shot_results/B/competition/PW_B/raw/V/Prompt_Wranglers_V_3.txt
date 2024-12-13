@@ -1,0 +1,31 @@
+To create the uppercase English letter "V", we can follow these steps:
+
+1. Start by placing the bottom part of the letter. Place a horizontal block (b31) in the middle of the grid at position 10: 
+```
+ab_drop('b31', 10)
+```
+
+2. Next, move to the next structural layer above the bottom part. Place two vertical blocks (b13) on either side of the previous horizontal block, at positions 9 and 11:
+```
+ab_drop('b13', 9)
+ab_drop('b13', 11)
+```
+
+3. Now, place another horizontal block (b31) on top of the vertical blocks, at position 10:
+```
+ab_drop('b31', 10)
+```
+
+4. Finally, place one more vertical block (b13) in the middle of the top part, at position 10:
+```
+ab_drop('b13', 10)
+```
+
+Overall, the stream of commands to generate the uppercase letter "V" would be:
+```
+ab_drop('b31', 10)
+ab_drop('b13', 9)
+ab_drop('b13', 11)
+ab_drop('b31', 10)
+ab_drop('b13', 10)
+```

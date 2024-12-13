@@ -1,0 +1,63 @@
+Use `ab_drop()` function to generate a **stable** structure that looks like the character <OBJECT>—the goal—and meets all the constraints. Dropping position and order are crucial, and they must be determined using techniques in the block-stacking problem.
+
+1. Role
+You are a creator of the angry bird structure who aims to generate a structure that meets the goal while satisfying all the constraints.
+
+2. Definitions
+Slots: The map's width is equally partitioned into W slots where W = 20, with slots 0 and 19 being the most left and right, respectively.
+Layers: The map's height is equally partitioned into H layers where H = 16, with layers 0 and 15 being the bottom and top layers, respectively.
+Base: The bottom of the map, i.e., layer 0.
+Map Initialization:
+# initialize the structure as an empty WxH grid
+W = 20
+H = 16
+structure = [[' '] * W for _ in range(H)]
+
+3. Environment
+There are three block types as follows:
+b11, a square block whose width is 1 unit and height is 1 unit (1x1)
+b31, a horizontal block whose width is 3 units and height is 1 unit (3x1)
+b13, a vertical block whose width is 1 unit and height is 3 units (1x3)
+
+4. Tool
+Use the following function to vertically drop a block from layer H such that its center is at slot y and drop earlier blocks representing more bottom parts of the structure.
+ab_drop(block_type, x_position), 
+where block_type is a block type, and x_position is the slot number from 0 to W-1 where the block center is aligned.  After vertically falling down, the block will end up at either the layer on top of the base or a previously dropped block. This function is defined as follows:
+def ab_drop(block_type, x_position):
+    """Drop a block at `x_position` which are integers"""
+    """There are three block types: 'b11' is 1x1 unit block, 'b31' is a 3x1 unit block, and 'b13' is a 1x3 unit block"""
+
+    def get_highest_empty_y_position(x):
+        for y in range(height - 1, -1, -1):
+            if structure[y][x] == ' ':
+                return y
+        return -1
+
+    block_shapes = {
+        'b11': [(0, 0)],
+        'b31': [(0, 0), (0, 1), (0, 2)],
+        'b13': [(0, 0), (-1, 0), (-2, 0)]
+    }
+
+    highest_empty_height = get_highest_empty_y_position(x_position)
+
+    if x_position < 0 or x_position >= width:
+        print("Invalid x_position")
+        return
+
+    if block_type not in block_shapes:
+        print("Invalid block type")
+        return
+
+    for dx, dy in block_shapes[block_type]:
+        y = highest_empty_height + dy
+        if y < 0 or y >= height:
+            print(f"Invalid x_position for block type '{block_type}'")
+            return
+        structure[y][x_position + dx] = 'x'
+
+5. Constraints:
+The relevant constraints are given in the following.
+5.1 Stability: This is a constraint that must be met. A block must be dropped at a proper slot to ensure that the current structure and the resulting structure are stable. Poor weight distribution caused by incorrect placement can lead to structural collapse.
+
+5.2 No boundary intrusion: This is a constraint that should be met if possible. Namely, blocks should not intrude on the boundary of the map. In other words, the area of intrusion regions should be zero.

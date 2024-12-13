@@ -1,0 +1,44 @@
+Make a pixel art of the capital letter <OBJECT>, while taking note of the position (x,y) of the filled pixel, with the position (0,0) corresponding to the bottom left of the canvas. All the 90° rotations are also accepted, so pick the one easiest to produce. Please respect the following constraints:
+
+1. Gravity
+There is gravity applied on the vertical axis, this means that filled pixels without anything below them will fall, until they encounter another pixel or the ground.
+
+2. Pixel Types
+You have 3 types of pixels, and you must only use those 3 types: 
+'b11', a pixel whose width is 1 unit and height is 1 unit
+'b13', a vertical pixel block whose width is 1 unit and height is 3 units
+'b31', a horizontal pixel block whose width is 3 units and height is 1 unit
+
+3. Placing order
+From bottom to top.
+
+4. Height
+Make sure that the highest pixel isn't above 15 of height compared to the ground.
+
+5. Tools
+Use the`ab_drop(a, b)` function to place the pixels in the correct order to draw the pixel art:
+```python
+def ab_drop(a, b):
+    # a is the pixel type, b is x position where the pixel center is aligned
+    
+    # initialize the drop position at the top of the canvas
+    drop_pos = (b, 15-1)
+    
+    # drop the pixel from the top and move it down until it lands on the base or another pixel
+    while drop_pos[0] > 0:
+        drop_pos = (b, drop_pos[0]-1)
+        if canvas[drop_pos[0]][drop_pos[1]+1] != ' ':
+            break
+    
+    # place the pixel on the structure
+    if a === 'b11':
+        canvas[drop_pos[0]][drop_pos[1]] = a
+    if a === 'b31':
+        canvas[drop_pos[0] - 1][drop_pos[1] ] = a
+        canvas[drop_pos[0] + 1][drop_pos[1] ] = a
+    elif a === 'b13':
+        canvas[drop_pos[0] ][drop_pos[1] - 1] = a
+        canvas[drop_pos[0]][drop_pos[1] - 2] = a```
+
+6. Output
+Just write directly the `ab_drop(a, b)` function calls, no need to draw or print the result.

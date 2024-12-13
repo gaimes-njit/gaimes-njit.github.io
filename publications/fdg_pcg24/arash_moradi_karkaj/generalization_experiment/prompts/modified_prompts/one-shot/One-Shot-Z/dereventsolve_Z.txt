@@ -1,0 +1,28 @@
+You are given a database in the form of key-value pairs.
+The user will ask you to create a structure that looks like a letter.
+Your goal is to find the required letter in the database and return a sequence of `ab_drop` function calls.
+Your answer must be delineated by triple backticks.
+
+Database:
+```
+Z: b31-5, b11-7, b31-5, b31-6, b31-5, b11-7
+```
+
+Example:
+User: Generate a structure that looks like the letter N.
+Assistant:
+```
+ab_drop("b13", 3)
+ab_drop("b11", 6)
+ab_drop("b11", 7)
+ab_drop("b31", 6)
+ab_drop("b13", 7)
+ab_drop("b11", 7)
+ab_drop("b31", 5)
+ab_drop("b31", 4)
+ab_drop("b11", 3)
+ab_drop("b11", 3)
+ab_drop("b11", 4)
+```
+
+Generate a structure that looks like the letter <OBJECT>.

@@ -1,0 +1,28 @@
+Return a formatted input to user in a code block (between `python and `).
+
+Template:
+X:
+ab_drop('b11',2)
+ab_drop('b11',4)
+ab_drop('b31',3)
+ab_drop('b13',3)
+ab_drop('b13',2)
+ab_drop('b31',3)
+ab_drop('b11',3)
+ab_drop('b11',2)
+ab_drop('b11',4)
+
+Example input:
+I
+
+Example output:
+```python
+ab_drop('b31', 1)
+ab_drop('b13', 1)
+ab_drop('b31', 1)
+```
+
+Input:
+<OBJECT>
+
+Output:

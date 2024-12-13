@@ -1,0 +1,60 @@
+Create a code sequence using the `ab_drop()` function to construct a level for Science Birds that resembles the English letter <OBJECT>—the goal— and this structure must follow all the constraints of the Science Birds game and maintain stability under gravity. Dropping position and order are crucial.
+
+1. Role
+You are a player of the Tetris game who aims to generate a structure that meets the goal while satisfying all the hard constraints.  
+
+2. Definitions
+Slots: The map's width is equally partitioned into W slots where W = 20, with slots 0 and 19 being the most left and right, respectively.
+Layers: The map's height is equally partitioned into H layers where H = 16, with layers 0 and 15 being the bottom and top layers, respectively.
+Base: The bottom of the map, i.e., layer 0.
+Map Initialization:
+# initialize the structure as an empty WxH grid
+structure = [[' ']*W for _ in range(H)]
+
+3. Environment
+There are three block types as follows:
+b11, a square block whose width is 1 unit and height is 1 unit
+b31, a horizontal block whose width is 3 units and height is 1 unit
+b13, a vertical block whose width is 1 unit and height is 3 units
+
+4. Tool
+The primary tool to be used for constructing the level is the ab_drop(x, y) function. This function is designed to vertically drop a block from the topmost layer (H) such that its center aligns with slot y. Blocks dropped earlier will represent lower portions of the structure.
+The two parameters for this function are:
+
+x: The type of block ('b11', 'b13', or 'b31').
+y: The slot number ranging from 0 to W-1 where the block's center aligns.
+
+The function operates by initializing the drop position at the top of the grid. It then initiates a process of descending the block until it lands either on the base or a previously dropped block. The block is then positioned in the structure at its drop position. The process is as follows:
+
+def ab_drop(x, y):
+    # x denotes the block type, y signifies the slot number ranging from 0 to W-1 where the block's center aligns. 
+    
+    # Position the drop at the topmost point of the grid
+    drop_pos = (H-1, y)
+    
+    # Initiate the descending process of the block from the top until it lands on the base or another block
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0]-1, y)
+        if structure[drop_pos[0]+1][drop_pos[1]] != ' ':
+            break
+    
+    # Settle the block into the structure at the drop position
+    structure[drop_pos[0]][drop_pos[1]] = x
+
+5. Constraints:
+The relevant constraints are given in the following.
+5.1 Stability: This is a hard constraint that must be met. Because of gravity, a block must be dropped at a proper slot to ensure that the current structure and the resulting structure are stable and do not collapse. Poor weight distribution caused by incorrect placement can lead to structural collapse.
+
+5.2 No boundary intrusion: This is a hard constraint that should be met if possible. Namely, blocks should not intrude on the boundary of the map. In other words, the area of intrusion regions should be zero. Height or length can not be intruded. 
+
+5.3 Sequence of calls: This is a hard constraint. The calls to the ab_drop() function should be in sequence to form the character starting from the base layer 0 and no need to drop unnecessary blocks if the minimum amount of block can shape the alphabet and maintain the stability. 
+
+5.4 Only code: The generated response should only consists of the calls to ab_drop() function without any text or comments. Format of response function has to be like ab_drop('block_type', y).
+
+5.5 Falling Blocks: This is a hard constraint. Please keep the implementation of ab_drop() function in mind, it is very important to note that the block can not suspend in space they will either fall on another block or on the base layer 0.  Consider dropping lower parts of the character first, ensuring that the bottom of the 'character' is formed before building upwards.
+
+5.6 Slot number: This is a hard constraint. For placing B31 block, y has to be greater than 1 and less than 19. Block center in the case of b31 block type will be the mid point of the block, so B31 block occupy 3 slots (y-1, y, y+1) .
+ and for other blocks it will be same as y as their starting position. 
+
+5.7 Structure Size: This is a soft constraint. The use of blocks should be optimized to ensure that the structure should maintain the proportions of the letter it is supposed to represent without compromising stability and without violating the boundary intrusion constraint.
+---

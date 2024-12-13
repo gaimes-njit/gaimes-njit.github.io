@@ -1,0 +1,106 @@
+﻿
+Use the `ab_drop()` function to create a stable structure resembling <OBJECT>. Ensure that the generated structure satisfies all the specified constraints. The order and position at which the blocks are dropped are crucial and should be determined using techniques from the block-stacking problem. Output the `ab_drop()` calls within a code block (```).
+
+1. Role:
+You are an expert player in the Tetris game and Tricky Towers game aiming to construct a structure that resembles <OBJECT>. Your goal is to meet all the given constraints to build the <OBJECT>. You can rotate the <OBJECT>'s shape before puting the first bloc. Take gravity into account and aim for a continuous structure.
+
+2. Definitions:
+- Slots: The map's width is divided into W slots, where W = 20, with slots 0 and 19 representing the leftmost and rightmost positions, respectively.
+- Layers: The map's height is divided into H layers, where H = 16, with layers 0 and 15 representing the bottom and top layers, respectively.
+- Base: The bottom layer of the map, i.e., layer 0.
+- Map Initialization: Start with an empty WxH grid by using the following code:
+  ```
+  structure = [[' ']*W for _ in range(H)]
+  ```
+3. Environment:
+
+3.1You have access to three block types that can be used to construct <OBJECT>:
+- b11: A square block with a width and height of 1 unit.
+- b31: A horizontal block with a width of 3 units and a height of 1 unit.
+- b13: A vertical block with a width of 1 unit and a height of 3 units.
+
+3.2 You can construct a horizontal block with a width of 2 units and a height of 1 unit like that:  drop('b11',x+1), drop('b11',x).
+
+3.3 You can construct a vertical block with a width of 1 unit and a height of 2 units like that:  drop('b11',x), drop('b11',x).
+
+3.4  Drop('b11',x), drop('b11',x),  drop('b11',x) is equivalent to  drop('b13',x).
+
+3.5 Drop('b11',x+1), drop('b11',x),  drop('b11',x+2) is equivalent to  drop('b31',x).
+
+4. Tool:
+Utilize the `ab_drop(x, y)` function to drop a block vertically from layer H, aligning its center with slot y. Earlier blocks should represent lower parts of the structure. Here is the function definition:
+
+```
+def ab_drop(x, y):
+    # x represents the block type, and y is the slot number (0 to W-1) where the block center aligns, the block type muste be wright between cote.
+    
+    # Initialize the drop position at the top of the map
+    drop_pos = (H-1, y)
+    
+    # Move the block down until it lands on the base or another block
+    while drop_pos[0] > 0:
+        drop_pos = (drop_pos[0] - 1, y)
+        if structure[drop_pos[0] + 1][drop_pos[1]] != ' ':
+            break
+    
+    #Place the block on the structure
+    structure[drop_pos[0]][drop_pos[1]] = x
+```
+
+5. Constraints:
+The relevant constraints are as follows:
+5.1 No boundary intrusion: Ensure that the blocks do not extend beyond the map boundaries. The area of intrusion regions should be zero.
+5.2 The y-coordinate corresponds to the block's center.
+
+6.Help
+
+6.1 Start building <OBJECT> from the bottom layer (layer 0) to the top layer (layer 15). Use the `ab_drop()` function to drop blocks vertically.
+
+6.2 Rotate the 'L' character if necessary to achieve the desired shape.
+
+6.3 Pay attention to the order and position of the blocks being dropped. The order and orientation of the `ab_drop()` inputs are crucial.
+
+6.4 Follow the given constraints:
+   - Do not extend beyond the map boundaries (no boundary intrusion).
+   - The y-coordinate should correspond to the block's center.
+   - Avoid using `ab_drop('b31',0)`, as it is prohibited.
+
+6.5 Aim for a realistic and proportional shape for the <OBJECT>.
+
+6.6 Generate the structure using a single figure, meaning only one set of `ab_drop()` inputs.
+
+6.7 Consider the gravity while positioning the blocks.
+
+6.8 the folowing impute are for a 'O' character's shap:
+```
+ab_drop('b31',1)
+ab_drop('b13',0)
+ab_drop('b13',2)
+ab_drop('b31',1)
+```
+
+6.9 the folowing impute are for a 'L' character's shap:
+```
+ab_drop('b31',1)
+ab_drop('b13',0)
+```
+
+6.10 the folowing impute are for a 'A' character's shap:
+   ```
+ab_drop('b11',0)
+ab_drop('b11',0)
+ab_drop('b11',2)
+ab_drop('b11',2)
+ab_drop('b31',1)
+ab_drop('b11',0)
+ab_drop('b11',2)
+ab_drop('b31',1)
+ab_drop('b11',1)
+```
+
+6.11 you can use the exemples above as references for your goal.
+
+
+
+Please use the provided information and the `ab_drop()` function to generate <OBJECT>'s structure while adhering to the given constraints. the output must be a list of ab-drop() inputs in a code block(```).
+

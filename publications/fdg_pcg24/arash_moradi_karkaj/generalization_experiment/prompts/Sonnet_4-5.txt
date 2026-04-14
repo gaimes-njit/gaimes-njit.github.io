@@ -1,0 +1,108 @@
+Generate stable structure for letter <OBJECT> using ab_drop() in Science Birds.
+
+GRID: 20 width (x: 0-19) by 16 height (y: 0-15). Origin (0,0) = bottom-left.
+
+BLOCKS:
+b11: 1x1 square
+b13: 1x3 vertical (width 1, height 3)
+b31: 3x1 horizontal (width 3, height 1)
+
+FUNCTION: ab_drop(block_type, x_position)
+- Drops block from top, centered at x_position
+- For b31 at x=5: occupies cells (4,0), (5,0), (6,0)
+- b13/b11: x_position is the actual cell position
+- Blocks fall until hitting ground (y=0) or another block
+
+CRITICAL CONSTRAINTS:
+1. Stability: Structure must not collapse under gravity. Build bottom-to-top.
+2. Boundaries: b31 requires x from 1 to 18 (needs space left and right). b13/b11: x from 0 to 19.
+3. Support: b31 must have support under center OR at least 2 of 3 cells. Place supporting blocks first.
+4. No floating blocks: Every block needs solid base beneath it.
+
+OUTPUT RULES (CRITICAL):
+- Last code block between ``` contains only ab_drop() calls
+- Format: ab_drop('b11', 5) with literal strings and integers only
+- NO loops, NO variables, NO comments
+- One call per line
+
+STRATEGY:
+1. Identify letter shape and orientation
+2. Start from ground level (y=0)
+3. Build vertical supports first (b13 or stacked b11)
+4. Add horizontal connectors (b31) only when supported
+5. Continue upward layer by layer
+6. Keep structure compact and centered around x=8-12
+
+EXAMPLES:
+
+Letter I:
+```
+ab_drop('b31', 10)
+ab_drop('b13', 10)
+ab_drop('b31', 10)
+```
+
+Letter L:
+```
+ab_drop('b31', 10)
+ab_drop('b13', 9)
+```
+
+Letter T:
+```
+ab_drop('b13', 10)
+ab_drop('b31', 10)
+```
+
+Letter U:
+```
+ab_drop('b31', 10)
+ab_drop('b13', 9)
+ab_drop('b13', 11)
+```
+
+Letter H:
+```
+ab_drop('b13', 9)
+ab_drop('b13', 11)
+ab_drop('b31', 10)
+ab_drop('b13', 9)
+ab_drop('b13', 11)
+```
+
+Letter A:
+```
+ab_drop('b13', 9)
+ab_drop('b13', 11)
+ab_drop('b31', 10)
+ab_drop('b13', 9)
+ab_drop('b13', 11)
+ab_drop('b31', 10)
+```
+
+Letter O:
+```
+ab_drop('b31', 10)
+ab_drop('b13', 9)
+ab_drop('b13', 11)
+ab_drop('b31', 10)
+```
+
+Letter P:
+```
+ab_drop('b13', 9)
+ab_drop('b13', 10)
+ab_drop('b31', 10)
+ab_drop('b11', 9)
+ab_drop('b11', 11)
+ab_drop('b31', 10)
+```
+
+TIPS:
+- Prefer b13 for vertical segments (more stable than stacking b11)
+- Use b11 for fine adjustments and support points
+- Center structures around x=9-11 for symmetry
+- For complex letters, simplify while maintaining recognizability
+- Rotated letters (sideways) often more stable: E, F, S can be built horizontally
+
+Generate code now for letter <OBJECT>.
